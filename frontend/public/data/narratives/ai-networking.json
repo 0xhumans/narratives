@@ -1,0 +1,32 @@
+{
+  "id": "9aa5d713-53b8-4ca3-b2c5-2bd9dcd672ab",
+  "slug": "ai-networking",
+  "name": "AI Networking",
+  "kind": "sub",
+  "parent_id": "6eba9a2d-1be0-4f43-975e-3a526a7c7747",
+  "summary": "AI Networking represents the critical, often underappreciated infrastructure layer enabling distributed AI training and inference at scale. As model parameters grow into the hundreds of billions and trillions, the bottleneck has shifted from raw compute (FLOPS) to interconnect bandwidth, latency, and topology efficiency. NVIDIA's NVLink and InfiniBand dominance, combined with the emerging Ultra Ethernet Consortium's push to standardize high-bandwidth fabrics for AI, define the competitive landscape. The narrative is that hyperscalers and sovereign AI projects will spend aggressively on networking silicon, optical transceivers, and switch ASICs—creating a multi-year capex tailwind that may exceed the growth rates of AI compute itself.\n\nThe investment thesis hinges on a structural mismatch: AI workloads require non-blocking, low-latency, lossless fabrics with 2-3 orders of magnitude more bandwidth than traditional data center networking, yet current penetration of purpose-built AI fabrics remains low outside of a handful of hyperscaler GPU clusters. As inference moves from single-node to multi-rack to multi-data-center deployment, networking spend as a percentage of AI infrastructure capex should expand materially. Key risks include commoditization of Ethernet-based alternatives, NVIDIA's vertical integration compressing standalone networking margins, and the possibility that algorithmic advances (e.g., sparsity, mixture-of-experts) reduce the interconnect bandwidth actually required per parameter.",
+  "key_drivers": [
+    "GPU cluster scaling from hundreds to hundreds of thousands of GPUs requires non-blocking fabrics with near-zero packet loss, driving demand for InfiniBand and high-radix switches",
+    "NVIDIA's NVLink/NVSwitch vertical integration creates a moat but also pushes competitors toward Ultra Ethernet Consortium (UEC) standardization",
+    "Optical transceiver volumes rising sharply as AI fabrics move from electrical backplanes to CPO (co-packaged optics) and eventually linear-drive pluggables",
+    "Inference distributed across racks and geographies creates a second wave of networking demand distinct from training-centric fabrics",
+    "Sovereign AI projects (Japan, India, EU, Saudi Arabia) each require purpose-built fabrics, expanding the buyer base beyond US hyperscalers",
+    "Bandwidth-per-port progression (400G to 800G to 1.6T) is accelerating on a ~18-month cadence versus the historical 3-4 year cycle",
+    "Supply concentration in switch ASICs (Broadcom, Marvell) and optical components creates pricing power and margin expansion potential",
+    "Risk of algorithmic efficiency gains (sparsity, MoE, pipeline parallelism) reducing realized interconnect bandwidth demand per FLOP"
+  ],
+  "adoption_curve": {
+    "stage": "Early Growth",
+    "growth_rate": "45-60% CAGR through 2027",
+    "penetration_pct": 15,
+    "inflection_points": [
+      "1.6T optical transceiver volume production in 2025-2026, enabling cost-parity with electrical interconnects at multi-rack distances",
+      "Ultra Ethernet Consortium specification ratification and first merchant silicon shipments (2025-2026), breaking NVIDIA's fabric monopoly",
+      "Hyperscaler shift from training-centric to inference-centric fabrics (2026-2027), expanding total addressable market beyond GPU clusters to CPU/GPU mixed inference pools",
+      "Sovereign AI data center buildouts reaching operational scale (2026-2028), adding a second demand vector independent of US hyperscaler capex cycles"
+    ]
+  },
+  "created_at": "2026-06-18T16:31:13.889323Z",
+  "updated_at": "2026-06-21T12:18:48.512640Z",
+  "children": []
+}

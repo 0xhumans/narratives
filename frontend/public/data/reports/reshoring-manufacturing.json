@@ -1,0 +1,817 @@
+{
+  "id": "f0cd16d2-2439-4ea6-b0e3-e5f8aba3add7",
+  "narrative_id": "57ae16d4-c454-4cdd-9307-9b0447dd0003",
+  "version": 1,
+  "generated_at": "2026-06-18T18:24:55.940768Z",
+  "payload": {
+    "key_drivers": [
+      "Geopolitical Fragmentation: Escalating US-China tensions and the looming contingency risks surrounding Taiwan are forcing Western corporations to decouple from Chinese manufacturing hubs.",
+      "Supply Chain Resilience: A systemic shift from 'just-in-time' inventory models to 'just-in-case' buffer stocks, prioritizing availability over lean cost structures.",
+      "Industrial Policy Subsidies: Massive government interventions, specifically the CHIPS and Science Act and the Inflation Reduction Act (IRA), artificially altering the ROI calculus for domestic facility construction.",
+      "Automation Economics: The rapidly declining cost of collaborative robotics and AI-driven quality control, which is actively closing the labor cost arbitrage gap between developed and emerging markets.",
+      "National Security Imperatives: Strategic government mandates to secure domestic production of critical minerals, pharmaceuticals, and defense components.",
+      "Logistics Volatility: The rising and unpredictable costs of global maritime shipping, which erode the historical financial benefits of offshore manufacturing."
+    ],
+    "value_capture": [
+      {
+        "roic": 8.0,
+        "role": "creator",
+        "notes": "The foundational enabler of reshoring—automation collapses the labor cost arbitrage that drove offshoring. Companies like Fanuc, KUKA, and Rockwell Automation embed proprietary control algorithms, servo motors, and safety-certified software stacks that take decades to replicate. As reshoring forces U.S. manufacturers to compete on throughput-per-worker rather than wage-per-worker, robotics vendors capture disproportionate value through both hardware sales and recurring software/PLC licensing. High switching costs lock in installed bases.",
+        "layer_name": "Industrial Robotics & Automation Systems",
+        "pricing_power": 7.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 8.0,
+        "capital_intensity": 6.0,
+        "competitive_intensity": 6.0
+      },
+      {
+        "roic": 8.0,
+        "role": "creator",
+        "notes": "Precision bearings, semiconductor-grade silicon, specialty alloys, rare-earth magnets, and advanced composites are the bottleneck inputs for reshored production. Many have 2-3 global suppliers with decade-long qualification cycles. The CHIPS Act and Defense Production Act prioritization of critical materials validates this. Pricing power is structural—OEMs cannot substitute without re-qualification. Value accrues here because reshoring multiplies demand for domestically-qualified supply, but capacity is constrained by capex lead times of 3-5 years.",
+        "layer_name": "Specialized Components & Advanced Materials",
+        "pricing_power": 8.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 9.0,
+        "capital_intensity": 7.0,
+        "competitive_intensity": 4.0
+      },
+      {
+        "roic": 9.0,
+        "role": "creator",
+        "notes": "Reshoring requires re-architecting supply networks from lean/offshore-optimized to resilient/nearshore-balanced. This is fundamentally an information problem. Digital twin platforms (Siemens, PTC), MES systems, and supply chain orchestration software (e.g., o9 Solutions, Kinaxis) enable scenario planning, multi-sourcing optimization, and factory simulation before concrete is poured. Asset-light, high-margin, recurring revenue. Network effects compound as more suppliers onboard. The lowest capital intensity with highest ROIC in the stack.",
+        "layer_name": "Supply Chain Software, Digital Twins & MES",
+        "pricing_power": 7.0,
+        "revenue_growth": 9.0,
+        "barriers_to_entry": 7.0,
+        "capital_intensity": 3.0,
+        "competitive_intensity": 6.0
+      },
+      {
+        "roic": 6.0,
+        "role": "creator",
+        "notes": "Physical reshoring requires greenfield and brownfield factory construction at scale—CHIPS Act alone catalyzes $50B+ in fab construction. Specialized cleanroom builders, industrial engineering firms (e.g., Jacobs, Fluor), and modular construction players benefit from a multi-year capex supercycle. However, this is a project-based business with lumpiness, and margin compression occurs when demand spikes outpace skilled labor supply. Value is created but not durably captured—returns are cyclical.",
+        "layer_name": "Factory Construction, Engineering & Cleanroom Build-Out",
+        "pricing_power": 6.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 6.0,
+        "capital_intensity": 8.0,
+        "competitive_intensity": 5.0
+      },
+      {
+        "roic": 4.0,
+        "role": "capturer",
+        "notes": "Firms like Flex, Jabil, and Sanmina execute the physical assembly that reshoring demands, but they operate in a structurally disadvantaged position. OEMs multi-source and negotiate aggressively; EMS players compete on yield, cost, and capacity utilization. Reshoring increases their domestic cost base without proportional pricing power—U.S. labor and facility costs are 2-3x Southeast Asian equivalents. They capture volume but not margin. ROIC is depressed by working capital intensity and constant capex for capacity.",
+        "layer_name": "Contract Manufacturing & Electronics Manufacturing Services (EMS)",
+        "pricing_power": 3.0,
+        "revenue_growth": 6.0,
+        "barriers_to_entry": 4.0,
+        "capital_intensity": 7.0,
+        "competitive_intensity": 8.0
+      },
+      {
+        "roic": 5.0,
+        "role": "capturer",
+        "notes": "The binding constraint on reshoring is not capital but skilled labor—CNC machinists, robotics technicians, welders, process engineers. Community colleges, apprenticeship programs, and workforce platforms (e.g., Tooling U-SME) are essential infrastructure. However, this is a fragmented, low-margin, often subsidized space with weak monetization. Value is created societally but captured poorly commercially. Government funding flows through without generating private returns.",
+        "layer_name": "Workforce Training & Industrial Skills Development",
+        "pricing_power": 3.0,
+        "revenue_growth": 5.0,
+        "barriers_to_entry": 3.0,
+        "capital_intensity": 2.0,
+        "competitive_intensity": 7.0
+      },
+      {
+        "roic": 7.0,
+        "role": "capturer",
+        "notes": "OEMs in defense (Lockheed, RTX), industrial (Caterpillar, Deere), and medical devices (Medtronic, Stryker) are the demand-side beneficiaries of reshoring—supply chain resilience, reduced geopolitical risk, IP protection, and compliance with Buy America provisions. They capture value through reduced disruption risk and government incentives, but face higher input costs from domestic sourcing. Net benefit is positive for those with pricing power over end customers (defense contractors, regulated medical) and neutral-to-negative for cost-competitive consumer OEMs.",
+        "layer_name": "End-Brand OEMs (Defense, Industrial, Automotive, Medical Devices)",
+        "pricing_power": 6.0,
+        "revenue_growth": 6.0,
+        "barriers_to_entry": 7.0,
+        "capital_intensity": 6.0,
+        "competitive_intensity": 6.0
+      },
+      {
+        "roic": 6.0,
+        "role": "capturer",
+        "notes": "Reshoring drives demand for advanced manufacturing facilities, nearshore logistics hubs, and last-mile distribution. Industrial REITs (Prologis, Rexford) and port/rail infrastructure benefit from structural demand. However, this is a commodity-like land play with cyclical rent dynamics. Value capture is real but slow-moving and capital-intensive. The reshoring premium is already partially priced into industrial real estate in tier-1 markets.",
+        "layer_name": "Industrial Real Estate & Logistics Infrastructure",
+        "pricing_power": 6.0,
+        "revenue_growth": 6.0,
+        "barriers_to_entry": 6.0,
+        "capital_intensity": 8.0,
+        "competitive_intensity": 5.0
+      }
+    ],
+    "feedback_loops": [
+      {
+        "kind": "reinforcing",
+        "strength": 8.5,
+        "description": "Reshoring semiconductor and advanced hardware manufacturing is a prerequisite for AI sovereignty. Conversely, AI-driven process optimization and predictive maintenance make domestic manufacturing economically viable despite higher labor costs.",
+        "target_narrative": "Artificial Intelligence"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 9.0,
+        "description": "Higher domestic labor costs and workforce shortages make automation mandatory for reshoring to be profitable. Reshoring creates a massive, localized demand spike for industrial robotics and factory automation.",
+        "target_narrative": "Robotics"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.0,
+        "description": "Nuclear build-outs require highly specialized, secure supply chains (e.g., large forged components). Reshoring heavy industry and precision engineering is necessary to meet the stringent regulatory and national security demands of new nuclear capacity.",
+        "target_narrative": "Nuclear Renaissance"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 9.5,
+        "description": "Geopolitical tensions mandate the domestic production of critical defense technologies, semiconductors, and munitions. Reshoring is a strict prerequisite for credible defense autonomy and secure supply chains.",
+        "target_narrative": "Defense Autonomy"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.5,
+        "description": "Demographic decline in developed nations shrinks the blue-collar labor pool, acting as a catalyst for automated reshoring. It forces governments to prioritize supply chain resilience over reliance on young, labor-abundant foreign nations.",
+        "target_narrative": "Aging Population"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 6.5,
+        "description": "Reshoring green technology manufacturing (EVs, batteries, solar, turbines) is essential for the energy transition. However, bringing heavy industry back under strict environmental regimes increases compliance costs, requiring heavy state subsidization.",
+        "target_narrative": "Climate Adaptation"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 10.0,
+        "description": "Reshoring is the primary mechanism and direct synonym for reindustrialization, focusing on rebuilding domestic production capacity, technical expertise, and localized industrial ecosystems.",
+        "target_narrative": "Reindustrialization"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 6.0,
+        "description": "Space infrastructure requires ultra-precision manufacturing and secure, highly controlled supply chains. Reshoring advanced aerospace, composites, and materials manufacturing directly supports space economy goals and ITAR compliance.",
+        "target_narrative": "Space Economy"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 6.5,
+        "description": "The push for pharmaceutical supply chain security drives the reshoring of biomanufacturing, active pharmaceutical ingredients (APIs), and specialized bioreactors to avoid reliance on foreign biological supply chains.",
+        "target_narrative": "Biotechnology Revolution"
+      },
+      {
+        "kind": "resource_competition",
+        "strength": 8.0,
+        "description": "Reshoring manufacturing shifts massive resource demand back to domestic markets, intensifying competition for local energy, water, and critical minerals. This often outstrips local extraction, refining, or grid capacity, creating severe bottlenecks.",
+        "target_narrative": "Resource Scarcity"
+      }
+    ],
+    "hidden_effects": [
+      {
+        "order": "hidden",
+        "description": "Erosion of cost discipline and competitive pressure that offshore manufacturing imposed on domestic firms, potentially reducing innovation velocity and operational efficiency over time."
+      },
+      {
+        "order": "hidden",
+        "description": "Severe skills mismatch and training infrastructure gap as the atrophied domestic manufacturing workforce lacks the technical capabilities for advanced production, requiring multi-year investment in vocational education and apprenticeship programs."
+      },
+      {
+        "order": "hidden",
+        "description": "Loss of diplomatic leverage that economic interdependence provided—trade relationships historically served as channels for negotiation and conflict de-escalation that vanish as coupling reverses."
+      },
+      {
+        "order": "hidden",
+        "description": "Net environmental impact ambiguity: domestic production may increase emissions if the reshoring economy's energy mix is carbon-intensive, or may reduce total lifecycle emissions if shorter supply chains and stricter environmental regulations dominate."
+      },
+      {
+        "order": "hidden",
+        "description": "Reduced foreign market access for the reshoring economy's exporters as former manufacturing partners redirect procurement to alternative suppliers, diminishing the export revenue base that partially offsets reshoring costs."
+      },
+      {
+        "order": "hidden",
+        "description": "Concentration of industrial subsidy capture by large incumbents with lobbying capacity, creating regulatory moats that disadvantage smaller domestic manufacturers who lack the scale to access reshoring incentives."
+      }
+    ],
+    "potential_losers": [
+      [
+        "Offshore contract manufacturers",
+        "Low-skill labor pools"
+      ],
+      [
+        "Energy-intensive legacy manufacturers facing brownouts",
+        "Regions with constrained transmission capacity"
+      ],
+      [
+        "Chinese midstream refiners (long-term geopolitical risk)",
+        "EV OEMs without secured offtake agreements"
+      ],
+      [
+        "Greenfield developers facing NIMBY and permitting delays",
+        "Companies relying on immediate capacity expansion without site readiness"
+      ],
+      [
+        "Traditional 4-year universities (relative share of workforce)",
+        "Manufacturers unable to automate and facing labor shortages"
+      ],
+      [
+        "Trans-Pacific ocean freight carriers",
+        "West Coast mega-ports reliant on Chinese imports"
+      ]
+    ],
+    "narrative_summary": "The 'Reshoring Manufacturing' narrative represents a structural paradigm shift from hyper-globalized, cost-optimized supply chains to regionally concentrated, resilience-focused production models. Catalyzed by the fragilities exposed during the COVID-19 pandemic and accelerated by escalating US-China geopolitical tensions, this trend is moving from a corporate risk management theory to a heavily funded reality. The current market pricing of industrial proxies like VIS and XLI reflects robust investor confidence in this multi-year capital expenditure cycle, as domestic manufacturing construction spending hits historic highs, particularly in strategic sectors like semiconductors and green energy infrastructure.\n\nFrom a systems perspective, reshoring is highly inflationary and friction-laden. First-order effects include massive domestic capital expenditures and localized job creation. However, second-order effects reveal severe bottlenecks: a shortage of skilled trades labor, antiquated power grid infrastructure, and protracted permitting timelines. To overcome the inherent cost disadvantage of Western labor markets, this narrative is inextricably linked to an acceleration in industrial automation, robotics, and AI. The endgame is not a return to the manufacturing paradigms of the 1970s, but rather the build-out of highly automated, localized 'micro-factories' designed for supply chain security rather than purely marginal cost optimization.",
+    "potential_winners": [
+      [
+        "Rockwell Automation",
+        "Fanuc",
+        "ABB",
+        "Cognex"
+      ],
+      [
+        "Eaton",
+        "Quanta Services",
+        "Schneider Electric",
+        "Hubbell"
+      ],
+      [
+        "MP Materials",
+        "Energy Fuels",
+        "USA Rare Earth"
+      ],
+      [
+        "Clean Harbors",
+        "WM (Waste Management)",
+        "Tetra Tech"
+      ],
+      [
+        "Lincoln Educational Services",
+        "Autodesk",
+        "StrataTech (private)"
+      ],
+      [
+        "J.B. Hunt Transport",
+        "CSX Corporation",
+        "Knight-Swift Transportation"
+      ]
+    ],
+    "dependency_network": [
+      {
+        "type": "constraint",
+        "layer": "skilled labor",
+        "weight": 9.5,
+        "description": "Chronic shortage of CNC machinists, welders, industrial engineers, and technicians. Decades of offshoring eroded the domestic talent pipeline; vocational training throughput cannot match reshoring velocity. Bottlenecks entire project timelines."
+      },
+      {
+        "type": "resource",
+        "layer": "capital availability",
+        "weight": 9.0,
+        "description": "Greenfield factory builds require $100M-$2B+ capex per facility. Dependent on private equity, corporate balance sheets, and government grants (CHIPS Act, IRA). Interest rate environment directly determines IRR thresholds and project go/no-go decisions."
+      },
+      {
+        "type": "constraint",
+        "layer": "government policy and incentives",
+        "weight": 8.5,
+        "description": "CHIPS Act ($52B), Inflation Reduction Act tax credits, Section 232 tariffs, and Buy America provisions are the primary economic rationale for reshoring. Policy reversal or sunset clauses would collapse the cost arbitrage vs. offshore production."
+      },
+      {
+        "type": "input",
+        "layer": "electricity",
+        "weight": 8.5,
+        "description": "Industrial-scale power (50-200MW per advanced facility) at competitive rates. Grid interconnection queues now exceed 3-5 years in key regions (Texas, Southeast). Semiconductor and EV battery plants are especially power-intensive."
+      },
+      {
+        "type": "resource",
+        "layer": "construction capacity",
+        "weight": 8.0,
+        "description": "Specialized industrial construction firms (e.g., Clayco, Barton Malow) are capacity-constrained. Megaproject pipelines exceed available GC/CM bandwidth. Schedule slippage of 12-24 months is now baseline, not exception."
+      },
+      {
+        "type": "input",
+        "layer": "industrial equipment and machinery",
+        "weight": 8.0,
+        "description": "Machine tools, robotics, automation systems, and process equipment often sourced from Germany, Japan, and Switzerland. Lead times of 18-30 months for critical capital equipment create cascading delays."
+      },
+      {
+        "type": "input",
+        "layer": "raw materials and intermediate components",
+        "weight": 7.5,
+        "description": "Steel, aluminum, rare earths, semiconductors, and specialty chemicals. Many upstream supply chains remain offshore (China dominance in rare earth processing, precursor chemicals). Reshoring final assembly without upstream reshoring creates fragility."
+      },
+      {
+        "type": "resource",
+        "layer": "land and industrial real estate",
+        "weight": 7.0,
+        "description": "Large contiguous parcels (200-1000+ acres) with rail access, highway proximity, and utility infrastructure. 'Megasite' inventory is depleted; greenfield site development adds 2-4 years before vertical construction."
+      },
+      {
+        "type": "resource",
+        "layer": "transportation and logistics infrastructure",
+        "weight": 7.0,
+        "description": "Class I rail access, deepwater ports, interstate highway proximity, and last-mile freight capacity. Inland logistics costs in the US are 2-3x coastal China for certain goods, eroding the reshoring cost case."
+      },
+      {
+        "type": "input",
+        "layer": "water",
+        "weight": 6.5,
+        "description": "Process water for semiconductor fabrication (2-4M gallons/day per fab), chemical processing, and metalworking. Water-stressed regions (Arizona, Texas) host major reshoring clusters, creating long-term supply risk."
+      },
+      {
+        "type": "constraint",
+        "layer": "regulatory and permitting environment",
+        "weight": 6.5,
+        "description": "NEPA reviews, EPA permitting, state-level environmental approvals, and zoning. Permit timelines of 18-36 months for heavy industrial facilities. IRA and CHIPS Act funding is contingent on compliance with prevailing wage, apprenticeship, and environmental justice requirements."
+      },
+      {
+        "type": "resource",
+        "layer": "workforce training infrastructure",
+        "weight": 6.0,
+        "description": "Community college programs, apprenticeships, and university-industry partnerships. Capacity is being built (e.g., Intel's Ohio semiconductor education pipeline) but lags facility construction by years, creating a labor-readiness gap at plant commissioning."
+      },
+      {
+        "type": "constraint",
+        "layer": "geopolitical stability and trade policy",
+        "weight": 6.0,
+        "description": "US-China decoupling trajectory, export controls, and ally-shoring frameworks (Quad, Chip 4) shape the competitive landscape. Escalation accelerates reshoring; de-escalation reduces urgency and weakens the investment case."
+      },
+      {
+        "type": "input",
+        "layer": "automation and digital infrastructure",
+        "weight": 5.5,
+        "description": "Industrial IoT, MES/ERP systems, robotics integration, and data analytics. Higher US labor costs require automation density 3-5x offshore equivalents to achieve cost parity. Edge computing and 5G private networks enable lights-out manufacturing."
+      },
+      {
+        "type": "input",
+        "layer": "cooling and HVAC",
+        "weight": 5.0,
+        "description": "Precision environmental control for semiconductor fabs, battery dry rooms, and pharmaceutical manufacturing. Specialized chillers, cleanrooms, and humidity control systems. Niche but critical for advanced manufacturing segments."
+      },
+      {
+        "type": "resource",
+        "layer": "supplier ecosystem density",
+        "weight": 5.0,
+        "description": "Tier 2/3 supplier networks, tooling shops, maintenance providers, and contract manufacturers. US industrial ecosystems are thin outside clusters (e.g., automotive in Southeast, semiconductors in Arizona). Missing supplier layers force vertical integration, raising costs."
+      }
+    ],
+    "future_bottlenecks": [
+      {
+        "name": "Industrial Power Grid Capacity & Transmission Interconnection Delays",
+        "tier": "emerging",
+        "cause": "New fabs and battery plants require 100-500 MW each, equivalent to small cities. Grid operators (PJM, ERCOT, MISO) face multi-year interconnection queues. Transmission build-out takes 7-10 years due to permitting, while manufacturing plants are being announced on 3-5 year timelines. Geographic mismatch between cheap power (rural) and workforce (urban) compounds the problem.",
+        "losers": [
+          "Fabs and plants in queue-constrained grid regions",
+          "States without integrated utility planning",
+          "Ratepayers facing industrial rate increases to fund transmission buildout",
+          "Reshoring projects in water-constrained regions needing desalination power"
+        ],
+        "winners": [
+          "Utility companies in manufacturing-heavy regions (e.g., Southern Company, Duke Energy)",
+          "Behind-the-meter power solutions (gas turbines, fuel cells, small modular reactors)",
+          "Transmission equipment manufacturers (cables, transformers, switchgear)",
+          "Energy storage integrators"
+        ],
+        "severity": 8.0,
+        "time_horizon": "2-6 years, peaking 2026-2028 as announced plants come online",
+        "market_awareness": "Moderate. Recognized in utility sector but underappreciated by manufacturing investors. Most reshoring models assume power will be available when the plant is built."
+      },
+      {
+        "name": "Supplier Ecosystem Clustering Deficit",
+        "tier": "emerging",
+        "cause": "Reshoring a final assembly plant without the 3-5 tiers of suppliers below it creates a cost penalty of 15-40%. The US lacks dense industrial clusters (like Shenzhen for electronics, Ludwigshafen for chemicals) where a 50-mile radius contains every needed component supplier. Building one fab without local chemical suppliers, packaging houses, and substrate makers means importing intermediate goods, negating much of the resilience benefit.",
+        "losers": [
+          "Isolated single-plant investments without supplier ecosystems",
+          "Regions that win one anchor plant but fail to attract supplier tiers",
+          "Companies paying premium for imported intermediate components",
+          "Defense industrial base projects in remote locations"
+        ],
+        "winners": [
+          "Industrial park developers with cluster strategies (e.g., Columbus, OH; Phoenix, AZ)",
+          "Tier 2-3 suppliers who relocate first and capture pricing power",
+          "Logistics companies specializing in intermediate goods",
+          "Mexico-based suppliers serving US plants under USMCA"
+        ],
+        "severity": 7.0,
+        "time_horizon": "3-7 years",
+        "market_awareness": "Low-Moderate. Acknowledged in semiconductor packaging (TSMC has publicly noted this) but underappreciated across broader manufacturing. Market tends to count announced investments as additive without accounting for ecosystem gaps."
+      },
+      {
+        "name": "Water Rights and Industrial Water Infrastructure",
+        "tier": "emerging",
+        "cause": "A single semiconductor fab uses 2-5 million gallons of ultra-pure water per day. Many reshoring destinations (Arizona, Texas) are water-stressed. Competing agricultural, municipal, and industrial demands create allocation conflicts. Water treatment and recycling infrastructure build-out lags plant construction. PFAS and other manufacturing effluent regulations are tightening simultaneously.",
+        "losers": [
+          "Fabs in water-stressed regions facing operational curtailment risk",
+          "Agricultural users losing water allocations to industrial users",
+          "States without clear water rights frameworks for industrial users",
+          "Plants facing rising water treatment compliance costs"
+        ],
+        "winners": [
+          "Water treatment and recycling technology companies (e.g., Xylem, Evoqua)",
+          "Water rights holders and water utility companies in manufacturing regions",
+          "Regions with abundant freshwater (Great Lakes states, Pacific Northwest)",
+          "Desalination and brine management specialists"
+        ],
+        "severity": 6.0,
+        "time_horizon": "2-5 years, acute in Southwest US",
+        "market_awareness": "Low. Occasionally mentioned in context of Arizona fabs but not systematically priced into site selection or plant economics."
+      }
+    ],
+    "hidden_constraints": [
+      {
+        "name": "Tacit Process Knowledge and Yield Engineering Atrophy",
+        "tier": "hidden",
+        "cause": "Manufacturing excellence is not just capital and labor—it is decades of accumulated yield improvement, defect troubleshooting, and process tuning embedded in experienced engineering teams. The US has lost 2-3 generations of this knowledge in many sectors. You can build a fab in 3 years, but rebuilding the institutional knowledge to achieve competitive yields takes 7-15 years. This is why TSMC's Arizona yields will lag Taiwan for years regardless of capital投入.",
+        "losers": [
+          "Greenfield plants expecting to match Asian yields within 2-3 years",
+          "Companies relying on poaching talent rather than building knowledge systems",
+          "Investors modeling reshoring cost parity based on capital and labor alone",
+          "Defense projects requiring trusted fab nodes with limited production history"
+        ],
+        "winners": [
+          "Companies retaining process engineering talent through partnerships (e.g., TSMC, Samsung)",
+          "Universities rebuilding manufacturing engineering programs",
+          "AI-driven process optimization platforms that compress learning curves",
+          "Consultancies offering manufacturing excellence services",
+          "Incumbent US manufacturers with retained institutional knowledge (e.g., Intel's older fabs)"
+        ],
+        "severity": 9.0,
+        "time_horizon": "5-15 years, compounding",
+        "market_awareness": "Very Low. Market treats manufacturing as a capital and labor problem, not a knowledge problem. Earnings calls rarely discuss yield curves or process engineering depth. Investors count capacity, not capability."
+      },
+      {
+        "name": "Permitting and Environmental Review Process Fragmentation",
+        "tier": "hidden",
+        "cause": "NEPA, state-level environmental reviews, local zoning, and agency-by-agency approvals create a sequential rather than parallel permitting process. A single industrial project can require 15+ separate permits from different agencies with different timelines and criteria. Unlike the EU's recent push to streamline, the US has no comprehensive industrial permitting reform. IRA/CHIPS subsidies are committed but projects can't break ground.",
+        "losers": [
+          "Greenfield projects in states with complex permitting (e.g., California, New York)",
+          "Communities losing economic development to permitting delays",
+          "Subsidy programs whose funds expire before projects are permitted",
+          "Companies with aggressive public timelines facing credibility erosion"
+        ],
+        "winners": [
+          "Permitting consultants and environmental engineering firms",
+          "Brownfield sites with pre-existing permits and infrastructure",
+          "States with streamlined industrial permitting (e.g., Texas, Utah)",
+          "Law firms specializing in environmental and regulatory compliance"
+        ],
+        "severity": 7.0,
+        "time_horizon": "2-8 years, worsening without reform",
+        "market_awareness": "Low. Discussed in infrastructure context but not connected to reshoring ROI. Market assumes announced projects will proceed on announced timelines."
+      },
+      {
+        "name": "Geopolitical Dependence on Chinese Refining and Intermediate Processing",
+        "tier": "hidden",
+        "cause": "Reshoring final assembly does not eliminate dependence on China, which controls 60-90% of refining capacity for critical minerals (rare earths, lithium processing, graphite, gallium, germanium). Even when raw materials are mined domestically or from allied nations, they are shipped to China for refining and then re-imported. The 'reshoring' narrative masks continued single-point-of-failure dependence at the processing tier. China has demonstrated willingness to weaponize this (gallium/germanium export controls, 2023).",
+        "losers": [
+          "Reshored manufacturers still dependent on Chinese-processed inputs",
+          "Defense supply chains with single-source Chinese processing dependencies",
+          "Investors in mining projects without offtake agreements to non-Chinese refiners",
+          "EV and battery manufacturers facing input cost shocks from export controls"
+        ],
+        "winners": [
+          "Companies building midstream processing capacity outside China (e.g., MP Materials' refining build-out, Albemarle)",
+          "Allied nations developing processing capacity (Australia, Canada, South Korea)",
+          "Substitute material researchers and circular economy/recycling companies",
+          "Strategic stockpile managers and commodity traders"
+        ],
+        "severity": 8.0,
+        "time_horizon": "3-10 years, with acute risk of disruption at any time",
+        "market_awareness": "Very Low. Market tracks mining projects and final assembly but not the refining/processing bottleneck in between. Critical minerals narratives focus on upstream mining, not midstream processing."
+      },
+      {
+        "name": "Demographic Cliff in Manufacturing Workforce Geography",
+        "tier": "hidden",
+        "cause": "The regions with cheapest land and most aggressive industrial incentives (rural Southeast, Southwest) are experiencing the steepest working-age population declines. Manufacturing plants are being sited based on subsidies and land costs, not workforce sustainability. By 2030, the US will have 5+ million fewer 25-44 year olds in rural and exurban areas. Plants built today will face accelerating labor shortages in 5-10 years as the local workforce ages out with no replacement pipeline.",
+        "losers": [
+          "Rural and exurban manufacturing sites with no workforce replenishment",
+          "States with anti-immigration policies competing for industrial investment",
+          "Communities that build schools and infrastructure for plant populations that never materialize",
+          "Companies with labor-intensive processes sited in declining demographic regions"
+        ],
+        "winners": [
+          "Immigration-friendly states and regions",
+          "Automation and robotics companies (long-term structural demand)",
+          "Housing and infrastructure developers in manufacturing-adjacent urban areas",
+          "Companies with remote-operable manufacturing processes"
+        ],
+        "severity": 7.0,
+        "time_horizon": "5-12 years, structural and irreversible",
+        "market_awareness": "Very Low. Site selection models use current labor availability, not projected. No one is modeling 2030 workforce demographics against 2024 site decisions."
+      }
+    ],
+    "current_bottlenecks": [
+      {
+        "name": "Skilled Trades & Advanced Manufacturing Labor Shortage",
+        "tier": "current",
+        "cause": "Decades of offshoring hollowed out the domestic apprenticeship pipeline; retiring boomers take tacit process knowledge with them; vocational education stigma persists; CHIPS Act and IRA projects are simultaneously competing for the same shrinking pool of welders, CNC machinists, and process technicians.",
+        "losers": [
+          "Greenfield fab builders facing 2-3 year delays",
+          "Mid-tier manufacturers unable to match CHIPS Act wage premiums",
+          "Regions with declining working-age populations"
+        ],
+        "winners": [
+          "Community colleges and trade schools",
+          "Automation/robotics integrators (e.g., Rockwell Automation, Fanuc)",
+          "Staffing firms specializing in industrial trades",
+          "States with strong vocational programs (e.g., North Carolina, Texas)"
+        ],
+        "severity": 8.0,
+        "time_horizon": "0-3 years, worsening through 2030",
+        "market_awareness": "High. Widely cited in earnings calls (TSMC Arizona delays, Intel Ohio). Priced into labor cost assumptions but not into timeline slippage risk."
+      },
+      {
+        "name": "Specialized Capital Equipment Lead Times",
+        "tier": "current",
+        "cause": "ASML lithography tools, specialized furnace equipment, and precision metrology gear have 18-30 month backlogs. A handful of European and Japanese firms control critical nodes in the equipment supply chain; capacity expansion at these suppliers lags demand from simultaneous US/EU fab buildouts.",
+        "losers": [
+          "Second-tier fab assemblers without long-standing supplier relationships",
+          "Taxpayers funding delayed CHIPS Act projects",
+          "Companies needing custom tooling for novel processes"
+        ],
+        "winners": [
+          "Equipment oligopolists (ASML, Applied Materials, Tokyo Electron)",
+          "Used/refurbished equipment brokers",
+          "Equipment maintenance and retrofit services"
+        ],
+        "severity": 7.0,
+        "time_horizon": "0-4 years",
+        "market_awareness": "Moderate-High. Known to semiconductor investors but underappreciated for non-semiconductor reshoring (batteries, pharmaceuticals) where similar equipment concentration exists."
+      },
+      {
+        "name": "High Cost of Capital for Greenfield Manufacturing",
+        "tier": "current",
+        "cause": "Fed funds rate above 5% makes the math difficult for greenfield projects with 7-10 year payback periods. CHIPS Act and IRA subsidies offset this for priority sectors, but non-subsidized reshoring (consumer goods, mid-tier industrial components) faces prohibitive WACC vs. continuing to offshore.",
+        "losers": [
+          "Non-subsidized reshoring projects (textiles, basic electronics assembly)",
+          "Leveraged mid-cap industrials with refinancing walls",
+          "Municipalities that pre-built speculative industrial parks"
+        ],
+        "winners": [
+          "Subsidized sectors (semiconductors, EV batteries, clean energy components)",
+          "Brownfield/brownfield-adjacent plays that reuse existing infrastructure",
+          "Private credit funds providing alternative manufacturing financing"
+        ],
+        "severity": 7.0,
+        "time_horizon": "0-2 years, easing as rates normalize",
+        "market_awareness": "High. Central to reshoring ROI analysis. Market assumes rate cuts will resolve this, but term premiums may stay elevated."
+      }
+    ],
+    "first_order_effects": [
+      {
+        "order": "1",
+        "description": "Increased domestic capital expenditure on factory construction, industrial equipment, and automation systems, driving immediate investment in physical manufacturing capacity."
+      },
+      {
+        "order": "1",
+        "description": "Higher direct production costs as firms replace low-cost offshore labor with more expensive domestic labor, stricter regulatory compliance, and higher energy inputs."
+      },
+      {
+        "order": "1",
+        "description": "Reduced reliance on extended transnational supply chains for critical and strategic goods, shortening the distance between production and end-market consumption."
+      },
+      {
+        "order": "1",
+        "description": "Increased domestic manufacturing employment as new facilities come online, particularly in semiconductors, defense, pharmaceuticals, and energy components."
+      }
+    ],
+    "regulatory_analysis": {
+      "summary": "The regulatory regime around reshoring manufacturing is shifting from a decades-long posture of offshoring-enabled efficiency toward a securitized, subsidy-driven industrial policy. In the US, the CHIPS and Science Act, the Inflation Reduction Act, and the Bipartisan Infrastructure Law have created a patchwork of tax credits, grants, and loan guarantees that materially alter the cost-of-capital calculus for domestic production in semiconductors, clean energy components, EVs, and critical minerals. 'Buy America' provisions have been expanded across federal procurement and infrastructure funding, with domestic content thresholds ratcheting up over multi-year phase-ins. The regulatory burden, however, is bifurcating: while capital is being subsidized, operational regulation is tightening via EPA permitting, OSHA enforcement, NLRB rulings, and SEC climate disclosure requirements, raising the all-in cost of domestic production relative to the headline subsidy figures. Looking forward, the regime is likely to become more granular and sector-specific, with outbound investment screening (via Treasury's CFIUS-adjacent rules), tariff escalation tied to supply chain origin tracing, and 'friendshoring' preferences layered onto trade policy. The risk is that reshoring becomes a politically protected but economically inefficient sector, where incumbents capture subsidies while new entrants face regulatory moats, and where geopolitical logic overrides comparative advantage without delivering the resilient, diversified supply chains that justify the intervention.",
+      "catalysts": [
+        "Geopolitical escalation with China over Taiwan, semiconductors, or rare earths that triggers a sudden supply disruption and forces emergency domestic production mandates.",
+        "Successful permitting reform (e.g., BUILD Act expansion, judicial streamlining of NEPA) that materially reduces the timeline from FID to production for greenfield manufacturing.",
+        "Tariff regime expansion: Broad-based tariffs on Chinese goods, or removal of de minimis threshold for low-value imports, that suddenly alter the cost-arbitrage math favoring domestic production.",
+        "Defense Production Act invocations: Expansion of DPA Title III funding beyond current scope (e.g., into pharmaceuticals, machine tools, or industrial robotics) that creates guaranteed offtake for domestic capacity.",
+        "State-level regulatory competition: Aggressive state-level incentive packages combined with right-to-work laws and fast-track permitting that create 'reshoring hubs' with materially lower regulatory friction than federal baseline.",
+        "Technology breakthroughs in automation and AI-driven manufacturing that reduce the labor cost penalty of domestic production, making reshoring economically viable without subsidy.",
+        "Allied coordination: Formalization of 'friendshoring' via trade agreements with Mexico, Canada, and key Asian allies that create a protected but larger market for reshored production."
+      ],
+      "key_risks": [
+        "Subsidy dependency: Firms may optimize for regulatory capture and tax credit harvesting rather than genuine productive efficiency, creating a 'zombie reshoring' dynamic where capacity exists but cannot compete without ongoing state support.",
+        "Permitting and environmental review bottlenecks: NEPA reviews, EPA regulations, and state-level environmental challenges can delay plant construction by 3-7 years, eroding the time-to-market advantage that reshoring is supposed to provide.",
+        "Labor cost and availability mismatch: Domestic workforce shortages in advanced manufacturing, combined with NLRB-favorable unionization rulings and prevailing wage requirements attached to federal subsidies, compress margins below projections.",
+        "Trade retaliation and WTO exposure: Aggressive domestic content requirements risk triggering disputes and retaliatory tariffs from trading partners, potentially cutting off export markets for the very facilities being reshored.",
+        "Political reversal risk: The bipartisan consensus on industrial policy is shallow; a future administration could unwind tax credits or alter 'Buy America' thresholds, stranding capital invested under the current regime.",
+        "Origin tracing and compliance complexity: Supply chain due diligence requirements (UFLPA enforcement, SEC conflict minerals, CBPA supply chain tracing) impose heavy compliance costs and create liability for firms that cannot fully document multi-tier supplier origins.",
+        "Overcapacity and boom-bust: Coordinated global reshoring (US, EU, Japan, Korea all subsidizing semiconductors and batteries) may create structural overcapacity by the late 2020s, collapsing margins in the very sectors being reshored."
+      ]
+    },
+    "third_order_effects": [
+      {
+        "order": "3",
+        "description": "Structural inflation regime shift in advanced economies as the decades-long deflationary tailwind from offshore cost arbitrage reverses, altering central bank policy frameworks and real interest rate equilibriums."
+      },
+      {
+        "order": "3",
+        "description": "Accelerated automation and robotics deployment to offset domestic labor costs, paradoxically limiting the manufacturing employment revival while creating a new industrial technology sector."
+      },
+      {
+        "order": "3",
+        "description": "Geopolitical realignment as economic interdependence—the historical stabilizing force between rival powers—erodes, increasing the latitude for confrontational posturing without mutual economic cost."
+      },
+      {
+        "order": "3",
+        "description": "Fragmentation of the global trade architecture into regional production blocs, reducing economies of scale and specialization gains that drove post-1990s global productivity growth."
+      },
+      {
+        "order": "3",
+        "description": "National security resilience improvement as critical supply chains for pharmaceuticals, semiconductors, and defense components become less vulnerable to foreign disruption or coercion."
+      }
+    ],
+    "second_order_effects": [
+      {
+        "order": "2",
+        "description": "Wage inflation across manufacturing and adjacent logistics sectors as labor demand surges into a structurally shrunken domestic industrial workforce pool."
+      },
+      {
+        "order": "2",
+        "description": "Revitalization of industrial regions and regional economies as factory clusters form, driving local demand for housing, services, and municipal infrastructure."
+      },
+      {
+        "order": "2",
+        "description": "Strain on industrial infrastructure—power grid capacity, water systems, transportation networks—as new manufacturing loads stress assets designed for a post-industrial economy."
+      },
+      {
+        "order": "2",
+        "description": "Consumer price increases as reshored production costs and supply chain restructuring expenses are passed through to end-market pricing, contributing to sticky goods inflation."
+      },
+      {
+        "order": "2",
+        "description": "Trade partner retaliation and tariff escalation as countries losing manufacturing orders respond with barriers against exports from reshoring economies."
+      }
+    ],
+    "confidence_assessment": {
+      "composite": 6.6,
+      "conviction": 6.0
+    },
+    "geopolitical_analysis": {
+      "summary": "The reshoring of manufacturing is fundamentally driven by escalating geopolitical tensions, the weaponization of supply chains, and a strategic imperative to reduce reliance on systemic rivals like China. This trend marks a definitive shift from the hyper-globalization of the late 20th and early 21st centuries—where supply chains were optimized purely for cost and efficiency—toward an era of geopolitical fragmentation and economic statecraft. Nations are increasingly viewing industrial capacity as a critical component of national security, leading to massive state subsidies, export controls, and the promotion of domestic production in strategic sectors such as semiconductors, green energy, and pharmaceuticals. This realignment is forcing multinational corporations to navigate a complex web of trade restrictions, bifurcating global markets, and accelerating the transition to nearshoring and 'China Plus One' supply chain strategies.",
+      "key_risks": [
+        "Accelerated bifurcation of the global economy into competing geopolitical blocs, leading to reduced global trade volumes, inefficiencies, and slower overall economic growth.",
+        "Structural inflationary pressures as production shifts from highly optimized, low-cost offshore hubs to higher-cost domestic markets, compounded by labor shortages and infrastructure deficits.",
+        "Escalation of trade wars and retaliatory economic statecraft, including export controls on critical minerals, rare earths, and advanced technologies, which could severely disrupt global supply chains.",
+        "A global subsidy race that distorts free markets, encourages protectionism, and leads to inefficient capital allocation and potential violations of international trade norms.",
+        "Destabilization of emerging markets and developing economies that have historically relied on export-led manufacturing to integrate into the global economy."
+      ],
+      "opportunities": [
+        "Revitalization of domestic industrial bases in developed economies, driving job creation, infrastructure development, and local economic multipliers.",
+        "Accelerated investment and adoption of advanced manufacturing technologies—such as AI, robotics, and additive manufacturing—to offset higher domestic labor costs and increase productivity.",
+        "Enhanced national security and resilience by securing critical supply chains for defense, healthcare, and energy transition infrastructure against geopolitical shocks.",
+        "Rapid economic development and geopolitical leverage for emerging alternative manufacturing hubs (e.g., Mexico, India, Vietnam) as companies diversify away from China.",
+        "Development of new, localized supply chain ecosystems, allowing nations to set independent technological standards and reduce vulnerability to foreign coercion."
+      ]
+    },
+    "market_misconceptions": [
+      "The US possesses the skilled and unskilled labor capacity required to staff a manufacturing renaissance despite decades of atrophy in vocational trades.",
+      "The cost differential between domestic and offshore production can be permanently bridged by a combination of automation, tariffs, and government subsidies.",
+      "'Reshoring' strictly means returning production to the US mainland, rather than nearshoring to Mexico or friend-shoring to Southeast Asia.",
+      "The political will and capital required to rebuild foundational industrial ecosystems (e.g., component suppliers, rare earth processing) will persist across multiple election cycles.",
+      "Corporate boards will permanently prioritize supply chain resilience and redundancy over cost optimization and margin expansion."
+    ],
+    "portfolio_implications": {
+      "composite": 6.6,
+      "narrative_score": {
+        "duration": 8.0,
+        "conviction": 6.0,
+        "economic_impact": 8.0,
+        "valuation_support": 6.0,
+        "narrative_strength": 7.0,
+        "adoption_probability": 6.0,
+        "bottleneck_advantage": 7.0,
+        "market_awareness_gap": 5.0,
+        "second_order_effects": 8.0,
+        "competitive_advantage": 5.0
+      }
+    },
+    "psychological_analysis": {
+      "biases": [
+        "Recency Bias: Overweighting the acute supply chain shocks of 2020-2022 and assuming permanent systemic fragility, rather than recognizing a temporary pandemic-era anomaly.",
+        "Herd Mentality: Piling into industrial, semiconductor, and robotics ETFs based on pervasive Wall Street rhetoric rather than bottom-up project-level ROI analysis.",
+        "Overconfidence: Underestimating the immense complexity, regulatory friction, and time required to rebuild industrial ecosystems that took decades to offshore.",
+        "Narrative Fallacy: Constructing a clean, logical story of 'geopolitics dictates domestic revival' while ignoring the messy, contradictory realities of global cost arbitrage.",
+        "Availability Heuristic: Fixating on highly publicized mega-projects (e.g., TSMC Arizona) while ignoring the silent majority of firms quietly maintaining offshore production.",
+        "Confirmation Bias: Focusing on headline-grabbing factory announcements while ignoring high cancellation rates, delayed start dates, or scaled-back production capacity of those same projects."
+      ],
+      "consensus_view": "Reshoring is a structural, multi-decade investment tailwind driven by geopolitical decoupling and the need for supply chain resilience, guaranteeing a renaissance in US domestic manufacturing, industrial real estate, and automation technologies.",
+      "narrative_risks": [
+        "Labor shortages and wage inflation cap actual factory output, leading to stranded capital, delayed project completions, and scaled-back capacity.",
+        "Subsidy fatigue or shifting political winds result in a pullback of government incentives, exposing the uncompetitive baseline cost structure of domestic manufacturing.",
+        "The narrative conflates 'reshoring' with 'nearshoring,' meaning the primary capital flows benefit Mexico's industrial base rather than the US domestic market.",
+        "Advances in AI and additive manufacturing reduce the physical footprint required for production, depressing the expected demand for new industrial real estate.",
+        "A prolonged period of geopolitical détente or a global economic slowdown reduces the urgency for supply chain restructuring, causing companies to revert to offshoring to preserve margins."
+      ],
+      "hidden_assumptions": [
+        "The US possesses the skilled and unskilled labor capacity required to staff a manufacturing renaissance despite decades of atrophy in vocational trades.",
+        "The cost differential between domestic and offshore production can be permanently bridged by a combination of automation, tariffs, and government subsidies.",
+        "'Reshoring' strictly means returning production to the US mainland, rather than nearshoring to Mexico or friend-shoring to Southeast Asia.",
+        "The political will and capital required to rebuild foundational industrial ecosystems (e.g., component suppliers, rare earth processing) will persist across multiple election cycles.",
+        "Corporate boards will permanently prioritize supply chain resilience and redundancy over cost optimization and margin expansion."
+      ]
+    },
+    "adoption_curve_analysis": {
+      "stage": "Early Majority",
+      "growth_rate": "High (Double-digit annual growth in domestic manufacturing construction capex, particularly in computer/electronic components)",
+      "penetration_pct": 25,
+      "inflection_points": [
+        "The passage and subsequent disbursement of funds from the CHIPS Act and IRA in 2022-2023.",
+        "The widespread commercialization of low-cost, AI-vision-guided industrial robotics that drastically lower the operational expenditure of domestic factories.",
+        "A major geopolitical shock (e.g., a Taiwan blockade) that forces immediate, government-mandated supply chain decoupling.",
+        "Modernization of domestic infrastructure, specifically the expansion of grid capacity and the streamlining of industrial permitting processes."
+      ]
+    },
+    "investment_opportunities": [
+      {
+        "type": "direct",
+        "title": "Industrial Automation and Robotics Integration",
+        "thesis": "US labor costs are structurally higher than offshore alternatives. For reshoring to be economically viable, manufacturers must substitute labor with capital. This drives multi-year demand for robotics, machine vision, and factory automation software, particularly system integrators capable of retrofitting legacy US facilities.",
+        "awareness_gap": "Market underestimates the lag time and complexity of integrating automation into legacy US facilities, favoring pure-play robot makers over full-system integrators.",
+        "valuation_note": "Automation stocks trade at a premium, but integrators with sticky service contracts offer more reasonable multiples.",
+        "potential_losers": [
+          "Offshore contract manufacturers",
+          "Low-skill labor pools"
+        ],
+        "potential_winners": [
+          "Rockwell Automation",
+          "Fanuc",
+          "ABB",
+          "Cognex"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Electrification Grid Upgrades for Mega-Factory Load",
+        "thesis": "Reshoring semiconductor, EV, and battery plants creates massive new baseload power demands. The US grid is aging and ill-equipped for these localized surges. Utilities and grid infrastructure must be upgraded, creating a multi-decade capex cycle that will outlast the initial factory construction boom.",
+        "awareness_gap": "Attention is focused on the factories themselves, not the physical grid bottlenecks that will delay factory openings by years due to lack of transmission capacity.",
+        "valuation_note": "Electrical equipment manufacturers and grid constructors trade at reasonable valuations relative to the unprecedented backlog of grid modernization projects.",
+        "potential_losers": [
+          "Energy-intensive legacy manufacturers facing brownouts",
+          "Regions with constrained transmission capacity"
+        ],
+        "potential_winners": [
+          "Eaton",
+          "Quanta Services",
+          "Schneider Electric",
+          "Hubbell"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Critical Minerals Midstream Refining",
+        "thesis": "While domestic mining gets headlines, the real bottleneck is midstream refining (converting ore into battery-ready precursors), currently dominated by China. Regulatory shifts like the IRA mandate domestic/allied sourcing, forcing a build-out of US refining capacity to decouple supply chains.",
+        "awareness_gap": "Markets conflate mining with refining. The capital intensity and regulatory hurdles of midstream processing are underappreciated, creating a structural scarcity premium for early movers.",
+        "valuation_note": "Early-stage processors trade at depressed valuations due to high capex, but possess outsized optionality on IRA tax credits and defense procurement contracts.",
+        "potential_losers": [
+          "Chinese midstream refiners (long-term geopolitical risk)",
+          "EV OEMs without secured offtake agreements"
+        ],
+        "potential_winners": [
+          "MP Materials",
+          "Energy Fuels",
+          "USA Rare Earth"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Brownfield Site Remediation and Redevelopment",
+        "thesis": "Greenfield manufacturing sites face multi-year permitting delays. To meet reshoring timelines, companies are turning to brownfield sites, which require specialized environmental remediation before construction can begin. This creates a non-discretionary spend cycle for environmental engineering.",
+        "awareness_gap": "The narrative focuses on factory output, ignoring the prerequisite environmental compliance and soil/water remediation required to make former industrial sites usable.",
+        "valuation_note": "Environmental services trade at reasonable EV/EBITDA multiples despite surging backlog from CHIPS Act and IRA-funded projects.",
+        "potential_losers": [
+          "Greenfield developers facing NIMBY and permitting delays",
+          "Companies relying on immediate capacity expansion without site readiness"
+        ],
+        "potential_winners": [
+          "Clean Harbors",
+          "WM (Waste Management)",
+          "Tetra Tech"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Vocational Training and Skilled Trades Tech",
+        "thesis": "The US faces a severe shortage of CNC machinists, welders, and industrial maintenance technicians. Reshoring will fail without a parallel investment in workforce development. Companies providing vocational training, simulation software, and trade school infrastructure are critical enablers of the manufacturing renaissance.",
+        "awareness_gap": "Capital markets focus on hardware (machines) and software (AI), ignoring the human capital bottleneck that physically limits production output.",
+        "valuation_note": "Education and training stocks are out of favor, trading at historical lows despite secular tailwinds from industrial policy.",
+        "potential_losers": [
+          "Traditional 4-year universities (relative share of workforce)",
+          "Manufacturers unable to automate and facing labor shortages"
+        ],
+        "potential_winners": [
+          "Lincoln Educational Services",
+          "Autodesk",
+          "StrataTech (private)"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Domestic Intermodal and Short-Haul Freight",
+        "thesis": "Reshoring shifts supply chains from trans-Pacific ocean freight to regionalized, just-in-case domestic networks. This increases demand for short-haul trucking, rail intermodal, and localized warehousing, fundamentally altering domestic freight routing patterns.",
+        "awareness_gap": "The market views freight as purely cyclical, missing the structural shift from port-centric long-haul to distributed domestic intermodal networks.",
+        "valuation_note": "Rail and trucking stocks are cyclical but currently priced for a recession, ignoring the structural volume floor provided by reshoring.",
+        "potential_losers": [
+          "Trans-Pacific ocean freight carriers",
+          "West Coast mega-ports reliant on Chinese imports"
+        ],
+        "potential_winners": [
+          "J.B. Hunt Transport",
+          "CSX Corporation",
+          "Knight-Swift Transportation"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,879 @@
+{
+  "id": "dd7815d5-1ec6-43a4-84fa-8c9d75331e8d",
+  "narrative_id": "f94a1776-67c2-405c-b629-0b0f1611808a",
+  "version": 1,
+  "generated_at": "2026-06-21T12:13:44.563265Z",
+  "payload": {
+    "key_drivers": [
+      "AI-driven plasma control and simulation dramatically compressing iteration cycles for confinement optimization, with companies like Commonwealth Fusion Systems leveraging machine learning for real-time disruption prediction",
+      "Hyperscaler energy demand creating a willing customer pipeline—Microsoft, Google, and Amazon have all signed fusion power purchase agreements, effectively pre-funding commercialization milestones",
+      "High-temperature superconductor (REBCO) manufacturing scale-up enabling stronger, smaller, cheaper magnetic confinement, collapsing tokamak size and cost by 10-40x versus ITER-class designs",
+      "US DOE Milestone-Based Fusion Development Program allocating $46 million to accelerate private-sector pathways toward pilot plant demonstration by early 2030s",
+      "Strategic competition with China's fusion program (CFETR, EAST records) creating geopolitical urgency and defense funding flows through DARPA and ARPA-E",
+      "Tritium supply chain bottleneck—global inventory of ~25 kg declining as CANDU reactors retire—creating both a risk and an investment thesis around breeding blanket technologies",
+      "Inertial confinement breakthroughs at NIF opening a parallel pathway that could leverage existing nuclear weapons complex infrastructure and expertise",
+      "Regulatory clarity emerging: NRC determined in 2023 that fusion facilities require a less stringent regulatory framework than fission, reducing permitting timelines and capital risk"
+    ],
+    "value_capture": [
+      {
+        "roic": 2.0,
+        "role": "creator",
+        "notes": "Organizations like CEA, Commonwealth Fusion, TAE, Helion, and Zap Energy hold the foundational IP for confinement approaches (tokamak, stellarator, field-reversed configuration, magnetized target). Enormous R&D and capex with no commercial revenue yet. Value is created here but decades from monetization; ROIC is deeply negative today. Licensing models could emerge but technology risk remains extreme.",
+        "layer_name": "Reactor Design & Plasma Physics IP",
+        "pricing_power": 6.0,
+        "revenue_growth": 4.0,
+        "barriers_to_entry": 10.0,
+        "capital_intensity": 10.0,
+        "competitive_intensity": 7.0
+      },
+      {
+        "roic": 7.0,
+        "role": "capturer",
+        "notes": "REBCO (rare-earth barium copper oxide) superconducting tape is the critical bottleneck for compact tokamaks. Faraday Factory, SuperPower, and Theva produce at limited scale. Fusion reactors need kilometers of tape per plant. Few qualified suppliers, long qualification cycles, and proprietary manufacturing processes create durable pricing power. This is where near-term value accumulates regardless of which fusion design wins.",
+        "layer_name": "High-Temperature Superconducting Magnets & REBCO Tape",
+        "pricing_power": 8.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 9.0,
+        "capital_intensity": 7.0,
+        "competitive_intensity": 5.0
+      },
+      {
+        "roic": 6.0,
+        "role": "capturer",
+        "notes": "Tritium is the binding constraint—global supply is ~25kg, decaying at 5.5% annually. Self-sufficient breeding via lithium blankets is an unsolved engineering challenge with no commercial supplier base. Whoever solves closed-loop tritium breeding controls the fuel cycle and effectively gates every D-T fusion plant. Extreme barriers, near-monopoly dynamics, and existential necessity make this a prime value capture node.",
+        "layer_name": "Tritium Breeding Blankets & Fuel Cycle Systems",
+        "pricing_power": 9.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 10.0,
+        "capital_intensity": 8.0,
+        "competitive_intensity": 3.0
+      },
+      {
+        "roic": 6.0,
+        "role": "capturer",
+        "notes": "Tungsten-divertor and advanced composites must survive 10 MW/m² heat flux and 14 MeV neutron bombardment. Materials science is unsolved at scale. Limited qualified suppliers (e.g., specialized metallurgy firms). Consumable-like replacement cycle creates recurring revenue. Neutron degradation means first-wall components are the wear-parts of fusion—high repeat purchasing.",
+        "layer_name": "First-Wall Materials & Plasma-Facing Components",
+        "pricing_power": 7.0,
+        "revenue_growth": 6.0,
+        "barriers_to_entry": 8.0,
+        "capital_intensity": 7.0,
+        "competitive_intensity": 5.0
+      },
+      {
+        "roic": 4.0,
+        "role": "creator",
+        "notes": "Building a fusion plant resembles nuclear fission EPC—massive cost overruns, schedule risk, and thin margins. Bechtel, Fluor, and similar firms have experience but fusion-specific integration is greenfield. Value is created by enabling the plant but captured poorly due to fixed-price contract risk and enormous working capital demands.",
+        "layer_name": "Plant EPC & Integration",
+        "pricing_power": 4.0,
+        "revenue_growth": 5.0,
+        "barriers_to_entry": 7.0,
+        "capital_intensity": 9.0,
+        "competitive_intensity": 6.0
+      },
+      {
+        "roic": 4.0,
+        "role": "creator",
+        "notes": "Once operational, fusion electricity competes with fission, solar+storage, and gas. Levelized cost projections ($50-100/MWh) are unproven. Operators are price-takers in wholesale markets. Utility-like returns with nuclear-grade operational complexity. Baseload zero-carbon premium may emerge but is policy-dependent, not structural.",
+        "layer_name": "Power Plant Operations & Electricity Offtake",
+        "pricing_power": 3.0,
+        "revenue_growth": 4.0,
+        "barriers_to_entry": 6.0,
+        "capital_intensity": 9.0,
+        "competitive_intensity": 7.0
+      },
+      {
+        "roic": 5.0,
+        "role": "creator",
+        "notes": "Deuterium is extracted from seawater via Girdler sulfide process—effectively unlimited supply, commodity chemical processing. No scarcity, no pricing power. Existing heavy water producers (India, Canada, China) can supply. Irrelevant to value capture despite being essential fuel input.",
+        "layer_name": "Deuterium Extraction & Supply",
+        "pricing_power": 2.0,
+        "revenue_growth": 3.0,
+        "barriers_to_entry": 4.0,
+        "capital_intensity": 4.0,
+        "competitive_intensity": 8.0
+      },
+      {
+        "roic": 7.0,
+        "role": "capturer",
+        "notes": "Real-time plasma control (ML-driven disruption prediction, Thomson scattering diagnostics, pellet injection) is the software layer of fusion. Companies like Tokamak Energy and DeepMind have demonstrated AI control. High-margin, lower capital intensity than hardware layers, specialized expertise creates moat. Analogous to industrial automation—recurring software and services revenue with upgrade cycles.",
+        "layer_name": "Diagnostic, Control & Plasma Stability Systems",
+        "pricing_power": 7.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 8.0,
+        "capital_intensity": 5.0,
+        "competitive_intensity": 4.0
+      }
+    ],
+    "feedback_loops": [
+      {
+        "kind": "reinforcing",
+        "strength": 8.5,
+        "description": "Fusion energy development is heavily dependent on AI for plasma control, real-time optimization of magnetic confinement, and predictive modeling of reactor dynamics. AI accelerates fusion research timelines by enabling digital twins of plasma behavior and optimizing materials discovery for reactor walls. Conversely, fusion's promise of abundant baseload power addresses the escalating energy demands of large-scale AI compute infrastructure.",
+        "target_narrative": "Artificial Intelligence"
+      },
+      {
+        "kind": "resource_competition",
+        "strength": 6.0,
+        "description": "Fusion and fission compete for overlapping talent pools, regulatory attention, nuclear supply chain capacity, and public capital allocation. While technically distinct, both draw from the same specialized workforce in plasma physics, radiation engineering, and nuclear materials. Investor and government funding directed toward fusion may cannibalize fission deployment capital, particularly in early-stage venture and DOE budget allocations.",
+        "target_narrative": "Nuclear Renaissance"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.5,
+        "description": "Fusion offers a theoretical pathway to zero-carbon, high-density baseload power without long-lived radioactive waste or fuel scarcity constraints. If achieved at commercial scale, it could decarbonize hard-to-abate sectors including steel, cement, and desalination. The narrative reinforces climate adaptation by potentially enabling energy-intensive carbon removal and water security infrastructure.",
+        "target_narrative": "Climate Adaptation"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.0,
+        "description": "Fusion energy could dramatically lower the cost of industrial process heat and electricity, reshoring energy-intensive manufacturing to regions with fusion capacity. It enables new industrial paradigms such as synthetic fuel production, green hydrogen at scale, and energy-intensive mineral processing that current energy economics preclude. Fusion directly supports the reindustrialization thesis by removing energy cost as a binding constraint.",
+        "target_narrative": "Reindustrialization"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.0,
+        "description": "Fusion fundamentally inverts resource scarcity logic for energy by using deuterium from seawater and lithium-derived tritium as fuel, with sufficient supply for millions of years. It also enables energy-intensive resource extraction from low-grade ores and seawater, potentially alleviating scarcity in critical minerals and fresh water through desalination.",
+        "target_narrative": "Resource Scarcity"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 6.5,
+        "description": "Fusion propulsion represents a transformative capability for deep space missions, offering specific energy densities orders of magnitude beyond chemical rockets. Compact fusion concepts could enable rapid transit to Mars and outer planets, power lunar and Martian settlements, and support asteroid mining operations. The space economy provides a unique use case where fusion's high energy density justifies enormous capital costs.",
+        "target_narrative": "Space Economy"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 6.0,
+        "description": "Fusion research produces dual-use capabilities in high-energy physics, pulsed power systems, and radiation-hardened materials directly applicable to directed energy weapons and autonomous defense platforms. Compact fusion power could enable long-endurance autonomous vehicles and forward-deployed bases independent of fuel logistics chains. National fusion programs are increasingly framed within strategic competition with China and Russia.",
+        "target_narrative": "Defense Autonomy"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 5.0,
+        "description": "Fusion reactor maintenance requires advanced robotics capable of operating in extreme radiation environments, driving innovation in remote manipulation, teleoperation, and autonomous inspection systems. These robotic capabilities transfer to other hazardous environments including nuclear fission, deep sea, and space. Conversely, robotics advances from other domains accelerate fusion reactor development and maintenance protocols.",
+        "target_narrative": "Robotics"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 3.5,
+        "description": "Fusion-derived neutron sources enable advanced medical isotope production and neutron therapy for cancer treatment. Abundant fusion energy could power energy-intensive biomanufacturing including precision fermentation and vertical bioreactors at scales currently uneconomic. The interaction is real but secondary, as biotech's energy demands are not yet a primary binding constraint.",
+        "target_narrative": "Biotechnology Revolution"
+      }
+    ],
+    "hidden_effects": [
+      {
+        "order": "hidden",
+        "description": "Emergence of a tritium supply bottleneck as a new strategic dependency, with only a handful of fission reactors globally producing tritium as a byproduct, creating a cartel-like control point until self-breeding fusion blankets mature."
+      },
+      {
+        "order": "hidden",
+        "description": "Neutron degradation of reactor walls creating a novel materials science and radioactive waste challenge, as the 14 MeV neutron flux from deuterium-tritium fusion embrittles structural alloys faster than anticipated, potentially requiring reactor rebuild cycles that undermine economics."
+      },
+      {
+        "order": "hidden",
+        "description": "Psychological and cultural shift in humanity's relationship to scarcity, as the first generation to grow up with effectively unlimited energy may reorient from conservation ethics toward expansionist, post-scarcity value systems with unpredictable social and political consequences."
+      },
+      {
+        "order": "hidden",
+        "description": "Concentration of fusion IP and expertise in a small number of national labs and private ventures creating a new techno-elitist power structure, where regulatory capture around fusion safety, siting, and tritium handling becomes a lever for excluding competitors and entrenching incumbents."
+      }
+    ],
+    "potential_losers": [
+      [
+        "Fusion startups without secured multi-year HTS supply contracts",
+        "Legacy low-temperature superconductor (LTS) suppliers whose technology is insufficient for compact fusion",
+        "Government fusion programs (ITER) locked into older Nb3Sn magnet technology"
+      ],
+      [
+        "Fusion startups with no tritium breeding strategy in their reactor architecture",
+        "CANDU reactor operators selling tritium reserves prematurely at current prices",
+        "Investors in D-T fusion approaches that assume external tritium supply will be available"
+      ],
+      [
+        "Fusion startups raising at $1B+ valuations with 2035+ commercial timelines",
+        "Renewables-only investors who will face baseload power gaps as fusion delays persist",
+        "Natural gas bridge-fuel advocates whose window narrows as advanced fission deploys"
+      ],
+      [
+        "Fusion reactor designs with inaccessible first-wall components requiring full disassembly for replacement",
+        "Conventional steel and metals companies without neutron-resistant alloy capabilities",
+        "China-dependent tungsten supply chains in Western fusion programs (geopolitical risk)"
+      ],
+      [
+        "Fusion startups in jurisdictions with no regulatory framework (most of EU, Asia outside UK/Japan)",
+        "Companies treating regulation as a compliance cost rather than a strategic moat",
+        "Anti-nuclear advocacy groups whose fission-focused campaigns are irrelevant to fusion's distinct risk profile"
+      ],
+      [
+        "Fusion startups whose reactor designs produce heat at temperatures incompatible with efficient power conversion",
+        "Conventional steam turbine manufacturers whose technology is suboptimal for fusion thermal profiles",
+        "Investors in fusion companies that have not begun power conversion system engineering"
+      ],
+      [
+        "Pure-play renewables investors who assume nuclear will remain politically constrained",
+        "Natural gas infrastructure investors whose assets face accelerated stranding as nuclear sentiment improves",
+        "ESG frameworks that exclude nuclear—these will face pressure to revise as fusion normalizes nuclear technology"
+      ]
+    ],
+    "narrative_summary": "Fusion energy represents the most speculative and asymmetric sub-narrative within the broader Nuclear Renaissance. While fission enjoys regulatory tailwinds and proven commercialization, fusion remains in a pre-revenue, science-to-engineering transition phase. The narrative is driven by a convergence of private capital (over $7 billion deployed across 40+ fusion startups), AI-enabled plasma modeling breakthroughs, and national security imperatives—particularly the US-China fusion race, where both governments view fusion as a strategic technology for energy dominance and military applications. The December 2022 NIF net-gain shot and subsequent replications shifted the conversation from 'if' to 'when and how much,' though viable grid-connected fusion power remains 5-15 years away under optimistic scenarios.\n\nThe investment thesis is bifurcated: near-term opportunities exist in enabling technologies—high-temperature superconductors (REBCO tape), tritium breeding systems, neutron diagnostics, and advanced materials—while the ultimate payoff depends on which confinement approach (magnetic tokamak, stellarator, inertial confinement, magneto-inertial) achieves Q-engineering > 1 at commercial scale. The recent surge in data center electricity demand from AI training clusters has injected urgency into the fusion timeline, as hyperscalers increasingly view fusion as the only baseload carbon-free source that could theoretically scale without fuel constraints or proliferation concerns. However, the gap between scientific breakeven and commercial viability remains enormous, with unresolved challenges in tritium supply chains, first-wall materials degradation, and capital cost trajectories that must fall by orders of magnitude.",
+    "potential_winners": [
+      [
+        "Faraday Factory Ukrainian",
+        "Theva Dünnschichttechnik",
+        "MetOx Technologies",
+        "Sumitomo Electric (HTS wire division)",
+        "Commonwealth Fusion Systems (vertical HTS integration)",
+        "Bruker Corporation (superconducting materials)"
+      ],
+      [
+        "Canadian Nuclear Laboratories (tritium inventory and handling expertise)",
+        "UK Atomic Energy Authority (breeding blanket R&D via STEP program)",
+        "Karlsruhe Institute of Technology (HCPB blanket design)",
+        "Lithium Americas and other lithium producers positioned for isotope-grade supply",
+        "Fusion companies with proprietary blanket designs (TAE Technologies, CFS)"
+      ],
+      [
+        "Centrus Energy (LEU) — sole US HALEU fuel producer",
+        "Oklo (fast reactor developer, now public via SPAC)",
+        "NuScale Power (SMR design certification)",
+        "TerraPower (Natrium reactor, Bill Gates-backed)",
+        "BWX Technologies (nuclear component manufacturing)",
+        "Cameco (uranium fuel cycle)"
+      ],
+      [
+        "Wolf Minerals / Tungsten mining restart projects outside China",
+        "Global Tungsten & Powders Corp",
+        "Sandvik (specialized materials and powder metallurgy)",
+        "AT&M (Advanced Technology & Materials, China — ODS steel development)",
+        "Morgan Advanced Materials (ceramic composites for fusion environments)",
+        "National labs with materials testing infrastructure (ORNL, Culham)"
+      ],
+      [
+        "Commonwealth Fusion Systems (first to engage NRC on fusion-specific licensing)",
+        "Tokamak Energy (UK regulatory engagement via STEP)",
+        "Jacobs Engineering / Jacobs Solutions (nuclear licensing consulting)",
+        "BWX Technologies (nuclear component certification expertise)",
+        "EnergySolutions (nuclear waste and regulatory services)",
+        "Holtec International (licensing and regulatory affairs infrastructure)"
+      ],
+      [
+        "Echogen Power Systems (sCO2 power cycles)",
+        "8 Rivers Capital (Allam Cycle and sCO2 expertise)",
+        "Baker Hughes (turbomachinery and sCO2 development)",
+        "Howden Group (industrial heat exchangers)",
+        "Haynes International (high-temperature alloy specialty steels for heat exchangers)",
+        "Solar turbine / Caterpillar (industrial turbomachinery adaptable to sCO2)"
+      ],
+      [
+        "Cameco (uranium producer, nuclear fuel cycle)",
+        "Centrus Energy (HALEU and enrichment)",
+        "Sprott Physical Uranium Trust (uranium price exposure)",
+        "Energy Fuels (uranium and rare earths)",
+        "Nuclear engineering universities and workforce programs (MIT, Georgia Tech, Sheffield)",
+        "General Electric / GE Vernova (nuclear turbine and grid infrastructure)"
+      ]
+    ],
+    "dependency_network": [
+      {
+        "type": "resource",
+        "layer": "capital",
+        "weight": 9.5,
+        "description": "Fusion requires massive sustained capital for multi-decade R&D timelines; private fusion startups have raised ~$7B but commercialization demands tens of billions more for pilot plants and DEMO reactors"
+      },
+      {
+        "type": "resource",
+        "layer": "skilled_labor",
+        "weight": 9.0,
+        "description": "Acute shortage of plasma physicists, nuclear engineers, superconducting magnet specialists, and tritium handling experts; tiny talent pool relative to fission, with ITER and national labs competing with private ventures"
+      },
+      {
+        "type": "input",
+        "layer": "superconducting_magnets",
+        "weight": 9.5,
+        "description": "REBCO high-temperature superconducting tape is the critical enabler for compact tokamaks (Commonwealth Fusion, Tokamak Energy); supply chain is nascent with limited global manufacturing capacity for yttrium-barium-copper-oxide tape"
+      },
+      {
+        "type": "input",
+        "layer": "tritium_fuel_cycle",
+        "weight": 9.0,
+        "description": "Global tritium inventory is ~25kg, mostly from CANDU reactors declining as plants retire; breeding blankets using lithium-6 are unproven at scale; first-generation D-T fusion plants face a fuel cliff without closed-loop breeding"
+      },
+      {
+        "type": "input",
+        "layer": "deuterium",
+        "weight": 4.0,
+        "description": "Abundant from seawater extraction; not a binding constraint but requires specialized heavy water production infrastructure"
+      },
+      {
+        "type": "input",
+        "layer": "lithium",
+        "weight": 7.0,
+        "description": "Required for tritium breeding blankets; lithium-6 enrichment capability is limited globally and tied to thermonuclear weapons programs, creating proliferation-adjacent supply constraints"
+      },
+      {
+        "type": "input",
+        "layer": "tungsten",
+        "weight": 6.5,
+        "description": "Primary plasma-facing component material; divertor and first-wall armor require specialized tungsten grades resistant to neutron embrittlement and helium blistering; supply concentrated in China (~80% of global production)"
+      },
+      {
+        "type": "input",
+        "layer": "beryllium",
+        "weight": 5.5,
+        "description": "Used as neutron multiplier in breeding blankets and first-wall armor; supply is highly concentrated, toxic to machine, and subject to export controls"
+      },
+      {
+        "type": "input",
+        "layer": "rare_earth_elements",
+        "weight": 7.0,
+        "description": "Yttrium and other REEs for superconducting tape and laser ignition optics; Chinese dominance of REE processing creates geopolitical supply risk"
+      },
+      {
+        "type": "input",
+        "layer": "electricity",
+        "weight": 7.5,
+        "description": "Reactors are net electricity consumers during R&D and startup phases; grid connection for pilot plants requires 100-500MW capacity; data center grid competition (per FERC order) intensifies siting challenges"
+      },
+      {
+        "type": "input",
+        "layer": "cryogenics",
+        "weight": 8.0,
+        "description": "Superconducting magnets require liquid helium cooling systems; helium-4 supply is finite and subject to federal reserve depletion; large-scale cryoplant engineering is specialized and low-volume"
+      },
+      {
+        "type": "input",
+        "layer": "vacuum_systems",
+        "weight": 7.0,
+        "description": "Ultra-high vacuum vessels with tolerances measured in microns across 10+ meter spans; only a handful of global fabricators can produce ITER-scale vacuum chambers"
+      },
+      {
+        "type": "input",
+        "layer": "neutron_resistant_materials",
+        "weight": 8.5,
+        "description": "14 MeV neutron flux degrades structural materials far faster than fission; reduced-activation ferritic-martensitic steels (e.g., EUROFER97) and silicon carbide composites are not yet qualified or commercially produced"
+      },
+      {
+        "type": "input",
+        "layer": "computing_and_simulation",
+        "weight": 7.5,
+        "description": "Plasma turbulence simulation, magnet design optimization, and AI-based plasma control require HPC and GPU clusters; competing demand from AI data centers constrains access and drives up costs"
+      },
+      {
+        "type": "constraint",
+        "layer": "regulatory_framework",
+        "weight": 8.5,
+        "description": "No fusion-specific regulatory regime exists in most jurisdictions; NRC has begun rulemaking but fusion sits ambiguously between nuclear and conventional energy regulation; licensing pathways for first-of-a-kind plants are undefined"
+      },
+      {
+        "type": "constraint",
+        "layer": "nuclear_proliferation_treaties",
+        "weight": 6.0,
+        "description": "Tritium and lithium-6 enrichment are dual-use with weapons programs; IAEA safeguards frameworks for fusion fuel cycles are underdeveloped; export controls on sensitive technologies may restrict international collaboration"
+      },
+      {
+        "type": "constraint",
+        "layer": "grid_infrastructure",
+        "weight": 7.0,
+        "description": "Fusion plants need transmission interconnection comparable to fission plants; FERC's data center grid overhaul signals broader grid allocation conflicts; queue times for interconnection now exceed 5 years in major ISOs"
+      },
+      {
+        "type": "input",
+        "layer": "water_cooling",
+        "weight": 5.5,
+        "description": "Thermal management for auxiliary systems, cryoplant reject heat, and power conversion; less than fission per MWh but still significant for GW-scale plants; siting near water bodies or dry cooling required"
+      },
+      {
+        "type": "resource",
+        "layer": "specialized_construction",
+        "weight": 7.5,
+        "description": "Reactor assembly requires precision heavy engineering, seismic isolation, and hot cell facilities for remote maintenance; very few construction firms have nuclear-grade experience, and the supply chain has atrophied since the 1980s"
+      },
+      {
+        "type": "input",
+        "layer": "remote_maintenance_robotics",
+        "weight": 7.5,
+        "description": "Activated reactor internals must be serviced entirely by remote manipulators; diverter cassette replacement and blanket module exchange require robotic systems that do not yet exist at required scale and reliability"
+      },
+      {
+        "type": "constraint",
+        "layer": "geopolitical_cooperation",
+        "weight": 6.5,
+        "description": "ITER demonstrates both the value and fragility of multinational fusion programs; US-China tensions restrict scientific exchange and dual-use technology transfer; national security concerns may fragment supply chains"
+      },
+      {
+        "type": "constraint",
+        "layer": "insurance_and_liability",
+        "weight": 6.0,
+        "description": "No actuarial basis exists for fusion plant risk; conventional nuclear insurance frameworks (Price-Anderson equivalent) do not clearly apply; uninsurable risk may block private capital deployment without government backstops"
+      },
+      {
+        "type": "constraint",
+        "layer": "public_perception",
+        "weight": 4.5,
+        "description": "Fusion benefits from positive public sentiment vs. fission but 'nuclear' branding creates siting friction; tritium release concerns and NIMBY dynamics will emerge as plants are proposed"
+      },
+      {
+        "type": "constraint",
+        "layer": "supply_chain_maturity",
+        "weight": 8.0,
+        "description": "Most fusion-critical components are produced at laboratory scale, not industrial scale; transitioning from single-unit scientific prototypes to serial manufacturing of magnets, blankets, and vacuum vessels is an underappreciated bottleneck"
+      },
+      {
+        "type": "constraint",
+        "layer": "energy_payback_validation",
+        "weight": 8.5,
+        "description": "No fusion device has yet achieved net electricity (Q_electric > 1); NIF achieved scientific breakeven (Q_plasma > 1) but with orders-of-magnitude gap to engineering and commercial breakeven; this is the existential technical milestone"
+      }
+    ],
+    "future_bottlenecks": [
+      {
+        "name": "First-wall and divertor material degradation under neutron bombardment",
+        "tier": "emerging",
+        "cause": "D-T fusion produces 14.1 MeV neutrons that degrade structural materials far faster than fission neutrons. Tungsten divertors and advanced steels/ODS alloys have not been tested under realistic fusion neutron spectra for sustained periods. IFMIF-DONES neutron source is still under construction. Materials that survive 10-20 dpa may not survive 50-100 dpa needed for commercial viability.",
+        "losers": [
+          "D-T tokamak/stellarator designs with unqualified first-wall materials",
+          "Investors expecting pilot-to-commercial timelines under 10 years"
+        ],
+        "winners": [
+          "Advanced materials companies (ODS steel, tungsten composites, liquid metal walls)",
+          "IFMIF-DONES and similar neutron source facilities",
+          "Companies pursuing aneutronic or low-neutron fusion concepts (p-B11, D-He3)"
+        ],
+        "severity": 9.0,
+        "time_horizon": "3-7 years for first sustained high-power fusion shots to expose the problem; 10+ years for materials qualification",
+        "market_awareness": "Known in materials science community but largely hand-waved by investors and startup pitch decks that focus on plasma physics milestones."
+      },
+      {
+        "name": "Pulse duration and plasma sustainment gap",
+        "tier": "emerging",
+        "cause": "Most private fusion approaches have demonstrated plasmas for milliseconds to seconds. Commercial fusion requires sustained steady-state or high-duty-cycle operation (minutes to hours to continuous). The physics of current drive, bootstrap current sustainment, and disruption avoidance at reactor-relevant parameters remains unproven. EAST and KSTAR have made progress but at far lower fields/temperatures than needed.",
+        "losers": [
+          "Tokamak designs relying on inductive current drive without robust non-inductive sustainment plan",
+          "Investors extrapolating linearly from short-pulse demonstrations"
+        ],
+        "winners": [
+          "Companies with disruption prediction/mitigation AI (relevant to GM's AI data center push and fusion overlap)",
+          "Approaches with inherently stable configurations (field-reversed configurations, magnetic mirrors, stellarators)",
+          "Power electronics and energy storage companies bridging pulsed-to-steady-state"
+        ],
+        "severity": 8.0,
+        "time_horizon": "2-5 years for first multi-second high-performance shots; 5-10 years for steady-state demonstration",
+        "market_awareness": "Partially understood—investors track 'plasma duration' milestones but underestimate the non-linear difficulty of scaling from seconds to steady-state, especially disruption mitigation."
+      },
+      {
+        "name": "Grid integration and energy conversion system design",
+        "tier": "emerging",
+        "cause": "Fusion power plants will produce heat, not electricity directly. The balance-of-plant (steam turbines, heat exchangers, tritium-extraction loops) represents 30-40% of capital cost but receives minimal attention. FERC's data center grid rule overhaul signals grid integration friction for any new large generation. Fusion's pulsed nature (for some designs) and ramp-rate limitations create integration challenges that differ from both fission and renewables.",
+        "losers": [
+          "Fusion designs with poor thermal efficiency or complex heat extraction",
+          "Utilities unprepared for fusion-specific grid integration requirements"
+        ],
+        "winners": [
+          "Advanced Brayton/sCO2 cycle developers",
+          "Heat exchanger companies with tritium-compatible designs",
+          "Grid operators and utilities that build fusion-ready interconnection frameworks"
+        ],
+        "severity": 6.0,
+        "time_horizon": "3-7 years as pilot plants approach grid connection",
+        "market_awareness": "Low. Most fusion investment theses focus on plasma physics and ignore balance-of-plant economics and grid interconnection realities."
+      }
+    ],
+    "hidden_constraints": [
+      {
+        "name": "Capital intensity cliff between pilot demonstration and first commercial plant",
+        "tier": "hidden",
+        "cause": "Current private fusion funding (~$7-8B total globally) supports pilot demonstrations costing $200M-$1B each. The first commercial-scale plant will cost $5-15B. The gap between 'we demonstrated net energy' and 'we built a power plant' requires 10-50x more capital than has been raised to date. No fusion company has a credible financing pathway for this scale that doesn't involve sovereign backing. The venture model that funded AI and software cannot bridge this gap.",
+        "losers": [
+          "Venture-backed fusion startups without government backing or credible scale-up financing",
+          "Retail investors in fusion SPACs or pre-revenue public vehicles",
+          "Designs requiring greenfield $10B+ single-asset builds"
+        ],
+        "winners": [
+          "Sovereign wealth funds and national governments positioned as sole credible financiers",
+          "Existing nuclear EPC firms (Bechtel, Fluor) with megaproject experience",
+          "Fusion designs with genuinely modular/scalable architecture that avoids single megaproject risk"
+        ],
+        "severity": 10.0,
+        "time_horizon": "5-10 years when first pilot demonstrations succeed and the capital cliff becomes visible",
+        "market_awareness": "Largely ignored. Investors celebrate physics milestones without modeling the capital requirements for commercial scale-up. The comparison to fission's cost overruns (Vogtle, Flamanville) is rarely made but directly relevant."
+      },
+      {
+        "name": "Tritium handling and radiological safety workforce deficit",
+        "tier": "hidden",
+        "cause": "Tritium is a low-energy beta emitter but biologically mobile (replaces hydrogen in water/organic molecules). Safe handling at kg-scale (needed for commercial fusion) requires specialized expertise that exists in only a handful of national labs and CANDU operators. The workforce is aging and retiring. No university program produces fusion-specific tritium handling specialists at scale. This is a human capital bottleneck, not a physics or engineering one.",
+        "losers": [
+          "Startups without tritium-qualified personnel planning to 'hire when needed'",
+          "Jurisdictions without tritium handling regulatory infrastructure or trained workforce"
+        ],
+        "winners": [
+          "National labs with tritium handling expertise (Savannah River, LLNL, UKAEA Culham)",
+          "Universities establishing fusion tritium science programs early",
+          "Companies with ex-CANDU and weapons-complex tritium experts on staff"
+        ],
+        "severity": 7.0,
+        "time_horizon": "5-10 years as pilot plants begin tritium operations",
+        "market_awareness": "Almost zero. Workforce and operational safety expertise is treated as a 'solve later' problem despite being a potential multi-year rate-limiter on commissioning."
+      },
+      {
+        "name": "Geopolitical concentration of rare materials and IP creating strategic vulnerability",
+        "tier": "hidden",
+        "cause": "Fusion's supply chain concentrates on: REBCO tape (limited suppliers in US, Germany, Japan, Russia), lithium-6 enrichment (only US and Russia have demonstrated capability), high-purity beryllium for blankets (US, China, Kazakhstan), and specialized neutron diagnostics. China's fusion program (CFETR, EAST) is advancing rapidly with state backing. Export controls on dual-use nuclear materials could fragment the fusion supply chain along geopolitical lines, mirroring what happened with semiconductors and rare earths.",
+        "losers": [
+          "Fusion programs dependent on cross-border supply of controlled materials",
+          "Small nations without domestic supply chain or allied access",
+          "Companies with IP concentrated in jurisdictions subject to potential export controls"
+        ],
+        "winners": [
+          "Nations with domestic supply chains for all critical fusion inputs (US, China)",
+          "Companies with geographically diversified supply chains",
+          "Allied nation blocs (AUKUS, Five Eyes) coordinating fusion supply chains"
+        ],
+        "severity": 7.0,
+        "time_horizon": "5-10 years as fusion transitions from R&D to commercial deployment and strategic competition intensifies",
+        "market_awareness": "Very low. Fusion is still framed as 'energy for everyone' without recognition that key inputs and IP may become strategically contested, especially given South Hormuz shipping risks and broader energy security concerns."
+      }
+    ],
+    "current_bottlenecks": [
+      {
+        "name": "Tritium fuel supply chain immaturity",
+        "tier": "current",
+        "cause": "Fusion reactors using deuterium-tritium fuel cycles require tritium breeding blankets that have never been demonstrated at scale; global tritium inventory is ~25kg, declining as CANDU reactors retire, and no commercial breeding loop has been validated.",
+        "losers": [
+          "Reactors designs assuming externally-sourced tritium without breeding strategy",
+          "Investors in fusion concepts with fuel cycles that cannot self-sustain tritium"
+        ],
+        "winners": [
+          "Lithium-6 enrichment companies",
+          "Existing tritium holders (national labs, CANDU operators)",
+          "Companies developing solid/liquid breeding blanket IP (e.g., Commonwealth Fusion Systems, Tokamak Energy)"
+        ],
+        "severity": 9.0,
+        "time_horizon": "0-3 years for first pilot demonstrations; 10-15 years for scaled breeding",
+        "market_awareness": "Moderately known among specialists; underappreciated by generalist investors who assume fuel is 'infinite' like deuterium from seawater."
+      },
+      {
+        "name": "High-temperature superconducting (HTS) magnet manufacturing scale-up",
+        "tier": "current",
+        "cause": "REBCO tape production—the backbone of compact tokamak designs—is bottlenecked by limited manufacturing capacity, inconsistent quality at scale, and dependence on rare earth supply chains (gadolinium, yttrium). Only a handful of suppliers (Faraday Factory, SuperPower, Theva) can produce tape at the length/quality needed.",
+        "losers": [
+          "Fusion startups without secured HTS supply agreements",
+          "Conventional low-temperature superconducting magnet dependent designs losing competitive advantage"
+        ],
+        "winners": [
+          "REBCO tape manufacturers scaling capacity",
+          "Rare earth miners with gadolinium/yttrium byproduct streams",
+          "Vertical integrators controlling magnet-to-reactor supply chain"
+        ],
+        "severity": 8.0,
+        "time_horizon": "1-4 years for capacity expansion to meet pilot plant demand",
+        "market_awareness": "Known to deep-tech investors but the severity of the manufacturing bottleneck is underappreciated; most assume REBCO is 'solved' after SPARC magnet demonstrations."
+      },
+      {
+        "name": "Regulatory and licensing framework absence",
+        "tier": "current",
+        "cause": "No jurisdiction has a purpose-built regulatory pathway for fusion power plants. The U.S. NRC decided in 2024 to regulate fusion under a risk-informed approach separate from fission, but no actual license has been issued. IAEA guidance remains non-binding. Grid interconnection rules (highlighted by FERC's data center grid order) don't contemplate fusion-specific characteristics.",
+        "losers": [
+          "Fusion companies in jurisdictions with slow regulatory adaptation",
+          "Investors assuming fission-like permitting timelines will apply"
+        ],
+        "winners": [
+          "Jurisdictions that move first on fusion-specific regulation (UK, US)",
+          "Consulting/legal firms building fusion regulatory expertise",
+          "Existing nuclear operators with licensed sites adaptable to fusion"
+        ],
+        "severity": 7.0,
+        "time_horizon": "2-5 years for first regulatory frameworks to crystallize; longer for international harmonization",
+        "market_awareness": "Acknowledged as a risk but timeline optimism is pervasive; many assume it will be 'easier than fission' without recognizing the novelty of tritium handling, neutron activation, and first-wall materials."
+      }
+    ],
+    "first_order_effects": [
+      {
+        "order": "1",
+        "description": "Near-limitless baseload electricity at marginal cost approaching zero, decoupling energy production from fuel supply chains and rendering fossil-fuel extraction for power generation economically obsolete."
+      },
+      {
+        "order": "1",
+        "description": "Dramatic reduction in greenhouse gas emissions as fusion plants replace coal, gas, and eventually fission facilities, with the only operational byproduct being helium and low-level neutron activation of reactor components."
+      },
+      {
+        "order": "1",
+        "description": "Massive capital reallocation away from fossil fuel exploration, refining, and pipeline infrastructure toward fusion plant construction, tritium breeding systems, superconducting magnet manufacturing, and plasma diagnostics."
+      }
+    ],
+    "regulatory_analysis": {
+      "summary": "The regulatory landscape for fusion energy is transitioning from experimental research oversight to commercial power generation frameworks. Unlike fission, fusion does not pose risks of nuclear meltdown, criticality, or long-lived high-level radioactive waste. Consequently, regulators like the US Nuclear Regulatory Commission (NRC) are moving to classify fusion facilities under 'byproduct material' frameworks (10 CFR Part 30) rather than the stringent 'utilization facility' rules (10 CFR Part 50) governing fission. Internationally, the International Atomic Energy Agency (IAEA) is spearheading the development of fusion-specific safety standards. The future regulatory regime will likely focus heavily on tritium handling, neutron-activated material disposal, and site decommissioning, while largely avoiding the proliferation and criticality concerns of fission. However, the system faces friction from jurisdictional fragmentation and the risk of public conflation with fission, which could trigger politically motivated, overly burdensome regulations.",
+      "catalysts": [
+        "IAEA publication of finalized, fusion-specific safety standards, providing a unified international baseline for national regulators to adopt.",
+        "US NRC finalizing rulemaking to regulate fusion under a byproduct material framework, establishing a clear, less burdensome path for commercial fusion licensing.",
+        "Successful grid-connected demonstration plants (e.g., late 2020s/early 2030s) forcing regulators to rapidly operationalize and finalize commercial frameworks.",
+        "Bilateral treaties for tritium supply and radioactive waste management between allied nations (e.g., US, UK, Japan, South Korea) to streamline the fuel cycle.",
+        "Public-private partnerships and government-backed fusion strategies (e.g., US Bold Decadal Vision) that mandate regulatory clarity as a condition for funding."
+      ],
+      "key_risks": [
+        "Jurisdictional fragmentation: Disparate and unharmonized regulatory frameworks across the US, UK, EU, and Asia could delay global deployment, complicate cross-border investment, and increase compliance costs.",
+        "Public perception and the 'nuclear' stigma: Misalignment between public fear of 'nuclear' energy and the actual radiological safety profile of fusion could lead to overly stringent, fission-equivalent regulations.",
+        "Tritium handling and supply constraints: Overly burdensome regulations on tritium breeding, transport, and containment could bottleneck commercial viability and scale-up.",
+        "Dual-use export controls: Advanced lasers, superconducting magnets, and tritium handling technologies may trigger stringent export controls, stifling international supply chains and collaboration.",
+        "Regulatory lag: The pace of regulatory framework finalization may fail to keep up with the rapid technological advancements of private fusion startups, creating investment uncertainty."
+      ]
+    },
+    "third_order_effects": [
+      {
+        "order": "3",
+        "description": "Reversal of water scarcity as a geopolitical flashpoint, as cheap desalination makes arid regions agriculturally and industrially self-sufficient, undermining tensions along the Nile, Mekong, Indus, and Tigris-Euphrates basins."
+      },
+      {
+        "order": "3",
+        "description": "Acceleration of AI and compute infrastructure buildout, as the binding constraint on data center expansion shifts from energy availability and cooling to fusion plant deployment schedules and grid interconnection capacity."
+      },
+      {
+        "order": "3",
+        "description": "Fundamental restructuring of global power projection, as nations with indigenous fusion capability achieve strategic autonomy in energy, reducing the salience of chokepoints like the Strait of Hormuz and Malacca in military planning."
+      }
+    ],
+    "second_order_effects": [
+      {
+        "order": "2",
+        "description": "Collapse of petrostate geopolitical leverage as oil and gas export revenues crater, destabilizing regimes in Russia, Saudi Arabia, Iran, Venezuela, and Nigeria that depend on hydrocarbon rents for fiscal survival and social cohesion."
+      },
+      {
+        "order": "2",
+        "description": "Economic viability of energy-intensive processes previously impractical: large-scale seawater desalination, direct air carbon capture, vertical farming, green hydrogen and ammonia synthesis, and asteroid mining propulsion."
+      },
+      {
+        "order": "2",
+        "description": "Reshoring of heavy industry and manufacturing to regions with fusion capacity, as energy cost asymmetry that drove offshoring to resource-rich nations inverts, restructuring global trade flows and supply chain geography."
+      }
+    ],
+    "confidence_assessment": {
+      "composite": 6.2,
+      "conviction": 3.0
+    },
+    "geopolitical_analysis": {
+      "summary": "Fusion energy represents a potential paradigm shift in global power dynamics by offering a virtually limitless, clean, and secure energy source decoupled from geographically concentrated resource extraction. If commercialized, it could diminish the geopolitical leverage of petrostates and fundamentally redefine energy security. However, the race to achieve viable fusion has ignited a new technological competition, primarily between the US, China, and the EU. Control over critical fusion supply chains (such as high-temperature superconductors, tritium breeding, and lithium-6), intellectual property, and the establishment of regulatory frameworks will dictate future geopolitical influence, replacing traditional oil geopolitics with 'fusion geopolitics.'",
+      "key_risks": [
+        "Winner-takes-all dynamics where a single nation or bloc achieves commercial fusion first, gaining overwhelming economic and military-technological dominance.",
+        "Disruption of the global energy order leading to severe economic and political instability in current petrostates, potentially creating regional security vacuums.",
+        "Supply chain monopolies for critical fusion materials and advanced manufacturing components replacing traditional oil and gas chokepoints.",
+        "Weaponization or proliferation risks associated with dual-use technologies, particularly regarding tritium handling and high-energy physics relevant to nuclear weapons stewardship.",
+        "Fragmentation of international standards and regulatory frameworks, leading to bifurcated global markets and technology decoupling similar to current semiconductor and telecom dynamics."
+      ],
+      "opportunities": [
+        "Decoupling national security from volatile hydrocarbon markets and vulnerable maritime chokepoints, enhancing domestic resilience for pioneering nations.",
+        "Leveraging 'fusion diplomacy' by exporting fusion technology and infrastructure to build deep, long-term geopolitical alliances and dependencies.",
+        "Stabilizing developing regions by drastically reducing energy poverty, thereby mitigating resource-driven conflicts and state failure.",
+        "Establishing global regulatory, safety, and non-proliferation standards for fusion, providing a significant soft power advantage to the standard-setting nations.",
+        "Addressing climate change as a geopolitical risk multiplier, reducing climate-induced migration, water scarcity, and associated conflict drivers."
+      ]
+    },
+    "market_misconceptions": [
+      "That net energy gain in a lab scales linearly to net-positive, grid-connected power output—ignoring the enormous system-level parasitic loads (cryogenics, tritium breeding, shielding, cooling) that laboratory milestones exclude.",
+      "That tritium breeding from lithium blankets will work at commercial scale, when no integrated breeding loop has ever been demonstrated and global tritium supply is critically limited (~25 kg globally, decaying at 5.5%/year).",
+      "That first-wall and structural materials can withstand 14 MeV neutron bombardment for commercial lifetimes without requiring replacement cycles that destroy unit economics.",
+      "That the learning curve for fusion will resemble fission or solar—rather than encountering compounding engineering complexity at each scale step, as tokamak history suggests.",
+      "That renewables-plus-storage and advanced fission won't solve decarbonization before fusion reaches commercial viability, leaving a market window.",
+      "That private capital will remain patient through repeated milestone slippage, avoiding a funding cliff similar to what clean-tech experienced in the 2010s.",
+      "That AI and high-performance computing will meaningfully compress the plasma physics and materials discovery timelines, rather than revealing deeper complexity.",
+      "That regulatory frameworks (licensing, insurance, non-proliferation) will adapt smoothly to fusion, rather than importing fission-era regulatory friction."
+    ],
+    "portfolio_implications": {
+      "composite": 6.2,
+      "narrative_score": {
+        "duration": 8.0,
+        "conviction": 3.0,
+        "economic_impact": 10.0,
+        "valuation_support": 3.0,
+        "narrative_strength": 9.0,
+        "adoption_probability": 3.0,
+        "bottleneck_advantage": 6.0,
+        "market_awareness_gap": 6.0,
+        "second_order_effects": 9.0,
+        "competitive_advantage": 5.0
+      }
+    },
+    "psychological_analysis": {
+      "biases": [
+        "Narrative fallacy: Investors construct a tidy arc of inevitable progress—'physics is solved, now it's just engineering'—when the history of fusion is one of discontinuous setbacks, regime changes at scale, and surprises that invalidate prior models.",
+        "Availability bias: Recent headline breakthroughs (NIF December 2022, CFS magnet tests, Helion's funding rounds) are cognitively over-weighted relative to the 70-year base rate of missed timelines, making the future feel closer than the historical record warrants.",
+        "Recency bias: The acceleration of private fusion funding since ~2018 is extrapolated forward as a trend, when it may reflect a one-time capital cycle driven by low interest rates, climate urgency, and tech-billionaire patronage that could reverse.",
+        "Herd behavior: Capital flows into fusion startups partly because Sam Altman, Bill Gates, Lowercarbon Capital, and sovereign wealth funds have backed them—investors anchor on the credibility of co-investors rather than independently assessing the physics and engineering risk.",
+        "Overconfidence: Founders and investors systematically underestimate the number of coupled engineering problems that must be solved simultaneously; each individual component has a plausible path, but the joint probability of all succeeding on schedule is multiplicatively smaller.",
+        "Confirmation bias: Positive incremental results (longer confinement times, higher temperatures) are interpreted as timeline validation, while negative or ambiguous results (disruptions, divertor erosion, tritium retention losses) are discounted as 'expected engineering challenges.'",
+        "Optimism bias specific to deep-tech: A belief that 'brilliant people plus enough money plus AI' can compress any timeline, conflating software-style iteration speed with the physical constraints of plasma physics and neutron materials science."
+      ],
+      "consensus_view": "Fusion energy is the eventual 'holy grail' of clean power—physically proven but commercially decades away. Recent breakthroughs (NIF net energy gain, Commonwealth Fusion Systems' magnet tests, Helion's rapid compression approach) have pulled the timeline narrative from 'always 30 years away' toward 'maybe the 2030s,' but mainstream investors still treat it as a speculative, long-horizon venture play dominated by a handful of well-funded startups and government-backed programs, not a near-term investable theme.",
+      "narrative_risks": [
+        "The 'valley of death' between scientific breakeven and engineering breakeven may be wider than any prior energy technology, because fusion requires simultaneous mastery of plasma confinement, materials science, tritium logistics, and thermal engineering—each a hard problem in isolation.",
+        "If renewables-plus-storage costs continue declining at current rates, fusion's economic case may erode before it arrives; the market may not need a new baseload technology by the mid-2030s, especially if small modular fission fills the gap.",
+        "Tritium supply could become a hard physical bottleneck: every reactor needs kilograms of tritium to start, and breeding ratios must exceed 1.0 with margin for losses—a requirement never demonstrated in an integrated system.",
+        "First-wall material degradation may force replacement cycles so frequent that levelized cost of energy becomes uncompetitive, regardless of fuel cost advantages.",
+        "The 'always 30 years away' pattern may be structural rather than a joke: each scale-up reveals new instability regimes, edge modes, and confinement problems invisible at smaller sizes, creating a perpetual one-step-forward dynamic.",
+        "Geopolitical fragmentation of fusion IP (US, China, UK, EU all pursuing parallel approaches) could slow collective progress and create redundant, subcritical programs rather than concentrating resources.",
+        "Headline milestones may be systematically misread by markets: NIF's 'gain' measured laser-to-target energy, not wall-plug efficiency, yet was widely reported as 'fusion breakthrough'—creating false confidence in proximity to commercialization.",
+        "If a major startup fails publicly (explosive loss of containment, financial collapse after overpromising), it could trigger a sector-wide capital freeze reminiscent of the FTX effect on crypto markets."
+      ],
+      "hidden_assumptions": [
+        "That net energy gain in a lab scales linearly to net-positive, grid-connected power output—ignoring the enormous system-level parasitic loads (cryogenics, tritium breeding, shielding, cooling) that laboratory milestones exclude.",
+        "That tritium breeding from lithium blankets will work at commercial scale, when no integrated breeding loop has ever been demonstrated and global tritium supply is critically limited (~25 kg globally, decaying at 5.5%/year).",
+        "That first-wall and structural materials can withstand 14 MeV neutron bombardment for commercial lifetimes without requiring replacement cycles that destroy unit economics.",
+        "That the learning curve for fusion will resemble fission or solar—rather than encountering compounding engineering complexity at each scale step, as tokamak history suggests.",
+        "That renewables-plus-storage and advanced fission won't solve decarbonization before fusion reaches commercial viability, leaving a market window.",
+        "That private capital will remain patient through repeated milestone slippage, avoiding a funding cliff similar to what clean-tech experienced in the 2010s.",
+        "That AI and high-performance computing will meaningfully compress the plasma physics and materials discovery timelines, rather than revealing deeper complexity.",
+        "That regulatory frameworks (licensing, insurance, non-proliferation) will adapt smoothly to fusion, rather than importing fission-era regulatory friction."
+      ]
+    },
+    "adoption_curve_analysis": {
+      "stage": "Early Innovation / Pre-Commercial R&D",
+      "growth_rate": "N/A (pre-revenue; private investment growing ~30-40% annually, now exceeding $7B cumulative)",
+      "penetration_pct": 0.0,
+      "inflection_points": [
+        "First private fusion company demonstrating Q-engineering > 1 (net electricity output) — expected 2026-2028, likely Commonwealth Fusion Systems SPARC or Helion Polaris",
+        "First grid-connected fusion pilot plant delivering sustained power (10-50 MW) to a commercial customer — expected 2030-2035",
+        "Tritium breeding ratio > 1.05 demonstrated at scale in a working blanket system, resolving the fuel supply constraint that currently makes commercial fusion physically impossible",
+        "Levelized cost of fusion electricity falling below $100/MWh, enabling competitive dispatch against advanced fission SMRs and combined-cycle gas in deregulated markets — expected mid-2030s at earliest"
+      ]
+    },
+    "investment_opportunities": [
+      {
+        "type": "direct",
+        "title": "High-Temperature Superconductor (HTS) Tape Manufacturing Scale-Up",
+        "thesis": "Fusion's magnetic confinement depends on REBCO HTS tape, but global production capacity is measured in hundreds of kilometers per year while a single reactor (e.g., CFS's SPARC) requires thousands of kilometers. The bottleneck is not plasma physics but manufacturing throughput and yield. Faraday Factory is scaling in Ukraine despite war; Theva and MetOx are capacity-constrained. Whoever solves continuous-process HTS tape production at industrial scale captures a toll-gate position across the entire fusion sector, regardless of which confinement approach wins.",
+        "awareness_gap": "Investors track fusion milestones (plasma shots, Q>1 announcements) but few understand that HTS tape supply is the single most binding constraint on the industry's buildout timeline. The market values fusion startups at billions while their critical supplier base trades at fractions of that.",
+        "valuation_note": "Private HTS producers are raising at modest valuations relative to the fusion startups they enable. Public exposure is limited but Bruker (BRKR) and Sumitomo Electric have HTS-related segments buried within larger portfolios.",
+        "potential_losers": [
+          "Fusion startups without secured multi-year HTS supply contracts",
+          "Legacy low-temperature superconductor (LTS) suppliers whose technology is insufficient for compact fusion",
+          "Government fusion programs (ITER) locked into older Nb3Sn magnet technology"
+        ],
+        "potential_winners": [
+          "Faraday Factory Ukrainian",
+          "Theva Dünnschichttechnik",
+          "MetOx Technologies",
+          "Sumitomo Electric (HTS wire division)",
+          "Commonwealth Fusion Systems (vertical HTS integration)",
+          "Bruker Corporation (superconducting materials)"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Tritium Fuel Cycle and Lithium Breeding Blanket Infrastructure",
+        "thesis": "Global tritium inventory is approximately 25kg, concentrated in Canadian CANDU reactors that are decommissioning. Tritium decays at 5.47% annually. Every D-T fusion reactor must breed its own tritium via lithium blankets, but no one has demonstrated a self-sufficient breeding cycle at scale. The companies that solve tritium breeding, extraction, and handling will control the fuel supply of the fusion economy—an OPEC-equivalent position. Tritium currently trades at roughly $30,000/gram and will only become scarcer as fusion demand materializes.",
+        "awareness_gap": "The market treats tritium self-sufficiency as a solved engineering problem deferred to 'later phases.' It is not solved. No breeding blanket has achieved TRL above 4. The fuel cycle is arguably a harder problem than net energy gain, and it is chronically underfunded relative to plasma physics.",
+        "valuation_note": "Tritium handling and lithium blanket technology are buried within national lab budgets and private fusion company R&D lines. No pure-play public investment vehicle exists yet, creating early-mover advantage for private market access.",
+        "potential_losers": [
+          "Fusion startups with no tritium breeding strategy in their reactor architecture",
+          "CANDU reactor operators selling tritium reserves prematurely at current prices",
+          "Investors in D-T fusion approaches that assume external tritium supply will be available"
+        ],
+        "potential_winners": [
+          "Canadian Nuclear Laboratories (tritium inventory and handling expertise)",
+          "UK Atomic Energy Authority (breeding blanket R&D via STEP program)",
+          "Karlsruhe Institute of Technology (HCPB blanket design)",
+          "Lithium Americas and other lithium producers positioned for isotope-grade supply",
+          "Fusion companies with proprietary blanket designs (TAE Technologies, CFS)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Advanced Fission as Contrarian Hedge Against Fusion Timeline Slippage",
+        "thesis": "The fusion narrative is absorbing risk capital and policy attention that would otherwise flow to advanced fission—SMRs, molten salt reactors, and fast reactors that are 5-15 years closer to commercial deployment. Fusion's repeated timeline promises (always '20 years away') create a structural narrative discount on fission, which actually works today. As fusion milestones generate excitement but fail to deliver grid power, capital will rotate toward fission as the pragmatic decarbonization solution. The contrarian play is to accumulate advanced fission positions while they are narrative-displaced.",
+        "awareness_gap": "The market treats fusion and fission as competing narratives rather than recognizing that fusion's visibility actually normalizes nuclear energy broadly. Each fusion headline increases public comfort with nuclear processes, benefiting fission deployment indirectly. This second-order effect is entirely unpriced.",
+        "valuation_note": "Advanced fission companies (Oklo, NuScale, TerraPower) trade at significant discounts to fusion peers at equivalent or earlier technical maturity. Centrus Energy (LEU) trades at modest multiples despite being the sole US HALEU producer—a fuel essential for most advanced fission designs.",
+        "potential_losers": [
+          "Fusion startups raising at $1B+ valuations with 2035+ commercial timelines",
+          "Renewables-only investors who will face baseload power gaps as fusion delays persist",
+          "Natural gas bridge-fuel advocates whose window narrows as advanced fission deploys"
+        ],
+        "potential_winners": [
+          "Centrus Energy (LEU) — sole US HALEU fuel producer",
+          "Oklo (fast reactor developer, now public via SPAC)",
+          "NuScale Power (SMR design certification)",
+          "TerraPower (Natrium reactor, Bill Gates-backed)",
+          "BWX Technologies (nuclear component manufacturing)",
+          "Cameco (uranium fuel cycle)"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Neutron-Resistant First-Wall Materials and Tungsten Supply Chain",
+        "thesis": "Fusion's 14.1 MeV neutrons create material degradation conditions far more extreme than fission (which operates at ~2 MeV). First-wall components face simultaneous neutron bombardment, thermal cycling, and plasma-material interactions. Tungsten is the leading candidate for divertor and first-wall armor, but the supply chain for fusion-grade tungsten components, advanced alloys (ODS steels, SiC composites), and neutron-resistant manufacturing is essentially nonexistent at commercial scale. This is a materials science problem masquerading as an energy problem.",
+        "awareness_gap": "Materials degradation is treated as an engineering detail rather than a potential showstopper. The 14.1 MeV neutron flux will degrade any known material within months to years, requiring frequent replacement. No one has built a maintenance economics model for this. The market has not priced the materials supply chain as a critical dependency.",
+        "valuation_note": "Tungsten producers (China controls ~80% of supply) and specialized alloy companies trade at industrial metals multiples with no fusion premium embedded. This is a multi-decade re-rating opportunity as fusion demand materializes.",
+        "potential_losers": [
+          "Fusion reactor designs with inaccessible first-wall components requiring full disassembly for replacement",
+          "Conventional steel and metals companies without neutron-resistant alloy capabilities",
+          "China-dependent tungsten supply chains in Western fusion programs (geopolitical risk)"
+        ],
+        "potential_winners": [
+          "Wolf Minerals / Tungsten mining restart projects outside China",
+          "Global Tungsten & Powders Corp",
+          "Sandvik (specialized materials and powder metallurgy)",
+          "AT&M (Advanced Technology & Materials, China — ODS steel development)",
+          "Morgan Advanced Materials (ceramic composites for fusion environments)",
+          "National labs with materials testing infrastructure (ORNL, Culham)"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Fusion Regulatory Framework Arbitrage — First-Movers in Licensing",
+        "thesis": "The NRC decided in 2023 to regulate fusion separately from fission under a risk-informed, tiered approach—a massive de-risking event. The UK is developing its own fusion regulatory framework via the STEP program. The EU is lagging. Companies that establish regulatory precedent by securing the first fusion construction permits and operating licenses will define the compliance architecture that all followers must adopt. This creates a moat: regulatory expertise becomes a barrier to entry, and first-movers can license their compliance frameworks or use them to delay competitors.",
+        "awareness_gap": "The market views fusion regulation as a binary risk (will they/won't they approve it) rather than a strategic asset. In practice, regulatory frameworks are co-designed by the first applicants. Companies engaging deeply with NRC and UK regulators now are building intangible capital that will compound over decades.",
+        "valuation_note": "No public company is valued for its fusion regulatory positioning. This is a private-market advantage for now, but companies like BWX Technologies and Jacobs Engineering have nuclear licensing expertise that could be repurposed.",
+        "potential_losers": [
+          "Fusion startups in jurisdictions with no regulatory framework (most of EU, Asia outside UK/Japan)",
+          "Companies treating regulation as a compliance cost rather than a strategic moat",
+          "Anti-nuclear advocacy groups whose fission-focused campaigns are irrelevant to fusion's distinct risk profile"
+        ],
+        "potential_winners": [
+          "Commonwealth Fusion Systems (first to engage NRC on fusion-specific licensing)",
+          "Tokamak Energy (UK regulatory engagement via STEP)",
+          "Jacobs Engineering / Jacobs Solutions (nuclear licensing consulting)",
+          "BWX Technologies (nuclear component certification expertise)",
+          "EnergySolutions (nuclear waste and regulatory services)",
+          "Holtec International (licensing and regulatory affairs infrastructure)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "High-Temperature Heat Exchangers and Brayton Cycle Power Conversion for Fusion",
+        "thesis": "Fusion reactors produce heat at temperatures (500-1000°C) that exceed conventional steam cycles' optimal range. Supercritical CO2 Brayton cycles and advanced heat exchangers are required to convert fusion thermal output to electricity efficiently. This is the unglamorous engineering layer between 'plasma ignition' and 'grid-connected power'—and it is chronically underinvested because it lacks the narrative appeal of plasma physics. Companies with deep expertise in high-temperature heat exchangers, ceramic heat exchanger manufacturing, and sCO2 turbomachinery are positioned to capture disproportionate value as fusion transitions from science experiments to power plants.",
+        "awareness_gap": "The market celebrates plasma milestones (Q>1, ignition) as if they equal commercial power. They do not. The power conversion system is where physics meets engineering meets economics, and it is where most energy startups historically fail. No fusion startup has publicly demonstrated a complete thermal-to-electric conversion loop at relevant scale. This gap is invisible to narrative-driven investors.",
+        "valuation_note": "sCO2 cycle developers (Echogen, 8 Rivers) and heat exchanger specialists trade at industrial engineering multiples with zero fusion premium. These are the picks-and-shovels plays that will re-rate dramatically when the first fusion pilot plant needs to actually deliver electrons to the grid.",
+        "potential_losers": [
+          "Fusion startups whose reactor designs produce heat at temperatures incompatible with efficient power conversion",
+          "Conventional steam turbine manufacturers whose technology is suboptimal for fusion thermal profiles",
+          "Investors in fusion companies that have not begun power conversion system engineering"
+        ],
+        "potential_winners": [
+          "Echogen Power Systems (sCO2 power cycles)",
+          "8 Rivers Capital (Allam Cycle and sCO2 expertise)",
+          "Baker Hughes (turbomachinery and sCO2 development)",
+          "Howden Group (industrial heat exchangers)",
+          "Haynes International (high-temperature alloy specialty steels for heat exchangers)",
+          "Solar turbine / Caterpillar (industrial turbomachinery adaptable to sCO2)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Fusion Ignition Narrative as Decarbonization Policy Catalyst",
+        "thesis": "Each fusion milestone (NIF ignition December 2022, subsequent repeated ignition) generates policy momentum that spills over into broader clean energy and nuclear-adjacent policy. The narrative effect is not 'fusion will solve climate change' but rather 'fusion proves nuclear processes are the future, so we should invest in the nuclear supply chain now.' This creates a second-order investment thesis: fusion headlines are a leading indicator for nuclear supply chain investment, uranium demand, and nuclear workforce development—regardless of whether fusion itself commercializes on schedule.",
+        "awareness_gap": "The market treats fusion and the broader nuclear supply chain as unrelated sectors. In reality, fusion milestones shift public sentiment and policy in ways that directly benefit fission fuel cycle companies, nuclear engineering firms, and uranium producers. This narrative transmission mechanism is entirely unmodeled.",
+        "valuation_note": "Uranium miners (Cameco, Kazatomprom, Paladin) and nuclear fuel cycle companies (Centrus, Urenco) trade on fission fundamentals alone. A fusion-narrative premium is not priced in, creating an asymmetric optionality: fusion headlines cost nothing to hold but drive re-rating events in nuclear equities.",
+        "potential_losers": [
+          "Pure-play renewables investors who assume nuclear will remain politically constrained",
+          "Natural gas infrastructure investors whose assets face accelerated stranding as nuclear sentiment improves",
+          "ESG frameworks that exclude nuclear—these will face pressure to revise as fusion normalizes nuclear technology"
+        ],
+        "potential_winners": [
+          "Cameco (uranium producer, nuclear fuel cycle)",
+          "Centrus Energy (HALEU and enrichment)",
+          "Sprott Physical Uranium Trust (uranium price exposure)",
+          "Energy Fuels (uranium and rare earths)",
+          "Nuclear engineering universities and workforce programs (MIT, Georgia Tech, Sheffield)",
+          "General Electric / GE Vernova (nuclear turbine and grid infrastructure)"
+        ]
+      }
+    ]
+  }
+}

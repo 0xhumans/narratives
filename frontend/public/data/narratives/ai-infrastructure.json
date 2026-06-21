@@ -1,0 +1,32 @@
+{
+  "id": "330618ba-2e2e-41c7-9e04-549aee7291c2",
+  "slug": "ai-infrastructure",
+  "name": "AI Infrastructure",
+  "kind": "sub",
+  "parent_id": "6eba9a2d-1be0-4f43-975e-3a526a7c7747",
+  "summary": "AI Infrastructure represents the foundational compute, networking, storage, and energy stack underpinning the artificial intelligence buildout—spanning advanced semiconductors (GPUs, ASICs, custom silicon), hyperscale data centers, high-bandwidth memory, optical interconnects, liquid cooling, and the power grid feeding them. The narrative has shifted from speculative AI enthusiasm to a tangible capex cycle, with hyperscalers (Microsoft, Google, Meta, Amazon) and sovereign actors committing hundreds of billions to capacity expansion. The SMH semiconductor complex trading near 660 reflects this intensity, as does the bifurcation between broad robotics ETFs (BOTZ ~38, IRBO ~79) capturing downstream automation versus the pick-and-shovel silicon layer capturing the immediate spend. The current phase is characterized by supply-constrained growth—TSMC CoWoS capacity, HBM3e yields, and advanced packaging bottlenecks are the binding constraints, not demand.",
+  "key_drivers": [
+    "Hyperscaler capex acceleration: Microsoft, Google, Meta, Amazon collectively guiding toward $300B+ annual capex, with AI infrastructure absorbing the majority share",
+    "Advanced semiconductor supply constraints: TSMC CoWoS packaging, HBM3e/HBM4 yields, and EUV node capacity creating multi-quarter backlogs and pricing power for NVIDIA, AMD, and Broadcom",
+    "Energy and power grid bottlenecks: Data center power demand projected to exceed 8% of US electricity by 2030, driving investment in gas, nuclear (SMRs), and behind-the-meter generation",
+    "Sovereign AI initiatives: Countries and regions (EU, Saudi Arabia, UAE, India, Japan) building national GPU clusters and domestic foundry access, creating a parallel demand vector beyond commercial hyperscalers",
+    "Networking and interconnect density: Scale-up and scale-out architectures requiring NVLink, InfiniBand, Ethernet (Ultra Ethernet Consortium), and silicon photonics—creating a secondary capex layer beneath GPUs",
+    "Custom silicon and ASIC diversification: Google TPU, AWS Trainium/Inferentia, Meta MTIA reducing single-vendor dependency and expanding the total addressable infrastructure market",
+    "Inference workload migration from training: As models move to production deployment, inference infrastructure (lower precision, edge, and distributed) becomes the dominant compute consumer, shifting the architecture mix",
+    "Geopolitical supply chain fragmentation: US export controls on advanced chips to China, CHIPS Act subsidies, and allied-nation fab buildout reshaping the cost structure and geographic distribution of AI compute capacity"
+  ],
+  "adoption_curve": {
+    "stage": "Early Majority (transitioning from Early Adopter)",
+    "growth_rate": "45-60% annualized in infrastructure capex, with semiconductor revenue growth exceeding 80% in AI-exposed segments",
+    "penetration_pct": 18,
+    "inflection_points": [
+      "TSMC CoWoS capacity expansion reaching parity with GPU demand (estimated 2025-2026), shifting from supply-constrained to demand-driven pricing",
+      "Power grid connection queues and data center siting becoming the binding constraint rather than silicon availability (2025-2027)",
+      "Inference compute surpassing training compute as the dominant workload category, triggering architecture shifts toward lower-precision and purpose-built silicon (2026-2027)",
+      "Potential demand verification inflection: if AI application monetization fails to justify capex levels by 2026, triggering a digestion phase similar to 2018 cloud buildout"
+    ]
+  },
+  "created_at": "2026-06-18T16:31:13.889323Z",
+  "updated_at": "2026-06-21T12:20:42.770649Z",
+  "children": []
+}

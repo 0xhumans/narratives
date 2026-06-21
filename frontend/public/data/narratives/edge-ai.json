@@ -1,0 +1,32 @@
+{
+  "id": "d51a0538-0f94-463c-9f3e-fb472b76299e",
+  "slug": "edge-ai",
+  "name": "Edge AI",
+  "kind": "sub",
+  "parent_id": "6eba9a2d-1be0-4f43-975e-3a526a7c7747",
+  "summary": "Edge AI represents the decentralization of artificial intelligence inference from centralized cloud infrastructure to local devices, sensors, and gateways. This narrative is driven by the convergence of several structural forces: the exponential growth in IoT device deployment, the physical limits of bandwidth and latency in cloud-dependent architectures, rising data sovereignty regulations, and the economic imperative to reduce cloud compute costs. The geopolitical backdrop—marked by sanctions losing efficacy, supply chain fragmentation, and rising US-China tensions—further accelerates demand for localized, resilient AI processing that doesn't depend on foreign cloud infrastructure or cross-border data flows. Companies and nations increasingly view edge AI capability as a sovereignty issue, not merely an efficiency optimization.\n\nThe investment thesis rests on a hardware-software stack transition: specialized edge AI chips (NPUs, TPUs at the edge), edge-optimized model compression techniques (quantization, pruning, distillation), and middleware platforms that orchestrate federated learning across distributed nodes. The semiconductor ETFs (SMH at $659.88, BOTZ at $38.37, IRBO at $78.90) reflect the market pricing in significant AI hardware demand, but edge-specific exposure remains underpriced relative to cloud AI infrastructure plays. The narrative is transitioning from early-adopter industrial use cases (predictive maintenance, defect detection) toward consumer-facing applications (on-device LLMs, ambient computing, autonomous systems) where latency, privacy, and connectivity constraints make cloud-dependent architectures structurally unviable.",
+  "key_drivers": [
+    "Latency-critical applications (autonomous vehicles, industrial robotics, AR/VR) requiring sub-10ms inference that cloud round-trips cannot deliver",
+    "Data sovereignty regulations (GDPR, China's PIPL, emerging US state laws) forcing localized processing of sensitive data",
+    "Bandwidth cost economics: transmitting continuous sensor streams to cloud becomes prohibitive at IoT scale (50B+ devices by 2030)",
+    "Model compression breakthroughs (4-bit quantization, structured pruning) enabling 10-100x smaller models with acceptable accuracy degradation",
+    "Geopolitical fragmentation and supply chain resilience demands pushing nations toward self-contained edge AI stacks independent of foreign cloud providers",
+    "Energy efficiency mandates: edge inference at 1-5W vs. cloud GPU clusters at 300-700W per chip, critical for battery-powered and ESG-constrained deployments",
+    "Smartphone NPU proliferation (Apple Neural Engine, Qualcomm Hexagon) creating a billion-device distribution channel for edge AI applications",
+    "5G network edge computing infrastructure creating intermediate processing tiers between device and cloud"
+  ],
+  "adoption_curve": {
+    "stage": "Early Majority transition",
+    "growth_rate": "38% CAGR (2024-2028)",
+    "penetration_pct": 12,
+    "inflection_points": [
+      "On-device LLM viability (2024-2025): When quantized 7B parameter models run on consumer smartphones at usable speeds, unlocking mass-market edge AI applications",
+      "Automotive L4+ deployment at scale (2026-2027): Autonomous driving requires edge AI by definition; volume production creates semiconductor cost curves that benefit all edge applications",
+      "Regulatory tipping point on cross-border AI data flows (2025-2026): When major jurisdictions impose hard localization requirements, cloud-only AI architectures face structural compliance barriers",
+      "Edge AI chip commoditization below $5 (2026-2027): When dedicated AI inference chips reach price points enabling embedding in consumer appliances and disposable sensors"
+    ]
+  },
+  "created_at": "2026-06-18T16:31:13.889323Z",
+  "updated_at": "2026-06-21T12:19:12.413940Z",
+  "children": []
+}

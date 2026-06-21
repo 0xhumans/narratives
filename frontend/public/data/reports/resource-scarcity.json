@@ -1,0 +1,963 @@
+{
+  "id": "4072f9d9-d54b-42fc-9bf5-953f420ead31",
+  "narrative_id": "ea8cae9b-7640-49fb-a5db-37cccdb65066",
+  "version": 1,
+  "generated_at": "2026-06-21T12:18:05.483303Z",
+  "payload": {
+    "key_drivers": [
+      "Energy transition mineral demand: EVs, wind, solar, and grid storage require 300-500% more copper, lithium, nickel, cobalt, and rare earths per unit of energy delivered vs. fossil fuel infrastructure",
+      "Declining ore grades and resource depletion: average copper ore grades have fallen from ~2% to ~0.5% over 50 years; phosphate rock reserves concentrated in Morocco/Western Sahara (~70% of global reserves)",
+      "Resource nationalism and geopolitical fragmentation: Indonesia nickel export controls, Chile lithium nationalization debates, China rare earth export restrictions, Russia/Belarus potash supply disruption risk",
+      "Chronic underinvestment in new supply: real mining capex fell 40-60% from 2012-2020 peak; greenfield project pipeline at multi-decade lows; 10-15 year lead times make supply response inherently lagging",
+      "ESG and permitting friction: new mine development faces 7-10 year permitting timelines in Western jurisdictions; water rights conflicts, indigenous consent requirements, and tailings dam risk constrain brownfield expansion",
+      "Agricultural input scarcity: global phosphate rock is non-substitutable for food production; potash supply concentrated in three countries; water scarcity affecting 40% of global grain production in irrigated systems",
+      "Climate-driven supply disruption: droughts reducing hydropower for aluminum smelting, water scarcity constraining copper leaching operations, extreme weather events disrupting agricultural yields and logistics",
+      "Policy-driven demand acceleration: IRA, EU Critical Raw Materials Act, China's dual carbon goals, and defense stockpiling creating mandated demand floors that market signals alone would not produce"
+    ],
+    "value_capture": [
+      {
+        "roic": 7.0,
+        "role": "creator",
+        "notes": "Primary scarcity bottleneck. Decade-long lead times from discovery to production create structural supply deficits in copper, lithium, uranium, rare earths. Pricing power surges during deficit cycles but is cyclical. Capital intensity is extreme; greenfield projects increasingly in geopolitically risky jurisdictions (DRC, Mongolia, Argentina). Incumbents with permitted, operating assets hold quasi-monopoly positions during scarcity spikes. ROIC highly variable but structurally improving as ore grades decline and substitution is limited.",
+        "layer_name": "Critical Mineral Extraction & Mining",
+        "pricing_power": 8.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 9.0,
+        "capital_intensity": 9.0,
+        "competitive_intensity": 4.0
+      },
+      {
+        "roic": 7.0,
+        "role": "capturer",
+        "notes": "The hidden chokepoint. China controls 60-90% of refining capacity for rare earths, lithium chemicals, and cobalt. Refining is where geopolitical leverage actually materializes—extraction can happen anywhere but processing capacity is concentrated. Captures margin between raw ore and battery-grade material. Western de-risking efforts (IRA, CRMA) are creating a parallel refining buildout, but 5-7 year lag means incumbents capture scarcity rents now. Lower capital intensity than mining but significant environmental permitting barriers.",
+        "layer_name": "Refining & Processing",
+        "pricing_power": 7.0,
+        "revenue_growth": 6.0,
+        "barriers_to_entry": 7.0,
+        "capital_intensity": 7.0,
+        "competitive_intensity": 5.0
+      },
+      {
+        "roic": 6.0,
+        "role": "creator",
+        "notes": "Fastest-growing layer but still sub-10% of supply for most critical minerals. Economics improve linearly with primary scarcity—when virgin material prices spike, recycling margins expand dramatically. Low barriers to entry for early-stage collection/sorting; higher barriers for hydrometallurgical processing at scale. Currently a price-taker but evolving toward price-setter as end-of-life EV batteries and electronics create concentrated feedstock. Key uncertainty: collection logistics and feedstock purity.",
+        "layer_name": "Recycling & Urban Mining",
+        "pricing_power": 5.0,
+        "revenue_growth": 9.0,
+        "barriers_to_entry": 5.0,
+        "capital_intensity": 6.0,
+        "competitive_intensity": 7.0
+      },
+      {
+        "roic": 5.0,
+        "role": "creator",
+        "notes": "Sodium-ion batteries replacing lithium, aluminum replacing copper in some applications, silicon carbide reducing rare earth dependency in motors. High R&D intensity but low physical capital intensity. Value creation is real but diffusion is slow—materials science cycles are 10-15 years from lab to commercial scale. Competitive intensity is high because multiple substitution paths compete simultaneously. Pricing power limited by the fact that substitutes must undercut incumbent material costs to gain adoption.",
+        "layer_name": "Substitution & Alternative Materials Technology",
+        "pricing_power": 6.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 6.0,
+        "capital_intensity": 5.0,
+        "competitive_intensity": 8.0
+      },
+      {
+        "roic": 8.0,
+        "role": "capturer",
+        "notes": "Where scarcity monetizes most efficiently. Commodity traders (Glencore, Trafigura) and sovereign wealth funds capture asymmetric upside during supply shocks with relatively low capital deployment. China's strategic reserves demonstrate state actors can manipulate scarcity premiums. Barriers to entry are relational (offtake agreements, political access, logistics networks) rather than capital-based. ROIC is exceptionally high during scarcity episodes but lumpy. This layer creates no new supply—it extracts rent from temporal and geographic arbitrage.",
+        "layer_name": "Strategic Stockpiling & Commodity Trading",
+        "pricing_power": 6.0,
+        "revenue_growth": 5.0,
+        "barriers_to_entry": 7.0,
+        "capital_intensity": 4.0,
+        "competitive_intensity": 6.0
+      },
+      {
+        "roic": 7.0,
+        "role": "creator",
+        "notes": "The underappreciated scarcity layer. Aquifer depletion in India, Middle East, US Southwest is irreversible on human timescales. Water rights are non-fungible, location-locked monopolies with zero substitution potential. Agricultural land in water-secure regions (Canada, Russia, parts of South America) appreciates structurally. Extremely low competitive intensity—nobody can manufacture new water rights. Capital intensity is low (land is an asset, not capex). Pricing power is constrained by political risk (water is a human right) but agricultural application monetizes indirectly.",
+        "layer_name": "Water Rights & Agricultural Land",
+        "pricing_power": 7.0,
+        "revenue_growth": 6.0,
+        "barriers_to_entry": 8.0,
+        "capital_intensity": 4.0,
+        "competitive_intensity": 3.0
+      },
+      {
+        "roic": 4.0,
+        "role": "capturer",
+        "notes": "Paradoxically the weakest layer for value capture despite driving all upstream demand. EV makers, wind turbine manufacturers, and defense contractors are price-takers on inputs and face intense end-market competition. Scarcity compresses their margins—they cannot pass through input cost spikes to consumers who have alternatives (ICE vehicles, gas power). High revenue growth masks deteriorating unit economics. Only vertically integrated players (BYD, Tesla upstream investments) insulate themselves. This layer creates demand but captures the least scarcity rent.",
+        "layer_name": "End-Use Applications (EVs, Renewables, Defense)",
+        "pricing_power": 4.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 5.0,
+        "capital_intensity": 7.0,
+        "competitive_intensity": 9.0
+      }
+    ],
+    "feedback_loops": [
+      {
+        "kind": "resource_competition",
+        "strength": 8.5,
+        "description": "AI scaling demands enormous and growing shares of electricity, advanced semiconductors (rare earths, gallium, cobalt), and freshwater for data center cooling. Resource scarcity directly constrains AI compute growth, creating a hard ceiling on model training and inference at scale. Grid capacity, transformer availability, and water rights in data center corridors are already binding constraints.",
+        "target_narrative": "Artificial Intelligence"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 6.0,
+        "description": "Resource scarcity drives massive investment in AI for resource optimization—smart grids, precision agriculture, supply chain efficiency, materials discovery, and predictive maintenance. Scarcity raises the marginal value of every unit of efficiency gained through AI, accelerating adoption in resource-intensive industries.",
+        "target_narrative": "Artificial Intelligence"
+      },
+      {
+        "kind": "resource_competition",
+        "strength": 6.5,
+        "description": "Robotics scaling requires rare earth permanent magnets (neodymium, dysprosium), lithium, cobalt, and high-grade steel. Scarcity of these inputs constrains the cost curve and deployment velocity of robotics, particularly in industrial and automotive applications where material costs dominate.",
+        "target_narrative": "Robotics"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.5,
+        "description": "Labor scarcity—a core dimension of resource scarcity—directly drives robotics adoption. As working-age populations shrink and wages rise, the substitution of capital for labor via robotics becomes economically imperative. Scarcity of human labor is the primary demand driver for industrial robotics.",
+        "target_narrative": "Robotics"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 8.0,
+        "description": "Energy scarcity is the most acute dimension of resource scarcity, and nuclear is the highest-density baseload solution. Scarcity of reliable, affordable electricity creates political and economic urgency for nuclear buildout—both large-scale fission and SMRs. Uranium supply is relatively abundant, making nuclear a scarcity-relief vector rather than a scarcity-amplifier.",
+        "target_narrative": "Nuclear Renaissance"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.5,
+        "description": "Resource scarcity intensifies great-power competition over critical materials (rare earths, lithium, cobalt, titanium), energy corridors, and maritime trade routes. This geopolitical friction directly drives defense spending and strategic autonomy initiatives—stockpiling, friendshoring, and securing supply chains become national security imperatives.",
+        "target_narrative": "Defense Autonomy"
+      },
+      {
+        "kind": "resource_competition",
+        "strength": 5.5,
+        "description": "Defense industrial base competes directly with civilian economy for semiconductors, rare earths, specialty alloys, and precision manufacturing capacity. Defense prioritization can crowd out commercial supply, particularly in crisis or mobilization scenarios.",
+        "target_narrative": "Defense Autonomy"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.0,
+        "description": "Aging populations shrink the working-age labor pool in resource extraction, refining, and construction—precisely the sectors that must expand to address scarcity. Fewer workers mining copper, refining lithium, and building infrastructure worsens supply constraints. This creates a vicious cycle: scarcity demands more physical investment, but demographic decline limits the capacity to deliver it.",
+        "target_narrative": "Aging Population"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 8.5,
+        "description": "Climate change directly degrades resource availability—droughts reduce freshwater and hydropower, desertification reduces arable land, extreme weather disrupts mining and logistics. Simultaneously, adaptation requires massive material inputs (concrete, steel, copper for seawalls, grid hardening, desalination). Scarcity and climate adaptation form a reinforcing feedback loop where each worsens the other's resource demands.",
+        "target_narrative": "Climate Adaptation"
+      },
+      {
+        "kind": "resource_competition",
+        "strength": 8.5,
+        "description": "Reindustrialization is intensely material-intensive—new factories, grids, transmission lines, and transport infrastructure require copper, aluminum, steel, cement, and rare earths at scale. Simultaneous reindustrialization across the US, Europe, India, and Southeast Asia creates demand surges that collide directly with constrained supply, driving up input costs and creating bottlenecks that slow the very buildout intended.",
+        "target_narrative": "Reindustrialization"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 6.0,
+        "description": "Terrestrial resource scarcity—particularly of platinum-group metals, rare earths, and helium-3—creates a long-term economic rationale for space mining and in-situ resource utilization. The scarcer critical materials become on Earth, the higher the price ceiling that makes asteroid mining and lunar extraction economically viable. Scarcity is the foundational demand driver for the space resource economy.",
+        "target_narrative": "Space Economy"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 6.5,
+        "description": "Biotechnology offers direct scarcity-relief pathways: engineered crops with higher yield per unit of water and fertilizer, synthetic biology for material substitution (bioplastics, lab-grown proteins), and biomanufacturing that uses feedstocks instead of petrochemicals. Scarcity raises the economic value of these substitutions, accelerating biotech investment and commercialization.",
+        "target_narrative": "Biotechnology Revolution"
+      },
+      {
+        "kind": "resource_competition",
+        "strength": 4.0,
+        "description": "Industrial biomanufacturing at scale requires significant arable land for feedstock, freshwater for fermentation, and energy for bioreactors. As biotech scales to address material scarcity, it creates new demands on land and water that compete with agriculture and ecosystem needs.",
+        "target_narrative": "Biotechnology Revolution"
+      }
+    ],
+    "hidden_effects": [
+      {
+        "order": "hidden",
+        "description": "Cognitive and cultural shifts occur gradually as scarcity normalizes lower consumption expectations; consumer identity detaches from material abundance, and frugality or sufficiency ideologies gain moral and political salience, reshaping demand patterns in ways that persist even if supply temporarily recovers."
+      },
+      {
+        "order": "hidden",
+        "description": "Specialized human capital and institutional knowledge atrophy in industries rendered nonviable by scarcity; when conditions later improve, the loss of skilled practitioners, supplier ecosystems, and tacit know-how creates path-dependent recovery costs that are invisible in standard economic accounts."
+      },
+      {
+        "order": "hidden",
+        "description": "Ecological systems experience indirect relief or paradoxical stress: reduced extraction pressure may allow some ecosystems to recover, but substitution to lower-grade or alternative resources can shift environmental burden to new geographies and new pollutant profiles, creating displaced scarcity that is geographically and temporally decoupled from the original shortage."
+      },
+      {
+        "order": "hidden",
+        "description": "Inequality deepens along a new axis of resource access rather than income alone; elites and well-connected firms secure preferential supply through political channels, creating a shadow economy of resource allocation that distorts market signals and entrenches rentier power structures invisible in official pricing data."
+      }
+    ],
+    "potential_losers": [
+      [
+        "Aluminum producers banking on copper substitution at scale",
+        "Manufacturers without long-term copper offtake agreements",
+        "Grid operators facing rising conductor costs",
+        "EV manufacturers exposed to raw material cost pass-through risk"
+      ],
+      [
+        "Natural gas power generators facing nuclear competition for baseload",
+        "Coal-dependent utilities in jurisdictions with nuclear mandates",
+        "Countries dependent on Russian nuclear fuel services"
+      ],
+      [
+        "Food-importing nations dependent on fertilizer imports",
+        "Countries without domestic phosphate reserves facing long-term supply risk",
+        "Conventional wastewater treatment operators missing phosphorus recovery mandates"
+      ],
+      [
+        "Agriculture in water-stressed basins without efficient irrigation",
+        "Thermal power plants facing cooling water constraints",
+        "Semiconductor fabs in water-stressed regions without recycling infrastructure",
+        "Municipalities deferring infrastructure investment"
+      ],
+      [
+        "EV motor manufacturers dependent on Chinese magnet supply",
+        "Wind turbine OEMs without diversified rare earth supply",
+        "Defense contractors reliant on Chinese rare earth components"
+      ],
+      [
+        "High-cost hard rock lithium producers in marginal jurisdictions",
+        "Companies relying on DLE (direct lithium extraction) technology not yet proven at scale",
+        "Automakers that delayed long-term offtake agreements expecting permanently low prices"
+      ],
+      [
+        "Terrestrial nickel and cobalt producers facing lower-cost seabed competition",
+        "Indonesian nickel laterite processors (high cost, high environmental impact)",
+        "Environmental NGOs opposing deep-sea mining (reputational, not financial)"
+      ],
+      [
+        "Illegal sand mining operations facing enforcement crackdowns",
+        "Construction companies in sand-scarce regions without secured supply",
+        "Riverine ecosystems and communities affected by unsustainable extraction"
+      ],
+      [
+        "MRI manufacturers facing rising helium costs for magnet cooling",
+        "Semiconductor fabs without long-term helium supply contracts",
+        "Party balloon and novelty helium users (low-value applications being priced out)"
+      ]
+    ],
+    "narrative_summary": "Resource scarcity has evolved from a Malthusian concern into a investable structural thesis driven by the collision of rising demand (energy transition, emerging-market middle-class consumption, urbanization) against constrained supply (declining ore grades, underinvestment in new capacity, ESG-driven permitting friction, resource nationalism). The narrative spans two distinct but related domains visible in the referenced ETFs: agricultural inputs (PICK) where phosphate rock depletion, potash supply concentration in Russia/Belarus, and water stress threaten food security; and strategic minerals (REMX) where rare earths, lithium, cobalt, and nickel face acute supply-demand imbalances as EV penetration, wind turbine deployment, and grid storage scale simultaneously. China's dominance in rare earth processing (85-90% of magnet rare earth refining) and growing Indonesian control over nickel supply create chokepoints that Western policy is only beginning to address through initiatives like the Inflation Reduction Act and Critical Raw Materials Act.\n\nThe investment implication is not uniform commodity inflation but selective scarcity premia in specific materials where supply elasticity is near-zero in the short run (mine lead times of 10-15 years) and demand is policy-mandated rather than discretionary. This creates asymmetric upside in producers and technology enablers (recycling, substitution, processing) while posing systemic risk to downstream manufacturers facing input cost volatility. The narrative is still in early-mid adoption: capital flows into scarcity themes remain a fraction of total commodity exposure, physical deficits are projected to materialize most acutely in copper (late 2020s), lithium (mid-2030s depending on recycling scale), and phosphate (2030s), and the geopolitical risk premium remains underpriced given the concentration of supply in adversarial or unstable jurisdictions.",
+    "potential_winners": [
+      [
+        "First Quantum Minerals (copper-focused with tier-1 assets)",
+        "Southern Copper (large reserves, low cost, long mine life)",
+        "Sandfire Resources (copper pure-play with growth pipeline)",
+        "Caterpillar and Komatsu (mining equipment for brownfield expansion)",
+        "Copper futures and physical-backed ETFs"
+      ],
+      [
+        "Cameco (largest western producer, strategic positioning)",
+        "Energy Fuels (US-based, vanadium optionality)",
+        "Paladin Energy (restart of Langer Heinrich)",
+        "Sprott Physical Uranium Trust (physical exposure)",
+        "BWX Technologies (nuclear reactor components)"
+      ],
+      [
+        "Mosaic (US-based phosphate producer with domestic reserves)",
+        "OCP Group (Moroccan monopoly, pre-IPO watch)",
+        "Itafos (strategic phosphate projects in stable jurisdictions)",
+        "ICL Group (phosphate and specialty potash, Israeli jurisdiction)",
+        "Nutrien (integrated fertilizer with phosphate exposure)"
+      ],
+      [
+        "Xylem (water technology pure-play with treatment and transport)",
+        "American Water Works (regulated utility with consolidation runway)",
+        "Veolia and Suez (European water majors with global footprint)",
+        "Evoqua Water Technologies (now part of Xylem, industrial water treatment)",
+        "Energy Recovery (desalination and industrial fluid pressure technology)"
+      ],
+      [
+        "MP Materials (integrated mine-to-magnet strategy at Mountain Pass)",
+        "Iluka Resources (Australian rare earths with Eneabba refinery)",
+        "Vital Metals (Nechalacho project, Canadian jurisdiction)",
+        "USA Rare Earth (Round Top project with integrated processing)",
+        "Hexagon Manufacturing (rare earth magnet production)"
+      ],
+      [
+        "SQM (low-cost Chilean brine, diversified lithium and iodine)",
+        "Pilbara Minerals (low-cost Australian hard rock, debt-free)",
+        "Sigma Lithium (high-grade Brazilian production, ESG premium)",
+        "Albemarle (integrated leader with downstream processing)",
+        "Lithium Americas (Thacker Pass, US strategic asset)"
+      ],
+      [
+        "The Metals Company (TMC) (most advanced deep-sea mining project)",
+        "Global Sea Mineral Resources (GSR, subsidiary of DEME Group)",
+        "Lockheed Martin (UK Seabed Resources subsidiary)",
+        "Saipem and Allseas (offshore engineering and nodule collection technology)",
+        "Maersk Supply Service (offshore vessel support)"
+      ],
+      [
+        "Vulcan Materials (largest US aggregates producer, urban market positioning)",
+        "Martin Marietta Materials (aggregates with infrastructure exposure)",
+        "Heidelberg Materials (global aggregates with manufactured sand capability)",
+        "Metso Outotec (crushing and screening equipment for manufactured sand)",
+        "UltraTech Cement (Indian market, integrated aggregates strategy)"
+      ],
+      [
+        "Renergen (South African helium and LNG, first African helium producer)",
+        "Desert Mountain Energy (Arizona helium exploration and production)",
+        "Royal Helium (Canadian helium producer with processing infrastructure)",
+        "Linde and Air Products (industrial gas majors with helium distribution)",
+        "Air Liquide (helium recovery and recycling technology)"
+      ]
+    ],
+    "dependency_network": [
+      {
+        "type": "resource",
+        "layer": "physical_commodity",
+        "weight": 9.5,
+        "description": "Rare earth elements (neodymium, praseodymium, dysprosium) and strategic metals (lithium, cobalt, nickel, copper) whose finite geological distribution underpins the scarcity narrative; REMX price action directly tracks these."
+      },
+      {
+        "type": "input",
+        "layer": "energy_transition_demand",
+        "weight": 9.0,
+        "description": "EV battery, wind turbine, solar PV, and grid-scale storage demand growth creating structural deficits in copper, lithium, nickel, and rare earths; primary demand-side driver of scarcity pricing."
+      },
+      {
+        "type": "input",
+        "layer": "ai_datacenter_infrastructure",
+        "weight": 8.0,
+        "description": "Hyperscale data center buildout driving copper (wiring), rare earth (magnets in cooling motors), and electricity demand; secondary but accelerating demand vector compounding scarcity."
+      },
+      {
+        "type": "resource",
+        "layer": "electricity",
+        "weight": 8.5,
+        "description": "Power for mining, refining, and smelting operations; energy-intensive processing of rare earths and base metals requires cheap reliable electricity, increasingly constrained by grid capacity."
+      },
+      {
+        "type": "resource",
+        "layer": "water",
+        "weight": 7.5,
+        "description": "Process water for mining, mineral beneficiation, and refining; arid regions hosting key deposits (Chilean lithium triangle, Australian outback) face acute water stress."
+      },
+      {
+        "type": "constraint",
+        "layer": "refining_processing_capacity",
+        "weight": 9.0,
+        "description": "Bottleneck in midstream processing; China controls ~85-90% of rare earth refining and ~60-70% of lithium chemical processing, creating structural supply inelasticity."
+      },
+      {
+        "type": "resource",
+        "layer": "skilled_labor",
+        "weight": 7.0,
+        "description": "Metallurgists, mining engineers, geologists, and processing technicians; decades-long underinvestment in mining education creates labor scarcity across the extractive value chain."
+      },
+      {
+        "type": "input",
+        "layer": "capital_availability",
+        "weight": 8.5,
+        "description": "Greenfield mine development requires $500M-$5B+ and 7-15 years lead time; ESG-driven capital constraints and mining sector underinvestment since 2012 limit supply response to price signals."
+      },
+      {
+        "type": "resource",
+        "layer": "construction_infrastructure",
+        "weight": 6.5,
+        "description": "Roads, rail, ports, and power transmission to remote deposit sites; greenfield projects in Africa, South America, and Central Asia face infrastructure deficits adding 30-50% to capex."
+      },
+      {
+        "type": "constraint",
+        "layer": "geopolitical_export_controls",
+        "weight": 9.5,
+        "description": "China's rare earth export restrictions, US Inflation Reduction Act sourcing requirements, EU Critical Raw Materials Act, and Indonesia nickel export bans fragment supply chains and amplify scarcity premia."
+      },
+      {
+        "type": "constraint",
+        "layer": "environmental_regulation",
+        "weight": 7.5,
+        "description": "Permitting timelines (7-10 years in US/Canada), tailings management rules, and ESG screening requirements constrain new mine supply and raise compliance costs."
+      },
+      {
+        "type": "constraint",
+        "layer": "substitution_technology",
+        "weight": 6.0,
+        "description": "Sodium-ion batteries, iron-phosphate cathodes, and material efficiency gains cap upside in some scarce materials; substitution elasticity limits scarcity pricing power over longer horizons."
+      },
+      {
+        "type": "input",
+        "layer": "recycling_circular_economy",
+        "weight": 5.5,
+        "description": "Urban mining and battery recycling (Redwood, Li-Cycle, Umicore) as secondary supply; currently <5% of rare earth supply but scaling; moderates long-term scarcity severity."
+      },
+      {
+        "type": "constraint",
+        "layer": "emerging_market_political_risk",
+        "weight": 8.0,
+        "description": "Resource nationalism in DRC (cobalt), Indonesia (nickel), Chile (lithium nationalization debates), and Pakistan (PICK exposure to mining sector policy); sovereign risk directly impacts supply availability and equity valuations."
+      },
+      {
+        "type": "resource",
+        "layer": "inventory_strategic_stockpiles",
+        "weight": 6.5,
+        "description": "Government strategic reserves (US National Defense Stockpile, China state reserves) and exchange warehouse stocks; drawdowns or accumulations create price volatility around structural scarcity."
+      },
+      {
+        "type": "input",
+        "layer": "fx_dollar_strength",
+        "weight": 5.0,
+        "description": "USD-denominated commodity pricing; dollar strength suppresses EM producer margins and demand from import-dependent economies, creating cyclical overlay on structural scarcity."
+      },
+      {
+        "type": "resource",
+        "layer": "shipping_freight",
+        "weight": 5.5,
+        "description": "Bulk carrier and container freight for moving ores, concentrates, and refined metals; Red Sea disruption and Panama Canal constraints add logistics cost layer to scarce materials."
+      }
+    ],
+    "future_bottlenecks": [
+      {
+        "name": "Nickel sulfate conversion capacity gap for battery-grade material",
+        "tier": "emerging",
+        "cause": "Battery-grade nickel sulfate requires Class 1 nickel or intermediate products (MHP, matte) processed through specialized facilities. Indonesia's nickel boom produces mostly stainless steel-grade nickel and NPI. Converting Indonesian intermediates to battery-grade sulfate faces technical, environmental, and ESG scrutiny challenges. Western automakers increasingly demand traceable, low-carbon nickel.",
+        "losers": [
+          "Battery makers without secured battery-grade nickel supply",
+          "Indonesian NPI producers unable to upgrade to sulfate",
+          "Automakers with aggressive EV targets but unsecured nickel supply chains",
+          "Nickel miners with only laterite resources and no processing partners"
+        ],
+        "winners": [
+          "Existing nickel sulfate producers in compliant jurisdictions (Sumitomo Metal Mining, Vale)",
+          "HPAL operators with ESG-credible operations",
+          "Nickel recycling companies (Redwood Materials, Li-Cycle)",
+          "High-pressure acid leach technology providers"
+        ],
+        "severity": 6.0,
+        "time_horizon": "2-5 years; battery-grade nickel deficit emerges as EV penetration crosses 25% in major markets",
+        "market_awareness": "Low to moderate. Markets see nickel surplus headlines but miss the quality differentiation between Class 1/Class 2 and battery-grade specifications."
+      },
+      {
+        "name": "Phosphate rock scarcity driven by fertilizer and battery dual demand",
+        "tier": "emerging",
+        "cause": "Phosphate rock is a finite, non-substitutable agricultural input with no synthetic alternative. Now LFP batteries are creating a second demand stream. Morocco controls ~70% of global reserves. Export restrictions and geopolitical leverage are growing. Simultaneously, depleted soils globally require increasing phosphate application rates.",
+        "losers": [
+          "Food-importing nations dependent on fertilizer imports",
+          "LFP battery manufacturers without upstream phosphate integration",
+          "Agricultural economies in sub-Saharan Africa and South Asia",
+          "Secondary phosphate producers without rock reserves"
+        ],
+        "winners": [
+          "Integrated phosphate producers with captive reserves (Mosaic, OCP Group, ICL)",
+          "Phosphate rock miners in geopolitically stable jurisdictions",
+          "LFP battery makers with secured phosphate supply chains",
+          "Phosphate recycling and recovery technology companies"
+        ],
+        "severity": 6.0,
+        "time_horizon": "3-7 years; tightening visible as LFP battery adoption accelerates and agricultural demand grows with population",
+        "market_awareness": "Low. Agricultural phosphate scarcity is discussed in agronomy circles but the compounding demand from LFP batteries is almost entirely unpriced."
+      },
+      {
+        "name": "Uranium conversion and enrichment capacity bottleneck",
+        "tier": "emerging",
+        "cause": "Decades of underinvestment following Fukushima created a structural deficit in uranium conversion (UF6) and enrichment capacity. Russia's Tenex controls ~35-40% of global enrichment capacity. Western capacity expansion (Urenco, Orano) requires 5-7 year buildouts. Nuclear renaissance from AI data centers and SMR development accelerates demand.",
+        "losers": [
+          "Nuclear utilities without long-term conversion/enrichment contracts",
+          "Eastern European utilities dependent on Russian nuclear fuel",
+          "Reactors facing fuel procurement delays",
+          "Uranium miners without conversion capacity or offtake"
+        ],
+        "winners": [
+          "Integrated nuclear fuel cycle companies (Cameco, Orano, Urenco)",
+          "Western enrichment capacity expanders",
+          "Uranium holders and physical uranium trusts (SPUT)",
+          "SMR developers with secured fuel supply"
+        ],
+        "severity": 7.0,
+        "time_horizon": "1-4 years; conversion/enrichment tightness intensifies as reactor restarts and new builds accelerate",
+        "market_awareness": "Moderate. Uranium spot price rallies have attracted attention, but the specific conversion and enrichment bottleneck (vs. raw uranium mining) is poorly understood."
+      }
+    ],
+    "hidden_constraints": [
+      {
+        "name": "Mining sector skilled labor and engineering talent cliff",
+        "tier": "hidden",
+        "cause": "Mining engineering enrollment has collapsed 50%+ over 15 years in Western universities. Average age of mining engineers is 50+. Resource nationalism and remote locations compound recruitment difficulty. The talent gap means projects face 2-4 year delays in feasibility studies, permitting, and construction management. This is the invisible multiplier on every other supply bottleneck.",
+        "losers": [
+          "Junior miners with ambitious timelines but no engineering teams",
+          "Projects in remote locations unable to attract talent",
+          "Mining jurisdictions with restrictive visa policies for skilled workers",
+          "Investors in projects with optimistic timelines that will slip due to staffing"
+        ],
+        "winners": [
+          "Mining companies with established training pipelines and retention programs",
+          "Mining technology and automation companies reducing labor intensity (Komatsu, Caterpillar autonomous systems)",
+          "Mining engineering consultancies with deep talent benches",
+          "Universities and programs producing mining engineers"
+        ],
+        "severity": 8.0,
+        "time_horizon": "0-10 years; already constraining project timelines, worsening as boomer-generation engineers retire",
+        "market_awareness": "Very low. Markets model supply based on resource inventories and project pipelines but assume labor availability. The human capital bottleneck is almost never priced into supply forecasts."
+      },
+      {
+        "name": "Declining ore quality creating exponential energy and water demand",
+        "tier": "hidden",
+        "cause": "As the best deposits are mined first, remaining ores have systematically lower grades. This is not linear: halving ore grade roughly doubles energy consumption, water use, and tailings generation per unit of metal. This creates a vicious cycle where energy transition metals require exponentially more energy and water to produce, straining power grids and water systems in mining regions. Copper head grades have declined from ~1.8% to ~0.6% over 30 years.",
+        "losers": [
+          "Marginal producers with low-grade resources facing cost inflation",
+          "Mining regions facing water competition between mines and communities",
+          "Investors in projects with feasibility studies based on current energy costs",
+          "Societies depending on metals whose production costs are structurally rising"
+        ],
+        "winners": [
+          "Companies with high-grade, long-life deposits (Ivanhoe's Kamoa-Kakula, First Quantum's Cobre Panama if restarted)",
+          "Mining technology companies improving recovery rates and energy efficiency",
+          "Desalination and water management companies serving mining",
+          "Renewable energy providers to mining operations"
+        ],
+        "severity": 9.0,
+        "time_horizon": "0-15 years; compounding effect accelerating as high-grade deposits deplete",
+        "market_awareness": "Very low. Analysts model supply curves and cost curves but rarely incorporate the exponential energy/water cost escalation from declining grades. ESG frameworks focus on emissions but miss the thermodynamic reality of declining ore quality."
+      },
+      {
+        "name": "Mining equipment, heavy machinery, and specialty tire supply chain fragility",
+        "tier": "hidden",
+        "cause": "Ultra-class mining trucks, excavators, and specialty off-road tires are produced by a handful of manufacturers (Caterpillar, Komatsu, Liebherr) with 18-36 month lead times and limited production slots. Tire supply (Bridgestone, Michelin, Goodyear) for ultra-class trucks is chronically tight. When commodity prices spike, all miners order equipment simultaneously, creating multi-year backlogs that physically prevent supply response regardless of price signals.",
+        "losers": [
+          "Junior miners planning production ramps without secured equipment",
+          "Projects counting on rapid supply response to high prices",
+          "Tire-dependent logistics and haulage operations",
+          "Investors pricing in near-term production from projects without equipment orders placed"
+        ],
+        "winners": [
+          "Mining equipment OEMs with order backlogs (Caterpillar, Komatsu)",
+          "Off-road tire manufacturers with mining exposure",
+          "Existing producers with installed and operational equipment fleets",
+          "Remanufacturing and equipment refurbishment companies"
+        ],
+        "severity": 7.0,
+        "time_horizon": "0-5 years; manifests acutely during commodity price spikes when multiple projects attempt simultaneous ramp-up",
+        "market_awareness": "Very low. Markets assume supply elasticity—higher prices trigger more production—but the physical capital goods bottleneck means supply responses are delayed by 2-4 years beyond what models assume."
+      },
+      {
+        "name": "Tailings storage facility failures and permitting paralysis",
+        "tier": "hidden",
+        "cause": "Post-Brumadinho (2019) and Mount Polley (2014) tailings dam failures, ESG-conscious investors and regulators are imposing stricter tailings management standards. New projects face 3-7 year permitting delays for tailings facilities. Existing operations face costly retrofits or closure orders. This creates a hidden tax on all new mining capacity that is almost never modeled in supply forecasts.",
+        "losers": [
+          "Projects with upstream tailings dams in seismically active or high-rainfall areas",
+          "Mining companies with legacy tailings facilities requiring retrofit",
+          "Jurisdictions with aging tailings infrastructure and weak governance",
+          "Investors in projects where tailings permitting is on the critical path"
+        ],
+        "winners": [
+          "Tailings management technology companies (MineSense, Goldspot Discoveries)",
+          "Dry stacking and filtered tailings technology providers",
+          "Mining companies with conventional tailings facilities in stable jurisdictions",
+          "Environmental engineering consultancies specializing in tailings"
+        ],
+        "severity": 7.0,
+        "time_horizon": "0-10 years; tightening progressively as GISTM standards are implemented and insurance markets reprice tailings risk",
+        "market_awareness": "Very low. Tailings risk is discussed in ESG circles but not translated into supply constraint models. Insurance markets are repricing but equity analysts rarely incorporate tailings-related delays into project timelines."
+      }
+    ],
+    "current_bottlenecks": [
+      {
+        "name": "Copper mine depletion vs. energy transition demand surge",
+        "tier": "current",
+        "cause": "Decades of underinvestment in greenfield copper exploration colliding with exponential demand from EVs, grid electrification, and data center buildout. Average ore grades declining ~25% over 15 years, meaning more rock must be moved per ton of refined copper. New projects face 15-20 year lead times from discovery to production.",
+        "losers": [
+          "Copper-intensive manufacturers without hedging programs",
+          "Grid developers facing cost overruns on transmission projects",
+          "EV makers with thin margins exposed to raw material inflation",
+          "Emerging market economies dependent on copper imports"
+        ],
+        "winners": [
+          "Existing copper producers with long mine lives (Southern Copper, First Quantum)",
+          "Copper royalty/streaming companies (Franco-Nevada, Royal Gold)",
+          "Copper-focused ETFs and physical copper instruments",
+          "Recycling technology providers (Aurubis, Umicore)"
+        ],
+        "severity": 8.0,
+        "time_horizon": "0-3 years; structural deficit visible now, widening through 2027",
+        "market_awareness": "High. Copper price rallies and ETF flows (REMX at $95.55) reflect growing recognition, but the magnitude of the structural deficit is still underestimated by most allocators who model linear rather than exponential demand curves."
+      },
+      {
+        "name": "Rare earth element processing monopoly in China",
+        "tier": "current",
+        "cause": "China controls ~87% of rare earth processing capacity despite holding only ~35% of reserves. Decades of strategic industrial policy, environmental tolerance for toxic processing, and vertical integration created a chokepoint that Western capacity building has barely dented. Mountain Pass ships concentrate to China for processing.",
+        "losers": [
+          "Wind turbine manufacturers dependent on NdFeB magnets",
+          "Defense contractors requiring rare earth components",
+          "Automotive suppliers for EV motors using permanent magnets",
+          "Non-Chinese rare earth miners without processing offtake agreements"
+        ],
+        "winners": [
+          "MP Materials once vertical integration completes",
+          "Australian rare earth developers with offtake to non-Chinese processors (Iluka, Lynas)",
+          "Defense department-funded processing initiatives",
+          "Rare earth recycling startups (Cyclic Materials, REEcycle)"
+        ],
+        "severity": 7.0,
+        "time_horizon": "0-5 years; Western processing capacity coming online slowly but insufficient through 2028",
+        "market_awareness": "Moderate to high. Geopolitical tensions have raised awareness, but markets underprice the probability of export restrictions or quotas being used as economic warfare tools."
+      },
+      {
+        "name": "Lithium refining bottleneck outside China",
+        "tier": "current",
+        "cause": "While lithium extraction is geographically diversified (Australia, Chile, Argentina), conversion to battery-grade lithium hydroxide/carbonate remains concentrated in China (~65% of global refining capacity). Refining is chemically complex, energy-intensive, and requires 2-4 year buildouts with significant commissioning risks.",
+        "losers": [
+          "Pure-play lithium miners without refining offtake or integration",
+          "Battery cell manufacturers without long-term refining contracts",
+          "EV OEMs exposed to lithium hydroxide price spikes",
+          "Junior lithium miners in jurisdictions with slow permitting"
+        ],
+        "winners": [
+          "Integrated lithium producers with refining capacity (SQM, Albemarle, Tianqi)",
+          "Western refining projects with secured feedstock (Lithium Americas, Piedmont)",
+          "Direct lithium extraction technology companies (Lilac Solutions, EnergySource)",
+          "Refining technology licensors"
+        ],
+        "severity": 7.0,
+        "time_horizon": "0-4 years; Western refining capacity ramping but trailing demand growth",
+        "market_awareness": "High among battery/EV specialists, moderate among generalist investors who conflate lithium mining with lithium refining."
+      }
+    ],
+    "first_order_effects": [
+      {
+        "order": "1",
+        "description": "Spot and futures prices for the scarce resource spike sharply; extraction and production costs at marginal operations rise as operators are forced into lower-grade deposits or harder-to-access reserves, compressing margins across the supply chain."
+      },
+      {
+        "order": "1",
+        "description": "Industries directly dependent on the resource ration inputs, curtail output, or shut in capacity entirely—e.g., agricultural producers facing water shortages leave land fallow, manufacturers facing semiconductor shortages idle assembly lines."
+      },
+      {
+        "order": "1",
+        "description": "Producers and resource holders accumulate windfall rents while net consumers face immediate margin compression; hoarding behavior begins as firms and states build strategic inventories, further tightening available spot supply."
+      }
+    ],
+    "regulatory_analysis": {
+      "summary": "Resource scarcity regulation is fragmenting into a patchwork of export controls, critical minerals strategies, water allocation regimes, and supply chain due diligence mandates. The dominant regulatory logic has shifted from market efficiency to strategic autonomy and resilience. Governments are increasingly treating access to water, energy transition metals, arable land, and rare earth elements as national security imperatives rather than tradable commodities. The US Inflation Reduction Act, EU Critical Raw Materials Act, and China's dominance of rare earth processing exemplify a move toward friend-shoring, stockpiling, and domestic substitution. Future regulatory regimes will likely intensify along three vectors: (1) extended producer responsibility and circular economy mandates forcing recycling and lifecycle accountability; (2) water rights restructuring as hydrological stress becomes acute in agricultural and industrial hubs; (3) carbon-border adjustments and embodied resource taxation that internalize ecological externalities at trade boundaries. The system is moving from voluntary disclosure toward mandatory, auditable, and penalty-backed compliance, with cascading effects on commodity pricing, capital allocation, and corporate balance sheets.",
+      "catalysts": [
+        "Acute physical scarcity events (droughts, mine depletion, fishery collapse) that force emergency regulatory intervention and price spikes",
+        "Geopolitical conflict disrupting critical mineral or energy supply chains, accelerating stockpiling mandates and domestic production subsidies",
+        "Breakthrough in recycling technology or material substitution that shifts regulatory focus from extraction limits to circularity mandates",
+        "Climate-driven migration and agricultural failure triggering water law reform and transboundary resource treaties",
+        "Major corporate scandal or supply chain human rights violation that catalyzes mandatory due diligence legislation",
+        "Central bank or sovereign wealth fund adoption of resource-backed or scarcity-indexed financial instruments, monetizing regulatory risk",
+        "WTO or bilateral trade dispute resolution that either validates or undermines carbon-border mechanisms, setting precedent for embodied resource taxation",
+        "Convergence of AI and resource monitoring enabling real-time, auditable supply chain transparency that makes mandatory disclosure technically feasible and politically expected"
+      ],
+      "key_risks": [
+        "Regulatory fragmentation across jurisdictions creates compliance arbitrage but raises operational complexity and cost for multinational resource users",
+        "Export controls and tariffs on critical minerals can trigger retaliatory measures and accelerate balkanization of commodity markets",
+        "Water rights reallocation threatens stranded agricultural assets and industrial operations in water-stressed basins, particularly in the US Southwest, MENA, and Australia",
+        "Mandatory supply chain due diligence (e.g., EU CSDDD, UFLPA) creates liability for scope-3 resource impacts previously external to corporate balance sheets",
+        "Permitting bottlenecks for new mining and processing capacity delay supply response, amplifying price volatility and incentivizing substitution that may be technically inferior",
+        "Geopolitical weaponization of resource chokepoints (e.g., lithium triangle, South China Sea shipping lanes, Russian gas) introduces discontinuous regulatory risk",
+        "Circular economy mandates may outpace recycling infrastructure and technology readiness, creating unfunded mandates and stranded compliance costs",
+        "Carbon border adjustment mechanisms risk WTO challenges and developing-country pushback, potentially fracturing multilateral trade architecture"
+      ]
+    },
+    "third_order_effects": [
+      {
+        "order": "3",
+        "description": "Global trade and production networks restructure around resource geography: manufacturing migrates closer to resource endowments, new regional blocs form around shared resource access, and legacy trade routes lose economic logic, redrawing the map of comparative advantage."
+      },
+      {
+        "order": "3",
+        "description": "Political instability rises in import-dependent nations as living standards fall; governments face legitimacy crises, populist movements weaponize scarcity narratives, and inter-state conflict risk increases over contested resource zones such as river basins, mineral belts, and maritime corridors."
+      },
+      {
+        "order": "3",
+        "description": "Institutional and civilizational adaptation occurs as economies shift toward steady-state or circular models; long-term capital allocation, urban design, and industrial architecture are rebuilt around throughput minimization rather than maximization, altering the growth paradigm itself."
+      }
+    ],
+    "second_order_effects": [
+      {
+        "order": "2",
+        "description": "Cost-push inflation propagates downstream as higher input costs are passed through to finished goods and services, eroding real wages and consumer purchasing power across the economy, particularly hitting low-income households who spend higher fractions of income on basics."
+      },
+      {
+        "order": "2",
+        "description": "Substitution and efficiency investment accelerates: firms reengineer products to use less of the scarce input, switch to alternatives, or invest in recycling and circular flows; venture and corporate capital flows toward resource-efficient technologies and alternative supply chains."
+      },
+      {
+        "order": "2",
+        "description": "Resource-holding states gain geopolitical leverage while import-dependent states face deteriorating terms of trade and strategic vulnerability; bilateral deals, export bans, and resource nationalism proliferate as states weaponize access."
+      }
+    ],
+    "confidence_assessment": {
+      "composite": 7.9,
+      "conviction": 7.0
+    },
+    "geopolitical_analysis": {
+      "summary": "Resource scarcity has become a defining geopolitical axis of the 21st century, driven by the convergence of climate change, population growth, urbanization, and the energy transition. The strategic landscape now extends beyond traditional hydrocarbons to include critical minerals (lithium, cobalt, rare earths, nickel, copper), freshwater, arable land, fisheries, and increasingly semiconductors and compute capacity. China's near-monopoly on rare earth processing and its strategic positioning across African and Latin American mineral supply chains has created a structural dependency that Western nations are now scrambling to break through initiatives like the Minerals Security Partnership and the Inflation Reduction Act's sourcing requirements. Water scarcity is escalating as a conflict vector — China's upstream damming of the Mekong and Brahmaputra, Ethiopia's GERD dispute with Egypt and Sudan, and aquifer depletion across the Middle East and South Asia are creating slow-motion crises with military implications. Food security has been re-weaponized, as demonstrated by Russia's grain blockade of Ukraine and recurring export bans from India and other major producers. The Arctic, as ice retreats, is emerging as a new theater of resource competition involving hydrocarbons, minerals, and shipping routes, with Russia, China, and NATO members repositioning militarily. Meanwhile, the energy transition is creating a paradox: reducing dependence on petrostates while creating new dependencies on mineral-rich nations, many of which are politically unstable (DRC, Guinea, Myanmar). Resource nationalism is resurging — Indonesia's nickel export bans, Mexico's lithium nationalization, Chile's new mining royalty regime — as producing nations seek to capture more value and use scarcity as leverage. The weaponization of chokepoints (Strait of Hormuz, Malacca, Bab el-Mandeb, Suez, Panama Canal) remains a persistent vulnerability, while climate-driven migration from resource-stressed regions is reshaping border politics in Europe, the US, and India. The fundamental dynamic is a shift from the post-Cold War assumption of abundant, fungible global commodity markets toward a fragmented, securitized, and increasingly zero-sum resource environment where supply chain resilience has become a core national security doctrine.",
+      "key_risks": [
+        "Transboundary water conflicts escalating into military confrontation — Nile/GERD, Mekong cascade, Indus Treaty breakdown, Tigris-Euphrates disputes — as upstream nations assert hydrological sovereignty",
+        "China's dominance over critical mineral processing (60-90% of rare earth refining) enabling supply chain weaponization during crises, as previewed by its gallium and germanium export controls in 2023",
+        "Food price shocks triggering political instability in import-dependent nations — the Arab Spring precedent where wheat price spikes contributed to state collapse — now amplified by Ukraine/Russia grain disruptions and fertilizer shortages from Belarus/Russia potash and ammonia",
+        "Resource-for-infrastructure deals (China's Belt and Road, Gulf state land acquisitions in Africa) creating debt dependencies and sovereignty erosion in resource-rich developing nations",
+        "Arctic militarization and territorial ambiguity as retreating ice opens new extraction and shipping opportunities, with Russia reactivating Soviet-era bases and China declaring itself a 'near-Arctic state'",
+        "Deep-sea mining race in international waters creating governance vacuums and potential for unilateral extraction claims before ISA regulatory frameworks are finalized",
+        "Cyber attacks on resource infrastructure — water treatment, pipelines, grids, ports — as asymmetric warfare tools, demonstrated by Colonial Pipeline and Florida water system incidents",
+        "Climate-driven mass migration from increasingly uninhabitable zones (Sahel, Central America dry corridor, South Asian flood plains) overwhelming border states and fueling nationalist political movements",
+        "Concentration of mineral extraction in politically unstable or conflict-affected regions (DRC cobalt, Myanmar rare earths, Guinean bauxite) creating supply fragility and enabling non-state actor capture",
+        "Strait of Hormuz and Malacca chokepoint disruption — whether by state action, piracy, or state-sponsored proxies — causing immediate energy supply crises for Asia-dependent economies",
+        "Rare earth and mineral substitution lag — the technological and capital timeline to develop alternatives (e.g., iron-nitride magnets, sodium-ion batteries) is 10-15 years, leaving a vulnerability window",
+        "Soil degradation and phosphorus depletion creating structural food production decline in major agricultural regions (US Midwest, North China Plain, Ukrainian black earth belt) with cascading geopolitical effects",
+        "Nuclear proliferation risk as water-stressed nations pursue nuclear energy for desalination and power, expanding enrichment and reprocessing capabilities under dual-use ambiguity"
+      ],
+      "opportunities": [
+        "Mineral-rich nations (Australia, Chile, Indonesia, DRC, Argentina, Mongolia) can leverage scarcity to negotiate technology transfer, domestic processing investment, and strategic partnerships — Indonesia's nickel downstreaming strategy has already attracted $30B+ in Chinese investment and is forcing battery manufacturers to localize",
+        "Circular economy and urban mining leadership — nations and firms that build recycling infrastructure for batteries, electronics, and rare earths can reduce import dependency and create new export industries; EU's Critical Raw Materials Act targets 25% of consumption from recycling by 2030",
+        "Desalination and water technology export positioning — Israel, Saudi Arabia, and Singapore have developed exportable water security technologies that are becoming strategically valuable as 4 billion people face water stress",
+        "Arctic nations (Canada, Denmark/Greenland, Norway, US/Alaska) positioned to benefit from new shipping lanes (Northern Sea Route, Northwest Passage) and untapped mineral/hydrocarbon reserves as ice retreats, with Greenland's rare earth deposits particularly strategic",
+        "Minerals Security Partnership and Quad critical minerals initiatives creating new alliance structures and investment corridors that can counterbalance Chinese supply chain dominance while building diversified, resilient sourcing",
+        "Vertical farming, precision agriculture, and agtech enabling import-dependent nations (UAE, Singapore, Japan, South Korea) to reduce food vulnerability — UAE's vertical farming investments and Singapore's '30 by 30' food resilience strategy are early models",
+        "Nuclear energy renaissance creating geopolitical realignment — small modular reactor (SMR) exports by US, France, Russia, and China are becoming instruments of strategic influence, with Russia's Rosatom currently building 33 reactors abroad",
+        "Deep-sea mining frontier offering nations and firms (Nauru/TMC, Norway, China, Japan) first-mover advantage in accessing polymetallic nodules and cobalt-rich crusts, potentially reshaping battery mineral supply chains by 2030",
+        "Green hydrogen export economies — Australia, Chile, Morocco, Saudi Arabia, and Namibia positioning to become new energy exporters, potentially reshaping energy trade flows and reducing petrostate leverage",
+        "Substitution and materials science breakthroughs — investments in alternative chemistries (sodium-ion, solid-state, iron-air batteries), alternative permanent magnets, and synthetic biology for material production can create strategic autonomy and exportable IP",
+        "Strategic petroleum and mineral reserve expansion — nations that build robust stockpiles (US SPR modernization, China's expanding state reserves of copper and rare earths) gain crisis resilience and market influence during supply disruptions",
+        "Diplomatic leverage through resource sharing agreements — transboundary water cooperation frameworks (e.g., expanded Nile Basin Initiative, Mekong-Lancang cooperation) can be vehicles for regional influence and conflict prevention if structured with genuine reciprocity"
+      ]
+    },
+    "market_misconceptions": [
+      "Demand for physical resources will continue to grow along historical trajectories despite potential demand destruction from high prices, demographic decline, and structural economic shifts.",
+      "Technological substitution and efficiency gains will remain marginal and will not meaningfully displace scarce resources within investment time horizons.",
+      "Supply elasticity is permanently low—high prices will not sufficiently incentivize new production, recycling, or alternative resource discovery.",
+      "ESG constraints on capital allocation to extractive industries will persist and tighten, with no policy reversal regardless of energy security crises.",
+      "Geopolitical fragmentation will worsen monotonically, permanently impairing global commodity trade flows and justifying onshoring premiums.",
+      "Current price signals and inventory data reflect fundamental physical scarcity rather than speculative positioning, financialization, or transient supply chain bottlenecks.",
+      "The resource intensity of economic growth will not decline—GDP growth will continue to require proportionally increasing material throughput.",
+      "Circular economy, recycling, and materials science advances will not scale fast enough to alter supply-demand balances."
+    ],
+    "portfolio_implications": {
+      "composite": 7.9,
+      "narrative_score": {
+        "duration": 9.0,
+        "conviction": 7.0,
+        "economic_impact": 9.0,
+        "valuation_support": 6.0,
+        "narrative_strength": 8.0,
+        "adoption_probability": 7.0,
+        "bottleneck_advantage": 9.0,
+        "market_awareness_gap": 8.0,
+        "second_order_effects": 9.0,
+        "competitive_advantage": 7.0
+      }
+    },
+    "psychological_analysis": {
+      "biases": [
+        "Recency bias: Extrapolating recent supply chain disruptions, pandemic-era bottlenecks, and post-2022 energy shocks as permanent structural conditions rather than transient shocks.",
+        "Herd behavior: Crowded positioning in commodity and resource-equity trades as the scarcity narrative gains consensus, creating fragility if the thesis wobbles.",
+        "Overconfidence: High conviction in multi-decade scarcity forecasts despite the historical track record of commodity supercycles consistently disappointing long-term projections due to substitution and supply response.",
+        "Narrative fallacy: Constructing a coherent, compelling story—finite planet, rising demand, constrained supply—that oversimplifies a complex adaptive system with feedback loops, substitution pathways, and demand elasticity.",
+        "Availability: Recent, vivid supply disruptions (European gas crisis, semiconductor shortages, fertilizer shocks) are mentally salient and overweighted relative to historical periods of commodity oversupply.",
+        "Confirmation: Seeking evidence supporting scarcity (reserve decline data, ESG capital constraints, geopolitical tensions) while discounting contradictory signals (rising recycling rates, substitution breakthroughs, demand softening, new resource discoveries)."
+      ],
+      "consensus_view": "Resource scarcity is a secular, structural tailwind driven by the collision of rising global demand—population growth, urbanization, middle-class consumption in emerging markets—with constrained supply: depleting high-grade reserves, chronic underinvestment in new extraction capacity since 2014, ESG-driven capital starvation of fossil fuels and mining, and geopolitical fragmentation weaponizing commodity flows. Investors position for a multi-year commodity supercycle favoring hard assets, resource equities, and producers over consumers.",
+      "narrative_risks": [
+        "Demand destruction accelerates as high commodity prices trigger recession, efficiency mandates, and behavioral shifts, collapsing the demand side of the scarcity equation.",
+        "Technological substitution outpaces scarcity—battery chemistries reduce critical mineral dependence, synthetic biology replaces agricultural inputs, materials science finds substitutes for constrained elements.",
+        "Supply response is underestimated: sustained high prices unlock previously uneconomic reserves, accelerate deep-sea and asteroid mining, and incentivize recycling infrastructure that fundamentally alters supply curves.",
+        "Demographic transition—population plateau and aging in China, India's fertility decline—reduces resource demand growth below extrapolated trendlines.",
+        "Policy reversal on ESG constraints as energy security and affordability crises force governments to prioritize production over transition, flooding supply.",
+        "Geopolitical de-escalation or realignment reopens trade flows, collapsing scarcity premia built into prices.",
+        "Financial de-leveraging in commodity markets reduces speculative demand, revealing that physical scarcity was less severe than paper markets implied.",
+        "Deflationary technology cycles—AI-driven resource optimization, precision agriculture, additive manufacturing—reduce material intensity per unit of GDP faster than demand grows."
+      ],
+      "hidden_assumptions": [
+        "Demand for physical resources will continue to grow along historical trajectories despite potential demand destruction from high prices, demographic decline, and structural economic shifts.",
+        "Technological substitution and efficiency gains will remain marginal and will not meaningfully displace scarce resources within investment time horizons.",
+        "Supply elasticity is permanently low—high prices will not sufficiently incentivize new production, recycling, or alternative resource discovery.",
+        "ESG constraints on capital allocation to extractive industries will persist and tighten, with no policy reversal regardless of energy security crises.",
+        "Geopolitical fragmentation will worsen monotonically, permanently impairing global commodity trade flows and justifying onshoring premiums.",
+        "Current price signals and inventory data reflect fundamental physical scarcity rather than speculative positioning, financialization, or transient supply chain bottlenecks.",
+        "The resource intensity of economic growth will not decline—GDP growth will continue to require proportionally increasing material throughput.",
+        "Circular economy, recycling, and materials science advances will not scale fast enough to alter supply-demand balances."
+      ]
+    },
+    "adoption_curve_analysis": {
+      "stage": "Early Majority (narrative awareness) / Late Innovator (capital deployment)",
+      "growth_rate": "Accelerating at ~15-22% annually in thematic fund flows and producer equity re-rating; physical deficit timelines compressing as demand forecasts revise upward",
+      "penetration_pct": 18,
+      "inflection_points": [
+        "2026-2028: Copper market shifts from surplus to structural deficit as mine pipeline exhaustion coincides with EV/grid demand acceleration; price discovery above $12,000/ton",
+        "2027-2030: Rare earth magnet supply crisis as Western automakers hit IRA/localization content thresholds without sufficient non-Chinese processing capacity online",
+        "2030-2035: Phosphate rock depletion and water stress trigger agricultural input crisis; multiple breadbasket failures from climate events force rationing of fertilizer exports",
+        "Geopolitical shock (Taiwan conflict or South China Sea disruption): immediate rare earth and semiconductor supply seizure triggers Western emergency stockpiling and accelerated mine permitting"
+      ]
+    },
+    "investment_opportunities": [
+      {
+        "type": "direct",
+        "title": "Copper Supply Gap from Electrification Bottleneck",
+        "thesis": "Electrification of transport, grid expansion, and data center buildout require unprecedented copper volumes, but new mine supply is structurally constrained: average lead times from discovery to production exceed 15 years, ore grades are declining globally, and major producing nations (Peru, DRC, Indonesia) face political instability and resource nationalism. The market is pricing copper as a cyclical industrial metal rather than a structurally scarce strategic resource. Even modest demand growth against flat-to-declining supply growth creates a multi-year structural deficit that cannot be resolved by substitution at scale.",
+        "awareness_gap": "Investors frame copper cyclically with Chinese real estate as the demand driver, underweighting the compounding effect of EVs, grid modernization, and AI infrastructure. The gap between announced mine projects and actual production timelines is systematically underestimated.",
+        "valuation_note": "Senior copper producers trade at mid-cycle multiples despite facing a structural deficit. Tier-1 copper assets with long mine lives and low costs are being valued as if their reserves are replaceable, when in fact new tier-1 discoveries are extremely rare.",
+        "potential_losers": [
+          "Aluminum producers banking on copper substitution at scale",
+          "Manufacturers without long-term copper offtake agreements",
+          "Grid operators facing rising conductor costs",
+          "EV manufacturers exposed to raw material cost pass-through risk"
+        ],
+        "potential_winners": [
+          "First Quantum Minerals (copper-focused with tier-1 assets)",
+          "Southern Copper (large reserves, low cost, long mine life)",
+          "Sandfire Resources (copper pure-play with growth pipeline)",
+          "Caterpillar and Komatsu (mining equipment for brownfield expansion)",
+          "Copper futures and physical-backed ETFs"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Uranium Renaissance Driven by AI Power Demand and Energy Security",
+        "thesis": "Three converging forces create a structural uranium deficit: (1) governments are extending reactor lifespans and approving new nuclear capacity to meet baseload clean energy targets, (2) hyperscalers (Microsoft, Amazon, Google) are directly contracting nuclear power for AI data centers, and (3) the secondary supply from Russian HEU downblending and utility inventory drawdowns is exhausted. Current mine production covers roughly 75% of reactor demand, with the gap historically filled by secondary supplies that are now largely depleted. New production requires years of permitting and capital deployment.",
+        "awareness_gap": "The market still associates uranium with Fukushima-era risk aversion and hasn't fully internalized that SMRs, AI data center power purchase agreements, and Asian reactor buildouts (China alone has 30+ reactors under construction) create demand that current supply cannot meet. The Sprott Physical Uranium Trust's impact on spot price discovery is underappreciated as a structural change.",
+        "valuation_note": "Uranium miners trade below their 2007 peak valuations despite a more durable demand thesis. The spot price has recovered but long-term contract prices remain well below incentive levels needed to bring on new production, suggesting significant upside before supply response is meaningful.",
+        "potential_losers": [
+          "Natural gas power generators facing nuclear competition for baseload",
+          "Coal-dependent utilities in jurisdictions with nuclear mandates",
+          "Countries dependent on Russian nuclear fuel services"
+        ],
+        "potential_winners": [
+          "Cameco (largest western producer, strategic positioning)",
+          "Energy Fuels (US-based, vanadium optionality)",
+          "Paladin Energy (restart of Langer Heinrich)",
+          "Sprott Physical Uranium Trust (physical exposure)",
+          "BWX Technologies (nuclear reactor components)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Phosphate Rock Scarcity and Food Security Geopolitics",
+        "thesis": "Phosphate rock is a non-substitutable agricultural input with no synthetic alternative, and roughly 70-80% of global reserves are concentrated in Morocco and Western Sahara. Peak phosphorus concerns are structurally valid: the US has gone from the world's largest exporter to a net importer in two decades, and China has imposed export restrictions to secure domestic supply. As population growth and dietary intensification drive fertilizer demand, the geopolitical concentration of phosphate reserves becomes a national security vulnerability that governments are only beginning to address.",
+        "awareness_gap": "Phosphate scarcity receives minimal investor attention compared to oil, copper, or lithium, despite being equally non-substitutable for human survival. The geopolitical risk of Moroccan concentration is rarely discussed in ESG or risk frameworks. Urban wastewater phosphorus recovery is nascent and underfunded.",
+        "valuation_note": "Phosphate producers trade as commodity chemical companies with no scarcity premium. Reserves in politically stable jurisdictions (US, Australia, Brazil) should command strategic premiums but currently do not.",
+        "potential_losers": [
+          "Food-importing nations dependent on fertilizer imports",
+          "Countries without domestic phosphate reserves facing long-term supply risk",
+          "Conventional wastewater treatment operators missing phosphorus recovery mandates"
+        ],
+        "potential_winners": [
+          "Mosaic (US-based phosphate producer with domestic reserves)",
+          "OCP Group (Moroccan monopoly, pre-IPO watch)",
+          "Itafos (strategic phosphate projects in stable jurisdictions)",
+          "ICL Group (phosphate and specialty potash, Israeli jurisdiction)",
+          "Nutrien (integrated fertilizer with phosphate exposure)"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Water Infrastructure and Treatment as the Unpriced Scarcity",
+        "thesis": "Water scarcity is the most underpriced resource constraint in the global economy. Aquifer depletion in India, the US Southwest, the Middle East, and North China Plain is accelerating. Industrial water demand from semiconductor fabrication, lithium extraction, and hydrogen production competes directly with agricultural and municipal use. The regulatory response is lagging but inevitable: water pricing reform, mandatory recycling standards, and infrastructure spending will create a multi-decade capex cycle. The market treats water as a utility with stable returns rather than a scarce resource entering acute shortage.",
+        "awareness_gap": "Investors focus on water utilities for dividend yield rather than treatment technology and infrastructure companies for growth. The connection between semiconductor reshoring (CHIPS Act) and local water scarcity in Arizona/Texas is almost entirely unexamined. Desalination and reuse technology costs are declining but adoption is bottlenecked by regulatory frameworks that don't price water accurately.",
+        "valuation_note": "Water technology companies trade at modest premiums to industrial peers despite facing secular growth tailwinds. Pure-play water infrastructure names are scarce and often buried within larger industrial conglomerates, creating mispricing.",
+        "potential_losers": [
+          "Agriculture in water-stressed basins without efficient irrigation",
+          "Thermal power plants facing cooling water constraints",
+          "Semiconductor fabs in water-stressed regions without recycling infrastructure",
+          "Municipalities deferring infrastructure investment"
+        ],
+        "potential_winners": [
+          "Xylem (water technology pure-play with treatment and transport)",
+          "American Water Works (regulated utility with consolidation runway)",
+          "Veolia and Suez (European water majors with global footprint)",
+          "Evoqua Water Technologies (now part of Xylem, industrial water treatment)",
+          "Energy Recovery (desalination and industrial fluid pressure technology)"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Rare Earth Supply Chain Reshoring Outside China",
+        "thesis": "China controls approximately 60% of rare earth mining and 87% of rare earth processing capacity. Western governments have designated rare earths as critical minerals, but building a non-Chinese supply chain from mine to magnet requires solving the processing bottleneck (separation and refining) that China has dominated through scale, environmental tolerance, and accumulated expertise. The companies that crack western processing economics—particularly for neodymium and praseodymium used in permanent magnets—will capture enormous value as EV motor and wind turbine demand accelerates.",
+        "awareness_gap": "The market focuses on rare earth mining companies but underweights the processing bottleneck. Having a mine without processing capability is strategically useless. The real value capture is in separation, refining, and magnet manufacturing. Environmental permitting for processing facilities in western jurisdictions is the binding constraint, not geology.",
+        "valuation_note": "Rare earth miners trade on resource size rather than integrated supply chain capability. Companies with processing technology and western jurisdiction permits should trade at significant premiums but are often valued similarly to exploration-stage peers.",
+        "potential_losers": [
+          "EV motor manufacturers dependent on Chinese magnet supply",
+          "Wind turbine OEMs without diversified rare earth supply",
+          "Defense contractors reliant on Chinese rare earth components"
+        ],
+        "potential_winners": [
+          "MP Materials (integrated mine-to-magnet strategy at Mountain Pass)",
+          "Iluka Resources (Australian rare earths with Eneabba refinery)",
+          "Vital Metals (Nechalacho project, Canadian jurisdiction)",
+          "USA Rare Earth (Round Top project with integrated processing)",
+          "Hexagon Manufacturing (rare earth magnet production)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Lithium Price Capitulation as Contrarian Entry on Long-Term Scarcity",
+        "thesis": "Lithium prices have collapsed 80%+ from 2022 peaks as speculative supply flooded the market and EV growth rates moderated. The narrative has flipped from 'lithium supercycle' to 'oversupply glut.' However, this near-term glut masks a structural reality: the projects coming online now were financed at the peak and represent the easy supply. The next tier of projects requires significantly higher prices to justify capital deployment, given declining ore grades, jurisdictional risk (Chilean nationalization, Mexican lithium restrictions), and rising extraction costs. When the current supply wave is absorbed by continuing EV adoption, the lack of new project financing during the price crash will create the next supply deficit.",
+        "awareness_gap": "The market is extrapolating near-term oversupply indefinitely forward, ignoring that lithium project development cycles are 5-7 years and current low prices are killing the project pipeline that would supply 2027-2030 demand. The distinction between low-cost brine producers and marginal hard rock producers is being lost in the sell-off.",
+        "valuation_note": "Lithium producers have been crushed to single-digit P/E ratios or are trading below replacement cost of their resources. Low-cost brine producers in stable jurisdictions (Argentina, Chile) are being valued as if lithium prices are permanently depressed, despite being at or below marginal cost of production for the industry.",
+        "potential_losers": [
+          "High-cost hard rock lithium producers in marginal jurisdictions",
+          "Companies relying on DLE (direct lithium extraction) technology not yet proven at scale",
+          "Automakers that delayed long-term offtake agreements expecting permanently low prices"
+        ],
+        "potential_winners": [
+          "SQM (low-cost Chilean brine, diversified lithium and iodine)",
+          "Pilbara Minerals (low-cost Australian hard rock, debt-free)",
+          "Sigma Lithium (high-grade Brazilian production, ESG premium)",
+          "Albemarle (integrated leader with downstream processing)",
+          "Lithium Americas (Thacker Pass, US strategic asset)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Deep-Sea Mining as Regulatory Inflection Point",
+        "thesis": "The International Seabed Authority is under pressure to finalize deep-sea mining regulations, with the ISA's two-year rule having elapsed. The Clarion-Clipperton Zone contains polymetallic nodules with grades of nickel, cobalt, copper, and manganese that exceed terrestrial deposits, with the added advantage of being a surface resource requiring no drilling or blasting. The environmental narrative is contested—terrestrial mining has vastly larger ecological footprints—but the regulatory uncertainty has kept institutional capital on the sidelines. First-mover advantage in seabed mining technology and licenses could be enormous if regulations are finalized favorably.",
+        "awareness_gap": "The market has written off deep-sea mining due to environmental opposition, but the counter-narrative—that terrestrial mining in tropical forests and conflict zones is environmentally and socially more destructive—is gaining traction among mining engineers and resource economists. The ISA regulatory process is opaque to most investors, creating information asymmetry.",
+        "valuation_note": "Deep-sea mining companies trade at deep discounts to terrestrial miners with equivalent resource bases. The regulatory optionality is essentially free—investors are paying nothing for the possibility that regulations open a multi-billion-dollar resource class.",
+        "potential_losers": [
+          "Terrestrial nickel and cobalt producers facing lower-cost seabed competition",
+          "Indonesian nickel laterite processors (high cost, high environmental impact)",
+          "Environmental NGOs opposing deep-sea mining (reputational, not financial)"
+        ],
+        "potential_winners": [
+          "The Metals Company (TMC) (most advanced deep-sea mining project)",
+          "Global Sea Mineral Resources (GSR, subsidiary of DEME Group)",
+          "Lockheed Martin (UK Seabed Resources subsidiary)",
+          "Saipem and Allseas (offshore engineering and nodule collection technology)",
+          "Maersk Supply Service (offshore vessel support)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Construction Sand Scarcity in Emerging Market Urbanization",
+        "thesis": "Sand and gravel are the most consumed natural resources after water, and natural sand suitable for construction is facing acute scarcity in rapidly urbanizing regions. Desert sand is unsuitable for concrete (particles too smooth and fine), and river sand extraction causes severe environmental damage and has been banned in many jurisdictions. Manufactured sand (crushed rock) and recycled aggregate are the solutions, but adoption is bottlenecked by construction industry inertia, building code lag, and the fragmented nature of aggregate supply. India, Southeast Asia, and Africa face the most acute gaps between sand demand and sustainable supply.",
+        "awareness_gap": "Sand scarcity is almost entirely absent from investor discourse despite being a recognized crisis in development economics and environmental science. The connection between urbanization, infrastructure spending, and sand supply constraints is unexamined. Aggregate companies are valued as low-growth commodities rather than scarce resource plays.",
+        "valuation_note": "Aggregate producers trade at modest multiples with no scarcity premium. Companies with permitted reserves near high-growth urban centers should command significant location premiums but are valued on tonnage and margin metrics that ignore the depletion of natural sand sources.",
+        "potential_losers": [
+          "Illegal sand mining operations facing enforcement crackdowns",
+          "Construction companies in sand-scarce regions without secured supply",
+          "Riverine ecosystems and communities affected by unsustainable extraction"
+        ],
+        "potential_winners": [
+          "Vulcan Materials (largest US aggregates producer, urban market positioning)",
+          "Martin Marietta Materials (aggregates with infrastructure exposure)",
+          "Heidelberg Materials (global aggregates with manufactured sand capability)",
+          "Metso Outotec (crushing and screening equipment for manufactured sand)",
+          "UltraTech Cement (Indian market, integrated aggregates strategy)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Helium Scarcity from Declining Natural Gas Fields and Rising Tech Demand",
+        "thesis": "Helium is a non-renewable resource produced as a byproduct of natural gas extraction, and the richest helium-bearing gas fields (US Federal Helium Reserve, Algerian fields) are being depleted. Simultaneously, demand is accelerating from semiconductor manufacturing (purge gas), MRI scanners, fiber optics, and emerging applications in quantum computing and space launch. The US Federal Helium Reserve was auctioned off in 2023, removing the strategic buffer. New helium production requires finding gas fields with sufficient helium concentration (rare) and building dedicated processing infrastructure. The market is small, opaque, and poorly understood by mainstream investors.",
+        "awareness_gap": "Helium scarcity is virtually unknown in mainstream investment discourse. The market is small enough that major commodity investors ignore it, creating inefficiencies. The connection between semiconductor reshoring and helium demand is unrecognized. The end of the Federal Helium Reserve is a structural inflection point that has not been priced in.",
+        "valuation_note": "Pure-play helium companies are micro-cap and trade below the replacement cost of their helium resources. The lack of a liquid futures market means pricing is opaque and equity valuations don't reflect the tightening physical market.",
+        "potential_losers": [
+          "MRI manufacturers facing rising helium costs for magnet cooling",
+          "Semiconductor fabs without long-term helium supply contracts",
+          "Party balloon and novelty helium users (low-value applications being priced out)"
+        ],
+        "potential_winners": [
+          "Renergen (South African helium and LNG, first African helium producer)",
+          "Desert Mountain Energy (Arizona helium exploration and production)",
+          "Royal Helium (Canadian helium producer with processing infrastructure)",
+          "Linde and Air Products (industrial gas majors with helium distribution)",
+          "Air Liquide (helium recovery and recycling technology)"
+        ]
+      }
+    ]
+  }
+}

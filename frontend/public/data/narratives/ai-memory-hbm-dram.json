@@ -1,0 +1,32 @@
+{
+  "id": "c5778d88-21a6-4d5b-a100-ef77f1181a2a",
+  "slug": "ai-memory-hbm-dram",
+  "name": "AI Memory (HBM & DRAM)",
+  "kind": "sub",
+  "parent_id": "6eba9a2d-1be0-4f43-975e-3a526a7c7747",
+  "summary": "AI Memory (HBM & DRAM) represents the critical bottleneck layer in the AI compute stack, where bandwidth—not just capacity—determines accelerator utilization. HBM has evolved from a niche graphics component to the second-most-expensive element in AI training clusters after the GPU itself, with SK Hynix, Samsung, and Micron controlling 95%+ of supply. The narrative is driven by the structural mismatch between exponential AI model scaling (requiring proportional memory bandwidth increases) and the linear pace of HBM capacity additions, which are themselves constrained by TSMC's CoWoS advanced packaging throughput. This has created sustained pricing power rare in the historically cyclical memory industry.\n\nThe investment thesis bifurcates between near-term scarcity premiums (HBM3E commanding 3-4x standard DRAM pricing) and medium-term technology transition risk (HBM4 requiring fundamental architecture changes around 2025-2026). DRAM demand is a secondary but compounding vector, driven by inference workloads, retrieval-augmented generation, and emerging on-device AI requiring higher-capacity, lower-latency memory tiers. The key tension is whether hyperscaler capex sustains through the HBM4 transition or whether a capacity ramp in 2025-2026 creates a cyclical air pocket.",
+  "key_drivers": [
+    "Model scaling laws requiring proportional HBM bandwidth increases per parameter count, creating structurally inelastic demand from frontier labs",
+    "TSMC CoWoS packaging capacity as the binding constraint on HBM shipment volumes, not wafer fabrication itself",
+    "Oligopolistic supply structure (SK Hynix ~50%, Samsung ~40%, Micron ~10%) enabling disciplined pricing unlike historical DRAM cycles",
+    "Hyperscaler capex commitments exceeding $200B annually with multi-year horizons, providing demand visibility through 2026",
+    "HBM4 architecture transition requiring new base die designs, potentially resetting competitive positions and creating supply risk during crossover",
+    "Inference workload growth shifting memory demand from training-optimized HBM toward broader DRAM consumption patterns across edge and cloud",
+    "Geopolitical fragmentation (US export controls, China domestic HBM development) creating bifurcated markets and potential overcapacity in sanctioned regions",
+    "Edge AI migration (Apple Intelligence, PC AI assistants) creating new DRAM demand vectors with different performance requirements than data center HBM"
+  ],
+  "adoption_curve": {
+    "stage": "Early Majority (for data center HBM); Innovators (for edge AI memory)",
+    "growth_rate": "120-150% YoY revenue growth for HBM; 15-25% for AI-optimized DRAM segments",
+    "penetration_pct": 35,
+    "inflection_points": [
+      "HBM4 mass production in 2026, requiring new base die and potentially new foundry partnerships—competitive reset risk",
+      "CoWoS capacity doubling expected by late 2025, potentially easing the scarcity premium and compressing HBM pricing",
+      "Edge AI inference crossing 1B devices threshold (2025-2026), shifting DRAM demand mix toward mobile and PC segments",
+      "Potential hyperscaler capex digestion period in 2026 if AI revenue monetization lags infrastructure investment, creating cyclical risk"
+    ]
+  },
+  "created_at": "2026-06-21T17:06:13.390359Z",
+  "updated_at": "2026-06-21T17:08:55.249105Z",
+  "children": []
+}

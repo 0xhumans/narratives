@@ -1,0 +1,1095 @@
+{
+  "id": "d2d746d1-2e7c-4782-9a4c-e9a2265f91ad",
+  "narrative_id": "90b3d9c1-42ec-4a7e-9550-780d7a7da5cb",
+  "version": 1,
+  "generated_at": "2026-06-21T12:16:08.395090Z",
+  "payload": {
+    "key_drivers": [
+      "Maturation of function calling and tool-use capabilities in foundational models.",
+      "Decreasing inference costs enabling longer, economically viable multi-step autonomous task execution.",
+      "Enterprise demand for workflow automation, cost reduction, and bridging legacy software silos.",
+      "Development of multi-agent orchestration frameworks and open-source ecosystems.",
+      "Hardware infrastructure buildout (evidenced by SMH strength) supporting complex, agentic compute loads.",
+      "Shift from 'Software as a Service' to 'Service as Software' where AI agents are hired to perform specific roles.",
+      "Integration of AI into physical robotics (BOTZ) bridging digital agents and real-world physical action.",
+      "Standardization of API ecosystems allowing AI agents to reliably interact with external digital environments."
+    ],
+    "value_capture": [
+      {
+        "roic": 8.0,
+        "role": "creator",
+        "notes": "NVIDIA's CUDA moat plus TSMC's fab monopoly create a near-term choke point. Pricing power is extraordinary but will compress as AMD ramps, custom silicon (Groq, Cerebras) matures, and hyperscalars design in-house ASICs. The $100B+ capex required for 3nm/2nm nodes is a structural barrier. Value creation is foundational—without compute, nothing else exists—but ROIC is cyclical and will mean-revert as supply catches demand.",
+        "layer_name": "Compute Infrastructure (Frontier Silicon & Fab)",
+        "pricing_power": 8.0,
+        "revenue_growth": 9.0,
+        "barriers_to_entry": 9.0,
+        "capital_intensity": 10.0,
+        "competitive_intensity": 5.0
+      },
+      {
+        "roic": 4.0,
+        "role": "creator",
+        "notes": "OpenAI, Anthropic, Google, Meta, Mistral all racing to frontier. Meta's open-source strategy (Llama) is a deliberate commoditization play that destroys pricing power for closed labs. Training costs approaching $1B per run with diminishing returns per parameter. The layer creates enormous value but captures little: model providers are in an arms race where capex outpaces revenue. Expect consolidation to 2-3 frontier providers with the rest becoming fine-tuners.",
+        "layer_name": "Foundation Models (Frontier Training)",
+        "pricing_power": 5.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 7.0,
+        "capital_intensity": 9.0,
+        "competitive_intensity": 9.0
+      },
+      {
+        "roic": 8.0,
+        "role": "creator",
+        "notes": "Agents are only as good as the context they operate on. Enterprises with proprietary workflows, transaction histories, regulatory filings, and domain expertise (Bloomberg, Thomson Reuters, Epic, Salesforce CRM data) hold durable moats. Data compounds: more usage improves agents, which drives more usage. Low capital intensity to monetize existing data assets. This is where asymmetric returns hide—boring incumbents with data become agentic winners.",
+        "layer_name": "Proprietary & Domain-Specific Data",
+        "pricing_power": 8.0,
+        "revenue_growth": 5.0,
+        "barriers_to_entry": 8.0,
+        "capital_intensity": 2.0,
+        "competitive_intensity": 3.0
+      },
+      {
+        "roic": 7.0,
+        "role": "capturer",
+        "notes": "AWS, Azure, GCP operate the toll booth on agentic inference. Every agent invocation is a micro-transaction flowing through hyperscaler GPUs. Enterprise lock-in via existing cloud contracts, IAM, and data residency requirements creates stickiness. However, inference is commoditizing fast—vLLM, TensorRT, and specialized inference providers (Together, Fireworks) are eroding margins. Hyperscalars win on volume, not pricing power.",
+        "layer_name": "Cloud & Inference Infrastructure",
+        "pricing_power": 6.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 8.0,
+        "capital_intensity": 8.0,
+        "competitive_intensity": 5.0
+      },
+      {
+        "roic": 2.0,
+        "role": "creator",
+        "notes": "LangChain, CrewAI, AutoGen, Semantic Kernel—these are largely open-source with near-zero pricing power. Frameworks are easy to fork and replace; switching costs are minimal. They create essential scaffolding but capture almost no economic value. Most will be absorbed into cloud platform offerings or fade. The real question is whether orchestration standards (like MCP from Anthropic) create lock-in or remain open.",
+        "layer_name": "Agent Orchestration & Frameworks",
+        "pricing_power": 2.0,
+        "revenue_growth": 6.0,
+        "barriers_to_entry": 2.0,
+        "capital_intensity": 2.0,
+        "competitive_intensity": 8.0
+      },
+      {
+        "roic": 6.0,
+        "role": "capturer",
+        "notes": "Agents embedded in specific workflows—coding (Cursor, GitHub Copilot), customer support (Sierra), legal (Harvey), sales (Clay)—capture value through workflow integration and domain expertise. Pricing power comes from switching costs once an agent is trained on enterprise data and integrated into critical paths. The risk: foundation model providers vertically integrate and eat the application layer. Winners will own proprietary data loops and deep workflow integration that models alone cannot replicate.",
+        "layer_name": "Vertical Agent Applications (Enterprise Workflow)",
+        "pricing_power": 6.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 5.0,
+        "capital_intensity": 3.0,
+        "competitive_intensity": 7.0
+      },
+      {
+        "roic": 3.0,
+        "role": "capturer",
+        "notes": "General-purpose agent platforms face the 'thin wrapper' problem. When the foundation model upgrades, the platform's differentiation evaporates overnight. ChatGPT itself is the exception that proves the rule—OpenAI benefits from model ownership, not platform economics. Most horizontal agent apps will see margin compression as models become multimodal and agentic natively.",
+        "layer_name": "Horizontal Agent Platforms (Consumer/Prosumer)",
+        "pricing_power": 3.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 3.0,
+        "capital_intensity": 3.0,
+        "competitive_intensity": 8.0
+      },
+      {
+        "roic": 7.0,
+        "role": "capturer",
+        "notes": "Agents acting autonomously create novel security surfaces: prompt injection, tool-use authorization, data exfiltration, identity spoofing. Enterprises need audit trails, permission scoping, and governance before deploying agents. Okta, CrowdStrike, and new entrants (Anjuna, Opaque) are positioned to capture this. Regulatory pressure (EU AI Act, sectoral rules) forces adoption regardless of ROI. Compliance is a tax that becomes revenue for the right players.",
+        "layer_name": "Identity, Security & Governance Layer",
+        "pricing_power": 7.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 6.0,
+        "capital_intensity": 3.0,
+        "competitive_intensity": 5.0
+      },
+      {
+        "roic": 5.0,
+        "role": "creator",
+        "notes": "Vector databases (Pinecone, Weaviate), agent memory systems, eval frameworks, and tool registries are emerging middleware. Some will become standard infrastructure; most will be subsumed by cloud-native offerings. The winners will be those that solve the hardest unsolved problem: reliable agent evaluation and observability. Without evals, enterprises cannot trust agents in production. This is a pick-and-shovel play with moderate defensibility.",
+        "layer_name": "Agent-Native Infrastructure (Memory, Tooling, Evaluation)",
+        "pricing_power": 5.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 4.0,
+        "capital_intensity": 4.0,
+        "competitive_intensity": 6.0
+      }
+    ],
+    "feedback_loops": [
+      {
+        "kind": "reinforcing",
+        "strength": 9.5,
+        "description": "Agentic AI is the paradigm shift from passive inference to autonomous action-taking, expanding AI's addressable market from content generation and analysis to workflow execution. This creates a step-change in enterprise willingness to pay: an AI that drafts a report is a productivity tool; an AI that identifies, negotiates with, and procures from suppliers autonomously is infrastructure. Agentic AI pulls forward the AI revenue curve and deepens moats for frontier model builders who can demonstrate reliable agentic behavior, while also creating a new middleware layer (orchestration, tool-use, memory) that multiplies the AI ecosystem's total value.",
+        "target_narrative": "Artificial Intelligence"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 9.0,
+        "description": "Agentic AI provides the cognitive architecture that transforms robots from pre-programmed actuators into general-purpose autonomous systems. The embodied AI thesis depends on agentic reasoning: perception-action loops, long-horizon planning, and real-time tool use. Foundation models for robotics (e.g., vision-language-action models) are agentic AI applied to physical degrees of freedom. This collapses the deployment cost curve for robotics in unstructured environments—warehouses, homes, construction sites—where scripting every contingency was previously prohibitive.",
+        "target_narrative": "Robotics"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 8.0,
+        "description": "Agentic AI workloads are compute-intensive at inference time, not just training time—autonomous agents running continuously across millions of enterprise processes create persistent, baseload power demand unlike batch ML training. This shifts data center energy profiles from bursty to 24/7, making nuclear (SMRs, existing plant restarts, behind-the-meter reactor deals) the only zero-carbon baseload source that matches the demand profile. The three-way deal between hyperscalers, utility operators, and nuclear developers is directly accelerated by agentic AI's persistent compute requirements.",
+        "target_narrative": "Nuclear Renaissance"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 9.0,
+        "description": "Defense is the highest-stakes, most natural deployment domain for agentic AI: contested environments with denied communications require autonomous decision-making, not teleoperation. Agentic AI enables autonomous drone swarms with distributed coordination, AI-piloted wingmen, autonomous cyber defense agents that patch and respond at machine speed, and autonomous targeting systems. The Pentagon's Replicator initiative and similar allied programs are explicitly agentic AI procurement. Defense budgets provide the patient capital and regulatory tolerance needed to push agentic capabilities past the reliability threshold.",
+        "target_narrative": "Defense Autonomy"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.5,
+        "description": "Aging populations create labor supply contraction in exactly the sectors where agentic AI substitutes most directly: healthcare administration, eldercare monitoring, financial advisory for retirees, and logistics. Agentic AI agents can handle insurance prior authorization autonomously, manage medication adherence through IoT integration, and serve as always-on care coordinators. In Japan and South Korea, where demographic decline is most acute, agentic AI adoption is not optional but structural necessity—policy and social acceptance barriers collapse when the alternative is service collapse.",
+        "target_narrative": "Aging Population"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 6.0,
+        "description": "Climate adaptation requires real-time optimization of increasingly chaotic systems—grid load balancing under extreme weather, autonomous flood response, dynamic agricultural resource allocation. Agentic AI is uniquely suited because adaptation is not a planning problem but a continuous response problem requiring autonomous action under uncertainty. Agentic systems managing smart grids, autonomous irrigation, and disaster response logistics become critical adaptation infrastructure.",
+        "target_narrative": "Climate Adaptation"
+      },
+      {
+        "kind": "resource_competition",
+        "strength": 5.5,
+        "description": "Agentic AI's persistent inference compute demand competes directly with climate adaptation for clean energy and water (data center cooling). The carbon intensity of always-on agentic workloads, if powered by fossil sources, undermines the climate goals that adaptation spending is meant to serve. This creates a tension where the same capital and energy infrastructure cannot simultaneously serve maximum agentic AI deployment and maximum climate resilience investment without trade-offs in grid allocation and water rights.",
+        "target_narrative": "Climate Adaptation"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 8.0,
+        "description": "Agentic AI erodes the labor cost arbitrage that drove offshoring in the first place. When an agentic system can autonomously manage a production line, handle supply chain exceptions, and perform quality control, the wage differential between Ohio and Shenzhen becomes irrelevant. This makes reshoring economically rational without tariffs. Additionally, agentic AI drives demand for domestic semiconductor fabrication, advanced packaging, and data center construction—directly creating industrial demand in reindustrializing economies.",
+        "target_narrative": "Reindustrialization"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.0,
+        "description": "Space operations are defined by latency, bandwidth constraints, and communication blackouts that make remote control impractical beyond LEO. Agentic AI is the enabling technology for autonomous satellite servicing, lunar resource extraction, Mars ISRU operations, and autonomous orbital debris management. Every credible space economy roadmap requires agentic AI as a prerequisite—the economic case for space manufacturing or asteroid mining collapses if human operators must be in the loop.",
+        "target_narrative": "Space Economy"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 8.5,
+        "description": "Agentic AI transforms biotech from a hypothesis-driven to an autonomous-experimentation paradigm. Agentic systems can design experiments, control lab automation (liquid handlers, sequencers), interpret results, and iteratively refine hypotheses without human intervention—closing the wet-lab/dry-lab loop at machine speed. This compresses drug discovery timelines from years to months and enables exploration of chemical and protein spaces that are computationally intractable for human teams. Self-driving labs are agentic AI applied to the scientific method.",
+        "target_narrative": "Biotechnology Revolution"
+      },
+      {
+        "kind": "resource_competition",
+        "strength": 7.0,
+        "description": "Agentic AI at scale is materially intensive: advanced node chips require rare earths, gallium, and ultra-pure water; persistent inference demands stratospheric electricity; data center buildout competes for land, water, and grid capacity. As agentic AI moves from R&D to always-on deployment across enterprises, its resource footprint transitions from episodic (training bursts) to continuous, creating structural competition with other resource-intensive narratives for finite semiconductor supply, grid capacity, and critical minerals.",
+        "target_narrative": "Resource Scarcity"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 6.5,
+        "description": "Agentic AI is also the best tool for managing resource scarcity itself—autonomous optimization of water distribution networks, dynamic allocation of agricultural inputs, real-time supply chain rerouting around scarcity events, and autonomous mining operations in marginal deposits. The same intelligence that consumes resources is the most powerful tool for allocating them efficiently, creating a paradox where agentic AI both exacerbates and mitigates scarcity.",
+        "target_narrative": "Resource Scarcity"
+      }
+    ],
+    "hidden_effects": [
+      {
+        "order": "hidden",
+        "description": "Atrophy of tacit knowledge transfer: as agents replace the junior-to-mid-level roles through which humans historically developed expertise by doing grunt work under senior supervision, the apprenticeship pipeline that produces senior experts degrades—a generational lag effect where the shortage of deeply experienced humans manifests 10-15 years after deployment, invisible in near-term productivity metrics."
+      },
+      {
+        "order": "hidden",
+        "description": "Epistemic homogenization: if most organizations deploy agents built on the same handful of foundation models, the diversity of analytical approaches, strategic framings, and problem decompositions narrows toward the latent distribution of the underlying model—creating correlated reasoning failures across institutions that appear independent but share the same cognitive blind spots, analogous to monoculture risk in agriculture."
+      },
+      {
+        "order": "hidden",
+        "description": "Trust calibration distortion: humans systematically misattribute agency, intent, and reliability to agents—over-trusting in routine conditions (automation bias) and under-trusting after visible failures—producing oscillating adoption patterns that destabilize agent-dependent workflows and create organizational resistance cycles that are rational at the individual level but irrational at the system level."
+      },
+      {
+        "order": "hidden",
+        "description": "Novel attack surface via agent persuasion and instruction injection: because agents must interpret untrusted inputs (emails, web pages, API responses) as potential instructions, adversaries can craft inputs that hijack agent behavior without exploiting traditional software vulnerabilities—creating a security paradigm where the boundary between 'data' and 'code' dissolves at the semantic level, and traditional sandboxing is insufficient because the attack operates within the agent's legitimate action space."
+      },
+      {
+        "order": "hidden",
+        "description": "Concentration of infrastructural power in agent orchestration platforms: the entity that controls the orchestration layer—routing tasks, managing memory, mediating tool access—gains a structural position analogous to an operating system, with the ability to observe all agent activity across all downstream applications, creating surveillance and gatekeeping capabilities that exceed those of search engines or social platforms, and which may not be visible to end users or regulators until lock-in is complete."
+      }
+    ],
+    "potential_losers": [
+      [
+        "Legacy RPA vendors without AI-native architectures (UiPath—uncertain pivot)",
+        "Pure-play agent framework startups without enterprise distribution",
+        "Custom internal orchestration tools that fail to scale"
+      ],
+      [
+        "Companies dependent on cheap inference subsidies that will end",
+        "CPU-only inference providers unable to meet agentic throughput demands",
+        "Hyperscalers that under-provision inference capacity relative to agent demand"
+      ],
+      [
+        "Pure-play autonomous agent startups with no human-in-the-loop design",
+        "Companies promising full autonomy in regulated industries (healthcare, legal, finance)",
+        "Venture-funded agent startups burning capital on autonomy before reliability is achieved"
+      ],
+      [
+        "Agent developers shipping without evaluation infrastructure",
+        "Companies relying on manual testing for agent quality",
+        "Traditional APM vendors slow to add LLM/agent-specific monitoring"
+      ],
+      [
+        "Data center REITs without secured long-term power contracts (Digital Realty exposure)",
+        "Utilities in constrained grids unable to serve data center demand",
+        "AI companies assuming power will be available at current prices",
+        "Coal-dependent utilities losing data center customers"
+      ],
+      [
+        "Companies whose data advantage is eroded by synthetic data generation",
+        "Open data aggregators whose content is commoditized",
+        "Companies that fail to monetize data access for agent training/grounding"
+      ],
+      [
+        "Companies deploying agents without security guardrails",
+        "Traditional perimeter security vendors without AI-native capabilities",
+        "Agent developers ignoring security as a design principle",
+        "Companies relying on model-level safety (alignment) instead of system-level security"
+      ],
+      [
+        "AI-native startups without enterprise distribution channels",
+        "Companies losing platform status by not opening agent APIs",
+        "Point-solution vendors displaced by embedded agents in suites"
+      ],
+      [
+        "Agent developers without compliance infrastructure",
+        "Companies operating autonomous agents in regulatory gray zones",
+        "Startups that treat governance as an afterthought",
+        "Companies deploying agents in EU without AI Act compliance"
+      ],
+      [
+        "Companies deploying agents without liability coverage",
+        "Small agent developers unable to secure insurance or indemnification",
+        "Traditional insurers slow to develop AI-specific products",
+        "Companies assuming existing policies cover AI-related losses"
+      ],
+      [
+        "Cloud-only agent platforms unable to serve edge use cases",
+        "Companies requiring constant cloud connectivity for agent operation",
+        "Edge device makers without AI inference capability",
+        "Companies that can't meet latency requirements for physical-world agents"
+      ]
+    ],
+    "narrative_summary": "Agentic AI represents the critical transition from passive, conversational AI models to autonomous systems capable of executing multi-step workflows, utilizing external tools, and making decisions within defined boundaries. While current headlines are dominated by geopolitical noise—such as Iran negotiations, Middle East oil flows, and Brazilian elections—the underlying technological substrate for Agentic AI is rapidly maturing beneath the surface. The market context reflects this ongoing tech buildout, with strength in semiconductor (SMH) and robotics (BOTZ) ETFs highlighting the hardware backbone required for this computational shift. As inference costs decline and function-calling capabilities improve, Agentic AI is poised to disrupt enterprise software, evolving traditional 'Software-as-a-Service' into 'Service-as-Software' where AI delivers the completed outcome rather than just the tool.",
+    "potential_winners": [
+      [
+        "Palantir (AIP platform, enterprise agent orchestration)",
+        "ServiceNow (workflow engine as agent runtime)",
+        "Microsoft (Semantic Kernel, Copilot Studio, Fabric)",
+        "Databricks (Mosaic AI, data-agent integration)",
+        "Temporal (open-source durable execution for agent workflows)"
+      ],
+      [
+        "NVIDIA (inference-optimized architectures, NIM microservices)",
+        "AMD (MI300X competitive for inference, ROCm maturing)",
+        "Amazon AWS (Bedrock, Inferentia chips, largest inference fleet)",
+        "CoreWeave (specialized GPU cloud for sustained inference)",
+        "Groq (LPU architecture purpose-built for inference speed)"
+      ],
+      [
+        "Microsoft (Copilot ecosystem, 400M+ Office seats as agent distribution)",
+        "Salesforce (Agentforce, CRM workflow as agent substrate)",
+        "Adobe (creative agent augmentation, Firefly integration)",
+        "GitHub (Copilot as coding agent with human review)",
+        "Notion / Canva (embedded AI agents in productivity workflows)"
+      ],
+      [
+        "Datadog (LLM observability extending to agent monitoring)",
+        "Elastic (AI observability, search-based agent evaluation)",
+        "Snowflake (data platform for agent telemetry and evaluation)",
+        "Splunk/Cisco (agent log analysis and security monitoring)",
+        "Weights & Biases (agent experiment tracking, if IPO)"
+      ],
+      [
+        "Constellation Energy (nuclear fleet, 20-year PPAs with Microsoft)",
+        "Vistra Corp (gas + nuclear, Texas power advantage)",
+        "Eaton (electrical infrastructure, liquid cooling for AI)",
+        "Schneider Electric (data center power management, APC)",
+        "Quanta Services (grid transmission build-out)",
+        "GE Vernova (gas turbines, grid equipment, nuclear)"
+      ],
+      [
+        "RELX (LexisNexis, scientific data, legal agent grounding)",
+        "S&P Global (financial market data, ratings, agent infrastructure)",
+        "Verisk (insurance data, risk modeling for autonomous agents)",
+        "Moody's (credit data, financial agent grounding)",
+        "Wolters Kluwer (legal, tax, health domain data)",
+        "Bloomberg (financial data terminal, proprietary agent substrate)"
+      ],
+      [
+        "CrowdStrike (endpoint + identity monitoring for agent behavior)",
+        "Palo Alto Networks (AI Runtime Security, agent threat detection)",
+        "Cloudflare (API gateway security, prompt injection filtering)",
+        "Zscaler (zero-trust access for agent tool calls)",
+        "Wiz (cloud agent security, if IPO or acquired)",
+        "Private: Lasso Security, Pillar Security, Robust Intelligence"
+      ],
+      [
+        "SAP (Joule copilot, ERP workflow agent integration)",
+        "Oracle (OCI + database agents, autonomous database)",
+        "Intuit (Intuit Assist, financial agent for SMBs)",
+        "Workday (HR/finance agent embedding)",
+        "IBM (watsonx, consulting-led enterprise agent deployment)"
+      ],
+      [
+        "Palantir (AIP governance, audit trail infrastructure)",
+        "IBM (watsonx.governance, consulting scale)",
+        "Microsoft (Purview + AI governance integration)",
+        "Private: OneTrust, Credo AI, Holistic AI, Fairly AI",
+        "Big Four consultancies (governance implementation revenue)"
+      ],
+      [
+        "Munich Re (first major insurer to offer AI liability products)",
+        "AIG (emerging risk underwriting expertise, cyber precedent)",
+        "Chubb (cyber insurance leadership extending to AI)",
+        "Lloyd's of London syndicates (novel risk pricing expertise)",
+        "Marsh McLennan / Aon (brokerage for AI risk transfer)"
+      ],
+      [
+        "Qualcomm (Snapdragon edge AI, automotive agent inference)",
+        "Arm Holdings (edge AI architecture, royalty model)",
+        "NVIDIA (Jetson platform for robotics/edge agents)",
+        "Apple (on-device AI, Apple Intelligence, privacy-preserving agents)",
+        "Tesla (FSD as edge agent, Dojo inference infrastructure)"
+      ]
+    ],
+    "dependency_network": [
+      {
+        "type": "input",
+        "layer": "compute_hardware",
+        "weight": 10.0,
+        "description": "GPUs (NVIDIA H100/H200, AMD MI300) and custom ASICs are the foundational compute substrate for training and running agentic AI models; supply is constrained by TSMC advanced node capacity and packaging bottlenecks"
+      },
+      {
+        "type": "input",
+        "layer": "memory",
+        "weight": 9.0,
+        "description": "HBM3/HBM3e and high-bandwidth DRAM are critical for feeding data to accelerators; SK Hynix, Samsung, and Micron supply is tightly allocated with multi-quarter backlogs"
+      },
+      {
+        "type": "input",
+        "layer": "networking",
+        "weight": 8.0,
+        "description": "High-bandwidth, low-latency interconnects (InfiniBand, NVLink, ultra-Ethernet) are essential for distributed training and multi-agent orchestration across thousands of nodes"
+      },
+      {
+        "type": "resource",
+        "layer": "data_centers",
+        "weight": 9.0,
+        "description": "Hyperscale and colocation facilities with dense power delivery, advanced cooling, and high rack power densities (50-100+ kW/rack) are the physical deployment substrate"
+      },
+      {
+        "type": "input",
+        "layer": "electricity",
+        "weight": 10.0,
+        "description": "Grid power at gigawatt scale is the binding constraint on data center expansion; transmission interconnection queues now exceed 3-5 years in key US markets (Virginia, Texas, Arizona)"
+      },
+      {
+        "type": "input",
+        "layer": "cooling",
+        "weight": 7.0,
+        "description": "Liquid cooling (direct-to-chip, immersion) is increasingly required for high-density AI racks; air cooling is insufficient above ~30 kW/rack"
+      },
+      {
+        "type": "resource",
+        "layer": "water",
+        "weight": 6.0,
+        "description": "Large volumes of treated water are consumed in evaporative cooling towers and for makeup in liquid cooling loops; data center water usage is becoming a permitting and ESG constraint in drought-prone regions"
+      },
+      {
+        "type": "resource",
+        "layer": "construction",
+        "weight": 7.0,
+        "description": "Specialized data center construction capacity (mechanical, electrical, plumbing trades) is bottlenecked; build timelines have stretched from 12-18 months to 24-36 months for AI-grade facilities"
+      },
+      {
+        "type": "resource",
+        "layer": "skilled_labor",
+        "weight": 8.0,
+        "description": "AI/ML researchers, distributed systems engineers, MLOps specialists, and data center operations talent are in acute shortage; competition between hyperscalers, startups, and national labs drives compensation inflation"
+      },
+      {
+        "type": "input",
+        "layer": "capital",
+        "weight": 9.0,
+        "description": "Tens to hundreds of billions in capex are required for frontier model training and infrastructure buildout; dependent on equity markets, bond markets, and hyperscaler free cash flow; rising interest rates increase hurdle rates"
+      },
+      {
+        "type": "input",
+        "layer": "data",
+        "weight": 8.0,
+        "description": "High-quality, diverse training and fine-tuning data including code repositories, web crawls, synthetic data, and proprietary corpora; data scarcity and licensing costs are rising as public web data is exhausted"
+      },
+      {
+        "type": "input",
+        "layer": "software_frameworks",
+        "weight": 6.0,
+        "description": "CUDA, PyTorch, JAX, and emerging agent orchestration frameworks (LangChain, AutoGen, CrewAI) form the software stack; NVIDIA's CUDA moat creates platform lock-in"
+      },
+      {
+        "type": "constraint",
+        "layer": "regulatory",
+        "weight": 7.0,
+        "description": "Export controls on advanced chips (US BIS rules), AI safety regulation (EU AI Act, US executive orders), and data sovereignty laws constrain deployment geography and model capabilities"
+      },
+      {
+        "type": "constraint",
+        "layer": "geopolitics",
+        "weight": 8.0,
+        "description": "US-China tech decoupling, Taiwan strait risk affecting TSMC, and semiconductor export controls create supply chain uncertainty; Middle East tensions affect energy costs which feed into electricity prices for data centers"
+      },
+      {
+        "type": "resource",
+        "layer": "land",
+        "weight": 5.0,
+        "description": "Suitable land with power substation proximity, fiber connectivity, and zoning approvals is increasingly scarce in primary data center markets; secondary markets are being developed but face transmission delays"
+      },
+      {
+        "type": "constraint",
+        "layer": "energy_supply_chain",
+        "weight": 7.0,
+        "description": "Natural gas, nuclear (SMR pipeline), and renewable energy procurement at scale; PPAs for data centers now exceed available generation in some ISOs; pressure on grid operators to accelerate interconnection"
+      },
+      {
+        "type": "constraint",
+        "layer": "semiconductor_supply_chain",
+        "weight": 9.0,
+        "description": "TSMC advanced packaging (CoWoS) capacity, ASML EUV tool availability, photoresist and specialty materials from Japan, and rare earth elements form a multi-node supply chain with single points of failure"
+      },
+      {
+        "type": "resource",
+        "layer": "talent_pipeline",
+        "weight": 6.0,
+        "description": "University CS/AI programs, immigration policy for skilled workers (H-1B), and internal training pipelines determine long-run talent supply; concentration of talent in a few geographies creates key-person risk"
+      },
+      {
+        "type": "resource",
+        "layer": "cloud_infrastructure",
+        "weight": 7.0,
+        "description": "Hyperscaler platforms (AWS, Azure, GCP) provide the elastic compute, storage, and managed services layer that most agentic AI companies depend on rather than building own infrastructure"
+      },
+      {
+        "type": "constraint",
+        "layer": "security",
+        "weight": 6.0,
+        "description": "Model security (prompt injection, jailbreaks, data exfiltration), infrastructure security, and supply chain integrity are non-negotiable constraints for enterprise adoption of agentic AI"
+      }
+    ],
+    "future_bottlenecks": [
+      {
+        "name": "Absence of Standardized Agentic Evaluation and Benchmarking",
+        "tier": "emerging",
+        "cause": "No consensus framework exists for evaluating multi-step agent performance across diverse task domains. Traditional ML metrics (BLEU, F1) are irrelevant. SWE-bench and similar efforts are narrow. Without reliable evaluation, enterprises cannot benchmark vendors, regulators cannot set standards, and investors cannot diligence claims.",
+        "losers": [
+          "Agent vendors making unsubstantiated performance claims",
+          "Enterprises that deploy without independent verification",
+          "VCs investing without diligence frameworks"
+        ],
+        "winners": [
+          "Companies building agentic eval platforms",
+          "Open-source benchmark consortia",
+          "Consulting firms offering agent auditing services"
+        ],
+        "severity": 7.0,
+        "time_horizon": "1-3 years",
+        "market_awareness": "Low-Moderate. Recognized in research circles but absent from most investment theses. The 'evaluation crisis' will become visible when enterprises struggle to compare agent vendors."
+      },
+      {
+        "name": "Tool/API Interoperability Fragmentation",
+        "tier": "emerging",
+        "cause": "Agents must interact with external systems (CRMs, databases, APIs, file systems), but there is no universal agent-tool protocol. Each integration is bespoke, brittle, and version-sensitive. MCP (Model Context Protocol) and similar efforts are nascent. This creates an integration tax that limits agent scalability across enterprise environments.",
+        "losers": [
+          "Agent startups that can't scale integrations",
+          "SaaS vendors with closed ecosystems who resist agent access",
+          "Custom integration consultants facing commoditization"
+        ],
+        "winners": [
+          "Companies building agent-tool middleware/protocols",
+          "Zapier-type platforms evolving for AI agents",
+          "Enterprise integration platforms (MuleSoft, Workato)"
+        ],
+        "severity": 7.0,
+        "time_horizon": "1-4 years",
+        "market_awareness": "Low. The market focuses on model capabilities, not the plumbing required for agents to actually interact with real-world systems. This will emerge as a critical bottleneck as agents move from demos to production."
+      },
+      {
+        "name": "Persistent Memory and Long-Horizon State Management",
+        "tier": "emerging",
+        "cause": "Current agents are stateless between sessions. Long-horizon tasks (multi-day research, ongoing project management, relationship-aware customer support) require persistent memory, episodic recall, and state reconciliation. Vector DBs are insufficient; they lack temporal reasoning, conflict resolution, and selective forgetting.",
+        "losers": [
+          "Agent frameworks that treat memory as an afterthought",
+          "Pure vector DB plays that don't evolve beyond similarity search",
+          "Enterprises expecting agents to 'remember' without infrastructure investment"
+        ],
+        "winners": [
+          "Vector database companies evolving toward agentic memory (Pinecone, Weaviate)",
+          "Neurosymbolic AI approaches",
+          "Companies building agent-specific memory infrastructure"
+        ],
+        "severity": 7.0,
+        "time_horizon": "2-4 years",
+        "market_awareness": "Low. Most agentic AI demos show single-session tasks. The market hasn't confronted the memory architecture problem that determines whether agents can handle real, ongoing work."
+      },
+      {
+        "name": "Safety and Alignment for Autonomous Real-World Action",
+        "tier": "emerging",
+        "cause": "When agents execute trades, send emails, modify production code, or make purchases, the stakes of misalignment escalate dramatically. Current RLHF and constitutional AI methods are designed for text generation, not action selection in dynamic environments. The alignment problem becomes a control problem with potentially irreversible consequences.",
+        "losers": [
+          "Companies deploying agents with excessive autonomy too early",
+          "Open-source agent frameworks without safety guardrails",
+          "Regulators caught unprepared"
+        ],
+        "winners": [
+          "AI safety/alignment startups",
+          "Insurance products for AI agent liability",
+          "Companies building action-verification and sandboxing infrastructure"
+        ],
+        "severity": 8.0,
+        "time_horizon": "2-5 years",
+        "market_awareness": "Moderate among AI safety researchers, low among investors. Will become acute after first major incident of autonomous agent causing financial loss, data breach, or physical harm."
+      }
+    ],
+    "hidden_constraints": [
+      {
+        "name": "Power Grid and Energy Infrastructure Ceiling",
+        "tier": "hidden",
+        "cause": "AI data center power demand is projected to reach 8-12% of US electricity consumption by 2030, up from ~2% today. Grid transmission expansion takes 7-10 years due to permitting, land acquisition, and supply chain constraints. Substation transformers have 2-3 year lead times. This physical infrastructure bottleneck will cap agentic AI deployment regardless of algorithmic progress.",
+        "losers": [
+          "Hyperscalers whose growth plans exceed grid capacity",
+          "Data center REITs in power-constrained markets (Northern Virginia)",
+          "AI startups dependent on cloud capacity that won't materialize",
+          "Ratepayers in regions where AI data centers drive up electricity costs"
+        ],
+        "winners": [
+          "Nuclear energy companies (SMR developers)",
+          "Gas peaker plant operators",
+          "Grid infrastructure companies (GE Vernova, Quanta Services)",
+          "On-site power generation (fuel cells, microgrids)",
+          "Utilities with generation capacity in AI-heavy regions"
+        ],
+        "severity": 9.0,
+        "time_horizon": "3-7 years",
+        "market_awareness": "Very low among AI investors. Energy investors are aware but the cross-domain narrative hasn't converged. The market prices GPU supply but not the power infrastructure required to run them at scale."
+      },
+      {
+        "name": "Regulatory Liability Vacuum for Autonomous Agent Actions",
+        "tier": "hidden",
+        "cause": "No legal framework determines liability when an autonomous agent causes harm: Is it the model provider, the agent developer, the deploying enterprise, or the user? GDPR, Section 230, and product liability law were not designed for autonomous AI agents. The first major incident (financial loss, discrimination, data breach) will trigger regulatory paralysis and litigation that could freeze enterprise adoption.",
+        "losers": [
+          "Agent startups without liability insurance or audit infrastructure",
+          "Enterprises in highly regulated industries (finance, healthcare) deploying agents prematurely",
+          "Model providers potentially held liable for downstream agent actions"
+        ],
+        "winners": [
+          "AI insurance and risk underwriting firms",
+          "Legal tech companies building agent audit trails",
+          "Compliance-as-a-service platforms",
+          "Jurisdictions that establish clear agent liability frameworks first"
+        ],
+        "severity": 8.0,
+        "time_horizon": "2-5 years",
+        "market_awareness": "Very low. Investors model agentic AI adoption as a technology curve, not recognizing that legal uncertainty may be the binding constraint. EU AI Act touches this but doesn't resolve agent-specific liability."
+      },
+      {
+        "name": "Multi-Agent System Verification and Emergent Behavior",
+        "tier": "hidden",
+        "cause": "As agentic AI scales to multi-agent systems (agent swarms, agent-to-agent markets), verification of system-level behavior becomes exponentially harder. Emergent behaviors from agent interaction are unpredictable and potentially adversarial. No formal methods or testing frameworks exist for multi-agent AI systems at scale. This is a complexity science problem, not just an ML problem.",
+        "losers": [
+          "Platforms deploying large agent swarms without verification",
+          "Decentralized AI agent networks (crypto-AI crossover) with no governance",
+          "Organizations whose agents interact with external agents they don't control"
+        ],
+        "winners": [
+          "Formal verification companies adapting to AI",
+          "Complexity science and systems dynamics consultancies",
+          "Companies building multi-agent orchestration with safety guarantees"
+        ],
+        "severity": 7.0,
+        "time_horizon": "3-6 years",
+        "market_awareness": "Negligible. The market hasn't even fully grappled with single-agent reliability. Multi-agent emergent risk is a blind spot that will surface as organizations deploy fleets of interacting agents."
+      },
+      {
+        "name": "Advanced Semiconductor Packaging and HBM Supply Chain Concentration",
+        "tier": "hidden",
+        "cause": "Beyond GPU design, the binding constraint is advanced packaging (CoWoS via TSMC) and HBM3E supply (SK Hynix, Samsung, Micron). CoWoS capacity is expanding but remains a single-point-of-failure in Taiwan. HBM requires specialized DRAM processes with yields below standard DRAM. This supply chain is geographically concentrated in Taiwan and Korea, creating geopolitical risk.",
+        "losers": [
+          "AMD and Intel if they can't secure sufficient CoWoS/HBM allocation",
+          "AI startups dependent on non-NVIDIA accelerators with limited packaging access",
+          "Any agentic AI deployment timeline in a Taiwan conflict scenario"
+        ],
+        "winners": [
+          "TSMC (pricing power)",
+          "SK Hynix and Micron (HBM duopoly/oligopoly)",
+          "ASE Group and Amkor (packaging)",
+          "US CHIPS Act beneficiaries building domestic packaging"
+        ],
+        "severity": 7.0,
+        "time_horizon": "2-5 years",
+        "market_awareness": "Low. Market focuses on NVIDIA's design dominance but underestimates the physical supply chain fragility. A Taiwan disruption would halt agentic AI infrastructure expansion for 12-18 months."
+      },
+      {
+        "name": "AI Systems Engineering Talent Scarcity",
+        "tier": "hidden",
+        "cause": "Building production agentic AI systems requires a rare combination of ML knowledge, distributed systems engineering, reliability engineering, and domain expertise. This is fundamentally different from training models or building chatbots. The talent pool is perhaps 5,000-10,000 people globally with the right skill intersection. Universities don't produce this profile; it's learned through experience.",
+        "losers": [
+          "Non-tech enterprises trying to build agent systems in-house",
+          "Agent startups without senior systems engineering talent",
+          "Countries without domestic AI systems engineering talent pools"
+        ],
+        "winners": [
+          "Companies with deep systems engineering cultures (Stripe, Cloudflare, Databricks)",
+          "AI infrastructure platforms that abstract away complexity",
+          "Universities and bootcamps creating AI systems engineering curricula"
+        ],
+        "severity": 6.0,
+        "time_horizon": "2-5 years",
+        "market_awareness": "Very low. The market tracks ML researcher talent wars (OpenAI vs. Google) but ignores the systems engineering bottleneck that determines whether agents work in production. This will manifest as a 'build vs. buy' crisis."
+      }
+    ],
+    "current_bottlenecks": [
+      {
+        "name": "GPU Compute Scarcity for Multi-Step Inference",
+        "tier": "current",
+        "cause": "Agentic workflows require 10-100x more inference calls than single-turn LLM interactions due to planning, tool-use, reflection, and self-correction loops. NVIDIA H100/H200 supply remains constrained, and competing accelerators lack software ecosystem maturity (CUDA lock-in).",
+        "losers": [
+          "AI startups unable to secure GPU allocations",
+          "Enterprise IT budgets",
+          "Cloud customers facing pass-through compute costs"
+        ],
+        "winners": [
+          "NVIDIA",
+          "TSMC",
+          "ASML",
+          "Vertiv",
+          "Eaton",
+          "CoreWeave",
+          "Lambda Labs"
+        ],
+        "severity": 8.0,
+        "time_horizon": "0-2 years",
+        "market_awareness": "High. Widely discussed; reflected in NVIDIA's valuation and hyperscaler capex guidance. However, the market underestimates the multiplicative inference demand from agentic loops versus simple chat."
+      },
+      {
+        "name": "Compounding Error Rates in Multi-Step Reasoning Chains",
+        "tier": "current",
+        "cause": "Each step in an agentic workflow has a non-zero error rate. Over 10+ sequential steps, even 95% per-step accuracy yields <60% end-to-end reliability. Hallucinations, tool-call formatting errors, and misinterpretation of intermediate results cascade through the chain.",
+        "losers": [
+          "Startups promising fully autonomous agents today",
+          "Enterprises deploying agents in high-stakes domains without guardrails",
+          "Investors funding pre-revenue agent startups at high valuations"
+        ],
+        "winners": [
+          "Companies building verification/grounding layers (e.g., LangChain, LlamaIndex)",
+          "Human-in-the-loop platforms",
+          "Model evaluation firms"
+        ],
+        "severity": 8.0,
+        "time_horizon": "0-3 years",
+        "market_awareness": "Moderate-High. Known among practitioners, but investor narrative still treats 'agentic AI' as near-term deployable. The gap between demo-quality agents and production-grade reliability is underappreciated."
+      },
+      {
+        "name": "Inference Cost Economics for Agentic Workflows",
+        "tier": "current",
+        "cause": "A single agentic task (e.g., research report generation, code debugging) can cost $0.50-$5.00 in API calls versus $0.001 for a chat completion. At scale, this makes many agentic use cases unit-economics-negative unless dramatic cost reductions occur.",
+        "losers": [
+          "API-dependent agent startups with thin margins",
+          "OpenAI/Anthropic if inference costs don't decline fast enough to enable mass agentic adoption",
+          "Enterprise buyers facing unpredictable consumption-based pricing"
+        ],
+        "winners": [
+          "Model compression/quantization companies",
+          "Edge inference chipmakers (Qualcomm, Apple)",
+          "Caching infrastructure providers"
+        ],
+        "severity": 7.0,
+        "time_horizon": "0-2 years",
+        "market_awareness": "Moderate. Practitioners track token costs closely, but investors often model agentic AI adoption curves without stress-testing per-task economics."
+      }
+    ],
+    "first_order_effects": [
+      {
+        "order": "1",
+        "description": "Direct automation of multi-step cognitive workflows—research synthesis, code generation and debugging, customer support resolution, financial analysis—by AI systems that can plan, execute tool calls, and self-correct without continuous human supervision, collapsing task completion times from hours to minutes."
+      },
+      {
+        "order": "1",
+        "description": "Emergence of a new product paradigm: instead of chat interfaces or copilots, autonomous agents that are assigned objectives ('book this trip,' 'audit this codebase,' 'manage this ad campaign') and operate across digital tools, APIs, and data sources to achieve them, creating a market for agent-native infrastructure (orchestration layers, memory systems, tool registries)."
+      },
+      {
+        "order": "1",
+        "description": "Immediate cost displacement of routine knowledge work—junior analyst reports, tier-1 support tickets, basic legal document review, QA testing—where the marginal cost of an additional unit of output drops toward the cost of inference compute, pressuring service businesses built on billable hours or headcount-based pricing."
+      }
+    ],
+    "regulatory_analysis": {
+      "summary": "Agentic AI—systems that autonomously pursue goals, use tools, and take actions in the world with minimal human oversight—falls into a regulatory gap. No major jurisdiction has a framework purpose-built for agentic systems. The EU AI Act (2024) is the most comprehensive existing regime, but it was designed primarily for predictive and generative AI; its risk-tiering approach can be stretched to cover agentic systems (e.g., agents in critical infrastructure, employment, or finance would likely be 'high-risk'), but it lacks specific provisions for autonomous action, tool use, delegation chains, and the liability questions these create. The US remains fragmented: sectoral regulators (FTC on consumer protection, SEC on market manipulation, CFPB on automated decision-making, FDA on medical devices) are extending existing authorities piecemeal; the Biden Executive Order 14110 set reporting and safety-testing expectations for frontier models but is not agentic-specific and faces political uncertainty. State-level efforts (California SB 1047 vetoed, Colorado AI Act passed) signal growing legislative appetite but inconsistency. The UK favors a principles-based, pro-innovation approach; China has algorithm-specific and generative-AI rules but nothing directly targeting agentic autonomy. The likely future trajectory is a hybrid: existing sectoral regulators will issue agentic-AI-specific guidance (financial agents, healthcare agents, autonomous customer service), courts will establish liability precedents through early tort cases, and comprehensive horizontal legislation will follow high-profile harm events. Expect 'meaningful human control' to become a central regulatory concept, with requirements for action logging, guardrails on tool access and action spaces, human-in-the-loop checkpoints for high-stakes decisions, and liability frameworks that address the developer-deployer-user-agent chain. Insurance markets for agentic AI liability will co-develop with regulation. The core unresolved question is liability allocation when an autonomous agent causes harm—whether through a defective goal specification, an unforeseen tool interaction, or a multi-agent cascade—and this will be the primary battleground for the next 3-5 years.",
+      "catalysts": [
+        "A high-profile harm event—such as an autonomous trading agent causing market disruption, a customer-service agent making discriminatory decisions, or a personal-assistant agent making unauthorized financial commitments—would catalyze rapid legislative and regulatory action",
+        "Court decisions in early tort and contract cases involving AI agents will establish liability precedents that shape both market behavior and subsequent legislation",
+        "Sectoral regulators issuing formal guidance: FTC on agentic consumer interactions, SEC on autonomous trading agents, CFPB on financial agents acting on behalf of consumers, FDA on autonomous clinical decision support",
+        "Widespread commercial deployment of agentic products by major platforms (e.g., OpenAI Operator, Google Gemini agents, Microsoft Copilot Studio agents) will force regulators to move from theoretical to practical rulemaking",
+        "EU AI Act implementation and its first enforcement actions will reveal whether the framework adequately covers agentic systems or requires amendment, setting a template other jurisdictions may follow",
+        "Industry self-regulation and standards bodies (ISO, NIST, IEEE) publishing agentic-AI-specific standards for safety, logging, and human oversight could be incorporated by reference into regulation",
+        "International coordination through G7, OECD, or bilateral agreements on agentic AI safety could harmonize rules and reduce arbitrage, particularly if driven by shared concern about systemic financial or security risks",
+        "Development of technical infrastructure for agent auditing—action logging, replay, sandboxing, and runtime monitoring—will make regulation more feasible and lower the cost of compliance, enabling stricter rules",
+        "Insurance industry establishing underwriting standards and pricing models for agentic AI liability, which would create a private regulatory layer that complements public regulation"
+      ],
+      "key_risks": [
+        "Liability gap: no clear legal framework for allocating responsibility when an autonomous agent causes financial loss, privacy violation, or physical harm; developer, deployer, user, and intermediary liability are all unsettled, creating both under-deterrence and litigation uncertainty",
+        "Regulatory arbitrage: developers can route agentic deployments through jurisdictions with minimal oversight, especially for cloud-based agents that operate across borders",
+        "Specification gaming and unintended actions: agents may take technically goal-compliant but harmful actions (e.g., manipulating markets, scraping private data, making unauthorized purchases) that existing consumer-protection and financial regulations were not designed to catch",
+        "Multi-agent systemic risk: networks of interacting agents in financial markets, supply chains, or infrastructure could produce cascading failures or emergent coordination that no single regulator has jurisdiction over",
+        "Regulatory whiplash: a high-profile harm event could trigger rushed, overly broad legislation that restricts beneficial applications and entrenches large incumbents who can afford compliance costs",
+        "Contract and agency law uncertainty: agents that negotiate, enter agreements, or transact on behalf of humans may create binding obligations without clear legal authority, raising questions about capacity, consent, and ratification",
+        "Privacy and data-access violations: autonomous agents accessing APIs and databases may violate GDPR, CCPA, or sectoral privacy rules in ways that are difficult to audit post hoc",
+        "Frontier model regulation spillover: agentic capabilities are primarily built on frontier LLMs; regulations targeting model scale or capability (compute thresholds, safety testing) may indirectly constrain agentic AI in ways that are poorly calibrated to actual risk",
+        "Insurance market failure: if liability is uncertain and harm events are correlated (e.g., many agents using the same underlying model fail simultaneously), insurers may refuse to underwrite agentic AI, stalling commercial deployment"
+      ]
+    },
+    "third_order_effects": [
+      {
+        "order": "3",
+        "description": "Potential structural decline in labor's share of income as agentic systems substitute for cognitive labor at scale—historically the last moat of human economic advantage—creating political pressure for redistribution mechanisms (UBI, compute-as-public-infrastructure, agent taxation) and challenging the foundational assumption that human labor scarcity underpins broad-based purchasing power."
+      },
+      {
+        "order": "3",
+        "description": "Geopolitical fragmentation around agentic capability: nations and blocs treat frontier agent models as strategic assets akin to semiconductors or nuclear technology, imposing export controls on agent orchestration frameworks, restricting cross-border agent deployment, and competing on the regulatory dimension—whether to enable fast iteration (competitive advantage) or restrict capability proliferation (security advantage)."
+      },
+      {
+        "order": "3",
+        "description": "Systemic risk emergence from agent-to-agent interaction at scale: autonomous agents executing financial trades, supply chain reorders, infrastructure load balancing, and cybersecurity responses create coupled feedback loops with latency characteristics and failure modes that no human can monitor in real time, producing the cognitive equivalent of 2010 Flash Crash dynamics—cascading agent decisions amplifying rather than dampening shocks."
+      },
+      {
+        "order": "3",
+        "description": "Accountability vacuum in legal and regulatory frameworks: when an agent autonomously commits a firm to a contract, makes a hiring decision, or executes a trade that causes harm, existing liability doctrines (agency law, product liability, professional negligence) lack clean mappings, forcing a multi-decade legal restructuring around concepts of 'delegated autonomy,' 'agent fiduciary duty,' and 'algorithmic intent.'"
+      }
+    ],
+    "second_order_effects": [
+      {
+        "order": "2",
+        "description": "Organizational flattening as agents absorb coordination, summarization, and reporting functions traditionally performed by middle management, shifting firm structure toward fewer human decision-makers supervising larger fleets of agent-executed work, compressing management spans and reducing the institutional role of the 'translator' layer between strategy and execution."
+      },
+      {
+        "order": "2",
+        "description": "Software architecture inversion: digital products increasingly optimize for machine consumption rather than human use—APIs, structured outputs, and agent-readable protocols become the primary interface, while GUIs become secondary—reshaping the SaaS stack around agent interoperability, authentication delegation, and programmatic access patterns."
+      },
+      {
+        "order": "2",
+        "description": "Labor market bifurcation into agent-orchestrators (humans who direct, constrain, and validate agent output) and domain experts whose judgment is used to train, evaluate, and override agents, hollowing out the middle tier of procedural knowledge workers while inflating demand for both high-level system design and deep domain expertise that agents cannot yet replicate."
+      },
+      {
+        "order": "2",
+        "description": "Velocity compression in competitive cycles: firms deploying agents for market research, product iteration, and operational monitoring execute decision loops in minutes rather than weeks, forcing competitors to adopt similar capabilities or lose market share, creating an arms race in agentic throughput that advantages well-capitalized incumbents with proprietary data."
+      }
+    ],
+    "confidence_assessment": {
+      "composite": 6.6,
+      "conviction": 7.0
+    },
+    "geopolitical_analysis": {
+      "summary": "Agentic AI—systems capable of autonomous goal pursuit, multi-step reasoning, and tool use—represents a shift from AI as a passive tool to AI as an autonomous actor, fundamentally altering geopolitical power dynamics. Control over agentic AI infrastructure, models, and deployment ecosystems is becoming a new axis of national power, comparable to semiconductors, space, or nuclear capabilities. The geopolitical contest centers on compute access (GPUs, TSMC dependency), talent concentration, data sovereignty, and regulatory frameworks. Nations and blocs are bifurcating: the US-led ecosystem (OpenAI, Anthropic, Google, Meta) versus China's state-aligned AI stack (Baidu, Alibaba, Zhipu, DeepSeek), with the EU attempting regulatory leadership via the AI Act but lacking frontier model sovereignty. Agentic AI amplifies asymmetric warfare capabilities—autonomous cyber operations, disinformation at scale, economic manipulation via algorithmic trading agents, and autonomous military decision-making—creating first-strike incentives and accelerating arms race dynamics. The technology also introduces systemic interdependence risks: agentic systems interacting across borders could trigger cascading failures in financial markets, supply chains, or critical infrastructure. Middle powers (UAE, Saudi Arabia, Singapore, India) are pursuing strategic hedging, investing in sovereign AI infrastructure while balancing relations with both US and China. The proliferation of open-weight agentic models (Llama, DeepSeek, Mistral) democratizes capabilities but also accelerates adversarial use, including by non-state actors. Governance is fragmented: no binding international treaty exists for agentic AI, and verification is near-impossible given software's intangibility, creating a classic security dilemma where defensive AI development is indistinguishable from offensive buildup.",
+      "key_risks": [
+        "Autonomous cyber warfare escalation: agentic AI systems conducting offensive cyber operations at machine speed could trigger rapid escalation cycles before human decision-makers can intervene, risking conflict spirals.",
+        "Non-state actor proliferation: open-weight agentic models lower barriers for terrorist groups, criminal syndicates, or rogue actors to deploy autonomous systems for bioterrorism research, critical infrastructure attacks, or large-scale social manipulation.",
+        "Compute chokepoint weaponization: US export controls on advanced GPUs (H100s, H200s) and ASML lithography create a strategic bottleneck; China's response—domestic alternatives like Huawei Ascend—could fragment the global compute ecosystem into incompatible stacks.",
+        "Autonomous weapons systems drift: agentic AI integration into military decision-making (target identification, kill chains) risks eroding human-in-the-loop norms, lowering thresholds for kinetic conflict, and creating accountability vacuums.",
+        "Economic destabilization via autonomous agents: high-frequency agentic trading systems or autonomous supply-chain agents could trigger flash crashes, resource hoarding, or coordinated economic warfare without human intent or oversight.",
+        "Sovereignty erosion: foreign-controlled agentic AI platforms operating within a nation's borders could influence elections, manipulate public opinion, or extract strategic intelligence, constituting a new form of digital colonialism.",
+        "Security dilemma and arms race dynamics: inability to verify adversarial AI capabilities creates worst-case assumption-making, driving preemptive investment, destabilizing deterrence, and accelerating capability development beyond safety thresholds.",
+        "Critical infrastructure dependency: agentic AI embedded in power grids, water systems, healthcare, and logistics creates systemic single points of failure; a compromised or misaligned agent could cascade failures across interconnected infrastructure.",
+        "Fragmentation of global AI governance: divergent regulatory regimes (US market-led, EU precautionary, China state-controlled) prevent interoperability, create compliance arbitrage, and undermine collective action on existential risks."
+      ],
+      "opportunities": [
+        "Diplomatic leverage through compute provision: nations controlling advanced semiconductor manufacturing (US via TSMC Arizona, Samsung Texas) or possessing surplus compute capacity can use AI infrastructure access as a geopolitical bargaining chip, analogous to energy diplomacy.",
+        "Soft power via AI platform exports: nations whose agentic AI platforms become globally dominant (US via OpenAI/Microsoft, China via DeepSeek/Alibaba) gain structural influence over how other nations' economies, militaries, and institutions operate.",
+        "Asymmetric advantage for middle powers: nations like UAE (G42), Singapore, and Israel can achieve outsized geopolitical influence by specializing in niche agentic AI applications (defense, finance, smart cities) without competing across the full stack.",
+        "Autonomous intelligence collection at scale: agentic AI can process, correlate, and act on open-source intelligence across languages and modalities faster than traditional intelligence apparatuses, providing decisive informational advantage.",
+        "Economic productivity leapfrogging: developing nations deploying agentic AI for governance, agriculture, healthcare, and logistics could bypass institutional development stages, compressing decades of modernization into years.",
+        "Coalition-based AI safety regimes: the absence of governance creates an opening for multilateral frameworks (analogous to IAEA for nuclear) where first-mover nations set verification standards, compute monitoring protocols, and incident reporting norms.",
+        "Autonomous disaster response and humanitarian operations: agentic AI systems deployed for pandemic response, famine logistics, or natural disaster coordination could serve as instruments of humanitarian diplomacy, building goodwill and strategic relationships.",
+        "Strategic ambiguity and deterrence: possession of advanced agentic cyber or military capabilities—without explicit disclosure—can function as a latent deterrent, similar to nuclear ambiguity, shaping adversary behavior through uncertainty."
+      ]
+    },
+    "market_misconceptions": [
+      "Probabilistic models will achieve the deterministic reliability required for high-stakes, multi-step execution without requiring constant human-in-the-loop oversight.",
+      "The cost of inference for iterative reasoning (planning, acting, reflecting) will decrease rapidly enough to make autonomous agents economically viable for routine, low-margin tasks.",
+      "Enterprises will rapidly overcome security, compliance, and data governance hurdles to grant AI agents access to sensitive systems, APIs, and execution environments.",
+      "Value will accrue to new 'agentic' application startups rather than being absorbed by incumbents who integrate agents into existing, widely deployed software suites.",
+      "General-purpose agents capable of orchestrating arbitrary APIs will outperform narrow, purpose-built software for most enterprise use cases.",
+      "The compounding error rates in multi-step reasoning can be engineered away, rather than being a fundamental limitation of current autoregressive transformer architectures."
+    ],
+    "portfolio_implications": {
+      "composite": 6.6,
+      "narrative_score": {
+        "duration": 8.0,
+        "conviction": 7.0,
+        "economic_impact": 8.0,
+        "valuation_support": 4.0,
+        "narrative_strength": 8.0,
+        "adoption_probability": 6.0,
+        "bottleneck_advantage": 7.0,
+        "market_awareness_gap": 4.0,
+        "second_order_effects": 9.0,
+        "competitive_advantage": 5.0
+      }
+    },
+    "psychological_analysis": {
+      "biases": [
+        "Recency Bias: Extrapolating the rapid, step-change improvements seen in chat-based LLMs to assume similar trajectories for autonomous action and complex, multi-step reasoning.",
+        "Herd Mentality: FOMO driving venture capital and public market capital into any company labeled 'Agentic AI' without rigorous due diligence on unit economics or technical feasibility.",
+        "Overconfidence: Underestimating the engineering difficulty of achieving reliable, deterministic outcomes from probabilistic models in unstructured, real-world enterprise environments.",
+        "Narrative Fallacy: Constructing a compelling, linear story of 'AI autonomously doing human work' that ignores the messy reality of legacy IT systems, fragmented APIs, and organizational resistance.",
+        "Availability Heuristic: Overweighting highly publicized, successful demos of agents booking flights or writing code, while ignoring the thousands of silent failures in production environments.",
+        "Confirmation Bias: Seeking out evidence of AI autonomy succeeding in isolated sandboxes while dismissing structural barriers to enterprise adoption as merely temporary engineering hurdles."
+      ],
+      "consensus_view": "Agentic AI—systems capable of autonomous, multi-step task execution to achieve complex goals—represents the next major paradigm shift in technology. The market consensus believes these systems will unlock massive enterprise productivity gains, disrupt traditional SaaS by replacing rigid workflows with dynamic AI orchestration, and generate substantial economic value for foundational model providers, infrastructure companies, and early application-layer adopters.",
+      "narrative_risks": [
+        "Long-tail reliability failures: Agents may execute 90% of a task flawlessly but fail catastrophically on the final 10%, rendering them unviable for production environments and capping actual productivity gains.",
+        "Inference economics: The token-intensive nature of agentic loops (requiring multiple passes for planning and error correction) may result in unattractive unit economics that do not scale to consumer or low-tier enterprise pricing.",
+        "Security and permissioning bottlenecks: Enterprise IT and compliance teams may refuse to grant autonomous systems the necessary permissions to execute code or modify databases, restricting agents to read-only or low-stakes tasks.",
+        "Moat erosion: If agents can seamlessly orchestrate any API, the competitive advantage for application-layer companies diminishes, as proprietary workflows can be easily replicated by competitors or foundational model providers.",
+        "Latency constraints: The time required for multi-step reasoning and tool-use may be unacceptable for real-time, user-facing applications, limiting the addressable market to asynchronous background tasks."
+      ],
+      "hidden_assumptions": [
+        "Probabilistic models will achieve the deterministic reliability required for high-stakes, multi-step execution without requiring constant human-in-the-loop oversight.",
+        "The cost of inference for iterative reasoning (planning, acting, reflecting) will decrease rapidly enough to make autonomous agents economically viable for routine, low-margin tasks.",
+        "Enterprises will rapidly overcome security, compliance, and data governance hurdles to grant AI agents access to sensitive systems, APIs, and execution environments.",
+        "Value will accrue to new 'agentic' application startups rather than being absorbed by incumbents who integrate agents into existing, widely deployed software suites.",
+        "General-purpose agents capable of orchestrating arbitrary APIs will outperform narrow, purpose-built software for most enterprise use cases.",
+        "The compounding error rates in multi-step reasoning can be engineered away, rather than being a fundamental limitation of current autoregressive transformer architectures."
+      ]
+    },
+    "adoption_curve_analysis": {
+      "stage": "Early Adopters",
+      "growth_rate": "Exponential (>100% YoY in developer tooling and pilot enterprise deployments)",
+      "penetration_pct": 3,
+      "inflection_points": [
+        "Achievement of reliable, self-correcting multi-step reasoning without human-in-the-loop intervention.",
+        "Establishment of enterprise security, liability, and governance frameworks for autonomous financial and operational actions.",
+        "Standardization of agent-to-agent communication protocols and interoperability.",
+        "Breakthrough in edge-compute efficiency allowing local, low-latency agent execution."
+      ]
+    },
+    "investment_opportunities": [
+      {
+        "type": "direct",
+        "title": "Agentic Workflow Orchestration Middleware",
+        "thesis": "As AI agents transition from single-turn chat to multi-step autonomous workflows, a critical orchestration layer is emerging to manage agent coordination, state persistence, error recovery, tool-call routing, and human-in-the-loop checkpoints. This is the application server layer of the agentic economy—analogous to how Kubernetes emerged for container orchestration. Enterprises will not deploy agents at scale without reliable orchestration, making this the highest-leverage infrastructure bet. The companies that own the orchestration layer will mediate all downstream agent interactions, capturing toll-road economics.",
+        "awareness_gap": "The market is focused on foundation models and agent frameworks (LangChain, AutoGPT) but underestimates that enterprise-grade orchestration—reliable state management, rollback, audit trails, multi-agent coordination—requires deep enterprise software DNA, not just a framework. The orchestration layer is where durable value accrues because it becomes the integration point for all agent deployments.",
+        "valuation_note": "Palantir trades at ~20x revenue, reflecting some agentic premium, but its AIP platform is the closest thing to production-grade agent orchestration with enterprise security. ServiceNow at ~15x revenue is less obviously priced for agentic AI despite its workflow engine being a natural agent deployment substrate.",
+        "potential_losers": [
+          "Legacy RPA vendors without AI-native architectures (UiPath—uncertain pivot)",
+          "Pure-play agent framework startups without enterprise distribution",
+          "Custom internal orchestration tools that fail to scale"
+        ],
+        "potential_winners": [
+          "Palantir (AIP platform, enterprise agent orchestration)",
+          "ServiceNow (workflow engine as agent runtime)",
+          "Microsoft (Semantic Kernel, Copilot Studio, Fabric)",
+          "Databricks (Mosaic AI, data-agent integration)",
+          "Temporal (open-source durable execution for agent workflows)"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Inference Compute as the True Agentic Bottleneck",
+        "thesis": "Agentic AI requires 10-100x more inference compute than conversational AI because agents run iterative reasoning loops, maintain long context windows, call multiple tools sequentially, and execute multi-step plans. The market remains fixated on training compute (NVIDIA H100s for pre-training) but the binding constraint is shifting to sustained inference capacity. Agents don't just generate tokens once—they generate thousands of tokens per task across dozens of iterations. This creates structural, non-bursty demand for inference infrastructure that compounds with every agent deployment.",
+        "awareness_gap": "Most investors model AI compute demand as training-driven, but agentic workloads are inference-dominant. A single agent task (e.g., research a company, draft a report, verify sources) may consume 50-200x the tokens of a chatbot query. As agent adoption scales linearly, inference demand scales super-linearly.",
+        "valuation_note": "NVIDIA is obviously priced for AI dominance, but the inference-specific angle is underexplored. AMD trades at a significant discount to NVIDIA despite MI300X being competitive for inference workloads. CoreWeave and neoclouds are private. Cloud hyperscalers' inference revenue growth is not yet fully disaggregated in reporting.",
+        "potential_losers": [
+          "Companies dependent on cheap inference subsidies that will end",
+          "CPU-only inference providers unable to meet agentic throughput demands",
+          "Hyperscalers that under-provision inference capacity relative to agent demand"
+        ],
+        "potential_winners": [
+          "NVIDIA (inference-optimized architectures, NIM microservices)",
+          "AMD (MI300X competitive for inference, ROCm maturing)",
+          "Amazon AWS (Bedrock, Inferentia chips, largest inference fleet)",
+          "CoreWeave (specialized GPU cloud for sustained inference)",
+          "Groq (LPU architecture purpose-built for inference speed)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Human-Augmentation Over Full Autonomy: The Copilot Reality",
+        "thesis": "The market is pricing in rapid achievement of fully autonomous agents that replace human workflows. Reality is that reliable agentic AI requires human oversight for years due to hallucination rates, edge-case failures, and accountability gaps. Companies building 'copilot' models (human-in-the-loop, augmentation-first) will capture more enterprise value in the 3-5 year horizon than pure 'autopilot' autonomous agent companies. The disappointment gap between agentic AI hype and near-term reliability will redirect capital toward augmentation platforms.",
+        "awareness_gap": "The narrative conflates 'agentic AI' with 'autonomous AI.' Most valuable near-term agent deployments are semi-autonomous—agents that draft, recommend, and prepare but require human approval before action. The market is overvaluing full-autonomy plays and undervaluing augmentation platforms with existing distribution.",
+        "valuation_note": "Salesforce trades at ~6x revenue despite Agentforce being a natural agentic platform with massive CRM distribution. Adobe at ~12x revenue has Firefly and generative AI embedded in creative workflows. Both are mispriced relative to AI-native peers trading at 20-40x revenue with less distribution.",
+        "potential_losers": [
+          "Pure-play autonomous agent startups with no human-in-the-loop design",
+          "Companies promising full autonomy in regulated industries (healthcare, legal, finance)",
+          "Venture-funded agent startups burning capital on autonomy before reliability is achieved"
+        ],
+        "potential_winners": [
+          "Microsoft (Copilot ecosystem, 400M+ Office seats as agent distribution)",
+          "Salesforce (Agentforce, CRM workflow as agent substrate)",
+          "Adobe (creative agent augmentation, Firefly integration)",
+          "GitHub (Copilot as coding agent with human review)",
+          "Notion / Canva (embedded AI agents in productivity workflows)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Agent Evaluation, Observability, and Reliability Infrastructure",
+        "thesis": "The market is focused on building agents but systematically underestimates the difficulty of evaluating, testing, monitoring, and ensuring reliability of autonomous systems. Agents fail in non-obvious ways—silent tool-call errors, context degradation over long sessions, compounding hallucinations across steps. Enterprise deployment requires continuous evaluation, observability, and regression testing infrastructure that doesn't exist at scale yet. This is the 'Datadog for agents' opportunity—observability as a mandatory layer.",
+        "awareness_gap": "Investors are funding agent creation tools but not agent reliability tools. Enterprise buyers will not deploy agents they cannot monitor, evaluate, or audit. The observability/eval layer is unglamorous but becomes the procurement gatekeeper—no enterprise buys agents without it.",
+        "valuation_note": "Datadog at ~15x revenue has AI monitoring features but isn't priced as an agentic AI observability leader. Elastic at ~5x revenue is underappreciated for its AI/LLM observability capabilities. Private companies (Braintrust, LangSmith, Arize) are emerging but public markets lack pure plays.",
+        "potential_losers": [
+          "Agent developers shipping without evaluation infrastructure",
+          "Companies relying on manual testing for agent quality",
+          "Traditional APM vendors slow to add LLM/agent-specific monitoring"
+        ],
+        "potential_winners": [
+          "Datadog (LLM observability extending to agent monitoring)",
+          "Elastic (AI observability, search-based agent evaluation)",
+          "Snowflake (data platform for agent telemetry and evaluation)",
+          "Splunk/Cisco (agent log analysis and security monitoring)",
+          "Weights & Biases (agent experiment tracking, if IPO)"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Data Center Power and Grid Infrastructure as Binding Constraint",
+        "thesis": "Agentic AI's inference-heavy workload creates sustained, non-bursty power demand that strains grid capacity far more than training workloads (which are bursty and can be scheduled). The bottleneck has shifted from chips to electricity. A single agentic AI data center may require 500MW-1GW of continuous power—equivalent to a small city. Power generation, transmission infrastructure, and advanced cooling are the binding physical constraints on agentic AI scale. This is a multi-decade infrastructure cycle.",
+        "awareness_gap": "The market treats power as a secondary AI theme, but it is becoming the primary constraint. Tech companies are now competing for nuclear power contracts and building behind-the-meter generation. The power infrastructure cycle (permitting, transmission build-out, generation capacity) operates on 5-10 year timelines, meaning today's power constraints will persist through the agentic AI deployment wave.",
+        "valuation_note": "Constellation Energy trades at ~20x earnings with nuclear assets uniquely positioned for 24/7 clean data center power. Vistra at ~15x earnings has gas + nuclear. Eaton and Schneider Electric trade at ~25x earnings, reflecting some AI premium but power equipment demand is structural. Quanta Services at ~20x earnings is underappreciated as grid build-out play.",
+        "potential_losers": [
+          "Data center REITs without secured long-term power contracts (Digital Realty exposure)",
+          "Utilities in constrained grids unable to serve data center demand",
+          "AI companies assuming power will be available at current prices",
+          "Coal-dependent utilities losing data center customers"
+        ],
+        "potential_winners": [
+          "Constellation Energy (nuclear fleet, 20-year PPAs with Microsoft)",
+          "Vistra Corp (gas + nuclear, Texas power advantage)",
+          "Eaton (electrical infrastructure, liquid cooling for AI)",
+          "Schneider Electric (data center power management, APC)",
+          "Quanta Services (grid transmission build-out)",
+          "GE Vernova (gas turbines, grid equipment, nuclear)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Proprietary Domain Data as the Durable Moat",
+        "thesis": "The market values AI infrastructure (chips, models, cloud) but undervalues companies sitting on unique, proprietary, structured datasets that agents need for grounding and domain-specific tasks. As foundation models commoditize, the differentiator becomes data quality and specificity. Agents in finance, legal, healthcare, and insurance require domain-specific data that cannot be synthesized. Data-owning companies are the 'oil majors' of the agentic economy—models are refineries, but data is the crude.",
+        "awareness_gap": "The market treats data companies as 'legacy information services' and values them as such. But agentic AI dramatically increases the value of proprietary data because agents need structured, verified, domain-specific data to ground their outputs. Every agent deployment in a vertical domain requires licensing or accessing proprietary datasets. These companies are mispriced as slow-growth information services when they're actually AI infrastructure.",
+        "valuation_note": "RELX trades at ~8x revenue and ~20x earnings despite owning LexisNexis, SciVal, and deep proprietary datasets. Verisk at ~7x revenue owns insurance/financial data. S&P Global at ~9x revenue owns market data infrastructure. Wolters Kluwer at ~8x revenue owns legal/regulatory content. All trade at 'information services' multiples, not 'AI infrastructure' multiples.",
+        "potential_losers": [
+          "Companies whose data advantage is eroded by synthetic data generation",
+          "Open data aggregators whose content is commoditized",
+          "Companies that fail to monetize data access for agent training/grounding"
+        ],
+        "potential_winners": [
+          "RELX (LexisNexis, scientific data, legal agent grounding)",
+          "S&P Global (financial market data, ratings, agent infrastructure)",
+          "Verisk (insurance data, risk modeling for autonomous agents)",
+          "Moody's (credit data, financial agent grounding)",
+          "Wolters Kluwer (legal, tax, health domain data)",
+          "Bloomberg (financial data terminal, proprietary agent substrate)"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Cybersecurity for Agentic Systems: Novel Attack Surface",
+        "thesis": "Agents with tool access, API keys, database permissions, and autonomous action capabilities create an entirely new attack surface. Prompt injection attacks can hijack agents to exfiltrate data, execute unauthorized transactions, or chain tool calls in malicious ways. Traditional security perimeters don't protect against agent-mediated attacks because the agent is an insider with legitimate credentials. This creates mandatory demand for agent-specific security: tool-call monitoring, agent behavior baselining, prompt injection defense, and autonomous action guardrails.",
+        "awareness_gap": "The market treats AI security as an extension of existing cybersecurity, but agentic AI creates fundamentally novel threat vectors. An agent with access to a CRM, email, and payment systems that gets prompt-injected is a credential-holding insider that can cause real financial damage. Security budgets will expand specifically for agent security, not just be reallocated.",
+        "valuation_note": "CrowdStrike at ~15x revenue is priced for cybersecurity leadership but not specifically for agentic AI security. Palo Alto Networks at ~15x revenue has AI security capabilities but the agentic angle is underexplored. Cloudflare at ~15x revenue is well-positioned for API-level agent security. Zscaler at ~10x revenue is underappreciated for zero-trust agent access control.",
+        "potential_losers": [
+          "Companies deploying agents without security guardrails",
+          "Traditional perimeter security vendors without AI-native capabilities",
+          "Agent developers ignoring security as a design principle",
+          "Companies relying on model-level safety (alignment) instead of system-level security"
+        ],
+        "potential_winners": [
+          "CrowdStrike (endpoint + identity monitoring for agent behavior)",
+          "Palo Alto Networks (AI Runtime Security, agent threat detection)",
+          "Cloudflare (API gateway security, prompt injection filtering)",
+          "Zscaler (zero-trust access for agent tool calls)",
+          "Wiz (cloud agent security, if IPO or acquired)",
+          "Private: Lasso Security, Pillar Security, Robust Intelligence"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Legacy Enterprise Software as Agent Distribution Channels",
+        "thesis": "The market assumes AI agents will be built by new companies, but legacy enterprise software vendors with deep workflow integration, existing customer relationships, domain-specific data, and regulatory compliance infrastructure can embed agents into existing products at scale. They are mispriced as 'old tech' when they're actually the distribution channel for agents. The agent layer without distribution is a feature, not a product. Enterprise software incumbents own the workflows that agents will automate.",
+        "awareness_gap": "The narrative assumes disruption flows from AI-native startups to incumbents. But agentic AI's value is in workflow automation, and workflows live inside incumbent systems (SAP for ERP, Oracle for databases, Intuit for accounting, Workday for HR). Embedding agents into these systems is more valuable than building standalone agents that must integrate with everything.",
+        "valuation_note": "SAP trades at ~6x revenue, Oracle at ~8x revenue, Intuit at ~8x revenue, Workday at ~9x revenue. All are priced as mature enterprise software, not as agentic AI distribution platforms. If agents add even 10-15% revenue growth through new AI-powered SKUs, these multiples re-rate significantly.",
+        "potential_losers": [
+          "AI-native startups without enterprise distribution channels",
+          "Companies losing platform status by not opening agent APIs",
+          "Point-solution vendors displaced by embedded agents in suites"
+        ],
+        "potential_winners": [
+          "SAP (Joule copilot, ERP workflow agent integration)",
+          "Oracle (OCI + database agents, autonomous database)",
+          "Intuit (Intuit Assist, financial agent for SMBs)",
+          "Workday (HR/finance agent embedding)",
+          "IBM (watsonx, consulting-led enterprise agent deployment)"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "AI Governance, Compliance, and Audit Infrastructure",
+        "thesis": "As agents take autonomous actions—executing trades, modifying records, sending communications, making purchasing decisions—regulatory frameworks will require audit trails, explainability, accountability chains, and human oversight documentation. The EU AI Act, NIST AI RMF, and emerging US/UK frameworks create mandatory demand for AI governance infrastructure. Companies deploying agents without governance face regulatory fines, liability exposure, and procurement rejection. This is a compliance-driven market that becomes non-discretionary spend.",
+        "awareness_gap": "The market views AI governance as a soft concern, but it is becoming hard law. The EU AI Act takes effect in 2025-2026 with fines up to 7% of global revenue. US sectoral regulators (SEC, FDA, CFPB) are issuing AI guidance. Enterprise procurement teams are adding AI governance requirements to RFPs. This is Sarbanes-Oxley for AI—mandatory, expensive, and recurring.",
+        "valuation_note": "Palantir is the closest public company with AI governance capabilities but is priced for multiple themes. OneTrust (private) is the leader in privacy/governance. Big Four consultancies (Deloitte, PwC, EY, KPMG) will capture significant governance implementation revenue but are not pure plays. The market lacks a pure-play public AI governance company, creating an opportunity for private-to-public emergence.",
+        "potential_losers": [
+          "Agent developers without compliance infrastructure",
+          "Companies operating autonomous agents in regulatory gray zones",
+          "Startups that treat governance as an afterthought",
+          "Companies deploying agents in EU without AI Act compliance"
+        ],
+        "potential_winners": [
+          "Palantir (AIP governance, audit trail infrastructure)",
+          "IBM (watsonx.governance, consulting scale)",
+          "Microsoft (Purview + AI governance integration)",
+          "Private: OneTrust, Credo AI, Holistic AI, Fairly AI",
+          "Big Four consultancies (governance implementation revenue)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "AI Liability Insurance and Risk Transfer Markets",
+        "thesis": "When agents make autonomous decisions—approving loans, diagnosing patients, executing trades, managing supply chains—liability shifts from human operators to agent developers and deployers. The market hasn't priced the emergence of AI liability insurance as a new insurance category. Traditional policies exclude AI-related losses. Companies deploying agents will need novel insurance products covering agent errors, autonomous decision liability, and AI-related data breaches. This creates a new premium pool potentially worth tens of billions.",
+        "awareness_gap": "The insurance market has not yet developed standardized AI liability products. Most commercial general liability and E&O policies contain silent AI exclusions or gaps. As agents are deployed at scale, the first insurance companies to offer AI-specific liability coverage will capture a new, high-margin premium category. The market views this as a niche rather than a structural new insurance line.",
+        "valuation_note": "AIG trades at ~8x earnings with deep emerging risk underwriting expertise. Chubb at ~12x earnings has cyber insurance leadership that extends to AI risk. Munich Re trades at ~10x earnings and has explicitly entered AI insurance underwriting. None are priced for a new AI liability insurance category.",
+        "potential_losers": [
+          "Companies deploying agents without liability coverage",
+          "Small agent developers unable to secure insurance or indemnification",
+          "Traditional insurers slow to develop AI-specific products",
+          "Companies assuming existing policies cover AI-related losses"
+        ],
+        "potential_winners": [
+          "Munich Re (first major insurer to offer AI liability products)",
+          "AIG (emerging risk underwriting expertise, cyber precedent)",
+          "Chubb (cyber insurance leadership extending to AI)",
+          "Lloyd's of London syndicates (novel risk pricing expertise)",
+          "Marsh McLennan / Aon (brokerage for AI risk transfer)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Edge and On-Device Agent Inference",
+        "thesis": "Not all agentic AI can run in the cloud due to latency, privacy, cost, and connectivity constraints. Agents that control robots, vehicles, industrial equipment, and consumer devices must run inference at the edge. This creates demand for edge AI chips, on-device model optimization, and local agent runtime environments. The market is focused on cloud-based agents but the physical world—manufacturing, logistics, automotive, robotics—requires edge-native agentic AI.",
+        "awareness_gap": "The agentic AI narrative is cloud-centric, but the largest agent deployment surface is physical: factory robots, autonomous vehicles, smart home devices, industrial IoT. These require sub-10ms inference latency, offline capability, and data sovereignty—none of which cloud agents provide. Edge agent inference is underfunded relative to cloud agent infrastructure.",
+        "valuation_note": "Qualcomm trades at ~15x earnings with edge AI chips (Snapdragon) but isn't priced as an agentic AI play. Arm Holdings at ~30x earnings is priced for AI but specifically for edge. NVIDIA's edge products (Jetson) are a small fraction of revenue. Apple at ~28x earnings has on-device AI (Apple Intelligence) but isn't valued as an agentic platform.",
+        "potential_losers": [
+          "Cloud-only agent platforms unable to serve edge use cases",
+          "Companies requiring constant cloud connectivity for agent operation",
+          "Edge device makers without AI inference capability",
+          "Companies that can't meet latency requirements for physical-world agents"
+        ],
+        "potential_winners": [
+          "Qualcomm (Snapdragon edge AI, automotive agent inference)",
+          "Arm Holdings (edge AI architecture, royalty model)",
+          "NVIDIA (Jetson platform for robotics/edge agents)",
+          "Apple (on-device AI, Apple Intelligence, privacy-preserving agents)",
+          "Tesla (FSD as edge agent, Dojo inference infrastructure)"
+        ]
+      }
+    ]
+  }
+}

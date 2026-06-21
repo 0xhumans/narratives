@@ -1,0 +1,916 @@
+{
+  "id": "4e0db78e-a5da-402d-b207-b74ff366cafa",
+  "narrative_id": "7e230e9b-5d48-45df-b579-0018c7079831",
+  "version": 1,
+  "generated_at": "2026-06-21T12:19:02.866684Z",
+  "payload": {
+    "key_drivers": [
+      "Surging baseload electricity demand from hyperscale AI data centers and electrification.",
+      "Decarbonization mandates requiring reliable, non-intermittent clean energy sources.",
+      "Structural uranium supply deficit exacerbated by a decade of underinvestment in mining and enrichment.",
+      "Government policy support and subsidies, such as the US Inflation Reduction Act and European Green Deal.",
+      "Advancements and commercialization timelines for Small Modular Reactors (SMRs).",
+      "Geopolitical energy security imperatives driving a shift away from fossil-fuel reliance.",
+      "Life extensions and power uprates of existing nuclear fleets to bridge near-term supply gaps.",
+      "Shifting geopolitical dynamics, including US-Iran talks, which impact global energy markets and uranium supply sentiment."
+    ],
+    "value_capture": [
+      {
+        "roic": 6.0,
+        "role": "capturer",
+        "notes": "Physical commodity layer. Structural supply deficit driven by underinvestment post-Fukushima and rapid inventory drawdowns. While spot price volatility offers high revenue growth, long-term contracts dictate actual realized economics.",
+        "layer_name": "Uranium Mining & Milling",
+        "pricing_power": 7.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 7.0,
+        "capital_intensity": 8.0,
+        "competitive_intensity": 4.0
+      },
+      {
+        "roic": 8.0,
+        "role": "capturer",
+        "notes": "Oligopolistic market structure with massive technological and regulatory barriers. Acts as a critical bottleneck in the fuel cycle, granting exceptional pricing power and stable returns.",
+        "layer_name": "Uranium Enrichment & Fuel Fabrication",
+        "pricing_power": 9.0,
+        "revenue_growth": 6.0,
+        "barriers_to_entry": 9.0,
+        "capital_intensity": 9.0,
+        "competitive_intensity": 2.0
+      },
+      {
+        "roic": 3.0,
+        "role": "creator",
+        "notes": "Deep tech innovation layer. High R&D burn with unproven commercial viability at scale. If successful, holds immense IP value and licensing potential, but currently faces regulatory and first-of-a-kind engineering risks.",
+        "layer_name": "Advanced Reactor IP & Design (SMRs)",
+        "pricing_power": 6.0,
+        "revenue_growth": 9.0,
+        "barriers_to_entry": 9.0,
+        "capital_intensity": 7.0,
+        "competitive_intensity": 5.0
+      },
+      {
+        "roic": 4.0,
+        "role": "creator",
+        "notes": "Historically plagued by cost overruns and schedule delays. High regulatory and engineering barriers, but low pricing power due to fixed-price contract structures and massive execution risk.",
+        "layer_name": "EPC & Construction Services",
+        "pricing_power": 4.0,
+        "revenue_growth": 5.0,
+        "barriers_to_entry": 8.0,
+        "capital_intensity": 6.0,
+        "competitive_intensity": 6.0
+      },
+      {
+        "roic": 6.0,
+        "role": "capturer",
+        "notes": "Regulated utility model. Generates stable, predictable cash flows based on long-term power purchase agreements. Value capture is defensive rather than explosive, driven by baseload demand and clean energy premiums.",
+        "layer_name": "Nuclear Plant Operations (Utilities)",
+        "pricing_power": 6.0,
+        "revenue_growth": 4.0,
+        "barriers_to_entry": 8.0,
+        "capital_intensity": 7.0,
+        "competitive_intensity": 2.0
+      },
+      {
+        "roic": 7.0,
+        "role": "capturer",
+        "notes": "Mandatory, regulated downstream service. Growth driven by aging fleet decommissioning and waste handling. Highly specialized with strong barriers to entry, providing steady, contracted cash flows.",
+        "layer_name": "Waste Management & Decommissioning",
+        "pricing_power": 7.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 8.0,
+        "capital_intensity": 5.0,
+        "competitive_intensity": 3.0
+      }
+    ],
+    "feedback_loops": [
+      {
+        "kind": "reinforcing",
+        "strength": 8.5,
+        "description": "AI data centers require massive, reliable, 24/7 baseload power that intermittent renewables cannot guarantee. Nuclear—particularly SMRs and existing plant restarts—is the only zero-carbon source matching AI's gigawatt-scale, high-capacity-factor requirements. Microsoft's Three Mile Island restart deal, Amazon and Google's SMR investments, and the convergence of hyperscaler capital with nuclear licensing reform create a direct demand-pull flywheel: AI drives nuclear demand, nuclear enables AI scaling.",
+        "target_narrative": "Artificial Intelligence"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 8.0,
+        "description": "Nuclear is the only dispatchable zero-carbon baseload source, making it structurally essential to deep decarbonization pathways. As climate adaptation drives electrification of transport, heating, and industrial processes, total electricity demand rises sharply. Simultaneously, climate-driven water stress and extreme weather make nuclear's resilience advantages more valuable. COP28 pledges by 30+ nations to triple nuclear capacity by 2050 formalize this reinforcing dynamic at the policy level.",
+        "target_narrative": "Climate Adaptation"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.5,
+        "description": "Reshoring energy-intensive manufacturing—semiconductors, aluminum, steel, batteries—requires abundant, reliable, competitively-priced power. Nuclear provides the baseload backbone for industrial clusters, while high-temperature reactors and nuclear-produced hydrogen enable decarbonized steelmaking and chemicals. Nations reindustrializing under energy security imperatives (US IRA, EU Net Zero Industry Act) are channeling subsidies into nuclear as a strategic enabler.",
+        "target_narrative": "Reindustrialization"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 6.5,
+        "description": "Defense installations, directed energy weapons, and autonomous systems demand resilient, islanded power. DoD's Project Pele (mobile microreactor) and growing interest in nuclear-powered forward bases reflect direct military demand. Nuclear naval propulsion programs are expanding globally. Strategic competition over uranium enrichment and fuel cycle sovereignty (Russia's Rosatom dominance, China's fast reactor program) makes nuclear a core defense-industrial capability.",
+        "target_narrative": "Defense Autonomy"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 5.5,
+        "description": "Nuclear fission and radioisotope power are enabling technologies for deep space missions, lunar surface operations, and Mars colonization where solar is insufficient. NASA's DRACO nuclear thermal propulsion demo, DOE's fission surface power program, and DoD interest in nuclear-powered cislunar operations create a specialized but strategically significant demand vector. Space nuclear also drives advanced reactor R&D with terrestrial spillover.",
+        "target_narrative": "Space Economy"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 5.0,
+        "description": "Robotics serves nuclear renaissance bidirectionally: robotic inspection and maintenance systems reduce O&M costs and address the aging workforce problem in nuclear plants, while nuclear-powered manufacturing robotics demand grows with electrification. Decommissioning robotics also unlock value from legacy sites. The interaction is real but secondary to the AI-power demand nexus.",
+        "target_narrative": "Robotics"
+      },
+      {
+        "kind": "resource_competition",
+        "strength": 6.0,
+        "description": "Nuclear renaissance creates concentrated demand for uranium, enriched conversion capacity, and specialized heavy forgings—all currently bottlenecked with Russia and China controlling significant supply chains. Nuclear also competes for cooling water in drought-stressed regions. However, nuclear's material intensity per unit of delivered energy is far lower than renewables-plus-storage, partially offsetting scarcity pressure on copper, lithium, and rare earths.",
+        "target_narrative": "Resource Scarcity"
+      },
+      {
+        "kind": "suppressing",
+        "strength": 4.5,
+        "description": "The nuclear workforce is disproportionately old, with large retirement waves depleting institutional knowledge in reactor operations, licensing, and supply chain management. Aging populations in nuclear-capable nations reduce political appetite for risk and slow permitting. Demographic decline also moderates electricity demand growth in developed economies, slightly weakening the demand case. This is a frictional drag rather than a blocking constraint, but materially slows execution timelines.",
+        "target_narrative": "Aging Population"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 4.0,
+        "description": "Nuclear reactors produce medical radioisotopes (Mo-99, Lu-177, Ac-225) essential for diagnostic imaging and targeted alpha-particle cancer therapies—a rapidly growing segment of precision oncology. Expanding reactor and accelerator capacity directly enables radiopharmaceutical supply. Additionally, nuclear desalination and process heat support biotech manufacturing in water-stressed regions. The interaction is niche but commercially meaningful in the radiopharmaceutical vertical.",
+        "target_narrative": "Biotechnology Revolution"
+      }
+    ],
+    "hidden_effects": [
+      {
+        "order": "hidden",
+        "description": "Latent human capital bottleneck: a generation of retired nuclear engineers and NRC-licensed operators creates a tacit-knowledge transfer crisis; the renaissance may stall not on capital or regulation but on the inability to staff qualified senior reactor operators and safety inspectors at sufficient scale."
+      },
+      {
+        "order": "hidden",
+        "description": "Insurance and liability regime stress: Price-Anderson-style liability caps may prove insufficient if SMR deployments proliferate in non-traditional sites (industrial parks, behind-the-meter data centers), creating uninsurable tail risks that could freeze deployment if a near-miss triggers re-underwriting across the sector."
+      },
+      {
+        "order": "hidden",
+        "description": "Nuclear proliferation pathway shifts: widespread HALEU fuel supply chains (20% enrichment) for advanced reactors lower the technical barrier for weapons-adjacent enrichment capability, creating latent proliferation risks that may trigger future sanctions regimes or interdiction events affecting publicly listed fuel cycle companies."
+      },
+      {
+        "order": "hidden",
+        "description": "Water constraint arbitrage: nuclear's thermal cooling requirements create invisible competition for freshwater in drought-stressed basins (U.S. Southwest, Iberia, parts of China), potentially forcing costly dry-cooling retrofits or siting restrictions that alter project economics years after capital commitment."
+      }
+    ],
+    "potential_losers": [
+      [
+        "SMR developers without secured fuel supply agreements (most of them)",
+        "Terrapower's Natrium reactor (delayed by HALEU unavailability)",
+        "Conventional uranium miners whose product is insufficient for advanced reactors without enrichment partners"
+      ],
+      [
+        "Rosatom and Russian enrichment export revenue",
+        "Chinese nuclear export ambitions in the developing world",
+        "Western utilities without diversified enrichment contracts facing 2027-2030 contract roll-overs",
+        "Uranium miners without offtake agreements with Western enrichers"
+      ],
+      [
+        "Reactor developers dependent on single-source foreign forging supply",
+        "NuScale if its forging supply chain remains concentrated",
+        "Western EPC contractors without deep nuclear component relationships"
+      ],
+      [
+        "Coal and gas peaker plants displaced by extended nuclear baseload",
+        "Renewable developers competing for the same grid capacity that extended nuclear holds",
+        "Reactors in Germany (already closed) and others facing premature shutdown"
+      ],
+      [
+        "Communities hosting stranded spent fuel without a federal repository",
+        "Taxpayers via the Nuclear Waste Fund judgment liability (>$8B and growing)",
+        "Reactors forced to store spent fuel on-site indefinitely without consolidated storage"
+      ],
+      [
+        "Greenfield nuclear developers without existing site infrastructure",
+        "Coal communities that lose plants without replacement (political risk)",
+        "Renewable developers competing for the same grid interconnection points"
+      ],
+      [
+        "SMR developers without staffing plans for first-of-a-kind operations",
+        "Utilities facing operator shortages at existing plants",
+        "Countries without domestic nuclear education infrastructure (most of the developing world)"
+      ],
+      [
+        "Natural gas peaker plants displaced by nuclear-data center pairing",
+        "Renewable developers unable to meet 24/7 data center requirements without storage",
+        "Grid operators facing transmission constraints between nuclear sites and data centers",
+        "Communities opposing data center development near nuclear plants"
+      ],
+      [
+        "Uranium exploration juniors with no production timeline (many TSX-V listings)",
+        "Kazatomprom (KAP) if Western utilities reduce Kazakh dependence due to Russian transit risk",
+        "Chinese uranium mining investments in Africa facing geopolitical scrutiny"
+      ],
+      [
+        "Reactor developers unable to secure construction insurance at viable cost",
+        "Utilities in jurisdictions without adequate nuclear liability frameworks",
+        "Countries outside Price-Anderson-equivalent liability caps"
+      ],
+      [
+        "Nuclear developers in remote locations without transmission access",
+        "Grid operators (RTOs/ISOs) facing interconnection backlogs that delay nuclear deployment",
+        "Communities opposing new transmission lines (permitting risk)"
+      ],
+      [
+        "Fusion startups without tritium supply or breeding strategies",
+        "Weapons modernization programs facing tritium production shortfalls",
+        "Countries without domestic tritium production capability"
+      ]
+    ],
+    "narrative_summary": "The 'Nuclear Renaissance' narrative has evolved from a speculative decarbonization play into an urgent infrastructure necessity, primarily driven by the insatiable power demands of AI data centers and the need for reliable, carbon-free baseload electricity. While traditional large-scale reactor projects face cost overruns and delays, the convergence of government subsidies, extended operational life for existing fleets, and the promise of Small Modular Reactors (SMRs) is unlocking unprecedented institutional capital. Current ETF pricing (NLR near $127, URA near $48) reflects a market pricing in structural uranium supply deficits and sustained policy support, even as geopolitical maneuvering, such as US-Iran negotiations, introduces volatility into global energy security calculations and potential uranium supply dynamics.",
+    "potential_winners": [
+      [
+        "Centrus Energy (LEU)",
+        "Urenco (private, watch for IPO)",
+        "Cameco (CCJ) via Westinghouse fuel cycle integration",
+        "DOE-funded HALEU demonstration projects",
+        "X-energy (XENE) if their TRISO fuel facility scales"
+      ],
+      [
+        "Cameco (CCJ)/Brookfield (BN) partnership",
+        "Centrus Energy (LEU)",
+        "Orano (French state-owned, benefits indirectly)",
+        "Urenco expansion projects in Eunice, NM and Urenco UK",
+        "Silex Systems (SLX) via Global Laser Enrichment technology"
+      ],
+      [
+        "BWX Technologies (BWXT)",
+        "Westinghouse (via Brookfield/Cameco)",
+        "Framatome (EDF subsidiary)",
+        "Howden Group (via Chart Industries GTLS)",
+        "ATI Inc (ATI) for nuclear-grade specialty steels",
+        "JSW Steel (India) for large forgings"
+      ],
+      [
+        "BWX Technologies (BWXT) for reactor components and fuel",
+        "Southern Company (SO) with Vogtle operating and extended-life fleet",
+        "Constellation Energy (CEG) with largest US nuclear fleet pursuing license extensions",
+        "NextEra Energy (NEE) nuclear fleet",
+        "Jensen Hughes (private) for nuclear safety engineering",
+        "Framatome for fuel and services"
+      ],
+      [
+        "EnergySolutions (private, watch for IPO)",
+        "Holtec International (private, SMR + storage play)",
+        "Waste Control Specialists (private, Texas facility)",
+        "BWX Technologies (BWXT) for naval waste processing",
+        "Veolia (VIE.PA) for nuclear waste services in Europe",
+        "Utilities with overfunded decommissioning trust funds (potential surplus extraction)"
+      ],
+      [
+        "TVA (Tennessee Valley Authority, public power) actively pursuing coal-to-nuclear",
+        "Southern Company (SO) with Vogtle experience and coal sites",
+        "Dominion Energy (D) with Virginia coal sites and data center demand",
+        "Duke Energy (DUK) with Carolinas coal-to-nuclear studies",
+        "Energy Northwest (public power, Washington state)",
+        "GE Hitachi Nuclear Energy for BWRX-300 siting at coal sites"
+      ],
+      [
+        "Jacobs Solutions (J) via nuclear engineering services",
+        "Amentum (AMTM) spun off from Jacobs with nuclear portfolio",
+        "BWX Technologies (BWXT) for naval nuclear talent pipeline",
+        "Bechtel (private) as premier nuclear EPC",
+        "Fluor (FLR) for nuclear construction management",
+        "University nuclear engineering programs with industry partnerships (MIT, NC State, Georgia Tech)"
+      ],
+      [
+        "Constellation Energy (CEG) - largest US nuclear fleet, TMI restart",
+        "Vistra Corp (VST) - nuclear + data center corridor exposure",
+        "Talen Energy (TLN) - Amazon PPA at Susquehanna",
+        "Public Service Enterprise (PEG) - Salem/Hope Creek nuclear in PJM",
+        "Dominion Energy (D) - Virginia data center corridor nuclear",
+        "NextEra Energy (NEE) - nuclear fleet + data center PPAs potential"
+      ],
+      [
+        "Ur-Energy (URG) - Lost Creek ISR in production, Shirley Basin permitted",
+        "enCore Energy (EU) - South Texas ISR production",
+        "Uranium Energy Corp (UEC) - multiple permitted US ISR projects",
+        "Energy Fuels (UUUU) - White Mesa mill, only conventional US uranium mill",
+        "Cameco (CCJ) - largest Western producer with tier-one assets",
+        "Boss Energy (BOE.AX) - Honeymoon project in Australia"
+      ],
+      [
+        "AXA (CS.PA) via AXA XL nuclear portfolio",
+        "Munich Re (MUV2.DE) nuclear reinsurance",
+        "Lloyd's of London nuclear syndicates (various corporate capital providers)",
+        "American Nuclear Insurers (joint venture of US property/casualty insurers)",
+        "Berkshire Hathaway (BRK) via specialty reinsurance capacity"
+      ],
+      [
+        "Quanta Services (PWR) - largest US transmission construction contractor",
+        "MasTec (MTZ) - transmission and pipeline infrastructure",
+        "ITC Holdings (private, Fortis subsidiary) - pure-play transmission",
+        "NextEra Energy Transmission (via NEE)",
+        "American Electric Power (AEP) - largest US transmission owner",
+        "PPL Corp (PPL) - transmission investment in Kentucky/Virginia"
+      ],
+      [
+        "TVA (public power, tritium production contract with DOE)",
+        "BWX Technologies (BWXT) for naval nuclear materials and processing",
+        "Commonwealth Fusion Systems (private) if they develop tritium breeding",
+        "Helion Energy (private) if D-He3 fusion requires tritium handling",
+        "DOE Savannah River Site contractors (private)"
+      ]
+    ],
+    "dependency_network": [
+      {
+        "type": "input",
+        "layer": "fuel_supply",
+        "weight": 9.5,
+        "description": "Uranium feedstock from Kazakhstan (40%+ global supply), Canada, Namibia, Australia; enrichment capacity dominated by Russia (Rosatom) and Urenco; conversion services at ConverDyn and Cameco. Supply concentration creates geopolitical chokepoint."
+      },
+      {
+        "type": "input",
+        "layer": "enrichment_capacity",
+        "weight": 9.0,
+        "description": "SWU (separative work unit) capacity bottleneck; HALEU fuel (5-20% enrichment) needed for SMRs requires new enrichment infrastructure not yet at commercial scale in the US."
+      },
+      {
+        "type": "input",
+        "layer": "electricity_demand_growth",
+        "weight": 9.0,
+        "description": "Hyperscale data center buildout for AI training/inference (Microsoft, Amazon, Google committing to nuclear PPAs), electrification of industry, grid-scale load growth reversing two decades of flat demand."
+      },
+      {
+        "type": "constraint",
+        "layer": "regulatory_approval",
+        "weight": 9.5,
+        "description": "NRC licensing timeline (combined construction and operating license takes 3-5+ years); SMR design certification still pending for NuScale (cancelled), GE Hitachi BWRX-300, X-energy; European licensing fragmented across national regulators."
+      },
+      {
+        "type": "constraint",
+        "layer": "skilled_labor",
+        "weight": 8.5,
+        "description": "Retiring nuclear engineering workforce; ~40% of US nuclear workers eligible for retirement by 2030; welders, nuclear-grade pipefitters, reactor operators in severe shortage; no pipeline of replacements at scale."
+      },
+      {
+        "type": "constraint",
+        "layer": "construction_supply_chain",
+        "weight": 9.0,
+        "description": "Large forged pressure vessels (only Japan Steel Works and a few others globally); reactor coolant pumps; nuclear-grade concrete and steel; Vogtle Units 3/4 demonstrated 7-year delays and $30B+ cost overruns from supply chain failures."
+      },
+      {
+        "type": "resource",
+        "layer": "capital_availability",
+        "weight": 9.5,
+        "description": "Nuclear builds require $8-15B+ per GW for large reactors; SMRs target $3-5B but unproven at scale; requires DOE loan guarantees, production tax credits (IRA Section 45U), sovereign backing; private capital reluctant without de-risking."
+      },
+      {
+        "type": "resource",
+        "layer": "government_policy",
+        "weight": 8.5,
+        "description": "IRA nuclear PTC ($15/MWh), DOE Advanced Reactor Demonstration Program ($3.2B), UK Sizewell C support, EU taxonomy inclusion of nuclear; reversal of Germany phaseout debate; policy continuity risk across election cycles."
+      },
+      {
+        "type": "input",
+        "layer": "cooling_water",
+        "weight": 7.5,
+        "description": "Thermoelectric cooling requires 10-20 billion gallons/day for US fleet; drought conditions in US Southwest and Europe threaten siting; dry cooling reduces output 5-10%; SMRs reduce but do not eliminate water dependency."
+      },
+      {
+        "type": "resource",
+        "layer": "grid_transmission",
+        "weight": 8.0,
+        "description": "Interconnection queues average 3-5 years (FERC data); transmission buildout lagging generation siting; behind-the-meter nuclear for data centers (e.g., Talen/Cumulus, Amazon) bypasses some grid constraints but creates new regulatory questions."
+      },
+      {
+        "type": "constraint",
+        "layer": "public_sentiment",
+        "weight": 7.0,
+        "description": "Post-Fukushima anxiety declining as climate urgency rises; 'too cheap to meter' skepticism from cost overruns; NIMBY opposition to new sites; but growing pro-nuclear climate movement among younger demographics and tech leaders."
+      },
+      {
+        "type": "constraint",
+        "layer": "nuclear_waste_management",
+        "weight": 7.5,
+        "description": "Yucca Mountain cancelled; US spent fuel stored onsite at 75+ plants in dry casks; Finland Onkalo repository operational; France Cigéo under construction; waste solution remains politically intractable in US but does not block new builds in practice."
+      },
+      {
+        "type": "constraint",
+        "layer": "geopolitical_stability",
+        "weight": 8.0,
+        "description": "US-Iran talks affect broader nonproliferation regime; Russia-China nuclear export competition in Africa/Middle East; Kazakhstan uranium supply stability; potential sanctions on Russian uranium imports (US ban phased through 2027); AUKUS submarine nuclear sharing precedent."
+      },
+      {
+        "type": "constraint",
+        "layer": "insurance_liability",
+        "weight": 6.5,
+        "description": "Price-Anderson Act caps US liability at $13.5B; international nuclear liability conventions (Vienna, Paris) create sovereign backstop; without government liability cap, private insurance would be unavailable."
+      },
+      {
+        "type": "resource",
+        "layer": "land_siting",
+        "weight": 6.0,
+        "description": "Existing nuclear sites with operating/closed reactors offer pre-licensed land, grid interconnection, and community acceptance; greenfield siting faces 10+ year permitting; DOE has identified 5+ former coal plant sites for nuclear conversion."
+      },
+      {
+        "type": "resource",
+        "layer": "steel_concrete_materials",
+        "weight": 6.5,
+        "description": "Nuclear-grade steel (ASME III), specialized concrete with low-alkali specifications; commodity inputs but nuclear certification requirements constrain supply; not a volume constraint but a qualification bottleneck."
+      },
+      {
+        "type": "input",
+        "layer": "smr_technology_maturation",
+        "weight": 8.5,
+        "description": "NuScale VOYGR cancelled (2023); TerraPower Natrium and X-energy Xe-100 under DOE ARDP demonstration by 2028-2030; Rolls-Royce SMR in UK GDA; first-of-a-kind engineering risk remains high; no SMR has yet produced grid power commercially."
+      },
+      {
+        "type": "input",
+        "layer": "uranium_price_signal",
+        "weight": 7.5,
+        "description": "Spot U3O8 at $80-90/lb incentivizes new mine development but below $100/lb threshold for many ISR and conventional projects; long-term contract pricing at premium to spot; producer equities (URA, NLR) reflecting re-rating but not yet full cycle investment."
+      },
+      {
+        "type": "input",
+        "layer": "data_center_demand",
+        "weight": 8.5,
+        "description": "Microsoft Three Mile Island PPA (Constellation), Amazon Talen Energy deal, Google advanced nuclear agreements; hyperscaler willingness to pay $100-150/MWh premium for firm clean power; data center load forecast to add 15-20 GW by 2030 in US alone."
+      },
+      {
+        "type": "constraint",
+        "layer": "supply_chain_security",
+        "weight": 7.5,
+        "description": "Russian uranium import ban (effective 2024, waivers through 2027); domestic enrichment buildout (Centrus HALEU demonstration, Urenco expansion); China's rapid reactor build (55+ GW planned) competes for same global supply chain components and fuel."
+      }
+    ],
+    "future_bottlenecks": [
+      {
+        "name": "Heavy Component Manufacturing and Forging Capacity",
+        "tier": "emerging",
+        "cause": "Atrophy of Western heavy manufacturing capabilities for large-scale reactor pressure vessels and steam generators, creating reliance on a few global single-source suppliers.",
+        "losers": [
+          "EPC contractors",
+          "Utilities facing construction delays and cost overruns",
+          "Large reactor developers (e.g., Westinghouse, EDF)"
+        ],
+        "winners": [
+          "JSW (Japan Steel Works)",
+          "Doosan Heavy Industries",
+          "Specialized nuclear component manufacturers"
+        ],
+        "severity": 7.0,
+        "time_horizon": "2-5 years",
+        "market_awareness": "Medium"
+      }
+    ],
+    "hidden_constraints": [
+      {
+        "name": "Regulatory Framework Incompatibility for Advanced Reactors",
+        "tier": "hidden",
+        "cause": "Nuclear regulatory bodies (e.g., NRC) are structurally optimized for large light-water reactors, lacking a streamlined, risk-proportionate licensing pathway for Small Modular Reactors (SMRs) and advanced non-light-water designs.",
+        "losers": [
+          "SMR developers (e.g., NuScale, TerraPower)",
+          "Advanced reactor startups",
+          "Broad decarbonization timelines"
+        ],
+        "winners": [
+          "Existing large reactor operators",
+          "Fossil fuel incumbents benefiting from delayed nuclear alternatives"
+        ],
+        "severity": 9.0,
+        "time_horizon": "3-10 years",
+        "market_awareness": "Low"
+      }
+    ],
+    "current_bottlenecks": [
+      {
+        "name": "Uranium Enrichment and Fuel Supply Constraints",
+        "tier": "current",
+        "cause": "Decades of underinvestment in mining and enrichment capacity post-Fukushima, exacerbated by geopolitical sanctions and supply chain risks associated with Russian nuclear fuel.",
+        "losers": [
+          "Nuclear utilities",
+          "Reactor operators facing margin compression",
+          "Countries reliant on imported fuel"
+        ],
+        "winners": [
+          "Cameco",
+          "Kazatomprom",
+          "Centrus Energy",
+          "Uranium miners and holders of physical uranium"
+        ],
+        "severity": 8.5,
+        "time_horizon": "0-3 years",
+        "market_awareness": "High"
+      }
+    ],
+    "first_order_effects": [
+      {
+        "order": "1",
+        "description": "Surging demand for uranium fuel, enrichment services, and long-term offtake contracts as utilities and hyperscalers sign PPAs to secure baseload carbon-free power, driving spot and term uranium prices structurally higher and catalyzing restarts of idled mines."
+      },
+      {
+        "order": "1",
+        "description": "Accelerated orders for large-scale reactors (GW-class) and small modular reactors (SMRs), directly boosting engineering, procurement, and construction firms, reactor vendors, and specialized component manufacturers (forgings, pressure vessels, control systems)."
+      },
+      {
+        "order": "1",
+        "description": "Regulatory fast-tracking of licensing frameworks—particularly in the U.S. (ADVANCE Act), U.K., France, and parts of Asia—reducing permitting timelines and lowering the regulatory risk premium embedded in nuclear project financing."
+      }
+    ],
+    "regulatory_analysis": {
+      "summary": "The regulatory landscape for nuclear energy is undergoing its most significant transformation since the post-Three Mile Island era, driven by converging pressures: decarbonization mandates, AI/data center electricity demand, energy security concerns post-Ukraine, and the maturation of Small Modular Reactor (SMR) and advanced reactor technologies. In the United States, the NRC has made structural shifts toward risk-informed, technology-inclusive frameworks—most notably through Part 53 rulemaking for advanced reactors and the 10 CFR Part 50.52 emergency preparedness flexibilities—marking a departure from the prescriptive, light-water-reactor-centric regime that historically stifled innovation. The ADVANCE Act of 2024 codified licensing modernization, fee reform, and prize structures for next-gen deployment, signaling bipartisan congressional intent to reduce regulatory friction without compromising safety. Internationally, the UK's Generic Design Assessment process, France's ASN reforms, and the IAEA's SMR regulatory forums are converging on harmonized, staged licensing approaches. However, the regime remains fundamentally adversarial in practice: licensing timelines still span 7-10 years, NRC adjudicatory hearings remain weaponizable by intervenors, and the regulatory apparatus has atrophied after decades of minimal new construction—creating a capacity bottleneck where the regulator itself is a binding constraint. The likely future trajectory is a bifurcated regime: accelerated, streamlined pathways for proven light-water SMR designs (NuScale-style, GE Hitachi BWRX-300) and a more experimental, iterative sandbox for non-light-water advanced reactors and fusion, potentially with separate regulatory frameworks. The critical tension is whether regulators can move from a 'prove it cannot fail' paradigm to a 'demonstrate acceptable risk proportional to benefit' paradigm fast enough to enable deployment at the scale and speed climate and energy security demands.",
+      "catalysts": [
+        "ADVANCE Act implementation milestones: NRC rulemaking completions, fee reductions, and advanced reactor prize disbursements through 2025-2027 create concrete regulatory de-risking events",
+        "Part 53 final rule adoption: expected 2027, this would establish the first true technology-inclusive, risk-informed licensing framework in US nuclear history, dramatically lowering regulatory uncertainty for non-LWR designs",
+        "Successful FOAK licensing: TVA's Clinch River SMR early site permit, GE Hitachi BWRX-300 Canadian and US licensing progress, and Kairos Hermes test reactor construction milestones provide regulatory precedent that compounds—each successful licensing reduces uncertainty for followers",
+        "AI hyperscaler demand crystallizing as offtake: Microsoft-Constellation Three Mile Island restart deal and similar hyperscaler PPAs create a demand signal that forces regulatory urgency—political pressure to enable data center power will accelerate licensing reform",
+        "DOE Loan Programs Office commitments: conditional commitments to Holtec, X-energy, and others provide the patient capital bridge that makes regulatory timelines survivable for private developers",
+        "International regulatory harmonization: IAEA SMR Regulators' Forum outputs and NEA Multinational Design Evaluation Programme milestones create cross-border licensing reciprocity frameworks that expand addressable markets and reduce per-unit regulatory cost",
+        "Fusion regulatory clarity: NRC's decision to regulate fusion under a risk-proportionate framework separate from fission establishes precedent that the regulatory system can create new paradigms, potentially accelerating advanced fission regulatory innovation",
+        "National security imperatives: nuclear naval propulsion expertise transfer, domestic HALEU production mandates, and competition with China's Belt and Road nuclear exports create bipartisan political momentum that can override regulatory inertia through legislative action",
+        "State-level clean energy credit mechanisms: New York, Illinois, and other states creating zero-emission credits and nuclear-specific procurement mandates create a patchwork of demand-side catalysts that compensate for federal regulatory friction"
+      ],
+      "key_risks": [
+        "NRC and international regulator capacity atrophy: decades of minimal new licensing have hollowed out institutional expertise, creating multi-year review backlogs even with streamlined frameworks",
+        "Part 53 rulemaking delays or dilution: the technology-inclusive framework could be bogged down in stakeholder contention, or finalized in a form that reintroduces prescriptive requirements defeating its purpose",
+        "Intervenor litigation and adjudicatory hearing abuse: environmental groups and anti-nuclear organizations can weaponize 2.206 petitions and hearing processes to delay licensing by years, regardless of ultimate merit",
+        "First-of-a-kind (FOAK) regulatory risk: novel designs face a regulatory ratchet where each new technical question triggers additional requirements, creating a moving target that undermines final investment decisions",
+        "Siting and community consent risk: even with federal licensing reform, state-level opposition, local zoning, and environmental justice challenges can block projects post-licensing, as seen with NuScale's Utah cancellation",
+        "Fuel cycle and waste regulatory gaps: the absence of a consolidated interim storage framework and HALEU fuel supply chain certification creates a chicken-and-egg problem where reactors cannot be licensed without assured fuel, and fuel facilities cannot be financed without reactor orders",
+        "Geopolitical fragmentation of standards: divergence between US, French, Russian, and Chinese SMR export regulatory frameworks could create a bifurcated global market, with Russia and China offering state-backed turnkey packages with integrated financing, fuel, and waste takeback that Western regulatory regimes cannot match",
+        "Safety event black swan: any operational incident at an SMR or advanced reactor—however minor—would trigger a regulatory freeze and political backlash reminiscent of post-Fukushima reactions, potentially setting the renaissance back a decade",
+        "Insurance and liability framework inadequacy: Price-Anderson Act reauthorization uncertainty and the lack of international liability frameworks tailored to SMR/advanced reactor risk profiles could deter private capital deployment"
+      ]
+    },
+    "third_order_effects": [
+      {
+        "order": "3",
+        "description": "Structural revaluation of grid infrastructure and interconnection queues as nuclear siting co-locates with data center campuses, shifting load growth from distributed renewable-plus-storage architectures toward concentrated gigawatt-scale nodes that stress transmission topology and redefine grid planning orthodoxy."
+      },
+      {
+        "order": "3",
+        "description": "Sovereign industrial policy convergence: nuclear renaissance becomes a national competitiveness instrument, binding energy security, AI compute sovereignty, and defense (naval reactor industrial base) into unified procurement pipelines that crowd out private capital and create quasi-permanent public-private nuclear industrial complexes."
+      },
+      {
+        "order": "3",
+        "description": "Compressed cost curves for advanced nuclear via Nth-of-a-kind (NOAK) manufacturing learning, eventually inverting the historical cost-overrun trajectory and enabling nuclear to re-enter emerging market energy mix at scale, with cascading effects on LNG demand, coal retirement economics, and global emissions trajectories."
+      }
+    ],
+    "second_order_effects": [
+      {
+        "order": "2",
+        "description": "Vertical integration strategies by hyperscalers (Microsoft, Amazon, Google) and industrial majors into nuclear assets—direct equity stakes, dedicated reactor builds, and tolling agreements—reshaping utility business models and creating a new class of 'merchant nuclear' economics outside traditional rate-base regulation."
+      },
+      {
+        "order": "2",
+        "description": "Repricing of long-duration storage and firming assets as nuclear absorbs the baseload role previously projected for overbuilt battery and hydrogen infrastructure, compressing expected TAM for certain long-duration energy storage startups and green hydrogen electrolyzer deployments."
+      },
+      {
+        "order": "2",
+        "description": "Geopolitical realignment of nuclear fuel supply chains as Western utilities de-risk from Russian enrichment (Rosatom), channeling investment into non-Russian conversion, enrichment (URENCO expansion, Centrus HALEU), and CIS-free uranium sourcing from Kazakhstan, Canada, Namibia, and Australia."
+      }
+    ],
+    "confidence_assessment": {
+      "composite": 7.2,
+      "conviction": 7.0
+    },
+    "geopolitical_analysis": {
+      "summary": "The Nuclear Renaissance is reshaping global energy geopolitics along three intersecting axes: climate-driven decarbonization mandates, post-Ukraine energy security imperatives, and great-power competition over nuclear technology exports and fuel-cycle control. Russia's Rosatom remains the dominant reactor exporter and enrichment provider, leveraging ~35-40% of global enrichment capacity and active build portfolios in Turkey, Egypt, Bangladesh, Hungary, and India as instruments of statecraft. China is aggressively scaling its export footprint via Hualong One reactors in Pakistan, Argentina, and prospective deals across the Global South, backed by state financing and bundled fuel-supply commitments. The US, France, South Korea, and Japan are attempting to re-enter the export race through vehicles like the US Climate Finance Mobilization initiative, France's EPR2 program, and Korea's Barakah success in the UAE, but face structural disadvantages in financing, supply-chain maturity, and project execution. The fuel cycle is the strategic chokepoint: conversion, enrichment, and fabrication capacity is concentrated among a handful of actors, creating dependency vectors analogous to historical petrostate leverage. Small Modular Reactors (SMRs) and advanced reactors represent a contested frontier where Western firms (NuScale, Rolls-Royce, GE Hitachi, TerraPower) seek first-mover advantage, but China and Russia are moving faster on deployment timelines. New entrant countries—Poland, Czechia, Saudi Arabia, Nigeria, Indonesia, Philippines—are pursuing nuclear programs partly for energy security and partly as status signaling, creating both market opportunity and proliferation-management challenges. The NPT regime faces strain as civil nuclear cooperation becomes entangled with strategic competition, while fuel-cycle multi-lateralization proposals (fuel banks, cradle-to-grave fuel leasing) gain traction as non-proliferation tools. Critical mineral supply chains—uranium, zirconium, hafnium, graphite—add another layer of resource geopolitics, with Kazakhstan, Canada, Namibia, and Australia as key nodes and China dominating downstream processing.",
+      "key_risks": [
+        "Proliferation cascade risk: as nuclear programs expand to new entrant states with limited regulatory maturity, dual-use infrastructure (enrichment, reprocessing, research reactors) creates latent weapons capability pathways, particularly in volatile regions (Middle East, Southeast Asia, Horn of Africa).",
+        "Fuel-cycle weaponization: Russia's enrichment dominance and willingness to use energy as coercive leverage (demonstrated via gas cutoffs) creates precedent for nuclear fuel supply as geopolitical instrument; interruption of enrichment services could strand reactor fleets in dependent countries.",
+        "Strategic dependency creation: reactor export agreements typically bundle 60-80 year fuel-supply, maintenance, and decommissioning commitments, generating quasi-permanent client-state relationships that outlast political regimes and align recipient nations with supplier blocs.",
+        "NPT regime erosion: selective enforcement, double standards between nuclear weapons states and non-weapons states, and the inability of the regime to address withdrawal (North Korea precedent) undermine legitimacy as nuclear cooperation becomes more transactional.",
+        "Nuclear accident spillover: a serious accident at a new entrant facility with weaker safety culture could trigger transboundary contamination, mass evacuation demands, and political crisis across borders—compounded by lack of liability frameworks in many prospective markets.",
+        "Cyber and physical security: expanding nuclear infrastructure creates more attack surface for state and non-state actors; Stuxnet demonstrated feasibility of cyber-sabotage of centrifuges, and reactor digital control systems remain vulnerable.",
+        "Waste management as political flashpoint: lack of permanent disposal solutions in most countries creates accumulating spent fuel inventories that become domestic political liabilities and potential radiological sabotage targets.",
+        "Export competition friction: US-China-Russia competition over reactor contracts risks politicizing nuclear cooperation, splitting standards regimes, and creating incompatible technology blocs that fragment global nuclear governance.",
+        "Critical mineral chokepoints: uranium supply concentration in Kazakhstan (40%+ of global production) and Chinese dominance in conversion/fabrication processing creates supply-chain vulnerabilities analogous to rare earth dependencies.",
+        "Regime change exposure: nuclear cooperation agreements assume 60-100 year political stability of partner states; sudden regime changes in client countries could jeopardize multi-billion-dollar projects and create proliferation risks from orphaned fuel cycles."
+      ],
+      "opportunities": [
+        "Energy sovereignty for import-dependent nations: nuclear power offers baseload decarbonization that reduces exposure to petrostate coercion and gas-price volatility, particularly for Europe, East Asia, and island nations—Poland's pivot from coal and the UAE's Barakah plant exemplify this strategic logic.",
+        "Nuclear cooperation as alliance architecture: long-term fuel-supply and technology-transfer agreements create durable strategic partnerships; the US-India Civil Nuclear Agreement demonstrated how nuclear cooperation can anchor broader strategic realignment.",
+        "SMR and advanced reactor export leadership: nations that establish first-mover advantage in deployable, financeable SMR designs can capture emerging markets in the Global South, set technical standards, and lock in fuel-cycle service revenues—estimated addressable market exceeds $1 trillion through 2050.",
+        "Fuel-cycle multi-lateralization as non-proliferation leverage: fuel banks (IAEA, Angarsk), cradle-to-grave fuel leasing, and take-back programs position supplier nations as responsible stewards while denying proliferation pretexts to recipient states—Russia and the US both pursue variants of this strategy.",
+        "Climate diplomacy instrument: nuclear cooperation can serve as a high-value bargaining chip in climate negotiations, technology-transfer frameworks, and development finance, offering recipient nations both emissions reduction and industrial modernization.",
+        "Reducing petrostate revenues: accelerated nuclear deployment in major energy-importing economies (China, India, EU, Japan, Korea) structurally reduces long-term hydrocarbon demand, weakening OPEC+ revenue base and associated geopolitical influence.",
+        "Critical mineral supply chain repositioning: nations that secure upstream uranium assets (Canada, Australia, Namibia, Kazakhstan partnerships) and build domestic conversion/enrichment capacity can capture strategic rents and reduce dependency on adversarial suppliers.",
+        "Nuclear navy and dual-use industrial base: civil nuclear investment sustains the industrial base for naval reactor programs, preserving strategic submarine capabilities and related propulsion expertise—a consideration for US, UK, France, Russia, China, and prospective entrants like Australia under AUKUS.",
+        "Soft power through regulatory and safety leadership: nations that export not just reactors but regulatory frameworks, training programs, and safety culture (IAEA support, WANO partnerships) build influence that outlasts specific commercial deals.",
+        "Geopolitical hedging for Global South states: nuclear cooperation agreements with multiple suppliers allow recipient nations to diversify dependency, extract better terms, and maintain strategic autonomy—Turkey's simultaneous engagement with Rosatom and Western vendors exemplifies this playbook."
+      ]
+    },
+    "market_misconceptions": [
+      "Regulatory bodies (NRC, etc.) will materially accelerate licensing timelines despite no fundamental structural reform to date, and SMR designs will navigate first-of-a-kind licensing without multi-year delays.",
+      "Public opposition to nuclear has permanently declined and will not reverse in response to any future incident, geopolitical event, or political shift.",
+      "SMRs will achieve meaningful cost reductions through learning curves and factory production, despite the only commercial Western SMR project (NuScale UAMPS) being cancelled due to cost escalation from $53/MWh to $89/MWh.",
+      "The cost overruns that plagued every major Western Gen III+ build this century (Vogtle 2x over budget, Flamanville 3x, Olkiluoto 3x) were project-specific anomalies rather than systemic features of nuclear construction in regulated Western economies.",
+      "Hyperscaler commitments to nuclear (Microsoft-Constellation TMI, Amazon-X-energy) will scale rapidly from headline announcements to a broad pipeline of financed, permitted, operating projects.",
+      "Western nuclear supply chains—for large forged components, enrichment capacity, and specialized labor—can scale from their current atrophied state without prohibitive cost inflation or multi-year bottlenecks.",
+      "Government policy support for nuclear will remain bipartisan and durable across electoral cycles, despite nuclear's historically volatile political positioning.",
+      "Russia and China's dominance in uranium enrichment and nuclear export markets will not constrain Western nuclear growth or create unacceptable geopolitical dependencies.",
+      "Interest rates and financing costs will remain compatible with nuclear's capital-intensive profile, where financing represents 60-80% of levelized cost.",
+      "Competing baseload solutions—advanced geothermal, long-duration storage, hydrogen turbines—will not erode nuclear's value proposition before new builds come online.",
+      "Uranium supply will remain structurally tight; secondary supplies, mine restarts, and new projects won't respond to price signals faster than demand grows."
+    ],
+    "portfolio_implications": {
+      "composite": 7.2,
+      "narrative_score": {
+        "duration": 9.0,
+        "conviction": 7.0,
+        "economic_impact": 8.0,
+        "valuation_support": 5.0,
+        "narrative_strength": 8.0,
+        "adoption_probability": 6.0,
+        "bottleneck_advantage": 8.0,
+        "market_awareness_gap": 5.0,
+        "second_order_effects": 9.0,
+        "competitive_advantage": 7.0
+      }
+    },
+    "psychological_analysis": {
+      "biases": [
+        "Recency bias: The 2023-2024 surge in uranium prices, the Microsoft-Constellation deal, and COP28 nuclear pledge are overweighted relative to the decades of industry disappointment, cost overruns, and cancelled projects that preceded them. Investors are extrapolating a favorable 18-month window into a multi-decade thesis.",
+        "Herd behavior: Momentum in uranium equities (URA, URNM), nuclear ETFs, and SMR concept stocks is driving participation without fundamental differentiation between companies with viable technology and those with PowerPoint reactors. Retail and institutional flows are reinforcing each other in a self-reinforcing momentum loop.",
+        "Overconfidence: Investors and analysts assume they can accurately forecast SMR cost curves, regulatory timelines, and construction risk for technologies that have never been commercially deployed at scale. The nuclear industry has systematically disappointed optimistic forecasts for 40 years, yet current projections assume this time is different.",
+        "Narrative fallacy: A clean, compelling story—AI needs power, climate needs clean baseload, nuclear is the only answer—compresses a complex, multi-decade, high-uncertainty industrial undertaking into a deterministic investment thesis. The narrative's elegance masks its fragility.",
+        "Availability bias: The Three Mile Island restart deal and Vogtle completion are cognitively available and treated as representative of the broader opportunity, when they are in fact exceptional—one involves restarting an existing asset, the other was a 15-year, $34B ordeal. Neither generalizes to the greenfield SMR pipeline.",
+        "Confirmation bias: Investors overweight supportive signals (hyperscaler interest, government subsidies, uranium supply deficits) while discounting contradictory evidence (NuScale cancellation, persistent Western construction failures, Russian enrichment dependence, SMR cost escalation). Social media and sell-side research create echo chambers that reinforce the bullish narrative.",
+        "Anchoring: Price targets and project cost estimates are anchored to optimistic feasibility studies and vendor projections rather than to the empirical base rate of nuclear construction outcomes, which consistently show 2-3x cost overruns. Analysts anchor to the headline number and adjust insufficiently for historical base rates.",
+        "Optimism bias: The asymmetry between upside and downside scenarios is underappreciated. Downside scenarios (cost overruns, regulatory delays, demand displacement) have historically been the norm, not the exception, yet are treated as tail risks rather than base cases."
+      ],
+      "consensus_view": "Nuclear energy is undergoing a structural renaissance driven by the convergence of surging AI/data center electricity demand, the need for dispatchable clean power to meet net-zero targets, government policy support (IRA, EU Green Deal, COP28 pledge to triple nuclear), and SMR innovation. Investors expect multi-decade growth in uranium demand, nuclear utility earnings, and nuclear technology companies, with tight uranium supply and long lead times creating a favorable supply-demand imbalance for years ahead.",
+      "narrative_risks": [
+        "SMR economics fail to scale: first-of-a-kind costs do not decline as projected, and the learning curve assumption breaks down because each SMR design is essentially a new first-of-a-kind, with limited design standardization across competitors. The NuScale cancellation may prove representative rather than anomalous.",
+        "Regulatory timelines remain glacial: NRC has not fundamentally reformed its licensing process, and SMR-specific licensing frameworks are still evolving. Projects assumed to be operational by 2030 may not break ground until then.",
+        "Construction risk is systemic, not idiosyncratic: the consistent pattern of 2-3x cost overruns across diverse geographies, reactor designs, and regulatory regimes suggests a structural problem in Western nuclear construction capability that SMRs may not solve.",
+        "Hyperscaler demand proves narrower than expected: early deals involve existing assets (TMI restart) or small pilot commitments. Scaling to a broad pipeline requires solving the same cost, permitting, and timeline problems that have plagued the industry, potentially causing tech companies to pivot to alternatives.",
+        "Public sentiment reverses: nuclear's social license remains fragile. A single safety incident anywhere in the world, a radioactive waste transport controversy, or a coordinated political campaign could rapidly reverse the sentiment shift that took a decade to build.",
+        "Geopolitical fuel supply constraints: Western dependence on Russian enrichment services (still ~20% of US supply) and the lack of domestic enrichment capacity creates a bottleneck that cannot be resolved quickly, potentially capping the pace of Western nuclear buildout.",
+        "Uranium price response overshoots on supply side: sustained high prices trigger rapid restarts of idled capacity (Cameco, Kazatomprom), acceleration of advanced projects, and secondary source releases, compressing the supply tightness that underpins the investment thesis.",
+        "Competitive displacement: advanced geothermal (Fervo, Quaise), long-duration iron-air batteries, and grid-enhancing technologies may provide dispatchable clean power at lower cost and faster deployment timelines, eating nuclear's addressable market before new builds complete.",
+        "Political support fragments: nuclear remains politically divisive. A shift in administration, budgetary pressure, or competing clean energy priorities could reduce subsidies and loan guarantees that are currently essential to project economics.",
+        "Financing environment deteriorates: nuclear economics are acutely sensitive to cost of capital. If rates remain elevated or rise further, the already marginal economics of new nuclear deteriorate further, and utility capex shifts to lower-capital alternatives."
+      ],
+      "hidden_assumptions": [
+        "Regulatory bodies (NRC, etc.) will materially accelerate licensing timelines despite no fundamental structural reform to date, and SMR designs will navigate first-of-a-kind licensing without multi-year delays.",
+        "Public opposition to nuclear has permanently declined and will not reverse in response to any future incident, geopolitical event, or political shift.",
+        "SMRs will achieve meaningful cost reductions through learning curves and factory production, despite the only commercial Western SMR project (NuScale UAMPS) being cancelled due to cost escalation from $53/MWh to $89/MWh.",
+        "The cost overruns that plagued every major Western Gen III+ build this century (Vogtle 2x over budget, Flamanville 3x, Olkiluoto 3x) were project-specific anomalies rather than systemic features of nuclear construction in regulated Western economies.",
+        "Hyperscaler commitments to nuclear (Microsoft-Constellation TMI, Amazon-X-energy) will scale rapidly from headline announcements to a broad pipeline of financed, permitted, operating projects.",
+        "Western nuclear supply chains—for large forged components, enrichment capacity, and specialized labor—can scale from their current atrophied state without prohibitive cost inflation or multi-year bottlenecks.",
+        "Government policy support for nuclear will remain bipartisan and durable across electoral cycles, despite nuclear's historically volatile political positioning.",
+        "Russia and China's dominance in uranium enrichment and nuclear export markets will not constrain Western nuclear growth or create unacceptable geopolitical dependencies.",
+        "Interest rates and financing costs will remain compatible with nuclear's capital-intensive profile, where financing represents 60-80% of levelized cost.",
+        "Competing baseload solutions—advanced geothermal, long-duration storage, hydrogen turbines—will not erode nuclear's value proposition before new builds come online.",
+        "Uranium supply will remain structurally tight; secondary supplies, mine restarts, and new projects won't respond to price signals faster than demand grows."
+      ]
+    },
+    "adoption_curve_analysis": {
+      "stage": "Early Majority",
+      "growth_rate": "18% CAGR in capacity additions and uranium demand",
+      "penetration_pct": 15,
+      "inflection_points": [
+        "First successful commercial grid-connection of a Small Modular Reactor (SMR)",
+        "Implementation of major Western government fast-tracking for nuclear permitting and licensing",
+        "Direct equity or power purchase investments in nuclear assets by hyperscale technology firms",
+        "Geopolitical resolutions or escalations that fundamentally alter global uranium supply chains"
+      ]
+    },
+    "investment_opportunities": [
+      {
+        "type": "direct",
+        "title": "HALEU Fuel Production Bottleneck",
+        "thesis": "Small Modular Reactors (SMRs) and advanced reactors require High-Assay Low-Enriched Uranium (HALEU) fuel enriched to 5-20% U-235. There is virtually no commercial HALEU production capacity in the West today. The DOE has funded Centrus to demonstrate production, but at a fraction of what will be needed if even a handful of SMR designs reach commercial deployment by 2030. This is a classic bottleneck: demand is narrative-driven and growing, but supply is physically constrained by enrichment cascade reconfiguration, regulatory licensing, and multi-year lead times. Whoever controls HALEU production controls the pacing variable for the entire advanced reactor industry.",
+        "awareness_gap": "Most investors focus on uranium mining equities as the nuclear play, but HALEU is a fundamentally different product requiring different infrastructure. The gap between yellowcake and reactor-ready HALEU fuel is where the margin and strategic value sits.",
+        "valuation_note": "Centrus Energy trades at modest multiples relative to its first-mover position in HALEU. Enrichment peers like Urenco are private. The scarcity premium for HALEU versus standard LEU is not yet fully priced.",
+        "potential_losers": [
+          "SMR developers without secured fuel supply agreements (most of them)",
+          "Terrapower's Natrium reactor (delayed by HALEU unavailability)",
+          "Conventional uranium miners whose product is insufficient for advanced reactors without enrichment partners"
+        ],
+        "potential_winners": [
+          "Centrus Energy (LEU)",
+          "Urenco (private, watch for IPO)",
+          "Cameco (CCJ) via Westinghouse fuel cycle integration",
+          "DOE-funded HALEU demonstration projects",
+          "X-energy (XENE) if their TRISO fuel facility scales"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Western Uranium Enrichment Capacity Re-Shoring",
+        "thesis": "Russia's Rosatom currently supplies roughly 35-40% of global uranium enrichment capacity. Post-Ukraine invasion, Western utilities face an existential supply risk. The US banned Russian uranium imports starting in 2024 (with waivers through 2027), creating a forced substitution. Building new enrichment capacity—particularly gas centrifuge cascades—takes 5-7 years and requires specialized metallurgy, rotor technology, and regulatory approval. This is a resource scarcity and geopolitical de-risking play simultaneously. The enrichment market is an oligopoly with high barriers to entry and inelastic demand from utilities under long-term contracts.",
+        "awareness_gap": "Investors conflate uranium mining with enrichment. Mining has many producers; enrichment has effectively three Western players. The bottleneck is not in the ground but in the centrifuge cascades.",
+        "valuation_note": "Cameco's acquisition of Westinghouse and partnership with Brookfield positions it across the fuel cycle. Centrus trades below the implied value of its enrichment contracts and HALEU optionality.",
+        "potential_losers": [
+          "Rosatom and Russian enrichment export revenue",
+          "Chinese nuclear export ambitions in the developing world",
+          "Western utilities without diversified enrichment contracts facing 2027-2030 contract roll-overs",
+          "Uranium miners without offtake agreements with Western enrichers"
+        ],
+        "potential_winners": [
+          "Cameco (CCJ)/Brookfield (BN) partnership",
+          "Centrus Energy (LEU)",
+          "Orano (French state-owned, benefits indirectly)",
+          "Urenco expansion projects in Eunice, NM and Urenco UK",
+          "Silex Systems (SLX) via Global Laser Enrichment technology"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Nuclear Component Manufacturing and Large Forgings",
+        "thesis": "Reactor pressure vessels, steam generators, and other nuclear-grade components require ultra-large forgings from a handful of global facilities. Japan Steel Works, JSW (India), and China First Heavy Industries dominate. Western capacity is extremely limited—BWX Technologies and a few European facilities. As new builds accelerate (Georgia Power's Vogtle lessons learned, NuScale, Rolls-Royce SMR), the forging supply chain becomes a critical path bottleneck. Companies that can produce nuclear-grade components with ASME Section III certification will see multi-year order books and pricing power.",
+        "awareness_gap": "The nuclear renaissance narrative focuses on reactor designers and uranium, not on the unglamorous industrial supply chain that actually determines build timelines. Vogtle's delays were substantially component and construction-driven, not design-driven.",
+        "valuation_note": "BWX Technologies trades at a premium but its nuclear backlog is underappreciated. Howden (part of Chart Industries) and specialized valve/pipe manufacturers trade at industrial multiples despite nuclear exposure.",
+        "potential_losers": [
+          "Reactor developers dependent on single-source foreign forging supply",
+          "NuScale if its forging supply chain remains concentrated",
+          "Western EPC contractors without deep nuclear component relationships"
+        ],
+        "potential_winners": [
+          "BWX Technologies (BWXT)",
+          "Westinghouse (via Brookfield/Cameco)",
+          "Framatome (EDF subsidiary)",
+          "Howden Group (via Chart Industries GTLS)",
+          "ATI Inc (ATI) for nuclear-grade specialty steels",
+          "JSW Steel (India) for large forgings"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Existing Reactor Life Extension and License Renewal Services",
+        "thesis": "The fastest, cheapest, and most certain nuclear capacity addition is not building new reactors—it's extending the life of the ~440 existing reactors. Many US reactors have 60-year licenses and are pursuing subsequent license renewal (SLR) to 80 years. This requires specialized engineering, materials degradation analysis, and regulatory work. The economics of life extension are dramatically superior to new builds: capital cost is a fraction of new construction, and the asset already has grid connection, cooling, and community acceptance. This is a contrarian play because the narrative focuses on new builds and SMRs while the real megawatts come from keeping existing plants running longer.",
+        "awareness_gap": "The narrative obsesses over SMR prototypes and new gigawatt builds, but the actual deployed capacity growth in the 2025-2035 window comes overwhelmingly from license extensions and uprates of existing reactors. The services ecosystem for this is underfollowed.",
+        "valuation_note": "BWXT and Framatome service revenue is buried in larger corporate structures. Private companies like Structural Integrity Associates and Jensen Hughes are pure plays but inaccessible to public investors. Look for utilities with large nuclear fleets trading at regulated utility multiples despite embedded nuclear optionality.",
+        "potential_losers": [
+          "Coal and gas peaker plants displaced by extended nuclear baseload",
+          "Renewable developers competing for the same grid capacity that extended nuclear holds",
+          "Reactors in Germany (already closed) and others facing premature shutdown"
+        ],
+        "potential_winners": [
+          "BWX Technologies (BWXT) for reactor components and fuel",
+          "Southern Company (SO) with Vogtle operating and extended-life fleet",
+          "Constellation Energy (CEG) with largest US nuclear fleet pursuing license extensions",
+          "NextEra Energy (NEE) nuclear fleet",
+          "Jensen Hughes (private) for nuclear safety engineering",
+          "Framatome for fuel and services"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Nuclear Decommissioning and Waste Management",
+        "thesis": "As the nuclear fleet ages and some reactors retire, decommissioning is a growing market. Simultaneously, spent fuel management remains an unsolved political problem but a growing commercial opportunity. The US has ~90,000 metric tons of spent fuel in temporary storage. Interim Consolidated Storage Facilities (ISFs) and deep geological repositories represent multi-decade, multi-billion-dollar contracts. Holtec and Waste Control Specialists are positioning for consolidated interim storage. This is contrarian because it's the opposite of the growth narrative—it profits from the end-of-life and waste side, which is unglamorous but certain.",
+        "awareness_gap": "Decommissioning trust funds at US utilities hold over $70 billion. The money is already committed; the question is who captures the service revenue. This is a certainty business in a narrative dominated by uncertainty about new builds.",
+        "valuation_note": "EnergySolutions (private) dominates US commercial decommissioning. Holtec is private but pursuing SMR and storage simultaneously. Public market exposure is indirect through utilities and BWXT.",
+        "potential_losers": [
+          "Communities hosting stranded spent fuel without a federal repository",
+          "Taxpayers via the Nuclear Waste Fund judgment liability (>$8B and growing)",
+          "Reactors forced to store spent fuel on-site indefinitely without consolidated storage"
+        ],
+        "potential_winners": [
+          "EnergySolutions (private, watch for IPO)",
+          "Holtec International (private, SMR + storage play)",
+          "Waste Control Specialists (private, Texas facility)",
+          "BWX Technologies (BWXT) for naval waste processing",
+          "Veolia (VIE.PA) for nuclear waste services in Europe",
+          "Utilities with overfunded decommissioning trust funds (potential surplus extraction)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Coal-to-Nuclear Site Conversion Infrastructure",
+        "thesis": "Hundreds of coal plant sites across the US and Europe have existing grid interconnection, cooling water access, rail access, and trained industrial workforces. Converting these sites to nuclear (particularly SMRs) avoids the biggest bottleneck in new nuclear: grid connection and permitting. The DOE and several utilities (TVA, Duke, Energy Northwest) are actively evaluating coal-to-nuclear conversions. The value is not in the reactor but in the site infrastructure and the avoided cost of new transmission. Companies that own or can repurpose these brownfield sites have hidden optionality.",
+        "awareness_gap": "The narrative treats nuclear siting as a greenfield problem. In reality, the existing coal fleet represents pre-permitted, pre-connected sites that dramatically reduce nuclear deployment timelines. The value of these sites is not reflected in utility valuations.",
+        "valuation_note": "Utilities with large coal fleets facing retirement (AEP, Southern, Dominion) have embedded optionality in their real estate and grid connections that is valued at zero by the market.",
+        "potential_losers": [
+          "Greenfield nuclear developers without existing site infrastructure",
+          "Coal communities that lose plants without replacement (political risk)",
+          "Renewable developers competing for the same grid interconnection points"
+        ],
+        "potential_winners": [
+          "TVA (Tennessee Valley Authority, public power) actively pursuing coal-to-nuclear",
+          "Southern Company (SO) with Vogtle experience and coal sites",
+          "Dominion Energy (D) with Virginia coal sites and data center demand",
+          "Duke Energy (DUK) with Carolinas coal-to-nuclear studies",
+          "Energy Northwest (public power, Washington state)",
+          "GE Hitachi Nuclear Energy for BWRX-300 siting at coal sites"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Nuclear Talent and Engineering Services Pipeline",
+        "thesis": "The nuclear workforce is aging—over 25% of US nuclear workers are eligible for retirement. The renaissance requires nuclear engineers, health physicists, licensed reactor operators, NRC-qualified welders, and nuclear-grade QA/QC inspectors. There is no quick supply response; nuclear engineering programs have been shrinking for 20 years. Companies that can train, certify, and deploy nuclear talent will have pricing power as build programs accelerate. This is a human capital bottleneck that is entirely underappreciated by markets focused on hardware and fuel.",
+        "awareness_gap": "Markets value reactor designs and uranium, not the people who build and operate them. The talent shortage will be the binding constraint on how fast the renaissance actually proceeds, creating a services oligopoly for qualified firms.",
+        "valuation_note": "Most pure-play nuclear services firms are private (Jensen Hughes, Structural Integrity, Enercon). Public exposure is through engineering conglomerates with nuclear divisions trading at general industrial multiples.",
+        "potential_losers": [
+          "SMR developers without staffing plans for first-of-a-kind operations",
+          "Utilities facing operator shortages at existing plants",
+          "Countries without domestic nuclear education infrastructure (most of the developing world)"
+        ],
+        "potential_winners": [
+          "Jacobs Solutions (J) via nuclear engineering services",
+          "Amentum (AMTM) spun off from Jacobs with nuclear portfolio",
+          "BWX Technologies (BWXT) for naval nuclear talent pipeline",
+          "Bechtel (private) as premier nuclear EPC",
+          "Fluor (FLR) for nuclear construction management",
+          "University nuclear engineering programs with industry partnerships (MIT, NC State, Georgia Tech)"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Data Center Direct-to-Nuclear Power Purchase Agreements",
+        "thesis": "Hyperscale data centers and AI training clusters require 24/7 carbon-free power at scales (1-5 GW per site) that only nuclear can provide. Microsoft's Three Mile Island PPA with Constellation is the template. Amazon, Google, and Meta are all pursuing nuclear PPAs. The value chain is: existing nuclear plants get repriced from ~$30-50/MWh merchant rates to $70-100+/MWh under long-term data center contracts. This is a direct repricing of existing nuclear assets, not a new build story. The plants are already running; the question is who captures the spread between old merchant pricing and new data center pricing.",
+        "awareness_gap": "The market prices Constellation and Vistra as power generators, not as the only viable 24/7 carbon-free power source for AI. The data center-nuclear PPA market is in its infancy but could reprice 20-30 GW of US nuclear capacity within 5 years.",
+        "valuation_note": "Constellation Energy (CEG) and Vistra (VST) have rallied but the implied long-term power price in their valuations may still understate the data center premium. Talen Energy (TLN) via Amazon deal is the purest play but already partially priced.",
+        "potential_losers": [
+          "Natural gas peaker plants displaced by nuclear-data center pairing",
+          "Renewable developers unable to meet 24/7 data center requirements without storage",
+          "Grid operators facing transmission constraints between nuclear sites and data centers",
+          "Communities opposing data center development near nuclear plants"
+        ],
+        "potential_winners": [
+          "Constellation Energy (CEG) - largest US nuclear fleet, TMI restart",
+          "Vistra Corp (VST) - nuclear + data center corridor exposure",
+          "Talen Energy (TLN) - Amazon PPA at Susquehanna",
+          "Public Service Enterprise (PEG) - Salem/Hope Creek nuclear in PJM",
+          "Dominion Energy (D) - Virginia data center corridor nuclear",
+          "NextEra Energy (NEE) - nuclear fleet + data center PPAs potential"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Uranium Miners with Permitted, Near-Production Assets",
+        "thesis": "The uranium price cycle has driven exploration stocks to speculative valuations, but the real opportunity is in companies with permitted, constructed, or near-construction assets in Western jurisdictions. The US produces virtually no uranium domestically despite having the largest reactor fleet. The Nuclear Fuel Working Group and DOE have allocated funding for domestic uranium production. Companies with existing permits, ISR (in-situ recovery) capability, and near-term production timelines will capture the first wave of Western utility buying as Russian supply is excluded.",
+        "awareness_gap": "The uranium junior mining sector is full of exploration companies with no path to production. The market has bid up exploration stories while underweighting companies with actual permits and production timelines. The distinction between 'has uranium in the ground' and 'can produce uranium in 2-3 years' is critical.",
+        "valuation_note": "Ur-Energy and enCore Energy trade at reasonable multiples relative to near-term production. Uranium Energy Corp has the advantage of existing Texas and Wyoming permits. Many Canadian juniors are overvalued relative to their production timelines.",
+        "potential_losers": [
+          "Uranium exploration juniors with no production timeline (many TSX-V listings)",
+          "Kazatomprom (KAP) if Western utilities reduce Kazakh dependence due to Russian transit risk",
+          "Chinese uranium mining investments in Africa facing geopolitical scrutiny"
+        ],
+        "potential_winners": [
+          "Ur-Energy (URG) - Lost Creek ISR in production, Shirley Basin permitted",
+          "enCore Energy (EU) - South Texas ISR production",
+          "Uranium Energy Corp (UEC) - multiple permitted US ISR projects",
+          "Energy Fuels (UUUU) - White Mesa mill, only conventional US uranium mill",
+          "Cameco (CCJ) - largest Western producer with tier-one assets",
+          "Boss Energy (BOE.AX) - Honeymoon project in Australia"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Nuclear Insurance, Surety, and Risk Transfer Markets",
+        "thesis": "Nuclear renaissance creates demand for specialized risk transfer products: construction all-risk insurance for new builds, Price-Anderson Act compliance, nuclear operator liability pools, and supply chain risk insurance. The nuclear insurance market is extremely concentrated—AXA, Munich Re, Lloyd's syndicates, and national pools like American Nuclear Insurers. As new builds and SMRs proliferate, the insurance capacity must expand. This is a contrarian financial infrastructure play that profits from the nuclear buildout without taking technology risk.",
+        "awareness_gap": "No investor thinks about nuclear insurance as an investment thesis. Yet every reactor needs insurance, every new build needs construction coverage, and the capacity is limited. The pricing power sits with a handful of underwriters.",
+        "valuation_note": "Exposure is through large insurers where nuclear is a small fraction of total book. Pure-play nuclear insurance doesn't exist publicly. The opportunity is in identifying insurers with growing nuclear books and pricing power.",
+        "potential_losers": [
+          "Reactor developers unable to secure construction insurance at viable cost",
+          "Utilities in jurisdictions without adequate nuclear liability frameworks",
+          "Countries outside Price-Anderson-equivalent liability caps"
+        ],
+        "potential_winners": [
+          "AXA (CS.PA) via AXA XL nuclear portfolio",
+          "Munich Re (MUV2.DE) nuclear reinsurance",
+          "Lloyd's of London nuclear syndicates (various corporate capital providers)",
+          "American Nuclear Insurers (joint venture of US property/casualty insurers)",
+          "Berkshire Hathaway (BRK) via specialty reinsurance capacity"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Grid Transmission and Interconnection for Nuclear Load Centers",
+        "thesis": "New nuclear plants—whether SMRs at industrial sites or large reactors at existing facilities—require transmission infrastructure. The US grid is already congested with interconnection queues averaging 3-5 years. Nuclear plants need firm transmission, not intermittent. The transmission buildout required to connect new nuclear to demand centers (data centers, industrial parks, hydrogen production) is a multi-decade capital cycle. Companies that build, own, and operate transmission have a regulated return business driven by the nuclear buildout, but valued as boring utilities.",
+        "awareness_gap": "The nuclear narrative focuses on generation, not transmission. But a reactor without grid connection is useless, and grid connection is the longest-lead-time item after the reactor itself. Transmission companies are the picks-and-shovels of the nuclear renaissance.",
+        "valuation_note": "Transmission developers trade at regulated utility multiples (12-15x earnings) despite exposure to a multi-decade nuclear + renewable + data center transmission supercycle. ITC Holdings, though private, demonstrates the value. Public transmission-focused utilities are underappreciated.",
+        "potential_losers": [
+          "Nuclear developers in remote locations without transmission access",
+          "Grid operators (RTOs/ISOs) facing interconnection backlogs that delay nuclear deployment",
+          "Communities opposing new transmission lines (permitting risk)"
+        ],
+        "potential_winners": [
+          "Quanta Services (PWR) - largest US transmission construction contractor",
+          "MasTec (MTZ) - transmission and pipeline infrastructure",
+          "ITC Holdings (private, Fortis subsidiary) - pure-play transmission",
+          "NextEra Energy Transmission (via NEE)",
+          "American Electric Power (AEP) - largest US transmission owner",
+          "PPL Corp (PPL) - transmission investment in Kentucky/Virginia"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Tritium and Specialty Nuclear Materials Supply",
+        "thesis": "Fusion reactors, certain fission reactor designs, and nuclear weapons modernization programs all require tritium and other specialty nuclear materials. Tritium decays with a 12.3-year half-life, requiring continuous production. The US produces tritium only at TVA's Watts Bar reactor under a DOE contract. As fusion energy development accelerates (Commonwealth Fusion, Helion, TAE) and weapons modernization continues, tritium and specialty isotope demand will grow. This is a niche but high-value market with essentially no substitute and extremely limited supply.",
+        "awareness_gap": "Tritium is discussed in fusion circles but not in investment circles. The supply chain is invisible to most investors despite being a potential binding constraint on both fusion and weapons programs.",
+        "valuation_note": "No pure-play public tritium company exists. Exposure is through TVA (public power bond market), BWX Technologies (naval nuclear materials), and private fusion companies that may need to vertically integrate tritium production.",
+        "potential_losers": [
+          "Fusion startups without tritium supply or breeding strategies",
+          "Weapons modernization programs facing tritium production shortfalls",
+          "Countries without domestic tritium production capability"
+        ],
+        "potential_winners": [
+          "TVA (public power, tritium production contract with DOE)",
+          "BWX Technologies (BWXT) for naval nuclear materials and processing",
+          "Commonwealth Fusion Systems (private) if they develop tritium breeding",
+          "Helion Energy (private) if D-He3 fusion requires tritium handling",
+          "DOE Savannah River Site contractors (private)"
+        ]
+      }
+    ]
+  }
+}

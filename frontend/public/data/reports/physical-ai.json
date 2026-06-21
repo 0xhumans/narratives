@@ -1,0 +1,977 @@
+{
+  "id": "47084e3c-542c-45c9-b4b3-e0861d6fea41",
+  "narrative_id": "8a1f64da-0c5a-4c7e-bf42-405fc8824580",
+  "version": 1,
+  "generated_at": "2026-06-21T12:14:13.981245Z",
+  "payload": {
+    "key_drivers": [
+      "Embodied AI breakthroughs: Vision-language models are being adapted for robotic control, enabling zero-shot generalization in unstructured physical environments.",
+      "Labor arbitrage and demographics: Aging populations in developed nations and persistent labor shortages in logistics and manufacturing are forcing capital expenditure into automation.",
+      "Supply chain de-risking: Geopolitical tensions are accelerating reshoring, requiring domestic manufacturing capacity that is only economically viable with high levels of automation.",
+      "Edge computing maturation: Development of specialized, low-power AI chips allows complex inference to happen locally on robots, reducing latency and cloud dependency.",
+      "Sensor cost deflation: Continued declines in LiDAR, radar, and high-resolution camera costs make sophisticated perception systems commercially viable at scale.",
+      "Energy constraints: Physical AI necessitates a shift from power-hungry cloud models to efficient neuromorphic and edge architectures, driving hardware innovation.",
+      "Industry 4.0 integration: Convergence of IoT, digital twins, and AI is creating closed-loop systems where physical assets are continuously optimized by AI.",
+      "Semiconductor infrastructure: Massive investments in compute (reflected in SMH pricing) are creating the foundational models and hardware necessary for physical AI deployment."
+    ],
+    "value_capture": [
+      {
+        "roic": 8.0,
+        "role": "creator",
+        "notes": "Nvidia's CUDA moat and silicon design complexity create a near-monopoly on training compute. TSMC fabrication constraints bottleneck supply, sustaining pricing power. However, capital intensity is extreme and long-run margin compression is likely as AMD, custom silicon, and geopolitical fab diversification erode the current monopoly rent. Edge inference chips are more fragmented with lower pricing power.",
+        "layer_name": "Compute & Semiconductors (GPUs, AI Accelerators, Edge Chips)",
+        "pricing_power": 8.0,
+        "revenue_growth": 9.0,
+        "barriers_to_entry": 9.0,
+        "capital_intensity": 9.0,
+        "competitive_intensity": 6.0
+      },
+      {
+        "roic": 5.0,
+        "role": "creator",
+        "notes": "Commoditizing rapidly. LiDAR has consolidated around few survivors but pricing is under pressure from vision-only approaches (Tesla thesis). Cameras and radar are deeply commoditized. Tactile sensing remains nascent but low-volume. This layer creates essential functionality but captures little economic surplus—classic value creator with limited pricing power.",
+        "layer_name": "Sensors & Perception Hardware (LiDAR, Cameras, Radar, Tactile)",
+        "pricing_power": 4.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 5.0,
+        "capital_intensity": 7.0,
+        "competitive_intensity": 8.0
+      },
+      {
+        "roic": 4.0,
+        "role": "creator",
+        "notes": "Mature manufacturing supply chain, primarily in Japan (Harmonic Drive, Nabtesco) and increasingly China. Low margins, high capital intensity, limited differentiation. Precision reducers have some moat but face disruption from direct-drive and quasi-direct-drive motor architectures that eliminate gearboxes entirely. Structural value destruction risk.",
+        "layer_name": "Actuation & Mechanical Components (Motors, Servos, Precision Gearboxes, Robotic Limbs)",
+        "pricing_power": 3.0,
+        "revenue_growth": 5.0,
+        "barriers_to_entry": 4.0,
+        "capital_intensity": 8.0,
+        "competitive_intensity": 8.0
+      },
+      {
+        "roic": 6.0,
+        "role": "capturer",
+        "notes": "Vision-language-action models (Figure, 1X, Physical Intelligence, Skild) are in a land grab phase. Open-source (LeRobot, OpenVLA) compresses pricing power. The layer captures value through proprietary data flywheels and fine-tuning for specific embodiments, but model commoditization risk is high. Winners likely integrate vertically rather than monetize models standalone.",
+        "layer_name": "Foundation Models & Embodied AI Software (VLA Models, Control Policies, Simulation-to-Real)",
+        "pricing_power": 6.0,
+        "revenue_growth": 9.0,
+        "barriers_to_entry": 7.0,
+        "capital_intensity": 4.0,
+        "competitive_intensity": 7.0
+      },
+      {
+        "roic": 7.0,
+        "role": "creator",
+        "notes": "Physical world data is the scarcest input in Physical AI—unlike text, it cannot be scraped from the internet. Companies with proprietary teleoperation pipelines (Figure, 1X) or simulation engines (NVIDIA Omniverse, Genesis) hold a structural advantage. Data ownership and embodiment-specific datasets create compounding moats. Underappreciated layer with durable pricing power.",
+        "layer_name": "Data & Simulation Infrastructure (Synthetic Data, Digital Twins, Teleoperation Datasets)",
+        "pricing_power": 6.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 7.0,
+        "capital_intensity": 5.0,
+        "competitive_intensity": 5.0
+      },
+      {
+        "roic": 5.0,
+        "role": "capturer",
+        "notes": "Integrating compute, sensors, actuation, and models into a reliable physical product is brutally hard—long-tail edge cases, safety certification, and manufacturing at scale. Companies like Figure, Agility, Boston Dynamics, and Tesla Optimus compete on full-stack execution. Switching costs emerge post-deployment via fleet data feedback loops, but pre-deployment differentiation is thin and margins are constrained by hardware BOM.",
+        "layer_name": "System Integration & Robotics Platform (Full-Stack Robot Design, OS, Fleet Management)",
+        "pricing_power": 5.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 6.0,
+        "capital_intensity": 6.0,
+        "competitive_intensity": 6.0
+      },
+      {
+        "roic": 6.0,
+        "role": "capturer",
+        "notes": "This is where Physical AI meets revenue. Symbotic, AutoStore, Locus, Waymo, and Tesla FSD capture customer willingness-to-pay by solving domain-specific problems. Vertical-specific data, regulatory approvals, customer relationships, and operational scale create compounding moats. Capital intensity is high (fleet deployment, infrastructure), but switching costs and network effects in fleet data create durable economics. The most likely site of long-run value accumulation because it is closest to the customer dollar and furthest from commoditized hardware.",
+        "layer_name": "End Applications & Vertical Deployment (Warehouse Automation, Autonomous Vehicles, Manufacturing, Logistics)",
+        "pricing_power": 6.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 7.0,
+        "capital_intensity": 7.0,
+        "competitive_intensity": 5.0
+      }
+    ],
+    "feedback_loops": [
+      {
+        "kind": "reinforcing",
+        "strength": 9.5,
+        "description": "Physical AI is the embodied application layer of AI—turning digital intelligence into real-world action. Breakthroughs in foundation models, multimodal reasoning, and simulation directly unlock Physical AI capabilities (spatial reasoning, manipulation, navigation). Conversely, Physical AI generates massive multimodal real-world datasets (tactile, proprioceptive, visual-spatial) that create feedback loops improving AI model robustness and generalization. The two narratives are tightly co-evolutionary; progress in one structurally accelerates the other.",
+        "target_narrative": "Artificial Intelligence"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 10.0,
+        "description": "Physical AI is the cognitive substrate that transforms robots from pre-programmed actuators into general-purpose adaptive agents. Advances in Physical AI—particularly in learning-from-demonstration, sim-to-real transfer, and world models—directly expand what robots can do, opening new markets (household, construction, agriculture). Robotics hardware innovation (actuators, sensors, dexterous hands) reciprocally expands the frontier of tasks Physical AI can attempt. This is the tightest coupling in the entire narrative set.",
+        "target_narrative": "Robotics"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.5,
+        "description": "Physical AI at scale—millions of embodied agents plus edge inference and continuous training—creates enormous incremental electricity demand that nuclear is uniquely positioned to supply as firm, clean baseload. Hyperscalers pursuing Physical AI are already signing nuclear PPAs. Simultaneously, Physical AI enables autonomous inspection, predictive maintenance, and automated fuel-handling for nuclear facilities, reducing O&M costs and accelerating deployment timelines for SMRs and advanced reactors.",
+        "target_narrative": "Nuclear Renaissance"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 9.0,
+        "description": "Physical AI is the core enabling technology for autonomous weapon systems, drone swarms, unmanned surface/underwater vehicles, and contested-environment logistics where GPS and comms are degraded. Defense budgets are among the largest funders of Physical AI R&D, particularly in perception-under-deception, adversarial robustness, and edge inference. The defense use case—high-stakes, GPS-denied, partially observable—pushes Physical AI capabilities beyond what commercial applications alone would demand, creating spillover advances.",
+        "target_narrative": "Defense Autonomy"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.0,
+        "description": "Physical AI enables the eldercare robotics value proposition—physical assistance for mobility, transfers, and ADLs; fall detection and prevention; medication delivery; and companionship with embodied presence. The demographic crisis creates acute demand pull: labor shortages in caregiving are structural, and the ratio of working-age adults to elderly is collapsing globally. Physical AI is one of the few scalable solutions to the physical-care gap, creating a large, politically-supported demand channel.",
+        "target_narrative": "Aging Population"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 6.0,
+        "description": "Physical AI enables autonomous disaster response (firefighting drones, flood-response amphibious robots), resilient infrastructure monitoring (autonomous inspection of levees, grid, pipelines), and adaptive agricultural systems (precision robotic farming under shifting climate conditions). As climate volatility intensifies, the need for physical systems that can operate autonomously in degraded, dangerous, or rapidly-changing environments grows. Physical AI is a force multiplier for adaptation capacity that human labor alone cannot scale to meet.",
+        "target_narrative": "Climate Adaptation"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 8.5,
+        "description": "Physical AI is the primary mechanism by which reindustrialization becomes economically viable in high-labor-cost economies. Autonomous manufacturing cells, adaptive assembly lines, and AI-driven quality control allow reshoring without prohibitive labor costs. Physical AI also enables mass-customization at scale (flexible manufacturing) and automates hazardous industrial processes. The narrative directly lowers the opportunity cost of domestic production versus offshore manufacturing, making it a structural enabler of the reindustrialization thesis.",
+        "target_narrative": "Reindustrialization"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 8.0,
+        "description": "Physical AI is a non-negotiable enabler for the space economy beyond LEO. Communication latency (minutes to hours) makes telerobotics infeasible for lunar, Martian, and asteroid operations. Autonomous Physical AI agents are required for in-situ resource utilization, autonomous construction of habitats, satellite servicing, and debris removal. The space environment—extreme, unstructured, unforgiving—is both the hardest test case for Physical AI and the one with the highest strategic value, creating a high-bar R&D pull.",
+        "target_narrative": "Space Economy"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 5.5,
+        "description": "Physical AI enables lab automation at a qualitatively new level—autonomous pipetting, cell-culture handling, and experimental iteration that runs 24/7 without human intervention. This compresses wet-lab cycle times and enables closed-loop 'self-driving labs' where Physical AI agents design, execute, and learn from experiments. Surgical robotics enhanced by Physical AI extends precision in biological interventions. The intersection is narrow but high-leverage, particularly in drug discovery throughput.",
+        "target_narrative": "Biotechnology Revolution"
+      },
+      {
+        "kind": "resource_competition",
+        "strength": 6.5,
+        "description": "Physical AI at scale is materially intensive: rare earth elements for motors and sensors, advanced semiconductors for edge inference, lithium and cobalt for battery-powered embodied agents, and significant water and energy for training and manufacturing. Millions of Physical AI units deployed would create demand spikes across overlapping supply chains with EVs, grid storage, and consumer electronics. While Physical AI can optimize resource extraction and reduce waste in production, the near-term net effect is competitive pressure on constrained material inputs.",
+        "target_narrative": "Resource Scarcity"
+      }
+    ],
+    "hidden_effects": [
+      {
+        "order": "hidden",
+        "description": "Atrophy of human physical intelligence: as embodied tasks are offloaded to machines, humans lose tacit knowledge—craft skills, spatial reasoning, manual dexterity—accumulated over millennia, creating a civilizational dependency where the ability to physically build, repair, or navigate without AI assistance degrades irreversibly within one generation."
+      },
+      {
+        "order": "hidden",
+        "description": "Physical world model divergence from human perception: as AI systems optimize physical-world representations for machine efficiency rather than human comprehensibility, the 'world' as understood by operating infrastructure (traffic grids, logistics, agriculture) becomes illegible to human oversight, creating a governance gap where no human can audit or intervene in real-time autonomous decisions."
+      },
+      {
+        "order": "hidden",
+        "description": "Embodied AI as a vector for value-system lock-in: physical agents that act in the world encode implicit ethical priors (risk tolerance, resource allocation, priority hierarchies) into hardware and software; once deployed at scale, these become de facto regulation—difficult to reverse because changing the objective function requires recalling and retraining millions of physical devices, not just updating a server."
+      }
+    ],
+    "potential_losers": [
+      [
+        "Robot OEMs attempting vertical integration of precision gearboxes with no manufacturing heritage",
+        "Chinese component makers facing quality/reliability gaps in high-DOF applications"
+      ],
+      [
+        "Robot startups building proprietary simulation stacks from scratch (capital drain, slower iteration)",
+        "Pure-play AI chip companies that ignore the simulation workload demand"
+      ],
+      [
+        "Manual visual inspection service providers",
+        "Low-end Chinese vision sensor commoditizers facing margin compression as requirements escalate"
+      ],
+      [
+        "Robot OEMs with no hedging strategy for rare earth price spikes",
+        "Induction motor alternatives that lose on power density for compact robotic applications"
+      ],
+      [
+        "Traditional warehouse operators with manual processes facing structural cost disadvantage",
+        "Fixed-automation legacy providers (traditional conveyor/ASRS) without software flexibility"
+      ],
+      [
+        "Agricultural chemical companies (Syngenta, Bayer, Corteva)—precision application erodes volume",
+        "Farm labor brokers and H-2A dependent operators",
+        "Traditional equipment OEMs without autonomous roadmaps"
+      ],
+      [
+        "Datacenter-only AI chip designers with no edge power-efficiency roadmap",
+        "FPGA-dependent robotics platforms facing cost/size pressures at scale"
+      ],
+      [
+        "Robotics startups without liability insurance strategy facing deployment blockers",
+        "Traditional workers' compensation insurers if displacement accelerates faster than premium repricing"
+      ],
+      [
+        "Humanoid robot companies promising general manipulation without tactile sensing roadmaps",
+        "Pure vision-based grasping startups that will hit capability ceilings on deformable/fragile objects"
+      ],
+      [
+        "Warehouse/factory REITs with inadequate power infrastructure facing costly retrofits",
+        "Robot fleet operators underestimating energy costs in unit economics"
+      ]
+    ],
+    "narrative_summary": "Physical AI represents the transition of artificial intelligence from purely digital domains into the physical world through robotics, autonomous systems, and edge computing. While current headlines are dominated by geopolitical friction and macroeconomic concerns—such as Middle Eastern tensions and shifting political landscapes—these very instabilities act as accelerants for Physical AI. Supply chain vulnerabilities and labor market tightness are forcing industries to invest heavily in automation and embodied AI to ensure operational resilience. The market context reflects this dynamic: semiconductor ETFs (SMH) are surging on the back of massive compute demand, while robotics ETFs (BOTZ, IRBO) are positioning for the next wave of AI deployment where intelligence is embedded into physical assets.\n\nThe narrative is driven by the convergence of advanced large language models with robotics, enabling machines to process multi-modal sensory inputs and perform complex, unstructured tasks. As the cost of sensors and edge compute declines, the ROI payback period for industrial and consumer robotics is compressing rapidly. This shifts the focus from isolated, pre-programmed industrial arms to adaptable, general-purpose physical agents that can learn from their environments, fundamentally altering the economics of manufacturing, logistics, and labor.",
+    "potential_winners": [
+      [
+        "Harmonic Drive Systems (Japan)",
+        "Nabtesco (Japan)",
+        "THK Co (Japan)",
+        "SKF (Sweden)",
+        "Nidec (Japan)",
+        "Heidenhain (Germany, private)"
+      ],
+      [
+        "NVIDIA (Omniverse/Isaac Sim)",
+        "Ansys (physics simulation)",
+        "Unity Technologies (simulation environments)",
+        "Dassault Systèmes (3D simulation)",
+        "MuJoCo/open-source ecosystem beneficiaries"
+      ],
+      [
+        "Keyence (Japan)",
+        "Cognex (US)",
+        "Basler (Germany)",
+        "Teledyne Technologies (US)",
+        "ISRA Vision (Germany, Trinafyssel)"
+      ],
+      [
+        "MP Materials (US)",
+        "Lynas Rare Earths (Australia)",
+        "VAC Vacuumschmelze (Germany, private)",
+        "USA Rare Earth",
+        "Energy Fuels (US, rare earth processing)"
+      ],
+      [
+        "Symbotic (US)",
+        "AutoStore (Norway)",
+        "Kardex Group (Switzerland)",
+        "Berkshire Grey (US, Symbotic acquisition)",
+        "Hai Robotics (China, private)",
+        "Geek+ (China, private)"
+      ],
+      [
+        "Deere & Company (US)",
+        "Carbon Robotics (US, private)",
+        "Naio Technologies (France, private)",
+        "AGCO/FPT Industrial (acquisitive)",
+        "Kubota (Japan, entering autonomy)",
+        "Monarch Tractor (US, private)"
+      ],
+      [
+        "Qualcomm (robotics RB-series platforms)",
+        "NXP Semiconductors (automotive/industrial edge)",
+        "Ambarella (vision SoCs)",
+        "NVIDIA (Jetson ecosystem, near-term)",
+        "Renesas (motor control + AI integration)"
+      ],
+      [
+        "Munich Re (developing autonomous vehicle/robot risk models)",
+        "Swiss Re",
+        "Bureau Veritas (certification services)",
+        "TÜV SÜD/TÜV Rheinland (safety certification)",
+        "UL Solutions (US safety certification)"
+      ],
+      [
+        "SynTouch (US, private, tactile sensors)",
+        "OnRobot (Denmark, end-of-arm tooling)",
+        "ATI Industrial Automation (US, force-torque sensors)",
+        "Robotiq (Canada, private)",
+        "Soft robotics companies (Soft Robotics Inc, private)"
+      ],
+      [
+        "Schneider Electric (industrial power management)",
+        "Eaton (electrical infrastructure)",
+        "ABB (charging and power electronics)",
+        "ChargePoint/Blink (commercial fleet charging adaptation)",
+        "Enphase Energy (distributed energy management)"
+      ]
+    ],
+    "dependency_network": [
+      {
+        "type": "input",
+        "layer": "Semiconductors",
+        "weight": 10.0,
+        "description": "Advanced GPUs, TPUs, and custom ASICs for training and inference at the edge; fabs concentrated at TSMC, Samsung, Intel"
+      },
+      {
+        "type": "input",
+        "layer": "Memory",
+        "weight": 9.0,
+        "description": "HBM3/HBM4 for high-bandwidth model serving, plus low-power DRAM/NAND for on-device inference in robots and vehicles"
+      },
+      {
+        "type": "input",
+        "layer": "Sensors",
+        "weight": 9.0,
+        "description": "LiDAR, RGB-D cameras, IMUs, force-torque sensors, tactile skins; supply chain spans Sony, Onsemi, Velodyne, Ouster"
+      },
+      {
+        "type": "input",
+        "layer": "Actuators and Precision Motors",
+        "weight": 9.0,
+        "description": "Harmonic drives, brushless servomotors, linear actuators; bottleneck suppliers include Harmonic Drive, Nabtesco, Yaskawa"
+      },
+      {
+        "type": "input",
+        "layer": "Edge Computing Silicon",
+        "weight": 8.0,
+        "description": "Low-power inference SoCs (NVIDIA Jetson, Qualcomm Robotics, custom NPU ASICs) for real-time on-robot perception and control"
+      },
+      {
+        "type": "input",
+        "layer": "Battery and Energy Storage",
+        "weight": 7.0,
+        "description": "High-energy-density cells (NMC, LFP, solid-state) for mobile robots, drones, autonomous vehicles; dependent on lithium, cobalt, nickel supply"
+      },
+      {
+        "type": "input",
+        "layer": "Rare Earth Elements",
+        "weight": 8.0,
+        "description": "Neodymium, dysprosium for permanent magnets in motors; praseodymium for sensors; China controls ~60-70% of processing"
+      },
+      {
+        "type": "input",
+        "layer": "Silicon Wafer Supply",
+        "weight": 8.0,
+        "description": "300mm and 200mm polished/epitaxial wafers; Shin-Etsu, SUMCO, GlobalWafers dominate; tight allocation during demand spikes"
+      },
+      {
+        "type": "resource",
+        "layer": "Foundry and Advanced Packaging Capacity",
+        "weight": 10.0,
+        "description": "Leading-edge 3nm/5nm nodes plus 2.5D/3D packaging (CoWoS, InFO) at TSMC; structurally constrained, multi-quarter lead times"
+      },
+      {
+        "type": "resource",
+        "layer": "Data Centers",
+        "weight": 9.0,
+        "description": "Hyperscale and colocation facilities for model training, fleet learning, and digital twin simulation; requires land, power, fiber"
+      },
+      {
+        "type": "input",
+        "layer": "Electricity and Grid Capacity",
+        "weight": 10.0,
+        "description": "Training runs and inference fleets demand 100s of MW; grid interconnection queues now 3-5 years in key US markets; nuclear and gas peakers increasingly contracted"
+      },
+      {
+        "type": "resource",
+        "layer": "Cooling Systems",
+        "weight": 7.0,
+        "description": "Liquid cooling (direct-to-chip, immersion), rear-door heat exchangers; CDU and manifold supply from Vertiv, Schneider, CoolIT"
+      },
+      {
+        "type": "resource",
+        "layer": "Water",
+        "weight": 6.0,
+        "description": "Make-up water for evaporative cooling towers and immersion systems; data center siting increasingly water-constrained in arid regions"
+      },
+      {
+        "type": "input",
+        "layer": "Networking and Interconnect",
+        "weight": 8.0,
+        "description": "Infiniband and Ethernet (400G/800G) for training clusters; low-latency 5G/6G and Wi-Fi 7 for robot-to-cloud telemetry; Broadcom, Marvell, Arista"
+      },
+      {
+        "type": "input",
+        "layer": "Telecommunications Infrastructure",
+        "weight": 6.0,
+        "description": "5G private networks, edge MEC nodes, and low-latency backhaul for real-time fleet coordination and remote teleoperation"
+      },
+      {
+        "type": "input",
+        "layer": "Precision Manufacturing Equipment",
+        "weight": 7.0,
+        "description": "ASML EUV lithography, Applied Materials deposition/etch, KLA metrology; export-controlled and single-source constrained"
+      },
+      {
+        "type": "resource",
+        "layer": "Construction and Build-Out",
+        "weight": 6.0,
+        "description": "Specialized construction for cleanrooms, data halls, and robot assembly lines; skilled trades labor shortage extends timelines 12-18 months"
+      },
+      {
+        "type": "resource",
+        "layer": "Skilled Engineering Labor",
+        "weight": 10.0,
+        "description": "Robotics, ML, control systems, mechatronics, and embedded software engineers; extremely tight market with compensation inflation at top labs"
+      },
+      {
+        "type": "resource",
+        "layer": "Manufacturing Workforce",
+        "weight": 7.0,
+        "description": "Technicians for assembly, calibration, QA of robots and autonomous systems; vocational training pipeline insufficient"
+      },
+      {
+        "type": "resource",
+        "layer": "Capital Availability",
+        "weight": 9.0,
+        "description": "Multi-billion-dollar capex for fabs, data centers, and robot fleets; dependent on venture, private credit, and sovereign fund flows; rate-sensitive"
+      },
+      {
+        "type": "input",
+        "layer": "Simulation and Digital Twin Software",
+        "weight": 7.0,
+        "description": "Physics-accurate simulators (NVIDIA Isaac, MuJoCo, PyBullet) for reinforcement learning and synthetic data generation; reduces real-world iteration cost"
+      },
+      {
+        "type": "input",
+        "layer": "Robotics Software Frameworks",
+        "weight": 6.0,
+        "description": "ROS 2, real-time OS (QNX, RT-Linux), middleware for perception-planning-control stacks; open-source ecosystem reduces friction but adds integration risk"
+      },
+      {
+        "type": "input",
+        "layer": "Training Data and Embodied Datasets",
+        "weight": 8.0,
+        "description": "Teleoperation recordings, simulation rollouts, multi-modal sensor logs; scarce high-quality embodied data is a key moat for early movers"
+      },
+      {
+        "type": "constraint",
+        "layer": "Supply Chain Resilience",
+        "weight": 8.0,
+        "description": "Multi-tier dependencies across Taiwan, South Korea, Japan, China, Germany; geopolitical disruption, export controls, and logistics shocks propagate non-linearly"
+      },
+      {
+        "type": "constraint",
+        "layer": "Export Controls and Geopolitics",
+        "weight": 8.0,
+        "description": "US Entity List, CHIPS Act guardrails, EU FDI screening restrict technology transfer and market access; bifurcation of compute and robotics supply chains"
+      },
+      {
+        "type": "constraint",
+        "layer": "Safety and Liability Regulation",
+        "weight": 7.0,
+        "description": "ISO 13849, IEC 61508, NHTSA autonomous vehicle standards, OSHA workplace robotics rules; certification cycles slow deployment and raise cost"
+      },
+      {
+        "type": "constraint",
+        "layer": "Standards and Interoperability",
+        "weight": 5.0,
+        "description": "Lack of unified communication, safety, and data standards across robot platforms creates vendor lock-in and slows ecosystem scaling"
+      },
+      {
+        "type": "resource",
+        "layer": "Real Estate and Land",
+        "weight": 5.0,
+        "description": "Zoned industrial land with power, water, and fiber for data centers and manufacturing; increasingly scarce near major metros"
+      },
+      {
+        "type": "constraint",
+        "layer": "Cybersecurity Infrastructure",
+        "weight": 6.0,
+        "description": "Physical AI systems are attack surfaces (sensor spoofing, model extraction, adversarial patches); requires hardware roots of trust, secure boot, OTA integrity"
+      }
+    ],
+    "future_bottlenecks": [
+      {
+        "name": "Sim-to-Real Transfer Fidelity Gap",
+        "tier": "emerging",
+        "cause": "Training physical AI in simulation is the only scalable path, but physics simulators imperfectly model friction, deformation, contact dynamics, sensor noise, and material wear. Policies that work in sim degrade unpredictably in the real world, requiring expensive real-world fine-tuning that doesn't scale.",
+        "losers": [
+          "Robotics startups with sim-only training pipelines and no real-world data flywheel",
+          "Simulation software vendors with poor physics fidelity",
+          "Investors funding humanoid companies based on sim demo videos"
+        ],
+        "winners": [
+          "Nvidia (Isaac Sim, Omniverse)",
+          "MuJoCo/XMujoco ecosystem",
+          "Cosysmo and domain randomization specialists",
+          "Companies with large real-world telemetry fleets for fine-tuning (Tesla, Amazon Robotics)"
+        ],
+        "severity": 8.0,
+        "time_horizon": "1-4 years",
+        "market_awareness": "Low to moderate. AI researchers discuss this openly, but investors generally assume 'more compute + more sim training = solved.' The nonlinearity of the gap is underappreciated."
+      },
+      {
+        "name": "Rare Earth and Specialty Material Supply Chains for Motors and Sensors",
+        "tier": "emerging",
+        "cause": "Permanent magnet motors (NdFeB) in robotic joints, LiDAR components, and force-torque sensors depend on rare earth elements (neodymium, dysprosium, terbium) and specialty materials where China controls 60-87% of processing. Geopolitical fragmentation—amplified by Iran sanctions losing efficacy and broader multipolar trade realignment—risks supply disruption and price volatility just as physical AI demand scales.",
+        "losers": [
+          "Robotics OEMs with single-source Chinese magnet suppliers",
+          "Countries without critical mineral strategies",
+          "Companies whose cost models assume stable rare earth pricing"
+        ],
+        "winners": [
+          "MP Materials",
+          "USA Rare Earth",
+          "Lynas Rare Earths",
+          "Motor designers pursuing switched-reluctance and ferrite-magnet topologies",
+          "Recycling players (Noveon, Cyclic Materials)"
+        ],
+        "severity": 6.0,
+        "time_horizon": "2-5 years",
+        "market_awareness": "Low in the physical AI context. Rare earth supply chain risk is discussed for EVs and wind turbines but not yet mapped to the actuator density requirements of multi-DOF robotic systems."
+      },
+      {
+        "name": "Regulatory and Certification Framework for Autonomous Physical Systems",
+        "tier": "emerging",
+        "cause": "No established regulatory pathway exists for autonomous robots operating in unstructured human environments. Unlike aviation (FAA certification) or automotive (NHTSA standards), physical AI systems fall into regulatory gaps between consumer product safety, industrial equipment, and vehicle codes. Liability allocation between AI developer, hardware OEM, and operator is undefined.",
+        "losers": [
+          "Startups lacking regulatory affairs budgets",
+          "First-mover deployers who become liability test cases",
+          "Jurisdictions that fail to create clear frameworks and lose deployment to more permissive ones"
+        ],
+        "winners": [
+          "Large incumbents with regulatory affairs capacity (Boston Dynamics, Amazon, Tesla)",
+          "Standards-setting bodies and certification companies (UL, TÜV, Intertek)",
+          "Insurance companies that pioneer autonomous system liability products"
+        ],
+        "severity": 7.0,
+        "time_horizon": "2-5 years",
+        "market_awareness": "Low. Investors assume regulation will follow innovation, but the absence of a certification framework will throttle deployment in healthcare, public spaces, and logistics at scale."
+      }
+    ],
+    "hidden_constraints": [
+      {
+        "name": "Built Environment Incompatibility",
+        "tier": "hidden",
+        "cause": "The physical world—buildings, factories, warehouses, streets, homes—was designed for human bodies and human-scale infrastructure. Doorways, stairs, thresholds, elevator dimensions, floor load ratings, and workspaces are incompatible with current humanoid and mobile robot form factors. Retrofitting the built environment is a multi-decade, multi-trillion-dollar proposition that no one is budgeting for.",
+        "losers": [
+          "Humanoid robotics companies assuming drop-in deployment into legacy buildings",
+          "Real estate REITs that may face costly retrofit requirements to remain competitive",
+          "Companies whose ROI models assume zero environment modification costs"
+        ],
+        "winners": [
+          "Facility design and retrofit firms",
+          "Companies building environment-standardized deployment contexts (Amazon fulfillment centers, Tesla Gigafactories)",
+          "Modular construction companies",
+          "Robotics companies designing around human-form-factor constraints rather than assuming environments adapt"
+        ],
+        "severity": 8.0,
+        "time_horizon": "3-10 years",
+        "market_awareness": "Very low. Physical AI investment is overwhelmingly in the robot, not the environment. The assumption that robots will 'adapt to human spaces' underestimates how many physical constraints are immovable."
+      },
+      {
+        "name": "Maintenance, Repair, and Field Service Ecosystem Vacuum",
+        "tier": "hidden",
+        "cause": "Physical AI systems are physical machines that break. There is no scaled workforce of technicians, no parts distribution network, no diagnostic tooling, and no service-level-agreement infrastructure for deployed robots. The ratio of deployed robots to qualified service technicians is already untenable and will worsen by 10-100x as deployments scale. This is the 'last mile' of physical AI that is entirely unbuilt.",
+        "losers": [
+          "Robotics companies selling hardware outright without service infrastructure",
+          "Customers who underestimate total cost of ownership",
+          "Investors whose unit economics models exclude maintenance and downtime costs"
+        ],
+        "winners": [
+          "Companies with existing field service armies (Caterpillar, John Deere, Siemens)",
+          "Robotics-as-a-Service business models that internalize maintenance",
+          "Predictive maintenance and remote diagnostics platforms",
+          "Vocational training companies and community colleges creating robotics technician programs"
+        ],
+        "severity": 9.0,
+        "time_horizon": "2-7 years",
+        "market_awareness": "Negligible. Every physical AI investor model focuses on CapEx and unit economics; almost none model OpEx for maintenance, downtime, and field service. This will be the binding constraint on gross margin and scaling velocity."
+      },
+      {
+        "name": "Teleoperation and Remote Supervision Infrastructure",
+        "tier": "hidden",
+        "cause": "Autonomous physical AI systems will require human supervision and intervention for edge cases for the foreseeable future. The infrastructure for low-latency, high-reliability teleoperation—5G/6G connectivity, haptic feedback systems, multi-robot supervision dashboards, and a trained remote operator workforce—does not exist at scale. The assumption of full autonomy masks the reality of a human-in-the-loop requirement that has no supporting business model.",
+        "losers": [
+          "Companies promising full autonomy on unrealistic timelines",
+          "Investors marking valuations on autonomy milestones that will slip",
+          "Deployments in connectivity-poor environments where teleoperation fallback is impossible"
+        ],
+        "winners": [
+          "Teleoperation platform companies (e.g., Phantom Auto, Teleo)",
+          "Telecom providers with low-latency edge networks",
+          "Companies that can monetize remote operator labor arbitrage (operators in low-cost regions supervising robots in high-cost ones)",
+          "Haptic interface and force-feedback hardware companies"
+        ],
+        "severity": 7.0,
+        "time_horizon": "2-6 years",
+        "market_awareness": "Very low. The narrative is 'full autonomy,' but the reality is that every deployed physical AI system will need fallback teleoperation. No one is building the operator workforce or the supervision platform layer."
+      }
+    ],
+    "current_bottlenecks": [
+      {
+        "name": "Edge Inference Compute for Real-Time Control",
+        "tier": "current",
+        "cause": "Physical AI requires ultra-low-latency inference at the edge for real-time motor control, perception, and decision-making. Current edge AI chips lack the throughput-per-watt needed for complex embodied intelligence, forcing tethered operation or severely limited autonomy windows.",
+        "losers": [
+          "Cloud-only AI chip designers without edge strategy",
+          "Robotics startups dependent on generic SoCs",
+          "Industrial OEMs lacking custom silicon roadmaps"
+        ],
+        "winners": [
+          "Nvidia (Jetson platform)",
+          "Qualcomm (Robotics RB series)",
+          "Tesla (custom Dojo/inference silicon)",
+          "Ambarella",
+          "Graphcore (if pivot to edge)"
+        ],
+        "severity": 8.0,
+        "time_horizon": "0-2 years",
+        "market_awareness": "High among semiconductor investors; underappreciated in its specificity to physical AI vs. cloud LLM workloads. SMH rally reflects general AI chip demand but not the distinct edge-inference bottleneck."
+      },
+      {
+        "name": "Precision Actuator and Harmonic Drive Supply",
+        "tier": "current",
+        "cause": "High-precision reduction gears, harmonic drives, and torque-dense actuators are dominated by a handful of Japanese suppliers (Harmonic Drive Systems, Nabtesco). Capacity expansion is slow, lead times are 6-12 months, and unit costs remain too high for consumer-scale humanoid robotics.",
+        "losers": [
+          "Humanoid robotics startups without actuator supply agreements",
+          "Companies relying on off-the-shelf industrial servos",
+          "Western robotics OEMs with no Asian supply chain depth"
+        ],
+        "winners": [
+          "Harmonic Drive Systems",
+          "Nabtesco",
+          "Nidec",
+          "Figure (vertical integration of actuators)",
+          "Tesla (in-house actuator design)"
+        ],
+        "severity": 7.0,
+        "time_horizon": "0-3 years",
+        "market_awareness": "Moderate. Robotics specialists know this well, but generalist investors conflate 'robotics' with software/AI and ignore the mechanical component bottleneck."
+      },
+      {
+        "name": "Energy Density Ceiling for Untethered Operation",
+        "tier": "current",
+        "cause": "Lithium-ion energy density (~250-300 Wh/kg) caps practical autonomous operation of power-hungry physical AI systems (humanoids, quadrupeds, autonomous drones) at 2-6 hours. Compute load for continuous perception-and-control further compresses runtime.",
+        "losers": [
+          "Humanoid robotics companies promising 8+ hour runtime on current Li-ion",
+          "Drone delivery companies with payload-range tradeoffs",
+          "Battery commodity producers without next-gen chemistry pipelines"
+        ],
+        "winners": [
+          "Solid-state battery developers (QuantumScape, Factorial)",
+          "Silicon anode manufacturers (Sila Nano, Group14)",
+          "CATL and LG Energy (scale + R&D)",
+          "Companies designing ultra-low-power inference architectures"
+        ],
+        "severity": 7.0,
+        "time_horizon": "0-4 years",
+        "market_awareness": "Acknowledged in EV context but underweighted as a robotics bottleneck. Most physical AI projections assume runtime will 'sort itself out' without mapping to battery chemistry roadmaps."
+      }
+    ],
+    "first_order_effects": [
+      {
+        "order": "1",
+        "description": "Direct substitution of human labor in physical tasks: robots powered by foundation models perform warehouse picking, agricultural harvesting, construction, and last-mile delivery, displacing low-wage manual jobs at scale while creating demand for robot fleet managers, teleoperators, and embodied-AI engineers."
+      },
+      {
+        "order": "1",
+        "description": "Collapse of the data-collection bottleneck for physical world models: once deployed, embodied agents continuously stream multimodal sensor data (vision, tactile, proprioceptive), creating feedback loops that improve model performance, which accelerates deployment, generating still more data—a self-reinforcing capability flywheel."
+      },
+      {
+        "order": "1",
+        "description": "Capital expenditure rotation from software infrastructure to physical infrastructure: datacenter demand shifts from text/image GPUs to edge-compute, actuators, sensors, and specialized robotics silicon; supply chains for precision machined parts, harmonic reducers, and torque sensors become the new bottleneck."
+      }
+    ],
+    "regulatory_analysis": {
+      "summary": "The current regulatory landscape for Physical AI—encompassing autonomous vehicles, humanoid robotics, and industrial control systems—is highly fragmented, relying on legacy sector-specific frameworks (e.g., NHTSA, FAA, OSHA) retrofitted for software. Liability is currently tethered to traditional product liability and tort law, which struggles to adjudicate autonomous, non-deterministic decision-making. Looking forward, the regulatory regime will likely bifurcate geographically: the EU will pursue precautionary, hardware-software integrated risk frameworks, while the US will favor a patchwork of state-level experimentation and federal sectoral guidelines heavily influenced by defense and industrial competitiveness. Future regimes will necessitate continuous, real-time regulatory compliance and shift liability frameworks from 'design defect' to 'systemic operational risk,' potentially forcing the creation of no-fault insurance pools akin to the nuclear energy sector to prevent an insurance market failure.",
+      "catalysts": [
+        "A major industrial or defense breakthrough (e.g., autonomous logistics in contested environments) prompting governments to create expedited 'dual-use' regulatory pathways.",
+        "Development of standardized 'digital twin' simulation environments accepted by regulators as proof of safety, replacing prohibitively expensive physical crash and failure testing.",
+        "Establishment of physical regulatory sandboxes (e.g., designated smart cities or specialized industrial zones) allowing real-world testing under relaxed liability rules.",
+        "Breakthroughs in formal verification methods for neural networks, providing mathematical guarantees of safety bounds for physical actuators and satisfying regulators.",
+        "A localized physical AI success story (e.g., autonomous mining or agriculture achieving zero-harm milestones over multi-year deployments) providing the empirical data needed to construct new federal liability frameworks."
+      ],
+      "key_risks": [
+        "Insurance market failure: Actuaries may be unable to price the long-tail risks of autonomous physical agents, freezing commercial deployment due to a lack of coverage.",
+        "Regulatory fragmentation across jurisdictions (e.g., EU precautionary principles vs. US state-level patchworks) creating insurmountable compliance costs for hardware standardization.",
+        "A catastrophic, high-profile physical AI failure (e.g., a humanoid robot malfunction in a public space) triggering a 'Chernobyl moment' and resulting in draconian, innovation-stifling legislation.",
+        "Geopolitical supply chain mandates restricting the use of specific sensors, edge-compute chips, or rare earth materials under the guise of national security, disrupting hardware production.",
+        "Misalignment between software iteration cycles (weeks) and hardware certification cycles (years), leading to regulatory bottlenecks on over-the-air (OTA) updates for physical systems."
+      ]
+    },
+    "third_order_effects": [
+      {
+        "order": "3",
+        "description": "Labor-power collapse as a political stabilization mechanism: governments that previously relied on employment for social cohesion face mass underemployment of the physical-labor majority; this pressures fiscal systems toward universal transfer payments, robot taxes, or authoritarian labor suppression, fundamentally altering the social contract and democratic bargaining power."
+      },
+      {
+        "order": "3",
+        "description": "Commodity demand restructuring: less human labor means less calorie consumption and commuter energy demand, but more demand for rare earths, lithium, copper, and silicon; resource-rich nations gain leverage while labor-rich nations lose it, redrawing the map of strategic dependencies."
+      },
+      {
+        "order": "3",
+        "description": "Acceleration-deceleration paradox in deployment: as Physical AI proves economically dominant, incumbents over-invest in automation, but the resulting unemployment suppresses aggregate consumer demand, creating a macroeconomic feedback loop where the very efficiency gains that justify deployment also shrink the addressable market for the goods produced."
+      }
+    ],
+    "second_order_effects": [
+      {
+        "order": "2",
+        "description": "Reshoring and geographic reconfiguration of manufacturing: Physical AI reduces the labor-cost arbitrage that drove offshoring to Asia, making localized, automated micro-factories economically viable near end-consumers, which weakens export-driven economies (China, Vietnam, Mexico) and reshapes trade balances and geopolitical leverage."
+      },
+      {
+        "order": "2",
+        "description": "Real-estate value inversion: warehouse and industrial land near population centers appreciates as automated fulfillment becomes proximity-sensitive; conversely, cheap remote labor-hub regions lose their economic rationale, depressing commercial real estate in formerly low-cost manufacturing zones."
+      },
+      {
+        "order": "2",
+        "description": "Insurance and liability regime restructuring: when a humanoid robot injures a person, attribution shifts from worker negligence to product liability, forcing manufacturers to internalize tail risks; this births a new underwriting category and potentially constrains deployment speed in high-interaction environments."
+      }
+    ],
+    "confidence_assessment": {
+      "composite": 7.3,
+      "conviction": 7.0
+    },
+    "geopolitical_analysis": {
+      "summary": "Physical AI — AI embodied in robotics, autonomous vehicles, drones, industrial systems, and smart infrastructure — represents a new axis of geopolitical competition where digital intelligence meets physical control of resources, manufacturing, and military power. Unlike software AI, Physical AI is constrained by hardware supply chains (semiconductors, rare earths, sensors, actuators), manufacturing capacity, and real-world testing environments, making it inherently more tied to territorial and industrial sovereignty. The US-China rivalry is the central dynamic: China dominates hardware manufacturing and rare earth processing, while the US leads in AI software and chip design but depends on Taiwan for advanced fabrication. Physical AI also reshapes military balance through autonomous weapons, drone swarms, and surveillance networks, creating first-strike instability and proliferation risks. Meanwhile, Physical AI enables reshoring of manufacturing — eroding the labor-cost arbitrage that shaped post-Cold War globalization — which could restructure trade flows, reduce developing nations' manufacturing-led growth path, and concentrate industrial power among nations with advanced robotics ecosystems. Control over Physical AI standards, data generated by physical-world sensors, and critical infrastructure (ports, grids, transportation) becomes a vector for both soft power and coercive leverage. Nations that fail to build domestic Physical AI capabilities risk becoming dependent on foreign platforms for their industrial base, military systems, and infrastructure — a deeper form of dependency than software reliance because physical systems are harder to replace and embedded in capital-intensive, long-lived assets.",
+      "key_risks": [
+        "Autonomous weapons proliferation and arms race instability: drone swarms, loitering munitions, and AI-enabled targeting systems lower the threshold for conflict, create first-strike incentives, and diffuse rapidly to non-state actors through commercial drone supply chains.",
+        "Semiconductor and rare earth supply chain chokepoints: Physical AI depends on advanced chips (Taiwan fabrication concentration) and rare earth elements (Chinese processing dominance), creating catastrophic dependency vectors that could be severed in a crisis.",
+        "Infrastructure backdoors and cyber-physical vulnerability: Foreign-built Physical AI embedded in ports, power grids, water systems, and transportation networks creates persistent attack surfaces and potential for remote disruption or sabotage by supplier nations.",
+        "Manufacturing dependency and platform lock-in: Nations adopting foreign robotics and autonomous manufacturing platforms risk long-term dependency where upgrades, maintenance, and data flows are controlled by supplier nations, creating structural subordination in industrial capacity.",
+        "Widening development gap: Developing nations that built growth strategies on low-cost labor manufacturing face obsolescence as Physical AI enables reshoring to advanced economies, potentially trapping them in commodity dependency and fueling instability.",
+        "Standards fragmentation and balkanized ecosystems: Competing Physical AI standards blocs (US-aligned vs. China-aligned) could fragment global supply chains, raise costs, and create interoperability failures in cross-border infrastructure and trade.",
+        "Escalation through misattribution: AI-enabled physical systems (autonomous defense systems, drone patrols) may trigger unintended escalation when algorithmic decisions are misinterpreted by adversaries, particularly in contested zones like the South China Sea or Eastern Europe.",
+        "Data sovereignty conflicts: Physical AI systems generate vast real-world spatial, behavioral, and operational data; foreign platforms operating domestically create intelligence-collection risks and erode sovereign control over strategic information."
+      ],
+      "opportunities": [
+        "Reshoring and supply chain resilience: Nations with advanced Physical AI capabilities can onshore manufacturing, reducing exposure to geopolitical disruptions and rebuilding industrial sovereignty — a strategic shift from efficiency to resilience.",
+        "Military deterrence through autonomous systems: Asymmetric advantage from low-cost autonomous drone swarms and surveillance networks can offset conventional force disparities, providing deterrence for smaller or technologically-advanced nations without massive defense budgets.",
+        "New export leadership categories: Nations that establish dominance in Physical AI platforms (industrial robotics, autonomous logistics, smart infrastructure) can capture high-value export markets and set global standards, analogous to the 5G competition but with deeper industrial lock-in.",
+        "Resource access in extreme environments: Physical AI enables autonomous mining, deep-sea extraction, and space-based resource utilization — opening new frontiers for nations with the technology to operate where humans cannot, potentially reshaping resource geopolitics.",
+        "Infrastructure modernization as soft power: Exporting Physical AI-enabled infrastructure (smart ports, automated rail, intelligent energy grids) creates durable bilateral relationships and dependency, extending influence through development partnerships.",
+        "Productivity-driven economic competitiveness: Nations that deploy Physical AI fastest in manufacturing, agriculture, and logistics gain structural cost advantages that compound over time, shifting global trade balances and attracting capital investment.",
+        "Strategic ambiguity and reduced force exposure: Autonomous systems reduce casualty risk in contested operations, enabling nations to project power and maintain presence in hostile environments without domestic political costs of troop deployments.",
+        "Alliance architecture around Physical AI: Nations can build technology-sharing alliances (analogous to nuclear cooperation agreements) that pool Physical AI capabilities, creating new bloc structures that strengthen collective deterrence and industrial cooperation."
+      ]
+    },
+    "market_misconceptions": [
+      "Sim-to-real transfer is effectively a solved problem, assuming physics simulators can perfectly model the infinite variability, friction, and chaos of the physical world.",
+      "Hardware scaling will mirror the exponential cost-performance curves of software and silicon, ignoring the linear, capital-intensive realities of mechanical engineering and supply chain logistics.",
+      "Energy density and battery technology will sufficiently improve to power continuous, high-torque physical labor without frequent, disruptive recharging.",
+      "Liability and insurance frameworks will rapidly adapt to accommodate machines that can cause physical harm or property damage, keeping premiums low enough to preserve unit economics.",
+      "General-purpose humanoid form factors are the optimal design for physical tasks, rather than specialized, single-purpose automated systems."
+    ],
+    "portfolio_implications": {
+      "composite": 7.3,
+      "narrative_score": {
+        "duration": 8.0,
+        "conviction": 7.0,
+        "economic_impact": 9.0,
+        "valuation_support": 5.0,
+        "narrative_strength": 8.0,
+        "adoption_probability": 6.0,
+        "bottleneck_advantage": 7.0,
+        "market_awareness_gap": 7.0,
+        "second_order_effects": 9.0,
+        "competitive_advantage": 7.0
+      }
+    },
+    "psychological_analysis": {
+      "biases": [
+        "Recency Bias: Extrapolating the explosive, rapid breakthroughs of digital LLMs directly onto physical robotics, ignoring that mechanical engineering and real-world physics do not obey Moore's Law.",
+        "Availability Heuristic: Valuing companies based on highly produced, viral demonstration videos of robots performing tasks, while remaining blind to the teleoperation, pre-programmed routes, or highly controlled environments operating behind the scenes.",
+        "Narrative Fallacy: Constructing a tidy, linear progression story that 'digital AI was phase one, physical AI is phase two,' forcing a deterministic sequence onto a highly non-linear, multi-disciplinary problem space.",
+        "Herd Behavior: FOMO-driven capital allocation into humanoid robotics startups at billion-dollar valuations, driven primarily by the participation of prominent tech CEOs and mega-cap VCs rather than fundamental unit economics.",
+        "Overconfidence: Believing that scaling laws (more parameters and more compute) will inevitably solve complex problems of physical dexterity, proprioception, and spatial reasoning, underestimating the sheer complexity of real-world physics.",
+        "Confirmation Bias: Selectively ignoring the repeated, failed timelines of fully autonomous vehicles over the past decade, using only the recent successes of foundation models to confirm the imminent arrival of general-purpose physical robots."
+      ],
+      "consensus_view": "Physical AI—encompassing humanoid robots, autonomous vehicles, and industrial automation—is the inevitable next frontier following large language models. The consensus believes that foundation models will seamlessly transfer to the physical world, solving labor shortages in manufacturing, logistics, and domestic work. Investors expect a rapid scaling curve where companies leveraging AI compute (like Nvidia) and high-profile robotics startups (like Figure or Tesla) will capture multi-trillion-dollar markets by replacing human labor at a fraction of the cost within the next decade.",
+      "narrative_risks": [
+        "The 'Long Tail' of Edge Cases: Unlike text generation, physical environments are unforgiving and infinitely variable. The last 10% of autonomous physical capability (e.g., navigating a cluttered, dynamic home) may require 90% of the capital and time, stalling deployment indefinitely.",
+        "Atoms vs. Bits Friction: Software scales at near-zero marginal cost; physical AI requires massive upfront CapEx for manufacturing, precision actuators, and rare earth materials. Supply chain bottlenecks could severely throttle the expected exponential growth.",
+        "Liability Asymmetry: When an LLM hallucinates, the cost is a rewritten paragraph; when a Physical AI system fails, the cost is physical harm or death. A few high-profile accidents could trigger draconian regulation, crippling the industry's ability to operate in public spaces.",
+        "Maintenance and Total Cost of Ownership (TCO): The narrative assumes robots will be cheaper than human labor, but ignores the high costs of ongoing maintenance, mechanical wear-and-tear, and specialized repair infrastructure, potentially making TCO uncompetitive with cheap human labor in emerging markets.",
+        "Compute and Latency Constraints: Real-time physical interaction requires ultra-low latency inference at the edge. Current battery and edge-compute limitations may force a reliance on cloud connectivity, which is unviable for split-second physical reactions in dead zones."
+      ],
+      "hidden_assumptions": [
+        "Sim-to-real transfer is effectively a solved problem, assuming physics simulators can perfectly model the infinite variability, friction, and chaos of the physical world.",
+        "Hardware scaling will mirror the exponential cost-performance curves of software and silicon, ignoring the linear, capital-intensive realities of mechanical engineering and supply chain logistics.",
+        "Energy density and battery technology will sufficiently improve to power continuous, high-torque physical labor without frequent, disruptive recharging.",
+        "Liability and insurance frameworks will rapidly adapt to accommodate machines that can cause physical harm or property damage, keeping premiums low enough to preserve unit economics.",
+        "General-purpose humanoid form factors are the optimal design for physical tasks, rather than specialized, single-purpose automated systems."
+      ]
+    },
+    "adoption_curve_analysis": {
+      "stage": "Early Adopters",
+      "growth_rate": 28,
+      "penetration_pct": 12,
+      "inflection_points": [
+        "Commercial deployment of general-purpose humanoid robots in logistics and warehousing at scale.",
+        "Standardization of interoperability protocols for heterogeneous robot fleets.",
+        "Breakthrough in solid-state batteries or energy harvesting enabling extended autonomous operation.",
+        "Sustained labor cost inflation crossing the threshold of robotic ROI payback periods in non-industrial sectors."
+      ]
+    },
+    "investment_opportunities": [
+      {
+        "type": "contrarian",
+        "title": "Precision Motion Control Components as the True Bottleneck",
+        "thesis": "Physical AI narratives obsess over robot makers (Figure, Tesla, Agility) but the binding constraint is precision motion components—harmonic drives, planetary gears, encoders, and torque sensors. These are manufactured by a handful of Japanese and European firms with decades of metallurgical and precision-machining know-how that cannot be replicated quickly. As humanoid and industrial robotics demand scales, these component suppliers capture margin across every robot platform regardless of which OEM wins, with far less valuation attention than the robot brands themselves.",
+        "awareness_gap": "Markets price humanoid robot companies at billion-dollar valuations pre-revenue while the component suppliers that must scale 10-100x for volume production trade at industrial multiples with limited robotics narrative premium.",
+        "valuation_note": "Harmonic Drive Systems and Nabtesco trade at moderate P/E ratios reflecting traditional industrial automation demand, not the option value of humanoid robotics volume that could 5-10x their addressable market.",
+        "potential_losers": [
+          "Robot OEMs attempting vertical integration of precision gearboxes with no manufacturing heritage",
+          "Chinese component makers facing quality/reliability gaps in high-DOF applications"
+        ],
+        "potential_winners": [
+          "Harmonic Drive Systems (Japan)",
+          "Nabtesco (Japan)",
+          "THK Co (Japan)",
+          "SKF (Sweden)",
+          "Nidec (Japan)",
+          "Heidenhain (Germany, private)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Sim-to-Real Training Infrastructure",
+        "thesis": "The fundamental bottleneck in physical AI is not compute or models—it is the gap between simulation and physical reality. Training robots requires millions of physical interactions that are slow, expensive, and dangerous. Physics-accurate simulation environments that can generate synthetic training data and enable sim-to-real transfer are the picks-and-shovels play. The market underestimates how much of physical AI's progress depends on simulation fidelity, not just model architecture.",
+        "awareness_gap": "Investors focus on LLM-style scaling laws for robotics but physical AI requires a fundamentally different data pipeline—physics simulation—that has no equivalent in text/image AI. The companies building this layer are underrecognized.",
+        "valuation_note": null,
+        "potential_losers": [
+          "Robot startups building proprietary simulation stacks from scratch (capital drain, slower iteration)",
+          "Pure-play AI chip companies that ignore the simulation workload demand"
+        ],
+        "potential_winners": [
+          "NVIDIA (Omniverse/Isaac Sim)",
+          "Ansys (physics simulation)",
+          "Unity Technologies (simulation environments)",
+          "Dassault Systèmes (3D simulation)",
+          "MuJoCo/open-source ecosystem beneficiaries"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Industrial Machine Vision as Physical AI's Sensory Layer",
+        "thesis": "Physical AI deployment in manufacturing, logistics, and inspection requires massive expansion of machine vision infrastructure. Every robot needs eyes, and the shift from rule-based vision to neural-network-based vision creates a replacement cycle across entire industrial installed bases. Keyence and Cognex are positioned as toll collectors on this transition, with deep customer relationships and proprietary lighting/optics integration that pure software plays cannot match.",
+        "awareness_gap": null,
+        "valuation_note": null,
+        "potential_losers": [
+          "Manual visual inspection service providers",
+          "Low-end Chinese vision sensor commoditizers facing margin compression as requirements escalate"
+        ],
+        "potential_winners": [
+          "Keyence (Japan)",
+          "Cognex (US)",
+          "Basler (Germany)",
+          "Teledyne Technologies (US)",
+          "ISRA Vision (Germany, Trinafyssel)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Rare Earth and Magnetic Materials Supply Chain for Robotic Actuators",
+        "thesis": "Physical AI at scale means hundreds of millions of electric motors in robots, drones, and autonomous vehicles. Each requires neodymium or samarium-cobalt permanent magnets. The supply chain is concentrated in China (>85% of processing), creating both a geopolitical vulnerability and an investment opportunity in non-Chinese supply. Western governments are funding supply chain reshoring, but the market has not priced the demand surge from robotics specifically (distinct from EV demand).",
+        "awareness_gap": "Rare earth demand narratives focus almost exclusively on EVs and wind turbines. Robotic actuator demand is a second derivative that could add 20-40% to permanent magnet demand by 2030, but is absent from most commodity models.",
+        "valuation_note": "MP Materials and Lynas trade on EV-driven rare earth demand models. Incorporating robotics actuator demand meaningfully shifts volume projections, particularly for high-grade neodymium used in precision servomotors.",
+        "potential_losers": [
+          "Robot OEMs with no hedging strategy for rare earth price spikes",
+          "Induction motor alternatives that lose on power density for compact robotic applications"
+        ],
+        "potential_winners": [
+          "MP Materials (US)",
+          "Lynas Rare Earths (Australia)",
+          "VAC Vacuumschmelze (Germany, private)",
+          "USA Rare Earth",
+          "Energy Fuels (US, rare earth processing)"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Warehouse and Logistics Automation—The Near-Term Physical AI Deployment",
+        "thesis": "While humanoid robots capture narrative attention with 5-10 year timelines, warehouse automation is deploying physical AI now, driven by structural labor shortages, e-commerce growth, and proven ROI. The market misperception is treating warehouse robotics as a mature, low-growth category when in fact AI-driven flexibility (vs. rigid fixed automation) is enabling a new adoption wave among mid-market customers previously priced out.",
+        "awareness_gap": null,
+        "valuation_note": null,
+        "potential_losers": [
+          "Traditional warehouse operators with manual processes facing structural cost disadvantage",
+          "Fixed-automation legacy providers (traditional conveyor/ASRS) without software flexibility"
+        ],
+        "potential_winners": [
+          "Symbotic (US)",
+          "AutoStore (Norway)",
+          "Kardex Group (Switzerland)",
+          "Berkshire Grey (US, Symbotic acquisition)",
+          "Hai Robotics (China, private)",
+          "Geek+ (China, private)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Agricultural Robotics—Physical AI's Most Underrated Vertical",
+        "thesis": "Agriculture faces the most severe labor shortage of any physical industry, has well-defined repetitive tasks (planting, spraying, harvesting, weeding), operates in semi-structured environments, and has clear ROI metrics per acre. Yet agricultural robotics receives a fraction of the funding and narrative attention of humanoid or warehouse robotics. John Deere's autonomous tractor strategy and specialized weeding/laser companies represent physical AI deployment at scale years ahead of general-purpose robotics.",
+        "awareness_gap": "The narrative treats ag robotics as niche, but the total addressable market (global agricultural labor + input costs) exceeds $500B. Precision spraying and laser weeding also reduce chemical usage 70-90%, creating a regulatory tailwind as pesticide restrictions tighten globally.",
+        "valuation_note": "Deere trades at a premium but its autonomy IP is undercredited. Pure-play ag robotics companies are private but represent acquisition targets for major OEMs (AGCO, CNH, Kubota) that must add autonomy to remain competitive.",
+        "potential_losers": [
+          "Agricultural chemical companies (Syngenta, Bayer, Corteva)—precision application erodes volume",
+          "Farm labor brokers and H-2A dependent operators",
+          "Traditional equipment OEMs without autonomous roadmaps"
+        ],
+        "potential_winners": [
+          "Deere & Company (US)",
+          "Carbon Robotics (US, private)",
+          "Naio Technologies (France, private)",
+          "AGCO/FPT Industrial (acquisitive)",
+          "Kubota (Japan, entering autonomy)",
+          "Monarch Tractor (US, private)"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Edge AI Silicon Optimized for Mobile Robotic Platforms",
+        "thesis": "Physical AI requires inference at the edge under severe power, thermal, and latency constraints that cloud/datacenter AI silicon does not face. A humanoid robot must perform real-time perception, planning, and control on 100-500W. This requires a new class of AI accelerators optimized for INT4/INT8 efficiency, not the HBM-heavy architecture of datacenter GPUs. The market is pricing physical AI as an NVIDIA extension when the silicon requirements are fundamentally different.",
+        "awareness_gap": null,
+        "valuation_note": null,
+        "potential_losers": [
+          "Datacenter-only AI chip designers with no edge power-efficiency roadmap",
+          "FPGA-dependent robotics platforms facing cost/size pressures at scale"
+        ],
+        "potential_winners": [
+          "Qualcomm (robotics RB-series platforms)",
+          "NXP Semiconductors (automotive/industrial edge)",
+          "Ambarella (vision SoCs)",
+          "NVIDIA (Jetson ecosystem, near-term)",
+          "Renesas (motor control + AI integration)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Robotics Liability and Autonomous System Insurance",
+        "thesis": "As physical AI systems deploy in human environments, liability frameworks are undefined. Who is liable when an autonomous forklift injures a worker—the OEM, the fleet operator, the AI model provider? This regulatory vacuum creates an emerging market for specialized autonomous system insurance, risk modeling, and certification. The first insurers and certifiers to develop actuarial models for physical AI risk will capture a new insurance category that did not exist five years ago.",
+        "awareness_gap": "The insurance industry has no actuarial data for autonomous physical systems. Most investors view this as a risk to robot companies rather than an opportunity for insurance/certification providers. EU AI Act and OSHA updates will force certification requirements.",
+        "valuation_note": null,
+        "potential_losers": [
+          "Robotics startups without liability insurance strategy facing deployment blockers",
+          "Traditional workers' compensation insurers if displacement accelerates faster than premium repricing"
+        ],
+        "potential_winners": [
+          "Munich Re (developing autonomous vehicle/robot risk models)",
+          "Swiss Re",
+          "Bureau Veritas (certification services)",
+          "TÜV SÜD/TÜV Rheinland (safety certification)",
+          "UL Solutions (US safety certification)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Tactile Sensing and Manipulation—Physical AI's Last Mile",
+        "thesis": "Vision AI has largely been solved; manipulation AI has not. The gap is tactile sensing—robots cannot feel what they grip. Current robotic hands use position control without force feedback, limiting them to rigid objects in known poses. High-resolution tactile skin and force-torque sensing is the enabling technology for general-purpose manipulation (folding clothes, assembling electronics, food handling). This is the most underfunded area in physical AI relative to its importance as a bottleneck.",
+        "awareness_gap": "Nearly all physical AI investment flows to perception (vision/LiDAR) and planning (LLM-based), but the manipulation problem—which requires tactile feedback—receives minimal funding. The market has not identified tactile sensing as the critical path to useful general-purpose robots.",
+        "valuation_note": null,
+        "potential_losers": [
+          "Humanoid robot companies promising general manipulation without tactile sensing roadmaps",
+          "Pure vision-based grasping startups that will hit capability ceilings on deformable/fragile objects"
+        ],
+        "potential_winners": [
+          "SynTouch (US, private, tactile sensors)",
+          "OnRobot (Denmark, end-of-arm tooling)",
+          "ATI Industrial Automation (US, force-torque sensors)",
+          "Robotiq (Canada, private)",
+          "Soft robotics companies (Soft Robotics Inc, private)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Power and Energy Infrastructure for Physical AI Deployment",
+        "thesis": "Physical AI creates a dual energy demand: massive compute for training (datacenter) and distributed energy for fleet operation (charging infrastructure for thousands of mobile robots). Warehouse and factory operators deploying robot fleets face power density challenges—existing electrical infrastructure cannot support simultaneous fast-charging of 50-100 autonomous mobile robots. This creates opportunities in industrial power distribution, battery systems, and energy management software that the market has not connected to the physical AI narrative.",
+        "awareness_gap": "Energy infrastructure narratives focus on datacenter power for AI training. The distributed energy challenge of operating physical AI fleets at scale—charging infrastructure, peak demand management, battery standardization—is unaddressed and unrecognized.",
+        "valuation_note": null,
+        "potential_losers": [
+          "Warehouse/factory REITs with inadequate power infrastructure facing costly retrofits",
+          "Robot fleet operators underestimating energy costs in unit economics"
+        ],
+        "potential_winners": [
+          "Schneider Electric (industrial power management)",
+          "Eaton (electrical infrastructure)",
+          "ABB (charging and power electronics)",
+          "ChargePoint/Blink (commercial fleet charging adaptation)",
+          "Enphase Energy (distributed energy management)"
+        ]
+      }
+    ]
+  }
+}

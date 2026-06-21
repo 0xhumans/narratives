@@ -1,0 +1,835 @@
+{
+  "id": "736b5838-3b29-4d40-b959-01d8ab94db11",
+  "narrative_id": "330618ba-2e2e-41c7-9e04-549aee7291c2",
+  "version": 1,
+  "generated_at": "2026-06-21T12:20:42.770649Z",
+  "payload": {
+    "key_drivers": [
+      "Hyperscaler capex acceleration: Microsoft, Google, Meta, Amazon collectively guiding toward $300B+ annual capex, with AI infrastructure absorbing the majority share",
+      "Advanced semiconductor supply constraints: TSMC CoWoS packaging, HBM3e/HBM4 yields, and EUV node capacity creating multi-quarter backlogs and pricing power for NVIDIA, AMD, and Broadcom",
+      "Energy and power grid bottlenecks: Data center power demand projected to exceed 8% of US electricity by 2030, driving investment in gas, nuclear (SMRs), and behind-the-meter generation",
+      "Sovereign AI initiatives: Countries and regions (EU, Saudi Arabia, UAE, India, Japan) building national GPU clusters and domestic foundry access, creating a parallel demand vector beyond commercial hyperscalers",
+      "Networking and interconnect density: Scale-up and scale-out architectures requiring NVLink, InfiniBand, Ethernet (Ultra Ethernet Consortium), and silicon photonics—creating a secondary capex layer beneath GPUs",
+      "Custom silicon and ASIC diversification: Google TPU, AWS Trainium/Inferentia, Meta MTIA reducing single-vendor dependency and expanding the total addressable infrastructure market",
+      "Inference workload migration from training: As models move to production deployment, inference infrastructure (lower precision, edge, and distributed) becomes the dominant compute consumer, shifting the architecture mix",
+      "Geopolitical supply chain fragmentation: US export controls on advanced chips to China, CHIPS Act subsidies, and allied-nation fab buildout reshaping the cost structure and geographic distribution of AI compute capacity"
+    ],
+    "value_capture": [
+      {
+        "roic": 8.0,
+        "role": "creator",
+        "notes": "Nvidia's CUDA ecosystem creates a deep software moat atop hardware dominance. Pricing power is near-monopolistic today but AMD MI-series and hyperscaler custom ASICs (Google TPU, AWS Trainium, Meta MTIA) are eroding share at the margin. Fabless model keeps capex below foundry but R&D is enormous. Value accrues disproportionately here because the entire stack depends on scarce compute.",
+        "layer_name": "AI Accelerator Silicon Design (GPU/ASIC)",
+        "pricing_power": 8.0,
+        "revenue_growth": 9.0,
+        "barriers_to_entry": 9.0,
+        "capital_intensity": 7.0,
+        "competitive_intensity": 6.0
+      },
+      {
+        "roic": 6.0,
+        "role": "creator",
+        "notes": "TSMC's effective monopoly on sub-3nm nodes gives extraordinary pricing power, but the economics are capital-destroying: each node generation costs $20-40B in capex. ROIC is structurally capped by relentless reinvestment requirements. Intel Foundry's struggles validate the moat. Geopolitically irreplaceable but financially a toll road, not a margin machine.",
+        "layer_name": "Advanced Foundry Manufacturing",
+        "pricing_power": 8.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 10.0,
+        "capital_intensity": 10.0,
+        "competitive_intensity": 4.0
+      },
+      {
+        "roic": 7.0,
+        "role": "capturer",
+        "notes": "AWS, Azure, GCP capture value by intermediating access to compute. They are the distribution chokepoint for enterprises lacking capacity to build their own. However, they are also the largest buyers of Nvidia silicon, meaning significant value leaks upstream. Capex run-rates of $50-70B/year per major player depress ROIC. Oligopoly pricing is real but each player is racing to subsidize AI workloads for share.",
+        "layer_name": "Hyperscale Cloud Platforms",
+        "pricing_power": 7.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 9.0,
+        "capital_intensity": 9.0,
+        "competitive_intensity": 6.0
+      },
+      {
+        "roic": 8.0,
+        "role": "creator",
+        "notes": "Broadcom (Tomahawk/Jericho), Arista, and Nvidia/Mellanox (InfiniBand) own the fabric that makes GPU clusters function as single systems. Underappreciated bottleneck: as cluster sizes scale to 100K+ GPUs, network topology and congestion control become the binding constraint on training efficiency. Capital-light relative to silicon, with strong proprietary silicon and firmware moats.",
+        "layer_name": "High-Speed Networking and Interconnect",
+        "pricing_power": 7.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 7.0,
+        "capital_intensity": 5.0,
+        "competitive_intensity": 5.0
+      },
+      {
+        "roic": 6.0,
+        "role": "creator",
+        "notes": "Vector databases (Pinecone, Weaviate), object storage, and high-throughput file systems are necessary plumbing. Growth is solid but commoditization pressure is intense from open-source alternatives and hyperscaler-native offerings. Limited differentiation beyond performance benchmarks. Not a primary value capture point.",
+        "layer_name": "Data and Storage Infrastructure",
+        "pricing_power": 5.0,
+        "revenue_growth": 6.0,
+        "barriers_to_entry": 5.0,
+        "capital_intensity": 5.0,
+        "competitive_intensity": 6.0
+      },
+      {
+        "roic": 5.0,
+        "role": "creator",
+        "notes": "Kubernetes, Ray, MLflow, Kubeflow, Weights & Biases. Critical for operationalizing AI but open-source dominance destroys pricing power. The layer is architecturally essential but economically thin. Most companies monetize via managed SaaS wrappers with 60-70% gross margins but face relentless commoditization from hyperscaler-native equivalents.",
+        "layer_name": "AI Orchestration and MLOps Platforms",
+        "pricing_power": 4.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 4.0,
+        "capital_intensity": 3.0,
+        "competitive_intensity": 8.0
+      },
+      {
+        "roic": 4.0,
+        "role": "capturer",
+        "notes": "Data center power demand is projected to grow 15-20% CAGR through 2030, straining grid capacity. Regulated utilities capture volume growth but not pricing upside due to rate-of-return regulation. The real bottleneck is transmission and interconnection queues (3-5 year delays). Gas turbine and backup generator suppliers (GE Vernova, Caterpillar) have better economics than utilities. Nuclear (SMRs) is a long-dated option, not a near-term solution.",
+        "layer_name": "Energy and Power Infrastructure",
+        "pricing_power": 4.0,
+        "revenue_growth": 5.0,
+        "barriers_to_entry": 8.0,
+        "capital_intensity": 9.0,
+        "competitive_intensity": 3.0
+      },
+      {
+        "roic": 7.0,
+        "role": "creator",
+        "notes": "Liquid cooling (direct-to-chip, immersion) is transitioning from optional to mandatory as rack densities exceed 40kW. Vertiv, Schneider Electric, and specialized players like CoolIT have proprietary thermal engineering. Moderate capex, defensible IP, and a forced adoption curve driven by physics. Underfollowed but structurally attractive.",
+        "layer_name": "Cooling and Data Center Physical Infrastructure",
+        "pricing_power": 6.0,
+        "revenue_growth": 6.0,
+        "barriers_to_entry": 6.0,
+        "capital_intensity": 6.0,
+        "competitive_intensity": 5.0
+      }
+    ],
+    "feedback_loops": [
+      {
+        "kind": "reinforcing",
+        "strength": 9.5,
+        "description": "AI Infrastructure is the substrate on which Artificial Intelligence advances depend — compute clusters, accelerators, interconnects, and data pipelines determine the frontier of model scale, training throughput, and inference latency. Every capability leap in AI is gated by available flops, memory bandwidth, and networking. Conversely, AI progress generates insatiable demand for more infrastructure, creating a tight feedback loop. The two narratives are nearly inseparable, with infrastructure as the physical bottleneck and AI as the demand engine.",
+        "target_narrative": "Artificial Intelligence"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 8.5,
+        "description": "Hyperscale AI data centers require hundreds of megawatts to gigawatts of reliable, baseload, carbon-free power — a demand profile that aligns almost perfectly with nuclear generation. AI infrastructure buildout is the single largest new source of electricity demand growth in the developed world, reviving stalled nuclear projects, accelerating SMR development, and driving direct PPAs between hyperscalers and nuclear operators. Nuclear in turn de-risks AI infrastructure expansion by solving the grid capacity and emissions constraint.",
+        "target_narrative": "Nuclear Renaissance"
+      },
+      {
+        "kind": "resource_competition",
+        "strength": 8.0,
+        "description": "AI infrastructure is extraordinarily resource-intensive: rare earths and advanced materials for chips, enormous freshwater withdrawals for data center cooling, gigawatt-scale electricity demand straining grid capacity, and concentrated demand for HBM, advanced packaging, and fab capacity. This directly competes with other narratives and broader economic activity for finite semiconductor supply chains, water rights in arid regions, grid interconnection queues, and specialized engineering talent.",
+        "target_narrative": "Resource Scarcity"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.5,
+        "description": "AI infrastructure demands domestic semiconductor fabrication, advanced packaging, precision manufacturing equipment, and resilient supply chains — directly catalyzing reindustrialization in chip-producing nations. Conversely, reindustrialization provides the manufacturing base, workforce, and policy environment (CHIPS Act, EU Chips Act) needed to physically build AI infrastructure. Smart factories enabled by AI infrastructure further accelerate industrial reshoring by reducing labor cost arbitrage.",
+        "target_narrative": "Reindustrialization"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.0,
+        "description": "Genomic sequencing, protein structure prediction, molecular dynamics simulation, and drug discovery are increasingly compute-bound problems that run on AI infrastructure. Large-scale GPU clusters enable foundation models for biology (AlphaFold, ESM, etc.) that were infeasible a decade ago. AI infrastructure providers are increasingly offering bio-specific cloud offerings, and biotech firms are becoming major compute consumers, creating a reinforcing demand loop.",
+        "target_narrative": "Biotechnology Revolution"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.0,
+        "description": "Autonomous defense systems — drone swarms, autonomous targeting, real-time battlefield intelligence fusion, and command-and-control AI — require ruggedized edge compute, secure classified cloud infrastructure, and low-latency processing pipelines. Defense autonomy is architecturally dependent on AI infrastructure tailored for SWaP-constrained environments and air-gapped secure facilities. Defense budgets are becoming a major infrastructure funding source, while defense requirements push infrastructure toward edge-deployable, hardened designs.",
+        "target_narrative": "Defense Autonomy"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 6.5,
+        "description": "Modern robotics relies on AI infrastructure for training foundation models (vision-language-action models, world models) on massive GPU clusters, and increasingly for cloud-based inference and fleet learning. The shift from hand-coded control to learned policies makes robotics compute-dependent. AI infrastructure also enables simulation environments at scale for robot training. As robotics deployments grow, they generate edge compute demand and create a reinforcing pull for both cloud training infrastructure and edge inference hardware.",
+        "target_narrative": "Robotics"
+      },
+      {
+        "kind": "resource_competition",
+        "strength": 6.5,
+        "description": "AI infrastructure and climate adaptation compete for the same scarce resources: clean electricity, water for cooling, grid capacity, and capital. Data center water consumption directly conflicts with drought resilience needs in water-stressed regions. Grid buildout for AI data centers can delay electrification projects needed for climate adaptation. While AI can model climate systems, the physical resource footprint of AI infrastructure is large and growing, creating genuine tension with decarbonization and resilience goals.",
+        "target_narrative": "Climate Adaptation"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 5.0,
+        "description": "Space economy generates exabytes of satellite imagery, telemetry, and sensor data requiring AI infrastructure for processing, and increasingly relies on AI for autonomous satellite operations, orbital debris tracking, and mission planning. There is also emerging demand for space-deployed AI compute (edge processing on satellites to reduce downlink bandwidth). While still early, the two narratives reinforce each other as space data volume grows and orbital AI applications mature.",
+        "target_narrative": "Space Economy"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 4.5,
+        "description": "AI infrastructure enables the healthcare AI applications most relevant to aging populations: clinical decision support, drug discovery for age-related diseases, personalized medicine, and eldercare robotics. The economic pressure of aging populations drives demand for AI-enabled productivity gains in healthcare, which in turn drives compute demand. However, the interaction is indirect — AI infrastructure enables the tools, but the demand signal from aging demographics is mediated through healthcare AI adoption, making it real but less tightly coupled.",
+        "target_narrative": "Aging Population"
+      }
+    ],
+    "hidden_effects": [
+      {
+        "order": "hidden",
+        "description": "Water consumption for data center cooling creates localized aquifer stress in arid regions (e.g., Arizona, West Texas, Middle East), generating non-obvious environmental liabilities and potential regulatory restrictions invisible in standard capex models."
+      },
+      {
+        "order": "hidden",
+        "description": "Compute concentration creates a single-point-of-failure systemic risk: a physical attack, EMP event, or cascading grid failure affecting major data center hubs (Ashburn, Quincy, Dublin) could simultaneously degrade critical AI services across the economy, creating an unrecognized tail risk."
+      },
+      {
+        "order": "hidden",
+        "description": "The 'compute tax' on model inference quietly embeds rent extraction into the cost structure of nearly every digital service; over time, hyperscaler pricing power functions as a hidden inflation vector across the digital economy, difficult to attribute in CPI."
+      },
+      {
+        "order": "hidden",
+        "description": "Training data scarcity and model collapse dynamics: as AI-generated content saturates the internet, future training runs increasingly ingest synthetic data, potentially degrading model quality in ways not visible until multiple generations of models are deployed—a negative compounding effect masked by short-term capability gains."
+      },
+      {
+        "order": "hidden",
+        "description": "Cooling and power infrastructure lock-in: data centers built today with 10-15 year depreciation schedules are physically optimized for current chip thermal profiles; rapid shifts in accelerator architecture (e.g., liquid-cooled direct-to-chip, optical interconnects) could strand assets built for air-cooled GPU racks, creating hidden impairment risk."
+      }
+    ],
+    "potential_losers": [
+      [
+        "Pure-play renewable developers without dispatchable storage",
+        "Natural gas peaker plants facing carbon regulatory risk"
+      ],
+      [
+        "Legacy CRAC/HVAC providers",
+        "Raised-floor data center designs",
+        "Companies slow to adopt liquid cooling"
+      ],
+      [
+        "Nvidia (relative to consensus expectations)",
+        "Merchant silicon vendors lacking custom design capabilities"
+      ],
+      [
+        "Copper cabling providers",
+        "Traditional short-reach copper transceiver makers"
+      ],
+      [
+        "Industries heavily reliant on copper facing margin compression (e.g., traditional automotive, construction)"
+      ],
+      [
+        "Data center operators in power-constrained primary markets without secured capacity",
+        "Traditional office REITs"
+      ],
+      [
+        "Data center operators in arid regions lacking water rights or recycling capabilities",
+        "Local municipalities facing resource depletion"
+      ]
+    ],
+    "narrative_summary": "AI Infrastructure represents the foundational compute, networking, storage, and energy stack underpinning the artificial intelligence buildout—spanning advanced semiconductors (GPUs, ASICs, custom silicon), hyperscale data centers, high-bandwidth memory, optical interconnects, liquid cooling, and the power grid feeding them. The narrative has shifted from speculative AI enthusiasm to a tangible capex cycle, with hyperscalers (Microsoft, Google, Meta, Amazon) and sovereign actors committing hundreds of billions to capacity expansion. The SMH semiconductor complex trading near 660 reflects this intensity, as does the bifurcation between broad robotics ETFs (BOTZ ~38, IRBO ~79) capturing downstream automation versus the pick-and-shovel silicon layer capturing the immediate spend. The current phase is characterized by supply-constrained growth—TSMC CoWoS capacity, HBM3e yields, and advanced packaging bottlenecks are the binding constraints, not demand.",
+    "potential_winners": [
+      [
+        "Constellation Energy",
+        "Vistra Corp",
+        "Centrus Energy",
+        "Cameco",
+        "Oklo"
+      ],
+      [
+        "Vertiv Holdings",
+        "Modine Manufacturing",
+        "Schneider Electric",
+        "Asetek"
+      ],
+      [
+        "Broadcom",
+        "Marvell Technology",
+        "ARM Holdings",
+        "Alphabet",
+        "Amazon"
+      ],
+      [
+        "Lumentum Holdings",
+        "Coherent Corp",
+        "Corning",
+        "Ciena"
+      ],
+      [
+        "Freeport-McMoRan",
+        "Southern Copper",
+        "BHP Group",
+        "Teck Resources"
+      ],
+      [
+        "Digital Realty Trust",
+        "Iron Mountain",
+        "American Tower",
+        "Local utilities in Texas/Southeast"
+      ],
+      [
+        "American Water Works",
+        "Xylem",
+        "Ecolab",
+        "Data center operators with advanced closed-loop cooling"
+      ]
+    ],
+    "dependency_network": [
+      {
+        "type": "resource",
+        "layer": "Hardware",
+        "weight": 10.0,
+        "description": "Advanced semiconductors (GPUs, TPUs, ASICs) and high-bandwidth memory (HBM) required for parallel processing and model training."
+      },
+      {
+        "type": "input",
+        "layer": "Hardware",
+        "weight": 10.0,
+        "description": "Leading-edge foundry capacity (e.g., TSMC) and advanced packaging (CoWoS) necessary to manufacture AI accelerators."
+      },
+      {
+        "type": "resource",
+        "layer": "Hardware",
+        "weight": 8.0,
+        "description": "High-speed networking equipment (InfiniBand, optical transceivers, high-throughput switches) to connect compute clusters into a unified fabric."
+      },
+      {
+        "type": "resource",
+        "layer": "Energy",
+        "weight": 10.0,
+        "description": "Massive, reliable electricity supply from the grid to power continuous, high-density compute loads."
+      },
+      {
+        "type": "resource",
+        "layer": "Facilities",
+        "weight": 9.0,
+        "description": "Specialized data centers engineered for high rack power density and advanced thermal management."
+      },
+      {
+        "type": "resource",
+        "layer": "Facilities",
+        "weight": 8.0,
+        "description": "Advanced cooling infrastructure (direct-to-chip liquid cooling, rear-door heat exchangers) to manage extreme thermal output."
+      },
+      {
+        "type": "resource",
+        "layer": "Facilities",
+        "weight": 7.0,
+        "description": "Large volumes of water required for evaporative cooling towers and industrial liquid cooling systems."
+      },
+      {
+        "type": "resource",
+        "layer": "Facilities",
+        "weight": 7.0,
+        "description": "Construction materials, heavy equipment, and specialized supply chains to build new hyperscale data center capacity."
+      },
+      {
+        "type": "resource",
+        "layer": "Human Capital",
+        "weight": 8.0,
+        "description": "Skilled labor including hardware engineers, network architects, power systems engineers, and data center technicians."
+      },
+      {
+        "type": "resource",
+        "layer": "Financial",
+        "weight": 9.0,
+        "description": "Capital availability for multi-billion dollar CapEx investments by hyperscalers, sovereign wealth funds, and venture capital."
+      },
+      {
+        "type": "constraint",
+        "layer": "Geopolitical",
+        "weight": 8.0,
+        "description": "Export controls, trade restrictions, and Taiwan Strait tensions affecting the global semiconductor supply chain."
+      },
+      {
+        "type": "constraint",
+        "layer": "Regulatory",
+        "weight": 6.0,
+        "description": "Local zoning laws, grid interconnection queues, and environmental regulations that limit or delay data center build-outs."
+      },
+      {
+        "type": "input",
+        "layer": "Data",
+        "weight": 9.0,
+        "description": "High-quality, proprietary, and public datasets required for training, fine-tuning, and inference operations."
+      }
+    ],
+    "future_bottlenecks": [
+      {
+        "name": "Inter-Fabric Networking Bandwidth at Cluster Scale",
+        "tier": "emerging",
+        "cause": "Scaling beyond 25,000 GPUs per cluster exposes InfiniBand/Ethernet switching as the bottleneck. Latency variance across optical links degrades training efficiency non-linearly. Current 400G/800G optics cannot keep pace with GPU interconnect demands. 1.6T optics are 18-24 months from volume production.",
+        "losers": [
+          "Cisco (legacy switching displaced)",
+          "Mellanox-era architectures",
+          "Hyperscalers with suboptimal network topologies"
+        ],
+        "winners": [
+          "Broadcom (Tomahawk, Jericho)",
+          "Arista Networks",
+          "Coherent/Lumentum (optical components)",
+          "Marvell (custom silicon for switching)"
+        ],
+        "severity": 7.0,
+        "time_horizon": "1-3 years",
+        "market_awareness": "Moderate - understood by networking engineers but not yet reflected in semiconductor sector valuations for optical component makers"
+      },
+      {
+        "name": "Grid Transmission Infrastructure Deficit",
+        "tier": "emerging",
+        "cause": "Even where power generation exists, transmission lines to deliver electricity to data center sites face 7-10 year permitting timelines. FERC Order 1920 helps but state-level siting battles persist. The gap between generation capacity and deliverable power is the real constraint, not raw megawatts.",
+        "losers": [
+          "Data center developers in constrained grids (Northern Virginia)",
+          "Renewables without transmission access",
+          "Hyperscalers with stranded generation contracts"
+        ],
+        "winners": [
+          "Transmission equipment manufacturers (GE Vernova, Hitachi Energy)",
+          "HVDC specialists",
+          "Grid software/optimization companies",
+          "Utilities with pre-existing transmission rights-of-way"
+        ],
+        "severity": 8.0,
+        "time_horizon": "2-5 years",
+        "market_awareness": "Low-Moderate - market focuses on generation (nuclear, gas) but misses the transmission bottleneck that determines whether power can actually reach AI loads"
+      },
+      {
+        "name": "AI Hardware Engineering Talent Pipeline",
+        "tier": "emerging",
+        "cause": "The intersection of skills needed - VLSI design, thermal engineering, systems architecture, and ML optimization - represents perhaps 5,000-10,000 critical engineers globally. Universities produce maybe 500/year with relevant cross-domain training. Compensation inflation at 20-30% annually is unsustainable but reflects real scarcity.",
+        "losers": [
+          "Startups competing for talent against hyperscaler compensation",
+          "Traditional semiconductor companies losing engineers to AI",
+          "Geographies without immigration pathways for talent"
+        ],
+        "winners": [
+          "Companies with deep talent moats (NVIDIA, Google TPU team, Apple silicon)",
+          "Universities with strong VLSI programs",
+          "EDA tool providers (Synopsys, Cadence) that amplify engineer productivity"
+        ],
+        "severity": 6.0,
+        "time_horizon": "1-4 years",
+        "market_awareness": "Low - market treats talent as a cost line item rather than a structural constraint on how fast new chip architectures can be designed and taped out"
+      }
+    ],
+    "hidden_constraints": [
+      {
+        "name": "Data Center Water Consumption in Drought-Stressed Regions",
+        "tier": "hidden",
+        "cause": "Evaporative cooling for a 100MW data center consumes 1-5 million gallons of water per day. Arizona, Texas, and parts of China face mounting water stress. Local opposition is growing - multiple projects in Chile, Netherlands, and US Southwest have been delayed or cancelled over water permits. This is a permitting and social-license bottleneck, not a technology one.",
+        "losers": [
+          "Data centers in Arizona/Singapore/Chile",
+          "Evaporative cooling-dependent designs",
+          "Communities near data centers facing aquifer depletion"
+        ],
+        "winners": [
+          "Liquid cooling/immersion cooling companies (Vertiv, LiquidStack)",
+          "Data center developers in water-abundant regions (Pacific Northwest, Nordic)",
+          "Air-cooled chip designers (ARM-based architectures with lower TDP)"
+        ],
+        "severity": 6.0,
+        "time_horizon": "2-5 years",
+        "market_awareness": "Very Low - ESG reporting mentions water but market does not model it as a site-selection constraint that could redirect billions in capex"
+      },
+      {
+        "name": "High-Quality Training Data Exhaustion",
+        "tier": "hidden",
+        "cause": "Estimates suggest the stock of high-quality human-generated text suitable for training will be exhausted by 2026-2028. Synthetic data and RLHF can partially compensate but introduce quality ceilings and mode collapse risks. The bottleneck shifts from compute to data curation, licensing, and proprietary data access.",
+        "losers": [
+          "Open-source model developers without proprietary data",
+          "Generic LLM API providers competing on compute alone",
+          "Web scraping-dependent training pipelines facing copyright litigation"
+        ],
+        "winners": [
+          "Proprietary data owners (Bloomberg, RELX, medical record companies)",
+          "Data curation/labeling platforms (Scale AI, Snorkel)",
+          "Companies with unique behavioral data (Meta, Apple, payment networks)",
+          "Synthetic data generation platforms"
+        ],
+        "severity": 7.0,
+        "time_horizon": "2-4 years",
+        "market_awareness": "Very Low - market is focused on compute scaling laws but the data scaling law is hitting its asymptote first. Few investors model the implications of data scarcity for model quality differentiation."
+      },
+      {
+        "name": "Semiconductor Manufacturing Equipment Geopolitical Chokepoints",
+        "tier": "hidden",
+        "cause": "ASML is the sole producer of EUV lithography systems. Japan Controls three of four critical photoresist suppliers. Applied Materials, Lam Research, and Tokyo Electron form an oligopoly in deposition/etch. Sanctions on Iran show declining efficacy, suggesting export control regimes are weakening - but the reverse logic applies: if China accelerates self-sufficiency, the equipment makers lose their largest growth market. Taiwan conflict risk would simultaneously destroy 60% of advanced chip supply and the equipment to rebuild it.",
+        "losers": [
+          "Chinese fabs dependent on imported equipment",
+          "Global semiconductor supply chain in Taiwan conflict scenario",
+          "Companies with single-source equipment dependencies",
+          "Hyperscalers assuming infinite chip supply growth"
+        ],
+        "winners": [
+          "ASML (irreplaceable for 5+ years)",
+          "Domestic Chinese equipment makers (NAURA, AMEC) if export controls persist",
+          "US/Japan equipment makers if controls hold",
+          "Companies with geographically diversified fabs (Intel Ohio, TSMC Arizona, Samsung Texas)"
+        ],
+        "severity": 9.0,
+        "time_horizon": "3-7 years",
+        "market_awareness": "Low - market prices Taiwan risk as a binary tail event rather than a continuous supply chain degradation. The Iran sanctions headline is instructive: sanctions lose efficacy over time as workarounds proliferate. The same dynamic applies to chip export controls."
+      },
+      {
+        "name": "Transformer Architecture Compute Inefficiency at Inference Scale",
+        "tier": "hidden",
+        "cause": "Current transformer architectures have O(n²) attention complexity. As context windows grow to 1M+ tokens and inference workloads exceed training workloads, the compute cost per query becomes the dominant economics. Sparse attention, Mamba/SSM architectures, and mixture-of-experts help but introduce engineering complexity and quality tradeoffs. The market is pricing AI infrastructure for training demand but inference demand will be 10-100x larger and has fundamentally different infrastructure requirements.",
+        "losers": [
+          "Training-optimized GPU architectures at inference time",
+          "Hyperscalers over-building training infrastructure without inference optimization",
+          "Companies betting on ever-larger dense models without inference cost discipline"
+        ],
+        "winners": [
+          "Custom inference ASIC designers (Groq, Cerebras, SambaNova)",
+          "Edge AI chip companies (Qualcomm, ARM, Apple)",
+          "Model compression/quantization software companies",
+          "Companies with inference-optimized infrastructure"
+        ],
+        "severity": 8.0,
+        "time_horizon": "2-5 years",
+        "market_awareness": "Very Low - market is pricing AI infrastructure as a training compute story. The pivot to inference economics will require different chip architectures (lower precision, higher memory bandwidth, different interconnect), different data center designs, and different software stacks. This is a regime change, not an incremental shift."
+      }
+    ],
+    "current_bottlenecks": [
+      {
+        "name": "Advanced AI GPU Supply Concentration",
+        "tier": "current",
+        "cause": "NVIDIA's near-monopoly on training-grade GPUs combined with TSMC's exclusive 3nm/4nm production capacity creates a single-point dependency. CoWoS advanced packaging capacity at TSMC is the true binding constraint, not wafer fabrication itself.",
+        "losers": [
+          "Cloud hyperscalers paying margin compression on compute",
+          "Startups unable to secure GPU allocations",
+          "Intel (Gaudi adoption lagging)"
+        ],
+        "winners": [
+          "NVIDIA",
+          "TSMC",
+          "AMD (as secondary supplier)",
+          "Broadcom (custom ASICs)"
+        ],
+        "severity": 8.0,
+        "time_horizon": "0-2 years",
+        "market_awareness": "High - widely discussed, priced into NVIDIA's premium valuation and TSMC's capex guidance"
+      },
+      {
+        "name": "HBM3/3E Memory Bandwidth Wall",
+        "tier": "current",
+        "cause": "High-bandwidth memory stacked with through-silicon vias requires specialized packaging that only SK Hynix and Samsung can produce at scale. Each GPU needs 4-6 HBM stacks. Yield rates below 70% constrain output. Micron is 12-18 months behind.",
+        "losers": [
+          "NVIDIA (constrained GPU shipments)",
+          "AMD (MI300 supply limited by same HBM pool)",
+          "Chinese AI firms (HBM export controls)"
+        ],
+        "winners": [
+          "SK Hynix",
+          "Samsung",
+          "Micron (catching up)",
+          "TSMC (CoWoS pricing power)"
+        ],
+        "severity": 7.0,
+        "time_horizon": "0-2 years",
+        "market_awareness": "Moderate-High - understood by semiconductor specialists but underappreciated by generalist investors as a structural margin floor for memory makers"
+      },
+      {
+        "name": "Data Center Power Availability",
+        "tier": "current",
+        "cause": "Hyperscale data centers now require 100-500MW per site. Utility interconnection queues in Virginia (Northern), Texas, and Ireland have 3-5 year backlogs. Grid operators cannot approve and build transmission upgrades fast enough. Each GW of AI compute requires roughly 2-3 GW of grid capacity including overhead.",
+        "losers": [
+          "Hyperscalers with delayed capacity expansion",
+          "Utilities facing stranded demand",
+          "Coal-reliant grids losing AI investment"
+        ],
+        "winners": [
+          "Gas turbine manufacturers (GE Vernova, Siemens Energy)",
+          "Nuclear operators (Constellation, Vistra)",
+          "On-site power solutions (Bloom Energy, fuel cells)",
+          "Utility companies in AI-friendly jurisdictions"
+        ],
+        "severity": 8.0,
+        "time_horizon": "0-3 years",
+        "market_awareness": "Moderate - acknowledged by hyperscalers in earnings calls but market underestimates the regulatory and physical build-out timeline"
+      }
+    ],
+    "first_order_effects": [
+      {
+        "order": "1",
+        "description": "Massive capital expenditure into data centers, GPUs/accelerators, networking gear, and power infrastructure; direct demand spike for semiconductors (Nvidia, TSMC, ASML), high-bandwidth memory, and advanced packaging capacity."
+      },
+      {
+        "order": "1",
+        "description": "Surging electricity consumption by AI workloads, driving immediate load growth for utilities, gas-fired peaker plants, and behind-the-meter generation contracts with hyperscalers."
+      },
+      {
+        "order": "1",
+        "description": "Cloud revenue acceleration for hyperscalers (AWS, Azure, GCP) as enterprises rent compute rather than build; direct pricing power for scarce inference and training capacity."
+      },
+      {
+        "order": "1",
+        "description": "Physical resource bottlenecks: land near substations, cooling water, transformer equipment, and skilled labor for data center construction become rate-limiting constraints."
+      }
+    ],
+    "regulatory_analysis": {
+      "summary": "The regulatory landscape for AI infrastructure is transitioning from a fragmented, innovation-permissive environment to a highly strategic, security-first, and resource-constrained paradigm. Currently, the regulatory focus is bifurcated: geopolitical export controls on advanced semiconductors (e.g., US restrictions on chip sales to China) and antitrust scrutiny of vertical integration (e.g., cloud providers partnering with or acquiring frontier model developers). In the near future, this regime will expand aggressively into physical resource constraints. Regulators are beginning to target the massive energy and water consumption of hyperscale data centers, threatening carbon-based operational caps and grid interconnection delays. Furthermore, the emergence of 'Sovereign AI' mandates will force infrastructure localization, creating a complex web of divergent global standards—such as the EU AI Act’s systemic risk designations versus the US's sector-specific, executive-order-driven approach. Ultimately, AI infrastructure will be regulated less like a standard IT service and more like a critical public utility and national security asset.",
+      "catalysts": [
+        "Escalation in US-China technological decoupling, triggering broader export controls on lower-tier chips, semiconductor manufacturing equipment, or infrastructure orchestration software.",
+        "Grid capacity crises in major data center hubs (e.g., Northern Virginia, Ireland) prompting rapid, emergency regulatory caps on new power connections.",
+        "A major AI-driven cybersecurity incident or critical infrastructure failure that catalyzes immediate, heavy-handed systemic risk legislation.",
+        "Federal Trade Commission (FTC) or Department of Justice (DOJ) rulings against major cloud-AI partnerships, restructuring the economics of infrastructure provisioning.",
+        "Full enforcement of the EU AI Act, establishing a precedent for penalizing unregulated compute usage and forcing global infrastructure providers to implement strict usage tracking."
+      ],
+      "key_risks": [
+        "Geopolitical fragmentation of semiconductor supply chains, leading to sudden export control escalations that strand inventory or cut off access to advanced accelerators.",
+        "Antitrust interventions that dismantle or restrict exclusive cloud-AI model partnerships, forcing the unbundling of infrastructure from application layers.",
+        "Stranded asset risk due to local grid capacity exhaustion and stringent environmental regulations limiting data center power and water usage.",
+        "Compliance friction and capital misallocation from divergent global data governance frameworks, particularly the tension between EU privacy/AI mandates and US data exceptionalism.",
+        "Sovereign AI mandates forcing hyperscalers to build inefficient, localized infrastructure in sub-optimal geographies to maintain market access.",
+        "Systemic risk legislation that designates large-scale compute clusters as critical infrastructure, subjecting them to heavy physical and cybersecurity compliance burdens."
+      ]
+    },
+    "third_order_effects": [
+      {
+        "order": "3",
+        "description": "Geopolitical bifurcation of compute sovereignty: nations and blocs (US, China, EU, Gulf) build domestic AI infrastructure stacks as strategic imperative, fragmenting the global semiconductor and cloud market into walled gardens with incompatible standards and export-controlled technology tiers."
+      },
+      {
+        "order": "3",
+        "description": "Concentration of economic and intelligence capacity in entities controlling the largest compute clusters; potential emergence of natural monopoly dynamics in frontier model training, triggering antitrust and regulatory frameworks specifically targeting compute as a contested resource."
+      },
+      {
+        "order": "3",
+        "description": "Energy-AI feedback loop: AI-optimized grid management, materials discovery, and cooling design reduce the marginal cost of AI infrastructure, enabling further compute scaling—a self-reinforcing cycle that accelerates capability jumps but also energy demand growth."
+      },
+      {
+        "order": "3",
+        "description": "Labor market restructuring at scale: as inference costs decline, white-collar task automation becomes economically rational across legal, coding, customer service, and analytical roles, shifting wage structures and potentially creating a 'compute rentier' class vs. displaced knowledge workers."
+      }
+    ],
+    "second_order_effects": [
+      {
+        "order": "2",
+        "description": "Power grid congestion and transmission constraints reshape regional economics; data center siting migrates to regions with cheap, dispatchable power (e.g., PJM, ERCOT, Southeast US), altering local utility rate structures and triggering grid investment cycles."
+      },
+      {
+        "order": "2",
+        "description": "Semiconductor supply chain verticalization: hyperscalers design custom silicon (TPUs, Trainium, Maia) to reduce Nvidia dependency, reshaping the competitive moat of merchant chip vendors and compressing margins for commoditized accelerators."
+      },
+      {
+        "order": "2",
+        "description": "AI infrastructure capex crowding out other enterprise IT spending; software and hardware vendors outside the AI stack face budget pressure, creating a barbell effect in tech earnings."
+      },
+      {
+        "order": "2",
+        "description": "Energy economics flip: stranded natural gas, nuclear baseload, and even coal assets gain repricing as AI demand creates a multi-decade power offtake opportunity; nuclear (SMRs, existing PPA-eligible reactors) experiences an investment renaissance."
+      }
+    ],
+    "confidence_assessment": {
+      "composite": 7.6,
+      "conviction": 7.0
+    },
+    "geopolitical_analysis": {
+      "summary": "AI infrastructure—encompassing advanced semiconductors, data centers, energy systems, and high-bandwidth networks—has emerged as the foundational strategic asset of the 21st century, analogous to oil in the industrial era. The geopolitical landscape is defined by a Sino-American race for compute supremacy, where the US leverages export controls and allied supply chains (Japan, Netherlands, Taiwan) to restrict China's access to cutting-edge fabrication and equipment. This has triggered a fragmentation of the global tech ecosystem into competing spheres of influence. Control over chokepoints—such as ASML's lithography machines, TSMC's advanced packaging, and the critical minerals required for chips and batteries—translates directly into geopolitical leverage. Simultaneously, the massive energy demands of training and inference are reshaping resource geopolitics, turning nations with abundant, cheap, and clean power (e.g., Iceland, Canada, Gulf states) into prime real estate for hyperscale data centers. The result is a world where compute sovereignty is becoming a core pillar of national security, forcing states to choose between dependency on Western infrastructure or investing heavily in indigenous, often less efficient, alternatives.",
+      "key_risks": [
+        "Taiwan contingency: A conflict or blockade involving Taiwan would sever the global supply of advanced logic chips, causing a catastrophic shock to global AI development and economic output.",
+        "Chokepoint weaponization: Over-reliance on a handful of suppliers for critical inputs (e.g., ASML for EUV lithography, Japan for photoresists) creates vulnerabilities where a single export ban can paralyze a nation's AI ambitions.",
+        "Supply chain fragmentation: The bifurcation of technology standards and supply chains due to export controls and sanctions will increase costs, slow innovation, and create incompatible AI ecosystems.",
+        "Energy and grid bottlenecks: The exponential growth in AI compute demand will strain electrical grids globally, potentially triggering energy nationalism, blackouts, or a retreat to carbon-intensive power sources.",
+        "Data sovereignty conflicts: Diverging regulations on data localization and privacy (e.g., EU AI Act, China's data security laws) will complicate the cross-border flow of training data, fragmenting the internet and hindering global model development.",
+        "Compute colonialism: The concentration of advanced AI infrastructure in a few superpowers risks creating a permanent technological dependency for the Global South, exacerbating global inequality and geopolitical leverage imbalances."
+      ],
+      "opportunities": [
+        "Allied compute corridors: The US and its allies can formalize 'chip alliances' (e.g., US-Japan-Korea-EU) to create a secure, resilient, and dominant supply chain that excludes strategic competitors.",
+        "Energy-rich nations as new hubs: Countries with abundant renewable or nuclear energy (e.g., Canada, Nordic states, France, UAE) can attract hyperscale data center investment, converting energy resources directly into AI economic value.",
+        "Leapfrogging via open-source: Emerging markets can leverage open-weight models and decentralized compute networks to build domestic AI capabilities without relying entirely on proprietary Western infrastructure.",
+        "Diplomatic leverage through compute: Nations that control critical nodes in the AI supply chain (e.g., Japan in advanced materials, Netherlands in lithography) gain outsized diplomatic influence disproportionate to their size.",
+        "Infrastructure-as-soft-power: Providing subsidized or aid-based access to compute resources and cloud infrastructure can become a new form of foreign policy, binding developing nations into a preferred technological sphere of influence.",
+        "Domestic industrial policy: The current geopolitical tension provides political cover for massive domestic investments in semiconductor fabrication and grid modernization, potentially revitalizing industrial bases in the US and Europe."
+      ]
+    },
+    "market_misconceptions": [
+      "Compute demand will scale roughly linearly or super-linearly with model capability improvements, sustaining current capex growth rates.",
+      "Hyperscaler capex is non-discretionary and will remain so even if monetization of AI applications lags.",
+      "The current architecture—transformer-based models trained on dense GPUs—is the dominant paradigm for the foreseeable horizon, locking in demand for specific silicon.",
+      "Supply constraints (HBM, CoWoS, advanced packaging, power, cooling) will persist long enough to keep pricing power and margins elevated for incumbents.",
+      "Competitive entry by custom silicon (ASICs), open-source model efficiency gains, and algorithmic improvements will not materially compress demand for merchant GPU compute.",
+      "Power and grid constraints will be solved by markets and policy fast enough to not throttle data center buildout.",
+      "The hyperscalers' willingness to overbuild capacity is rational and will be validated by future demand, not a prisoner's dilemma driven by FOMO.",
+      "Inference demand will eventually exceed training demand, justifying the capex after the initial training buildout peaks.",
+      "Geopolitical constraints on advanced semiconductor trade (China export controls, Taiwan dependency) will remain manageable and not disrupt supply.",
+      "The marginal economics of AI workloads will remain favorable enough to justify the infrastructure cost at scale."
+    ],
+    "portfolio_implications": {
+      "composite": 7.6,
+      "narrative_score": {
+        "duration": 7.0,
+        "conviction": 7.0,
+        "economic_impact": 9.0,
+        "valuation_support": 6.0,
+        "narrative_strength": 9.0,
+        "adoption_probability": 9.0,
+        "bottleneck_advantage": 9.0,
+        "market_awareness_gap": 3.0,
+        "second_order_effects": 9.0,
+        "competitive_advantage": 8.0
+      }
+    },
+    "psychological_analysis": {
+      "biases": [
+        "Recency bias: Extrapolating the explosive 2023-2024 capex and stock performance forward, assuming the current growth regime is the new normal rather than a potentially transient buildout phase.",
+        "Herd bias: The sheer unanimity of the picks-and-shovels framing creates safety in numbers; investors fear missing the consensus trade more than they fear being wrong on it.",
+        "Overconfidence: Precise multi-year capex forecasts and TAM estimates convey false precision about a technology whose trajectory, efficiency curves, and demand elasticity remain deeply uncertain.",
+        "Narrative fallacy: The 'AI is the new electricity, infrastructure is the picks and shovels' story is clean, compelling, and historically resonant, which makes it feel more predictive than it is.",
+        "Availability bias: Nvidia's visible, spectacular results dominate attention, while less visible dynamics (efficiency research, custom silicon progress, demand elasticity) are underweighted.",
+        "Confirmation bias: Investors seek out data confirming insatiable compute demand while discounting contrary signals—model efficiency papers, enterprise AI adoption friction, or capex digestion risks."
+      ],
+      "consensus_view": "AI infrastructure—comprising GPUs, accelerators, data center power, cooling, networking, and hyperscale cloud capacity—is a generational capex cycle with durable multi-year demand. Nvidia and the broad semiconductor supply chain are the canonical picks-and-shovels beneficiaries. The thesis holds that compute demand scales with model size, agentic workloads, and inference at the edge, creating a compounding, secular tailwind immune to normal cyclical dynamics. Capital is concentrating in a handful of hyperscalers whose spending is viewed as non-discretionary, making the infrastructure layer the highest-conviction, lowest-risk exposure to the AI revolution.",
+      "narrative_risks": [
+        "Algorithmic efficiency gains (e.g., test-time compute, mixture-of-experts, distillation, synthetic data) could decouple capability improvements from brute-force compute scaling, flattening the capex curve.",
+        "Hyperscaler capex may be a competitive arms race producing overcapacity rather than rational investment; if one major player pulls back, the cascade could be rapid.",
+        "Custom silicon and ASICs could erode Nvidia's pricing power and the merchant GPU demand thesis faster than expected.",
+        "Power, grid, and permitting constraints could become binding limits that delay or cancel planned capacity, converting a demand story into an execution disappointment.",
+        "AI application monetization may remain thin, causing hyperscalers to scrutinize ROI and throttle capex, collapsing the narrative from secular to cyclical.",
+        "A commoditization of models—driven by open-source and falling inference costs—could shift value capture away from infrastructure and toward distribution, data, or application layers.",
+        "Geopolitical escalation (Taiwan conflict, expanded export controls) could disrupt supply or fragment the market, invalidating smooth growth assumptions.",
+        "Concentration risk: if the top 4-5 hyperscalers represent the majority of demand, any single player's strategic shift could move the entire market.",
+        "A 'training peak' scenario where frontier model training demand saturates before inference demand materializes at scale, creating a demand air pocket.",
+        "Regulatory action on energy consumption, water usage, or antitrust could impose costs or constraints not currently priced in."
+      ],
+      "hidden_assumptions": [
+        "Compute demand will scale roughly linearly or super-linearly with model capability improvements, sustaining current capex growth rates.",
+        "Hyperscaler capex is non-discretionary and will remain so even if monetization of AI applications lags.",
+        "The current architecture—transformer-based models trained on dense GPUs—is the dominant paradigm for the foreseeable horizon, locking in demand for specific silicon.",
+        "Supply constraints (HBM, CoWoS, advanced packaging, power, cooling) will persist long enough to keep pricing power and margins elevated for incumbents.",
+        "Competitive entry by custom silicon (ASICs), open-source model efficiency gains, and algorithmic improvements will not materially compress demand for merchant GPU compute.",
+        "Power and grid constraints will be solved by markets and policy fast enough to not throttle data center buildout.",
+        "The hyperscalers' willingness to overbuild capacity is rational and will be validated by future demand, not a prisoner's dilemma driven by FOMO.",
+        "Inference demand will eventually exceed training demand, justifying the capex after the initial training buildout peaks.",
+        "Geopolitical constraints on advanced semiconductor trade (China export controls, Taiwan dependency) will remain manageable and not disrupt supply.",
+        "The marginal economics of AI workloads will remain favorable enough to justify the infrastructure cost at scale."
+      ]
+    },
+    "adoption_curve_analysis": {
+      "stage": "Early Majority (transitioning from Early Adopter)",
+      "growth_rate": "45-60% annualized in infrastructure capex, with semiconductor revenue growth exceeding 80% in AI-exposed segments",
+      "penetration_pct": 18,
+      "inflection_points": [
+        "TSMC CoWoS capacity expansion reaching parity with GPU demand (estimated 2025-2026), shifting from supply-constrained to demand-driven pricing",
+        "Power grid connection queues and data center siting becoming the binding constraint rather than silicon availability (2025-2027)",
+        "Inference compute surpassing training compute as the dominant workload category, triggering architecture shifts toward lower-precision and purpose-built silicon (2026-2027)",
+        "Potential demand verification inflection: if AI application monetization fails to justify capex levels by 2026, triggering a digestion phase similar to 2018 cloud buildout"
+      ]
+    },
+    "investment_opportunities": [
+      {
+        "type": "contrarian",
+        "title": "Nuclear Baseload Power for AI Data Centers",
+        "thesis": "AI data centers require 24/7 carbon-free baseload power at scales (1-5 GW per campus) that solar/wind plus batteries cannot economically provide. The Microsoft-Constellation Three Mile Island restart deal validates nuclear as the only scalable clean baseload. Existing operating nuclear plants are being repriced from merchant power economics to strategic AI assets, while SMRs offer a longer-term path for on-site generation.",
+        "awareness_gap": "The market still underestimates the timeline and magnitude of the power gap; most models assume grid power will simply be available, ignoring transmission constraints and local grid saturation.",
+        "valuation_note": "Merchant nuclear operators trade at a fraction of the long-term value of their contracted power capacity in an AI-driven scarcity environment.",
+        "potential_losers": [
+          "Pure-play renewable developers without dispatchable storage",
+          "Natural gas peaker plants facing carbon regulatory risk"
+        ],
+        "potential_winners": [
+          "Constellation Energy",
+          "Vistra Corp",
+          "Centrus Energy",
+          "Cameco",
+          "Oklo"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Liquid Cooling and Thermal Management",
+        "thesis": "As AI clusters scale to 100k+ GPUs with 1kW+ per chip, air cooling hits thermodynamic and spatial limits. Direct-to-chip liquid cooling is mandatory to prevent thermal throttling, reduce power usage effectiveness (PUE), and achieve ROI on multi-billion dollar GPU clusters. This represents a fundamental architectural shift in data center design.",
+        "awareness_gap": "The market views cooling as a commoditized HVAC afterthought rather than a critical enabler of AI compute density.",
+        "valuation_note": "Thermal management specialists are seeing accelerating backlogs, yet trade at multiples that do not fully reflect the structural shift from air to liquid.",
+        "potential_losers": [
+          "Legacy CRAC/HVAC providers",
+          "Raised-floor data center designs",
+          "Companies slow to adopt liquid cooling"
+        ],
+        "potential_winners": [
+          "Vertiv Holdings",
+          "Modine Manufacturing",
+          "Schneider Electric",
+          "Asetek"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Custom Silicon (ASICs) for AI Inference",
+        "thesis": "The market assumes Nvidia's dominance is permanent across the AI stack. However, as AI moves from training to inference (which will be 80% of compute long-term), hyperscalers are aggressively shifting to custom ASICs (TPUs, Trainium, Maia) to cut costs, reduce power consumption, and avoid vendor lock-in. The narrative conflict is 'Nvidia monopoly' vs. 'Hyperscaler vertical integration'.",
+        "awareness_gap": "Attention is hyper-focused on training compute (Nvidia), while the inference market is quietly being built on custom silicon.",
+        "valuation_note": "Custom silicon designers trade at reasonable multiples relative to the AI compute TAM, while Nvidia is priced for sustained monopoly.",
+        "potential_losers": [
+          "Nvidia (relative to consensus expectations)",
+          "Merchant silicon vendors lacking custom design capabilities"
+        ],
+        "potential_winners": [
+          "Broadcom",
+          "Marvell Technology",
+          "ARM Holdings",
+          "Alphabet",
+          "Amazon"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Optical Interconnects and Data Movement",
+        "thesis": "The bottleneck in AI infrastructure is shifting from compute to data movement. Inside the data center, optical interconnects (Co-Packaged Optics, Linear Drive Pluggables) are required to connect massive GPU clusters without signal degradation, latency, or excessive power loss. Outside, dark fiber is being rapidly lit up to connect geographically dispersed AI campuses.",
+        "awareness_gap": "The market focuses on the GPUs themselves, ignoring the physical layer required to network them into a single virtual compute fabric.",
+        "valuation_note": "Optical component suppliers are emerging from a telecom downturn, offering attractive valuations relative to the incoming AI-driven capex supercycle.",
+        "potential_losers": [
+          "Copper cabling providers",
+          "Traditional short-reach copper transceiver makers"
+        ],
+        "potential_winners": [
+          "Lumentum Holdings",
+          "Coherent Corp",
+          "Corning",
+          "Ciena"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Copper and Grid Materials Scarcity",
+        "thesis": "AI data centers and the grid upgrades required to support them demand massive amounts of copper, aluminum, and high-grade electrical steel. Mine supply is structurally constrained, and permitting takes decades. Copper is the physical bottleneck of the AI buildout, yet commodity markets are pricing in a normal cycle rather than an AI-driven structural shortage.",
+        "awareness_gap": "Investors are buying AI software and chips but ignoring the physical commodities required to wire the infrastructure.",
+        "valuation_note": "Major copper miners trade at cyclical lows despite facing a structural, multi-year supply deficit driven by electrification and AI.",
+        "potential_losers": [
+          "Industries heavily reliant on copper facing margin compression (e.g., traditional automotive, construction)"
+        ],
+        "potential_winners": [
+          "Freeport-McMoRan",
+          "Southern Copper",
+          "BHP Group",
+          "Teck Resources"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Secondary Market Data Center Real Estate and Power Procurement",
+        "thesis": "The physical footprint for AI is expanding beyond traditional hubs (Northern Virginia) to secondary markets (Texas, Midwest, Southeast) due to severe grid constraints in primary markets. The bottleneck is not just land, but land with secured, immediately available power rights. Operators with land banks in these secondary markets near substations are sitting on prime AI real estate.",
+        "awareness_gap": "The market values data center REITs based on traditional cloud demand, underpricing the scarcity value of immediately available power in secondary markets.",
+        "valuation_note": "Data center REITs with exposure to secondary markets trade at discounts to primary market peers despite having faster lease-up potential.",
+        "potential_losers": [
+          "Data center operators in power-constrained primary markets without secured capacity",
+          "Traditional office REITs"
+        ],
+        "potential_winners": [
+          "Digital Realty Trust",
+          "Iron Mountain",
+          "American Tower",
+          "Local utilities in Texas/Southeast"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Water Rights and Usage Efficiency",
+        "thesis": "AI data centers consume millions of gallons of water for evaporative cooling. In water-stressed regions, this creates severe regulatory friction and operational risk. As AI scales, local municipalities will restrict water usage, making water-efficient designs or secured water rights a structural competitive advantage and a matter of regulatory survival.",
+        "awareness_gap": "The narrative focuses on carbon emissions and power, largely ignoring water consumption, which is a more immediate local constraint.",
+        "valuation_note": "Water infrastructure and efficiency companies are uncorrelated with AI valuations but are direct beneficiaries of AI's physical constraints.",
+        "potential_losers": [
+          "Data center operators in arid regions lacking water rights or recycling capabilities",
+          "Local municipalities facing resource depletion"
+        ],
+        "potential_winners": [
+          "American Water Works",
+          "Xylem",
+          "Ecolab",
+          "Data center operators with advanced closed-loop cooling"
+        ]
+      }
+    ]
+  }
+}

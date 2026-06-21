@@ -1,0 +1,32 @@
+{
+  "id": "26b2513a-411b-47fc-bb52-58158fc362d9",
+  "slug": "spiking-neural-networks",
+  "name": "Spiking Neural Networks",
+  "kind": "sub",
+  "parent_id": "6eba9a2d-1be0-4f43-975e-3a526a7c7747",
+  "summary": "Spiking Neural Networks (SNNs) represent a frontier sub-narrative within AI, shifting from continuous-valued, frame-based deep learning toward event-driven, temporally-coded neuromorphic computation that more closely mimics biological brains. Unlike conventional ANNs that require dense matrix multiplication at high energy cost, SNNs encode information in sparse asynchronous binary spikes, enabling orders-of-magnitude reductions in power consumption for edge and always-on inference workloads. The narrative is currently pre-commercial: hardware platforms such as Intel's Loihi 2, IBM's NorthPole, and BrainChip's Akida are available in limited research and prototyping contexts, but software toolchains, training algorithms (surrogate gradient methods, STDP), and benchmark standards remain immature relative to the PyTorch/TensorFlow ecosystem.\n\nThe investment thesis hinges on a structural mismatch: conventional GPU-based AI inference is energy-prohibitive for trillion-sensor IoT, autonomous perception, and real-time control domains, whereas neuromorphic SNN architectures promise sub-milliwatt inference with microsecond latency. However, the narrative faces a chicken-and-egg problem—lack of killer applications suppresses hardware investment, and hardware immaturity suppresses application development. Near-term commercialization is most credible in always-on keyword spotting, visual attention, and sensor-fusion edge AI, where latency and energy constraints are binding and accuracy requirements are tolerable. The market context reflects this early stage: BrainChip (BRN.AX) trades at a micro-cap valuation (~$411M) indicative of pre-revenue optionality, while Intel and IBM hold SNN IP within diversified portfolios where it is not yet a material revenue driver.",
+  "key_drivers": [
+    "Energy efficiency gap: SNNs offer 100-1000x lower inference power vs GPU/CNN for event-driven edge workloads, addressing the binding constraint of always-on AI at the trillion-sensor edge",
+    "Neuromorphic hardware maturation: Intel Loihi 2, IBM NorthPole, and BrainChip Akida 2.0 provide functional silicon, but volume manufacturing, yield, and cost-per-chip remain unproven at scale",
+    "Software ecosystem immaturity: absence of a dominant SNN training framework (analogous to PyTorch) and reliance on surrogate gradients / STDP limits developer mindshare and model portability",
+    "Latency advantage for real-time control: microsecond-scale temporal spike coding suits closed-loop robotics, drone perception, and autonomous driving sensor fusion where frame-based CNNs introduce unacceptable latency",
+    "Benchmark and standards vacuum: no agreed-upon SNN accuracy/energy benchmark analogous to MLPerf, making commercial ROI comparisons opaque to enterprise buyers",
+    "Biological plausibility as research magnet: SNNs attract disproportionate academic and DARPA/EU funding due to neuroscience alignment, sustaining IP pipeline despite weak commercial pull",
+    "Edge AI market pull: proliferation of battery-constrained devices (wearables, smart sensors, AR glasses) creates a latent demand pocket that SNNs can address if tooling friction is reduced",
+    "Talent scarcity: neuromorphic engineering requires cross-disciplinary expertise in neuroscience, VLSI, and ML, constraining the rate at which startups and incumbents can scale teams"
+  ],
+  "adoption_curve": {
+    "stage": "Innovator / early Early Adopter",
+    "growth_rate": "sub-exponential but accelerating; estimated 40-60% CAGR in research deployments, negligible in commercial production",
+    "penetration_pct": 0.5,
+    "inflection_points": [
+      "Emergence of a standardized open-source SNN training framework with PyTorch-grade usability and automatic surrogate-gradient handling, removing the primary developer friction barrier",
+      "First high-volume commercial design win in an always-on edge device (e.g., wake-word or visual attention in a consumer product) demonstrating sub-milliwatt inference at acceptable accuracy, creating a referenceable ROI case",
+      "Hardware-software co-design breakthrough enabling direct training on neuromorphic chips (on-chip learning) rather than off-chip training-and-deployment, unlocking adaptive edge use cases",
+      "Establishment of an MLPerf-equivalent SNN benchmark with energy/latency/accuracy axes, enabling transparent comparison against CNN/Transformer inference and catalyzing enterprise procurement decisions"
+    ]
+  },
+  "created_at": "2026-06-21T17:48:21.861374Z",
+  "updated_at": "2026-06-21T18:01:40.304709Z",
+  "children": []
+}

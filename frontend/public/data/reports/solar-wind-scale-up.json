@@ -1,0 +1,862 @@
+{
+  "id": "e9d1ea6f-c817-4d6e-9460-fd5603b41d6c",
+  "narrative_id": "8bc0aeae-572c-4682-b22c-fe8b924db34a",
+  "version": 1,
+  "generated_at": "2026-06-21T11:59:46.848513Z",
+  "payload": {
+    "key_drivers": [
+      "LCOE collapse: solar at $25-40/MWh and onshore wind at $30-50/MWh in favorable markets, making renewables the default least-cost option for new generation globally",
+      "Policy tailwinds: US Inflation Reduction Act ITC/PTC stacking, EU Green Deal and REPowerEU targets, China's 1,200 GW wind+solar by 2030 commitment creating sustained demand pull",
+      "Corporate procurement: RE100 commitments covering 400+ companies requiring ~500 TWh of additional clean power, driving PPA market depth and corporate direct investment",
+      "Manufacturing overcapacity: Chinese solar cell/module capacity at ~800-1,000 GW against ~600 GW global demand, creating deflationary pressure that benefits developers but crushes manufacturer margins",
+      "Grid interconnection bottleneck: 1,500+ GW in US queues alone with 5-7 year wait times, representing both a deployment drag and an investment opportunity in transmission and grid-edge solutions",
+      "Cannibalization and negative pricing: rising renewable penetration eroding capture prices (solar capture rates in California down to 50-60% of average market prices), forcing integration with storage and flexible demand",
+      "Electrification demand pull: EV adoption, heat pumps, green hydrogen, and data center/AI load growth creating structural new electricity demand that renewables are positioned to serve",
+      "Permitting and land-use friction: local opposition, agricultural land conflicts, and zoning constraints slowing deployment in mature markets, creating premium value for projects with secured grid and land rights"
+    ],
+    "value_capture": [
+      {
+        "roic": 6.0,
+        "role": "creator",
+        "notes": "Polysilicon, silver, copper, neodymium, and tellurium face supply constraints as demand surges. Chinese polysilicon dominance creates boom-bust pricing cycles—extraordinary profits during shortages, near-zero margins during gluts. Long lead times for new mine development (7-10 years) give incumbents periodic but volatile pricing power. Value is created here but captured erratically depending on cycle timing.",
+        "layer_name": "Critical Minerals & Polysilicon Mining",
+        "pricing_power": 6.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 7.0,
+        "capital_intensity": 8.0,
+        "competitive_intensity": 5.0
+      },
+      {
+        "roic": 3.0,
+        "role": "creator",
+        "notes": "Massive volume growth but brutal commoditization. Chinese overcapacity has crushed module prices ~70% since 2020. Western manufacturers survive only behind tariff walls. Turbine OEMs (Vestas, Siemens Gamesa, GE) have destroyed value through warranty losses and supply chain inflation. This layer creates enormous consumer surplus but captures almost none of it—classic value trap.",
+        "layer_name": "Cell, Module & Turbine Manufacturing",
+        "pricing_power": 2.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 4.0,
+        "capital_intensity": 8.0,
+        "competitive_intensity": 9.0
+      },
+      {
+        "roic": 6.0,
+        "role": "creator",
+        "notes": "Inverters and grid-forming power electronics retain more differentiation than modules—software-defined functionality, grid services capability, and brand reliability matter. Companies like Sungrow and Enphase have shown periodic pricing power. But Chinese competition is intensifying rapidly. Moderate value creation with some differentiation-based capture.",
+        "layer_name": "Power Electronics & Smart Inverters",
+        "pricing_power": 5.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 5.0,
+        "capital_intensity": 5.0,
+        "competitive_intensity": 6.0
+      },
+      {
+        "roic": 7.0,
+        "role": "capturer",
+        "notes": "Low capital intensity relative to rest of chain. Real value is in development pipeline—land acquisition, grid interconnection rights, permitting, and PPA origination. Local knowledge and regulatory navigation create durable advantages. Developers capture the spread between falling equipment costs and stable power prices. Asset-light, high-ROIC business model benefits directly from manufacturing overcapacity upstream.",
+        "layer_name": "Project Development & EPC",
+        "pricing_power": 4.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 5.0,
+        "capital_intensity": 3.0,
+        "competitive_intensity": 6.0
+      },
+      {
+        "roic": 5.0,
+        "role": "capturer",
+        "notes": "Independent power producers (NextEra, Iberdrola, EDP Renováveis) are the primary value capturers. Long-term PPAs lock in 20-30 year cash flows while input costs (panels, turbines) keep falling. The business is capital-intensive but benefits from falling WACC as technologies de-risk. Scale advantages in financing and portfolio diversification matter. Merchant exposure is the key variable—cannibalization risk grows with penetration.",
+        "layer_name": "Asset Ownership & IPP Operations",
+        "pricing_power": 5.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 6.0,
+        "capital_intensity": 9.0,
+        "competitive_intensity": 5.0
+      },
+      {
+        "roic": 6.0,
+        "role": "capturer",
+        "notes": "The true bottleneck of the energy transition. Interconnection queues in the US and Europe are 5-10 years deep. Grid operators and transmission owners hold monopoly positions with regulated returns. As renewables penetration rises, grid infrastructure becomes the binding constraint—creating enormous optionality value for those who control interconnection points. Natural monopoly dynamics with regulatory moats.",
+        "layer_name": "Grid Interconnection & Transmission",
+        "pricing_power": 8.0,
+        "revenue_growth": 6.0,
+        "barriers_to_entry": 9.0,
+        "capital_intensity": 9.0,
+        "competitive_intensity": 2.0
+      },
+      {
+        "roic": 8.0,
+        "role": "capturer",
+        "notes": "Growing installed base creates a recurring revenue annuity. Asset-light, high-ROIC. Differentiation through predictive maintenance, AI-driven optimization, and performance guarantees. As fleets age, O&M complexity and value increase. Incumbent equipment manufacturers are vertically integrating here to capture downstream value. Low barriers to entry limit pricing power, but scale and data advantages compound over time.",
+        "layer_name": "O&M and Asset Management Services",
+        "pricing_power": 4.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 4.0,
+        "capital_intensity": 2.0,
+        "competitive_intensity": 6.0
+      },
+      {
+        "roic": 5.0,
+        "role": "creator",
+        "notes": "The fastest-growing layer—storage is the enabler of deep renewables penetration. Battery costs falling 80%+ since 2020. Currently a value creator with technology still evolving (LFP, sodium-ion, flow batteries, long-duration storage). Pricing power is moderate because differentiation is emerging but not yet durable. As curtailment grows with renewables penetration, flexibility services command increasing scarcity premiums. Early-stage with uncertain long-term winners.",
+        "layer_name": "Energy Storage & Grid Flexibility",
+        "pricing_power": 5.0,
+        "revenue_growth": 9.0,
+        "barriers_to_entry": 5.0,
+        "capital_intensity": 6.0,
+        "competitive_intensity": 7.0
+      }
+    ],
+    "feedback_loops": [
+      {
+        "kind": "resource_competition",
+        "strength": 7.0,
+        "description": "AI data centers require massive, reliable 24/7 baseload power that solar and wind—being intermittent—struggle to provide without enormous storage buildouts. Hyperscalers signing PPAs with solar/wind projects crowd out other clean energy buyers and strain grid interconnection queues, while the gap between intermittent supply and AI's flat load profile forces reliance on gas peakers, undermining net decarbonization goals. Competition for transmission capacity, land, and clean power procurement is intensifying.",
+        "target_narrative": "Artificial Intelligence"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 6.0,
+        "description": "AI accelerates solar and wind scale-up through improved weather forecasting for generation prediction, ML-optimized grid dispatch and curtailment minimization, automated panel defect detection via computer vision, and materials discovery for next-generation photovoltaics (e.g., perovskite screening). AI-driven digital twins of wind farms can increase energy yield by 5-15%.",
+        "target_narrative": "Artificial Intelligence"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 6.0,
+        "description": "Robotics lowers the cost and speed of solar and wind deployment: automated solar panel manufacturing lines, drone-based wind turbine blade inspection, robotic cleaning of utility-scale solar arrays to maintain efficiency, and automated installation systems reducing labor bottlenecks. As solar/wind scale into terawatts, labor scarcity in construction and maintenance makes robotics essential rather than optional.",
+        "target_narrative": "Robotics"
+      },
+      {
+        "kind": "resource_competition",
+        "strength": 7.0,
+        "description": "Solar/wind and nuclear compete for the same policy mandates (clean energy standards), the same capital pools (ESG-aligned infrastructure funds), the same grid interconnection capacity, and the same skilled workforce (electrical engineers, grid operators, project finance). In markets like the UK and France, nuclear and solar/wind advocates actively lobby against each other for subsidy frameworks. High solar/wind penetration depresses wholesale prices via the merit order effect, undermining nuclear economics.",
+        "target_narrative": "Nuclear Renaissance"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 5.0,
+        "description": "Nuclear provides the firm, dispatchable clean baseload that solar and wind cannot, enabling higher solar/wind penetration without grid instability. Countries pursuing both (e.g., France, UK, China) achieve deeper decarbonization than those relying on solar/wind alone. Small modular reactors could be sited at former coal plants, providing grid services that complement intermittent renewables.",
+        "target_narrative": "Nuclear Renaissance"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 4.0,
+        "description": "Distributed solar generation enhances military energy resilience by reducing dependence on vulnerable fuel supply convoys and centralized grid infrastructure. Forward operating bases increasingly deploy portable solar arrays and microgrids. DoD is one of the largest single institutional energy consumers; its mandate for energy resilience creates a stable demand signal for distributed solar and storage.",
+        "target_narrative": "Defense Autonomy"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 6.0,
+        "description": "Every climate adaptation plan implicitly assumes aggressive mitigation to limit warming, directly driving policy support, subsidies, and mandates for solar/wind scale-up. Carbon pricing, clean energy standards, and net-zero commitments are reinforced as climate impacts become more visible and costly. The urgency of adaptation increases political will for rapid deployment.",
+        "target_narrative": "Climate Adaptation"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.0,
+        "description": "Reindustrialization—particularly green industrial policy (IRA in the US, EU Net-Zero Industry Act)—creates enormous demand for solar and wind through domestic content requirements, manufacturing tax credits, and procurement mandates. Onshoring of solar panel and wind component manufacturing (e.g., US solar module factories funded by IRA 45X credits) directly scales deployment capacity while creating industrial jobs.",
+        "target_narrative": "Reindustrialization"
+      },
+      {
+        "kind": "resource_competition",
+        "strength": 5.0,
+        "description": "Reindustrialized manufacturing facilities require firm, high-quality power for continuous processes (steel, chemicals, semiconductors). Solar/wind intermittency forces industrial users to either invest in expensive storage or maintain gas/grid backup, raising costs. Grid connection capacity is finite; new industrial loads and new renewable generation compete for the same transmission upgrade budgets and interconnection slots.",
+        "target_narrative": "Reindustrialization"
+      },
+      {
+        "kind": "resource_competition",
+        "strength": 8.0,
+        "description": "Solar and wind scale-up is intensely material-intensive: solar requires polysilicon, silver, copper, and aluminum; wind requires neodymium/dysprosium (rare earths), copper, and steel. Scaling to terawatt levels means solar alone could consume >20% of annual silver production. Mining and refining capacity for these minerals is concentrated in few countries (China controls ~80% of rare earth refining), creating supply bottlenecks, price volatility, and geopolitical vulnerability that directly constrains deployment velocity and cost trajectory.",
+        "target_narrative": "Resource Scarcity"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 9.0,
+        "description": "Storage is the existential enabler of solar/wind scale-up beyond ~30-40% grid penetration. Battery storage (lithium-ion for 2-4 hour shifting, flow batteries and pumped hydro for longer duration) converts intermittent generation into dispatchable capacity. The two narratives are co-dependent: solar/wind create the economic case for storage, and storage unlocks further solar/wind deployment. Falling storage costs directly expand the addressable market for solar/wind.",
+        "target_narrative": "Energy Transition & Storage"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.0,
+        "description": "EV adoption creates massive new electricity demand that solar and wind can serve, improving their economics by increasing off-peak load (especially midday solar charging). Vehicle-to-grid (V2G) transforms EV fleets into distributed storage that buffers solar/wind intermittency. The combination of cheap solar generation and cheap battery storage (shared technology with EVs) creates a virtuous cost-reduction cycle across both narratives.",
+        "target_narrative": "Electrification & Autonomous Mobility"
+      },
+      {
+        "kind": "suppressing",
+        "strength": 5.0,
+        "description": "Solar and wind scale-up dramatically expands the attack surface of the power grid: millions of distributed inverters, wind turbine SCADA systems, and IoT-connected solar arrays each represent potential entry points. Concerns about Chinese-made inverters with embedded communication capabilities have prompted US legislative action (e.g., House bills targeting Chinese inverters). Cybersecurity requirements add cost and complexity to deployment, and security incidents could trigger regulatory rollbacks on distributed generation interconnection.",
+        "target_narrative": "Cybersecurity & Digital Trust"
+      }
+    ],
+    "hidden_effects": [
+      {
+        "order": "hidden",
+        "description": "Grid inertia and system stability degrade as inverter-based resources replace synchronous generation, creating hidden reliability risks (frequency instability, fault recovery) that require synchronous condensers, grid-forming inverters, and synthetic inertia—costs that are real but not captured in LCOE comparisons."
+      },
+      {
+        "order": "hidden",
+        "description": "Energy return on investment (EROI) for renewable systems may decline over time as the highest-quality wind and solar sites are developed first, while the embodied energy and carbon cost of manufacturing, transporting, and installing panels and turbines is front-loaded—creating a temporal mismatch where emissions are spent now for decarbonization benefits realized over decades."
+      },
+      {
+        "order": "hidden",
+        "description": "End-of-life waste streams for solar panels (cadmium, lead, silicon), wind turbine blades (non-recyclable fiberglass composites), and lithium-ion batteries create a mounting environmental liability that will peak 15-30 years post-deployment, with recycling infrastructure currently negligible relative to projected volumes."
+      },
+      {
+        "order": "hidden",
+        "description": "Dunkelflaute risk—extended periods of low wind and low solar generation across large geographic regions—creates tail risk for grid adequacy that is masked by annual capacity factor statistics; these weather-correlated lulls can persist for weeks and require dispatchable backup capacity that appears economically redundant in normal conditions but is existential during extreme events."
+      },
+      {
+        "order": "hidden",
+        "description": "Environmental and social externalities of critical mineral mining are displaced to developing nations (DRC cobalt, Indonesian nickel, Chilean lithium, Chinese rare earth processing), creating a spatial decoupling where the Global North's clean energy transition externalizes its ecological and human costs to the Global South, potentially generating new forms of extractive dependency."
+      },
+      {
+        "order": "hidden",
+        "description": "Cybersecurity attack surface expands dramatically as distributed generation, smart inverters, and IoT-enabled grid edge devices multiply control points by orders of magnitude, creating systemic vulnerability to coordinated attacks on inverter fleets or grid communication protocols that did not exist in centralized generation architectures."
+      }
+    ],
+    "potential_losers": [
+      [
+        "Pure-play renewable developers with stalled projects",
+        "Traditional localized utilities slow to upgrade infrastructure"
+      ],
+      [
+        "Inflexible baseload coal generators",
+        "Traditional gas peaker plants in markets with high renewable penetration and storage adoption"
+      ],
+      [
+        "Industries substituting away from copper due to high prices",
+        "Renewable developers with thin margins vulnerable to commodity price spikes"
+      ],
+      [
+        "Rigid baseload power generators without ramping capabilities",
+        "Over-levered pure-play renewable yieldcos without dispatchable assets"
+      ],
+      [
+        "Pure greenfield solar developers facing escalating NIMBY and zoning opposition",
+        "Traditional agricultural equipment manufacturers ignoring energy integration"
+      ],
+      [
+        "Chinese solar manufacturers facing tariff walls and CBAM costs",
+        "Western developers overly reliant on cheap Chinese imports"
+      ]
+    ],
+    "narrative_summary": "Solar and wind scale-up represents the matured vanguard of the energy transition, having moved from subsidy-dependent niches to the cheapest sources of new electricity generation in most of the world. Solar PV module costs have collapsed over 90% in the past decade while wind has seen comparable though less dramatic declines, driven by manufacturing scale (predominantly in China), turbine upscaling, and learning-curve effects. Global installed capacity now exceeds 2,000 GW combined, yet penetration of actual electricity generation remains only ~13-14%, revealing the gap between capacity additions and energy delivered — a function of intermittency, curtailment, and grid integration constraints.\n\nThe narrative is shifting from a cost-reduction story to a systems-integration story. The binding constraints are no longer panel or turbine prices but grid interconnection queues (over 1,500 GW awaiting connection in the US alone), permitting timelines, transmission build-out, and the need for flexible resources — storage, demand response, long-duration storage — to absorb rising renewable penetration without destabilizing markets. Negative pricing events in California, Germany, and parts of China signal that the next phase of value creation lies not in generation hardware but in orchestration: storage co-location, grid-forming inverters, virtual power plants, and market design reform. Investors who continue to underwrite pure solar/wind capacity plays without accounting for cannibalization effects and curtailment risk are mispricing the transition.",
+    "potential_winners": [
+      [
+        "Prysmian",
+        "Nexans",
+        "Quanta Services",
+        "GE Vernova",
+        "ITC Holdings"
+      ],
+      [
+        "ESS Tech",
+        "Fluence Energy",
+        "Enphase Energy",
+        "Siemens Energy",
+        "Form Energy (private)"
+      ],
+      [
+        "First Quantum Minerals",
+        "Southern Copper",
+        "Pan American Silver",
+        "Teck Resources"
+      ],
+      [
+        "EQT Corporation",
+        "Cheniere Energy",
+        "GE Vernova",
+        "New Fortress Energy"
+      ],
+      [
+        "Enel Green Power",
+        "NextEra Energy",
+        "BayWa r.e. (private)",
+        "Trina Solar"
+      ],
+      [
+        "First Solar",
+        "Hanwha Qcells",
+        "Silfab Solar (private)",
+        "Wacker Chemie"
+      ]
+    ],
+    "dependency_network": [
+      {
+        "type": "constraint",
+        "layer": "Grid Transmission & Interconnection",
+        "weight": 10.0,
+        "description": "Interconnection queues across US ISOs now exceed 2,500 GW; median wait times have grown from 2.1 to 5.0 years (2010-2023). Projects can be fully financed and built but cannot deliver revenue without grid access. Transmission build-out is the single binding constraint on renewable scale-up, requiring multi-decade planning, eminent domain, and regulatory coordination across FERC, state PUCs, and RTOs."
+      },
+      {
+        "type": "resource",
+        "layer": "Capital Availability & Cost of Capital",
+        "weight": 9.0,
+        "description": "Solar and wind are capital-intensive with near-zero marginal fuel cost; project IRRs are hypersensitive to interest rates and tax equity pricing. The IRA's ITC/PTC transferability provisions unlocked new capital pools, but rising rates in 2023-2024 compressed margins and delayed FIDs. Tax equity market capacity (~$20-25B annually) remains a structural ceiling."
+      },
+      {
+        "type": "resource",
+        "layer": "Energy Storage & Firming Capacity",
+        "weight": 9.0,
+        "description": "Solar penetration above ~25% of generation creates duck-curve curtailment; wind variability requires firming. Lithium-ion BESS is the default pairing but faces its own supply chain constraints (lithium, nickel, cathode capacity). Long-duration storage (iron-air, flow batteries, pumped hydro) remains pre-commercial at scale. Without storage, marginal solar/wind capacity has diminishing system value."
+      },
+      {
+        "type": "input",
+        "layer": "Polysilicon & PV Manufacturing Supply Chain",
+        "weight": 8.0,
+        "description": "China controls ~80% of global polysilicon, wafer, and cell manufacturing. US IRA domestic content bonuses and UFLPA enforcement are reshaping supply chains, but new US/module factories depend on imported cells and polysilicon. Tier 2/3 Chinese manufacturers set global floor prices; their oversupply in 2024 crashed module prices to $0.10-0.12/W, accelerating deployment but stressing Western manufacturers."
+      },
+      {
+        "type": "input",
+        "layer": "Critical Minerals (Copper, Silver, Rare Earths, Lithium, Nickel)",
+        "weight": 8.0,
+        "description": "Wind turbines need ~3-4x copper per MW vs gas plants; solar uses silver in metallization. Neodymium/dysprosium for permanent magnet turbines are >90% China-processed. New mine lead times average 12-16 years. Permitting reform (e.g., US Mining Law of 1872 framework) is a structural bottleneck. Price spikes in copper ($4-5/lb) directly compress project economics."
+      },
+      {
+        "type": "input",
+        "layer": "Steel & Structural Materials",
+        "weight": 7.0,
+        "description": "Wind turbines require 100-150 tons of steel per MW; monopile foundations for offshore need specialized heavy steel plate. Global steel capacity is adequate but decarbonization of steel itself (green steel via DRI-EAF) adds cost premium. Offshore wind vessel availability (WTIVs) is a tight market with <30 active installation vessels globally."
+      },
+      {
+        "type": "resource",
+        "layer": "Skilled Labor & Construction Workforce",
+        "weight": 7.0,
+        "description": "US solar workforce needs to grow from ~260K to ~500K+ by 2030 per NREL. IBEW electrician shortages drive labor cost inflation in interconnection and substation work. Offshore wind requires specialized maritime labor with Jones Act compliance constraints. Labor scarcity in rural areas where projects are sited is acute."
+      },
+      {
+        "type": "constraint",
+        "layer": "Land Use & Siting Permits",
+        "weight": 7.0,
+        "description": "Utility-scale solar requires 5-10 acres/MW; wind needs 30-80 acres/MW plus setbacks. Agricultural land conversion triggers local opposition (e.g., farmland preservation ordinances in Ohio, Michigan). NEPA reviews for federal land (BLM, Forest Service) add 2-7 years. Offshore wind faces maritime use conflicts (fishing, military, shipping lanes)."
+      },
+      {
+        "type": "input",
+        "layer": "Power Electronics & Inverters",
+        "weight": 7.0,
+        "description": "Inverters are the critical bridge between DC generation and AC grid; supply is concentrated among Huawei, Sungrow, SMA, and Power Electronics. Grid-forming inverter capability is needed for high-renewable penetration but remains nascent. Semiconductor content (IGBTs, SiC MOSFETs) links renewable scale-up to broader chip supply chains."
+      },
+      {
+        "type": "constraint",
+        "layer": "Policy & Regulatory Framework (IRA, State RPS, Permitting)",
+        "weight": 8.0,
+        "description": "IRA's $369B in clean energy incentives (ITC 30%+, PTC 2.75¢/kWh, domestic content adders, energy community bonuses) are the demand engine. But implementation guidance (Treasury/IRS) remains incomplete for bonus stacking. State RPS targets create demand floors. Permitting reform (BLM Solar PEIS, FERC Order 2023 on interconnection) is incremental, not transformative. Political risk to IRA remains."
+      },
+      {
+        "type": "resource",
+        "layer": "Tax Equity Market",
+        "weight": 7.0,
+        "description": "Traditional tax equity (banks, insurance) funds ~50% of solar project capital stack. Market capacity is structurally limited to ~$20-25B/year. IRA transferability provisions create a parallel market but liquidity and pricing discovery are still maturing. Concentration in few large banks creates systemic risk to deployment pace."
+      },
+      {
+        "type": "input",
+        "layer": "Weather & Resource Assessment Data",
+        "weight": 5.0,
+        "description": "Bankable resource assessments require 1-2 years of on-site met tower or sodar/lidar data. Mesoscale modeling (e.g., WRF) and satellite-derived irradiance (e.g., Solargis) reduce but don't eliminate measurement requirements. Climate change is shifting wind patterns and cloud regimes, creating non-stationarity in historical resource data."
+      },
+      {
+        "type": "resource",
+        "layer": "Offshore Wind Installation Vessels & Port Infrastructure",
+        "weight": 6.0,
+        "description": "Wind turbine installation vessels (WTIVs) capable of 15MW+ turbines are extremely scarce; newbuilds cost $300-500M and take 3-4 years. Jones Act requires US-flagged feeder vessels. Port upgrades (quayside reinforcement, heavy-lift corridors) are multi-hundred-million-dollar investments with 3-5 year timelines. Orsted and BP write-downs in 2023 highlighted supply chain cost inflation."
+      },
+      {
+        "type": "input",
+        "layer": "Grid-Forming Inverter Technology",
+        "weight": 6.0,
+        "description": "Above ~40-50% inverter-based generation, grids lose synchronous inertia; frequency stability requires grid-forming inverters or synchronous condensers. This technology is transitioning from research to commercial (Hornsdale, ERCOT pilots) but is not yet standard. Without it, curtailment and reliability events will cap renewable penetration."
+      },
+      {
+        "type": "constraint",
+        "layer": "Trade Policy & Tariffs",
+        "weight": 6.0,
+        "description": "AD/CVD tariffs on Chinese cells, UFLPA enforcement on polysilicon from Xinjiang, Section 201 safeguard tariffs, and NERC supply chain security standards create a complex compliance matrix. Southeast Asian transshipment circumvention investigations (Cambodia, Malaysia, Thailand, Vietnam) created 2024 tariff uncertainty that froze module imports for months."
+      },
+      {
+        "type": "constraint",
+        "layer": "Community Acceptance & Local Opposition",
+        "weight": 6.0,
+        "description": "Rural county-level zoning rejections of solar projects have accelerated (e.g., 15% of US counties have banned or restricted utility solar as of 2024). Viewshed and noise opposition to wind is well-organized. NIMBY dynamics, combined with foreign-ownership narratives (Chinese solar on farmland), create political risk that can nullify otherwise viable projects."
+      },
+      {
+        "type": "input",
+        "layer": "Water for Panel Cleaning & Thermal Power Replacement",
+        "weight": 4.0,
+        "description": "Solar PV uses minimal water in operation (~20 gal/MWh vs 300-500 for thermal), but soiling in arid regions requires periodic washing. Concentrating solar (CSP) needs cooling water. Wind uses negligible water. Net effect is water-positive vs fossil displacement, but localized water access for O&M in desert sites (Mojave, Sonora) can be a siting friction point."
+      },
+      {
+        "type": "resource",
+        "layer": "Data Centers & AI Demand Growth",
+        "weight": 5.0,
+        "description": "Hyperscaler power purchase agreements (PPAs) are the fastest-growing demand segment for renewables, driven by 24/7 carbon-free energy commitments. Microsoft, Google, Amazon, Meta have contracted >40 GW of US renewables. AI data center load growth (100+ TWh by 2030) creates new offtake demand but also competes for grid capacity and raises power prices, creating both tailwind and tension."
+      },
+      {
+        "type": "resource",
+        "layer": "Project Development Pipeline & Origination",
+        "weight": 6.0,
+        "description": "Development is a 3-7 year process from greenfield to COD, requiring land control, interconnection studies, environmental surveys, and offtake contracts. Developer expertise (NextEra, Invenergy, EDF, Apex) is concentrated. Early-stage development is capital-light but high-risk; attrition rates from queue to COD exceed 80%. Pipeline quality is the primary differentiator among IPPs."
+      }
+    ],
+    "future_bottlenecks": [
+      {
+        "name": "Long-Duration Energy Storage Scaling Gap",
+        "tier": "emerging",
+        "cause": "Solar and wind penetration exceeding ~30% of generation requires multi-hour to multi-day storage. Lithium-ion dominates but is economically limited to ~4 hours. Alternative technologies (iron-air, flow batteries, compressed air, thermal storage) are pre-commercial at scale.",
+        "losers": [
+          "Solar/wind operators facing curtailment without storage",
+          "Li-ion-only storage players in markets shifting to longer duration requirements",
+          "Grid reliability if storage scaling lags renewable deployment"
+        ],
+        "winners": [
+          "Form Energy (iron-air)",
+          "ESS Inc (iron flow)",
+          "Highview Power (liquid air)",
+          "Pumped hydro developers",
+          "Thermal storage companies (Antora, Rondo)",
+          "Sodium-ion battery developers"
+        ],
+        "severity": 7.5,
+        "time_horizon": "2-5 years; becomes acute as penetration crosses 35-40% in leading markets (California, Texas, South Australia)",
+        "market_awareness": "Moderate. Investors aware of storage need but underestimate the technology gap beyond 4-hour Li-ion. Excessive optimism on Li-ion cost declines masking duration limitation."
+      },
+      {
+        "name": "Inverter and Power Electronics Supply Chain",
+        "tier": "emerging",
+        "cause": "Solar inverters, wind converters, and BESS power control systems depend on semiconductor supply (IGBTs, SiC MOSFETs) that competes with EV and industrial demand. Concentrated manufacturing in China and Taiwan. Grid-forming inverter capability still maturing.",
+        "losers": [
+          "Developers facing inverter lead time extensions",
+          "Projects requiring grid-forming capability before standards mature",
+          "Inverter companies with concentrated Asian semiconductor supply"
+        ],
+        "winners": [
+          "SiC and GaN semiconductor manufacturers (Wolfspeed, Infineon, STMicro)",
+          "Domestic inverter manufacturers (SMA, Enphase, SolarEdge)",
+          "Grid-forming inverter technology developers"
+        ],
+        "severity": 6.5,
+        "time_horizon": "1-4 years; intensifies as electrification accelerates concurrent semiconductor demand",
+        "market_awareness": "Low-moderate. Semiconductor shortage narrative faded but power semiconductor specific constraints underappreciated."
+      },
+      {
+        "name": "Land Use and Siting Conflict Escalation",
+        "tier": "emerging",
+        "cause": "Prime solar/wind sites increasingly conflict with agricultural land, conservation areas, and community preferences. Opposition movements growing. County-level zoning restrictions proliferating in US rural areas. 'Agrivoltaics' promising but not yet scaling.",
+        "losers": [
+          "Greenfield solar developers in rural counties with restrictive zoning",
+          "Projects in states enabling local veto (e.g., Ohio HB 407 pattern)",
+          "Agricultural communities losing lease income if projects blocked"
+        ],
+        "winners": [
+          "Agrivoltaics developers and technology providers",
+          "Brownfield/contaminated land solar developers",
+          "Offshore wind developers (bypassing land conflicts)",
+          "Community engagement consultancies"
+        ],
+        "severity": 6.0,
+        "time_horizon": "1-5 years; intensifies as easy sites are exhausted",
+        "market_awareness": "Low-moderate. Local opposition acknowledged but systemic pattern underrecognized by investors modeling national-scale deployment."
+      }
+    ],
+    "hidden_constraints": [
+      {
+        "name": "Copper Supply Deficit for Electrification",
+        "tier": "hidden",
+        "cause": "Solar (5x copper intensity vs gas per MW), wind (especially offshore at 8-10x), EVs, grid expansion, and general electrification all demand copper simultaneously. Mine development takes 15-20 years. Existing mines depleting grades. No viable substitute at scale for electrical conductivity applications.",
+        "losers": [
+          "Solar/wind developers with copper price exposure in BOM",
+          "Offshore wind projects (highest copper intensity)",
+          "Grid expansion projects (massive copper demand)",
+          "Consumers facing higher electrification costs"
+        ],
+        "winners": [
+          "Copper miners with growth projects (First Quantum, Southern Copper, Ivanhoe)",
+          "Copper recycling companies",
+          "Aluminum substitution in non-critical applications",
+          "Copper exploration juniors in stable jurisdictions"
+        ],
+        "severity": 8.0,
+        "time_horizon": "3-7 years; structural deficit emerges by 2027-2030. Price signals will intensify before physical shortage.",
+        "market_awareness": "Low. Copper discussed as commodity cycle, not as structural electrification bottleneck. Most renewable cost models assume stable copper prices."
+      },
+      {
+        "name": "Skilled Trades and Engineering Labor Shortage",
+        "tier": "hidden",
+        "cause": "Solar installers, wind technicians, high-voltage line workers, substation engineers, and electricians are in structural deficit. Aging workforce, insufficient vocational training pipelines, and competition from other construction/electrification demands. IRA-subsidized project pipeline vastly exceeds workforce capacity.",
+        "losers": [
+          "Developers unable to staff projects, facing delays",
+          "Non-union contractors competing for scarce labor",
+          "Rural projects far from labor pools",
+          "Cost models assuming flat or declining installation labor costs"
+        ],
+        "winners": [
+          "Union training programs (IBEW, NABTU)",
+          "Community colleges with renewable energy programs",
+          "Automation and robotics companies for installation",
+          "Labor-broker platforms for skilled trades",
+          "Companies with in-house training pipelines (NextEra, Invenergy)"
+        ],
+        "severity": 7.0,
+        "time_horizon": "1-5 years; becomes binding constraint as IRA-funded projects reach construction phase 2024-2027",
+        "market_awareness": "Very low. Labor is treated as fungible cost input in deployment models. Few investors model labor as a hard constraint on installation rates."
+      },
+      {
+        "name": "Weather Correlation and Resource Diversification Failure",
+        "tier": "hidden",
+        "cause": "Renewable fleets are geographically concentrated in high-resource zones. Large-scale weather events (dunkelflaute, atmospheric blocking patterns, polar vortex) can simultaneously suppress wind and solar across wide regions for days. Climate change may be increasing frequency of extreme weather patterns. Current grid models underweight tail-event correlation.",
+        "losers": [
+          "Renewable operators exposed to curtailment during correlated low-resource events",
+          "Grid operators relying on capacity markets that don't price energy adequacy",
+          "Ratepayers during scarcity pricing events",
+          "Renewable portfolios lacking geographic diversification"
+        ],
+        "winners": [
+          "Dispatchable clean firm power (geothermal, nuclear, hydrogen turbines)",
+          "Long-duration storage with multi-day capability",
+          "Demand response aggregators",
+          "Weather forecasting and grid optimization AI companies"
+        ],
+        "severity": 6.5,
+        "time_horizon": "3-10 years; materializes as penetration deepens and climate patterns shift. First major events likely in markets exceeding 50% renewable penetration.",
+        "market_awareness": "Very low. Dunkelflaute discussed in European energy circles but not priced into capacity markets or renewable project valuations in most jurisdictions."
+      },
+      {
+        "name": "Rare Earth and Critical Mineral Processing Bottleneck",
+        "tier": "hidden",
+        "cause": "Wind turbines (neodymium/dysprosium for permanent magnets), solar (tellurium, indium, gallium for thin film), and batteries (lithium, cobalt, nickel) face processing bottlenecks. While mining gets attention, the refining/processing stage is more concentrated: China processes ~90% of rare earths, ~65% of lithium, ~73% of cobalt. Building processing capacity requires toxic waste expertise, environmental permits, and 5-7 year timelines.",
+        "losers": [
+          "Wind turbine OEMs dependent on Chinese magnet supply (most major OEMs)",
+          "Thin-film solar if tellurium/indium supply constrained",
+          "Western governments' clean energy timelines",
+          "Projects with domestic content requirements but no processing capacity"
+        ],
+        "winners": [
+          "Western rare earth processors (MP Materials, Energy Fuels, Iluka)",
+          "Lithium refiners outside China (SQM, Albemarle, Tianqi's Australian operations)",
+          "Recycling companies (Redwood Materials, Li-Cycle, Nth Cycle)",
+          "Direct lithium extraction technology companies"
+        ],
+        "severity": 7.0,
+        "time_horizon": "3-7 years; becomes acute as Western governments push supply chain reshoring but processing capacity lags mining investment",
+        "market_awareness": "Low. Mining supply constraints discussed but processing/refining bottleneck underappreciated. Investors focus upstream, not midstream."
+      }
+    ],
+    "current_bottlenecks": [
+      {
+        "name": "Grid Interconnection Queue Backlog",
+        "tier": "current",
+        "cause": "Regulatory fragmentation across ISOs/RTOs, outdated study methodologies, and explosive project application volumes overwhelming grid operators. Average interconnection wait times in the US have grown from ~2 years to over 5 years.",
+        "losers": [
+          "Solar/wind developers with stranded projects in queue",
+          "Ratepayers bearing cost of delayed clean energy",
+          "States with aggressive RPS targets missing deadlines"
+        ],
+        "winners": [
+          "Grid operators with fast queues (ERCOT)",
+          "Battery storage developers (can bypass some queue issues)",
+          "Transmission development companies",
+          "Consultancies specializing in interconnection studies"
+        ],
+        "severity": 8.5,
+        "time_horizon": "0-3 years, persisting through 2027+",
+        "market_awareness": "High. Widely discussed in energy policy circles and by developers. FERC Order 2023 attempts cluster study reform but implementation is slow."
+      },
+      {
+        "name": "Transmission Capacity Deficit",
+        "tier": "current",
+        "cause": "Decades of underinvestment in high-voltage transmission, fragmented permitting across state lines, and lack of federal siting authority for interregional lines. Best renewable resources are geographically distant from demand centers.",
+        "losers": [
+          "Curtailment-exposed wind/solar operators in congested zones",
+          "States unable to meet clean energy targets",
+          "Consumers in congestion-priced zones"
+        ],
+        "winners": [
+          "Transmission developers (NextEra, ITC Holdings)",
+          "HVDC cable manufacturers (Prysmian, NKT)",
+          "Conductor technology companies (TS Conductor, CTC Global)",
+          "FERC with new siting authority under DOE Corridor designation"
+        ],
+        "severity": 9.0,
+        "time_horizon": "Persistent; new transmission takes 7-12 years from planning to energization",
+        "market_awareness": "High among energy professionals, moderate among general investors. IRA transmission funding acknowledged but scale of problem underappreciated."
+      },
+      {
+        "name": "Polysilicon and Component Supply Chain Concentration",
+        "tier": "current",
+        "cause": "China controls ~80% of solar polysilicon production and ~85% of solar cell manufacturing. US tariff structures (AD/CVD, Section 201) and Uyghur Forced Labor Prevention Act create friction. Domestic manufacturing capacity ramping but years behind.",
+        "losers": [
+          "Developers dependent on Chinese supply chains with tariff exposure",
+          "Projects missing safe harbor deadlines",
+          "Chinese manufacturers facing export restrictions to Western markets"
+        ],
+        "winners": [
+          "First Solar (thin-film, not polysilicon-dependent)",
+          "Domestic module manufacturers with IRA 45X credits",
+          "Southeast Asian manufacturers (Vietnam, Thailand) as tariff workarounds",
+          "Polysilicon producers outside China (Wacker, OCI)"
+        ],
+        "severity": 7.0,
+        "time_horizon": "0-4 years; IRA-subsidized domestic capacity begins meaningful output 2025-2027",
+        "market_awareness": "High. Geopolitical supply chain risk is a dominant narrative."
+      }
+    ],
+    "first_order_effects": [
+      {
+        "order": "1",
+        "description": "LCOE of solar and wind collapses below fossil fuel generation in most markets, triggering rapid capacity additions and accelerating retirement of coal plants and uneconomic gas peakers; manufacturing capacity for panels, turbines, and inverters scales dramatically, concentrated heavily in China."
+      },
+      {
+        "order": "1",
+        "description": "Intermittency creates immediate grid integration challenges: curtailment during high-generation periods, ramping stress during transitions, and the emergence of the duck curve in solar-heavy markets like California and Australia."
+      },
+      {
+        "order": "1",
+        "description": "Land use competition intensifies as utility-scale solar and wind farms require orders of magnitude more surface area per MWh than concentrated thermal generation, creating friction with agriculture, conservation, and rural communities."
+      }
+    ],
+    "regulatory_analysis": {
+      "summary": "The current regulatory regime for solar and wind scale-up is defined by aggressive decarbonization mandates, generous fiscal incentives (e.g., US Inflation Reduction Act, EU Green Deal), and a push for streamlined permitting. However, the system is straining under the weight of its own success, with grid interconnection queues and transmission bottlenecks becoming the primary friction points. The future regulatory landscape will likely pivot from deployment subsidies to grid integration, market design reform (addressing negative pricing and curtailment), and supply chain protectionism, including domestic content requirements and tariffs on imported components.",
+      "catalysts": [
+        "Implementation of streamlined permitting legislation (e.g., EU Net-Zero Industry Act, US permitting reform).",
+        "Regulatory mandates and funding for HVDC transmission expansion and grid modernization.",
+        "Introduction of capacity markets or ancillary service markets that properly value dispatchable storage paired with renewables.",
+        "Escalating carbon pricing or taxes making fossil fuel generation less competitive.",
+        "Geopolitical shocks accelerating energy independence policies and incentivizing domestic clean energy manufacturing."
+      ],
+      "key_risks": [
+        "Grid interconnection delays and transmission bottlenecks causing project cancellations and curtailment.",
+        "Supply chain protectionism, tariffs, and domestic content rules inflating costs and delaying deployment.",
+        "Local opposition (NIMBYism) and bureaucratic permitting gridlock stalling utility-scale projects.",
+        "Market design flaws leading to negative pricing during peak generation, eroding merchant revenues.",
+        "Retroactive policy shifts or subsidy rollbacks as fiscal burdens increase."
+      ]
+    },
+    "third_order_effects": [
+      {
+        "order": "3",
+        "description": "Geopolitical realignment occurs as energy security shifts from hydrocarbon reserves to mineral reserves and processing capability; China's dominance in rare earth refining (85-90%) and polysilicon manufacturing (80%+) becomes a strategic vulnerability analogous to OPEC's oil leverage in the 1970s, driving Western reshoring and friendshoring policies."
+      },
+      {
+        "order": "3",
+        "description": "Industrial competitiveness diverges between economies with cheap renewable power and those lagging in transition; energy-intensive industries (aluminum smelting, green hydrogen, data centers) migrate toward regions with surplus low-cost renewables, creating new comparative advantages and deindustrialization risks."
+      },
+      {
+        "order": "3",
+        "description": "Financial system repricing accelerates as carbon-intensive assets face regulatory and market discounting, ESG-driven capital reallocation reshapes equity flows, and carbon border adjustment mechanisms (CBAM) alter trade economics for emissions-intensive exports."
+      },
+      {
+        "order": "3",
+        "description": "Energy market architecture fundamentally redesigns: capacity markets, ancillary services markets, and locational marginal pricing mechanisms evolve to compensate flexibility and inertia rather than just energy, shifting value capture from generation to grid services and storage."
+      }
+    ],
+    "second_order_effects": [
+      {
+        "order": "2",
+        "description": "Battery storage and grid flexibility mechanisms (demand response, vehicle-to-grid, long-duration storage) become critical infrastructure investment categories, creating a new multi-hundred-billion-dollar market that did not previously exist as a standalone sector."
+      },
+      {
+        "order": "2",
+        "description": "Critical mineral supply chains become the binding constraint: lithium, cobalt, nickel, rare earths (neodymium, dysprosium), copper, silver, and polysilicon face demand shocks, triggering a supercycle in mining and refining investment and exposing concentrated supply dependencies."
+      },
+      {
+        "order": "2",
+        "description": "Negative and zero electricity pricing events become frequent in renewable-saturated grids, eroding merchant power economics and creating a paradox where the most successful renewable deployment undermines the revenue model for further renewable investment without subsidy or storage."
+      },
+      {
+        "order": "2",
+        "description": "Fossil fuel asset stranding accelerates across coal mines, gas pipelines, and thermal generation fleets, triggering write-downs in utility and energy portfolios and reshaping credit risk in power sector debt."
+      }
+    ],
+    "confidence_assessment": {
+      "composite": 6.5,
+      "conviction": 6.0
+    },
+    "geopolitical_analysis": {
+      "summary": "The scale-up of solar and wind energy is fundamentally rewiring global geopolitics, shifting the axis of energy power from hydrocarbon reserves and maritime chokepoints to critical mineral supply chains and green technology manufacturing. China's near-monopoly over solar panel manufacturing (controlling roughly 80% of global supply chain stages) and its dominance in processing critical minerals like rare earths, lithium, and polysilicon creates a strategic dependency for the West analogous to OPEC's oil leverage in the 1970s. Concurrently, the energy transition erodes the geopolitical clout of petrostates—Russia, Gulf monarchies, Venezuela—whose economies and foreign policy leverage depend on fossil fuel exports, risking instability in regions that have built their statecraft around oil rents. The United States and European Union are attempting to reassert supply chain sovereignty through industrial policy (Inflation Reduction Act, EU Critical Raw Materials Act), but face a 5-10 year lag in building domestic manufacturing capacity. Meanwhile, new energy trade flows are emerging: cross-border electricity interconnectors, green hydrogen pipelines, and seabed mining concessions are creating novel forms of mutual dependency and leverage. Developing nations in the Global South find themselves as arenas of competition—both as sources of critical minerals (DRC, Chile, Indonesia) and as markets for green technology exports—raising questions about whether the transition replicates colonial extractive patterns or enables genuine leapfrogging. The net geopolitical effect is a multipolar energy order still in formation, where old hydrocarbon leverage persists alongside emerging mineral-and-manufacturing leverage, creating a volatile transitional period of overlapping dependencies.",
+      "key_risks": [
+        "China's dominance across solar manufacturing supply chain (polysilicon, wafers, cells, modules) constitutes a single-point-of-failure dependency that can be weaponized through export controls, as seen with rare earths in 2010 and gallium/germanium in 2023",
+        "Critical mineral supply concentration creates new chokepoints: DRC controls ~70% of cobalt, China processes ~90% of rare earths, Chile and Australia dominate lithium—any disruption (conflict, nationalization, export restriction) cascades into manufacturing bottlenecks",
+        "Petrostate economic collapse as oil demand plateaus could destabilize the Middle East, Central Asia, and parts of Africa and Latin America, creating power vacuums, migration crises, and regional conflicts",
+        "US-China technology decoupling fragments green technology markets, raising costs and slowing deployment globally—export controls on advanced semiconductors and solar technologies risk bifurcating the clean energy supply chain into incompatible blocs",
+        "Resource nationalism in mineral-rich developing nations (Indonesia's nickel export ban, Mexico's lithium nationalization, Zimbabwe's raw lithium export prohibition) disrupts supply and raises costs, while replicating extractive colonial dynamics",
+        "Seabed mining race in international waters and Arctic resource competition over newly accessible mineral deposits creates territorial disputes with no established governance framework",
+        "Cross-border electricity grid interconnections and planned hydrogen trade networks create new mutual dependencies that can be severed for political leverage, replacing gas pipeline politics with electricity and hydrogen pipeline politics",
+        "Cybersecurity vulnerabilities of distributed renewable grids—with millions of connected inverters, batteries, and smart meters—create attack surfaces that nation-states can exploit to destabilize adversaries' energy systems",
+        "Transition gap: during the multi-decade shift, nations remain dependent on fossil fuels from adversarial states while simultaneously building dependence on green tech from the same or different adversaries, creating compound vulnerabilities"
+      ],
+      "opportunities": [
+        "Energy-import-dependent nations (EU, India, Japan, South Korea) can achieve structural energy independence by deploying domestic solar and wind, permanently reducing vulnerability to hydrocarbon supply shocks and maritime chokepoint coercion (Strait of Hormuz, Malacca, Suez)",
+        "Soft power projection through green technology exports and climate finance—China's Belt and Road solar exports, EU's Global Gateway, and US development finance are competing to shape developing nations' energy infrastructure and political alignment",
+        "Critical mineral supply chain diversification alliances (Minerals Security Partnership, Quad critical minerals initiatives, EU-Japan raw materials agreements) can build resilient, multilateral supply chains that reduce single-nation dependency",
+        "Developing nations can leapfrog fossil fuel infrastructure entirely, building distributed renewable systems that avoid the capital-intensive grid and fossil import dependencies that historically constrained their development and indebted them to oil exporters",
+        "Domestic manufacturing revitalization through industrial policy creates political constituencies for climate action by linking decarbonization to job creation—IRA's domestic content requirements and EU Net-Zero Industry Act are models for converting climate policy into industrial strategy",
+        "Green hydrogen trade creates new energy partnership geographies: Australia-Japan, North Africa-EU, Chile-Asia hydrogen corridors could replace LNG and pipeline gas trade with cleaner, more diversified supply relationships",
+        "Reduced maritime chokepoint dependence as renewable energy is locally generated and consumed decreases the strategic imperative for naval power projection to protect sea lanes, potentially reducing great-power naval competition",
+        "Nations with abundant solar and wind resources (Australia, Morocco, Saudi Arabia, Chile) can become new energy exporters via green hydrogen, ammonia, or synthetic fuels, replacing oil exporters in the global energy hierarchy",
+        "Distributed and decentralized renewable energy systems are inherently more resilient to conventional military disruption than centralized fossil fuel infrastructure, potentially reducing the coercive value of targeting energy infrastructure in conflicts"
+      ]
+    },
+    "market_misconceptions": [
+      "Grid infrastructure and transmission capacity can be built rapidly enough to keep pace with the deployment of intermittent generation assets.",
+      "Global supply chains for critical minerals (copper, silver, lithium, rare earths) and electrical components (transformers, cables) will scale without severe, sustained price inflation.",
+      "Battery storage costs will continue to decline at an exponential rate, economically solving the intermittency problem.",
+      "Baseload power is unnecessary; grid reliability can be maintained purely with renewables, storage, and demand response.",
+      "Political support for green subsidies, tax credits, and carbon pricing will remain constant and bipartisan across future electoral cycles.",
+      "Local community opposition (NIMBYism) and land-use constraints will not materially impede the physical footprint expansion required for utility-scale projects."
+    ],
+    "portfolio_implications": {
+      "composite": 6.5,
+      "narrative_score": {
+        "duration": 9.0,
+        "conviction": 6.0,
+        "economic_impact": 9.0,
+        "valuation_support": 5.0,
+        "narrative_strength": 8.0,
+        "adoption_probability": 9.0,
+        "bottleneck_advantage": 5.0,
+        "market_awareness_gap": 2.0,
+        "second_order_effects": 8.0,
+        "competitive_advantage": 4.0
+      }
+    },
+    "psychological_analysis": {
+      "biases": [
+        "Recency Bias: Extrapolating the rapid cost declines and capacity additions of the last 10 years indefinitely into the future, ignoring the increasing difficulty of the next phase of the transition (e.g., deeper penetration, harder geographies).",
+        "Herd Behavior: Massive capital influx into clean energy ETFs and renewable developers driven by ESG mandates and FOMO, pushing valuations to levels that discount high execution risks.",
+        "Overconfidence: Assuming policymakers and grid operators can perfectly manage the complex transition from a centralized, dispatchable system to a decentralized, intermittent one without major systemic hiccups.",
+        "Narrative Fallacy: Constructing a neat, linear story of 'cheap renewables inevitably replace fossil fuels,' ignoring the messy, path-dependent realities of grid physics, local politics, and commodity markets.",
+        "Availability Heuristic: Overweighting the success stories of early solar adopters (like California or Germany) without fully accounting for their unique geographic, economic, or regulatory advantages.",
+        "Confirmation Bias: Focusing exclusively on falling generation costs (LCOE) while ignoring the rising 'integration costs' (transmission, storage, curtailment) that are absolutely necessary to make the system function."
+      ],
+      "consensus_view": "Solar and wind are the cheapest forms of new electricity generation globally. Driven by the urgent need for decarbonization, favorable government policies (such as the US Inflation Reduction Act), and continuous technological cost declines, solar and wind capacity will scale exponentially over the next decade. This will lead to massive wealth creation for manufacturers, developers, and grid infrastructure companies, inevitably displacing fossil fuels in the power sector.",
+      "narrative_risks": [
+        "The Interconnection Bottleneck: Grid connection queues are already years long in major markets. If transmission build-out lags generation, it will result in stranded assets, heavy curtailment, and destroyed developer margins.",
+        "The Commodity Inflation Trap: Renewables are highly mineral-intensive. A sustained bull market in copper, silver, and lithium could reverse the Levelized Cost of Energy (LCOE) decline trend, eroding project economics.",
+        "The Cannibalization Effect: As solar penetration increases, its marginal value drops to zero or negative during peak production hours, destroying the merchant revenue model for unsubsidized projects.",
+        "The Storage Cost Plateau: If lithium-ion battery cost reductions slow down due to mineral scarcity or technological limits, the economics of high-penetration renewables degrade sharply, requiring expensive alternative storage solutions.",
+        "The Reliability Backlash: A major grid blackout or reliability crisis attributed to over-reliance on intermittent sources could trigger a severe political and regulatory backlash, abruptly shifting capital back to fossil fuels or nuclear."
+      ],
+      "hidden_assumptions": [
+        "Grid infrastructure and transmission capacity can be built rapidly enough to keep pace with the deployment of intermittent generation assets.",
+        "Global supply chains for critical minerals (copper, silver, lithium, rare earths) and electrical components (transformers, cables) will scale without severe, sustained price inflation.",
+        "Battery storage costs will continue to decline at an exponential rate, economically solving the intermittency problem.",
+        "Baseload power is unnecessary; grid reliability can be maintained purely with renewables, storage, and demand response.",
+        "Political support for green subsidies, tax credits, and carbon pricing will remain constant and bipartisan across future electoral cycles.",
+        "Local community opposition (NIMBYism) and land-use constraints will not materially impede the physical footprint expansion required for utility-scale projects."
+      ]
+    },
+    "adoption_curve_analysis": {
+      "stage": "Early Majority (electricity generation share); Late Early Adopter (capacity additions share)",
+      "growth_rate": "18-22% CAGR in installed capacity (2023-2026E); generation growth ~20% CAGR as fleet utilization and curtailment dynamics mature",
+      "penetration_pct": 13.5,
+      "inflection_points": [
+        "Storage cost-parity threshold ($100-150/kWh for 4-hour lithium-ion systems) enabling solar+storage to compete as dispatchable capacity, already crossed in several markets",
+        "Grid flexibility inflection at ~30-40% variable renewable penetration where conventional market structures break down, forcing market design reform (real-time pricing, capacity markets, ancillary services monetization)",
+        "Long-duration storage commercialization (~2030) enabling penetration beyond ~50% without firming resources, unlocking the next S-curve phase",
+        "Permitting and transmission reform legislation (US, EU) that could compress interconnection timelines from 5-7 years to 2-3 years, releasing trapped pipeline value"
+      ],
+      "penetration_pct_note": "Share of global electricity generation from wind + solar combined; capacity share is higher (~25%) reflecting lower capacity factors"
+    },
+    "investment_opportunities": [
+      {
+        "type": "direct",
+        "title": "Grid Transmission and Interconnection Infrastructure",
+        "thesis": "As solar and wind capacity scales exponentially, the transmission grid becomes the absolute physical bottleneck. Thousands of gigawatts of renewable projects are stuck in interconnection queues globally. Investment in High-Voltage Direct Current (HVDC) cables, grid expansion services, and interconnection software will see massive, multi-year structural demand that is currently undercapitalized relative to generation capacity.",
+        "awareness_gap": "Markets are overly focused on generation capacity (megawatts installed) rather than the grid's ability to absorb and transmit that capacity.",
+        "valuation_note": "Cable manufacturers and grid services trade at reasonable multiples given the multi-decade backlog of projects requiring execution.",
+        "potential_losers": [
+          "Pure-play renewable developers with stalled projects",
+          "Traditional localized utilities slow to upgrade infrastructure"
+        ],
+        "potential_winners": [
+          "Prysmian",
+          "Nexans",
+          "Quanta Services",
+          "GE Vernova",
+          "ITC Holdings"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Long-Duration Energy Storage (LDES) and Grid-Forming Inverters",
+        "thesis": "Intermittency from high solar and wind penetration creates a critical need for long-duration energy storage and grid stability services (inertia, voltage control). While lithium-ion handles short-duration shifts, technologies like iron-air batteries, flow batteries, and advanced grid-forming inverters are required to maintain grid reliability during multi-day weather events.",
+        "awareness_gap": "Lithium-ion dominates current storage narratives, but its limitations for 10+ hour discharge durations are ignored by mainstream investors.",
+        "valuation_note": "Many LDES pure-plays are early stage or private, but legacy electrical equipment companies adding these capabilities are undervalued.",
+        "potential_losers": [
+          "Inflexible baseload coal generators",
+          "Traditional gas peaker plants in markets with high renewable penetration and storage adoption"
+        ],
+        "potential_winners": [
+          "ESS Tech",
+          "Fluence Energy",
+          "Enphase Energy",
+          "Siemens Energy",
+          "Form Energy (private)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Copper and Silver Mining for Electrification",
+        "thesis": "The market fundamentally underestimates the sheer volume of copper (windings, transmission) and silver (PV cells) required for a full solar and wind scale-up. Mine permitting takes 15+ years, while demand scales in 5. This temporal mismatch guarantees a severe supply deficit in the late 2020s, leading to super-cycle pricing for these metals.",
+        "awareness_gap": "ESG mandates restrict capital allocation to mining, blinding institutional investors to the impending physical scarcity of transition metals.",
+        "valuation_note": "Quality copper miners trade at depressed multiples relative to the structural demand curve they face.",
+        "potential_losers": [
+          "Industries substituting away from copper due to high prices",
+          "Renewable developers with thin margins vulnerable to commodity price spikes"
+        ],
+        "potential_winners": [
+          "First Quantum Minerals",
+          "Southern Copper",
+          "Pan American Silver",
+          "Teck Resources"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Natural Gas as a Flexibility and Backup Provider",
+        "thesis": "The dominant narrative assumes solar and wind will rapidly eliminate natural gas. However, the intermittency of renewables requires massive, dispatchable flexible backup. Natural gas peakers and storage infrastructure will remain critical for grid stability for decades, acting as the essential complement to renewables rather than a competitor.",
+        "awareness_gap": "The binary 'fossil fuels vs. renewables' narrative obscures the systems-thinking reality that renewables increase the relative value of dispatchable gas.",
+        "valuation_note": "Gas infrastructure and flexible power generators are priced for terminal decline despite growing operational necessity.",
+        "potential_losers": [
+          "Rigid baseload power generators without ramping capabilities",
+          "Over-levered pure-play renewable yieldcos without dispatchable assets"
+        ],
+        "potential_winners": [
+          "EQT Corporation",
+          "Cheniere Energy",
+          "GE Vernova",
+          "New Fortress Energy"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Agrivoltaics and Dual-Use Land Optimization",
+        "thesis": "As solar scales, land use conflicts between agriculture, conservation, and energy generation are intensifying (NIMBYism). Agrivoltaics (elevated solar panels over crops) and floating solar solve this conflict, unlocking premium land, improving panel efficiency via cooling, and securing regulatory fast-tracks.",
+        "awareness_gap": "Investors view solar as a pure real estate play; the second-order benefits of dual-use systems (crop yield protection, water conservation) are underexplored.",
+        "valuation_note": "Large utilities and developers with R&D in agrivoltaics are not awarded a premium for this optionality.",
+        "potential_losers": [
+          "Pure greenfield solar developers facing escalating NIMBY and zoning opposition",
+          "Traditional agricultural equipment manufacturers ignoring energy integration"
+        ],
+        "potential_winners": [
+          "Enel Green Power",
+          "NextEra Energy",
+          "BayWa r.e. (private)",
+          "Trina Solar"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Polysilicon and Solar Supply Chain Deglobalization",
+        "thesis": "Western regulatory shifts (Uyghur Forced Labor Prevention Act, EU Carbon Border Adjustment Mechanism) and geopolitical tensions are forcing a deglobalization of the solar supply chain. This creates a massive opportunity for non-Chinese polysilicon, wafer, and cell manufacturing, supported by heavy subsidies and tariff protections.",
+        "awareness_gap": "Markets assume China will permanently dominate solar manufacturing; they underestimate the political willpower to subsidize domestic supply chains regardless of cost.",
+        "valuation_note": "Western solar manufacturers trade at distressed valuations despite guaranteed demand pipelines from utility-scale developers seeking compliance.",
+        "potential_losers": [
+          "Chinese solar manufacturers facing tariff walls and CBAM costs",
+          "Western developers overly reliant on cheap Chinese imports"
+        ],
+        "potential_winners": [
+          "First Solar",
+          "Hanwha Qcells",
+          "Silfab Solar (private)",
+          "Wacker Chemie"
+        ]
+      }
+    ]
+  }
+}

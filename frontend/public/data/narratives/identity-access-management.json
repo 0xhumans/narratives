@@ -1,0 +1,47 @@
+{
+  "id": "20dcb4b5-0e3e-4a44-89f6-0ca9151a4b3e",
+  "slug": "identity-access-management",
+  "name": "Identity & Access Management",
+  "kind": "sub",
+  "parent_id": "f81aee50-7c32-4792-bd1c-29cabeff7e8c",
+  "summary": "Identity & Access Management (IAM) has shifted from a back-office IT utility to the strategic center of cybersecurity architecture. As zero-trust principles dissolve the network perimeter, identity has become the new control plane—every user, device, workload, and API must be continuously authenticated, authorized, and audited. The market is bifurcating: traditional IAM (SSO, basic MFA, directory services) is mature and consolidating around Okta, Microsoft Entra, and Ping, while next-generation segments—privileged access management (PAM), identity governance and administration (IGA), cloud infrastructure entitlement management (CIEM), and machine identity management—are growing 15-25% annually as organizations grapple with explosive non-human identity sprawl across multi-cloud environments.\n\nThe narrative is being reshaped by three converging forces: the passwordless transition (passkeys, FIDO2) finally gaining consumer-grade traction after a decade of false starts; the machine identity crisis, where DevOps automation and microservices have created 10-50x more non-human identities than human ones, most unmanaged and unmonitored; and AI-augmented identity threats—deepfake-enabled social engineering, automated credential stuffing, and synthetic identity fraud—that are rendering traditional authentication factors insufficient. Regulatory regimes (NIS2, DORA, CISA Zero Trust Maturity Model) are converting voluntary best practices into compliance mandates, creating durable demand. The investment thesis centers on platform consolidation (identity fabric vendors absorbing point solutions), the CIEM opportunity as cloud entitlement complexity outpaces human governance, and the emerging identity threat detection and response (ITDR) category that applies behavioral analytics to identity-layer attacks.",
+  "key_drivers": [
+    "Zero Trust architecture mandates making identity the primary security perimeter, replacing network-centric controls with continuous identity verification",
+    "Machine identity explosion: non-human identities (service accounts, API keys, OAuth tokens, certificates, workload identities) now outnumber human identities 10-50x and are largely unmanaged",
+    "Passwordless authentication inflection: passkey standardization by Apple, Google, Microsoft (2022-2023) and FIDO2 adoption finally creating viable frictionless alternatives to passwords",
+    "Multi-cloud complexity driving CIEM demand: organizations cannot manually govern entitlements across AWS, Azure, GCP with their existing IGA tools",
+    "AI-augmented identity attacks: deepfake voice/video social engineering and automated credential stuffing at LLM scale eroding traditional MFA effectiveness",
+    "Regulatory compulsion: NIS2, DORA, US Executive Order 14028, and CISA Zero Trust Maturity Model converting identity controls from best practice to legal requirement",
+    "Platform consolidation pressure: enterprises reducing 8-15 identity point products toward unified identity fabrics, benefiting suite vendors and pressuring specialists",
+    "Identity Threat Detection and Response (ITDR) emerging as distinct category: applying UEBA and behavioral analytics specifically to identity-layer attack patterns like token theft, session hijacking, and consent phishing"
+  ],
+  "adoption_curve": {
+    "stage": "Early Majority (traditional IAM); Early Adopter (next-gen segments: CIEM, machine identity, ITDR, passwordless)",
+    "growth_rate": {
+      "pam": "15-18%",
+      "ciem": "25-30%",
+      "itdr": "30-40% from small base",
+      "passwordless": "35-45% in adoption metrics",
+      "overall_iam_market": "10-13% CAGR",
+      "machine_identity_management": "25-35%"
+    },
+    "penetration_pct": {
+      "iga": "35-45% with mature deployment",
+      "pam": "45-55% of enterprises with formal programs",
+      "ciem": "15-25% of multi-cloud enterprises",
+      "itdr": "8-15% early adoption",
+      "traditional_iam_sso_mfa": "75-85% of enterprises",
+      "machine_identity_management": "10-15% with dedicated tooling",
+      "passwordless_production_deployment": "20-30% of enterprises for at least one workflow"
+    },
+    "inflection_points": [
+      "SolarWinds supply chain attack (Dec 2020) and US Executive Order 14028 (May 2021) catalyzed federal zero-trust identity mandates, pulling enterprise adoption forward by 2-3 years",
+      "Passkey cross-platform standardization announcement by Apple, Google, Microsoft (May 2022) and subsequent OS-level deployment (2023) marked the practical end-of-life trajectory for passwords in consumer and enterprise authentication",
+      "Okta support system breach (Oct 2022) and high-profile identity-provider attacks demonstrated that IAM vendors themselves are high-value targets, accelerating investment in ITDR and identity resilience",
+      "Generative AI mainstream adoption (2023-present) enabling deepfake-powered social engineering and automated credential attacks at scale, creating urgency for phishing-resistant authentication and behavioral identity verification"
+    ]
+  },
+  "created_at": "2026-06-21T11:39:36.902202Z",
+  "updated_at": "2026-06-21T12:09:36.179562Z",
+  "children": []
+}

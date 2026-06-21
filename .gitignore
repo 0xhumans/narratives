@@ -1,0 +1,33 @@
+# Dependencies
+frontend/node_modules/
+backend/.venv/
+backend/.env
+**/*.egg-info/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets — never commit
+.env
+backend/.env
+*.pem
+*.key
+
+# Build artifacts (Vercel builds from source)
+frontend/dist/
+frontend/tsconfig.tsbuildinfo
+
+# Local logs / temp
+nie_start_output.txt
+*.log
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.cursor/
+.vscode/
+*.swp
+
+# Cursor assets (screenshots from chat)
+assets/

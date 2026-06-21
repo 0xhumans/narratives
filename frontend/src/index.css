@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --ink: #0a0f16;
+    --signal: #06b6d4;
+    --mist: #f6f8fb;
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-mist text-ink-900 antialiased;
+  }
+
+  ::selection {
+    @apply bg-signal-200 text-ink-900;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-ink-100/80 bg-white shadow-card;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-signal-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-signal-700 active:scale-[0.98] disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-ink-200/80 bg-white/80 px-4 py-2.5 text-sm font-medium text-ink-700 backdrop-blur-sm transition hover:border-signal-300 hover:bg-signal-50 hover:text-signal-800;
+  }
+
+  .btn-landing {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-ink-900 shadow-lift transition hover:bg-signal-50 active:scale-[0.98];
+  }
+
+  .btn-landing-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-medium text-white/90 backdrop-blur-sm transition hover:border-white/40 hover:bg-white/10;
+  }
+
+  .chip {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium;
+  }
+
+  .nav-link-active {
+    @apply bg-signal-50 text-signal-800;
+  }
+
+  .landing-grid {
+    background-size: 48px 48px;
+  }
+
+  .heatmap-table th {
+    @apply text-ink-700;
+  }
+
+  .heatmap-table td {
+    @apply bg-white;
+  }
+
+  .heatmap-table tbody tr:hover td.narrative-cell,
+  .heatmap-table tbody tr:hover td.row-num {
+    @apply bg-ink-50/50;
+  }
+
+  .heatmap-table .score-cell {
+    @apply bg-white;
+  }
+
+  .heatmap-table tbody tr:hover .score-cell {
+    @apply bg-ink-50/30;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

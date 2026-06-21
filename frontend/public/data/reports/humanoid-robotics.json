@@ -1,0 +1,1008 @@
+{
+  "id": "f63bc5cd-a5f6-44b4-87ca-be7fcfe53045",
+  "narrative_id": "0f366b54-9faa-4bd9-a4eb-bc16e0d8b851",
+  "version": 1,
+  "generated_at": "2026-06-18T18:08:33.503488Z",
+  "payload": {
+    "key_drivers": [
+      "Embodied AI foundation models (RT-X, etc.) crossing manipulation capability thresholds",
+      "Structural labor shortages in manufacturing, logistics, and elder care markets",
+      "Tesla Optimus as forcing function compressing industry timelines and attracting capital",
+      "Declining edge compute costs and sensor commoditization enabling viable unit economics",
+      "B2B-first go-to-market strategy using warehouses/factories as beachhead before consumer applications",
+      "Large capital inflows—Figure AI $675M raise at $2.6B valuation signaling institutional conviction",
+      "Battery density and actuator improvements extending operational uptime toward commercial viability",
+      "Talent migration from adjacent industries (automotive, consumer electronics) accelerating development"
+    ],
+    "value_capture": [
+      {
+        "roic": 8.0,
+        "role": "creator",
+        "notes": "The core differentiator. General-purpose robot foundation models require rare combinations of robotics expertise, massive simulation infrastructure, real-world data flywheels, and elite ML talent. Software economics once trained—near-zero marginal cost per additional robot. Few entities (Tesla, Figure, Physical Intelligence, Google DeepMind) have credible stacks. Pricing power derives from capability gaps that persist for years. The entity that achieves the first general-purpose manipulation-and-locomotion policy with reliable generalization will command platform-level economics, potentially licensing to multiple OEMs.",
+        "layer_name": "AI/Software (Foundation Models & Control)",
+        "pricing_power": 8.0,
+        "revenue_growth": 9.0,
+        "barriers_to_entry": 8.0,
+        "capital_intensity": 4.0,
+        "competitive_intensity": 6.0
+      },
+      {
+        "roic": 9.0,
+        "role": "capturer",
+        "notes": "NVIDIA captures value at the training layer (H100s for simulation and model training) and increasingly at the inference layer (Jetson Thor for on-robot compute). Extreme concentration. Fabs cost $20B+ and take 3-5 years. The humanoid robot needs 100-300W of continuous edge inference for real-time perception and control—this is a hard silicon problem that rewards incumbents. AMD and custom ASICs (Tesla's Dojo/inference chip) are the only credible alternatives. Classic tollbooth: every robot sold requires chips, and the chip margin exceeds the component cost ratio.",
+        "layer_name": "Compute/Silicon (Edge AI Processors)",
+        "pricing_power": 9.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 10.0,
+        "capital_intensity": 9.0,
+        "competitive_intensity": 4.0
+      },
+      {
+        "roic": 5.0,
+        "role": "creator",
+        "notes": "Humanoid actuators require novel specs: high torque-density, backdrivability, compact form factor, and precision encoding. Not off-the-shelf. Harmonic drives, custom BLDC motors, and quasi-direct-drive architectures are all in play. Tesla, Figure, and Agility are vertically integrating actuator design, which limits the independent supplier TAM. Companies like Harmonic Drive Systems and Nidec have existing precision expertise but face OEM insourcing risk. Moderate pricing power exists for those who solve the torque-density/backdrivability tradeoff better than alternatives.",
+        "layer_name": "Actuators & Motors",
+        "pricing_power": 6.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 6.0,
+        "capital_intensity": 7.0,
+        "competitive_intensity": 7.0
+      },
+      {
+        "roic": 4.0,
+        "role": "creator",
+        "notes": "Vision sensors are commoditized—CMOS image sensors from Sony, OmniVision, etc. compete on price. The interesting niche is tactile sensing (force-torque, pressure arrays, electronic skin), where companies like SynTouch and university spinouts are still pre-commercial. Proprioceptive encoders are mid-tier components with moderate margins. Overall, sensors are a solved-problem layer with abundant supply. Tactile sensing could become a high-value niche if it proves critical for manipulation generalization, but this is unproven.",
+        "layer_name": "Sensors (Vision, Tactile, Proprioception)",
+        "pricing_power": 4.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 4.0,
+        "capital_intensity": 5.0,
+        "competitive_intensity": 8.0
+      },
+      {
+        "roic": 3.0,
+        "role": "creator",
+        "notes": "Humanoids inherit the EV battery supply chain—18650/21700 cells, BMS designs, thermal management. Zero differentiation potential. CATL, LG, Panasonic, BYD dominate with massive scale advantages. A humanoid needs 2-4 kWh for 4-8 hours of operation; this is a well-solved problem with thin margins. The only interesting frontier is structural batteries or ultra-fast charging for 24/7 operation, but neither changes the economics materially. Pure commodity input.",
+        "layer_name": "Battery & Power Systems",
+        "pricing_power": 3.0,
+        "revenue_growth": 6.0,
+        "barriers_to_entry": 5.0,
+        "capital_intensity": 8.0,
+        "competitive_intensity": 8.0
+      },
+      {
+        "roic": 3.0,
+        "role": "creator",
+        "notes": "Cast aluminum frames, titanium joints, carbon fiber links—these are standard precision manufacturing inputs with abundant CNC machining and casting capacity globally. Low differentiation, low barriers, intense competition from contract manufacturers in Asia. The only exception is bespoke mechanisms (dexterous hands, compliant joints) which are currently built in-house by OEMs rather than sourced. This layer captures minimal value.",
+        "layer_name": "Structural & Mechanical Components",
+        "pricing_power": 3.0,
+        "revenue_growth": 6.0,
+        "barriers_to_entry": 3.0,
+        "capital_intensity": 6.0,
+        "competitive_intensity": 8.0
+      },
+      {
+        "roic": 4.0,
+        "role": "creator",
+        "notes": "Tesla, Figure, Agility, 1X, Apptronik, Sanctuary AI, Unitree—20+ well-funded players racing to ship. Enormous capital requirements: factories, tooling, iterative hardware-software co-design, safety certification. The integration challenge (mechanical + electrical + thermal + software + AI) is genuinely hard, creating real barriers. But competitive intensity is brutal because every player is funded and the market hasn't bifurcated into winners/losers yet. Early ROIC is negative—Tesla's Optimus program alone is burning billions. Long-term, 2-3 winners may emerge with platform economics, but the path is capital-destructive for most. Pricing power is uncertain: robots must compete with $15-25/hr human labor, capping willingness-to-pay.",
+        "layer_name": "Systems Integration & Manufacturing (Robot OEM)",
+        "pricing_power": 5.0,
+        "revenue_growth": 9.0,
+        "barriers_to_entry": 7.0,
+        "capital_intensity": 9.0,
+        "competitive_intensity": 8.0
+      },
+      {
+        "roic": 7.0,
+        "role": "capturer",
+        "notes": "Robotics-as-a-Service is where labor substitution value is monetized directly. A robot replacing a $50K/year warehouse worker at $30K/year lease generates immediate customer ROI. The deployer captures the arbitrage between human labor cost and robot operating cost. Barriers include domain-specific task programming, fleet management software, maintenance networks, and customer relationships—these compound. Early movers in warehousing (Agility with Amazon), manufacturing (Figure with BMW), and eldercare will build switching costs through operational integration. Recurring revenue, asset-light relative to manufacturing, and direct exposure to the $40T global labor market. This is where the value chain's terminal value accrues.",
+        "layer_name": "End-User Applications & Services (RaaS)",
+        "pricing_power": 7.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 6.0,
+        "capital_intensity": 6.0,
+        "competitive_intensity": 5.0
+      }
+    ],
+    "feedback_loops": [
+      {
+        "kind": "reinforcing",
+        "strength": 9.5,
+        "description": "Humanoid robots require advanced multimodal AI, spatial computing, and reinforcement learning to perceive and interact with the physical world. Conversely, humanoids serve as the physical embodiment for AI, providing a massive new stream of real-world training data and expanding AI's total addressable market from digital to physical labor.",
+        "target_narrative": "Artificial Intelligence"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 8.5,
+        "description": "Humanoid robotics acts as a high-end forcing function for the broader robotics industry. The extreme constraints of bipedal locomotion and human-like manipulation drive breakthroughs in actuators, battery density, tactile sensors, and edge computing that spill over into industrial and service robotics.",
+        "target_narrative": "Robotics"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 8.0,
+        "description": "Humanoid robots are designed to operate in human-centric environments and use existing human tooling, directly addressing the skilled labor shortage that currently constrains reshoring and manufacturing capacity expansion. They enable reindustrialization without requiring a complete redesign of factory floors.",
+        "target_narrative": "Reindustrialization"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.5,
+        "description": "A shrinking working-age population creates a structural deficit in eldercare and healthcare labor. Humanoid robots are positioned as a scalable solution to perform routine physical tasks in care facilities and homes, mitigating the demographic tax on healthcare systems.",
+        "target_narrative": "Aging Population"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.0,
+        "description": "Defense budgets accelerate the development of autonomous systems capable of operating in degraded environments. R&D from defense initiatives (e.g., DARPA) historically seeds humanoid robotics, while the military seeks versatile autonomous platforms for logistics and explosive ordnance disposal that do not require specialized infrastructure.",
+        "target_narrative": "Defense Autonomy"
+      },
+      {
+        "kind": "resource_competition",
+        "strength": 7.0,
+        "description": "Mass production of humanoids will create massive new demand for critical minerals, particularly lithium, cobalt, and rare earth elements used in high-torque motors and battery packs. This directly competes with EV and grid-scale battery supply chains, potentially bottlenecking production.",
+        "target_narrative": "Resource Scarcity"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 6.0,
+        "description": "Humanoid form factors are highly suited for space stations and extraterrestrial habitats designed for human ergonomics. Autonomous humanoids can perform maintenance and construction in hazardous space environments, reducing the cost and risk of human extravehicular activity.",
+        "target_narrative": "Space Economy"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 5.5,
+        "description": "The AI models required to train humanoid robots demand immense compute power, driving the need for reliable, high-density baseload electricity. The nuclear renaissance provides the carbon-free energy infrastructure necessary to sustain the exponential scaling of humanoid AI training clusters.",
+        "target_narrative": "Nuclear Renaissance"
+      }
+    ],
+    "hidden_effects": [
+      {
+        "order": "hidden",
+        "description": "The emergence of deep psychological and emotional dependencies on human-like machines altering human social dynamics, alongside unprecedented cyber-physical security vulnerabilities and massive, under-accounted energy grid bottlenecks required to power millions of physical AI agents."
+      }
+    ],
+    "potential_losers": [
+      [
+        "Humanoid OEMs facing component cost inflation and allocation risk",
+        "Industrial robot makers (ABB, KUKA) competing for the same reducer supply",
+        "Startups attempting in-house reducer design without metallurgical expertise"
+      ],
+      [
+        "Pure vision-based manipulation approaches (will hit manipulation quality ceiling)",
+        "Generic force-torque sensor makers offering insufficient resolution",
+        "Humanoid OEMs treating tactile as an afterthought in BOM design"
+      ],
+      [
+        "Humanoid startups building proprietary simulation stacks (capital sinkhole)",
+        "Robotics companies relying on inadequate game-engine physics (Unreal without robotics-specific solvers)",
+        "Traditional CAD/CAE companies slow to add real-time dynamics"
+      ],
+      [
+        "Western humanoid OEMs without secured non-Chinese magnet supply (regulatory/geopolitical risk)",
+        "Chinese magnet exporters facing potential Western tariffs/export controls",
+        "Motor manufacturers without long-term offtake agreements"
+      ],
+      [
+        "Humanoid OEMs facing insurance cost overhead of $5,000-15,000 per unit annually",
+        "Small humanoid startups unable to afford certification costs (barrier to entry)",
+        "Self-insured warehouse operators taking unmodeled tail risk"
+      ],
+      [
+        "Humanoid OEMs overpromising full autonomy timelines (trust deficit when revealed)",
+        "Autonomy-only software stacks without teleoperation fallback",
+        "Traditional remote control companies with insufficient latency/haptic fidelity"
+      ],
+      [
+        "Humanoid OEMs with single-source bearing supply risk",
+        "Low-cost bearing manufacturers unable to meet humanoid precision/longevity specs",
+        "Industrial automation companies competing for the same bearing allocation"
+      ],
+      [
+        "Humanoid OEMs that don't retain data rights from deployments",
+        "Robotics companies training on synthetic-only data without real-world demonstration grounding",
+        "Contract manufacturers deploying humanoids without data-sharing agreements"
+      ],
+      [
+        "Humanoid OEMs using off-the-shelf cells (weight penalty, suboptimal runtime)",
+        "Cylindrical cell-only manufacturers without prismatic/pouch capability",
+        "Humanoid designs that treat battery as afterthought rather than structural element"
+      ],
+      [
+        "Humanoid startups building proprietary full stacks (duplicated effort, slower iteration)",
+        "Closed-stack humanoid OEMs that fail to attract third-party developer ecosystem",
+        "Traditional industrial robot software vendors (ABB, KUKA) with rigid proprietary stacks"
+      ],
+      [
+        "Humanoid OEMs using commodity steel grades (fatigue failure risk, weight penalty)",
+        "Commodity steel mills without specialty grade qualification",
+        "Aluminum suppliers expecting humanoid demand but missing the specialty steel requirement"
+      ],
+      [
+        "Humanoid OEMs targeting consumer/home first (premature, capital-intensive, liability exposure)",
+        "Traditional warehouse automation (conveyor systems, AGVs) facing humanoid substitution for flexible tasks",
+        "Third-party logistics providers with labor-cost-dependent business models"
+      ]
+    ],
+    "narrative_summary": "Humanoid robotics is a frontier investment narrative driven by the convergence of embodied AI foundation models, structural labor shortages, and declining hardware costs. The core thesis is that general-purpose humanoid robots—unlike fixed industrial robots—can be deployed into human-designed environments (factories, warehouses, eventually homes) to perform economically useful work. Tesla's Optimus program has acted as an accelerant, forcing both startups and incumbents to compress timelines, while companies like Figure AI, Agility Robotics, and Apptronik pursue B2B-first strategies targeting logistics and manufacturing as beachhead markets.\n\nThe narrative remains highly speculative with most players pre-revenue or in early pilot deployments. Strategic divergence is emerging: Tesla pursues vertical integration and eventual consumer applications, while pure-play startups focus on enterprise partnerships (BMW-Figure, Amazon-Agility). The Rivian CEO headline underscores that the space is attracting talent from adjacent industries, but commercial deployment at meaningful scale is still 2-4 years away. Key risks include battery/actuator limitations, safety regulation lag, and the possibility that specialized non-humanoid form factors prove more economically efficient for most industrial tasks.",
+    "potential_winners": [
+      [
+        "Harmonic Drive Systems (6324.T)",
+        "Nabtesco (6268.T)",
+        "Sumitomo Heavy Industries (6302.T)",
+        "Nidec (6594.T)",
+        "Zhejiang Laifual (Chinese domestic reducer specialist)"
+      ],
+      [
+        "Pressure Profile Systems (private)",
+        "SynTouch (private)",
+        "Tekscan (private)",
+        "OnRobot (tactile gripper integration)",
+        "Any humanoid OEM that vertically integrates tactile sensing early"
+      ],
+      [
+        "NVIDIA (NVDA)—Isaac/Omniverse/CuOpt stack",
+        "Ansys (ANSS)—physics simulation IP",
+        "Unity Technologies (U)—real-time 3D simulation environments",
+        "Cosys-AirSim and open-source simulation contributors acquired by majors"
+      ],
+      [
+        "MP Materials (MP)—US mining + Stage 2 magnet production",
+        "Lynas Rare Earths (LYC.AX)—largest non-Chinese processor",
+        "VAC Vacuumschmelze (private, German magnet maker)",
+        "Energy Fuels (UUUU)—US rare earth processing from monazite",
+        "USA Rare Earth (USAR)—Round Top project + magnet line"
+      ],
+      [
+        "UL Solutions (ULS)—safety certification incumbent expanding to robotics",
+        "Munich Re (MUV2.DE)—if they build actuarial models for humanoid risk early",
+        "Swiss Re (SREN.SW)—catastrophe/long-tail risk modeling expertise",
+        "TÜV SÜD (private)—EU machinery certification authority",
+        "Specialty insurtechs building robotics-specific underwriting (emerging)"
+      ],
+      [
+        "Phantom Auto (private)—teleoperation platform for logistics",
+        "HaptX (private)—haptic gloves for robotic teleoperation",
+        "SenseGlove (private)—force feedback interfaces",
+        "Verizon/Vodafone—5G low-latency edge infrastructure for teleoperation",
+        "Companies building 'robot operator' labor marketplaces"
+      ],
+      [
+        "MinebeaMitsumi (6479.T)—dominant miniature bearing market share",
+        "NSK (6471.T)—precision bearing IP",
+        "THK (6481.T)—linear motion guides for robotic joints",
+        "SKF (SKF-B.ST)—European precision bearing specialist"
+      ],
+      [
+        "Physical Intelligence (private)—robotics foundation model with data flywheel",
+        "Companies building teleoperation data capture infrastructure",
+        "Amazon/Meta—companies with massive warehouse operations that can capture worker motion data as a byproduct",
+        "Any humanoid OEM that retains exclusive rights to operational teleoperation data"
+      ],
+      [
+        "Samsung SDI (006400.KS)—custom cell form factor capability",
+        "LG Energy Solution (373220.KS)—pouch cell expertise",
+        "Solid-state battery developers (QuantumScape, Solid Power)—if they achieve 400+ Wh/kg",
+        "Chinese cell makers (CATL, EVE Energy) with fastest custom development cycles"
+      ],
+      [
+        "Intrinsic (Alphabet/Google)—owns Open Robotics/ROS",
+        "PickNik Robotics (private)—MoveIt motion planning",
+        "Microsoft—if it builds Azure Robotics for humanoid fleet management",
+        "Amazon Web Services—robotics fleet management cloud infrastructure"
+      ],
+      [
+        "Aichi Steel (5482.T)—Toyota Group specialty steel, electrical steel expertise",
+        "Nippon Steel (5401.T)—specialty steel grades for automotive/robotics",
+        "Voestalpine (VOE.VI)—European specialty alloy capability",
+        "Kobe Steel (5406.T)—titanium and specialty alloy processing"
+      ],
+      [
+        "Agility Robotics (private)—first commercial humanoid deployment in logistics",
+        "Figure AI (private)—BMW manufacturing partnership",
+        "Apptronik (private)—Mercedes-Benz partnership",
+        "Amazon—internal humanoid development + deployment at scale in own warehouses"
+      ]
+    ],
+    "dependency_network": [
+      {
+        "type": "input",
+        "layer": "Compute Infrastructure",
+        "weight": 9.5,
+        "description": "NVIDIA H100/H200 GPUs, custom AI accelerators for training large-scale neural networks controlling locomotion, manipulation, and perception. Supply constrained by TSMC fab capacity and HBM availability."
+      },
+      {
+        "type": "resource",
+        "layer": "Compute Infrastructure",
+        "weight": 8.0,
+        "description": "Hyperscale data centers for model training and simulation. Requires 50-100MW+ facilities with proximity to power generation. Colocation costs and queue times are multi-year bottlenecks."
+      },
+      {
+        "type": "input",
+        "layer": "Compute Infrastructure",
+        "weight": 7.5,
+        "description": "High-bandwidth memory (HBM3/HBM3e) and DDR5 for both training clusters and onboard inference. HBM supply tightly allocated to largest buyers."
+      },
+      {
+        "type": "resource",
+        "layer": "Compute Infrastructure",
+        "weight": 6.0,
+        "description": "Liquid cooling for training clusters and onboard thermal management. Immersion cooling adoption accelerating but still scaling."
+      },
+      {
+        "type": "input",
+        "layer": "Physical Components",
+        "weight": 10.0,
+        "description": "Precision actuators, harmonic drives, brushless DC motors, and linear actuators. Joint-level torque density and backlash tolerance are the primary physical bottleneck. Suppliers: Harmonic Drive, Nabtesco, Maxon, Yaskawa."
+      },
+      {
+        "type": "input",
+        "layer": "Physical Components",
+        "weight": 9.0,
+        "description": "High energy-density battery cells (4680 format, solid-state prototypes). Humanoids require 2-4kWh packs with 400+ Wh/kg density for practical runtime. Cell supply competes with EV demand."
+      },
+      {
+        "type": "input",
+        "layer": "Physical Components",
+        "weight": 8.5,
+        "description": "Multi-modal sensor stack: RGB-D cameras, LiDAR, tactile/force-torque sensors, IMUs. Tactile sensing for dexterous manipulation remains immature and supply-constrained."
+      },
+      {
+        "type": "input",
+        "layer": "Physical Components",
+        "weight": 7.0,
+        "description": "Semiconductor content per unit: edge inference chips (NVIDIA Jetson, Qualcomm), motor controllers, power management ICs. Automotive-grade qualification required."
+      },
+      {
+        "type": "input",
+        "layer": "Physical Components",
+        "weight": 6.5,
+        "description": "Lightweight structural materials: carbon fiber composites, titanium alloys, aluminum extrusions. Aerospace-grade tolerances at consumer-grade cost targets."
+      },
+      {
+        "type": "input",
+        "layer": "Data and AI",
+        "weight": 9.5,
+        "description": "Teleoperation datasets, simulation rollouts (Isaac Gym, MuJoCo), and real-world manipulation demonstrations. Data quality and diversity of tasks directly determines generalization capability. Bottleneck is collecting edge-case manipulation data."
+      },
+      {
+        "type": "resource",
+        "layer": "Data and AI",
+        "weight": 8.5,
+        "description": "Physics simulation platforms (NVIDIA Isaac, MuJoCo, Brax) for reinforcement learning at scale. Sim-to-real transfer gap remains the core algorithmic challenge."
+      },
+      {
+        "type": "resource",
+        "layer": "Manufacturing",
+        "weight": 9.0,
+        "description": "Precision assembly lines with sub-millimeter tolerances, cleanroom environments for sensor calibration, and end-of-line testing rigs. No existing high-volume humanoid manufacturing playbook; greenfield capex required."
+      },
+      {
+        "type": "input",
+        "layer": "Manufacturing",
+        "weight": 6.0,
+        "description": "Rare earth elements (neodymium, dysprosium) for permanent magnet motors. Supply concentrated in China; export controls pose geopolitical risk."
+      },
+      {
+        "type": "resource",
+        "layer": "Human Capital",
+        "weight": 10.0,
+        "description": "Cross-disciplinary talent: reinforcement learning researchers, controls engineers, mechanical designers, embedded systems engineers, and teleoperation operators. Total global talent pool for production-grade humanoid robotics estimated under 5,000 engineers."
+      },
+      {
+        "type": "resource",
+        "layer": "Capital",
+        "weight": 9.5,
+        "description": "Deep-tech capital with 7-10 year horizons. Figure AI raised $675M at $2.6B valuation; Tesla self-funding; Apptronik, 1X, Agility Robotics each requiring $200M-$1B+ to reach commercial scale. Venture appetite for pre-revenue hardware is fragile."
+      },
+      {
+        "type": "input",
+        "layer": "Energy",
+        "weight": 5.5,
+        "description": "Electricity for manufacturing operations, data center training, and unit charging. Grid capacity at manufacturing sites is a siting constraint; per-unit charging cost is marginal."
+      },
+      {
+        "type": "input",
+        "layer": "Energy",
+        "weight": 4.0,
+        "description": "Water for data center cooling and manufacturing processes. Locally significant but not a systemic bottleneck at current scale."
+      },
+      {
+        "type": "input",
+        "layer": "Network Infrastructure",
+        "weight": 5.0,
+        "description": "5G/Wi-Fi 6E for cloud-offloaded inference, OTA model updates, and fleet telemetry. Latency-sensitive control must remain onboard; networking is supplementary."
+      },
+      {
+        "type": "constraint",
+        "layer": "Regulatory",
+        "weight": 7.5,
+        "description": "Workplace safety regulations (OSHA), product liability frameworks, and labor displacement policy. No humanoid-specific regulatory framework exists; ISO 10218 (industrial robot safety) is being extended but inadequate for mobile manipulators in human environments."
+      },
+      {
+        "type": "constraint",
+        "layer": "Regulatory",
+        "weight": 6.0,
+        "description": "Export controls on advanced AI chips and robotics technology under US Entity List and emerging dual-use classifications. Restricts market access and supply chain flexibility."
+      },
+      {
+        "type": "constraint",
+        "layer": "Market Demand",
+        "weight": 8.0,
+        "description": "Willingness-to-pay threshold: humanoids must deliver sub-$50k unit cost with ROI under 18 months vs. human labor at $15-25/hr. Labor shortage severity in logistics, manufacturing, and eldercare is the demand pull."
+      },
+      {
+        "type": "resource",
+        "layer": "Supply Chain Logistics",
+        "weight": 6.5,
+        "description": "Component sourcing across 200+ SKUs from geographically dispersed suppliers. Single-source dependencies on Japanese gearboxes and Taiwanese semiconductors create fragility."
+      }
+    ],
+    "future_bottlenecks": [
+      {
+        "name": "Safety Certification and Liability Framework Absence",
+        "tier": "emerging",
+        "cause": "No regulatory framework exists for autonomous humanoids operating alongside humans in workplaces or homes. Current industrial robot standards (ISO 10218, RIA R15.06) assume caged or supervised operation. Humanoids working in human-shared spaces raise novel liability questions: who is responsible when a 70kg robot injures a worker? Insurance products don't exist. OSHA and equivalent bodies have no humanoid-specific guidelines. This will become acute as pilots scale from controlled demos to real deployments.",
+        "losers": [
+          "Aggressive deployment timelines that hit regulatory walls",
+          "Companies without documented safety cases",
+          "Early commercial customers facing liability exposure in pilot deployments",
+          "Countries with slow regulatory response losing competitiveness"
+        ],
+        "winners": [
+          "Standards bodies and certification firms (UL, TÜV)",
+          "Robotics insurance underwriters who move early",
+          "Companies building safety-first architectures with redundant sensing",
+          "Law firms specializing in robotics liability"
+        ],
+        "severity": 7.0,
+        "time_horizon": "2-5 years",
+        "market_awareness": "Largely ignored. Market assumes safety will be 'solved' by engineering, but the legal/regulatory infrastructure lags significantly. No major humanoid company has publicly addressed certification pathways."
+      },
+      {
+        "name": "Rare Earth and Specialized Material Supply Chains",
+        "tier": "emerging",
+        "cause": "High-performance humanoid motors require neodymium and dysprosium magnets. Torque sensors use specialized strain gauges. China controls 87% of rare earth processing and has demonstrated willingness to weaponize this (2024 export restrictions on antimony, graphite). Scaling humanoid production to millions of units would create demand spikes in materials markets that are geographically concentrated and politically fragile. A single humanoid may contain 2-4kg of rare earth magnets.",
+        "losers": [
+          "Humanoid companies with China-centric supply chains",
+          "Countries without domestic rare earth access",
+          "Companies unable to redesign motors for material substitution"
+        ],
+        "winners": [
+          "Non-Chinese rare earth miners (MP Materials, Lynas)",
+          "Motor designers reducing rare earth content (ferrite, switched reluctance)",
+          "Recycling companies for rare earths and magnets",
+          "Geopolitically diversified supply chain builders"
+        ],
+        "severity": 6.0,
+        "time_horizon": "3-7 years",
+        "market_awareness": "Low. EV market has begun pricing rare earth risk, but humanoid robotics is not yet at scale where this registers. Will become material when production exceeds 100K units/year."
+      },
+      {
+        "name": "Sim-to-Real Transfer Gap for Dynamic Environments",
+        "tier": "emerging",
+        "cause": "Simulation is the primary training ground for humanoid locomotion and manipulation, but physics simulators approximate reality. Friction, contact dynamics, material deformation, and sensor noise are poorly modeled. Robots trained in simulation exhibit distribution shift in deployment—particularly in unstructured environments (construction sites, homes, varied factory floors). The gap widens with task complexity and environmental variability. Current approaches (domain randomization, system identification) are band-aids, not solutions.",
+        "losers": [
+          "Companies over-relying on simulation without real-world validation",
+          "Investors extrapolating demo performance to real-world capability",
+          "Companies promising 'general purpose' before mastering 'specific purpose'"
+        ],
+        "winners": [
+          "Nvidia (simulation infrastructure with continuous improvement)",
+          "Companies investing in real-world data collection to complement simulation",
+          "Sim-to-real transfer research leaders",
+          "Companies focusing on narrow, well-characterized environments first"
+        ],
+        "severity": 7.0,
+        "time_horizon": "1-5 years",
+        "market_awareness": "Known in research community, underappreciated by investors. Demo videos show controlled environments; real deployment will expose the gap dramatically. Companies promising general-purpose deployment will hit this wall."
+      }
+    ],
+    "hidden_constraints": [
+      {
+        "name": "Maintenance, Repair, and Field Service Infrastructure",
+        "tier": "hidden",
+        "cause": "Humanoids are complex electromechanical systems with 1000+ moving parts operating under load. No infrastructure exists for maintenance, repair, parts distribution, or field service. EVs took 15+ years to build service networks; humanoids are more complex and will operate in more diverse environments. Who replaces a worn harmonic drive in a warehouse robot? How long is downtime? What is the spare parts logistics chain? TCO models assume minimal maintenance, but early units will likely need service every 100-200 hours of operation. This is the 'iceberg cost' beneath the acquisition price.",
+        "losers": [
+          "Companies with integrated, non-modular designs requiring factory returns for service",
+          "Customers with inadequate maintenance budgets",
+          "Humanoid makers whose unit economics break when service costs are included",
+          "Remote deployment sites without nearby service capacity"
+        ],
+        "winners": [
+          "Companies building modular, field-serviceable designs",
+          "Third-party robotics service companies (evolving from industrial robot service providers)",
+          "Companies with existing service networks that can extend to humanoids (Fanuc, KUKA, ABB)",
+          "Modular design innovators enabling rapid part swapping"
+        ],
+        "severity": 8.0,
+        "time_horizon": "3-7 years",
+        "market_awareness": "Almost entirely ignored. Market focuses on CapEx (robot price) and ignores OpEx (maintenance, downtime, service contracts). No humanoid company has presented a credible service infrastructure plan. This will be the dominant TCO component for early deployments."
+      },
+      {
+        "name": "Bipedal Locomotion Energy Inefficiency vs. Wheeled/Tracked Alternatives",
+        "tier": "hidden",
+        "cause": "Bipedal locomotion is 3-5x less energy efficient than wheeled mobility for the same payload. The human form factor is optimized for biological actuators (muscles) that are 50%+ efficient, not electric motors at 30-40% efficiency with gear train losses. The market is pursuing humanoid form factors because of human-environment compatibility (stairs, doorways, tools designed for hands), but for 70%+ of industrial use cases, wheeled platforms with manipulator arms are dramatically more efficient and practical. The 'humanoid' form factor may be a local optimum driven by narrative appeal rather than engineering rationality.",
+        "losers": [
+          "Pure-play humanoid companies if wheeled alternatives capture majority of TAM",
+          "Investors who assumed humanoid form factor was the only path",
+          "Companies that over-invested in bipedal locomotion R&D for use cases that don't require it",
+          "Component suppliers specialized exclusively in bipedal joints"
+        ],
+        "winners": [
+          "Wheeled/tracked mobile manipulator companies (Fetch, Locus, mobile ABB arms)",
+          "Companies pursuing form-factor-agnostic approaches",
+          "Investors who avoid humanoid-form-factor dogma",
+          "Hybrid designs (wheeled base + humanoid upper body)"
+        ],
+        "severity": 6.0,
+        "time_horizon": "3-10 years",
+        "market_awareness": "Almost zero. The humanoid form factor is treated as axiomatic. No major analyst has questioned whether bipedal is the right form factor for most use cases. Rivian's CEO entering the space with a 'different approach' hints at this tension but hasn't crystallized it."
+      },
+      {
+        "name": "Labor Displacement Politics and Social License to Operate",
+        "tier": "hidden",
+        "cause": "Humanoids are explicitly designed to replace human labor in physical work. Unlike software automation (which displaced workers invisibly), humanoids are visible, physical replacements working alongside humans. This creates acute political and social friction. Union pushback (UAW has already signaled concerns), consumer boycotts, 'robot tax' proposals, and local ordinances restricting humanoid deployment are likely. The social license to operate will be contested in ways that software automation never was. Early high-profile deployments could trigger backlash that delays the entire industry.",
+        "losers": [
+          "Companies with explicit 'replace human workers' messaging",
+          "Deployments in unionized environments without labor partnerships",
+          "Companies in jurisdictions likely to pass restrictive legislation",
+          "The entire sector if a high-profile incident triggers moral panic"
+        ],
+        "winners": [
+          "Companies with 'collaborative' rather than 'replacement' positioning",
+          "Companies deploying in labor-shortage sectors (elder care, agriculture) where displacement narrative is weaker",
+          "Jurisdictions that proactively create favorable regulatory environments",
+          "Companies with retraining/partnership programs with labor organizations"
+        ],
+        "severity": 7.0,
+        "time_horizon": "2-6 years",
+        "market_awareness": "Almost entirely absent from investment theses. Market assumes labor replacement is a feature, not a political liability. No humanoid company has a public strategy for managing labor relations or social acceptance."
+      },
+      {
+        "name": "Compute Power and Thermal Constraints On-Robot",
+        "tier": "hidden",
+        "cause": "Real-time perception, planning, and control for humanoids requires significant compute (50-200W for GPU + supporting hardware). This generates heat that must be dissipated from a compact form factor, competes with actuators for battery budget, and adds weight. Current solutions (Jetson Orin, etc.) are insufficient for full autonomy in complex environments. Cloud offloading introduces latency and connectivity dependencies unacceptable for safety-critical physical tasks. The compute requirement scales with task complexity, creating a moving target.",
+        "losers": [
+          "Companies assuming cloud compute will suffice for real-time control",
+          "Companies whose models are too large for on-robot deployment",
+          "Investors pricing in full autonomy without accounting for compute constraints",
+          "Companies without thermal management expertise"
+        ],
+        "winners": [
+          "Edge AI chip companies (Nvidia, Qualcomm, Hailo)",
+          "Companies developing robot-specific AI accelerators",
+          "Model compression and edge inference specialists",
+          "Companies with efficient model architectures requiring less compute"
+        ],
+        "severity": 6.0,
+        "time_horizon": "2-5 years",
+        "market_awareness": "Low. Market treats compute as solved (Nvidia exists) without understanding the specific constraints of embodied, battery-powered, thermally-limited deployment. The gap between 'model runs in cloud' and 'model runs on robot in real-time' is substantial."
+      }
+    ],
+    "current_bottlenecks": [
+      {
+        "name": "Actuator and Precision Component Costs",
+        "tier": "current",
+        "cause": "Humanoid robots require dozens of high-torque, high-precision actuators (harmonic drives, torque sensors, joint motors) that are currently produced in low volumes with no economies of scale. A single humanoid may require 40+ actuators, each costing hundreds to thousands of dollars, making BOM costs prohibitive for commercial deployment. Supply is concentrated among a handful of Japanese (Harmonic Drive Systems) and German manufacturers with limited capacity expansion plans.",
+        "losers": [
+          "Humanoid startups without vertical integration (Figure, 1X, Apptronik)",
+          "Companies reliant on third-party actuator suppliers",
+          "Pure-play robot OEMs with thin margins"
+        ],
+        "winners": [
+          "Harmonic Drive Systems",
+          "Nabtesco",
+          "Kollmorgen",
+          "Chinese actuator startups scaling production (e.g., Leaderdrive)",
+          "Tesla (vertical integration of actuator manufacturing)"
+        ],
+        "severity": 8.0,
+        "time_horizon": "0-3 years",
+        "market_awareness": "Moderately known; investors understand robotics is capital-intensive but underestimate the actuator cost as a percentage of total BOM (estimated 30-40%) and the supply concentration risk."
+      },
+      {
+        "name": "Battery Energy Density and Operational Runtime",
+        "tier": "current",
+        "cause": "Bipedal locomotion and manipulation are energy-intensive. Current lithium-ion packs deliver ~250-300 Wh/kg, yielding only 4-6 hours of light-duty operation. Humanoids carrying meaningful payload see runtime drop to 2-3 hours. This makes them impractical for full-shift industrial deployment without hot-swapping infrastructure or charging stations embedded in work environments.",
+        "losers": [
+          "Humanoid makers promising 8+ hour shifts on current Li-ion",
+          "Customers needing continuous operation without redundancy",
+          "Battery commodity players without differentiated density"
+        ],
+        "winners": [
+          "Solid-state battery developers (QuantumScape, Factorial)",
+          "Silicon anode battery makers",
+          "Companies designing hot-swap battery architectures",
+          "Charging infrastructure providers"
+        ],
+        "severity": 7.0,
+        "time_horizon": "0-4 years",
+        "market_awareness": "Known but underweighted. Market focuses on AI capabilities while treating power as a secondary engineering problem. Few models account for the infrastructure cost of charging stations in TCO calculations."
+      },
+      {
+        "name": "Manipulation Data Scarcity and Task Generalization",
+        "tier": "current",
+        "cause": "LLMs benefited from internet-scale text data. Humanoid manipulation has no equivalent corpus. Teleoperation data is expensive ($50-100+ per demonstration), simulation data suffers from reality gap, and real-world dexterous manipulation datasets are tiny. Current models can do specific tasks well but fail to generalize across object shapes, materials, and spatial configurations. The 'long tail' of manipulation scenarios is effectively infinite.",
+        "losers": [
+          "Humanoid companies without data flywheel partnerships",
+          "Pure simulation approaches without real-world validation loops",
+          "Investors pricing in near-term task-general autonomy"
+        ],
+        "winners": [
+          "Nvidia (Isaac Sim, Omniverse, synthetic data generation)",
+          "Companies with fleet data collection strategies (Tesla, Figure with BMW partnership)",
+          "Teleoperation platform providers",
+          "Data labeling/annotation companies specializing in robotics"
+        ],
+        "severity": 9.0,
+        "time_horizon": "0-5 years",
+        "market_awareness": "Well-known among robotics researchers but poorly understood by investors who conflate LLM progress with embodied AI progress. Market narrative implies humanoid capability is closer than it is."
+      }
+    ],
+    "first_order_effects": [
+      {
+        "order": "1",
+        "description": "Direct substitution of human physical labor in structured and unstructured environments (manufacturing, logistics, agriculture, caregiving), leading to immediate gains in industrial productivity and localized job displacement."
+      }
+    ],
+    "regulatory_analysis": {
+      "summary": "The current regulatory landscape for humanoid robotics is a fragmented patchwork of existing product safety, workplace safety (e.g., OSHA), AI, and privacy laws, lacking specific frameworks for autonomous bipedal systems. In the near term, the EU will likely lead with prescriptive updates to its Machinery Directive and AI Act, while the US will rely on agency guidance, tort law, and voluntary industry standards (ANSI/IEEE). Future regimes will likely require specific operational licensing for public and residential deployment, strict liability frameworks for manufacturers, and standardized 'behavioral' safety certifications for AI-driven physical interactions in human environments.",
+      "catalysts": [
+        "Severe labor shortages in logistics, manufacturing, and elder care prompting governments to fast-track regulatory approvals and create regulatory sandboxes.",
+        "Establishment of clear, universally accepted ISO/IEEE safety standards for human-robot interaction, providing manufacturers with a compliance 'safe harbor'.",
+        "High-profile accidents or failures triggering urgent, cohesive legislative action that establishes a definitive federal or international regulatory framework.",
+        "Breakthroughs in AI safety verification and explainability, allowing regulators to confidently certify autonomous decision-making in physical environments.",
+        "Military or public sector dual-use deployments forcing governments to establish clear operational and ethical frameworks that subsequently spill over into commercial markets."
+      ],
+      "key_risks": [
+        "Liability ambiguity: Unclear allocation of fault among hardware manufacturers, AI software developers, and deploying enterprises in the event of physical harm or property damage.",
+        "Data privacy violations: Humanoids equipped with dense sensor arrays (LiDAR, cameras, microphones) operating in homes and workplaces risk violating surveillance and data protection laws like GDPR and CCPA.",
+        "Physical safety hazards: Unpredictable interactions in dynamic, unstructured human environments leading to severe injuries and triggering immediate operational bans.",
+        "Regulatory fragmentation: Divergent international standards (e.g., EU prescriptive rules vs. US tort-based approach) increasing compliance costs and delaying global commercial scaling.",
+        "Labor displacement backlash: Sociopolitical pressure and union pushback resulting in restrictive 'robot taxes', deployment limits, or sector-specific bans."
+      ]
+    },
+    "third_order_effects": [
+      {
+        "order": "3",
+        "description": "Fundamental restructuring of the social contract and macroeconomic models, forcing the implementation of Universal Basic Income (UBI) or similar wealth distribution mechanisms, and shifting global geopolitical power away from low-cost-labor nations to capital-and-AI-rich nations."
+      }
+    ],
+    "second_order_effects": [
+      {
+        "order": "2",
+        "description": "Reshoring of global manufacturing as labor cost arbitrage disappears, triggering deflationary trends in physical goods and shifting workforce demand from physical labor to robot fleet management, maintenance, and AI training."
+      }
+    ],
+    "confidence_assessment": {
+      "composite": 6.3,
+      "conviction": 5.0
+    },
+    "geopolitical_analysis": {
+      "summary": "Humanoid robotics has emerged as a frontier technology with profound geopolitical implications, sitting at the convergence of AI, advanced manufacturing, semiconductors, rare earth supply chains, and battery technology—all domains already contested between major powers. The US-China rivalry is the dominant axis: China has designated humanoid robotics as a strategic priority under its Beijing Innovation Plan, aiming for mass production by 2025 and establishing a national-level robotics innovation center, while the US leads through private-sector players (Figure AI, Tesla Optimimus, Agility Robotics, Boston Dynamics) backed by Pentagon interest and venture capital. China's military-civil fusion doctrine ensures that civilian humanoid development directly feeds military capability, creating dual-use ambiguity that complicates export control regimes. Japan and South Korea, facing acute demographic decline, view humanoids as strategic labor-replacement infrastructure and have deep robotics expertise, positioning them as potential kingmakers in standards-setting and component supply. The European Union is pursuing regulatory leadership through its AI Act and machinery directives, attempting to shape global governance even as it lags in commercial deployment. Humanoid robots are also data-collection platforms operating in homes, factories, hospitals, and government facilities—raising data sovereignty and espionage concerns that will likely trigger restrictions on foreign-origin robots in sensitive environments, fragmenting the global market along trust-bloc lines. Critically, if humanoids successfully automate manufacturing at scale, they could erode the labor-cost arbitrage that has driven globalization for four decades, enabling reshoring to high-wage countries and potentially destabilizing developing economies whose growth models depend on labor-intensive exports to the West. This makes humanoid robotics not merely a technology competition but a potential rewiring of global trade flows, military logistics, and demographic resilience.",
+      "key_risks": [
+        "Supply chain weaponization: China's near-monopoly on rare earth processing (neodymium, dysprosium for humanoid actuators and motors) and battery supply chains creates a choke point that can be restricted during crises, mirroring the semiconductor vulnerability in reverse.",
+        "Military-civil fusion ambiguity: China's doctrine explicitly blurs civilian and military robotics development, making it nearly impossible to verify whether exported humanoid platforms or components are diverted to military applications, triggering escalatory export controls.",
+        "Export control fragmentation: US restrictions on advanced AI chips (H100s, A100s) already limit China's ability to train embodied AI models; extending these to humanoid robots and their components could split the global market into incompatible technology blocs, suppressing innovation and raising costs.",
+        "Data sovereignty and espionage: Humanoid robots equipped with cameras, microphones, and environmental sensors operating in homes, factories, and government facilities become intelligence assets; foreign-origin robots will face bans in sensitive sectors, creating market access barriers.",
+        "Labor displacement in developing economies: If humanoids automate manufacturing and service work at scale, countries reliant on labor-intensive exports (Vietnam, Bangladesh, Mexico, Indonesia) face structural economic disruption, potentially fueling migration crises and political instability.",
+        "AI safety and accountability gaps: When a humanoid robot causes harm across jurisdictions (e.g., a robot manufactured in Country A, running AI trained in Country B, operating in Country C), liability frameworks are undefined, creating legal vacuum that could trigger diplomatic disputes.",
+        "Race-to-the-bottom on safety standards: Strategic pressure to deploy humanoids faster than rivals may lead nations to shortcut safety testing and certification, increasing risk of catastrophic failures (physical harm, autonomous misbehavior) that undermine public trust and trigger regulatory whiplash.",
+        "Proliferation to adversarial states: Humanoid platforms with autonomous capabilities could be acquired by states or non-state actors for asymmetric warfare, assassination, or sabotage, bypassing traditional arms control frameworks that do not anticipate robotic infantry.",
+        "Standards bifurcation: If US-aligned and China-aligned blocs adopt incompatible communication protocols, safety standards, and AI architectures for humanoids, the global market fragments, interoperability collapses, and costs rise—replicating the Huawei/5G dynamic in physical robotics.",
+        "Concentration of capability: If humanoid robotics leadership consolidates in 2-3 nations, the dependency of the rest of the world on these suppliers creates new vectors of strategic coercion, akin to current energy dependencies."
+      ],
+      "opportunities": [
+        "Demographic resilience for aging societies: Japan, South Korea, China, and parts of Europe face population decline and labor shortages; humanoids offer a structural solution that reduces reliance on immigration (politically contentious) and sustains economic output, giving early adopters a decisive long-term growth advantage.",
+        "Manufacturing reshoring and strategic autonomy: If humanoids reduce labor cost as a manufacturing variable, high-wage nations can reshore production, shortening supply chains, reducing exposure to geopolitical disruption (Taiwan contingencies, South China Sea conflicts), and rebuilding industrial depth.",
+        "Standards leadership as soft power: The nation or bloc that establishes the dominant safety, interoperability, and AI architecture standards for humanoids will shape the global market structure, extract licensing revenue, and embed its values into the technology—replicating the strategic advantage the US gained from setting internet and software standards.",
+        "New export category and trade leverage: For nations that achieve humanoid leadership, robots become a high-value export category that can substitute for declining sectors (automotive, consumer electronics), generating trade surpluses and geopolitical leverage with importing nations.",
+        "Military logistics and force multiplication: Humanoid robots capable of operating in human-designed environments (ships, vehicles, warehouses) can reduce military personnel requirements for logistics and support roles, enabling smaller, more sustainable forward deployments—a significant advantage in protracted conflicts.",
+        "Disaster response and humanitarian diplomacy: Humanoid robots deployed for earthquake recovery, nuclear accident mitigation, and pandemic-era healthcare can serve as instruments of soft power, projecting technological competence and generating goodwill in strategically important regions.",
+        "Reduced energy and resource competition: By automating domestic production, humanoid-adopting nations may reduce their dependence on long-distance shipping and the energy infrastructure that supports it, lessening friction in contested regions (Strait of Hormuz, Malacca) and reducing climate-related geopolitical flashpoints.",
+        "Coalition-building through technology transfer: Nations leading in humanoid robotics can offer technology access, joint manufacturing, or co-development agreements to strategic partners (e.g., US to India, Southeast Asia; China to Belt and Road partners), deepening alliance structures and creating dependency-based influence.",
+        "First-mover regulatory capture: Nations that develop mature humanoid governance frameworks first can influence international regulatory bodies (ISO, IEEE, UN) to adopt their standards, creating compliance moats that disadvantage foreign competitors and lock in market access advantages.",
+        "Reduced migrant labor dependency and domestic political stabilization: By substituting humanoids for migrant labor in sectors like construction, agriculture, and eldercare, nations can reduce politically volatile immigration debates while maintaining economic output, addressing a root cause of populist political disruption in Western democracies."
+      ]
+    },
+    "market_misconceptions": [
+      "The humanoid form factor is optimal for most commercial tasks, when specialized robots (warehouse AMRs, surgical robots, agricultural drones) have historically captured more value in their respective domains than general-purpose platforms.",
+      "Moravec's paradox will be solved by scaling LLMs and vision-language-action models—that cognitive intelligence gains will transfer to sensorimotor control, despite these being fundamentally different computational problems involving real-time physical feedback loops.",
+      "Hardware cost curves for complex electromechanical systems (actuators, harmonic drives, tactile sensors, battery packs) will scale like semiconductors or software, when physical components face material science, manufacturing, and supply chain constraints that do not obey Moore's Law.",
+      "The 'world is built for humans' argument means humanoids can navigate it—ignoring that the world is built for human brains integrated with human bodies with millions of years of evolutionary sensorimotor calibration, not for a human-shaped shell running inference.",
+      "Demo capability equates to production capability—a robot folding laundry in a controlled lab environment is perceived as close to operating reliably in an unstructured warehouse or home, when the gap between the two is enormous.",
+      "Safety and liability frameworks will accommodate rapid deployment, when a robot that makes a physical error has categorically different legal and insurance consequences than a chatbot that hallucinates.",
+      "Energy density will improve fast enough for humanoids to operate full 8-hour shifts with payloads, when current lithium-ion technology limits practical operation to 2-4 hours of demanding physical work.",
+      "The binding constraint is AI software, not the long tail of mechanical reliability, actuator lifetime, thermal management, repair infrastructure, and edge-case physical robustness.",
+      "Labor economics will favor robot replacement across most tasks, when the fully-loaded cost of a humanoid (capex, maintenance, insurance, downtime, retrofitting environments) may exceed human labor costs in many applications for a decade or more.",
+      "Regulatory approval for autonomous physical agents operating alongside humans will follow software-like timelines rather than the decade-plus cycles seen in aviation, automotive safety, and medical devices."
+    ],
+    "portfolio_implications": {
+      "composite": 6.3,
+      "narrative_score": {
+        "duration": 8.0,
+        "conviction": 5.0,
+        "economic_impact": 10.0,
+        "valuation_support": 3.0,
+        "narrative_strength": 9.0,
+        "adoption_probability": 4.0,
+        "bottleneck_advantage": 6.0,
+        "market_awareness_gap": 4.0,
+        "second_order_effects": 9.0,
+        "competitive_advantage": 5.0
+      }
+    },
+    "psychological_analysis": {
+      "biases": [
+        "Recency bias: The dramatic improvement in LLMs from 2022-2024 has created an expectation that robotics will follow a similar trajectory, when the underlying technologies, iteration cycles, and physical constraints are fundamentally different.",
+        "Herd behavior: Every major tech company (Tesla, Amazon, Google, Microsoft, OpenAI) and prominent VC has invested in humanoid robotics, creating FOMO-driven capital allocation that reduces independent critical analysis and makes contrarian views socially costly.",
+        "Overconfidence: Founders and investors dramatically underestimate the difficulty of sensorimotor intelligence, mechanical reliability, and the gap between lab demonstrations and production deployment—estimating 2-3 year timelines for problems that took industrial robotics 30 years to solve in narrower domains.",
+        "Narrative fallacy: The 'world is built for humans, therefore humanoids are optimal' story is clean, memorable, and emotionally compelling, but it oversimplifies a complex optimization problem where form factor should follow function, not aesthetics.",
+        "Availability heuristic: Viral videos of robots performing parkour, backflips, or folding laundry are cognitively available and create an exaggerated perception of progress, while the thousands of unpublicized failure modes, reliability issues, and deployment challenges are invisible.",
+        "Confirmation bias: Investors actively seek evidence supporting the humanoid thesis (successful demos, analyst TAM projections, celebrity founder statements) while discounting contradictory evidence (slow real-world deployment, specialized robot success, historical robotics failures, energy density limits).",
+        "Anchoring: Early projections of $100T+ TAMs and 'bigger than the auto industry' comparisons anchor expectations so high that even a successful $50B robotics market would be perceived as disappointment.",
+        "Representativeness heuristic: Humanoid robotics is mentally categorized with successful platform technologies (smartphones, EVs, the internet) rather than with technologies that faced harder physical constraints (autonomous driving, nuclear fusion, flying cars), leading to inflated expectations.",
+        "Planning fallacy: Timelines consistently assume best-case scenarios for hardware development, regulatory approval, manufacturing scale-up, and customer adoption, ignoring the base rates of complex hardware product launches.",
+        "Sunk cost momentum: As billions in capital and reputational stakes accumulate across the ecosystem, the narrative becomes self-reinforcing—analysts, founders, and investors have strong incentives to maintain optimistic projections regardless of emerging evidence."
+      ],
+      "consensus_view": "Humanoid robotics is the next multi-trillion-dollar technology platform. Investors believe that breakthroughs in foundation models and LLMs will directly transfer to physical embodiment, enabling general-purpose humanoid robots to replace human labor across manufacturing, logistics, eldercare, and household tasks within 5-10 years. The humanoid form factor is considered optimal because the world is built for humans. Companies like Tesla (Optimus), Figure AI, Agility Robotics, and Apptronik are valued at premiums reflecting expectations of mass commercialization by 2026-2028, with eventual deployment at scale comparable to automobiles or smartphones. The consensus holds that hardware costs will follow Wright's Law scaling similar to EVs or solar, that the binding constraint is AI 'brains' rather than physical actuation, and that once solved, humanoids will be the most valuable product ever made.",
+      "narrative_risks": [
+        "Specialized robots may capture 80%+ of the commercial value while humanoids remain a niche premium product, mirroring how industrial robotics evolved—Fanuc, KUKA, and ABB built massive businesses with task-specific designs, not general-purpose humanoids.",
+        "Moravec's paradox persists: sensorimotor intelligence may require fundamentally different architectures than language models, and scaling VLA models may hit diminishing returns for physical dexterity well before achieving human-level manipulation.",
+        "The TAM may be a fraction of projections if humanoids are only viable in narrow, high-value applications (hazardous environments, structured warehouse tasks) rather than the broad labor replacement narrative implies.",
+        "Hardware iteration cycles are 10-50x slower than software: a robot hardware revision takes 12-18 months versus a software update in hours, meaning the rapid improvement investors expect from AI may not materialize in physical systems.",
+        "Incumbent industrial robotics companies with decades of mechanical engineering expertise, supply chains, and customer relationships may capture the real value, while humanoid startups burn capital solving problems incumbents already solved.",
+        "The cost of failure in physical space fundamentally constrains iteration speed: a robot that drops a glass in a demo is a viral video; a robot that injures a worker is a lawsuit, a regulatory investigation, and a potential company-ending event.",
+        "Battery and actuator technology may plateau short of the energy density and force-to-weight ratios needed for practical full-shift operation, making humanoids perpetually 'two years away' in the way autonomous driving has been.",
+        "Consumer applications may never materialize at projected scale: households may not tolerate the failure modes, maintenance requirements, or safety risks of a 70kg robot in close proximity to children and pets, limiting the market to industrial and commercial settings.",
+        "The narrative conflates 'useful in controlled environments' with 'useful in unstructured environments'—the long tail of edge cases in real-world physical deployment may require years of incremental engineering that defies the exponential improvement curve investors are pricing.",
+        "Geopolitical restrictions on advanced robotics exports, AI compute, and manufacturing equipment could fragment the market and slow cost reduction, particularly if US-China decoupling intensifies."
+      ],
+      "hidden_assumptions": [
+        "The humanoid form factor is optimal for most commercial tasks, when specialized robots (warehouse AMRs, surgical robots, agricultural drones) have historically captured more value in their respective domains than general-purpose platforms.",
+        "Moravec's paradox will be solved by scaling LLMs and vision-language-action models—that cognitive intelligence gains will transfer to sensorimotor control, despite these being fundamentally different computational problems involving real-time physical feedback loops.",
+        "Hardware cost curves for complex electromechanical systems (actuators, harmonic drives, tactile sensors, battery packs) will scale like semiconductors or software, when physical components face material science, manufacturing, and supply chain constraints that do not obey Moore's Law.",
+        "The 'world is built for humans' argument means humanoids can navigate it—ignoring that the world is built for human brains integrated with human bodies with millions of years of evolutionary sensorimotor calibration, not for a human-shaped shell running inference.",
+        "Demo capability equates to production capability—a robot folding laundry in a controlled lab environment is perceived as close to operating reliably in an unstructured warehouse or home, when the gap between the two is enormous.",
+        "Safety and liability frameworks will accommodate rapid deployment, when a robot that makes a physical error has categorically different legal and insurance consequences than a chatbot that hallucinates.",
+        "Energy density will improve fast enough for humanoids to operate full 8-hour shifts with payloads, when current lithium-ion technology limits practical operation to 2-4 hours of demanding physical work.",
+        "The binding constraint is AI software, not the long tail of mechanical reliability, actuator lifetime, thermal management, repair infrastructure, and edge-case physical robustness.",
+        "Labor economics will favor robot replacement across most tasks, when the fully-loaded cost of a humanoid (capex, maintenance, insurance, downtime, retrofitting environments) may exceed human labor costs in many applications for a decade or more.",
+        "Regulatory approval for autonomous physical agents operating alongside humans will follow software-like timelines rather than the decade-plus cycles seen in aviation, automotive safety, and medical devices."
+      ]
+    },
+    "adoption_curve_analysis": {
+      "stage": "Innovator / Early Prototype",
+      "growth_rate": "Pre-commercial; prototype deployments growing >100% YoY off negligible base",
+      "penetration_pct": 0.01,
+      "inflection_points": [
+        "First 10,000-unit commercial deployment by single enterprise customer (2025-2027)",
+        "Unit cost dropping below $50K with total cost of ownership beating minimum-wage labor equivalents",
+        "Establishment of regulatory and safety frameworks for autonomous humanoid robots in workplaces",
+        "General-purpose manipulation capability matching human performance on standardized benchmarks"
+      ]
+    },
+    "investment_opportunities": [
+      {
+        "type": "direct",
+        "title": "Precision Reducers and Harmonic Drives as the Structural Bottleneck",
+        "thesis": "Every humanoid requires 40-60 precision actuators, each containing harmonic or cycloidal reducers that achieve zero-backlash torque transmission in compact form factors. Only three companies—Harmonic Drive Systems, Nabtesco, and Sumitomo Heavy Industries—possess the decades of metallurgical, gear-tooth profile, and manufacturing process IP to produce these at quality. Even at 100,000 units/year humanoid production (a fraction of bullish projections), reducer demand would roughly double the current precision reducer market. Capacity expansion requires 3-5 year lead times for specialized CNC grinding equipment and metallurgical qualification. This is a multi-year supply-constrained chokepoint with pricing power.",
+        "awareness_gap": "Investors focus on humanoid OEMs (Tesla, Figure, Agility) but the actuator/reducer layer is where gross margin will actually accumulate due to supply inelasticity and IP concentration.",
+        "valuation_note": "Harmonic Drive Systems trades at ~25x earnings with limited sell-side coverage outside Japan. Nabtesco trades at ~18x. Neither has been re-rated for humanoid demand.",
+        "potential_losers": [
+          "Humanoid OEMs facing component cost inflation and allocation risk",
+          "Industrial robot makers (ABB, KUKA) competing for the same reducer supply",
+          "Startups attempting in-house reducer design without metallurgical expertise"
+        ],
+        "potential_winners": [
+          "Harmonic Drive Systems (6324.T)",
+          "Nabtesco (6268.T)",
+          "Sumitomo Heavy Industries (6302.T)",
+          "Nidec (6594.T)",
+          "Zhejiang Laifual (Chinese domestic reducer specialist)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Tactile Sensing and Electronic Skin—The Missing Manipulation Layer",
+        "thesis": "The humanoid narrative centers on locomotion (solved-ish) and vision (largely solved), but manipulation—the actual economic value proposition—requires fine tactile feedback. Current humanoids operate essentially 'blind to touch,' gripping with excessive force or dropping objects. The companies solving high-resolution, low-latency force/tactile sensing (capacitive, piezoresistive, optical) will unlock the manipulation use cases that justify humanoid economics. This is a component category with no dominant supplier, massive R&D urgency from every humanoid OEM, and a clear path to becoming standard specification.",
+        "awareness_gap": "The market prices humanoid progress through walking demos and vision capabilities. Almost no investor attention on tactile sensing despite it being the gating constraint for warehouse, manufacturing, and care use cases.",
+        "valuation_note": "Most pure-play tactile sensor companies are private or small-cap. Pressure Profile Systems, SynTouch, and similar specialists are acquisition targets for humanoid OEMs at likely 5-10x revenue multiples.",
+        "potential_losers": [
+          "Pure vision-based manipulation approaches (will hit manipulation quality ceiling)",
+          "Generic force-torque sensor makers offering insufficient resolution",
+          "Humanoid OEMs treating tactile as an afterthought in BOM design"
+        ],
+        "potential_winners": [
+          "Pressure Profile Systems (private)",
+          "SynTouch (private)",
+          "Tekscan (private)",
+          "OnRobot (tactile gripper integration)",
+          "Any humanoid OEM that vertically integrates tactile sensing early"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Simulation-to-Reality Training Infrastructure as the AI Bottleneck",
+        "thesis": "Humanoids cannot learn manipulation and locomotion from real-world data alone—too slow, too dangerous, too expensive. The training pipeline runs through physics-accurate simulation environments where millions of episodes can be generated, domain-randomized, and transferred to reality (sim-to-real). NVIDIA's Isaac/Omniverse is the early leader, but the market underestimates how much of the humanoid value stack sits in simulation fidelity, physics solver accuracy, and synthetic data generation. The company that owns the simulation layer effectively taxes every humanoid developer.",
+        "awareness_gap": "Investors view NVIDIA's robotics play as peripheral to data center AI. In reality, simulation infrastructure could become a recurring platform tax on the entire humanoid industry, analogous to how AWS taxes software.",
+        "valuation_note": "NVIDIA is obviously not undervalued, but the robotics/simulation revenue stream is not separately disclosed or modeled by sell-side analysts. Robotics segment could be $5-10B revenue by 2028 with 80%+ margins.",
+        "potential_losers": [
+          "Humanoid startups building proprietary simulation stacks (capital sinkhole)",
+          "Robotics companies relying on inadequate game-engine physics (Unreal without robotics-specific solvers)",
+          "Traditional CAD/CAE companies slow to add real-time dynamics"
+        ],
+        "potential_winners": [
+          "NVIDIA (NVDA)—Isaac/Omniverse/CuOpt stack",
+          "Ansys (ANSS)—physics simulation IP",
+          "Unity Technologies (U)—real-time 3D simulation environments",
+          "Cosys-AirSim and open-source simulation contributors acquired by majors"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Rare Earth Processing Independence for High-Torque-Density Motors",
+        "thesis": "Each humanoid contains 40+ brushless DC motors requiring neodymium-iron-boron permanent magnets, often with dysprosium additions for thermal stability. At 1M units/year production, humanoid magnet demand would add 15-20% to global NdFeB demand. Currently, 87% of rare earth processing and 92% of NdFeB magnet production sits in China. Western humanoid OEMs face existential supply chain risk. Non-Chinese rare earth mining and processing capacity is the strategic bottleneck, and government defense/industrial policy will subsidize its creation.",
+        "awareness_gap": "Rare earth narrative is dominated by EV motor demand. Humanoid demand is a second derivative that analysts haven't modeled. The compounding effect of EV + humanoid + wind + defense creates a structural deficit few are pricing.",
+        "valuation_note": "MP Materials trades at ~8x 2025 EBITDA with Phase 2 (magnet manufacturing) coming online. Lynas trades at ~7x. Both are priced for current rare earth cycles, not humanoid demand acceleration.",
+        "potential_losers": [
+          "Western humanoid OEMs without secured non-Chinese magnet supply (regulatory/geopolitical risk)",
+          "Chinese magnet exporters facing potential Western tariffs/export controls",
+          "Motor manufacturers without long-term offtake agreements"
+        ],
+        "potential_winners": [
+          "MP Materials (MP)—US mining + Stage 2 magnet production",
+          "Lynas Rare Earths (LYC.AX)—largest non-Chinese processor",
+          "VAC Vacuumschmelze (private, German magnet maker)",
+          "Energy Fuels (UUUU)—US rare earth processing from monazite",
+          "USA Rare Earth (USAR)—Round Top project + magnet line"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Robot Liability Insurance and Safety Certification as Regulatory Moat",
+        "thesis": "As humanoids enter warehouses, factories, and eventually public spaces, the liability framework is essentially nonexistent. When a 70kg robot with 40 actuators injures a worker, who is liable—OEM, operator, fleet manager? OSHA, EU Machinery Directive, and ISO 10218 are being revised but lag reality. The companies that build safety certification, risk modeling, and liability insurance infrastructure will become mandatory gatekeepers—every humanoid deployment will require certification and insurance, creating a recurring revenue stream with regulatory moat.",
+        "awareness_gap": "No investor is modeling the insurance/certification layer of humanoids. It's perceived as a cost center rather than a standalone business opportunity with embedded regulatory monopoly characteristics.",
+        "valuation_note": "UL Solutions (ULS) trades at ~15x earnings. Munich Re and Swiss Re trade at ~10-12x. None carry humanoid risk premium in estimates. First-mover insurers could capture 30-50% market share in a new $2-5B annual premium category.",
+        "potential_losers": [
+          "Humanoid OEMs facing insurance cost overhead of $5,000-15,000 per unit annually",
+          "Small humanoid startups unable to afford certification costs (barrier to entry)",
+          "Self-insured warehouse operators taking unmodeled tail risk"
+        ],
+        "potential_winners": [
+          "UL Solutions (ULS)—safety certification incumbent expanding to robotics",
+          "Munich Re (MUV2.DE)—if they build actuarial models for humanoid risk early",
+          "Swiss Re (SREN.SW)—catastrophe/long-tail risk modeling expertise",
+          "TÜV SÜD (private)—EU machinery certification authority",
+          "Specialty insurtechs building robotics-specific underwriting (emerging)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Teleoperation Infrastructure as the Underpriced Bridge Market",
+        "thesis": "The market assumes full autonomous humanoid operation is 2-3 years away. Engineering reality suggests 5-10 years for general manipulation autonomy. In the interim, humanoids will operate via teleoperation—remote human operators controlling robots via low-latency networks, haptic interfaces, and VR headsets. This bridge market is large ($2-5B by 2028), underpriced, and creates the data flywheel that eventually enables autonomy. Companies building teleoperation platforms, haptic interfaces, and operator-as-a-service models are mispriced bridge infrastructure.",
+        "awareness_gap": "Teleoperation is viewed as an embarrassment or admission of failure by humanoid OEMs, so it's under-discussed. Investors don't realize that 80% of 'autonomous' humanoid demos in 2024-2026 will be teleoperated or heavily supervised.",
+        "valuation_note": "Phantom Auto (private) last raised at modest valuation. Haptic interface companies are mostly small-cap or private. The teleoperation market is priced near zero in public markets.",
+        "potential_losers": [
+          "Humanoid OEMs overpromising full autonomy timelines (trust deficit when revealed)",
+          "Autonomy-only software stacks without teleoperation fallback",
+          "Traditional remote control companies with insufficient latency/haptic fidelity"
+        ],
+        "potential_winners": [
+          "Phantom Auto (private)—teleoperation platform for logistics",
+          "HaptX (private)—haptic gloves for robotic teleoperation",
+          "SenseGlove (private)—force feedback interfaces",
+          "Verizon/Vodafone—5G low-latency edge infrastructure for teleoperation",
+          "Companies building 'robot operator' labor marketplaces"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Miniature Precision Bearings—The Unsexy Critical Chokepoint",
+        "thesis": "Beyond the headline components (actuators, sensors, batteries), each humanoid joint contains 4-8 miniature precision ball bearings (sub-10mm inner diameter). A single humanoid requires 200-400 precision bearings. The supply chain for sub-10mm precision bearings is extraordinarily concentrated: MinebeaMitsumi, NSK, THK, and SKF control ~75% of global high-precision miniature bearing supply. This is an unsexy, capital-intensive, IP-heavy category with 18-24 month capacity expansion timelines and zero investor attention.",
+        "awareness_gap": "No sell-side analyst covers miniature bearings in the context of humanoids. The category is buried in diversified industrial companies' revenue. At 1M humanoid units, this adds $500M-1B in bearing demand to a ~$3B precision bearing market.",
+        "valuation_note": "MinebeaMitsumi (6479.T) trades at ~12x earnings. NSK (6471.T) at ~9x. THK (6481.T) at ~14x. None carry humanoid demand in forward estimates.",
+        "potential_losers": [
+          "Humanoid OEMs with single-source bearing supply risk",
+          "Low-cost bearing manufacturers unable to meet humanoid precision/longevity specs",
+          "Industrial automation companies competing for the same bearing allocation"
+        ],
+        "potential_winners": [
+          "MinebeaMitsumi (6479.T)—dominant miniature bearing market share",
+          "NSK (6471.T)—precision bearing IP",
+          "THK (6481.T)—linear motion guides for robotic joints",
+          "SKF (SKF-B.ST)—European precision bearing specialist"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Physical-World Demonstration Data as the 'Scale AI' of Robotics",
+        "thesis": "The market values humanoid hardware and AI model architecture but systematically undervalues the training data. Humanoids need millions of hours of physical manipulation demonstrations—humans performing tasks while motion-captured. This data is expensive to collect, difficult to standardize, and creates compounding advantages for whoever accumulates it first. The company that builds the infrastructure to capture, label, and monetize human motion data (via teleoperation logs, VR capture, mocap studios) becomes the data layer of robotics—the 'Scale AI' equivalent for physical intelligence.",
+        "awareness_gap": "Investors understand data moats in LLMs (Scale AI valued at $14B) but haven't mapped the equivalent to robotics. Physical demonstration data is 100x more expensive to collect than text data, making first-mover advantages more durable.",
+        "valuation_note": "Most data infrastructure plays are private. Companies like Physical Intelligence, Skild AI, and World Labs are raising at significant valuations but the data-collection infrastructure layer specifically is underfunded.",
+        "potential_losers": [
+          "Humanoid OEMs that don't retain data rights from deployments",
+          "Robotics companies training on synthetic-only data without real-world demonstration grounding",
+          "Contract manufacturers deploying humanoids without data-sharing agreements"
+        ],
+        "potential_winners": [
+          "Physical Intelligence (private)—robotics foundation model with data flywheel",
+          "Companies building teleoperation data capture infrastructure",
+          "Amazon/Meta—companies with massive warehouse operations that can capture worker motion data as a byproduct",
+          "Any humanoid OEM that retains exclusive rights to operational teleoperation data"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Custom Battery Form Factors for Gravimetric Density Constraint",
+        "thesis": "Humanoids face a brutal weight-energy tradeoff: a 70kg robot needs 2-4 kWh for 4-8 hours of operation, but battery weight directly reduces payload capacity and increases actuator torque requirements (feedback loop). Standard 18650/21700 EV cells are optimized for different constraints. The opportunity is in custom prismatic/pouch cell form factors with high gravimetric energy density (300+ Wh/kg), optimized discharge profiles for burst actuator loads, and structural battery designs integrated into the robot frame.",
+        "awareness_gap": "Battery investors focus on EV and grid storage. Humanoid battery requirements are distinct enough to warrant dedicated cell development, but no analyst models this segment.",
+        "valuation_note": "Samsung SDI (006400.KS) trades at ~13x earnings. LG Energy Solution (373220.KS) at ~20x. Both have custom cell development capabilities but humanoid-specific revenue is not in any model.",
+        "potential_losers": [
+          "Humanoid OEMs using off-the-shelf cells (weight penalty, suboptimal runtime)",
+          "Cylindrical cell-only manufacturers without prismatic/pouch capability",
+          "Humanoid designs that treat battery as afterthought rather than structural element"
+        ],
+        "potential_winners": [
+          "Samsung SDI (006400.KS)—custom cell form factor capability",
+          "LG Energy Solution (373220.KS)—pouch cell expertise",
+          "Solid-state battery developers (QuantumScape, Solid Power)—if they achieve 400+ Wh/kg",
+          "Chinese cell makers (CATL, EVE Energy) with fastest custom development cycles"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Open-Source Robotics Middleware as the Android of Humanoids",
+        "thesis": "The humanoid market is fragmenting into walled gardens (Tesla, Figure, Agility each building full stacks). But history (Android vs. iOS, Linux vs. proprietary Unix, x86 vs. proprietary) suggests a large middle market of humanoid OEMs that need shared middleware—ROS 2 evolution, motion planning libraries, safety stacks, fleet management. The company/foundation that establishes the dominant open-source humanoid OS captures ecosystem value through certification, enterprise support, and marketplace fees without bearing hardware risk.",
+        "awareness_gap": "Open-source robotics is perceived as academic/low-value. But ROS 2 is already the de facto standard, and the humanoid-specific extensions (bipedal locomotion, whole-body control, manipulation planning) will need a maintained, commercially-supported distribution.",
+        "valuation_note": "Open Robotics (acquired by Intrinsic/Alphabet) is private. PickNik Robotics is private. The commercialization path is unclear but the strategic value to a platform company (Google, Amazon, Microsoft) is significant.",
+        "potential_losers": [
+          "Humanoid startups building proprietary full stacks (duplicated effort, slower iteration)",
+          "Closed-stack humanoid OEMs that fail to attract third-party developer ecosystem",
+          "Traditional industrial robot software vendors (ABB, KUKA) with rigid proprietary stacks"
+        ],
+        "potential_winners": [
+          "Intrinsic (Alphabet/Google)—owns Open Robotics/ROS",
+          "PickNik Robotics (private)—MoveIt motion planning",
+          "Microsoft—if it builds Azure Robotics for humanoid fleet management",
+          "Amazon Web Services—robotics fleet management cloud infrastructure"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Specialty Steel and Advanced Alloys for Actuator and Structural Components",
+        "thesis": "Humanoid actuators require specialty steel with specific fatigue resistance, magnetic permeability, and strength-to-weight ratios. Joint housings need lightweight alloys with precision castability. The metallurgical supply chain for these specialty grades—high-purity electrical steel for motor stators, maraging steel for gear teeth, titanium-aluminum alloys for structural frames—is concentrated in a handful of Japanese and European specialty mills. At humanoid scale, this becomes a capacity-constrained input with qualification cycles of 12-18 months.",
+        "awareness_gap": "Steel is perceived as a commodity. Specialty grades for robotics applications are not. No analyst connects specialty steel demand to humanoid production forecasts.",
+        "valuation_note": "Aichi Steel (5482.T) trades at ~8x earnings. Nippon Steel (5401.T) specialty division is buried in consolidated financials. Voestalpine (VOE.VI) trades at ~6x. None carry humanoid demand.",
+        "potential_losers": [
+          "Humanoid OEMs using commodity steel grades (fatigue failure risk, weight penalty)",
+          "Commodity steel mills without specialty grade qualification",
+          "Aluminum suppliers expecting humanoid demand but missing the specialty steel requirement"
+        ],
+        "potential_winners": [
+          "Aichi Steel (5482.T)—Toyota Group specialty steel, electrical steel expertise",
+          "Nippon Steel (5401.T)—specialty steel grades for automotive/robotics",
+          "Voestalpine (VOE.VI)—European specialty alloy capability",
+          "Kobe Steel (5406.T)—titanium and specialty alloy processing"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Warehouse and Manufacturing Labor Arbitrage—The First Real TAM",
+        "thesis": "The humanoid narrative conflates consumer/home robots (decades away) with industrial deployment (happening now). The first real TAM is structured industrial environments: warehouses, fulfillment centers, manufacturing lines. These environments are controllable, liability is bounded (employer-employee context), and labor shortages are acute (1.4M unfilled warehousing jobs in US alone). Humanoids that target this segment first will generate revenue 3-5 years before consumer/home plays, creating the cash flow and data flywheel for broader deployment.",
+        "awareness_gap": "Investors value humanoid companies on total addressable market including consumer. The near-term revenue and data advantage comes from industrial deployment, which is a smaller but more certain TAM.",
+        "valuation_note": "Agility Robotics (private) is deploying Digit in GXO warehouses. Figure AI (private) has BMW partnership. These industrial-first plays are generating real revenue while consumer-focused competitors burn cash on demos.",
+        "potential_losers": [
+          "Humanoid OEMs targeting consumer/home first (premature, capital-intensive, liability exposure)",
+          "Traditional warehouse automation (conveyor systems, AGVs) facing humanoid substitution for flexible tasks",
+          "Third-party logistics providers with labor-cost-dependent business models"
+        ],
+        "potential_winners": [
+          "Agility Robotics (private)—first commercial humanoid deployment in logistics",
+          "Figure AI (private)—BMW manufacturing partnership",
+          "Apptronik (private)—Mercedes-Benz partnership",
+          "Amazon—internal humanoid development + deployment at scale in own warehouses"
+        ]
+      }
+    ]
+  }
+}

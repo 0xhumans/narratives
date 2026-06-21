@@ -1,0 +1,951 @@
+{
+  "id": "24ddbf0b-e1ba-4b25-bd52-ea9208ae6546",
+  "narrative_id": "1e061e0c-293a-42a1-9f95-a9c4d96a28fb",
+  "version": 1,
+  "generated_at": "2026-06-18T18:16:55.814093Z",
+  "payload": {
+    "key_drivers": [
+      "AI/data center electricity demand: Hyperscalers (Microsoft, Amazon, Google) need 24/7 firm clean power at scale; renewables plus batteries cannot economically meet 100+ MW continuous loads for AI training clusters",
+      "Regulatory modernization: ADVANCE Act (2024) mandates NRC process reform, fee structure changes, and expedited licensing pathways specifically for advanced reactors",
+      "Political tailwind under Trump administration: Pro-nuclear 'nuclear bros' faction (Chris Wright, Doug Burgum) expected to accelerate DOE loan guarantees, streamline permitting, and prioritize domestic nuclear manufacturing",
+      "Corporate direct investment model: Tech giants shifting from PPAs to equity stakes and direct development partnerships (Amazon-X-energy $500M+, Google-Kairos), bypassing traditional utility procurement bottlenecks",
+      "Manufacturing cost-curve thesis: Standardized modular design enabling factory production, learning rates of 10-20% per doubling, and NOAK (nth-of-a-kind) cost targets 30-50% below FOAK",
+      "HALEU fuel supply bottleneck: Most advanced SMR designs require high-assay low-enriched uranium (5-20% U-235) not commercially produced in the US; Centrus Energy's Piketon facility and DOE investments are critical path",
+      "Grid resilience and energy security: SMRs offer distributed baseload, black-start capability, and reduced transmission build requirements—increasingly valued as grid reliability concerns mount",
+      "IRA and DOE subsidy stack: 45U nuclear production tax credit, 48E investment tax credit eligibility, and DOE Loan Programs Office backing create substantial de-risking for FOAK projects"
+    ],
+    "value_capture": [
+      {
+        "roic": 8.0,
+        "role": "capturer",
+        "notes": "Most SMR designs require high-assay low-enriched uranium (HALEU) at 5-20% U-235, for which there is effectively no commercial Western supply chain today. Only Centrus (via DOE contracts) and Urenco are positioned near-term; Rosatom dominates globally but is sanctioned. This is the single most critical bottleneck: without fuel, no reactor operates. The chokepoint gives enrichers extraordinary pricing power and quasi-monopoly rents. Extremely high capital intensity and multi-year lead times for centrifuge cascades create durable moats. Value capturer par excellence.",
+        "layer_name": "HALEU Fuel Enrichment & Supply",
+        "pricing_power": 9.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 10.0,
+        "capital_intensity": 9.0,
+        "competitive_intensity": 2.0
+      },
+      {
+        "roic": 6.0,
+        "role": "creator",
+        "notes": "NuScale, TerraPower, X-energy, GE Hitachi BWRX-300, Rolls-Royce SMR, Westinghouse AP300. These firms create the fundamental design but face enormous regulatory cost and timeline risk (NuScale's UAMPS cancellation is cautionary). IP licensing model can generate high-margin recurring revenue once certified, but most are pre-revenue. NRC certification costs $500M-$1B and 5-7 years. Winners who achieve certification and first-of-a-kind deployment will capture licensing fees, but the path is littered with capital destruction. Value creator with optionality.",
+        "layer_name": "Reactor Design & IP Licensing",
+        "pricing_power": 7.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 9.0,
+        "capital_intensity": 6.0,
+        "competitive_intensity": 5.0
+      },
+      {
+        "roic": 7.0,
+        "role": "capturer",
+        "notes": "Nuclear-grade large forgings (reactor pressure vessels, steam generators) have very few qualified suppliers globally—Japan Steel Works, China First Heavy Industries, Doosan, Framatome. ASME Section III nuclear qualification and N-stamp certification create durable moats. SMRs promise factory fabrication but still require specialized nuclear-grade manufacturing. Limited qualified capacity gives incumbents pricing power on critical path components. Captures value because reactor designers cannot proceed without them.",
+        "layer_name": "Specialized Component Manufacturing & Forging",
+        "pricing_power": 7.0,
+        "revenue_growth": 6.0,
+        "barriers_to_entry": 8.0,
+        "capital_intensity": 8.0,
+        "competitive_intensity": 3.0
+      },
+      {
+        "roic": 3.0,
+        "role": "creator",
+        "notes": "Historically the value destruction zone of nuclear—Vogtle, Flamanville, Olkiluoto all ran 2-3x over budget. SMRs theoretically reduce construction risk via modular factory fabrication, but first-of-a-kind builds will still face site-specific challenges, labor shortages in nuclear welding, and schedule risk. Fixed-price EPC contracts transfer risk to contractors who often lose money. Bechtel, Fluor, Jacobs compete but margins are thin and contingency risk is high. Value creator in the sense of enabling deployment, but poor economics for the layer itself.",
+        "layer_name": "EPC & Construction",
+        "pricing_power": 3.0,
+        "revenue_growth": 5.0,
+        "barriers_to_entry": 6.0,
+        "capital_intensity": 8.0,
+        "competitive_intensity": 6.0
+      },
+      {
+        "roic": 5.0,
+        "role": "capturer",
+        "notes": "Regulated utilities (TVA, Dominion, Energy Northwest) or industrial off-takers (data centers, Dow Chemical) operate the assets. Regulated returns cap upside but provide stability. The real value capture here is optionality on 24/7 clean firm power at a time when grids face simultaneous electrification and decarbonization pressures. Data center hyperscalers increasingly willing to pay premium for behind-the-meter nuclear. Long asset life (60+ years) means low ROIC initially but improving as depreciation rolls off. Captures value via cheap baseload power in constrained grids.",
+        "layer_name": "Utility Operator & Asset Owner",
+        "pricing_power": 5.0,
+        "revenue_growth": 4.0,
+        "barriers_to_entry": 7.0,
+        "capital_intensity": 9.0,
+        "competitive_intensity": 4.0
+      },
+      {
+        "roic": 8.0,
+        "role": "capturer",
+        "notes": "Boutique firms with ex-NRC expertise (Jensen Hughes, Enercon, PacTec) provide licensing support, safety analysis, and compliance. Asset-light, high-margin consulting. As SMR applicants navigate NRC Part 50/52 processes, demand for specialized regulatory expertise is inelastic—mistakes cost years and hundreds of millions. Small market but excellent unit economics. Captures value from the regulatory complexity that is itself a barrier protecting the entire ecosystem.",
+        "layer_name": "Nuclear Licensing & Regulatory Services",
+        "pricing_power": 6.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 7.0,
+        "capital_intensity": 2.0,
+        "competitive_intensity": 4.0
+      },
+      {
+        "roic": 6.0,
+        "role": "creator",
+        "notes": "SMRs paired with thermal storage, hydrogen production, or desalination create flexible energy hubs. Balance-of-plant systems (turbines, cooling, electrical) are more commoditized than nuclear island components. Siemens, GE Vernova, Mitsubishi supply turbogenerators. Moderate competition, moderate returns. Value creator enabling multi-use applications but not a chokepoint. Differentiation possible in hybrid nuclear-storage configurations.",
+        "layer_name": "Grid Integration, Storage & Balance of Plant",
+        "pricing_power": 5.0,
+        "revenue_growth": 6.0,
+        "barriers_to_entry": 5.0,
+        "capital_intensity": 5.0,
+        "competitive_intensity": 6.0
+      }
+    ],
+    "feedback_loops": [
+      {
+        "kind": "reinforcing",
+        "strength": 9.0,
+        "description": "AI data centers require massive, reliable, and increasingly carbon-free baseload power. SMRs can be co-located with hyperscale data centers to provide dedicated, off-grid-capable electricity, bypassing transmission bottlenecks and meeting ESG goals.",
+        "target_narrative": "Artificial Intelligence"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 10.0,
+        "description": "SMRs are the technological vanguard of the broader Nuclear Renaissance. They offer lower initial capital costs, modular scalability, and faster deployment timelines compared to traditional gigawatt-scale nuclear plants, making nuclear energy viable for a wider range of applications.",
+        "target_narrative": "Nuclear Renaissance"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 8.0,
+        "description": "Military installations, forward operating bases, and autonomous naval vessels require highly secure, resilient, and transportable power sources independent of vulnerable civilian grids. SMRs and microreactors directly fulfill this strategic requirement.",
+        "target_narrative": "Defense Autonomy"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 8.0,
+        "description": "By providing firm, dispatchable zero-carbon energy, SMRs accelerate the decarbonization of the grid, mitigating the root causes of climate change. They also provide reliable power for energy-intensive climate adaptation infrastructure, such as desalination plants.",
+        "target_narrative": "Climate Adaptation"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 8.0,
+        "description": "Reshoring heavy manufacturing and energy-intensive industries (like green steel and chemical processing) requires massive power capacity. SMRs can be deployed directly at industrial sites to provide dedicated process heat and electricity, circumventing grid limitations.",
+        "target_narrative": "Reindustrialization"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.0,
+        "description": "Sustained lunar and Martian colonization, as well as high-power deep space missions, require energy density that solar panels cannot efficiently provide. Space-adapted micro-SMRs are a critical enabling technology for continuous extraterrestrial operations.",
+        "target_narrative": "Space Economy"
+      },
+      {
+        "kind": "resource_competition",
+        "strength": 7.0,
+        "description": "The rapid scaling of SMRs will significantly increase demand for enriched uranium fuel (like HALEU), specialized nuclear-grade alloys, heavy manufacturing forgings, and a highly constrained pool of nuclear engineers and regulatory talent.",
+        "target_narrative": "Resource Scarcity"
+      }
+    ],
+    "hidden_effects": [
+      {
+        "order": "hidden",
+        "description": "Decommissioning liability fragments across potentially hundreds of small operators with thinner balance sheets, creating a future systemic fiscal risk where no single entity has the financial depth to manage end-of-life obligations, effectively socializing cleanup costs onto taxpayers decades later."
+      },
+      {
+        "order": "hidden",
+        "description": "Specialized nuclear workforce (licensed operators, health physicists, nuclear engineers) gets diluted across many dispersed sites rather than concentrated at large plants, degrading institutional knowledge density, training quality, and safety culture per site while creating labor shortages that throttle deployment velocity."
+      },
+      {
+        "order": "hidden",
+        "description": "First-mover vendors who secure regulatory design certification effectively capture a standards moat: subsequent competitors face escalating compliance costs and delayed market entry, potentially locking in a near-monopoly for early certified designs regardless of technical superiority."
+      },
+      {
+        "order": "hidden",
+        "description": "SMR economics depend on high factory utilization to achieve learning-curve cost reductions; if early orders are insufficient or staggered, the promised cost curve never materializes, creating a self-reinforcing failure mode where high initial prices suppress orders, which keeps prices high — a demand-side death spiral distinct from technical feasibility."
+      }
+    ],
+    "potential_losers": [
+      [
+        "SMR developers without secured fuel supply agreements — Oklo, X-energy, TerraPower face existential fuel risk",
+        "Rosatom — loses export revenue as Western nations ban Russian HALEU, though benefits short-term from supply scarcity",
+        "Utilities signing SMR power purchase agreements without fuel cost escalation clauses"
+      ],
+      [
+        "NuScale (SMR) — supply chain cost overruns already contributed to project cancellations (UAMPS Carbon Free Power Project)",
+        "General Electric (GE/GEV) — GE Hitachi BWRX-300 faces same supplier constraints despite strong design",
+        "Chinese nuclear exporters — potentially constrained by Western nonproliferation restrictions on supply chain integration"
+      ],
+      [
+        "Natural gas peaker plants — displaced by nuclear PPA preference for 24/7 clean power",
+        "Renewables-only developers — intermittency limitations become more visible as data centers demand firm power",
+        "Coal plant operators — accelerated retirement as nuclear PPA economics improve",
+        "Grid operators relying on market pricing — behind-the-meter nuclear deals bypass wholesale markets"
+      ],
+      [
+        "Kazatomprom — production shortfalls, infrastructure constraints, geopolitical discount widening",
+        "Russian uranium exporters — banned from US/EU markets, losing market access",
+        "Utilities without long-term uranium contracts — exposed to spot price spikes and supply insecurity",
+        "Niger uranium operations — political instability after 2023 coup, Orano and CNNC operations disrupted"
+      ],
+      [
+        "Light water SMR designs (NuScale) — competing against TRISO-based designs with weaker safety cases in regulatory environment favoring passive safety",
+        "Conventional fuel fabricators without TRISO capability — Westinghouse must license or develop TRISO capability",
+        "Chinese TRISO developers — nonproliferation restrictions limit export markets"
+      ],
+      [
+        "NuScale (SMR) — first-mover disadvantage proven costly; UAMPS cancellation damaged credibility",
+        "US SMR developers competing against subsidized Chinese/Korean large nuclear in emerging markets",
+        "Natural gas combined cycle — large nuclear's direct competitor for baseload generation in markets pricing carbon"
+      ],
+      [
+        "Small SMR startups attempting in-house licensing — burning capital on regulatory processes instead of technology",
+        "NRC itself — understaffed and overwhelmed by 20+ advanced reactor applications with limited review capacity",
+        "Anti-nuclear advocacy groups — losing influence as climate urgency shifts regulatory posture toward deployment"
+      ],
+      [
+        "States hosting interim storage facilities without benefit-sharing agreements — political opposition without economic upside",
+        "DOE Office of Environmental Management — budget pressure from growing cleanup obligations",
+        "SMR developers claiming 'less waste' without credible waste management plans — regulatory and public acceptance risk"
+      ],
+      [
+        "SMR startups without workforce development plans — cannot staff operations even with licensed designs",
+        "NRC — insufficient inspector pipeline to review and oversee 20+ advanced reactor applications",
+        "Non-nuclear engineering firms attempting to pivot into nuclear — certification and qualification barriers are insurmountable short-term"
+      ],
+      [
+        "German nuclear industry — permanently dismantled, Siemens exited nuclear, no path to reentry",
+        "Russian nuclear exports to Europe — Rosatom locked out of EU market, Finnish Hanhikivi and Hungarian Paks II projects at risk",
+        "European natural gas industry — nuclear revival reduces long-term gas demand for power generation",
+        "European renewables-only advocates — political capital shifting toward nuclear inclusion in clean energy targets"
+      ],
+      [
+        "Oklo (OKLO) — no NRC license, no fuel supply, no operating history, dependent on regulatory exemptions",
+        "NuScale (SMR) — flagship project cancelled, credibility damaged, remaining pipeline at risk",
+        "Retail investors chasing SMR narrative without understanding nuclear industry dynamics",
+        "SPAC sponsors and early SMR investors — mark-to-market losses as deployment timelines extend",
+        "DOE advanced reactor demonstration program — political pressure if funded projects fail to deliver"
+      ]
+    ],
+    "narrative_summary": "Small Modular Reactors (SMRs) represent the most speculative yet highest-upside sub-narrative within the Nuclear Renaissance. Unlike traditional gigawatt-scale nuclear builds plagued by cost overruns and decade-long timelines, SMRs promise factory-manufactured, transportable units (typically 50-300 MW) with theoretically steep learning-curve cost reductions. The thesis hinges on a manufacturing economics paradigm shift: instead of bespoke mega-projects, SMRs aim to replicate the cost trajectory of aviation or semiconductors through standardized, assembly-line production. However, this remains largely unproven at commercial scale—NuScale's UAMPS project cancellation in late 2023 demonstrated that FOAK (first-of-a-kind) costs remain stubbornly high, and no SMR is currently commercially operating in the United States.\n\nThe narrative has been dramatically reinvigorated by the collision of two forces: AI-driven electricity demand growth that hyperscalers cannot meet with renewables alone, and a political realignment making nuclear energy bipartisan. Microsoft's Three Mile Island restart deal, Amazon's X-energy investment, and Google's Kairos partnership signal that the world's largest capital allocators are willing to fund nuclear development directly. The incoming Trump administration's 'nuclear bros'—including Energy Secretary nominee Chris Wright and pro-nuclear policy figures—promise regulatory acceleration, while the bipartisan ADVANCE Act (passed June 2024) already streamlines NRC licensing. The critical question for 2025-2030 is whether the gap between SMR renderings and operating reactors can be closed before impatient capital moves on.",
+    "potential_winners": [
+      [
+        "Centrus Energy (LEU) — sole US HALEU demonstrator, DOE contracts, proprietary centrifuge tech",
+        "Cameco (CCJ) — uranium mining plus 49% stake in Westinghouse, fuel cycle integration",
+        "Energy Fuels (UUUU) — HALEU ambitions via existing mill infrastructure, rare earth optionality",
+        "Urenco (private) — established enrichment infrastructure, European HALEU capacity",
+        "Curtiss-Wright (CW) — centrifuge component manufacturing, nuclear-grade pumps and valves"
+      ],
+      [
+        "BWX Technologies (BWXT) — nuclear-grade manufacturing, naval reactor components, SMR pressure vessel capability, TRISO fuel fabrication",
+        "Curtiss-Wright (CW) — nuclear pumps, valves, instrumentation, N-stamp certified",
+        "Doosan Enerbility (034020.KS) — large nuclear forgings, SMR component manufacturing, Korean nuclear export champion",
+        "Sheffield Forgemasters (private, owned by UK MoD) — nuclear-grade heavy forgings",
+        "ABB (ABB) — nuclear-grade electrical systems and instrumentation"
+      ],
+      [
+        "Constellation Energy (CEG) — largest US nuclear fleet (21 GW), TMI restart deal with Microsoft, multi-state PPA optionality",
+        "Vistra Corp (VST) — 6.4 GW nuclear fleet in ERCOT/PJM, data center siting advantage, zero-carbon credits",
+        "Talen Energy (TLN) — Cumulus Data subsidiary, Amazon AWS deal at Susquehanna nuclear plant",
+        "Public Service Enterprise Group (PEG) — Salem/Hope Creek nuclear plants in PJM, data center proximity",
+        "Dominion Energy (D) — Millstone nuclear, Virginia data center corridor exposure"
+      ],
+      [
+        "NexGen Energy (NXE) — world-class Arrow deposit, Athabasca Basin, first production targeted 2028-2029",
+        "Cameco (CCJ) — largest publicly traded uranium producer, McArthur River restart, fuel cycle vertical integration",
+        "Denison Mines (DNN) — Wheeler River project, Athabasca Basin, low-cost in-situ recovery potential",
+        "Uranium Energy Corp (UEC) — US-based ISR production, non-Russian supply optionality",
+        "Sprott Physical Uranium Trust (U.UN) — physical uranium exposure, structural buyer in tight market"
+      ],
+      [
+        "BWX Technologies (BWXT) — DOE TRISO fuel contract, only commercial-scale TRISO production facility in US, naval reactor monopoly",
+        "X-energy (private, backed by Centrus, Dow, Dominion) — TRISO fuel fabrication, Xe-100 reactor design, Dow Chemical partnership",
+        "Framatome (private, owned by EDF/Assystem) — French nuclear fuel cycle, TRISO R&D, European SMR fuel supply",
+        "Global Nuclear Fuel (GE Hitachi/Toshiba JV) — fuel fabrication infrastructure, BWRX-300 fuel supply",
+        "Covalent Metrology / Materion — advanced nuclear materials testing and silicon carbide supply"
+      ],
+      [
+        "Doosan Enerbility (034020.KS) — nuclear forgings, APR1400 components, Korean nuclear export supply chain",
+        "Korea Hydro & Nuclear Power (private) — APR1400 exporter, UAE Barakah success, bidding in Czech Republic, Poland, Netherlands",
+        "Westinghouse (Brookfield Asset Management/BEP) — AP1000 design, 30+ international opportunities, nuclear fuel services",
+        "EDF (EDF.PA) — EPR2 design optimization, Flamanville lessons learned, European nuclear revival champion",
+        "China National Nuclear Corporation / CGN (private) — Hualong One exports, 30+ domestic reactors under construction"
+      ],
+      [
+        "Amentum (AMTM) — Jacobs nuclear engineering business merged, largest US nuclear services contractor, DOE cleanup + licensing support",
+        "BWX Technologies (BWXT) — technical advisory services alongside manufacturing, NRC licensing expertise",
+        "EnergySolutions (private) — nuclear licensing, decommissioning, fuel cycle services",
+        "Jensen Hughes — nuclear safety analysis, licensing support, fire protection engineering (private)",
+        "Idaho National Laboratory / Battelle Energy Alliance — DOE national lab, SMR testing and qualification infrastructure"
+      ],
+      [
+        "Holtec International (private) — SMR design (SMR-300) plus waste storage casks, HI-STORE interim facility, decommissioning services",
+        "EnergySolutions (private) — largest commercial nuclear waste processor, decommissioning, DOE cleanup contracts",
+        "BWX Technologies (BWXT) — radioactive material processing, naval reactor waste handling",
+        "NorthStar Group Services (private) — nuclear decommissioning, Vermont Yankee and Connecticut Yankee projects",
+        "Waste Control Specialists (private) — Texas low-level radioactive waste disposal facility, interim storage license application"
+      ],
+      [
+        "BWX Technologies (BWXT) — naval reactor training infrastructure, largest pool of nuclear-certified welders and engineers",
+        "Constellation Energy (CEG) — 21 operating reactors = largest private nuclear workforce, operator training programs, university partnerships",
+        "Fluor (FLR) — nuclear construction workforce, Savannah River Site management, training infrastructure",
+        "Amentum (AMTM) — nuclear engineering workforce, DOE site management, technical training capabilities",
+        "University of Michigan / MIT / Texas A&M nuclear engineering programs — talent pipeline, research partnerships, SMR test facilities"
+      ],
+      [
+        "Rolls-Royce (RR.L) — UK SMR design, 470 MWe pressurized water reactor, GB Nuclear competition finalist, export potential to Eastern Europe",
+        "Assystem (ASY.PA) — French nuclear engineering, EPR2 design support, international nuclear consulting",
+        "Framatome (within EDF) — nuclear fuel fabrication, reactor instrumentation, European fuel cycle monopoly",
+        "Bilfinger (GBF.DE) — nuclear services, component manufacturing, European plant maintenance",
+        "Doosan Enerbility (034020.KS) — APR1400 exports to Poland and Czech Republic, European supply chain partner"
+      ],
+      [
+        "Short positions in Oklo (OKLO), NuScale (SMR) — asymmetric downside as timelines slip and capital requirements increase",
+        "Established nuclear companies (BWXT, Westinghouse) — will acquire distressed SMR IP at fraction of development cost",
+        "Investors with patience — SMR developer valuations will reset to realistic levels, creating entry points",
+        "Centrus Energy (LEU) — benefits from SMR developer failures as fuel supply agreements get renegotiated by surviving projects"
+      ]
+    ],
+    "dependency_network": [
+      {
+        "type": "constraint",
+        "layer": "regulatory",
+        "weight": 10.0,
+        "description": "NRC design certification and licensing timelines; SMR-specific regulatory framework still maturing; first-of-a-kind permitting risk is the single largest schedule determinant"
+      },
+      {
+        "type": "resource",
+        "layer": "capital",
+        "weight": 9.5,
+        "description": "Multi-billion dollar first-of-a-kind build costs; dependent on DOE loan guarantees, IRA tax credits (45U), and risk-tolerant infrastructure capital; cost overrun absorption capacity is critical"
+      },
+      {
+        "type": "input",
+        "layer": "supply_chain",
+        "weight": 9.0,
+        "description": "Forged reactor pressure vessels, large-diameter pipe, nuclear-grade pumps and valves; concentrated supplier base (e.g. JSW Forgings, Curtiss-Wright); long-lead procurement of 3-5 years"
+      },
+      {
+        "type": "input",
+        "layer": "uranium_fuel",
+        "weight": 8.5,
+        "description": "Enriched uranium fuel assemblies and HALEU (high-assay low-enriched uranium) for advanced designs; HALEU commercial supply chain does not yet exist at scale in the US"
+      },
+      {
+        "type": "resource",
+        "layer": "skilled_labor",
+        "weight": 8.5,
+        "description": "Nuclear engineers, welders certified to ASME Section III, reactor operators, NQA-1 quality assurance personnel; aging workforce with limited pipeline"
+      },
+      {
+        "type": "resource",
+        "layer": "construction",
+        "weight": 8.0,
+        "description": "Modular factory fabrication capacity plus site civil works; requires shift from stick-built to factory assembly model that does not yet exist at commercial scale"
+      },
+      {
+        "type": "constraint",
+        "layer": "offtake_demand",
+        "weight": 8.0,
+        "description": "Long-term power purchase agreements, particularly from hyperscale data centers and industrial users; demand certainty required to finance first deployments"
+      },
+      {
+        "type": "constraint",
+        "layer": "grid_interconnection",
+        "weight": 7.5,
+        "description": "Transmission interconnection queue delays (3-7 year backlogs); SMR siting at retired coal plants or behind-the-meter at data centers depends on interconnection timing"
+      },
+      {
+        "type": "resource",
+        "layer": "water",
+        "weight": 7.0,
+        "description": "Cooling water for thermal cycles; some designs use passive/air cooling but most still require water rights and discharge permits"
+      },
+      {
+        "type": "constraint",
+        "layer": "political_support",
+        "weight": 7.0,
+        "description": "Bipartisan nuclear policy stability; DOE advanced reactor demonstration funding; export control regime for international deployment; shifts in administration priorities affect funding continuity"
+      },
+      {
+        "type": "constraint",
+        "layer": "insurance_liability",
+        "weight": 6.5,
+        "description": "Price-Anderson Act reauthorization and liability framework; private insurance market capacity for first-of-a-kind technology risk"
+      },
+      {
+        "type": "constraint",
+        "layer": "nuclear_waste",
+        "weight": 6.0,
+        "description": "Spent fuel storage and disposal pathway; absence of federal repository forces on-site dry cask storage, creating political and community friction"
+      },
+      {
+        "type": "constraint",
+        "layer": "cybersecurity",
+        "weight": 5.5,
+        "description": "Digital instrumentation and control systems require NRC cyber security requirements (10 CFR 73.54); supply chain trust for software components"
+      },
+      {
+        "type": "resource",
+        "layer": "land_siting",
+        "weight": 5.0,
+        "description": "Suitable sites with seismic qualification, exclusion area boundaries, and emergency planning zones; brownfield coal sites increasingly targeted"
+      },
+      {
+        "type": "resource",
+        "layer": "testing_infrastructure",
+        "weight": 5.0,
+        "description": "National reactor testing facilities (INL, Oak Ridge), critical heat flux test loops, and transient testing capability for design validation"
+      }
+    ],
+    "future_bottlenecks": [
+      {
+        "name": "HALEU Fuel Supply Chain Absence",
+        "tier": "emerging",
+        "cause": "Most advanced SMR designs require high-assay low-enriched uranium (HALEU) enriched to 5-20% U-235. The US has zero commercial HALEU production capacity. Centrus is the only domestic licensee producing demonstration quantities. Russia is the sole global commercial supplier. Scaling enrichment capacity requires billions in capex and 5-7 year buildouts for new cascades. The DOE HALEU Availability Program is underfunded relative to projected demand from multiple concurrent SMR deployments.",
+        "losers": [
+          "SMR designs requiring HALEU without fuel supply agreements",
+          "US government nonproliferation goals if forced to buy Russian HALEU",
+          "SMR developers with aggressive deployment timelines assuming fuel availability"
+        ],
+        "winners": [
+          "Centrus Energy (only US HALEU producer)",
+          "Uranium enrichers investing in HALEU capacity (Urenco, Orano)",
+          "Existing uranium miners with near-term production (Cameco, Kazatomprom)",
+          "TRISO fuel fabricators"
+        ],
+        "severity": 9.0,
+        "time_horizon": "2-6 years",
+        "market_awareness": "Moderate. Specialists understand the gap but equity markets pricing SMR developers largely ignore fuel availability risk."
+      },
+      {
+        "name": "Nuclear Skilled Workforce Atrophy",
+        "tier": "emerging",
+        "cause": "The US nuclear workforce is aging with 25% of nuclear engineers eligible for retirement. Nuclear engineering university programs have contracted. SMRs require a different skill mix: manufacturing quality assurance, modular construction, digital instrumentation. The trades pipeline for nuclear-grade welding and NDE inspection is thin. Each SMR site still needs licensed operators even with passive safety designs. Scaling to 10+ concurrent builds would exhaust available qualified personnel.",
+        "losers": [
+          "SMR developers in remote locations without local workforce",
+          "Aggressive multi-site deployment plans",
+          "Regions without nuclear training infrastructure"
+        ],
+        "winners": [
+          "Nuclear engineering programs at universities (MIT, NC State, Texas A&M)",
+          "Workforce training and certification companies",
+          "Existing nuclear operators with trained staff who can redeploy"
+        ],
+        "severity": 7.0,
+        "time_horizon": "2-7 years",
+        "market_awareness": "Low. Market focuses on technology and capital costs, not human capital constraints."
+      },
+      {
+        "name": "Grid Interconnection and Site Permitting for Distributed Nuclear",
+        "tier": "emerging",
+        "cause": "SMRs are designed for non-traditional sites: former coal plants, industrial facilities, remote mining operations. Each requires grid interconnection studies, environmental reviews, and site-specific safety analysis. FERC interconnection queues average 3-5 years. Brownfield coal site reuse requires remediation. Local zoning and emergency planning zones create jurisdictional friction that does not exist for gas peakers.",
+        "losers": [
+          "Greenfield SMR projects",
+          "Remote/off-grid SMR concepts requiring transmission buildout",
+          "Developers underestimating local opposition and permitting timelines"
+        ],
+        "winners": [
+          "Existing nuclear sites with operating licenses seeking capacity expansion",
+          "Brownfield redevelopment firms",
+          "Grid operators with streamlined interconnection for clean firm power"
+        ],
+        "severity": 6.0,
+        "time_horizon": "2-5 years",
+        "market_awareness": "Low to moderate. Market assumes SMRs can drop into coal sites easily; reality is far more complex."
+      }
+    ],
+    "hidden_constraints": [
+      {
+        "name": "Price-Anderson Act Reauthorization and Liability Framework",
+        "tier": "hidden",
+        "cause": "The Price-Anderson Nuclear Industries Indemnity Act caps nuclear liability at approximately $13.5 billion and provides government-backed indemnification. It requires periodic reauthorization by Congress. Current authorization extends through December 2025. If not reauthorized or if terms are tightened, SMR developers face uninsurable liability risk. Distributed SMR deployment multiplies the number of covered sites, potentially straining the insurance pool. No private market exists for full nuclear liability coverage.",
+        "losers": [
+          "SMR startups without political capital to influence reauthorization",
+          "Distributed SMR models that expand the liability pool",
+          "Taxpayers if terms are loosened to accommodate SMR deployment"
+        ],
+        "winners": [
+          "Large established nuclear operators with political clout to ensure reauthorization",
+          "Insurance brokers specializing in nuclear risk"
+        ],
+        "severity": 8.0,
+        "time_horizon": "1-3 years",
+        "market_awareness": "Very low. Almost no equity research discusses Price-Anderson. SMR investors assume indefinite government backstop."
+      },
+      {
+        "name": "Spent Fuel Management for Distributed SMR Fleet",
+        "tier": "hidden",
+        "cause": "Traditional nuclear concentrates spent fuel at large sites with dry cask storage. SMRs propose dozens to hundreds of distributed sites, each generating spent fuel with no consolidated repository. Yucca Mountain remains politically dead. The DOE consent-based siting process is in early stages. HALEU spent fuel has different characteristics than standard LWR fuel, requiring new storage and transport casks. Distributed spent fuel creates proliferation and security surface area that does not exist with centralized generation. No SMR business model credibly addresses backend fuel cycle costs.",
+        "losers": [
+          "SMR developers if backend costs are socialized retroactively through fees",
+          "Host communities bearing long-term storage burden",
+          "SMR business models if spent fuel disposal costs are internalized"
+        ],
+        "winners": [
+          "Dry cask storage manufacturers",
+          "Spent fuel transport companies",
+          "Deep geological repository developers in consenting communities"
+        ],
+        "severity": 7.0,
+        "time_horizon": "5-15 years",
+        "market_awareness": "Very low. SMR investment theses focus on frontend (fuel supply) and ignore backend. No SMR developer has a credible spent fuel plan."
+      },
+      {
+        "name": "Nuclear Supply Chain Single-Point Failures in Forgings and Components",
+        "tier": "hidden",
+        "cause": "Reactor pressure vessels, steam generators, and control rod drive mechanisms require nuclear-grade large forgings from a handful of global suppliers: Japan Steel Works, JSW, and China First Heavy Industries. Only one US facility (Sheffield Forgemasters, recently acquired by UK government) can produce largest nuclear forgings. Crystalline stainless steel forgings for advanced reactors have even fewer qualified suppliers. A single supplier failure or geopolitical disruption halts the entire SMR build pipeline. Quality issues at any supplier create fleet-wide delays since NRC qualification is supplier-specific.",
+        "losers": [
+          "SMR developers with aggressive build schedules assuming multiple qualified suppliers",
+          "US energy security if foreign suppliers are disrupted",
+          "SMR cost models assuming competitive component pricing"
+        ],
+        "winners": [
+          "Qualified nuclear forging suppliers with pricing power",
+          "Companies investing in domestic nuclear component manufacturing capacity",
+          "JSW and other incumbent suppliers"
+        ],
+        "severity": 7.0,
+        "time_horizon": "3-8 years",
+        "market_awareness": "Very low. Market assumes modular manufacturing means supply chain resilience. In practice, nuclear-grade component qualification creates extreme supplier concentration."
+      },
+      {
+        "name": "Proliferation and Security Governance for Distributed Deployment",
+        "tier": "hidden",
+        "cause": "SMRs deployed at industrial sites, military bases, and export markets create a fundamentally different nonproliferation challenge than centralized power plants. HALEU at 20% enrichment is closer to weapons-usable material. Some designs require onsite refueling with sealed cores (good) but others require periodic access (bad). Export of SMRs to non-nuclear weapons states expands the number of facilities requiring IAEA safeguards. The IAEA is already underfunded for current inspection load. US-China competition for SMR exports to developing nations creates pressure to weaken safeguards requirements. No governance framework exists for SMR-specific proliferation risks.",
+        "losers": [
+          "SMR developers targeting export markets in non-NPT compliant jurisdictions",
+          "Designs requiring frequent fuel handling",
+          "US SMR exporters if safeguards requirements create cost disadvantage vs Russian/Chinese competitors"
+        ],
+        "winners": [
+          "Sealed-core SMR designs with long refueling intervals",
+          "IAEA and safeguards technology companies",
+          "Domestic-focused SMR developers insulated from export controls"
+        ],
+        "severity": 6.0,
+        "time_horizon": "5-10 years",
+        "market_awareness": "Very low. Investors treat this as a geopolitical abstraction rather than a commercial risk. Export controls could constrain addressable market significantly."
+      }
+    ],
+    "current_bottlenecks": [
+      {
+        "name": "FOAK Cost Economics and Construction Escalation",
+        "tier": "current",
+        "cause": "First-of-a-kind SMR builds are running 2-3x nth-of-a-kind cost projections. NuScale's Carbon Free Power Project collapsed at approximately $89/MWh versus initial $55/MWh estimates. Supply chain immaturity, design changes during construction, interest-during-construction on multi-year timelines, and absence of modular manufacturing learning curves all compound. Vogtle's $34B+ overrun on traditional nuclear casts a long shadow over SMR cost credibility.",
+        "losers": [
+          "NuScale",
+          "Pure-play SMR developers without utility offtake commitments",
+          "Municipal utilities taking undiversified FOAK risk"
+        ],
+        "winners": [
+          "Established EPC contractors with nuclear experience (Bechtel, Fluor)",
+          "TerraPower and X-energy if they can demonstrate cost discipline",
+          "GE Hitachi BWRX-300 given Ontario deployment progress"
+        ],
+        "severity": 9.0,
+        "time_horizon": "0-3 years",
+        "market_awareness": "High. NuScale cancellation was widely covered. Investors are skeptical of cost claims but bullish on nth-of-a-kind economics that remain unproven."
+      },
+      {
+        "name": "NRC Licensing Timeline Uncertainty",
+        "tier": "current",
+        "cause": "The NRC has never licensed an SMR. NuScale's design certification took roughly 6 years and $500M. Part 53 rulemaking for advanced reactors remains incomplete. Each novel design requires bespoke safety review with no precedent for modular, factory-built, passively safe systems. The NRC fee structure and staffing model was built for large LWRs, not iterative SMR design cycles.",
+        "losers": [
+          "Novel designs requiring exotic fuel or coolant approvals",
+          "Companies with limited cash runway to survive licensing delays",
+          "Investors in pre-licensing SMR startups"
+        ],
+        "winners": [
+          "NRC consulting firms and former regulators",
+          "Designs closest to existing LWR technology",
+          "Kairos Power (received construction permit)"
+        ],
+        "severity": 8.0,
+        "time_horizon": "0-5 years",
+        "market_awareness": "Moderate to high. Market knows licensing is slow but underestimates how design-specific and non-transferable each approval is."
+      },
+      {
+        "name": "Utility Offtake Commitment Gap",
+        "tier": "current",
+        "cause": "SMRs require committed buyers to secure financing, but utilities are risk-averse to unproven technology. Only a handful of serious offtake agreements exist (TVA, Ontario Power Generation, Dow Chemical). Most utilities prefer gas + renewables + storage given proven economics. The chicken-and-egg problem: no cost certainty without builds, no builds without offtake, no offtake without cost certainty.",
+        "losers": [
+          "SMR developers without anchor customers",
+          "Merchant developers without rate-base support",
+          "States without nuclear cost-recovery mechanisms"
+        ],
+        "winners": [
+          "Utilities with regulatory frameworks supporting cost recovery for nuclear (Ontario, TVA)",
+          "Industrial users needing process heat (Dow, chemical companies)",
+          "States with clean firm power mandates"
+        ],
+        "severity": 8.0,
+        "time_horizon": "0-4 years",
+        "market_awareness": "Moderate. Market focuses on design winners but underweights the demand-side commitment problem."
+      }
+    ],
+    "first_order_effects": [
+      {
+        "order": "1",
+        "description": "Factory-based manufacturing of reactor units reduces per-unit capital costs and construction timelines from 7-10 years to 2-3 years, shifting nuclear build from bespoke megaprojects to serial production lines with learning-curve cost reductions."
+      },
+      {
+        "order": "1",
+        "description": "Passive safety systems (natural circulation, gravity-driven cooling) eliminate need for active pumped cooling and large emergency planning zones, reducing exclusion radius from kilometers to site-boundary scales."
+      },
+      {
+        "order": "1",
+        "description": "Output scalability (50-300 MWe per unit) enables incremental capacity additions and deployment on smaller grids, island networks, or industrial sites that cannot absorb a 1+ GWe conventional reactor."
+      }
+    ],
+    "regulatory_analysis": {
+      "summary": "The current regulatory regime for Small Modular Reactors (SMRs) is a patchwork of legacy frameworks designed for bespoke, gigawatt-scale light water reactors, imposing prohibitive licensing costs and timelines that negate the economic premise of factory-built nuclear. Regulators like the US NRC are transitioning toward technology-inclusive, risk-informed frameworks (e.g., 10 CFR Part 53) and design certification processes that decouple reactor approval from site approval. The future regime will likely shift from regulating construction to regulating manufacturing supply chains, treating SMRs more like commercial aviation assets than traditional civil infrastructure. However, this transition requires a paradigm shift in how regulators handle security, emergency planning zones (EPZs), and fuel qualification, moving from deterministic to probabilistic risk assessments.",
+      "catalysts": [
+        "Legislative mandates forcing regulatory modernization, such as the US ADVANCE Act, which lowers NRC fees and mandates faster licensing timelines.",
+        "Massive, concentrated power demands from AI data centers driving hyperscalers to push for behind-the-meter SMR deployments, forcing regulators to expedite frameworks for private commercial nuclear operations.",
+        "Successful first-of-a-kind deployments by geopolitical competitors (e.g., China's Linglong One) creating national security urgency to streamline domestic licensing.",
+        "Development of 'black-box' design certifications that allow for pre-approval of standard reactor modules, enabling true assembly-line production and decoupling nuclear safety reviews from local site permitting.",
+        "Breakthroughs in accident-tolerant fuels or advanced manufacturing (e.g., additive manufacturing) that force regulators to update codes, potentially streamlining the entire qualification process."
+      ],
+      "key_risks": [
+        "First-of-a-kind regulatory tax where early SMR designs bear the brunt of agency learning curves, resulting in costly design changes mid-licensing.",
+        "Inflexible security and emergency preparedness mandates (e.g., requiring armed response teams for remote deployments) that destroy the SMR economic value proposition.",
+        "Regulatory fragmentation across international jurisdictions, preventing the economies of scale necessary for factory production; a reactor licensed in one country may require complete re-certification elsewhere.",
+        "Supply chain certification bottlenecks, as regulators accustomed to inspecting custom site welds lack the framework to audit continuous manufacturing lines.",
+        "Regulatory capture or political pressure from incumbent fossil fuel or large-scale nuclear interests stalling the modernization of licensing frameworks."
+      ]
+    },
+    "third_order_effects": [
+      {
+        "order": "3",
+        "description": "Energy geopolitics recalibrate as nations without domestic hydrocarbons gain sovereign clean baseload, weakening petrostate leverage and reducing maritime chokepoint vulnerability (Strait of Hormuz, Malacca) for energy security."
+      },
+      {
+        "order": "3",
+        "description": "Industrial reshoring accelerates as SMRs provide firm, carbon-free power directly to energy-intensive manufacturing (steel, ammonia, desalination, hydrogen electrolysis) at co-located sites, decoupling industrial competitiveness from fossil fuel import costs."
+      },
+      {
+        "order": "3",
+        "description": "Regulatory frameworks bifurcate globally: jurisdictions with established nuclear regulators adapt existing light-water reactor licensing for SMRs, while newcomer nations must build institutional capacity from scratch, creating a two-speed SMR market and potential regulatory arbitrage."
+      }
+    ],
+    "second_order_effects": [
+      {
+        "order": "2",
+        "description": "Distributed baseload nuclear undermines the economic case for long-distance transmission buildouts and gas peaker plants, compressing utility capex on grid infrastructure and reshaping grid topology toward regional self-sufficiency."
+      },
+      {
+        "order": "2",
+        "description": "Proliferation attack surface expands: dozens or hundreds of sites with fissile material, fresh fuel, and spent fuel storage multiply safeguards monitoring burden and create asymmetric risk of material diversion or sabotage at lower-security locations."
+      },
+      {
+        "order": "2",
+        "description": "Nuclear supply chain restructures around component manufacturers and assembly hubs rather than a few mega-construction firms, creating new industrial clusters but also concentrating bottleneck suppliers (forgings, control systems) in fewer jurisdictions."
+      }
+    ],
+    "confidence_assessment": {
+      "composite": 7.4,
+      "conviction": 7.0
+    },
+    "geopolitical_analysis": {
+      "summary": "Small Modular Reactors (SMRs) are emerging as a geopolitical battleground for energy influence, technology standards, and non-proliferation governance. Russia currently dominates global nuclear exports through Rosatom's integrated financing-fuel-build-operate model, while China is rapidly scaling its nuclear export ambitions with both conventional reactors and SMR designs like the Linglong One. The US and its allies (UK, Canada, France, South Korea) are attempting to re-enter the export market through SMRs, leveraging legislation like the ADVANCE Act and diplomatic frameworks such as nuclear cooperation agreements, but face a first-mover disadvantage. SMRs could democratize nuclear energy access for developing nations previously excluded by the capital and infrastructure requirements of large reactors, potentially reducing energy dependence on authoritarian petrostates and Russian gas. However, this same democratization creates proliferation surface-area challenges: more reactors in more countries means more safeguards burden, more fuel cycle touchpoints, and more dual-use technology diffusion. The enrichment bottleneck remains acute—Russia controls roughly 40-45% of global enrichment capacity—meaning even Western-designed SMRs may depend on Russian fuel services in the near term. The geopolitical stakes include who sets SMR regulatory standards, who controls fuel supply chains, who captures the export markets of Southeast Asia, Africa, and the Middle East, and whether SMR deployment strengthens or fragments the non-proliferation regime. SMRs also have direct military-geopolitical applications: distributed power for forward bases, naval propulsion scalability, and grid resilience against hybrid warfare attacks, making them a dual-use technology with strategic significance beyond civilian energy.",
+      "key_risks": [
+        "Proliferation surface-area expansion: SMRs deployed in dozens of new countries increase safeguards monitoring burden for the IAEA and create more fuel-cycle touchpoints, even if individual designs incorporate proliferation-resistant features like long-core-life sealed reactors.",
+        "Russian and Chinese capture of emerging markets: Rosatom and CNNC offer state-backed financing, fuel leasing, and build-own-operate models that Western private-sector SMR developers cannot match, risking lock-in of developing nations into authoritarian supply chains and standards.",
+        "Enrichment supply chain dependency: Western SMR designs frequently require HALEU fuel (high-assay low-enriched uranium up to 20% U-235), for which there is currently minimal Western production capacity, creating near-term dependence on Russian enrichment services.",
+        "Regulatory fragmentation: If the US, UK, Canada, China, and Russia each develop divergent SMR licensing frameworks, it fragments the export market, raises costs, and undermines the ability to set coherent international safety and safeguards standards.",
+        "Technology transfer and dual-use leakage: Exporting SMR technology to non-allied or strategically ambiguous states risks diffusion of reactor design knowledge, manufacturing capabilities, and fuel-cycle expertise that could accelerate indigenous nuclear weapons programs or naval propulsion ambitions.",
+        "Cost and schedule failure undermining Western credibility: If Western SMR projects experience repeated cost overruns and delays—as early projects like NuScale's UAMPS cancellation demonstrated—authoritarian competitors can weaponize these failures in diplomatic messaging to discredit democratic-market approaches to nuclear energy.",
+        "Geopolitical fragmentation of nuclear governance: Great power competition over SMR exports could erode consensus-based institutions like the Nuclear Suppliers Group and the IAEA, as exporting states prioritize commercial and strategic interests over unified non-proliferation norms.",
+        "Targeting and security of distributed assets: SMRs' value proposition includes deployment in remote or contested regions, but distributed nuclear assets in geopolitically unstable areas present physical security, sabotage, and conflict-zone risks that traditional large reactor siting avoided.",
+        "Critical minerals and component supply chain chokepoints: SMR manufacturing requires specialized forgings, advanced materials, and rare earth elements where China holds dominant processing positions, creating leverage points even for reactors designed in allied countries."
+      ],
+      "opportunities": [
+        "Counter-authoritarian energy leverage: SMRs offer a credible alternative to Russian gas and Chinese-financed coal in Eastern Europe, Central Asia, Southeast Asia, and Africa, allowing Western-aligned nations to offer energy security packages that reduce strategic dependence on petrostates.",
+        "Energy sovereignty for developing nations: SMRs can provide baseload clean power to countries lacking grid infrastructure for large reactors, enabling industrialization and development without fossil fuel import dependencies that create balance-of-payments and geopolitical vulnerabilities.",
+        "First-mover standard-setting: The nation or bloc that successfully deploys SMRs at scale first will shape international regulatory standards, safeguards approaches, and fuel cycle norms, creating durable institutional influence analogous to how the US shaped civilian aviation and internet governance.",
+        "Alliance-building through nuclear cooperation agreements: SMR exports can be bundled with security assurances, fuel take-back commitments, and training programs that deepen bilateral relationships, creating long-term technological and diplomatic dependency akin to F-35 or 5G network decisions.",
+        "Military-strategic applications: SMRs enable resilient distributed power for forward-deployed bases, reduce logistics convoys vulnerable to attack in contested environments, and scale naval propulsion technology, providing direct military advantage to nations that master the supply chain.",
+        "HALEU and advanced fuel cycle industrial base: Investing in domestic enrichment and fuel fabrication for SMRs creates strategic industrial capacity that reduces Russian dependency and positions allied nations as fuel suppliers for the global SMR fleet, capturing a high-value segment of the nuclear value chain.",
+        "Climate diplomacy leverage: SMRs allow Western nations to offer developing countries a credible decarbonization pathway without demanding energy curtailment, strengthening climate negotiation positions and countering narratives that the West imposes environmental constraints while China builds coal.",
+        "Grid resilience against hybrid warfare: Distributed SMR deployment enhances national grid resilience against cyberattacks, electromagnetic pulse, and physical sabotage—threats increasingly associated with Russian and Chinese hybrid warfare doctrines—making SMRs a national security asset for frontline NATO and Indo-Pacific states.",
+        "Decoupling nuclear influence from Russian supply chains: A successful Western SMR ecosystem would break Rosatom's near-monopoly on nuclear exports in emerging markets, dismantling a key instrument of Russian state influence that has persisted even under sanctions regimes."
+      ]
+    },
+    "market_misconceptions": [
+      "Factory manufacturing will yield meaningful cost reductions despite no SMR yet demonstrating serial production economies.",
+      "Regulatory frameworks will adapt to modular designs faster than they did to large reactor designs, compressing licensing timelines.",
+      "First-of-a-kind cost overruns and delays will not deter follow-on orders or government support.",
+      "Data center operators and utilities will accept the levelized cost of SMR power, which remains unproven and likely elevated versus gas and renewables-plus-storage at scale.",
+      "Nuclear fuel supply chains, particularly HALEU enrichment, will scale in time to meet projected SMR deployment.",
+      "Public and political opposition to nuclear will continue softening globally, reversing in key markets.",
+      "Capital markets will finance multi-billion dollar first-of-a-kind builds despite nuclear sector's historical record of cost overruns and bankruptcies.",
+      "SMRs will achieve their theoretical safety and operational advantages in practice, not just in design documents.",
+      "Competing technologies—geothermal, long-duration storage, advanced gas, and grid-scale renewables—will not erode the niche SMRs aim to fill before deployment scales."
+    ],
+    "portfolio_implications": {
+      "composite": 7.4,
+      "narrative_score": {
+        "duration": 9.0,
+        "conviction": 7.0,
+        "economic_impact": 9.0,
+        "valuation_support": 6.0,
+        "narrative_strength": 8.0,
+        "adoption_probability": 5.0,
+        "bottleneck_advantage": 8.0,
+        "market_awareness_gap": 6.0,
+        "second_order_effects": 9.0,
+        "competitive_advantage": 7.0
+      }
+    },
+    "psychological_analysis": {
+      "biases": [
+        "Recency bias: Recent AI demand surge and nuclear sentiment thaw are extrapolated forward as permanent conditions.",
+        "Herd bias: Capital piles into SMR names because other investors are doing so, creating valuation momentum disconnected from deployment fundamentals.",
+        "Overconfidence: Investors underestimate the complexity of nuclear licensing, supply chain buildout, and first-of-a-kind execution risk.",
+        "Narrative fallacy: A clean, compelling story—modular, safe, clean baseload for AI—retrofits coherence onto a sector historically defined by cost overruns and delays.",
+        "Availability bias: High-profile announcements from tech majors and government programs dominate attention, while quiet cancellations and cost escalations receive less coverage.",
+        "Confirmation bias: Investors seek evidence supporting the SMR thesis—design approvals, MOUs, subsidies—while discounting contradictory signals on cost, fuel, and timelines."
+      ],
+      "consensus_view": "Small Modular Reactors represent the inevitable next generation of nuclear power, offering scalable, factory-built, lower-cost, and safer baseload clean energy that will unlock nuclear deployment for grids, industrial heat, and data centers where gigawatt-scale reactors are impractical. The combination of modular manufacturing economics, passive safety, and surging AI/data center electricity demand creates a multi-decade growth runway for first movers in SMR design, fuel, and licensing.",
+      "narrative_risks": [
+        "First-of-a-kind projects experience severe cost overruns and delays, as occurred with Vogtle, Flamanville, and Olkiluoto, poisoning the investment case before nth-of-a-kind economics materialize.",
+        "Regulatory bodies lack resources and frameworks to efficiently license novel designs, stretching approval timelines beyond investor patience.",
+        "HALEU and advanced fuel supply chains fail to materialize, stranding reactor investments.",
+        "Levelized cost of SMR power comes in materially above alternatives, causing off-takers to default to gas or renewables-plus-storage.",
+        "A safety incident—whether at an SMR or a legacy plant—reverses public sentiment and political support, freezing deployment.",
+        "Serial manufacturing never achieves anticipated learning curve effects because order volumes remain too low and design changes persist between units.",
+        "Government subsidies and loan guarantees are delayed, reduced, or politically reversed, removing the financial bridge to commercial viability.",
+        "Data center demand growth slows or is met by behind-the-meter gas and renewables, undermining the premium off-taker thesis."
+      ],
+      "hidden_assumptions": [
+        "Factory manufacturing will yield meaningful cost reductions despite no SMR yet demonstrating serial production economies.",
+        "Regulatory frameworks will adapt to modular designs faster than they did to large reactor designs, compressing licensing timelines.",
+        "First-of-a-kind cost overruns and delays will not deter follow-on orders or government support.",
+        "Data center operators and utilities will accept the levelized cost of SMR power, which remains unproven and likely elevated versus gas and renewables-plus-storage at scale.",
+        "Nuclear fuel supply chains, particularly HALEU enrichment, will scale in time to meet projected SMR deployment.",
+        "Public and political opposition to nuclear will continue softening globally, reversing in key markets.",
+        "Capital markets will finance multi-billion dollar first-of-a-kind builds despite nuclear sector's historical record of cost overruns and bankruptcies.",
+        "SMRs will achieve their theoretical safety and operational advantages in practice, not just in design documents.",
+        "Competing technologies—geothermal, long-duration storage, advanced gas, and grid-scale renewables—will not erode the niche SMRs aim to fill before deployment scales."
+      ]
+    },
+    "adoption_curve_analysis": {
+      "stage": "Innovators transitioning to Early Adopters",
+      "growth_rate": "Projected 35-50% CAGR in installed capacity 2030-2040 from near-zero base; however, actual 2025-2028 growth is effectively flat as no commercial units will commission. Investment and order backlog growth is 60-80% annually.",
+      "penetration_pct": 0.02,
+      "penetration_note": "Essentially zero commercial SMR capacity operating in the US; globally only a handful of demonstration units (e.g., China's HTR-PM, Russia's Akademik Lomonosov floating plant). Represents <0.1% of global nuclear capacity.",
+      "inflection_points": [
+        "First NRC-licensed SMR commercial operation in US (estimated 2029-2031: TerraPower Natrium in Wyoming, or Oklo's Aurora, or GE Hitachi BWRX-300 in Canada)—proves regulatory and technical viability simultaneously",
+        "HALEU domestic supply chain reaching 5+ tonnes/year production capacity (estimated 2027-2028), removing the single most critical fuel bottleneck for advanced reactor designs",
+        "First multi-unit order (3+ modules) from a single utility or corporate buyer demonstrating NOAK cost reduction of 20%+ versus FOAK—validates the manufacturing learning curve thesis that underpins the entire investment case",
+        "NRC licensing of 3+ distinct SMR designs by 2028, creating competitive dynamics and supply chain economies of scale across the vendor ecosystem"
+      ]
+    },
+    "investment_opportunities": [
+      {
+        "type": "direct",
+        "title": "HALEU Enrichment: The Critical SMR Fuel Bottleneck",
+        "thesis": "Most advanced SMR and microreactor designs require high-assay low-enriched uranium (HALEU, 5-20% U-235), not the standard LEU used by current reactors. The US has virtually no domestic HALEU production capacity—Russia currently dominates global HALEU supply at >80% market share. The Russian HALEU import ban (effective 2024, with waivers expiring) creates an acute supply cliff for any SMR developer planning deployment this decade. Only one facility (Centrus's Piketon demo) has produced HALEU on US soil, and scaling to commercial quantities requires multi-billion-dollar enrichment infrastructure buildout. Every SMR roadmap is gated by fuel availability; without HALEU, reactors are multi-billion-dollar paperweights. This is a classic bottleneck where the constraint itself becomes the value capture point.",
+        "awareness_gap": "Markets focus on SMR reactor developers (Oklo, NuScale, TerraPower) but underappreciate that none can operate without HALEU, and the fuel supply chain requires 5-7 year lead times for new centrifuge cascades. The bottleneck is structural, not temporary.",
+        "valuation_note": "Centrus Energy trades at modest multiples relative to its monopoly-like position in US HALEU production. Uranium enrichment peers like Urenco are private. The optionality on SMR fuel contracts is barely priced in.",
+        "potential_losers": [
+          "SMR developers without secured fuel supply agreements — Oklo, X-energy, TerraPower face existential fuel risk",
+          "Rosatom — loses export revenue as Western nations ban Russian HALEU, though benefits short-term from supply scarcity",
+          "Utilities signing SMR power purchase agreements without fuel cost escalation clauses"
+        ],
+        "potential_winners": [
+          "Centrus Energy (LEU) — sole US HALEU demonstrator, DOE contracts, proprietary centrifuge tech",
+          "Cameco (CCJ) — uranium mining plus 49% stake in Westinghouse, fuel cycle integration",
+          "Energy Fuels (UUUU) — HALEU ambitions via existing mill infrastructure, rare earth optionality",
+          "Urenco (private) — established enrichment infrastructure, European HALEU capacity",
+          "Curtiss-Wright (CW) — centrifuge component manufacturing, nuclear-grade pumps and valves"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Nuclear-Grade Component Manufacturing: The Atrophied Supply Chain",
+        "thesis": "The US nuclear supply chain has atrophied catastrophically since the 1980s. Only one domestic facility (Sheffield Forgemasters in UK, plus limited capacity at Japan Steel Works and Doosan in Korea) can produce large nuclear-grade forgings. SMRs reduce but do not eliminate the need for nuclear-grade components: reactor pressure vessels, steam generators, control rod drive mechanisms, and primary coolant pumps all require ASME Section III nuclear certification and N-stamp suppliers. The number of N-stamp certified suppliers in the US has declined from 400+ in the 1980s to under 100 today. SMR factory fabrication promises economies of scale, but the factory itself requires a qualified supplier base that barely exists. First-movers in rebuilding nuclear component manufacturing capacity will capture multi-decade moats as certification barriers are extremely high.",
+        "awareness_gap": "Investors treat SMRs as a software-like scalability story. In reality, each SMR requires thousands of nuclear-grade components from certified suppliers, and the certification process takes 2-4 years per component per supplier. The supply chain is the rate limiter, not the reactor design.",
+        "valuation_note": "BWX Technologies trades at ~20x earnings despite being one of the few companies with nuclear-grade manufacturing certification and naval reactor experience. The SMR component TAM is barely modeled in consensus estimates.",
+        "potential_losers": [
+          "NuScale (SMR) — supply chain cost overruns already contributed to project cancellations (UAMPS Carbon Free Power Project)",
+          "General Electric (GE/GEV) — GE Hitachi BWRX-300 faces same supplier constraints despite strong design",
+          "Chinese nuclear exporters — potentially constrained by Western nonproliferation restrictions on supply chain integration"
+        ],
+        "potential_winners": [
+          "BWX Technologies (BWXT) — nuclear-grade manufacturing, naval reactor components, SMR pressure vessel capability, TRISO fuel fabrication",
+          "Curtiss-Wright (CW) — nuclear pumps, valves, instrumentation, N-stamp certified",
+          "Doosan Enerbility (034020.KS) — large nuclear forgings, SMR component manufacturing, Korean nuclear export champion",
+          "Sheffield Forgemasters (private, owned by UK MoD) — nuclear-grade heavy forgings",
+          "ABB (ABB) — nuclear-grade electrical systems and instrumentation"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Existing Nuclear Fleet + Hyperscaler Behind-the-Meter Power",
+        "thesis": "The most immediate nuclear investment opportunity is not building new SMRs but repurposing and extending existing nuclear plants for behind-the-meter data center power. Microsoft's Three Mile Island deal with Constellation, Amazon's Talen Energy acquisition, and Oracle's nuclear data center announcements signal a structural shift: hyperscalers will pay premium prices for 24/7 carbon-free firm power that only existing nuclear can deliver at scale today. Existing nuclear plants have 40-80 year asset lives, near-zero marginal cost, and are already licensed. SMRs won't deliver meaningful power until the 2030s; existing nuclear is available now. The market underestimates the revaluation potential of existing nuclear assets from ~$40-50/MWh merchant power to $80-120+/MWh under direct data center PPAs.",
+        "awareness_gap": "The SMR narrative overshadows the fact that 93 existing US reactors represent 95 GW of proven, licensed, operating clean baseload. Data center demand (projected 35-50 GW new load by 2030) cannot wait for SMRs. The existing fleet is the only viable near-term solution.",
+        "valuation_note": "Constellation Energy trades at ~$80-90/share with significant upside if data center PPAs reprice nuclear output. Vistra and Talen Energy have partially repriced but remain below the implied value of their nuclear assets under long-term data center contracts.",
+        "potential_losers": [
+          "Natural gas peaker plants — displaced by nuclear PPA preference for 24/7 clean power",
+          "Renewables-only developers — intermittency limitations become more visible as data centers demand firm power",
+          "Coal plant operators — accelerated retirement as nuclear PPA economics improve",
+          "Grid operators relying on market pricing — behind-the-meter nuclear deals bypass wholesale markets"
+        ],
+        "potential_winners": [
+          "Constellation Energy (CEG) — largest US nuclear fleet (21 GW), TMI restart deal with Microsoft, multi-state PPA optionality",
+          "Vistra Corp (VST) — 6.4 GW nuclear fleet in ERCOT/PJM, data center siting advantage, zero-carbon credits",
+          "Talen Energy (TLN) — Cumulus Data subsidiary, Amazon AWS deal at Susquehanna nuclear plant",
+          "Public Service Enterprise Group (PEG) — Salem/Hope Creek nuclear plants in PJM, data center proximity",
+          "Dominion Energy (D) — Millstone nuclear, Virginia data center corridor exposure"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Uranium Resource Scarcity: Structural Supply Deficit Meets SMR Demand",
+        "thesis": "Global uranium demand is set to increase from ~180M lbs/year to 220M+ lbs/year by 2035 driven by reactor restarts (Japan, Europe), new builds (China building 30+ reactors), and SMR deployments. Meanwhile, secondary supply (Russian HEU downblending, inventory releases) is declining. The 2023-2024 uranium price spike to $100+/lb was a preview; structural deficit persists at prices below $80/lb. SMRs add incremental demand (each 300 MW SMR requires ~15-20 tons U/year) but more importantly signal long-term demand certainty that justifies new mine development. Kazakhstan (40% of global supply) faces production shortfalls and geopolitical risk. Western utilities are urgently seeking non-Russian, non-Kazakh supply, creating premium pricing for tier-1 jurisdiction production.",
+        "awareness_gap": "The uranium market remains undercapitalized relative to the structural deficit. The last uranium bull market (2003-2007) saw prices hit $140/lb with far less demand growth than currently projected. Current exploration and development spending is a fraction of what's needed to fill the supply gap.",
+        "valuation_note": "NexGen Energy trades at a premium but its Arrow project in Saskatchewan is the largest undeveloped uranium deposit in the world's best jurisdiction. Uranium Energy Corp and enCore Energy offer lower-cost exposure with US production. Physical uranium trusts (SPUT) trade at NAV with structural buying pressure.",
+        "potential_losers": [
+          "Kazatomprom — production shortfalls, infrastructure constraints, geopolitical discount widening",
+          "Russian uranium exporters — banned from US/EU markets, losing market access",
+          "Utilities without long-term uranium contracts — exposed to spot price spikes and supply insecurity",
+          "Niger uranium operations — political instability after 2023 coup, Orano and CNNC operations disrupted"
+        ],
+        "potential_winners": [
+          "NexGen Energy (NXE) — world-class Arrow deposit, Athabasca Basin, first production targeted 2028-2029",
+          "Cameco (CCJ) — largest publicly traded uranium producer, McArthur River restart, fuel cycle vertical integration",
+          "Denison Mines (DNN) — Wheeler River project, Athabasca Basin, low-cost in-situ recovery potential",
+          "Uranium Energy Corp (UEC) — US-based ISR production, non-Russian supply optionality",
+          "Sprott Physical Uranium Trust (U.UN) — physical uranium exposure, structural buyer in tight market"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "TRISO Fuel and Advanced Nuclear Materials: The Materials Science Moat",
+        "thesis": "TRISO (tristructural-isotropic) fuel is the enabling technology for next-generation high-temperature gas reactors and many SMR designs. TRISO fuel particles are designed to contain fission products at temperatures up to 1600°C, eliminating the need for complex emergency cooling systems and enabling passive safety. Only two facilities in the US can produce TRISO fuel at scale: BWX Technologies (Lynchburg, VA) and X-energy's pilot facility (with DOE funding). The DOE has invested >$1B in TRISO fuel fabrication infrastructure. Companies with TRISO production capability and advanced nuclear materials expertise (graphite, silicon carbide, molten salt-compatible alloys) have deep moats because qualification takes 10+ years and hundreds of millions of dollars.",
+        "awareness_gap": "The market values SMR reactor designers but not the fuel technology that enables them. TRISO fuel is a prerequisite for multiple Gen IV designs (X-energy Xe-100, BWXT BWXR-300, Kairos Power fluoride salt-cooled). Without TRISO, these designs cannot be licensed or deployed.",
+        "valuation_note": "BWX Technologies' nuclear fuel and advanced manufacturing segments are valued primarily on naval reactor contracts. The TRISO fuel facility represents a multi-billion-dollar optionality on advanced reactor deployment that is not reflected in current valuation.",
+        "potential_losers": [
+          "Light water SMR designs (NuScale) — competing against TRISO-based designs with weaker safety cases in regulatory environment favoring passive safety",
+          "Conventional fuel fabricators without TRISO capability — Westinghouse must license or develop TRISO capability",
+          "Chinese TRISO developers — nonproliferation restrictions limit export markets"
+        ],
+        "potential_winners": [
+          "BWX Technologies (BWXT) — DOE TRISO fuel contract, only commercial-scale TRISO production facility in US, naval reactor monopoly",
+          "X-energy (private, backed by Centrus, Dow, Dominion) — TRISO fuel fabrication, Xe-100 reactor design, Dow Chemical partnership",
+          "Framatome (private, owned by EDF/Assystem) — French nuclear fuel cycle, TRISO R&D, European SMR fuel supply",
+          "Global Nuclear Fuel (GE Hitachi/Toshiba JV) — fuel fabrication infrastructure, BWRX-300 fuel supply",
+          "Covalent Metrology / Materion — advanced nuclear materials testing and silicon carbide supply"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Conventional Large Nuclear Revival: SMR Misperception Creates Value Gap",
+        "thesis": "The market has embraced the narrative that SMRs will replace large nuclear reactors. In reality, large-scale nuclear (1-1.6 GW AP1000s, EPRs, Korean APR1400s) remains dramatically more cost-effective per MW when built in series. China is building 30+ large reactors at $2,000-3,000/kW; the US Vogtle AP1000s cost $15,000+/kW but demonstrated first-of-a-kind learning. Korea's Barakah project (4 APR1400s) delivered at ~$4,000/kW. The SMR cost advantage is theoretical and unproven at scale—NuScale's costs escalated 70% before cancellation. Meanwhile, large nuclear provides proven baseload power today. The misperception that SMRs will dominate creates undervaluation in conventional nuclear supply chains and builders, particularly Korean and Chinese exporters serving emerging markets.",
+        "awareness_gap": "The SMR narrative has caused investors to write off large nuclear as obsolete. But every serious energy model (IEA, EIA, IPCC) shows large nuclear providing 5-10x more new capacity than SMRs through 2040. The SMR timeline is 2030-2040 for meaningful deployment; large nuclear is being built now.",
+        "valuation_note": "Doosan Enerbility trades at ~10x earnings despite being the critical supplier for Korea's nuclear export program (APR1400 to UAE, Czech Republic, Poland). Westinghouse (via Brookfield's BEP) is private but its AP1000 design has 30+ potential international orders. The market prices these as legacy nuclear, not as growth platforms.",
+        "potential_losers": [
+          "NuScale (SMR) — first-mover disadvantage proven costly; UAMPS cancellation damaged credibility",
+          "US SMR developers competing against subsidized Chinese/Korean large nuclear in emerging markets",
+          "Natural gas combined cycle — large nuclear's direct competitor for baseload generation in markets pricing carbon"
+        ],
+        "potential_winners": [
+          "Doosan Enerbility (034020.KS) — nuclear forgings, APR1400 components, Korean nuclear export supply chain",
+          "Korea Hydro & Nuclear Power (private) — APR1400 exporter, UAE Barakah success, bidding in Czech Republic, Poland, Netherlands",
+          "Westinghouse (Brookfield Asset Management/BEP) — AP1000 design, 30+ international opportunities, nuclear fuel services",
+          "EDF (EDF.PA) — EPR2 design optimization, Flamanville lessons learned, European nuclear revival champion",
+          "China National Nuclear Corporation / CGN (private) — Hualong One exports, 30+ domestic reactors under construction"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Nuclear Licensing and Engineering Services: The Picks-and-Shovels of Regulatory Complexity",
+        "thesis": "NRC licensing is the single largest non-technical barrier to SMR deployment. A typical design certification costs $500M-1B and takes 5-7 years. The NRC has licensed only one SMR design (NuScale) in its 50-year history, and that took $500M and 7 years. Every SMR developer, advanced reactor company, and existing plant operator needs specialized nuclear licensing, safety analysis, and regulatory consulting services. This is a structural bottleneck that scales with the number of reactor designs entering licensing—more SMR developers means more licensing work regardless of which designs succeed. The market completely ignores this picks-and-shovels layer.",
+        "awareness_gap": "Investors focus on reactor developers and fuel suppliers but miss the regulatory services layer. Nuclear licensing is a specialized field with high barriers to entry, limited talent pool, and recurring revenue from license renewal, modifications, and operating support. The NRC budget has grown 40% since 2020 to support advanced reactor reviews, signaling sustained demand.",
+        "valuation_note": "Jacobs Solutions (now part of Amentum) trades at modest multiples despite deep nuclear engineering capabilities. EnergySolutions is private but represents the nuclear services pure-play. These businesses have 15-20% operating margins and multi-year contracted backlogs.",
+        "potential_losers": [
+          "Small SMR startups attempting in-house licensing — burning capital on regulatory processes instead of technology",
+          "NRC itself — understaffed and overwhelmed by 20+ advanced reactor applications with limited review capacity",
+          "Anti-nuclear advocacy groups — losing influence as climate urgency shifts regulatory posture toward deployment"
+        ],
+        "potential_winners": [
+          "Amentum (AMTM) — Jacobs nuclear engineering business merged, largest US nuclear services contractor, DOE cleanup + licensing support",
+          "BWX Technologies (BWXT) — technical advisory services alongside manufacturing, NRC licensing expertise",
+          "EnergySolutions (private) — nuclear licensing, decommissioning, fuel cycle services",
+          "Jensen Hughes — nuclear safety analysis, licensing support, fire protection engineering (private)",
+          "Idaho National Laboratory / Battelle Energy Alliance — DOE national lab, SMR testing and qualification infrastructure"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Nuclear Waste Management and Storage: The Unsexy Necessity",
+        "thesis": "The US has 90,000+ tons of spent nuclear fuel stored at 75+ reactor sites with no permanent repository. Yucca Mountain is politically dead; interim storage facilities (Holtec's HI-STORE in New Mexico, Interim Storage Partners in Texas) face licensing battles. But the nuclear waste management market is growing regardless: existing plant decommissioning ($8-12B pipeline), SMR waste streams (different isotopic profiles requiring new handling), and DOE cleanup contracts ($6-8B/year) create sustained demand. The narrative conflict around waste is actually a barrier to entry—companies with NRC-licensed waste handling capabilities and community trust have durable competitive advantages. SMRs will generate waste; the waste management infrastructure must scale with deployment.",
+        "awareness_gap": "Nuclear waste is treated as a liability to be managed, not a business opportunity. But decommissioning trust funds hold $70B+ in assets, and every operating reactor pays $0.001/kWh into the Nuclear Waste Fund ($30B+ accumulated). This is a massive contracted revenue stream for qualified waste management companies, independent of whether SMRs succeed.",
+        "valuation_note": "EnergySolutions and Holtec are private, limiting public market access. BWX Technologies has some waste processing exposure. NorthStar Group Services (private) has built a decommissioning business. The lack of public pure-plays itself signals mispricing—when these companies IPO or are acquired, valuations will reflect the contracted backlog.",
+        "potential_losers": [
+          "States hosting interim storage facilities without benefit-sharing agreements — political opposition without economic upside",
+          "DOE Office of Environmental Management — budget pressure from growing cleanup obligations",
+          "SMR developers claiming 'less waste' without credible waste management plans — regulatory and public acceptance risk"
+        ],
+        "potential_winners": [
+          "Holtec International (private) — SMR design (SMR-300) plus waste storage casks, HI-STORE interim facility, decommissioning services",
+          "EnergySolutions (private) — largest commercial nuclear waste processor, decommissioning, DOE cleanup contracts",
+          "BWX Technologies (BWXT) — radioactive material processing, naval reactor waste handling",
+          "NorthStar Group Services (private) — nuclear decommissioning, Vermont Yankee and Connecticut Yankee projects",
+          "Waste Control Specialists (private) — Texas low-level radioactive waste disposal facility, interim storage license application"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Nuclear Workforce and Talent Scarcity: The Human Capital Bottleneck",
+        "thesis": "The US nuclear workforce is aging rapidly—25% of nuclear workers are eligible for retirement, and nuclear engineering university programs graduated only ~500 BS students nationally in 2023. The Navy nuclear program trains ~1,000 operators/year but most leave the nuclear field after service. SMR deployment requires not just reactor designers but NRC-licensed operators, health physicists, nuclear welders, QA inspectors, and security personnel. Each SMR site requires 100-200 specialized workers. The talent pipeline cannot support simultaneous deployment of 10+ SMR designs. Companies investing in nuclear workforce development, training infrastructure, and operator licensing will have structural advantages—human capital is the ultimate rate limiter.",
+        "awareness_gap": "The nuclear talent shortage is rarely discussed in SMR investment theses. Reactor designs can be licensed and funded, but without qualified operators, welders, and inspectors, reactors cannot be built or operated. The NRC operator licensing process takes 2-3 years per operator. This is a 5-10 year lead time constraint that no amount of capital can compress.",
+        "valuation_note": "This opportunity is primarily accessible through companies with existing nuclear training infrastructure. BWX Technologies' naval reactor workforce, Constellation's operator training programs, and university partnerships represent underappreciated competitive moats.",
+        "potential_losers": [
+          "SMR startups without workforce development plans — cannot staff operations even with licensed designs",
+          "NRC — insufficient inspector pipeline to review and oversee 20+ advanced reactor applications",
+          "Non-nuclear engineering firms attempting to pivot into nuclear — certification and qualification barriers are insurmountable short-term"
+        ],
+        "potential_winners": [
+          "BWX Technologies (BWXT) — naval reactor training infrastructure, largest pool of nuclear-certified welders and engineers",
+          "Constellation Energy (CEG) — 21 operating reactors = largest private nuclear workforce, operator training programs, university partnerships",
+          "Fluor (FLR) — nuclear construction workforce, Savannah River Site management, training infrastructure",
+          "Amentum (AMTM) — nuclear engineering workforce, DOE site management, technical training capabilities",
+          "University of Michigan / MIT / Texas A&M nuclear engineering programs — talent pipeline, research partnerships, SMR test facilities"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "European Nuclear Revival: Regulatory Taxonomy Creates Continental Demand",
+        "thesis": "The EU's 2022 taxonomy inclusion of nuclear as sustainable energy unlocked green financing for nuclear projects across Europe. France's EPR2 program (6-14 new reactors), Poland's first nuclear program (3 GW AP1000s from Westinghouse plus 6 GW from Korea), Czech Republic, Netherlands, and Sweden are all advancing new nuclear. The UK's Great British Nuclear initiative targets 24 GW by 2050 including SMRs (Rolls-Royce). This represents the first sustained European nuclear buildout since the 1980s. European regulatory shifts (taxonomy, REPowerEU, Net-Zero Industry Act) create a multi-decade demand cycle for nuclear goods and services that the market has not fully priced, particularly for European supply chain companies positioned to benefit from local content requirements.",
+        "awareness_gap": "European nuclear revival is treated skeptically due to Flamanville and Olkiluoto cost overruns. But these were first-of-a-kind EPR builds. Subsequent projects (Barakah in UAE, Fuqing in China) demonstrated learning curve effects. European political momentum (energy security post-Ukraine, climate targets) has shifted decisively pro-nuclear. The taxonomy decision was the inflection point.",
+        "valuation_note": "Rolls-Royce trades at depressed multiples due to legacy engine issues, but its SMR division represents a £200B+ potential market. Assystem trades at ~8x EBITDA despite being a nuclear engineering leader. Framatome is buried within EDF's nationalized structure, obscuring its value.",
+        "potential_losers": [
+          "German nuclear industry — permanently dismantled, Siemens exited nuclear, no path to reentry",
+          "Russian nuclear exports to Europe — Rosatom locked out of EU market, Finnish Hanhikivi and Hungarian Paks II projects at risk",
+          "European natural gas industry — nuclear revival reduces long-term gas demand for power generation",
+          "European renewables-only advocates — political capital shifting toward nuclear inclusion in clean energy targets"
+        ],
+        "potential_winners": [
+          "Rolls-Royce (RR.L) — UK SMR design, 470 MWe pressurized water reactor, GB Nuclear competition finalist, export potential to Eastern Europe",
+          "Assystem (ASY.PA) — French nuclear engineering, EPR2 design support, international nuclear consulting",
+          "Framatome (within EDF) — nuclear fuel fabrication, reactor instrumentation, European fuel cycle monopoly",
+          "Bilfinger (GBF.DE) — nuclear services, component manufacturing, European plant maintenance",
+          "Doosan Enerbility (034020.KS) — APR1400 exports to Poland and Czech Republic, European supply chain partner"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "SMR Developer Valuation Correction: Short Overhyped Reactor Designs",
+        "thesis": "Several SMR developer valuations reflect deployment timelines and cost structures that are unrealistic given regulatory, supply chain, and fuel constraints. NuScale's UAMPS cancellation demonstrated that SMR cost estimates are systematically understated. Oklo's SPAC merger valued the company at billions despite no licensed design, no fuel supply agreement, and no operating reactor. The pattern across SMR developers: initial cost estimates of $50-65/MWh escalate to $100-130+/MWh as designs mature and supply chain realities materialize. The market is pricing SMR developers as if first commercial deployment is 2-3 years away; realistic timelines are 2030-2035 for most designs. A correction is inevitable as milestones slip and costs escalate.",
+        "awareness_gap": "The SMR narrative has attracted retail and ESG capital that does not understand nuclear licensing timelines, supply chain constraints, or the historical pattern of nuclear cost overruns. Every nuclear technology wave (breeder reactors in the 1970s, modular pebble-bed in the 2000s) followed the same pattern: initial enthusiasm, cost escalation, deployment delays, capital flight.",
+        "valuation_note": "Oklo trades at >$2B market cap with zero revenue and no licensed design. NuScale trades at a premium despite cancelled flagship project and declining backlog. These valuations assume successful deployment that is 5-10 years away with significant execution risk.",
+        "potential_losers": [
+          "Oklo (OKLO) — no NRC license, no fuel supply, no operating history, dependent on regulatory exemptions",
+          "NuScale (SMR) — flagship project cancelled, credibility damaged, remaining pipeline at risk",
+          "Retail investors chasing SMR narrative without understanding nuclear industry dynamics",
+          "SPAC sponsors and early SMR investors — mark-to-market losses as deployment timelines extend",
+          "DOE advanced reactor demonstration program — political pressure if funded projects fail to deliver"
+        ],
+        "potential_winners": [
+          "Short positions in Oklo (OKLO), NuScale (SMR) — asymmetric downside as timelines slip and capital requirements increase",
+          "Established nuclear companies (BWXT, Westinghouse) — will acquire distressed SMR IP at fraction of development cost",
+          "Investors with patience — SMR developer valuations will reset to realistic levels, creating entry points",
+          "Centrus Energy (LEU) — benefits from SMR developer failures as fuel supply agreements get renegotiated by surviving projects"
+        ]
+      }
+    ]
+  }
+}

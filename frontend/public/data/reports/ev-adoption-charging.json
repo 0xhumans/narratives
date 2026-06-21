@@ -1,0 +1,902 @@
+{
+  "id": "f776afcb-d219-4be4-b4dc-8d58aa39aede",
+  "narrative_id": "53380096-cab5-4e5f-a091-3a1cf1b05bf0",
+  "version": 1,
+  "generated_at": "2026-06-21T12:07:21.626599Z",
+  "payload": {
+    "key_drivers": [
+      "Oil price trajectory: Iran deal and Iraq output increases signal looser supply, reducing EV TCO advantage and weakening the fuel-cost arbitrage that drives price-sensitive adoption",
+      "Charging infrastructure density and reliability: remains the primary bottleneck; deployment velocity lags vehicle sales growth, creating a negative feedback loop where poor charging experience suppresses demand",
+      "Battery cost curves: approaching $100/kWh threshold but mineral supply (lithium, cobalt, aluminum) subject to geopolitical disruption and Chinese market dominance",
+      "Grid capacity and demand response: mass EV charging at scale requires distribution grid upgrades that operate on 5-10 year utility planning cycles, far slower than EV adoption curves",
+      "Policy durability: IRA tax credits, EU 2035 phase-out mandates, and China NEV quotas create floor demand but face political risk if oil prices collapse or industrial competitiveness concerns mount",
+      "Sanctions erosion and dark transit logistics: weakening sanctions regime on Iran and commodity workaround networks reshape energy and mineral supply, creating volatility in both oil and battery material prices",
+      "Chinese EV supply chain dominance: from mineral processing to cell manufacturing to vehicle production, China's vertical integration creates asymmetric cost advantages that pressure Western automakers and provoke trade policy responses",
+      "Consumer behavior and range anxiety: psychological barriers persist even as real-world range improves; charging convenience parity with refueling remains the adoption tipping point"
+    ],
+    "value_capture": [
+      {
+        "roic": 7.0,
+        "role": "creator",
+        "notes": "Structural supply deficits in battery-grade lithium and nickel concentrate pricing power upstream. Cyclically volatile but secularly tight. Geopolitical concentration risk (DRC cobalt, China refining) creates choke points. Long lead times for new mine development (7-10 years) sustain scarcity premiums.",
+        "layer_name": "Raw Materials (Lithium, Nickel, Cobalt, Graphite)",
+        "pricing_power": 8.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 7.0,
+        "capital_intensity": 8.0,
+        "competitive_intensity": 6.0
+      },
+      {
+        "roic": 5.0,
+        "role": "creator",
+        "notes": "Massive capacity buildout by CATL, BYD, LG, Samsung creates oversupply pressure. Differentiation narrowing as chemistry converges on LFP. Scale and process engineering are the moats. ROIC depressed during capacity ramp; eventual consolidation will concentrate value among 3-4 winners.",
+        "layer_name": "Battery Cell Manufacturing",
+        "pricing_power": 5.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 7.0,
+        "capital_intensity": 9.0,
+        "competitive_intensity": 8.0
+      },
+      {
+        "roic": 4.0,
+        "role": "creator",
+        "notes": "Price wars (Tesla cuts, Chinese OEMs like BYD) compress margins. Legacy automakers carry dual ICE/EV cost structures. Brand matters less as vehicles commoditize. Only vertically integrated players (BYD, Tesla) capture structural margin advantage.",
+        "layer_name": "EV Manufacturing (OEMs)",
+        "pricing_power": 4.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 6.0,
+        "capital_intensity": 8.0,
+        "competitive_intensity": 9.0
+      },
+      {
+        "roic": 5.0,
+        "role": "creator",
+        "notes": "Relatively low barriers—ABB, ChargePoint, Wallbox compete on price. Hardware commoditizing fast. UL/certification requirements are modest moats. Value migrates to reliability engineering and uptime guarantees, not the box itself.",
+        "layer_name": "Charging Hardware & Equipment",
+        "pricing_power": 4.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 4.0,
+        "capital_intensity": 5.0,
+        "competitive_intensity": 7.0
+      },
+      {
+        "roic": 2.0,
+        "role": "creator",
+        "notes": "Worst unit economics in the stack. High capex per site, low utilization (most stations <10%), commoditized kWh pricing. Reliability issues plague the sector. NEVI funding and utility programs subsidize but distort economics. Consolidation inevitable; most current players will not earn cost of capital.",
+        "layer_name": "Charging Network Operations (CPOs)",
+        "pricing_power": 3.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 5.0,
+        "capital_intensity": 9.0,
+        "competitive_intensity": 8.0
+      },
+      {
+        "roic": 8.0,
+        "role": "capturer",
+        "notes": "Asset-light middleware layer—roaming, billing, demand management, fleet optimization. Network effects accrue to aggregators (e.g., PlugShare, ChargePoint's software). Once integrated into OEM dashboards and fleet telematics, switching costs lock in. This is where durable value pools form without bearing hardware risk.",
+        "layer_name": "Software, Payment & Network Management Platforms",
+        "pricing_power": 7.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 6.0,
+        "capital_intensity": 2.0,
+        "competitive_intensity": 5.0
+      },
+      {
+        "roic": 7.0,
+        "role": "capturer",
+        "notes": "Location is the true scarce resource—highway corridors, retail anchors, fleet depots. Property owners (Pilot, Buc-ee's, shopping centers) extract rent from CPOs desperate for foot traffic. As utilization rises, site hosts gain leverage over network operators. The landowner always wins the endgame.",
+        "layer_name": "Site Hosts & Strategic Real Estate",
+        "pricing_power": 7.0,
+        "revenue_growth": 6.0,
+        "barriers_to_entry": 8.0,
+        "capital_intensity": 4.0,
+        "competitive_intensity": 4.0
+      },
+      {
+        "roic": 6.0,
+        "role": "capturer",
+        "notes": "Regulated monopolies with guaranteed returns. Grid edge upgrades, transformer replacement, and substation buildout are the hidden cost of EV adoption—socialized across ratepayers. Utilities capture value passively but lack growth optionality. Transmission bottlenecks will become the binding constraint on charging buildout by 2028-2030.",
+        "layer_name": "Grid Infrastructure & Power Supply",
+        "pricing_power": 5.0,
+        "revenue_growth": 4.0,
+        "barriers_to_entry": 9.0,
+        "capital_intensity": 7.0,
+        "competitive_intensity": 3.0
+      },
+      {
+        "roic": 7.0,
+        "role": "capturer",
+        "notes": "Emerging layer—turning EV batteries into distributed storage. Requires software orchestration, utility partnerships, and regulatory frameworks (FERC Order 2222). Early movers can lock in grid service contracts. High uncertainty but asymmetric upside if managed charging becomes standard.",
+        "layer_name": "Vehicle-to-Grid (V2G) & Energy Arbitrage Services",
+        "pricing_power": 6.0,
+        "revenue_growth": 9.0,
+        "barriers_to_entry": 6.0,
+        "capital_intensity": 3.0,
+        "competitive_intensity": 4.0
+      }
+    ],
+    "feedback_loops": [
+      {
+        "kind": "reinforcing",
+        "strength": 7.5,
+        "description": "AI optimizes charging network load balancing, demand forecasting, and grid integration via vehicle-to-grid (V2G) protocols. AI also underpins autonomous driving features that differentiate premium EVs, accelerating consumer adoption. Conversely, EV fleets generate massive telematics data that feeds AI training pipelines for mobility models.",
+        "target_narrative": "Artificial Intelligence"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 6.5,
+        "description": "Gigafactory build-out requires high-density robotic automation for cell assembly, pack welding, and quality inspection. EV manufacturing scale-up directly pulls robotics demand in battery production lines, while robotics cost declines make EV cost parity achievable faster.",
+        "target_narrative": "Robotics"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.0,
+        "description": "Widespread EV adoption adds terawatt-hours of new electricity demand, much of it as evening/overnight charging load. Nuclear provides the clean, firm, baseload capacity needed to charge EVs without increasing fossil dispatch. SMRs sited near charging depots and highway corridors create symbiotic infrastructure planning.",
+        "target_narrative": "Nuclear Renaissance"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 5.5,
+        "description": "EV drivetrain R&D—particularly power density, battery energy density, and silicon-carbide inverters—transfers directly to unmanned ground vehicles and electric naval propulsion. Defense procurement of ruggedized battery packs and fast-charging systems creates a parallel demand pool that subsidizes civilian supply chain scaling.",
+        "target_narrative": "Defense Autonomy"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 4.5,
+        "description": "EV adoption is primarily a mitigation lever, but charging infrastructure resilience (hardened substations, distributed storage, microgrids at charging hubs) overlaps with adaptation needs for grid hardening against climate-driven disruptions. Bidirectional charging provides backup power during climate-induced outages, linking the two narratives at the infrastructure layer.",
+        "target_narrative": "Climate Adaptation"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 8.5,
+        "description": "EV and battery manufacturing is the single largest driver of advanced manufacturing reshoring in the US and EU, pulling hundreds of billions in capex into gigafactories, cathode plants, and component fabrication. This bidirectionally reinforces reindustrialization by anchoring domestic supply chains and reviving tooling, precision engineering, and process control talent pools.",
+        "target_narrative": "Reindustrialization"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 3.5,
+        "description": "Battery energy density and power electronics innovations from EV programs transfer to satellite power systems, lunar rovers, and electric propulsion. The engineering talent and supplier base for advanced cells overlaps with space power system needs, though the volume differential is extreme—EV demand dominates and space is a niche pull.",
+        "target_narrative": "Space Economy"
+      },
+      {
+        "kind": "resource_competition",
+        "strength": 8.0,
+        "description": "Mass EV adoption creates acute demand for lithium, nickel, cobalt, graphite, manganese, and copper—materials already under supply stress. Charging infrastructure additionally demands massive copper for cabling and grid connections, plus rare earths for charging station power electronics. This competition raises EV input costs, slows price-parity timelines, and creates geopolitical chokepoints (China-processed graphite, DRC cobalt, Chilean lithium).",
+        "target_narrative": "Resource Scarcity"
+      }
+    ],
+    "hidden_effects": [
+      {
+        "order": "hidden",
+        "description": "EVs are significantly heavier than ICE equivalents due to battery packs, increasing tire wear and non-exhaust particulate emissions (PM2.5 and PM10), which may partially offset air quality gains and accelerate road surface degradation."
+      },
+      {
+        "order": "hidden",
+        "description": "Municipal and state gas tax revenues decline structurally, forcing delayed or alternative road funding mechanisms such as mileage-based user fees, creating fiscal gaps during the transition period before new systems are implemented."
+      },
+      {
+        "order": "hidden",
+        "description": "Charging networks introduce a new cybersecurity attack surface on the power grid: compromised stations or networked charging management systems could be exploited for load manipulation, distributed denial of service, or grid destabilization."
+      },
+      {
+        "order": "hidden",
+        "description": "Insurance and collision repair economics shift: EVs have fewer mechanical failure points but higher per-incident repair costs due to battery pack damage, structural integration, and limited aftermarket parts, while salvage values for damaged battery vehicles create fire-risk handling complications."
+      },
+      {
+        "order": "hidden",
+        "description": "Rare earth processing dominance (particularly China's grip on lithium refining, cobalt processing, and graphite anode production) creates a new form of supply chain leverage that replaces petroleum chokepoints with mineral processing chokepoints, often in fewer jurisdictions."
+      },
+      {
+        "order": "hidden",
+        "description": "Reduced urban noise pollution from EVs alters wildlife behavior patterns — birdsong frequency ranges shift, nocturnal animal movement corridors expand — while simultaneously creating pedestrian safety challenges at low speeds that trigger regulatory mandates for artificial acoustic alerting systems."
+      }
+    ],
+    "potential_losers": [
+      [
+        "Pure-play DC fast charging networks dependent on grid connections they don't control",
+        "Utilities with aging infrastructure and rate-base constraints",
+        "Coal/gas peaker plants displaced by smart grid management"
+      ],
+      [
+        "Electrify America (stranded CCS infrastructure, VW-funded but commercially adrift)",
+        "CCS connector manufacturers",
+        "Third-party charging networks without NACS retrofit capital"
+      ],
+      [
+        "EV manufacturers with thin margins exposed to copper cost inflation",
+        "Charging network operators with rising installation costs",
+        "Aluminum-only substitution plays that face engineering limits"
+      ],
+      [
+        "Overbuilt DCFC networks with sub-10% utilization",
+        "EVgo and Electrify America (capital-intensive DCFC with poor unit economics)",
+        "Gas station convenience retail models betting on DCFC dwell time"
+      ],
+      [
+        "Diesel engine manufacturers (Cummins long-term risk)",
+        "Traditional fleet maintenance providers",
+        "Public DCFC networks that ignore fleet depot use case"
+      ],
+      [
+        "Standalone utility-scale battery storage projects facing competition from free distributed capacity",
+        "Traditional demand response providers (CPower, Voltus)",
+        "Peaker gas plants in markets with high EV penetration"
+      ],
+      [
+        "Primary lithium processors without recycling integration",
+        "Chinese battery material processors facing Western supply chain diversification",
+        "Mining companies with marginal projects that recycled material displaces"
+      ],
+      [
+        "Diesel engine manufacturers without electrification roadmaps",
+        "Truck stop networks that fail to electrify",
+        "Diesel fuel distributors in regulated corridors (California, EU)"
+      ],
+      [
+        "White-label charging networks without software differentiation",
+        "Payment processors without EV-specific orchestration",
+        "Hardware-only charging manufacturers competing on price"
+      ],
+      [
+        "Charging networks with vertically integrated installation but no labor scale",
+        "Solar/storage installers competing for the same electrician pool",
+        "Utilities with internal labor constraints on grid upgrades"
+      ]
+    ],
+    "narrative_summary": "EV adoption and charging infrastructure sit at a critical juncture where the geopolitical backdrop is shifting against the electrification thesis. The recent US-Iran offramp, Iraq's directive to lift oil field output, and the evident loss of sanctions efficacy suggest a looser oil market ahead, which historically erodes the consumer economic calculus for switching to electric vehicles. When gasoline is cheap, the payback period for EV premiums stretches, and adoption momentum softens—particularly in price-sensitive segments and emerging markets where the TCO argument is the primary driver rather than environmental mandate or early-adopter identity.\n\nSimultaneously, the charging infrastructure buildout remains the binding constraint on mass adoption, not vehicle supply. The narrative tension is between policy-driven demand (IRA, EU phase-out mandates, China NEV targets) and the physical reality of grid capacity, charger deployment velocity, and upstream mineral supply chains. Aluminum supply dynamics—blunted by Chinese output and 'dark transit' logistics—illustrate how commodity geopolitics can quietly alter EV cost structures. The system is transitioning from early-adopter enthusiasm into the 'chasm' where infrastructure density, charging reliability, and electricity rate structures will determine whether adoption accelerates toward the early majority or stalls in a plateau.",
+    "potential_winners": [
+      [
+        "Eaton",
+        "Schneider Electric",
+        "GE Vernova",
+        "Hitachi Energy",
+        "Hubbell",
+        "NVIDIA (grid digitalization)"
+      ],
+      [
+        "Tesla",
+        "ChargePoint (NACS-compatible hardware)",
+        "EVgo (NACS transition partner)",
+        "Blink Charging"
+      ],
+      [
+        "Freeport-McMoRan",
+        "Southern Copper",
+        "First Quantum Minerals",
+        "Ivanhoe Mines",
+        "Aurubis (copper processing/recycling)"
+      ],
+      [
+        "Wallbox",
+        "ChargePoint",
+        "Enphase Energy (EV charger integration with solar/storage)",
+        "SolarEdge (EV charging division)"
+      ],
+      [
+        "BYD (commercial EV vertical integration)",
+        "Daimler Truck",
+        "Volvo Group",
+        "ChargePoint (fleet segment)",
+        "Blink Charging (fleet depot focus)",
+        "Geotab (fleet telematics)"
+      ],
+      [
+        "Nuvve",
+        "Fermata Energy",
+        "Ford (Pro Charging with V2G)",
+        "Wallbox (Quasar bidirectional charger)",
+        "Octopus Energy (Krivento/V2G aggregation)"
+      ],
+      [
+        "Redwood Materials (pre-IPO)",
+        "Umicore",
+        "Li-Cycle (distressed but potentially mispriced)",
+        "EcoPro",
+        "JX Nippon Mining"
+      ],
+      [
+        "ABB (marine and heavy-duty charging)",
+        "Caterpillar (autonomous electric mining)",
+        "Komatsu",
+        "BYD (heavy-duty EVs)",
+        "CharIN (MCS standard ecosystem)"
+      ],
+      [
+        "Tesla (proprietary software stack)",
+        "ChargePoint (software + network management)",
+        "EV Connect (BP acquisition)",
+        "Driivz",
+        "Kempower (software-integrated hardware)"
+      ],
+      [
+        "Quanta Services",
+        "MYR Group",
+        "Kiewit",
+        "Tesla (prefabricated Supercharger stalls)",
+        "ABB (prefabricated charging modules)"
+      ]
+    ],
+    "dependency_network": [
+      {
+        "type": "input",
+        "layer": "Grid & Power Infrastructure",
+        "weight": 9.5,
+        "description": "Charging networks require massive grid interconnection capacity; distribution-level upgrades, substations, and high-voltage transmission are prerequisites for DC fast charging at scale"
+      },
+      {
+        "type": "input",
+        "layer": "Electricity Generation",
+        "weight": 8.5,
+        "description": "Marginal EV load must be served by dispatchable or renewable generation; regions with constrained generation capacity face time-of-use bottlenecks and curtailment risk"
+      },
+      {
+        "type": "input",
+        "layer": "Copper",
+        "weight": 9.0,
+        "description": "EVs use ~3-4x more copper than ICE vehicles; charging cables, transformers, and grid connections compound demand; supply constrained by mine permitting timelines and declining ore grades"
+      },
+      {
+        "type": "input",
+        "layer": "Lithium & Battery Materials",
+        "weight": 9.5,
+        "description": "Lithium, nickel, cobalt, and graphite define battery cost curves; geographic concentration in Australia, Chile, DRC, and China creates geopolitical chokepoints and price volatility"
+      },
+      {
+        "type": "input",
+        "layer": "Aluminum",
+        "weight": 7.0,
+        "description": "Lightweighting via aluminum is essential for EV range; current headlines show Chinese supply and dark transit logistics buffering war-driven price shocks, but supply remains geopolitically fragile"
+      },
+      {
+        "type": "input",
+        "layer": "Rare Earth Elements (Nd, Dy)",
+        "weight": 7.5,
+        "description": "Permanent magnet motors in EV drivetrains depend on neodymium and dysprosium; China dominates processing with >85% share, creating strategic vulnerability"
+      },
+      {
+        "type": "input",
+        "layer": "Semiconductors & Power Electronics",
+        "weight": 8.5,
+        "description": "SiC and GaN power modules for charging and drivetrain inverters; wafer capacity expansion lags EV demand growth curves; charging station controllers also require embedded chips"
+      },
+      {
+        "type": "resource",
+        "layer": "Skilled Labor (Electricians & Line Workers)",
+        "weight": 8.5,
+        "description": "Certified electricians for station installation and grid interconnection are bottlenecked by apprenticeship timelines of 4-5 years; utility workforce already constrained"
+      },
+      {
+        "type": "resource",
+        "layer": "Construction & Civil Works",
+        "weight": 7.0,
+        "description": "Site preparation, trenching, conduit installation, and transformer pad construction; competes with broader infrastructure projects for contractor availability"
+      },
+      {
+        "type": "resource",
+        "layer": "Capital Availability",
+        "weight": 9.0,
+        "description": "Charging networks are capital-intensive with long payback periods; dependent on venture funding, infrastructure debt, and government grants; German debt market stress signals broader credit tightening risk"
+      },
+      {
+        "type": "constraint",
+        "layer": "Government Subsidies & Policy",
+        "weight": 8.5,
+        "description": "NEVI funding in US, EU AFIR mandate, and China's NEV subsidies shape demand and deployment economics; policy reversals (e.g., changes in administration) create regime risk"
+      },
+      {
+        "type": "resource",
+        "layer": "Land & Real Estate (Charging Sites)",
+        "weight": 7.0,
+        "description": "High-traffic locations (highways, retail centers, fleet depots) require long-term leases or acquisitions; zoning and permitting create friction in urban deployment"
+      },
+      {
+        "type": "constraint",
+        "layer": "Oil Prices & Geopolitics",
+        "weight": 7.5,
+        "description": "Oil price levels directly shape EV TCO breakeven calculus; Hormuz disruption risk and Iran sanctions dynamics create upside oil scenarios that accelerate EV adoption, while low oil prices dampen it"
+      },
+      {
+        "type": "input",
+        "layer": "Networking & Telecommunications",
+        "weight": 6.5,
+        "description": "Smart charging requires cellular or fiber connectivity for payment processing, load management, and remote diagnostics; rural coverage gaps constrain highway corridor deployment"
+      },
+      {
+        "type": "input",
+        "layer": "Data Centers & Cloud Infrastructure",
+        "weight": 5.5,
+        "description": "Fleet management, charging session orchestration, V2G coordination, and grid demand response require cloud backend; relatively modest compared to AI workloads but growing with fleet electrification"
+      },
+      {
+        "type": "constraint",
+        "layer": "Software & Interoperability Standards",
+        "weight": 7.0,
+        "description": "OCPP, ISO 15118, and NACS standardization determine roaming, payment, and plug-and-charge compatibility; fragmented standards create switching costs and stranded asset risk"
+      },
+      {
+        "type": "resource",
+        "layer": "Recycling & End-of-Life Infrastructure",
+        "weight": 6.0,
+        "description": "Battery second-life applications and hydrometallurgical recycling reduce primary material demand; currently nascent but critical for long-term material security and circularity"
+      },
+      {
+        "type": "constraint",
+        "layer": "Consumer Psychology & Range Anxiety",
+        "weight": 7.5,
+        "description": "Charging station density and reliability directly address range anxiety; perceived charging friction remains a top-3 barrier to adoption even when objective coverage is adequate"
+      },
+      {
+        "type": "input",
+        "layer": "Steel",
+        "weight": 5.5,
+        "description": "Vehicle body structures and charging station enclosures; relatively abundant but green steel transition adds cost pressure to automotive manufacturing"
+      },
+      {
+        "type": "resource",
+        "layer": "Water (Battery Manufacturing & Thermal Management)",
+        "weight": 5.0,
+        "description": "Gigafactory water consumption for electrode processing and cooling; liquid-cooled charging cables also require coolant systems; regional water stress in battery production hubs (e.g., Nevada, Chile) creates operational risk"
+      },
+      {
+        "type": "constraint",
+        "layer": "Insurance & Liability Frameworks",
+        "weight": 5.5,
+        "description": "Charging station liability, battery fire risk, and grid interconnection insurance products are still maturing; premium uncertainty affects unit economics for operators"
+      }
+    ],
+    "future_bottlenecks": [
+      {
+        "name": "Peak Load Grid Capacity Constraints & Duck Curve Exacerbation",
+        "tier": "emerging",
+        "cause": "Simultaneous high-power charging during evening peak hours will strain local distribution grids, requiring expensive peak-shaving solutions, localized battery storage, or curtailment.",
+        "losers": [
+          "Pure-play charging networks without onsite storage",
+          "Ratepayers if costs are socialized"
+        ],
+        "winners": [
+          "Energy storage integrators",
+          "V2G software providers",
+          "Demand response aggregators"
+        ],
+        "severity": 6.0,
+        "time_horizon": "3-7 years",
+        "market_awareness": "Medium — known to grid operators but not fully priced into charging network profitability models"
+      },
+      {
+        "name": "Battery Raw Material Supply Chain Geopolitics",
+        "tier": "emerging",
+        "cause": "Concentration of lithium, cobalt, and graphite processing in China and unstable supply routes (e.g., Middle East tensions affecting shipping and energy costs) create price volatility and supply shocks.",
+        "losers": [
+          "EV startups without long-term supply contracts",
+          "Automakers dependent on spot markets"
+        ],
+        "winners": [
+          "Western mining and refining companies",
+          "Battery recyclers",
+          "Automakers with vertically integrated supply chains"
+        ],
+        "severity": 7.0,
+        "time_horizon": "1-5 years",
+        "market_awareness": "High — widely reported but often treated as a temporary cyclical issue rather than structural"
+      }
+    ],
+    "hidden_constraints": [
+      {
+        "name": "Tire Particulate Emissions & Weight Regulations",
+        "tier": "hidden",
+        "cause": "EVs are significantly heavier than ICE vehicles, leading to faster tire wear and increased non-exhaust particulate matter, which may trigger sudden environmental regulations or weight-based taxes.",
+        "losers": [
+          "Heavy EV truck and SUV manufacturers",
+          "Consumers facing higher tire replacement costs"
+        ],
+        "winners": [
+          "Specialty chemical companies",
+          "Tire manufacturers developing EV-specific low-wear tires"
+        ],
+        "severity": 5.0,
+        "time_horizon": "5-10 years",
+        "market_awareness": "Low — largely ignored by market participants focused on tailpipe emissions"
+      },
+      {
+        "name": "Charging Network Cybersecurity Vulnerabilities",
+        "tier": "hidden",
+        "cause": "Unmanaged high-power IoT charging nodes connected to the grid present a distributed attack surface for bad actors to manipulate load, execute ransomware, or disrupt power quality.",
+        "losers": [
+          "Unpatched charging network operators",
+          "Utilities with weak perimeter defenses"
+        ],
+        "winners": [
+          "OT cybersecurity firms",
+          "Grid operators with robust SCADA protections"
+        ],
+        "severity": 6.0,
+        "time_horizon": "3-8 years",
+        "market_awareness": "Low — treated as an IT problem rather than a critical infrastructure risk"
+      }
+    ],
+    "current_bottlenecks": [
+      {
+        "name": "Fast-Charger Deployment Density & Coverage Gaps",
+        "tier": "current",
+        "cause": "High capital costs, uncertain utilization curves, fragmented standards (CCS vs NACS vs CHAdeMO), and lengthy permitting processes make rural and highway corridor buildout economically marginal for operators without subsidies.",
+        "losers": [
+          "CCS-only networks",
+          "Rural consumers",
+          "Legacy automakers lagging in NACS transition"
+        ],
+        "winners": [
+          "Tesla",
+          "ChargePoint",
+          "EVgo"
+        ],
+        "severity": 7.0,
+        "time_horizon": "Ongoing, 0-3 years to partially resolve",
+        "market_awareness": "High — widely discussed as a primary barrier to consumer adoption"
+      },
+      {
+        "name": "Grid Interconnection & Local Transformer Shortages",
+        "tier": "current",
+        "cause": "Aging distribution infrastructure and a shortage of distribution transformers (driven by steel and aluminum supply constraints) delay grid upgrades needed for high-power charging sites.",
+        "losers": [
+          "Fleet operators",
+          "Charging networks facing delayed energization",
+          "Consumers facing reliability issues"
+        ],
+        "winners": [
+          "Eaton",
+          "Schneider Electric",
+          "Utilities with rate base growth"
+        ],
+        "severity": 8.0,
+        "time_horizon": "2-5 years",
+        "market_awareness": "Medium — recognized by utilities but underappreciated by EV bulls in demand models"
+      }
+    ],
+    "first_order_effects": [
+      {
+        "order": "1",
+        "description": "EV sales directly displace ICE vehicle sales, reducing gasoline and diesel consumption at the point of use while increasing electricity demand from the transportation sector."
+      },
+      {
+        "order": "1",
+        "description": "Demand for public and private charging stations surges, triggering capital deployment into charging hardware, installation labor, and network software platforms."
+      },
+      {
+        "order": "1",
+        "description": "Battery manufacturing capacity scales rapidly, driving direct investment in gigafactories and upstream processing facilities for lithium, nickel, cobalt, and graphite."
+      }
+    ],
+    "regulatory_analysis": {
+      "summary": "The regulatory landscape for EV adoption and charging infrastructure is currently characterized by aggressive supply-side mandates, demand-side subsidies, and targeted infrastructure funding. Jurisdictions like the EU and California are enforcing phase-outs of internal combustion engines by 2035, while the US Inflation Reduction Act (IRA) offers substantial tax credits for both vehicle purchases and charging equipment. However, the regulatory regime is shifting from direct subsidies to stringent supply chain and sourcing rules, such as the IRA's Foreign Entity of Concern (FEOC) constraints and the EU Battery Passport, which mandate localized, traceable manufacturing. Future regulations will likely pivot from merely incentivizing deployment to managing grid integration, enforcing smart-charging capabilities (V2G/V2H), and mandating EV-ready building codes. As the market matures, regulators will phase out purchase subsidies in favor of carbon pricing, zero-emission vehicle (ZEV) credit schemes, and penalties for non-compliance, shifting the burden of adoption from the taxpayer to the automaker and end-user.",
+      "catalysts": [
+        "Implementation of comprehensive national or regional infrastructure bills allocating dedicated funding for high-speed corridor charging and urban grid upgrades.",
+        "Harmonization of charging standards and payment interfaces across major markets, reducing friction and accelerating network utilization.",
+        "Enactment of strict zoning laws and building codes requiring all new commercial and residential constructions to be 'EV-ready' with pre-wired infrastructure.",
+        "Regulatory frameworks enabling Vehicle-to-Grid (V2G) monetization, allowing EV owners to sell stored energy back to the grid, thereby subsidizing vehicle ownership.",
+        "Aggressive implementation of carbon taxes or fuel excise duties, altering the total cost of ownership (TCO) calculus decisively in favor of EVs."
+      ],
+      "key_risks": [
+        "Political shifts and policy reversals leading to the rollback of EV mandates, tax credits, or infrastructure funding (e.g., changes in administration or shifting public sentiment on EV readiness).",
+        "Grid interconnection bottlenecks and regulatory delays in grid upgrades outpacing the deployment of high-power fast-charging networks.",
+        "Supply chain fragmentation and cost inflation driven by aggressive localized sourcing requirements (e.g., IRA FEOC rules, EU Critical Raw Materials Act) limiting battery availability and model eligibility.",
+        "Standardization conflicts and stranded assets if regulatory bodies mandate specific charging protocols (e.g., NACS vs. CCS) or software interfaces that later become obsolete.",
+        "Trade wars and tariffs on imported EV components and vehicles artificially raising prices and stifling mass-market adoption."
+      ]
+    },
+    "third_order_effects": [
+      {
+        "order": "3",
+        "description": "Oil-exporting nations face structural fiscal pressure as demand growth slows or reverses, accelerating sovereign wealth drawdowns and geopolitical realignment around critical mineral supply chains rather than petroleum logistics."
+      },
+      {
+        "order": "3",
+        "description": "Automotive labor markets restructure: ICE powertrain manufacturing jobs (engine blocks, transmissions, exhaust systems) decline while battery cell and power electronics roles concentrate in different geographies, creating regional winners and losers."
+      },
+      {
+        "order": "3",
+        "description": "Urban air quality improves measurably as tailpipe emissions fall, shifting public health outcomes and reducing respiratory disease burdens, though the magnitude depends on grid carbon intensity."
+      },
+      {
+        "order": "3",
+        "description": "Vehicle-to-grid (V2G) and managed charging transform the EV fleet into distributed battery storage, enabling grid-scale energy arbitrage and renewable integration, fundamentally altering utility business models and capacity planning."
+      }
+    ],
+    "second_order_effects": [
+      {
+        "order": "2",
+        "description": "Grid load management becomes acute: uncoordinated fast-charging creates localized peak demand spikes, forcing utilities to invest in distribution upgrades, transformer capacity, and time-of-use pricing structures."
+      },
+      {
+        "order": "2",
+        "description": "Battery raw material supply chains become strategic bottlenecks, with lithium, cobalt, and nickel prices experiencing volatility that feeds back into EV affordability and manufacturer margins."
+      },
+      {
+        "order": "2",
+        "description": "Gas station retail business models erode as fuel volume declines, pushing fuel retailers to either install charging infrastructure or repurpose real estate, while convenience store economics decouple from fuel traffic."
+      },
+      {
+        "order": "2",
+        "description": "Real estate values shift toward properties with charging access or electrical capacity for installation, creating a new amenity premium in residential and commercial markets."
+      }
+    ],
+    "confidence_assessment": {
+      "composite": 6.4,
+      "conviction": 5.0
+    },
+    "geopolitical_analysis": {
+      "summary": "The global transition to electric vehicles (EVs) and the build-out of charging infrastructure represent a fundamental realignment of geopolitical power. The locus of energy security is shifting from hydrocarbon reserves to the supply chains of critical minerals (lithium, cobalt, nickel, graphite) and battery manufacturing capacity, currently dominated by China. Charging infrastructure deployment is not merely a logistical challenge but a contest over technological standards, grid resilience, and cybersecurity. As nations subsidize domestic EV industries and secure mineral rights abroad, the EV transition is becoming a central theater for great power competition, trade protectionism, and strategic infrastructure diplomacy.",
+      "key_risks": [
+        "Mineral nationalism and supply chain weaponization by resource-holding states (e.g., Indonesia, Chile, DRC) or processing monopolies (China), leading to export bans or quotas.",
+        "Cybersecurity vulnerabilities in smart charging networks and vehicle-to-grid (V2G) systems that could be exploited by state actors to destabilize national power grids.",
+        "Trade fragmentation and tariff wars as the US and EU attempt to shield domestic auto industries from heavily subsidized Chinese EV and battery imports.",
+        "Human rights and governance risks in mineral extraction zones (e.g., artisanal cobalt mining in the DRC) leading to sanctions, regulatory bottlenecks, and supply disruptions.",
+        "Grid instability and localized blackouts if high-voltage fast-charging deployment outpaces grid modernization and dispatchable baseload power capacity."
+      ],
+      "opportunities": [
+        "Formation of strategic mineral alliances (e.g., Minerals Security Partnership) and bilateral trade agreements to diversify supply chains and reduce single-point-of-failure dependencies.",
+        "Leapfrogging opportunities for developing nations to bypass legacy liquid fuel infrastructure and build decentralized, resilient microgrids integrated with EV charging.",
+        "Development of a circular economy through domestic battery recycling, allowing import-dependent nations to generate 'secondary' supply and mitigate geopolitical exposure.",
+        "Export of advanced grid management, energy storage, and fast-charging technologies as a tool of soft power and infrastructure diplomacy (e.g., competing with China's Belt and Road Initiative).",
+        "Standard-setting dominance: Nations and blocs that establish the protocols for V2G communication, plug standards (e.g., NACS vs. CCS), and charging interoperability will lock in long-term technological dependencies and royalties."
+      ]
+    },
+    "market_misconceptions": [
+      "Battery cost declines will continue linearly or accelerate, making EVs price-competitive without subsidies across all vehicle segments.",
+      "Grid capacity and generation will scale to meet the massive additional electricity demand from widespread EV charging without prohibitive cost or delay.",
+      "Consumer charging behavior will mirror gasoline refueling—fast, convenient, and reliable—despite fundamental differences in energy transfer physics.",
+      "Government subsidies and regulatory mandates will remain stable and politically durable across electoral cycles and fiscal pressures.",
+      "Standardization around charging connectors and protocols will resolve smoothly, avoiding stranded infrastructure investments.",
+      "Urban and multi-family dwellers will adopt EVs at similar rates to suburban single-family homeowners, despite asymmetric charging access.",
+      "Total cost of ownership calculations, which favor EVs, will drive consumer behavior more than upfront price, range anxiety, and habit inertia.",
+      "The supply chain for critical minerals (lithium, cobalt, nickel, graphite) will expand without geopolitical disruption or severe price spikes that feed back into vehicle costs."
+    ],
+    "portfolio_implications": {
+      "composite": 6.4,
+      "narrative_score": {
+        "duration": 9.0,
+        "conviction": 5.0,
+        "economic_impact": 9.0,
+        "valuation_support": 5.0,
+        "narrative_strength": 8.0,
+        "adoption_probability": 7.0,
+        "bottleneck_advantage": 6.0,
+        "market_awareness_gap": 3.0,
+        "second_order_effects": 8.0,
+        "competitive_advantage": 4.0
+      }
+    },
+    "psychological_analysis": {
+      "biases": [
+        "Recency bias: Extrapolating the rapid EV sales growth of 2020–2023 forward indefinitely, while underweighting the possibility of adoption plateaus as the market moves beyond early adopters into more price-sensitive and infrastructure-constrained segments.",
+        "Herd bias: Capital flooding into EV and charging startups based on momentum and peer behavior rather than unit economics, creating valuation bubbles and overcapacity that eventually corrects painfully.",
+        "Overconfidence: Analysts and executives expressing high precision in multi-decade adoption forecasts despite massive uncertainty in consumer behavior, grid buildout timelines, and mineral supply chains.",
+        "Narrative fallacy: Constructing a clean, deterministic story of energy transition that compresses complex, path-dependent realities into a smooth inevitability, ignoring friction, delay, and reversal risks.",
+        "Availability bias: Overweighting visible success stories (Tesla, Norway adoption rates) and underweighting less visible failures, charging reliability problems, and grid stress events that don't make headlines.",
+        "Confirmation bias: Investors seeking out data confirming the transition thesis while dismissing or under-attributing contradictory signals such as slowing growth rates, dealer inventory buildups, or consumer survey data showing persistent range and charging concerns."
+      ],
+      "consensus_view": "EV adoption is an inevitable, exponential S-curve driven by regulatory mandates, declining battery costs, and consumer preference shifts. Charging infrastructure is the critical bottleneck, but it will scale alongside vehicle sales, creating a massive, predictable buildout opportunity. The winners will be early movers in both vehicle manufacturing and charging networks, supported by government subsidies and grid modernization.",
+      "narrative_risks": [
+        "Grid bottlenecks and local transmission constraints could create a 'charging desert' dynamic in high-adoption regions, causing demand destruction and negative sentiment cycles.",
+        "Battery cost plateaus or reversals due to mineral scarcity, refining capacity constraints, or geopolitical export controls, stalling the price parity crossover and extending the ICE vehicle tail.",
+        "Charging infrastructure economics may prove fundamentally unprofitable at scale due to high capital intensity, low utilization in early years, and commoditized electricity pricing, leading to stranded assets and bankrupt networks.",
+        "Consumer fatigue from unreliable charging experiences, software glitches, and depreciation concerns could slow adoption below the assumed S-curve trajectory, creating a negative feedback loop where infrastructure investment thins out.",
+        "Political reversal of EV mandates and subsidies in key markets could remove the regulatory floor underpinning demand forecasts.",
+        "Alternative technologies (e.g., plug-in hybrids, hydrogen, synthetic fuels, or extended-range ICE) could bifurcate the market, reducing pure BEV penetration below consensus and stranding dedicated charging investments.",
+        "Used EV market dysfunction—driven by battery degradation fears and opaque valuation—could suppress new demand by weakening the total cost of ownership narrative and lease residual values."
+      ],
+      "hidden_assumptions": [
+        "Battery cost declines will continue linearly or accelerate, making EVs price-competitive without subsidies across all vehicle segments.",
+        "Grid capacity and generation will scale to meet the massive additional electricity demand from widespread EV charging without prohibitive cost or delay.",
+        "Consumer charging behavior will mirror gasoline refueling—fast, convenient, and reliable—despite fundamental differences in energy transfer physics.",
+        "Government subsidies and regulatory mandates will remain stable and politically durable across electoral cycles and fiscal pressures.",
+        "Standardization around charging connectors and protocols will resolve smoothly, avoiding stranded infrastructure investments.",
+        "Urban and multi-family dwellers will adopt EVs at similar rates to suburban single-family homeowners, despite asymmetric charging access.",
+        "Total cost of ownership calculations, which favor EVs, will drive consumer behavior more than upfront price, range anxiety, and habit inertia.",
+        "The supply chain for critical minerals (lithium, cobalt, nickel, graphite) will expand without geopolitical disruption or severe price spikes that feed back into vehicle costs."
+      ]
+    },
+    "adoption_curve_analysis": {
+      "stage": "Early majority transition (chasm crossing)",
+      "growth_rate": "25-30% annual unit growth, decelerating from 40%+ in 2022-2023",
+      "penetration_pct": 16,
+      "inflection_points": [
+        "Charging network density reaches 1 charger per 20 EVs in top 50 metro areas, eliminating range anxiety as adoption barrier",
+        "Battery pack costs sustainably below $80/kWh, enabling ICE price parity without subsidies across mid-market segments",
+        "Oil supply disruption or price spike above $100/bbl re-energizes consumer EV demand and policy urgency",
+        "Grid operators implement time-of-use pricing and managed charging at scale, resolving peak load constraints on mass adoption"
+      ]
+    },
+    "investment_opportunities": [
+      {
+        "type": "direct",
+        "title": "Grid Infrastructure Buildout as the True EV Bottleneck",
+        "thesis": "The market focuses on charging stations, but the real constraint is the grid behind them. Transformer lead times have stretched from weeks to 12-18 months. Switchgear, smart inverters, and grid modernization are the picks-and-shovels of EV adoption. The IRA and EU Green Deal are injecting hundreds of billions into grid resilience, creating a multi-year capex supercycle that is underpriced relative to the EV narrative's focus on vehicles and chargers.",
+        "awareness_gap": "Most EV adoption models assume grid capacity exists; they don't model the infrastructure lag. Grid investment is treated as a utility sector story rather than an EV enabler.",
+        "valuation_note": "Grid infrastructure names trade at utility-like multiples despite exposure to a growth capex cycle. Eaton and Schneider trade at ~22-25x forward earnings, reasonable given multi-year orderbook visibility.",
+        "potential_losers": [
+          "Pure-play DC fast charging networks dependent on grid connections they don't control",
+          "Utilities with aging infrastructure and rate-base constraints",
+          "Coal/gas peaker plants displaced by smart grid management"
+        ],
+        "potential_winners": [
+          "Eaton",
+          "Schneider Electric",
+          "GE Vernova",
+          "Hitachi Energy",
+          "Hubbell",
+          "NVIDIA (grid digitalization)"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "NACS Standard Consolidation Creates Winner-Take-Most Charging Network",
+        "thesis": "The industry's shift to Tesla's NACS connector is not just about plug compatibility—it consolidates Tesla's Supercharger network as the de facto national standard. Tesla's network advantage (reliability, site selection, integration) compounds as every major OEM adopts NACS. Competitors must now build against an entrenched, vertically integrated incumbent with a 5-7 year head start on site economics and data.",
+        "awareness_gap": "The market treats NACS adoption as a connector standardization story. It's actually a network monopoly story—Tesla gains captive revenue from non-Tesla EVs while competitors face stranded CCS infrastructure investments.",
+        "valuation_note": "Tesla's charging revenue is a small fraction of current valuation but could represent $5-10B annually by 2030 with 70%+ margins on energy sales. The optionality is underpriced.",
+        "potential_losers": [
+          "Electrify America (stranded CCS infrastructure, VW-funded but commercially adrift)",
+          "CCS connector manufacturers",
+          "Third-party charging networks without NACS retrofit capital"
+        ],
+        "potential_winners": [
+          "Tesla",
+          "ChargePoint (NACS-compatible hardware)",
+          "EVgo (NACS transition partner)",
+          "Blink Charging"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Copper and Electrical Metals Scarcity Meets EV Demand Surge",
+        "thesis": "An EV uses ~3.5x more copper than an ICE vehicle. Charging infrastructure adds another 2-8 kg per station, with DCFC stations requiring 50-200+ kg each. New mine development takes 15-20 years from discovery to production. Existing mines face declining ore grades. The supply-demand gap is structural, not cyclical, and will persist through the 2030s regardless of EV adoption rate scenarios.",
+        "awareness_gap": "Copper is modeled as a cyclical industrial metal. The structural EV + grid + renewable demand layer is underweighted in supply models. Aluminum substitution has physical limits in charging applications due to conductivity and connector corrosion.",
+        "valuation_note": "Major copper miners trade at 12-15x earnings despite facing a structural deficit. Freeport-McMoRan and Southern Copper offer growth optionality at value multiples.",
+        "potential_losers": [
+          "EV manufacturers with thin margins exposed to copper cost inflation",
+          "Charging network operators with rising installation costs",
+          "Aluminum-only substitution plays that face engineering limits"
+        ],
+        "potential_winners": [
+          "Freeport-McMoRan",
+          "Southern Copper",
+          "First Quantum Minerals",
+          "Ivanhoe Mines",
+          "Aurubis (copper processing/recycling)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Level 2 Home and Workplace Charging as the Unsexy Majority",
+        "thesis": "80%+ of EV charging happens at home or work at Level 2 speeds (7-19 kW). The market is obsessed with DC fast charging (150-350 kW) because it's visible and venture-funded, but DCFC represents <20% of charging sessions and has terrible unit economics ($150-300K per stall, 10-15% utilization). L2 home charging hardware is a high-margin, recurring-revenue business with far better economics and lower competitive intensity.",
+        "awareness_gap": "Media and investors conflate 'charging infrastructure' with DC fast charging. Home L2 is treated as commoditized hardware. In reality, smart L2 charging with load management, solar integration, and V2G capability is a software and ecosystem play.",
+        "valuation_note": "Wallbox trades at ~1x revenue. ChargePoint trades at ~3x revenue with L2 as its core profitable segment. Both are mispriced relative to the installed base growth trajectory.",
+        "potential_losers": [
+          "Overbuilt DCFC networks with sub-10% utilization",
+          "EVgo and Electrify America (capital-intensive DCFC with poor unit economics)",
+          "Gas station convenience retail models betting on DCFC dwell time"
+        ],
+        "potential_winners": [
+          "Wallbox",
+          "ChargePoint",
+          "Enphase Energy (EV charger integration with solar/storage)",
+          "SolarEdge (EV charging division)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Commercial Fleet Electrification and Depot Charging",
+        "thesis": "Passenger EVs get the headlines, but commercial fleets (delivery vans, buses, last-mile trucks) are electrifying faster due to total cost of ownership advantages, regulatory mandates (CARB ACF rule), and predictable routes. Fleet operators need depot charging infrastructure, managed charging software, and financing—not public DCFC. This is a B2B infrastructure-as-a-service market with sticky contracts and predictable cash flows.",
+        "awareness_gap": "Fleet electrification is invisible to consumer-facing EV narratives. Investors don't model the infrastructure buildout required for depot charging: electrical upgrades, load management, demand charge optimization, and telematics integration.",
+        "valuation_note": "Private companies like Zeem and Highland Electric Fleet are pre-IPO. Public comps like Blink and ChargePoint have fleet segments that are undervalued within their overall business. Daimler Truck and Volvo trade at 8-10x earnings despite EV transition optionality.",
+        "potential_losers": [
+          "Diesel engine manufacturers (Cummins long-term risk)",
+          "Traditional fleet maintenance providers",
+          "Public DCFC networks that ignore fleet depot use case"
+        ],
+        "potential_winners": [
+          "BYD (commercial EV vertical integration)",
+          "Daimler Truck",
+          "Volvo Group",
+          "ChargePoint (fleet segment)",
+          "Blink Charging (fleet depot focus)",
+          "Geotab (fleet telematics)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Vehicle-to-Grid (V2G) as Distributed Battery Storage",
+        "thesis": "EVs sit parked 95% of the time with 60-100+ kWh batteries. V2G technology turns parked EVs into grid-scale distributed storage, enabling frequency regulation, peak shaving, and renewable integration. Regulatory frameworks (FERC Order 2222, EU electricity market reform) are opening wholesale markets to aggregated distributed resources. The economics work: a fleet of 10,000 EVs provides ~500 MWh of storage at near-zero marginal capex.",
+        "awareness_gap": "V2G is dismissed as technically complex and battery-degradation-concerning. Recent bidirectional inverter cost declines and battery warranty updates from OEMs (Ford, GM) are changing the calculus. The market hasn't repriced V2G since 2020 pilot failures.",
+        "valuation_note": "Nuvve trades at micro-cap valuation (~$50M market cap) despite having commercial V2G deployments. Fermata Energy is private. The optionality is asymmetric—if V2G captures even 5% of the distributed storage market, these are multi-billion dollar businesses.",
+        "potential_losers": [
+          "Standalone utility-scale battery storage projects facing competition from free distributed capacity",
+          "Traditional demand response providers (CPower, Voltus)",
+          "Peaker gas plants in markets with high EV penetration"
+        ],
+        "potential_winners": [
+          "Nuvve",
+          "Fermata Energy",
+          "Ford (Pro Charging with V2G)",
+          "Wallbox (Quasar bidirectional charger)",
+          "Octopus Energy (Krivento/V2G aggregation)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Battery Recycling and Urban Mining as Supply Security Play",
+        "thesis": "By 2030, 11M+ EV batteries will reach end-of-life annually. EU Battery Regulation mandates recycled content (16% cobalt, 6% lithium, 6% nickel by 2031). China controls 80%+ of primary battery mineral processing. Recycling creates a domestic, circular supply chain immune to geopolitical disruption. Black mass from recycled batteries contains higher metal grades than most virgin ore.",
+        "awareness_gap": "Recycling is viewed as an ESG compliance cost, not a supply chain strategy. The market underestimates how quickly end-of-life volumes scale and how regulatory mandates create guaranteed offtake. The geopolitical dimension—reducing China dependence—is a second-order driver that's accelerating.",
+        "valuation_note": "Li-Cycle trades at distressed levels (~$0.50/share) despite having commercial capacity and strategic partnerships. Redwood Materials is private at a $5B+ valuation. Umicore trades at 12x earnings with recycling catalysts underpriced.",
+        "potential_losers": [
+          "Primary lithium processors without recycling integration",
+          "Chinese battery material processors facing Western supply chain diversification",
+          "Mining companies with marginal projects that recycled material displaces"
+        ],
+        "potential_winners": [
+          "Redwood Materials (pre-IPO)",
+          "Umicore",
+          "Li-Cycle (distressed but potentially mispriced)",
+          "EcoPro",
+          "JX Nippon Mining"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Heavy-Duty and Off-Highway Electrification: The Last Frontier",
+        "thesis": "Passenger EVs are 20% penetrated in key markets. Heavy-duty trucks, mining equipment, marine, and aviation represent <2% electrification but consume 30%+ of transport energy. The infrastructure requirements are fundamentally different: megawatt charging (MCS standard), depot electrification, and route-specific charging corridors. TCO crossover for heavy-duty is 2025-2027 with diesel prices above $4/gal.",
+        "awareness_gap": "Heavy-duty electrification is dismissed as technically infeasible due to battery weight. This ignores that mining trucks (Komatsu, Caterpillar) are already running electric with dynamic charging. Marine port electrification (shore power) and drayage truck mandates (CARB) are creating forced adoption.",
+        "valuation_note": "Caterpillar and Komatsu trade at 15-17x earnings with minimal EV premium. ABB trades at 18x with marine electrification optionality. The heavy-duty charging infrastructure market could reach $15B by 2030 with few pure-play competitors.",
+        "potential_losers": [
+          "Diesel engine manufacturers without electrification roadmaps",
+          "Truck stop networks that fail to electrify",
+          "Diesel fuel distributors in regulated corridors (California, EU)"
+        ],
+        "potential_winners": [
+          "ABB (marine and heavy-duty charging)",
+          "Caterpillar (autonomous electric mining)",
+          "Komatsu",
+          "BYD (heavy-duty EVs)",
+          "CharIN (MCS standard ecosystem)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Charging Network Reliability and Software Layer",
+        "thesis": "The dirty secret of public DCFC: 20-30% of charging attempts fail due to software bugs, payment errors, connector issues, or network outages. NEVI funding requires 97% uptime. The gap between current reliability and mandated reliability creates a massive opportunity for charging management software, predictive maintenance, and payment orchestration. This is a SaaS opportunity disguised as hardware infrastructure.",
+        "awareness_gap": "Investors fund charging hardware and real estate but underfund the software layer that determines whether stations actually work. Reliability is treated as an operational issue, not a product category. NEVI's 97% uptime requirement is a regulatory forcing function that's underappreciated.",
+        "valuation_note": "Private companies like Amply (acquired by BP), EV Connect, and Driivz are building the middleware layer. Public charging companies with proprietary software (Tesla) have a structural advantage that's not fully priced.",
+        "potential_losers": [
+          "White-label charging networks without software differentiation",
+          "Payment processors without EV-specific orchestration",
+          "Hardware-only charging manufacturers competing on price"
+        ],
+        "potential_winners": [
+          "Tesla (proprietary software stack)",
+          "ChargePoint (software + network management)",
+          "EV Connect (BP acquisition)",
+          "Driivz",
+          "Kempower (software-integrated hardware)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Electrical Worker Shortage and Training Infrastructure",
+        "thesis": "The US needs 140,000+ additional electricians by 2030 to support EV charging installation, grid upgrades, and solar/storage deployment. Current training pipelines produce ~50,000 electricians annually against ~100,000+ demand. This labor bottleneck caps EV infrastructure deployment speed and inflates installation costs 30-50% above equipment costs. Companies solving the labor constraint—through training, prefabrication, or automation—capture disproportionate value.",
+        "awareness_gap": "Labor is the invisible bottleneck in every EV infrastructure model. No one models installation capacity constraints. Prefabricated charging assemblies and standardized installation kits could reduce labor hours by 40-60%, but this is an unsexy operational innovation that investors ignore.",
+        "valuation_note": "No pure-play public company exists for EV electrical training. Exposure comes through electrical contractors (Quanta Services, MYR Group) trading at 18-22x earnings with multi-year backlog growth, and through prefabrication plays within charging hardware companies.",
+        "potential_losers": [
+          "Charging networks with vertically integrated installation but no labor scale",
+          "Solar/storage installers competing for the same electrician pool",
+          "Utilities with internal labor constraints on grid upgrades"
+        ],
+        "potential_winners": [
+          "Quanta Services",
+          "MYR Group",
+          "Kiewit",
+          "Tesla (prefabricated Supercharger stalls)",
+          "ABB (prefabricated charging modules)"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,969 @@
+{
+  "id": "ae628322-7685-4d82-ac1f-8bada41bf8f3",
+  "narrative_id": "180e8fc4-ed69-40d3-97e6-5b6dbd1679a8",
+  "version": 1,
+  "generated_at": "2026-06-21T12:20:54.740494Z",
+  "payload": {
+    "key_drivers": [
+      "Structural uranium supply deficit: mine production covers ~75-80% of reactor demand, with the gap filled by secondary supplies (inventory drawdowns, downblending, reprocessing) that are rapidly depleting",
+      "Geopolitical de-risking from Russian nuclear supply chain: US ban on Russian uranium imports (signed August 2024) forcing utilities to secure alternative enrichment and conversion sources",
+      "Utility re-contracting cycle: Western utilities under-contracted post-Fukushima and now must secure 40-60% of fuel needs through new long-term contracts at materially higher prices",
+      "Enrichment capacity bottleneck: Western enrichment expansion (Urenco, Orano, Centrus) constrained by long lead times, with meaningful new SWU capacity not available until 2026-2028",
+      "China and India nuclear buildout: China adding 6-10 reactors annually, creating incremental uranium demand of 1-2M lbs U3O8 per new reactor per year",
+      "HALEU supply gap for advanced reactors: No commercial-scale HALEU production capability in the West, creating a critical-path dependency for SMR deployment",
+      "AI/data center power demand: Hyperscalers signing nuclear PPAs (Microsoft-Constellation, Amazon-Talen) validating nuclear as preferred clean baseload for 24/7 compute",
+      "Financialization of uranium: Sprott Physical Uranium Trust and similar vehicles creating a structural bid on physical material, compressing available spot supply"
+    ],
+    "value_capture": [
+      {
+        "roic": 5.0,
+        "role": "creator",
+        "notes": "Commodity business with cyclical pricing. Currently benefiting from structural supply tightness (Cigar Lake disruptions, Kazatomprom underproduction, inventory drawdowns ending). However, miners are price-takers with limited ability to capture sustained premiums. Long lead times (10-15 years from discovery to production) create supply inelasticity that amplifies price swings. Value is created here through commodity exposure but not durably captured. Junior miners offer optionality but with high failure rates. Only lowest-quartile cost producers (e.g., in-situ recovery in Kazakhstan) generate sustained ROIC above cost of capital.",
+        "layer_name": "Uranium Mining & Milling",
+        "pricing_power": 4.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 6.0,
+        "capital_intensity": 8.0,
+        "competitive_intensity": 6.0
+      },
+      {
+        "roic": 7.0,
+        "role": "capturer",
+        "notes": "Critical bottleneck with extreme concentration: Cameco (Canada), Orano (France), ConverDyn (US, largely idle), and Rosatom (Russia). Only ~4 meaningful global players. Conversion prices have been volatile but structurally rising as Western utilities seek non-Russian supply. The loss of Russian conversion capacity creates a multi-year supply gap. Chemical processing expertise, regulatory licensing, and scale economics create durable barriers. Oligopolistic structure enables pricing discipline. This is a value capture layer because it extracts scarcity rents from a constrained midstream.",
+        "layer_name": "Conversion (UF6)",
+        "pricing_power": 7.0,
+        "revenue_growth": 7.0,
+        "barriers_to_entry": 7.0,
+        "capital_intensity": 6.0,
+        "competitive_intensity": 3.0
+      },
+      {
+        "roic": 7.0,
+        "role": "capturer",
+        "notes": "The single most concentrated and strategically critical layer in the fuel cycle. Only four entities control global capacity: Urenco (UK/Germany/Netherlands), Rosatom (Russia), Orano (France), and Centrus (US, minimal). Gas centrifuge technology is extraordinarily difficult to master, requiring decades of R&D, precision manufacturing, and classified know-how. Russian enrichment supply (~30-40% of global SWU) is being sanctioned/exited by Western utilities, creating a structural multi-year supply gap. HALEU production for advanced reactors adds a new high-margin vector. Enrichment is where the most durable economic value accumulates: near-monopolistic structure, irreplaceable strategic function, inelastic demand, and government backing. Capital intensity is the main constraint on ROIC, but existing capacity generates exceptional returns on sunk capital.",
+        "layer_name": "Enrichment",
+        "pricing_power": 8.0,
+        "revenue_growth": 8.0,
+        "barriers_to_entry": 10.0,
+        "capital_intensity": 9.0,
+        "competitive_intensity": 2.0
+      },
+      {
+        "roic": 6.0,
+        "role": "creator",
+        "notes": "More competitive than upstream layers with ~10 significant global fabricators (Westinghouse, Framatome, Global Nuclear Fuel, CNNC, KEPCO). Fuel designs are reactor-specific, creating some customer lock-in and switching costs. However, fabrication is a smaller cost component of total nuclear electricity cost (~5%), limiting pricing leverage. Steady, utility-like returns tied to reactor refueling cycles. Regulatory qualification of fuel designs creates moderate barriers. Value is created through engineering services and fuel assembly manufacturing but margins are compressed by utility procurement pressure. HALEU and accident-tolerant fuels offer incremental growth but won't transform the economics.",
+        "layer_name": "Fuel Fabrication",
+        "pricing_power": 5.0,
+        "revenue_growth": 5.0,
+        "barriers_to_entry": 6.0,
+        "capital_intensity": 5.0,
+        "competitive_intensity": 5.0
+      },
+      {
+        "roic": 4.0,
+        "role": "creator",
+        "notes": "Extreme capital intensity ($10-15B+ per GW for new builds in the West, 7-10 year construction) destroys value on greenfield projects (Vogtle, Flamanville, Olkiluoto evidence). Existing paid-off plants generate exceptional cash margins (operating costs ~$30/MWh vs. wholesale prices often $50-100+/MWh). Life extensions (80-year license renewals) are highly value-accretive with minimal capex. However, the layer is fundamentally a value creator that enables the entire cycle rather than capturing disproportionate rents. Regulated utility returns cap upside. SMRs could change the capital intensity calculus but remain unproven commercially. Political/regulatory risk is the dominant variable.",
+        "layer_name": "Reactor Operations & Power Generation",
+        "pricing_power": 5.0,
+        "revenue_growth": 4.0,
+        "barriers_to_entry": 9.0,
+        "capital_intensity": 10.0,
+        "competitive_intensity": 4.0
+      },
+      {
+        "roic": 4.0,
+        "role": "creator",
+        "notes": "Largely a liability center rather than a profit center. Deep geological repositories (Onkalo in Finland is the only operational project globally) require decades of development and billions in capex. In the US, the Yucca Mountain failure has left $50B+ in accumulated nuclear waste fund liabilities with no disposal path. Dry cask storage is the interim solution with modest commercial opportunity (Holtec, NAC International). Closed fuel cycle reprocessing (La Hague in France, Rokkasho in Japan) is technically feasible but uneconomic vs. once-through with current uranium prices. This layer creates essential societal value but does not capture economic rents. Government backing is the only viable model.",
+        "layer_name": "Spent Fuel Management & Waste Disposal",
+        "pricing_power": 3.0,
+        "revenue_growth": 5.0,
+        "barriers_to_entry": 9.0,
+        "capital_intensity": 8.0,
+        "competitive_intensity": 2.0
+      }
+    ],
+    "feedback_loops": [
+      {
+        "kind": "reinforcing",
+        "strength": 9.5,
+        "description": "The nuclear fuel cycle—enrichment, fuel fabrication, HALEU production for SMRs, reprocessing, and waste management—is the indispensable supply chain underpinning any nuclear capacity expansion. Without scaled enrichment capacity (particularly U-benda centrifuge cascades) and domestic fuel fabrication, reactor buildouts stall regardless of demand. The fuel cycle is the binding constraint, not reactor construction.",
+        "target_narrative": "Nuclear Renaissance"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 7.0,
+        "description": "Hyperscale AI data centers require 1-5 GW baseload blocks with 99.99%+ uptime that grids struggle to serve. Nuclear is the only dispatchable zero-carbon source matching this load profile. The fuel cycle determines whether new nuclear capacity can be brought online fast enough to meet AI-driven power demand surges in the 2026-2035 window.",
+        "target_narrative": "Artificial Intelligence"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 6.5,
+        "description": "Reshored heavy industry—electrolytic steel, ammonia, chlor-alkali, aluminum—needs process heat and reliable industrial power at scale. Nuclear cogeneration and industrial heat applications depend on fuel cycle throughput. Additionally, the fuel cycle itself is a reindustrialization vector: enrichment plants, fuel fabrication facilities, and reprocessing infrastructure are advanced manufacturing investments that anchor domestic industrial capability.",
+        "target_narrative": "Reindustrialization"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 5.0,
+        "description": "Fuel cycle facilities—particularly hot cells, reprocessing plants, and decommissioning sites—require remote manipulation, automated inspection, and radiation-hardened robotics. Conversely, advances in dexterous robotics and computer vision enable safer, cheaper fuel cycle operations, reducing OPEX and lowering the barrier to closing the fuel cycle through reprocessing.",
+        "target_narrative": "Robotics"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 5.5,
+        "description": "Naval nuclear propulsion—SSN/SSBN reactor cores and aircraft carrier reactors—requires specialized high-assay enriched uranium and dedicated fuel fabrication lines. The U.S. naval reactor program depends on a domestic enrichment infrastructure (e.g., American Centrifuge) that overlaps with commercial fuel cycle capabilities. Erosion of domestic fuel cycle capacity directly undermines naval propulsion autonomy.",
+        "target_narrative": "Defense Autonomy"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 5.0,
+        "description": "Climate adaptation—desalination at scale, pumped storage, grid hardening, indoor agriculture—demands massive reliable electricity. Nuclear provides the carbon-free baseload enabling adaptation infrastructure without compounding the emissions problem. The fuel cycle determines the ceiling on how much nuclear capacity can be sustained long-term.",
+        "target_narrative": "Climate Adaptation"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 4.0,
+        "description": "Space nuclear propulsion (NTP, NEP) and surface power fission reactors require HALEU to HEU fuel forms and specialized fuel fabrication capable of surviving extreme thermal and radiation environments. NASA DRACO and DOE space reactor programs draw on the same enrichment and fuel fabrication infrastructure as terrestrial SMRs, creating shared infrastructure dependencies.",
+        "target_narrative": "Space Economy"
+      },
+      {
+        "kind": "resource_competition",
+        "strength": 5.0,
+        "description": "Uranium mining competes for water, diesel, sulfuric acid, and specialized mining equipment in the same basins as copper, lithium, and rare earth extraction. Kazakhstan ISR uranium operations and Canadian unconformity-type mines face ESG-driven water constraints. Reprocessing reduces virgin uranium demand but creates plutonium proliferation tensions. Zirconium, hafnium, and beryllium for fuel cladding and control rods are niche critical minerals with concentrated supply.",
+        "target_narrative": "Resource Scarcity"
+      },
+      {
+        "kind": "reinforcing",
+        "strength": 3.0,
+        "description": "Medical isotope production—Mo-99/Tc-99m for diagnostics, Lu-177 and Ac-225 for targeted alpha therapy—leverages reactor and accelerator infrastructure adjacent to the fuel cycle. Research reactor fuel (LEU targets) and reprocessing-derived radioisotopes create a secondary revenue stream. However, this is a small fraction of fuel cycle economics.",
+        "target_narrative": "Biotechnology Revolution"
+      },
+      {
+        "kind": "suppressing",
+        "strength": 4.0,
+        "description": "The fuel cycle workforce—enrichment engineers, criticality safety specialists, fuel fabricators, radiochemists—is aging with insufficient replacement pipelines. U.S. enrichment workforce demographics skew 50+, and nuclear engineering enrollment collapsed post-Fukushima. Workforce attrition constrains how fast fuel cycle capacity can scale, creating a hidden rate limiter on the entire nuclear buildout.",
+        "target_narrative": "Aging Population"
+      }
+    ],
+    "hidden_effects": [
+      {
+        "order": "hidden",
+        "description": "Radiation hormesis and ecological paradox: exclusion zones around contaminated sites (Chernobyl, Fukushima) have become de facto wildlife refuges where biodiversity flourishes in the absence of human activity, suggesting that human land use is more ecologically destructive than chronic radiation exposure—a finding that complicates radiological risk frameworks and challenges assumptions about nuclear's environmental footprint."
+      },
+      {
+        "order": "hidden",
+        "description": "Knowledge decay and latent capability erosion: as the nuclear industry experiences prolonged construction gaps (the 'lost generation' of nuclear engineers), tacit knowledge embedded in experienced practitioners is irreversibly lost—supply chains atrophy, regulatory bodies lose competence, and restart attempts face compounding quality-control failures (e.g., forging defects in French Creusot Forge, South Korean falsified certifications), making nuclear capability a depreciating asset that cannot be rapidly reconstituted."
+      },
+      {
+        "order": "hidden",
+        "description": "Uranium resource geopolitics and indigenous dispossession: major uranium deposits disproportionately overlap with indigenous territories (Navajo Nation, Aboriginal lands in Australia, Saharan regions in Niger), creating a pattern where the front-end of the nuclear fuel cycle externalizes its environmental and health costs onto marginalized populations who receive minimal energy access benefits, reproducing colonial extractive structures within the green energy transition."
+      },
+      {
+        "order": "hidden",
+        "description": "Reprocessing economics inversion: the closure of the fuel cycle via reprocessing (PUREX) was originally justified by uranium scarcity projections that never materialized—uranium is abundant and cheap, making reprocessing more expensive than once-through fuel cycles, yet France, Russia, and Japan maintain reprocessing programs primarily for strategic autonomy and plutonium stockpile management, meaning the 'closed fuel cycle' is driven by weapons-state logic rather than resource economics."
+      }
+    ],
+    "potential_losers": [
+      [
+        "Russian state nuclear corporation Rosatom — losing export market access",
+        "Utilities without long-term non-Russian enrichment contracts — facing cost escalation",
+        "Countries dependent on Russian nuclear fuel (Hungary, Czech Republic, Finland, Bangladesh, Egypt)"
+      ],
+      [
+        "Advanced reactor developers without secured HALEU supply (most of them)",
+        "TerraPower — delayed Natrium reactor due to HALEU unavailability",
+        "X-energy — TRISO fuel fabrication depends on HALEU feedstock",
+        "US taxpayers funding advanced reactor demos that may stall on fuel"
+      ],
+      [
+        "Nuclear utilities without long-term uranium contracts — exposed to spot price spikes",
+        "Secondary uranium suppliers drawing down inventories — finite resource",
+        "Countries without domestic uranium resources facing strategic vulnerability",
+        "Cameco competitors with higher cost structures and weaker balance sheets"
+      ],
+      [
+        "Yucca Mountain-dependent waste disposal approaches — politically dead",
+        "Utilities paying for dry cask storage in perpetuity — ongoing cost liability",
+        "Taxpayers bearing DOE waste liability (>$30B and growing)",
+        "Anti-nuclear advocacy groups — losing the waste argument if reprocessing succeeds"
+      ],
+      [
+        "Conventional oxide fuel fabricators if TRISO gains share in advanced reactors",
+        "Framatome — competing accident tolerant fuel (ATF) designs using coated cladding",
+        "Reactor designs requiring fuel types without established fabrication supply chains"
+      ],
+      [
+        "Utilities lacking transport cask access for spent fuel movement",
+        "Rail companies unprepared for increased nuclear material shipments",
+        "Interim storage facilities without adequate rail infrastructure (e.g., WCS/ISP in Texas)"
+      ],
+      [
+        "Uranium developers issuing royalties at unfavorable terms under financing pressure",
+        "Traditional uranium equity investors paying full development risk without royalty downside protection",
+        "Gold streaming companies slow to recognize uranium opportunity"
+      ],
+      [
+        "Utilities dependent on Russian conversion (Tenex contracts) — supply disruption risk",
+        "Enrichers without secured UF6 feedstock — operational constraints",
+        "Small uranium miners without conversion offtake agreements — unable to monetize production"
+      ],
+      [
+        "SMR developers without secured fuel supply partnerships (most early-stage companies)",
+        "NuScale — VOYGR fuel supply dependent on traditional supply chain, less differentiated",
+        "Chinese SMR developers — fuel supply chain isolated from Western markets",
+        "Utilities choosing SMR designs without evaluating 60-year fuel supply risk"
+      ],
+      [
+        "Non-US uranium producers without domestic strategic reserve access",
+        "Utilities competing with government buyers for limited domestic supply",
+        "Countries without strategic fuel reserves facing supply insecurity during disruptions",
+        "Russian fuel exporters — losing market access as Western stockpiling reduces dependency"
+      ]
+    ],
+    "narrative_summary": "The Nuclear Fuel Cycle sub-narrative captures the structural tightness across the front-end of the nuclear fuel supply chain—uranium mining, conversion, enrichment, and fuel fabrication—as global utility demand accelerates while supply remains constrained by decades of underinvestment, geopolitical de-risking from Russian dependency, and long lead times for new capacity. Uranium spot prices have experienced extraordinary volatility, rising from sub-$20/lb levels in 2020 to peaks above $100/lb, driven by a combination of physical supply deficits, utility re-contracting after years of inventory drawdowns, and financial players (like Sprott Physical Uranium Trust) securitizing physical material. The enrichment segment faces particular strain as Western utilities seek to reduce reliance on Russian SWU (separative work units), which historically supplied ~20-30% of global enrichment capacity.\n\nThe narrative is further amplified by the broader Nuclear Renaissance thesis: China's aggressive reactor buildout (150+ reactors planned by 2035), India's expanding program, and renewed Western interest in nuclear as a baseload complement to intermittent renewables. The emergence of AI/data center electricity demand has added urgency, with tech giants signing direct PPAs with nuclear operators. However, the fuel cycle faces friction points: HALEU (high-assay low-enriched uranium) production for advanced reactors remains nascent, regulatory permitting for new mines and conversion facilities is slow, and the enrichment capacity expansion by Urenco and Orano won't meaningfully add supply until 2026-2028. The market is transitioning from a spot-price-driven speculation phase to a long-term contract-driven phase, with utility procurement cycles now the primary price-setting mechanism.",
+    "potential_winners": [
+      [
+        "Centrus Energy (LEU) — only US-owned enrichment company, first-mover in HALEU",
+        "Cameco (CCJ) — 49% Westinghouse stake includes enrichment capacity",
+        "Orano (private) — largest Western enricher, potential IPO candidate",
+        "Urenco (private) — joint UK/Dutch/German venture, capacity expansion underway",
+        "Laser-focused enrichment technology developers (e.g., Silex Systems via Global Laser Enrichment)"
+      ],
+      [
+        "Centrus Energy (LEU) — operating first US HALEU production line",
+        "Energy Fuels (UUUU) — exploring HALEU production via existing infrastructure",
+        "Global Laser Enrichment (Silex Systems, SLX.AX) — laser enrichment tech applicable to HALEU",
+        "DOE-funded HALEU deconversion facility operators",
+        "Cameco/Orano — existing enrichment infrastructure adaptable to HALEU"
+      ],
+      [
+        "Sprott Physical Uranium Trust (U.UN) — direct physical exposure, price discovery agent",
+        "Cameco (CCJ) — Tier-1 producer with contracted portfolio and Westinghouse optionality",
+        "Kazatomprom (KAP.LSE) — lowest-cost producer, though geopolitical discount persists",
+        "Energy Fuels (UUUU) — US-based producer, rare earths optionality, White Mesa mill",
+        "Paladin Energy (PDN.AX) — Langer Heinrich restart, growth pipeline",
+        "Denison Mines (DNN) — Wheeler River development, low-cost ISR potential",
+        "Boss Energy (BOE.AX) — Honeymoon mine restart, Australian jurisdiction"
+      ],
+      [
+        "Oklo (OKLO) — fast reactor design that consumes nuclear waste as fuel",
+        "Curio Energy (private) — proprietary reprocessing technology, US-based",
+        "BWX Technologies (BWXT) — fuel fabrication expertise, government contracts",
+        "Orano (private) — operates La Hague reprocessing plant, potential US expansion",
+        "Deep Isolation (private) — deep borehole disposal technology",
+        "Holtec International (private) — interim storage licensing, fuel handling"
+      ],
+      [
+        "BWX Technologies (BWXT) — operating TRISO fuel fabrication line, government microreactor contracts",
+        "X-energy (pending public) — TRISO fuel fabrication facility under construction",
+        "US DOE Idaho National Laboratory — TRISO fuel testing and qualification",
+        "Westinghouse (Cameco/Brookfield) — eVinci microreactor uses TRISO fuel",
+        "Radiant Nuclear (private) — portable TRISO-fueled microreactor"
+      ],
+      [
+        "BWX Technologies (BWXT) — manufactures transport casks and storage canisters",
+        "Holtec International (private) — HI-STAR and HI-STORM cask systems, interim storage licensing",
+        "EnergySolutions (private) — nuclear logistics, decommissioning, waste management",
+        "Areva TN / Orano TN (private) — spent fuel transport casks",
+        "NAC International (private) — cask systems and fuel consulting"
+      ],
+      [
+        "Uranium Royalty Corp (URC.V / URNMF) — only dedicated uranium royalty company",
+        "Sprott Inc (SII) — manages Sprott Physical Uranium Trust, nuclear sector franchise",
+        "Triple Flag Mining (TFPM) — diversified streaming including some uranium exposure",
+        "Sandstorm Gold (SAND) — has uranium royalty exposure, diversifying into nuclear"
+      ],
+      [
+        "Cameco (CCJ) — Port Hope conversion facility, largest Western converter",
+        "Honeywell (HON) — Metropolis Works, sole US conversion facility",
+        "Orano (private) — Comurhex conversion facility, capacity expansion planned",
+        "Cameco/Orano partnership — potential new conversion capacity announcements"
+      ],
+      [
+        "BWX Technologies (BWXT) — fuel fabrication for microreactors and naval reactors",
+        "Cameco/Brookfield via Westinghouse — AP1000 fuel, eVinci microreactor fuel",
+        "Framatome (EDF subsidiary) — European fuel fabrication, ATF fuel development",
+        "Centrus Energy (LEU) — HALEU feedstock supplier to multiple SMR designs",
+        "X-energy — TRISO fuel fabrication for own reactor and potential third-party supply"
+      ],
+      [
+        "Energy Fuels (UUUU) — US-based, White Mesa mill, DOE reserve offtake potential",
+        "Ur-Energy (URG) — US ISR producer, domestic supply qualification",
+        "enCore Energy (EU) — US ISR production, South Texas processing",
+        "Sprott Physical Uranium Trust (U.UN) — benefits from government buying pressure on spot",
+        "Centrus Energy (LEU) — HALEU Availability Program contractor",
+        "Quantum Energy (private) — strategic uranium acquisition and storage"
+      ]
+    ],
+    "dependency_network": [
+      {
+        "type": "input",
+        "layer": "Uranium ore reserves and geological endowment",
+        "weight": 10.0,
+        "description": "Primary feedstock for the entire fuel cycle; concentrated in Kazakhstan, Canada, Australia, Namibia, Niger. Depletion of high-grade deposits and geopolitical concentration create structural supply risk."
+      },
+      {
+        "type": "input",
+        "layer": "Enrichment capacity and centrifuge technology",
+        "weight": 9.5,
+        "description": "SWU (separative work unit) capacity bottleneck; dominated by Urenco, Rosatom, Orano, and UUSA. Long lead times for new cascades; HALEU enrichment for advanced reactors is nascent."
+      },
+      {
+        "type": "input",
+        "layer": "Conversion facilities (UF6 production)",
+        "weight": 8.5,
+        "description": "Concentrates U3O8 must be converted to UF6 before enrichment. Global conversion capacity is thin—Cameco Port Hope, ConverDyn, Orano Comurhex, Rosatom—creating a chokepoint vulnerable to outages."
+      },
+      {
+        "type": "constraint",
+        "layer": "Regulatory licensing and nuclear safety frameworks",
+        "weight": 10.0,
+        "description": "NRC, CNSC, IAEA safeguards, and national regulators gate every stage from mining to waste. License timelines of 5-15 years create structural delays; post-Fukushima retrofits raised bar further."
+      },
+      {
+        "type": "resource",
+        "layer": "Skilled nuclear engineering and trades labor",
+        "weight": 9.0,
+        "description": "Aging workforce in uranium mining, enrichment physics, reactor operations, and fuel fabrication. Retiring nuclear engineers not fully replaced; competition with defense and semiconductor sectors for talent."
+      },
+      {
+        "type": "resource",
+        "layer": "Capital availability and project financing",
+        "weight": 9.0,
+        "description": "Front-end fuel cycle facilities require multi-billion-dollar capex with 10-20 year payback. SMR and advanced reactor fuel infrastructure needs patient capital; interest rate sensitivity is high."
+      },
+      {
+        "type": "constraint",
+        "layer": "Non-proliferation treaties and export controls",
+        "weight": 8.5,
+        "description": "NPT, NSG guidelines, Section 232 tariffs, and bilateral nuclear cooperation agreements restrict uranium trade flows and enrichment technology transfer. US-Iran talks could reshape sanctions regime affecting supply."
+      },
+      {
+        "type": "resource",
+        "layer": "Water rights and cooling infrastructure",
+        "weight": 7.5,
+        "description": "Enrichment facilities and fuel fabrication plants require process cooling; reactor operations need massive water throughput. Drought stress in uranium-producing regions (Kazakhstan ISR, Niger) affects production."
+      },
+      {
+        "type": "input",
+        "layer": "Electricity for enrichment operations",
+        "weight": 7.0,
+        "description": "Gas centrifuge enrichment is far less energy-intensive than legacy gaseous diffusion, but still requires substantial grid power. Energy cost arbitrage drives enrichment facility siting decisions."
+      },
+      {
+        "type": "constraint",
+        "layer": "Spent fuel storage and waste repository capacity",
+        "weight": 8.0,
+        "description": "Backend of fuel cycle is unresolved in most jurisdictions. Lack of deep geological repositories (Yucca Mountain stalled, Onkalo progressing) constrains reactor licensing and public acceptance."
+      },
+      {
+        "type": "resource",
+        "layer": "Construction and heavy industrial capacity",
+        "weight": 7.5,
+        "description": "New fuel cycle facilities—conversion plants, enrichment cascades, fuel fabrication lines—require specialized nuclear-grade construction. Limited qualified contractors; cost overruns endemic to nuclear construction."
+      },
+      {
+        "type": "resource",
+        "layer": "Transportation infrastructure for nuclear materials",
+        "weight": 7.0,
+        "description": "Specialized Type 30B cylinders for UF6, certified casks for fresh and spent fuel. Rail and port infrastructure with security clearances; limited fleet of certified transport containers."
+      },
+      {
+        "type": "constraint",
+        "layer": "Public acceptance and social license",
+        "weight": 7.5,
+        "description": "Local opposition to uranium mining (NIMBY), enrichment facility expansion, and waste transport. Post-Fukushima sentiment improving with climate urgency but remains volatile; elections and advertising spend could politicize."
+      },
+      {
+        "type": "resource",
+        "layer": "Long-term utility offtake contracts",
+        "weight": 8.0,
+        "description": "Fuel cycle economics depend on multi-year contracts with reactor operators. Spot price volatility (current U3O8 ~$85/lb) drives producer investment decisions; contract coverage determines project bankability."
+      },
+      {
+        "type": "resource",
+        "layer": "Mining equipment and ISR wellfield infrastructure",
+        "weight": 6.5,
+        "description": "In-situ recovery (ISR) dominates Kazakh production; requires wellfield development, oxygen plants, ion exchange columns. Conventional mining needs haul trucks, mills, tailings management—long lead procurement."
+      },
+      {
+        "type": "input",
+        "layer": "Fuel fabrication capability (pelletizing, rod loading)",
+        "weight": 8.0,
+        "description": "Converting enriched UF6 to UO2 pellets and assembling fuel assemblies. Limited Western fabricators (Westinghouse, Framatome, Global Nuclear Fuel); HALEU and TRISO fuel fabrication for advanced reactors not yet commercial-scale."
+      },
+      {
+        "type": "input",
+        "layer": "Reprocessing and MOX fuel infrastructure",
+        "weight": 5.5,
+        "description": "Closed fuel cycle capability concentrated in France (La Hague), Russia, UK (Sellafield closing). MOX fuel production limited; US reprocessing absent since Carter administration. Potential growth with advanced reactor fuel cycles."
+      },
+      {
+        "type": "constraint",
+        "layer": "Insurance and liability frameworks (Price-Anderson equivalents)",
+        "weight": 6.5,
+        "description": "Nuclear liability insurance pools required for fuel cycle facilities. Limited private capacity; government backstops essential. Premiums and coverage limits affect facility economics and new entrant viability."
+      },
+      {
+        "type": "constraint",
+        "layer": "Geopolitical alliances and bilateral nuclear cooperation agreements",
+        "weight": 8.5,
+        "description": "123 Agreements govern nuclear trade; US-Russia HEU-LEU agreement expired; China-Russia nuclear cooperation deepening. AUKUS submarine fuel cycle precedent; US-Iran negotiations could reshape sanctions landscape."
+      },
+      {
+        "type": "input",
+        "layer": "Advanced reactor and SMR development pipelines",
+        "weight": 6.0,
+        "description": "Demand-side driver for HALEU, TRISO particles, metallic fuels. TerraPower, X-energy, Oklo, NuScale fuel qualification timelines determine fuel cycle investment thesis; DOE demonstration funding critical."
+      }
+    ],
+    "future_bottlenecks": [
+      {
+        "name": "HALEU Production for Advanced Reactors",
+        "tier": "emerging",
+        "cause": "High-Assay Low-Enriched Uranium (5-19.75% U-235) is required by most Generation IV and SMR designs (X-energy, TerraPower, Oklo, Kairos, BWXT microreactors). Currently, only Russia produces HALEU at commercial scale. The US DOE has funded Centrus Energy to demonstrate HALEU production at Piketon, Ohio, but volumes are tiny (~900 kg initial deployment vs. multi-ton requirements per reactor). No commercial-scale HALEU supply chain exists outside Russia/China. Advanced reactor developers' timelines are gated by fuel availability, not just NRC licensing.",
+        "losers": [
+          "TerraPower (private) — Natrium reactor delayed by lack of HALEU fuel, originally planned to use Russian HALEU",
+          "X-energy (private) — TRISO fuel fabrication depends on HALEU feedstock",
+          "Oklo (pending IPO/SPAC) — fast reactor design requires HALEU, no secured supply chain",
+          "Kairos Power (private) — fluoride salt reactor needs HALEU TRISO fuel",
+          "Entire SMR deployment timeline could slip 3-5 years if HALEU doesn't scale"
+        ],
+        "winners": [
+          "Centrus Energy (LEU) — first-mover in US HALEU production, direct DOE contracts",
+          "Cameco (CCJ) / Westinghouse — potential to retrofit existing enrichment infrastructure for HALEU",
+          "US DOE — HALEU Availability Program funded by Inflation Reduction Act",
+          "Orano — potential to produce HALEU at Tricastin if European SMR demand materializes"
+        ],
+        "severity": 9.0,
+        "time_horizon": "2025-2032",
+        "market_awareness": "Moderate-Low — SMR investors focus on reactor design and licensing but often treat fuel as a solved problem. The HALEU bottleneck could delay first-of-a-kind deployments by 2-4 years and is only beginning to be priced into advanced reactor valuations."
+      },
+      {
+        "name": "Nuclear Workforce and Talent Pipeline",
+        "tier": "emerging",
+        "cause": "The nuclear industry faces a demographic cliff: ~25-30% of the skilled nuclear workforce in the US and Europe is eligible for retirement within 5 years. Nuclear engineering university programs have contracted since Fukushima. Specialized skills — reactor operators, health physicists, nuclear metallurgists, fuel cycle chemists, NRC-licensed operators — require 5-10 year development curves. The simultaneous expansion of new builds (Vogtle lessons, SMR pipeline), life extensions, and fuel cycle expansion creates demand for talent that the pipeline cannot meet.",
+        "losers": [
+          "New build projects already facing cost overruns (e.g., any future US AP1000 or SMR builds)",
+          "Utilities attempting simultaneous life extension + new build (e.g., Constellation, Duke Energy)",
+          "Countries with no domestic nuclear education infrastructure trying to launch programs (e.g., Poland, Egypt, Saudi Arabia)"
+        ],
+        "winners": [
+          "Nuclear engineering programs at universities (MIT, University of Michigan, Texas A&M) — increased funding and enrollment",
+          "National laboratories (Idaho National Lab, Oak Ridge) — talent magnets with DOE funding",
+          "Contract engineering firms (e.g., Jacobs/Jacobs Solutions, Bechtel) — premium rates for nuclear-qualified engineers",
+          "Military nuclear programs (Naval Reactors) — training pipeline that feeds commercial sector"
+        ],
+        "severity": 6.5,
+        "time_horizon": "2025-2032",
+        "market_awareness": "Low — rarely discussed in investment research. Operational risk from talent shortages manifests as construction delays, cost overruns, and safety incidents, but is typically attributed to other causes in post-mortems."
+      },
+      {
+        "name": "Regulatory and Permitting Friction for New Mines and Facilities",
+        "tier": "emerging",
+        "cause": "New uranium mines and fuel cycle facilities face multi-year permitting timelines. In the US, NRC licensing for new facilities (e.g., enrichment plants, fuel fabrication) can take 3-5 years. Environmental reviews under NEPA are frequently litigated. In Canada, the CNSC process is thorough but slow. In Australia, state-level approvals add complexity. The gap between investment decision and first production has widened as regulators face increased scrutiny and fewer experienced reviewers. The Advanced Reactor Demonstration Project timelines are gated not by technology but by NRC review capacity.",
+        "losers": [
+          "Junior miners with early-stage projects facing 10+ year timelines to production",
+          "SMR developers with novel designs requiring first-of-a-kind NRC review (e.g., NuScale's canceled Carbon Free Power Project exposed regulatory cost burden)",
+          "Western governments trying to rapidly scale nuclear capacity to meet climate targets"
+        ],
+        "winners": [
+          "Existing licensed facilities with expansion headroom (Cameco, Kazatomprom)",
+          "Companies with already-permitted but undeveloped deposits (e.g., Uranium Energy Corp's Burke Hollow, Energy Fuels' Roca Honda)",
+          "Regulatory consulting firms specializing in nuclear licensing",
+          "Countries with streamlined nuclear permitting (China, Russia — though geopolitically isolated from Western markets)"
+        ],
+        "severity": 6.0,
+        "time_horizon": "2024-2030",
+        "market_awareness": "Moderate — mining investors understand permitting risk, but the compounding effect of regulatory capacity constraints (NRC losing experienced reviewers, simultaneous SMR applications) is underappreciated."
+      }
+    ],
+    "hidden_constraints": [
+      {
+        "name": "Nuclear-Grade Graphite Supply for Advanced Reactors",
+        "tier": "hidden",
+        "cause": "Many Generation IV reactor designs (high-temperature gas reactors, molten salt reactors, TRISO-fueled reactors) require large quantities of nuclear-grade graphite with extremely tight purity and isotopic specifications. Historical nuclear graphite production (e.g., for UK Magnox reactors, US Hanford production reactors) has largely ceased. Current global supply is dominated by a handful of producers (SGL Carbon, Toyo Tanso, Mersen) with limited nuclear qualification experience. Graphite irradiation behavior is design-specific, requiring multi-year qualification testing. No commercial-scale nuclear graphite production line exists in the US.",
+        "losers": [
+          "X-energy (private) — Xe-100 HTGR requires massive graphite quantities; no qualified US supplier at scale",
+          "Kairos Power (private) — fluoride salt-cooled reactor uses graphite moderator",
+          "Southern Company / TerraPower — molten salt reactor experiments depend on graphite availability",
+          "Entire HTGR and MSR reactor categories could face 3-5 year delays if graphite supply chain doesn't materialize"
+        ],
+        "winners": [
+          "SGL Carbon (SGL.DE) — existing nuclear graphite experience, potential to dominate qualification",
+          "Toyo Tanso (4247.T) — Japanese graphite expertise with nuclear heritage",
+          "BWX Technologies (BWXT) — nuclear materials expertise, potential vertical integration into graphite components",
+          "US DOE — funding for domestic nuclear graphite supply chain under Advanced Reactor Demonstration Program"
+        ],
+        "severity": 7.0,
+        "time_horizon": "2026-2033",
+        "market_awareness": "Very Low — essentially absent from investment discourse. Advanced reactor investors and even some developers have not fully internalized that nuclear-grade graphite is a custom-manufactured, qualification-bound material, not a commodity. The last major nuclear graphite qualification campaign was decades ago."
+      },
+      {
+        "name": "Large Forging Capacity for Reactor Pressure Vessels",
+        "tier": "hidden",
+        "cause": "Reactor pressure vessels (RPVs) for large-scale nuclear reactors require single-piece forged steel components weighing 300-500+ tons, manufactured from nuclear-grade steel ingots. Globally, only a handful of forge presses can produce these: Japan Steel Works (JSW), China First Heavy Industries, and a few others. JSW's Muroran facility is the primary supplier for Western reactor vendors (Westinghouse, EDF, KHNP). The presses are 50+ years old in some cases. No US facility can currently produce large RPV forgings. SMR designs reduce but don't eliminate this constraint — pressure vessels still require specialized forging. If multiple large reactor builds proceed simultaneously globally (China + Europe + US + Middle East), forging capacity becomes a hard physical bottleneck.",
+        "losers": [
+          "Westinghouse (Brookfield/BEP) — dependent on JSW for AP1000 vessel forgings in any new build program",
+          "EDF — Flamanville EPR was delayed 12+ years partly due to forging defects; any new EPR build faces same risk",
+          "Countries launching first nuclear programs (Poland, Egypt, Saudi Arabia) — last in queue for limited forging slots",
+          "SMR developers claiming 'factory fabrication' advantages — still need forged vessels, just smaller ones, but at higher volume"
+        ],
+        "winners": [
+          "Japan Steel Works (5631.T) — monopoly-like position for Western RPV forgings, pricing power",
+          "China First Heavy Industries (601106.SS) — serves Chinese domestic build program, potential export",
+          "Doosan Heavy Industries (034020.KS) — Korean forging capacity, benefits from KHNP export push (e.g., Czech Republic, Poland)",
+          "US DOE — potential funding for domestic heavy forging capability under Defense Production Act"
+        ],
+        "severity": 7.5,
+        "time_horizon": "2026-2035",
+        "market_awareness": "Very Low — this bottleneck was acute during the 2000s nuclear renaissance (Areva/EPR delays at Flamanville and Olkiluoto were partly forging-related) but has been forgotten during the decade of no new builds. A new build wave would re-expose it immediately."
+      },
+      {
+        "name": "Nuclear Material Transportation and Logistics Infrastructure",
+        "tier": "hidden",
+        "cause": "Transporting nuclear materials (fresh fuel, enriched UF6 cylinders, spent fuel, HALEU) requires specialized Type B transport casks, certified shipping routes, and multi-jurisdictional regulatory approvals. The US fleet of transport casks is aging, with limited new cask production capacity (Holtec, NAC International are primary manufacturers). Rail lines to reactor sites are limited — many plants lack direct rail access, requiring truck transport with weight restrictions. International maritime transport of UF6 is concentrated on a few specialized vessels. A single incident or regulatory change could disrupt fuel delivery to multiple reactors simultaneously. The US lacks a consolidated interim storage facility (HI-STORE in New Mexico and WCS in Texas are licensed but face legal/political challenges), meaning spent fuel remains stranded at reactor sites.",
+        "losers": [
+          "Utilities with stranded spent fuel at decommissioned or decommissioning sites (e.g., Exelon, Dominion)",
+          "Taxpayers — US government pays ~500M/year in damages to utilities for failure to accept spent fuel under Nuclear Waste Policy Act",
+          "Communities near proposed consolidated storage facilities (e.g., Eddy County, NM) — political friction",
+          "Advanced reactor developers assuming 'just-in-time' fuel delivery — nuclear logistics don't work that way"
+        ],
+        "winners": [
+          "Holtec International (private) — dominant spent fuel cask manufacturer and HI-STORE licensee",
+          "NAC International (private) — transport cask and storage systems",
+          "Areva TN / Orano TN — transport cask technology and international logistics",
+          "Rail operators with nuclear-certified routes (e.g., Union Pacific, BNSF in specific corridors)"
+        ],
+        "severity": 6.0,
+        "time_horizon": "2027-2035",
+        "market_awareness": "Very Low — treated as a solved operational problem rather than a strategic vulnerability. No investment thesis accounts for transport infrastructure as a binding constraint on fuel cycle scaling."
+      },
+      {
+        "name": "Zirconium and Zirconium Alloy Supply for Fuel Cladding",
+        "tier": "hidden",
+        "cause": "Nuclear fuel cladding requires specialized zirconium alloys (Zircaloy-2, Zircaloy-4, Zr-2.5Nb) with extremely low hafnium content (<100 ppm). Hafnium naturally co-occurs with zirconium and must be separated — a difficult and energy-intensive process. Global nuclear-grade zirconium sponge production is concentrated in a few facilities: Chepetsky Mechanical Plant (Russia), CNNC (China), Westinghouse (via Wah Chang, Oregon — now ATI), and CEZUS (France, subsidiary of Areva/Orano). The US has limited domestic zirconium sponge production capacity. Accident-tolerant fuels (ATF) using silicon carbide or coated zirconium are in development but not yet commercialized, meaning the industry remains dependent on zirconium cladding for the next decade+.",
+        "losers": [
+          "Fuel fabricators without captive zirconium supply (e.g., Global Nuclear Fuel, a GE-Hitachi JV)",
+          "Utilities in countries dependent on Russian or Chinese fuel assemblies (VVER reactors use Russian cladding)",
+          "Countries attempting to build domestic fuel fabrication without upstream zirconium supply (e.g., Saudi Arabia, UAE)"
+        ],
+        "winners": [
+          "ATI (ATI) — formerly Allegheny Technologies, operates Wah Chang facility, one of few Western zirconium producers",
+          "Orano/CEZUS — vertically integrated zirconium for French fuel cycle",
+          "Westinghouse — fuel fabrication business benefits from cladding supply integration",
+          "Accident-tolerant fuel developers (e.g., Lightbridge LTBR, Westinghouse EnCore fuel) — if zirconium supply tightens, ATF becomes more competitive"
+        ],
+        "severity": 5.5,
+        "time_horizon": "2026-2032",
+        "market_awareness": "Very Low — zirconium is treated as an invisible input to fuel fabrication. No uranium or nuclear equity research covers zirconium supply chain risk. The concentration in Russian and Chinese hands mirrors the enrichment concentration but receives zero political attention."
+      }
+    ],
+    "current_bottlenecks": [
+      {
+        "name": "Non-Russian Uranium Enrichment Capacity",
+        "tier": "current",
+        "cause": "Russia (Rosatom) controls ~35-40% of global SWU capacity. Western utilities are accelerating de-risking from Russian enrichment contracts under political pressure (e.g., US ban on Russian uranium imports signed into law in 2024), but Western enrichment capacity (Urenco, Orano, Centrus) cannot immediately absorb the displaced demand. Expanding centrifuge cascades requires multi-year lead times, specialized components, and regulatory approvals.",
+        "losers": [
+          "Rosatom and Russian state revenue",
+          "Western nuclear utilities facing higher fuel costs and contract renegotiation risk (e.g., Exelon, Constellation Energy short-term)",
+          "Emerging market utilities dependent on Russian enrichment (e.g., Egypt, Turkey, Bangladesh)"
+        ],
+        "winners": [
+          "Urenco (private, but benefits flow to parent shareholders E.ON and RWE)",
+          "Orano (private, French state-backed)",
+          "Centrus Energy (LEU)",
+          "Cameco (CCJ) — strategic positioning in enrichment via Westinghouse",
+          "US DOE national labs receiving funding for domestic enrichment expansion"
+        ],
+        "severity": 8.5,
+        "time_horizon": "2024-2028",
+        "market_awareness": "High — well-discussed in uranium equity research and ETF flows (URA, NLR), though the full magnitude of contract renegotiation cascading through utility fueling cycles is underappreciated."
+      },
+      {
+        "name": "Uranium Conversion Capacity (UF6)",
+        "tier": "current",
+        "cause": "Only three major Western conversion facilities exist: Cameco's Port Hope (Canada), Honeywell's Metropolis (US), and Orano's Comurhex (France). Metropolis restarted in 2023 after years of idle capacity but operates below nameplate. Global conversion capacity is tight relative to rising demand from utilities rebuilding inventories post-underfeeding era. Russia and China hold significant conversion capacity but are increasingly off-limits or unreliable for Western buyers.",
+        "losers": [
+          "Utilities without long-term conversion contracts (spot conversion prices have spiked 5x from 2020 lows)",
+          "Junior uranium miners without offtake agreements that include conversion logistics",
+          "Chinese utilities increasingly competing for non-Russian conversion supply"
+        ],
+        "winners": [
+          "Cameco (CCJ) — integrated fuel cycle with Port Hope conversion",
+          "Honeywell (HON) — Metropolis facility margins expanding",
+          "Orano (private) — vertical integration advantage",
+          "ConverDyn (Honeywell-General Atomics JV)"
+        ],
+        "severity": 7.0,
+        "time_horizon": "2024-2027",
+        "market_awareness": "Moderate — understood by uranium specialists but less visible to generalist investors who focus on U3O8 spot price rather than the conversion bottleneck."
+      },
+      {
+        "name": "Uranium Primary Mine Supply Gap",
+        "tier": "current",
+        "cause": "A decade of suppressed prices post-Fukushima led to mine closures (e.g., Ranger in Australia, Langer Heinrich placed on care-and-maintenance). Secondary supplies (inventory drawdowns, Russian HEU downblending, MOX) historically filled ~25-35% of demand but are structurally declining. New mines face 7-15 year development timelines, and even high-grade projects (e.g., McArthur River restart, Langer Heinrich restart) are ramping slower than expected due to labor shortages, equipment constraints, and regulatory friction.",
+        "losers": [
+          "Utilities without secured long-term contracts facing spot price exposure",
+          "Countries without domestic uranium resources (e.g., Japan, South Korea, EU members)",
+          "Coal and gas operators competing with nuclear for baseload dispatch — higher uranium prices marginally improve nuclear economics but don't derail the renaissance"
+        ],
+        "winners": [
+          "Kazatomprom (KAP.LI) — world's largest producer, though water supply risks in Kazakhstan are underappreciated",
+          "Cameco (CCJ) — McArthur River restart and tier-1 asset base",
+          "Energy Fuels (UUUU), Uranium Energy Corp (UEC) — US-based ISR producers benefiting from US-Russia uranium ban",
+          "Paladin Energy (PDN.AX) — Langer Heinrich restart",
+          "Boss Energy (BOE.AX) — Honeymoon project in Australia"
+        ],
+        "severity": 7.5,
+        "time_horizon": "2024-2030",
+        "market_awareness": "High — the core thesis behind uranium bull market. However, the market may be overestimating how quickly new supply (e.g., Kazakhstan's Kazatomprom expansion, African projects) can come online, given infrastructure and political risks."
+      }
+    ],
+    "first_order_effects": [
+      {
+        "order": "1",
+        "description": "Direct production of baseload electricity from uranium fission, generating approximately 1 gigawatt-year of power per ~20 tons of enriched uranium fuel, with near-zero operational CO2 emissions and reliable capacity factors exceeding 90%, displacing fossil fuel combustion for grid electricity."
+      },
+      {
+        "order": "1",
+        "description": "Creation of spent nuclear fuel containing highly radioactive fission products (cesium-137, strontium-90) and transuranic elements (plutonium-239, americium-241) requiring active cooling in spent fuel pools for 5-10 years before dry cask storage, with radiotoxicity persisting for 100,000+ years."
+      },
+      {
+        "order": "1",
+        "description": "Front-end industrial activity—uranium mining, milling, conversion, and enrichment—consuming significant electrical energy (especially centrifuge enrichment), generating large volumes of depleted uranium tails, and producing tailings waste containing radon-emitting decay products at mine sites."
+      }
+    ],
+    "regulatory_analysis": {
+      "summary": "The nuclear fuel cycle operates under a highly fragmented, stringent regulatory regime driven by non-proliferation mandates, national security, and environmental safety. Currently, front-end (mining, conversion, enrichment) and back-end (reprocessing, waste) activities are tightly controlled by national agencies (e.g., US NRC) and international bodies (IAEA), with heavy export controls limiting technology transfer. The future regime is bifurcating: on one hand, strict non-proliferation controls remain entrenched; on the other, geopolitical decoupling and climate imperatives are forcing regulatory streamlining and subsidies for domestic supply chains, particularly for advanced fuels like HALEU. Regulators are currently unprepared for the scale and novel fuel types (e.g., TRISO, metallic fuels) required by Small Modular Reactors (SMRs) and advanced reactors. This indicates a transitional period where regulatory frameworks must rapidly adapt to commercialize next-generation nuclear fuel, shifting from a purely risk-averse posture to one actively enabling supply chain security.",
+      "catalysts": [
+        "National security mandates and legislative bans on foreign uranium (e.g., US ban on Russian uranium imports) driving domestic public-private investment in enrichment and conversion.",
+        "Surging baseload power demand from hyperscale AI data centers accelerating SMR deployment and necessitating faster fuel cycle regulatory approvals.",
+        "Government cost-sharing programs and tax credits (e.g., US Inflation Reduction Act) de-risking capital deployment for HALEU production and advanced fuel fabrication facilities.",
+        "International harmonization efforts or multinational fuel leasing schemes that bypass domestic regulatory bottlenecks and non-proliferation hurdles.",
+        "Successful operational demonstrations of accident tolerant fuels (ATFs) in existing fleets, prompting rapid regulatory approval and market adoption.",
+        "Bilateral agreements (e.g., AUKUS) establishing precedents for sharing naval nuclear propulsion technology, indirectly catalyzing regulatory frameworks for high-assay fuels."
+      ],
+      "key_risks": [
+        "Regulatory lag in licensing advanced fuel types (e.g., HALEU, TRISO), creating severe supply bottlenecks for advanced reactor deployment.",
+        "Geopolitical concentration risks, particularly reliance on Russian state-owned enterprises for enrichment services, which face sudden export bans or supply disruptions.",
+        "Proliferation backslides if commercial reprocessing of spent fuel expands globally without robust, updated IAEA safeguard frameworks.",
+        "Political gridlock on deep geological waste repositories, shifting long-tail liability risks back onto private operators and deterring upstream investment.",
+        "Cost overruns and financing risks for new fuel cycle facilities due to highly prescriptive, unyielding regulatory requirements and local opposition.",
+        "Inconsistent international standards for HALEU classification and transport, fragmenting the global market and complicating cross-border fuel supply chains."
+      ]
+    },
+    "third_order_effects": [
+      {
+        "order": "3",
+        "description": "Institutional and regulatory capture cycle: the extreme capital intensity, long construction timelines (7-15 years), and catastrophic tail risk of nuclear accidents create a self-reinforcing dynamic where only nation-states or regulated monopolies can finance projects, leading to cost-plus contracting structures that eliminate cost discipline, producing systematic overruns (e.g., Vogtle, Flamanville, Olkiluoto) that further raise perceived risk and capital costs in a negative feedback loop."
+      },
+      {
+        "order": "3",
+        "description": "Intergenerational governance burden: the necessity of maintaining institutional continuity over geological timescales for waste repositories (e.g., Onkalo in Finland, Yucca Mountain in the US) demands stable political systems persisting for durations exceeding the lifespan of most human civilizations, creating an unprecedented governance requirement that no institution has yet demonstrated."
+      },
+      {
+        "order": "3",
+        "description": "Climate policy paradox: nuclear power's low carbon intensity makes it structurally necessary for deep decarbonization scenarios (IPCC pathways rely on 2-3x nuclear growth), yet the same political coalitions that prioritize climate action often oppose nuclear on safety/waste grounds, creating a binding constraint on emissions reduction timelines that delays transition and locks in more fossil fuel generation."
+      }
+    ],
+    "second_order_effects": [
+      {
+        "order": "2",
+        "description": "Proliferation pathway creation: the same enrichment technology (gas centrifuges) that produces low-enriched uranium for reactor fuel can be reconfigured to produce highly enriched uranium weapons material, and spent fuel reprocessing separates plutonium usable in weapons, creating dual-use tension between civilian energy programs and nuclear weapons capability."
+      },
+      {
+        "order": "2",
+        "description": "Grid architecture lock-in: nuclear plants' economics favor continuous baseload operation, structurally disincentivizing load-following and creating friction with variable renewable integration, while simultaneously providing grid inertia and voltage stability that renewables cannot, shaping transmission planning and market design for decades."
+      },
+      {
+        "order": "2",
+        "description": "Supply chain concentration risk: enrichment capacity is dominated by a handful of entities (URENCO, Rosatom, Orano, CNNC), creating geopolitical leverage where fuel supply can be weaponized—as seen when Russia's ~35% global enrichment market share became a sanctions dilemma after 2022."
+      }
+    ],
+    "confidence_assessment": {
+      "composite": 7.6,
+      "conviction": 7.0
+    },
+    "geopolitical_analysis": {
+      "summary": "The nuclear fuel cycle is a deeply geopolitical industrial chain whose front-end (uranium mining, conversion, enrichment) and back-end (spent fuel storage, reprocessing) are concentrated among a small number of states, creating structural dependencies and leverage. Russia's Rosatom dominates global enrichment capacity and nuclear export markets, giving Moscow geopolitical influence over allies and adversaries alike, while China is rapidly expanding its nuclear fleet and export ambitions as part of strategic competition. Kazakhstan produces over 40% of global uranium, making Central Asian supply routes a security concern. The dual-use nature of enrichment and reprocessing technologies makes the fuel cycle the central battleground for non-proliferation: any state mastering the full cycle is a latent nuclear weapons state. Western efforts to reindustrialize enrichment capacity (Urenco, Orano, Centrus) and develop alternatives like high-assay low-enriched uranium (HALEU) for advanced reactors are reshaping supply chains. Meanwhile, nuclear export diplomacy—Russia's Rosatom projects in Egypt, Turkey, Bangladesh; China's Hualong One exports to Pakistan, Argentina, the UK—functions as alliance-building and debt-creating instruments. The AUKUS submarine agreement has introduced naval nuclear propulsion into the geopolitical calculus, complicating non-proliferation norms. The emerging nuclear renaissance, driven by energy security and decarbonization, is intensifying competition over fuel cycle control as a determinant of 21st-century power.",
+      "key_risks": [
+        "Russian dominance in enrichment services (~35-40% global market share) creates a chokepoint dependency for Western reactor operators and allied nations, weaponizable through service cutoffs or pricing manipulation.",
+        "Proliferation cascade risk: as more states pursue domestic enrichment or reprocessing for energy independence, the technical barrier to nuclear weapons capability erodes, particularly in volatile regions (Middle East, Korean Peninsula, South Asia).",
+        "Uranium supply concentration in Kazakhstan and transit routes through Russia creates supply chain vulnerability; geopolitical disruption to Central Asian mining or logistics could trigger fuel price shocks.",
+        "China's state-subsidized nuclear export strategy (Hualong One, high-temperature reactors) undercuts Western vendors, extending Beijing's strategic influence through energy dependency and technology lock-in across the Global South.",
+        "Plutonium stockpiles from civil reprocessing programs (UK, Japan, France, Russia) present both proliferation and security risks, with Japan's Rokkasho reprocessing facility being a regional flashpoint in East Asian security dynamics.",
+        "Erosion of the non-proliferation regime: AUKUS naval nuclear propulsion sharing, Saudi Arabia's stated desire for domestic enrichment, and Iran's accumulated enrichment capacity collectively stress NPT norms and may trigger reciprocal hedging.",
+        "Critical mineral competition: HALEU and advanced reactor fuel requirements depend on supply chains for zirconium, hafnium, and rare earths that intersect with broader strategic mineral geopolitics dominated by China."
+      ],
+      "opportunities": [
+        "Western reindustrialization of enrichment and fuel fabrication capacity—Urenco expansion, Orano's Georges Besse II, Centrus HALEU demonstration—creates an alternative supply architecture reducing Russian leverage and building allied energy security.",
+        "Multilateral fuel cycle approaches (IAEA fuel banks in Kazakhstan and Russia, assured supply mechanisms) offer a diplomatic pathway to provide fuel guarantees to states forgoing indigenous enrichment, strengthening non-proliferation while addressing energy security concerns.",
+        "Nuclear export diplomacy as alliance-building: US, French, and Korean reactor exports (Vogtle AP1000s, EPR, APR-1400) can anchor long-term strategic partnerships, technology standards, and regulatory alignment, countering Russian and Chinese influence.",
+        "Small modular reactors (SMRs) and advanced reactor designs enable distributed nuclear deployment without full fuel cycle infrastructure, potentially lowering the geopolitical barrier to entry for nuclear energy in emerging markets while maintaining fuel cycle control in supplier states.",
+        "Closed fuel cycle development (fast reactors, reprocessing) by allied states could reduce uranium import dependency and waste volumes, creating energy autonomy for resource-constrained allies like Japan and South Korea while managing proliferation through multinational facilities.",
+        "Nuclear energy as climate diplomacy: positioning civil nuclear cooperation as a decarbonization tool in climate negotiations can build coalitions with energy-hungry developing states, offering an alternative to Chinese coal-financing and Russian nuclear exports.",
+        "AUKUS framework, despite proliferation concerns, establishes a precedent for deeper allied nuclear technology sharing that could be extended to fuel cycle cooperation, naval propulsion, and advanced reactor development among trusted partners."
+      ]
+    },
+    "market_misconceptions": [
+      "Regulatory frameworks and permitting timelines for new nuclear builds (especially SMRs) will accelerate to meet commercial demand, rather than remain entrenched in multi-decade delays.",
+      "The massive power demands projected for AI data centers will not be effectively met by alternative solutions (e.g., natural gas, solar+storage, or geothermal) before nuclear capacity can come online.",
+      "High uranium prices will not trigger a sufficient supply response from currently idle mines or marginal projects to flood the market and crash the price.",
+      "Western governments possess the political will and fiscal discipline to heavily subsidize a parallel, non-Russian nuclear fuel supply chain without major cost overruns or shifting policy priorities.",
+      "Public sentiment will remain tolerant of nuclear energy, ignoring the fragility of this support in the event of a localized radiological incident.",
+      "Technological breakthroughs in long-duration energy storage or fusion will not outcompete fission before the current build-out cycle matures."
+    ],
+    "portfolio_implications": {
+      "composite": 7.6,
+      "narrative_score": {
+        "duration": 9.0,
+        "conviction": 7.0,
+        "economic_impact": 7.0,
+        "valuation_support": 6.0,
+        "narrative_strength": 8.0,
+        "adoption_probability": 7.0,
+        "bottleneck_advantage": 9.0,
+        "market_awareness_gap": 7.0,
+        "second_order_effects": 8.0,
+        "competitive_advantage": 8.0
+      }
+    },
+    "psychological_analysis": {
+      "biases": [
+        "Recency Bias: Extrapolating the recent, rapid surge in AI hype and the post-2020 uranium price spike as a permanent, linear trend rather than a cyclical peak.",
+        "Herd Bias: Piling into uranium equities and physical trusts (e.g., Sprott) based on social media momentum and prominent macro investor endorsements, rather than independent supply/demand modeling.",
+        "Narrative Fallacy: Constructing a tidy, deterministic story that 'AI requires nuclear' and 'the West requires non-Russian fuel,' ignoring the messy, politically volatile, and decades-long reality of nuclear infrastructure development.",
+        "Availability Heuristic: Overweighting the visibility of high-profile tech founders backing nuclear startups, assuming their capital and brand guarantee commercial viability and regulatory success.",
+        "Confirmation Bias: Focusing exclusively on announcements of new reactor construction while discounting data on aging reactor retirements, project cancellations, and cost overruns.",
+        "Overconfidence: Believing one can accurately navigate the extreme cyclicality of uranium pricing or successfully pick winners among highly specialized, capital-intensive enrichment technologies."
+      ],
+      "consensus_view": "The nuclear fuel cycle is undergoing a structural bull market driven by the confluence of AI/data center baseload power demand, global decarbonization mandates, and the geopolitical imperative to sever reliance on Russian uranium and enrichment. Investors broadly expect a multi-decade supply deficit, resulting in sustained high uranium prices and a lucrative build-out of Western fuel cycle infrastructure.",
+      "narrative_risks": [
+        "AI power demand growth proves slower than expected or is aggressively optimized through software and hardware efficiency, eroding the urgency for new baseload power.",
+        "Small Modular Reactors (SMRs) fail to commercialize on schedule or at projected costs, delaying fuel demand and stranding upstream investments.",
+        "A rapid supply response from Kazakhstan, Africa, or restarts of Western mines saturates the market, collapsing the uranium price premia.",
+        "Geopolitical realignments or pragmatic energy compromises lead to the quiet reintroduction of Russian fuel into Western supply chains, destroying the investment thesis for domestic fuel cycle alternatives.",
+        "A black swan operational event at an aging reactor reverses public sentiment overnight, freezing global nuclear development and regulatory approvals.",
+        "Natural gas prices remain structurally low, making gas peaker plants the economically rational choice for data centers over complex nuclear procurement."
+      ],
+      "hidden_assumptions": [
+        "Regulatory frameworks and permitting timelines for new nuclear builds (especially SMRs) will accelerate to meet commercial demand, rather than remain entrenched in multi-decade delays.",
+        "The massive power demands projected for AI data centers will not be effectively met by alternative solutions (e.g., natural gas, solar+storage, or geothermal) before nuclear capacity can come online.",
+        "High uranium prices will not trigger a sufficient supply response from currently idle mines or marginal projects to flood the market and crash the price.",
+        "Western governments possess the political will and fiscal discipline to heavily subsidize a parallel, non-Russian nuclear fuel supply chain without major cost overruns or shifting policy priorities.",
+        "Public sentiment will remain tolerant of nuclear energy, ignoring the fragility of this support in the event of a localized radiological incident.",
+        "Technological breakthroughs in long-duration energy storage or fusion will not outcompete fission before the current build-out cycle matures."
+      ]
+    },
+    "adoption_curve_analysis": {
+      "stage": "Early Growth - transitioning from spot-driven price discovery to long-term contract-driven procurement",
+      "growth_rate": "Accelerating at 15-20% annually in terms of long-term contracting volume; uranium demand growing ~3-4% CAGR from reactor additions but fuel cycle investment growing faster due to supply chain rebuild",
+      "penetration_pct": 25,
+      "inflection_points": [
+        "2024-2025: US Russian uranium import ban enforcement begins, forcing utilities to lock alternative supply, creating a conversion/enrichment scramble",
+        "2026-2028: New Western enrichment capacity (Urenco UUSA expansion, Orano project) comes online, potentially easing SWU tightness but maintaining structural uranium feed deficit",
+        "2027-2030: First commercial SMR deployments requiring HALEU fuel—if HALEU supply is not established by 2026, advanced reactor timelines slip, creating a narrative credibility risk",
+        "2025-2026: Peak utility re-contracting wave as ~40% of Western reactor fuel requirements come up for renewal, establishing a new long-term price floor for U3O8"
+      ]
+    },
+    "investment_opportunities": [
+      {
+        "type": "direct",
+        "title": "Western Enrichment Capacity Independence from Russia",
+        "thesis": "Russia controls approximately 35-40% of global uranium enrichment capacity and has historically supplied ~20% of US utility enrichment needs. Post-Ukraine sanctions and the US ban on Russian uranium imports (signed August 2024) have created a structural supply gap. Building new enrichment cascades requires 5-7 years, specialized centrifuge technology, and billions in capex. Western enrichment capacity is effectively sold out through the late 2020s. Utilities are forced into multi-year contracts at escalating prices with non-Russian suppliers, creating a multi-year pricing power window for the handful of Western enrichers. The bottleneck is not uranium supply but enrichment capacity—a distinction most investors miss.",
+        "awareness_gap": "Market conflates uranium mining with enrichment. Uranium spot price gets attention; enrichment contract pricing—where the real bottleneck is—remains opaque and underfollowed.",
+        "valuation_note": "Centrus Energy trades at modest multiples relative to its HALEU production ramp and enrichment backlog. Cameco's 49% stake in Westinghouse provides indirect enrichment exposure but is diluted by uranium mining economics.",
+        "potential_losers": [
+          "Russian state nuclear corporation Rosatom — losing export market access",
+          "Utilities without long-term non-Russian enrichment contracts — facing cost escalation",
+          "Countries dependent on Russian nuclear fuel (Hungary, Czech Republic, Finland, Bangladesh, Egypt)"
+        ],
+        "potential_winners": [
+          "Centrus Energy (LEU) — only US-owned enrichment company, first-mover in HALEU",
+          "Cameco (CCJ) — 49% Westinghouse stake includes enrichment capacity",
+          "Orano (private) — largest Western enricher, potential IPO candidate",
+          "Urenco (private) — joint UK/Dutch/German venture, capacity expansion underway",
+          "Laser-focused enrichment technology developers (e.g., Silex Systems via Global Laser Enrichment)"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "HALEU Production for Advanced Reactors",
+        "thesis": "Advanced reactors (SMRs, microreactors, fast reactors, molten salt reactors) require High-Assay Low-Enriched Uranium (HALEU)—enriched to 5-20% U-235—rather than standard LEU at 3-5%. Russia is currently the only commercial-scale HALEU producer. The US DOE has funded HALEU demonstration production, but commercial-scale supply (10-40 tonnes/year needed by early 2030s) does not yet exist outside Russia. Every advanced reactor developer's business plan assumes HALEU availability that does not exist. This creates a chokepoint: whoever controls HALEU production controls the advanced nuclear renaissance. First-movers in Western HALEU production will have monopoly-like pricing power for 5-10 years.",
+        "awareness_gap": "Investors fund advanced reactor developers (TerraPower, X-energy, Oklo, NuScale) but largely ignore the fuel supply bottleneck. The fuel is the gating constraint, not the reactor design.",
+        "valuation_note": "Centrus Energy's HALEU production in Ohio is operational but underappreciated relative to its strategic optionality. Market values Centrus on near-term enrichment earnings, not HALEU monopoly potential.",
+        "potential_losers": [
+          "Advanced reactor developers without secured HALEU supply (most of them)",
+          "TerraPower — delayed Natrium reactor due to HALEU unavailability",
+          "X-energy — TRISO fuel fabrication depends on HALEU feedstock",
+          "US taxpayers funding advanced reactor demos that may stall on fuel"
+        ],
+        "potential_winners": [
+          "Centrus Energy (LEU) — operating first US HALEU production line",
+          "Energy Fuels (UUUU) — exploring HALEU production via existing infrastructure",
+          "Global Laser Enrichment (Silex Systems, SLX.AX) — laser enrichment tech applicable to HALEU",
+          "DOE-funded HALEU deconversion facility operators",
+          "Cameco/Orano — existing enrichment infrastructure adaptable to HALEU"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Uranium Mining Supply Deficit and Physical Uranium Squeeze",
+        "thesis": "A decade of sub-investment-grade uranium prices (2012-2020) caused mine closures, exploration starvation, and reserve depletion. Kazakhstan—the world's largest producer (~40% of supply)—faces declining grades and production challenges at its in-situ recovery operations. Meanwhile, 60+ GW of new nuclear capacity is under construction globally, China alone targets 150+ reactors by 2035. The supply-demand gap is structural: identified resources can meet demand, but mined supply cannot without 5-10 years of capex and permitting. Physical uranium holding vehicles (SPUT, ANR) are accelerating price discovery by buying spot material, forcing utilities out of complacent long-term contracting into panic buying.",
+        "awareness_gap": "Most investors view uranium as a commodity cyclical. The structural deficit is different: it reflects a decade of underinvestment meeting a step-change in demand from simultaneously rising nuclear capacity and inventory rebuilding.",
+        "valuation_note": "Many uranium developers trade at significant discounts to NAV of proven resources. Physical uranium trusts trade at small premiums to NAV. Tier-1 producers (Cameco, Kazatomprom) screen expensive on trailing earnings but cheap on forward earnings given contract price escalation.",
+        "potential_losers": [
+          "Nuclear utilities without long-term uranium contracts — exposed to spot price spikes",
+          "Secondary uranium suppliers drawing down inventories — finite resource",
+          "Countries without domestic uranium resources facing strategic vulnerability",
+          "Cameco competitors with higher cost structures and weaker balance sheets"
+        ],
+        "potential_winners": [
+          "Sprott Physical Uranium Trust (U.UN) — direct physical exposure, price discovery agent",
+          "Cameco (CCJ) — Tier-1 producer with contracted portfolio and Westinghouse optionality",
+          "Kazatomprom (KAP.LSE) — lowest-cost producer, though geopolitical discount persists",
+          "Energy Fuels (UUUU) — US-based producer, rare earths optionality, White Mesa mill",
+          "Paladin Energy (PDN.AX) — Langer Heinrich restart, growth pipeline",
+          "Denison Mines (DNN) — Wheeler River development, low-cost ISR potential",
+          "Boss Energy (BOE.AX) — Honeymoon mine restart, Australian jurisdiction"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Spent Nuclear Fuel Reprocessing and Recycling",
+        "thesis": "The US has 90,000+ tonnes of spent nuclear fuel in temporary storage with no permanent repository. The once-through fuel cycle treats spent fuel as waste; France, Russia, and Japan reprocess it, recovering 96% reusable material. The narrative is shifting: spent fuel is increasingly viewed as a strategic resource (contains plutonium for MOX fuel, recoverable uranium) rather than waste. Advanced reactor designs (fast spectrum) can actually consume existing spent fuel as fuel. The US DOE is funding consent-based siting for interim storage, and private companies are developing reprocessing technologies. If the US pivots toward a closed fuel cycle—driven by waste management necessity and fuel security—it creates an entirely new industrial sector.",
+        "awareness_gap": "Nuclear waste is universally viewed as an intractable problem. Few investors recognize that reprocessing technology exists, works (France does it at scale), and that spent fuel contains enormous recoverable energy value. The political narrative around 'waste' obscures the resource opportunity.",
+        "valuation_note": "Pure-play public reprocessing companies barely exist. Oklo (pending IPO/SPAC) and Curio Energy (private) are early-stage. BWX Technologies has fuel fabrication capabilities adaptable to recycling. Entry valuations are low because the sector doesn't exist yet in public markets.",
+        "potential_losers": [
+          "Yucca Mountain-dependent waste disposal approaches — politically dead",
+          "Utilities paying for dry cask storage in perpetuity — ongoing cost liability",
+          "Taxpayers bearing DOE waste liability (>$30B and growing)",
+          "Anti-nuclear advocacy groups — losing the waste argument if reprocessing succeeds"
+        ],
+        "potential_winners": [
+          "Oklo (OKLO) — fast reactor design that consumes nuclear waste as fuel",
+          "Curio Energy (private) — proprietary reprocessing technology, US-based",
+          "BWX Technologies (BWXT) — fuel fabrication expertise, government contracts",
+          "Orano (private) — operates La Hague reprocessing plant, potential US expansion",
+          "Deep Isolation (private) — deep borehole disposal technology",
+          "Holtec International (private) — interim storage licensing, fuel handling"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "TRISO and Accident Tolerant Fuel Fabrication",
+        "thesis": "TRISO (TRIstructural-ISOtropic) fuel particles—uranium kernels coated in carbon and silicon carbide—cannot melt down under reactor conditions, making them the fuel of choice for gas-cooled reactors and microreactors. The US has invested heavily in TRISO fuel fabrication at Idaho National Laboratory and BWX Technologies' facility. As advanced reactor designs using TRISO (X-energy's Xe-100, BWXT's microreactors, Radiant, Westinghouse eVinci) move toward deployment, TRISO fuel fabrication becomes a critical bottleneck. Only two facilities in the US can produce TRISO at scale. Design lock-in is powerful: once a reactor is designed for TRISO, it cannot switch fuel types.",
+        "awareness_gap": "TRISO fuel is a niche topic discussed in nuclear engineering circles but virtually unknown in investment circles. The fuel fabrication monopoly is more defensible than reactor design—reactors compete; fuel types are locked in.",
+        "valuation_note": "BWX Technologies trades at aerospace/defense multiples, not nuclear fuel multiples. Its TRISO capability is embedded in a larger business and not separately valued. X-energy's fuel facility represents the only competing TRISO source.",
+        "potential_losers": [
+          "Conventional oxide fuel fabricators if TRISO gains share in advanced reactors",
+          "Framatome — competing accident tolerant fuel (ATF) designs using coated cladding",
+          "Reactor designs requiring fuel types without established fabrication supply chains"
+        ],
+        "potential_winners": [
+          "BWX Technologies (BWXT) — operating TRISO fuel fabrication line, government microreactor contracts",
+          "X-energy (pending public) — TRISO fuel fabrication facility under construction",
+          "US DOE Idaho National Laboratory — TRISO fuel testing and qualification",
+          "Westinghouse (Cameco/Brookfield) — eVinci microreactor uses TRISO fuel",
+          "Radiant Nuclear (private) — portable TRISO-fueled microreactor"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Nuclear Fuel Transportation and Logistics Infrastructure",
+        "thesis": "The nuclear fuel cycle requires specialized transportation: uranium ore concentrate in drums, UF6 cylinders, fresh fuel assemblies, and spent fuel casks. Each requires NRC-certified containers, specialized rail cars, and security protocols. The US fleet of Type B transportation casks for spent fuel is aging and insufficient. As the fuel cycle expands (more mining, more reactors, eventual reprocessing), transportation becomes a critical bottleneck. Only a handful of companies manufacture NRC-certified nuclear transport casks. The regulatory moat is enormous—certification takes 5+ years. As interim storage facilities come online and spent fuel moves from reactor sites to centralized storage, demand for transport casks and logistics services will surge.",
+        "awareness_gap": "Nuclear fuel transportation is invisible to investors. No pure-play public company exists. The bottleneck is recognized within the industry but not priced by markets. When spent fuel starts moving to consolidated interim storage (likely late 2020s), the logistics chain will be exposed as inadequate.",
+        "valuation_note": "No pure-play exists. Exposure is through BWX Technologies (cask manufacturing), Holtec (private, cask and storage system manufacturer), and EnergySolutions (private, nuclear logistics services). Valuations are impossible to assess but entry points would be low given zero market attention.",
+        "potential_losers": [
+          "Utilities lacking transport cask access for spent fuel movement",
+          "Rail companies unprepared for increased nuclear material shipments",
+          "Interim storage facilities without adequate rail infrastructure (e.g., WCS/ISP in Texas)"
+        ],
+        "potential_winners": [
+          "BWX Technologies (BWXT) — manufactures transport casks and storage canisters",
+          "Holtec International (private) — HI-STAR and HI-STORM cask systems, interim storage licensing",
+          "EnergySolutions (private) — nuclear logistics, decommissioning, waste management",
+          "Areva TN / Orano TN (private) — spent fuel transport casks",
+          "NAC International (private) — cask systems and fuel consulting"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Uranium Royalty and Streaming as Capital-Light Nuclear Exposure",
+        "thesis": "The royalty/streaming model—pioneered in precious metals by Franco-Nevada and Wheaton Precious Metals—has barely penetrated uranium. Uranium Royalty Corp is the only dedicated uranium royalty company. As uranium miners face capital scarcity and development risk, royalty financing offers an attractive alternative to dilutive equity or expensive debt. The uranium royalty universe is nascent: dozens of development-stage projects need financing, and royalty terms in uranium are less competitive than in gold (fewer competitors). Early capital deployment at favorable royalty rates during the current development cycle could generate decades of low-cost production exposure.",
+        "awareness_gap": "Investors understand gold streaming but haven't mapped the model to uranium. Uranium Royalty Corp is underfollowed and its portfolio of royalties on development-stage projects is valued as if those projects will never be built. The asymmetry is significant: if even 30% of its royalty portfolio enters production, the stock re-rates dramatically.",
+        "valuation_note": "Uranium Royalty Corp trades at a discount to the NAV of its royalty portfolio even at conservative uranium price assumptions. The market applies a 'these projects will never be built' discount that ignores the structural uranium supply deficit making them economic.",
+        "potential_losers": [
+          "Uranium developers issuing royalties at unfavorable terms under financing pressure",
+          "Traditional uranium equity investors paying full development risk without royalty downside protection",
+          "Gold streaming companies slow to recognize uranium opportunity"
+        ],
+        "potential_winners": [
+          "Uranium Royalty Corp (URC.V / URNMF) — only dedicated uranium royalty company",
+          "Sprott Inc (SII) — manages Sprott Physical Uranium Trust, nuclear sector franchise",
+          "Triple Flag Mining (TFPM) — diversified streaming including some uranium exposure",
+          "Sandstorm Gold (SAND) — has uranium royalty exposure, diversifying into nuclear"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Conversion Capacity Bottleneck (UF6 and UF4)",
+        "thesis": "Between uranium mining and enrichment sits conversion—transforming U3O8 into uranium hexafluoride (UF6) for enrichment. Global conversion capacity is concentrated in three players: Cameco (Canada), Orano (France), and Rosatom (Russia). The Honeywell Metropolis Works is the only US conversion facility and it has faced operational reliability issues. Conversion prices have surged from $5/kgU in 2020 to $40+/kgU in 2024. With Russian conversion imports restricted, Western capacity is insufficient. New conversion capacity requires 3-5 years and specialized chemical processing expertise. The conversion bottleneck is less visible than mining or enrichment but equally critical—enrichment plants cannot operate without UF6 feed.",
+        "awareness_gap": "Conversion is the least discussed segment of the fuel cycle. Investors focus on uranium mining (upstream) and enrichment (midstream) but miss conversion as the critical link. Conversion capacity additions are rarely discussed in earnings calls or analyst notes.",
+        "valuation_note": "Cameco's conversion capacity at Port Hope is embedded in its broader business and not separately valued. Honeywell's Metropolis facility is a small part of a $130B conglomerate. The conversion pricing surge is not fully reflected in Cameco's valuation because contract structures lag spot prices.",
+        "potential_losers": [
+          "Utilities dependent on Russian conversion (Tenex contracts) — supply disruption risk",
+          "Enrichers without secured UF6 feedstock — operational constraints",
+          "Small uranium miners without conversion offtake agreements — unable to monetize production"
+        ],
+        "potential_winners": [
+          "Cameco (CCJ) — Port Hope conversion facility, largest Western converter",
+          "Honeywell (HON) — Metropolis Works, sole US conversion facility",
+          "Orano (private) — Comurhex conversion facility, capacity expansion planned",
+          "Cameco/Orano partnership — potential new conversion capacity announcements"
+        ]
+      },
+      {
+        "type": "direct",
+        "title": "Small Modular Reactor Fuel Supply Chain Lock-In",
+        "thesis": "Each SMR design requires a specific fuel type: NuScale uses standard PWR fuel, GE Hitachi BWRX-300 uses BWR fuel, Rolls-Royce SMR uses PWR fuel, Oklo uses metallic fuel from reprocessed material, X-energy uses TRISO, BWXT microreactors use TRISO/HALEU. The fuel supply chain for each design must be established before deployment. Once a utility commits to an SMR design, they are locked into that fuel supply chain for the 60-year reactor life. Fuel fabricators that secure design partnerships early will capture decades of recurring revenue. The competition is not just for reactor orders but for fuel supply chain dominance. Westinghouse, Framatome, and BWXT are positioning as fuel-agnostic suppliers, but design-specific fuel requirements create natural monopolies.",
+        "awareness_gap": "SMR investment focuses on reactor developers and utility adopters. The fuel supply chain—where the durable competitive advantage lies—is overlooked. Investors don't recognize that fuel fabrication is a 60-year annuity, not a one-time sale.",
+        "valuation_note": "BWX Technologies and Westinghouse (via Cameco/Brookfield) are the best-positioned fuel fabricators but trade on current earnings, not SMR fuel supply optionality. Framatome (majority EDF-owned) is inaccessible to most investors.",
+        "potential_losers": [
+          "SMR developers without secured fuel supply partnerships (most early-stage companies)",
+          "NuScale — VOYGR fuel supply dependent on traditional supply chain, less differentiated",
+          "Chinese SMR developers — fuel supply chain isolated from Western markets",
+          "Utilities choosing SMR designs without evaluating 60-year fuel supply risk"
+        ],
+        "potential_winners": [
+          "BWX Technologies (BWXT) — fuel fabrication for microreactors and naval reactors",
+          "Cameco/Brookfield via Westinghouse — AP1000 fuel, eVinci microreactor fuel",
+          "Framatome (EDF subsidiary) — European fuel fabrication, ATF fuel development",
+          "Centrus Energy (LEU) — HALEU feedstock supplier to multiple SMR designs",
+          "X-energy — TRISO fuel fabrication for own reactor and potential third-party supply"
+        ]
+      },
+      {
+        "type": "contrarian",
+        "title": "Nuclear Fuel Reserve and Strategic Stockpiling",
+        "thesis": "The US DOE is establishing a Strategic Uranium Reserve and HALEU Availability Program, recognizing nuclear fuel as a strategic resource akin to the Strategic Petroleum Reserve. China is aggressively stockpiling uranium through CGN and CNNC, reportedly holding 5+ years of forward demand. Russia maintains strategic fuel reserves. Western countries are decades behind in strategic fuel stockpiling. This creates a structural bid under uranium prices: even if commercial demand is met, government stockpiling adds a persistent demand layer. The US Nuclear Fuel Security Act and related legislation mandate domestic fuel supply chain development. Government procurement will distort markets, creating opportunities for domestic producers and stockpile operators.",
+        "awareness_gap": "Strategic stockpiling is discussed in policy circles but not priced into uranium equities. The market assumes commercial supply-demand equilibrium without accounting for government buying. China's stockpiling is opaque and underestimated.",
+        "valuation_note": "Domestic US uranium producers (Energy Fuels, Ur-Energy, enCore Energy) trade at premiums to international peers but still below the implied value of strategic reserve offtake. Physical uranium trusts would benefit directly from government buying pressure on spot markets.",
+        "potential_losers": [
+          "Non-US uranium producers without domestic strategic reserve access",
+          "Utilities competing with government buyers for limited domestic supply",
+          "Countries without strategic fuel reserves facing supply insecurity during disruptions",
+          "Russian fuel exporters — losing market access as Western stockpiling reduces dependency"
+        ],
+        "potential_winners": [
+          "Energy Fuels (UUUU) — US-based, White Mesa mill, DOE reserve offtake potential",
+          "Ur-Energy (URG) — US ISR producer, domestic supply qualification",
+          "enCore Energy (EU) — US ISR production, South Texas processing",
+          "Sprott Physical Uranium Trust (U.UN) — benefits from government buying pressure on spot",
+          "Centrus Energy (LEU) — HALEU Availability Program contractor",
+          "Quantum Energy (private) — strategic uranium acquisition and storage"
+        ]
+      }
+    ]
+  }
+}
