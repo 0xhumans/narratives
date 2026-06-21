@@ -39,8 +39,8 @@ Opens **http://127.0.0.1:8000** — API + UI on one port.
 ### Vercel
 
 1. Import the GitHub repo in [Vercel](https://vercel.com)
-2. Use the included **`vercel.json`** (builds `frontend/`, output `frontend/dist`)
-3. No environment variables required for read-only mode (`frontend/.env.production` sets static data)
+2. Set **Root Directory** to `frontend` and **Framework Preset** to Vite
+3. Build is configured in `frontend/vercel.json` — no env vars required for read-only mode
 
 Pipeline runs are **disabled** on the public site. Synthesis stays on your machine.
 
@@ -51,7 +51,7 @@ backend/           FastAPI + pipeline + export script
 frontend/          React UI
 frontend/public/data/   Static JSON snapshot (committed)
 export_data.bat    Refresh data for GitHub/Vercel
-vercel.json        Vercel build settings
+frontend/vercel.json   Vercel build settings (Root Directory: frontend)
 ```
 
 ## API (local backend)
